@@ -3,6 +3,7 @@ const VALID_UFS = new Set([
   'AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO',
 ]);
 const CARGO_DEPUTADO_FEDERAL = 6;
+const KNOWN_2026_ELECTION_IDS = ['20322002026', '2062262026'];
 
 function json(data, status = 200, extraHeaders = {}) {
   return new Response(JSON.stringify(data), {
@@ -21,7 +22,7 @@ async function tseFetch(path) {
       accept: 'application/json, text/plain, */*',
       'accept-language': 'pt-BR,pt;q=0.9',
       referer: 'https://divulgacandcontas.tse.jus.br/',
-      'user-agent': 'Eleicoes-2026-Transparencia/0.2 (+https://github.com/MSsanto/Elei-oes-2026)',
+      'user-agent': 'Eleicoes-2026-Transparencia/0.3 (+https://github.com/MSsanto/Elei-oes-2026)',
     },
     cf: { cacheTtl: 300, cacheEverything: true },
   });
@@ -53,18 +54,21 @@ function getElectionId(item) {
   return item?.id ?? item?.idEleicao ?? item?.sqEleicao ?? item?.sq_ELEICAO ?? null;
 }
 
-async function discoverElectionId() {
-  const payload = await tseFetch('/eleicao/ordinarias');
-  const candidates = electionObjects(payload)
-    .map((item) => ({ item, id: getElectionId(item) }))
-    .filter(({ id }) => id !== null && id !== undefined);
-
-  if (!candidates.length) {
-    throw new Error('A API do TSE respondeu, mas não foi possível localizar o identificador da eleição de 2026.');
+async function discoverElectionIds() {
+  const ids = [];
+  try {
+    const payload = await tseFetch('/eleicao/ordinarias');
+    const discovered = electionObjects(payload)
+      .map((item) => getElectionId(item))
+      .filter((id) => id !== null && id !== undefined)
+      .map(String);
+    ids.push(...discovered);
+  } catch (error) {
+    console.warn('Descoberta automática da eleição falhou; tentando IDs conhecidos:', error);
   }
 
-  const firstTurn = candidates.find(({ item }) => String(item.turno ?? item.nrTurno ?? '1') === '1');
-  return String((firstTurn ?? candidates[0]).id);
+  ids.push(...KNOWN_2026_ELECTION_IDS);
+  return [...new Set(ids)];
 }
 
 function first(...values) {
@@ -96,39 +100,57 @@ function normalizeCandidate(candidate, uf, electionId) {
   };
 }
 
+async function fetchCandidatesForElection(uf, electionId) {
+  const payload = await tseFetch(`/candidatura/listar/2026/${uf}/${electionId}/${CARGO_DEPUTADO_FEDERAL}/candidatos`);
+  const rawCandidates = Array.isArray(payload) ? payload : (payload.candidatos || payload.candidates || []);
+  return rawCandidates
+    .map((candidate) => normalizeCandidate(candidate, uf, electionId))
+    .filter((candidate) => candidate.id_tse && (candidate.nome_urna || candidate.nome));
+}
+
 export async function onRequestGet(context) {
   const url = new URL(context.request.url);
   const uf = (url.searchParams.get('uf') || 'SP').toUpperCase();
   const requestedLimit = Number(url.searchParams.get('limit') || '120');
-  const limit = Number.isFinite(requestedLimit) ? Math.min(Math.max(requestedLimit, 1), 1000) : 120;
+  const limit = Number.isFinite(requestedLimit) ? Math.min(Math.max(requestedLimit, 1), 1500) : 120;
 
   if (!VALID_UFS.has(uf)) {
     return json({ error: 'UF inválida.' }, 400);
   }
 
+  const attempts = [];
   try {
-    const electionId = await discoverElectionId();
-    const payload = await tseFetch(`/candidatura/listar/2026/${uf}/${electionId}/${CARGO_DEPUTADO_FEDERAL}/candidatos`);
-    const rawCandidates = Array.isArray(payload) ? payload : (payload.candidatos || payload.candidates || []);
-    const candidates = rawCandidates
-      .map((candidate) => normalizeCandidate(candidate, uf, electionId))
-      .filter((candidate) => candidate.id_tse && (candidate.nome_urna || candidate.nome))
-      .slice(0, limit);
+    const electionIds = await discoverElectionIds();
 
-    return json({
-      source: 'TSE DivulgaCandContas',
-      election_id: electionId,
-      cargo: 'DEPUTADO FEDERAL',
-      uf,
-      records: candidates.length,
-      generated_at_utc: new Date().toISOString(),
-      candidates,
-    });
+    for (const electionId of electionIds) {
+      try {
+        const candidates = await fetchCandidatesForElection(uf, electionId);
+        if (!candidates.length) {
+          attempts.push({ election_id: electionId, result: 'sem candidatos' });
+          continue;
+        }
+
+        return json({
+          source: 'TSE DivulgaCandContas',
+          election_id: electionId,
+          cargo: 'DEPUTADO FEDERAL',
+          uf,
+          records: Math.min(candidates.length, limit),
+          generated_at_utc: new Date().toISOString(),
+          candidates: candidates.slice(0, limit),
+        });
+      } catch (error) {
+        attempts.push({ election_id: electionId, error: error instanceof Error ? error.message : String(error) });
+      }
+    }
+
+    throw new Error('Nenhum dos identificadores de eleição testados retornou candidatos.');
   } catch (error) {
-    console.error('Falha ao consultar TSE:', error);
+    console.error('Falha ao consultar TSE:', error, attempts);
     return json({
-      error: 'Não foi possível consultar o TSE a partir da infraestrutura da Cloudflare.',
+      error: 'Não foi possível consultar o TSE a partir deste ponto de presença da Cloudflare.',
       detail: error instanceof Error ? error.message : String(error),
+      attempts,
       uf,
     }, 502);
   }
