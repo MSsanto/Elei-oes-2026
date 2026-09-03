@@ -27,9 +27,32 @@ function Write-CollectorLog {
 
 function Invoke-External {
     param([string]$Command, [string[]]$Arguments)
-    & $Command @Arguments 2>&1 | Tee-Object -FilePath $LogFile -Append
-    if ($LASTEXITCODE -ne 0) {
-        throw "Comando falhou ($LASTEXITCODE): $Command $($Arguments -join ' ')"
+
+    # Windows PowerShell 5.1 transforma a saida STDERR de programas nativos em
+    # ErrorRecord quando usamos 2>&1. Git escreve mensagens normais (por exemplo
+    # "From https://github.com/...") em STDERR, portanto nao podemos deixar
+    # $ErrorActionPreference = Stop durante a captura.
+    $previousPreference = $ErrorActionPreference
+    $exitCode = 0
+    $output = @()
+    try {
+        $ErrorActionPreference = "Continue"
+        $output = @(& $Command @Arguments 2>&1)
+        $exitCode = $LASTEXITCODE
+    }
+    finally {
+        $ErrorActionPreference = $previousPreference
+    }
+
+    foreach ($item in $output) {
+        $text = [string]$item
+        if (-not $text) { continue }
+        Add-Content -Path $LogFile -Value $text -Encoding UTF8
+        if (-not $Silent) { Write-Host $text }
+    }
+
+    if ($exitCode -ne 0) {
+        throw "Comando falhou ($exitCode): $Command $($Arguments -join ' ')"
     }
 }
 
