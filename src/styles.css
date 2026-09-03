@@ -180,6 +180,9 @@ footer,
   gap: 10px;
   margin-bottom: 22px;
 }
+.filters.filters-with-history {
+  grid-template-columns: minmax(260px, 1fr) 120px 190px 190px auto;
+}
 .search-box {
   display: flex;
   align-items: center;
@@ -205,6 +208,13 @@ footer,
 }
 .clear-button { color: var(--blue); font-weight: 700; }
 .search-box:focus-within, .filters select:focus { border-color: #8cb3ff; box-shadow: 0 0 0 3px rgba(36,107,254,.08); }
+.history-filter-note {
+  margin: -10px 0 24px;
+  color: #6d798a;
+  font-size: 11px;
+  line-height: 1.55;
+}
+.history-filter-note strong { color: #41516a; }
 
 .candidate-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .candidate-card {
@@ -243,7 +253,7 @@ footer,
 .candidate-card h3 { margin: 6px 0 3px; color: #182337; font-size: 17px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 .candidate-card p { margin: 0; color: #7a8698; font-size: 12px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
 .tags { display: flex; gap: 6px; margin-top: 9px; overflow: hidden; }
-.tags span { display: inline-block; max-width: 170px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 4px 7px; background: #f4f6fa; color: #788496; border-radius: 6px; font-size: 9px; text-transform: uppercase; letter-spacing: .04em; }
+.tags span { display: inline-block; max-width: 210px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 4px 7px; background: #f4f6fa; color: #788496; border-radius: 6px; font-size: 9px; text-transform: uppercase; letter-spacing: .04em; }
 .open-indicator { color: #9ba6b6; font-size: 20px; }
 .result-limit { text-align: center; color: var(--muted); font-size: 12px; margin: 20px 0 0; }
 
@@ -331,6 +341,9 @@ footer p { max-width: 520px; margin: 0; text-align: right; line-height: 1.5; }
 .modal-heading p { margin: 0; color: var(--muted); font-size: 12px; }
 .coming-soon { margin: 26px 0; padding: 14px 16px; background: var(--blue-soft); color: #41618f; border-radius: 12px; font-size: 12px; line-height: 1.55; }
 .coming-soon strong { color: #2452a0; }
+.history-note { margin: 12px 0 14px; padding: 13px 15px; background: #f7f9fc; color: #637086; border: 1px solid var(--line); border-radius: 12px; font-size: 11px; line-height: 1.55; }
+.history-note strong { color: #35445a; }
+.history-detail-grid { margin-bottom: 26px; }
 .detail-grid { margin: 0; display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
 .detail-grid div { padding: 14px 16px; border-bottom: 1px solid var(--line); }
 .detail-grid div:nth-child(odd) { border-right: 1px solid var(--line); }
@@ -342,7 +355,7 @@ footer p { max-width: 520px; margin: 0; text-align: right; line-height: 1.5; }
   .stats-wrap { grid-template-columns: 1fr 1fr; }
   .stat-card:nth-child(2) { border-right: 0; }
   .stat-card:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .filters { grid-template-columns: 1fr 1fr; }
+  .filters, .filters.filters-with-history { grid-template-columns: 1fr 1fr; }
   .search-box { grid-column: 1 / -1; }
   .candidate-list { grid-template-columns: 1fr; }
   .method-grid { grid-template-columns: 1fr; }
@@ -361,7 +374,7 @@ footer p { max-width: 520px; margin: 0; text-align: right; line-height: 1.5; }
   .stat-card strong { font-size: 23px; }
   .content-section { padding-top: 64px; }
   .section-heading { align-items: start; flex-direction: column; }
-  .filters { grid-template-columns: 1fr; }
+  .filters, .filters.filters-with-history { grid-template-columns: 1fr; }
   .search-box { grid-column: auto; }
   .candidate-card { grid-template-columns: auto 1fr; }
   .open-indicator { display: none; }
