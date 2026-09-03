@@ -7,6 +7,12 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
+try {
+    [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding($false)
+    $OutputEncoding = [Console]::OutputEncoding
+}
+catch {}
+
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
 $LogDir = Join-Path $RepoRoot ".collector\logs"
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
@@ -32,37 +38,83 @@ function Invoke-External {
     }
 }
 
+function Find-GitExecutable {
+    $fromPath = Get-Command git.exe -ErrorAction SilentlyContinue
+    if ($fromPath) {
+        return $fromPath.Source
+    }
+
+    $fixedCandidates = @(
+        (Join-Path $env:ProgramFiles "Git\cmd\git.exe"),
+        (Join-Path $env:ProgramFiles "Git\bin\git.exe")
+    )
+
+    if (${env:ProgramFiles(x86)}) {
+        $fixedCandidates += (Join-Path ${env:ProgramFiles(x86)} "Git\cmd\git.exe")
+    }
+
+    foreach ($candidate in $fixedCandidates) {
+        if ($candidate -and (Test-Path $candidate)) {
+            return (Resolve-Path $candidate).Path
+        }
+    }
+
+    $desktopRoot = Join-Path $env:LOCALAPPDATA "GitHubDesktop"
+    if (Test-Path $desktopRoot) {
+        $desktopApps = Get-ChildItem -Path $desktopRoot -Directory -Filter "app-*" -ErrorAction SilentlyContinue |
+            Sort-Object LastWriteTime -Descending
+
+        foreach ($app in $desktopApps) {
+            $desktopCandidates = @(
+                (Join-Path $app.FullName "resources\app\git\cmd\git.exe"),
+                (Join-Path $app.FullName "resources\app\git\bin\git.exe"),
+                (Join-Path $app.FullName "resources\app\git\mingw64\bin\git.exe")
+            )
+            foreach ($candidate in $desktopCandidates) {
+                if (Test-Path $candidate) {
+                    return (Resolve-Path $candidate).Path
+                }
+            }
+        }
+    }
+
+    return $null
+}
+
 try {
     Set-Location $RepoRoot
-    Write-CollectorLog "Iniciando coleta nacional Eleições 2026."
-    Write-CollectorLog "Repositório: $RepoRoot"
+    Write-CollectorLog "Iniciando coleta nacional Eleicoes 2026."
+    Write-CollectorLog "Repositorio: $RepoRoot"
 
     if (-not (Test-Path (Join-Path $RepoRoot ".git"))) {
-        throw "Esta pasta não é um clone Git. Clone MSsanto/Elei-oes-2026 antes de executar o coletor."
+        throw "Esta pasta nao e um clone Git. Clone MSsanto/Elei-oes-2026 antes de executar o coletor."
     }
 
-    $git = Get-Command git -ErrorAction SilentlyContinue
-    if (-not $git) {
-        throw "Git não encontrado. Instale o Git for Windows e abra novamente este arquivo."
+    $GitCommand = Find-GitExecutable
+    if (-not $GitCommand) {
+        throw "Git nao encontrado. O coletor procurou no PATH, Git for Windows e no Git embutido do GitHub Desktop."
     }
+    Write-CollectorLog "Git localizado: $GitCommand"
+    Invoke-External $GitCommand @("--version")
 
-    $py = Get-Command py -ErrorAction SilentlyContinue
-    $python = Get-Command python -ErrorAction SilentlyContinue
+    $py = Get-Command py.exe -ErrorAction SilentlyContinue
+    $python = Get-Command python.exe -ErrorAction SilentlyContinue
     if ($py) {
-        $PythonCommand = "py"
+        $PythonCommand = $py.Source
         $PythonPrefix = @("-3")
     }
     elseif ($python) {
-        $PythonCommand = "python"
+        $PythonCommand = $python.Source
         $PythonPrefix = @()
     }
     else {
-        throw "Python 3 não encontrado. Instale o Python 3 e marque a opção 'Add Python to PATH'."
+        throw "Python 3 nao encontrado. Instale o Python 3 e marque a opcao Add Python to PATH."
     }
+    Write-CollectorLog "Python localizado: $PythonCommand"
 
-    $statusLines = @(& git status --porcelain)
+    $statusLines = @(& $GitCommand status --porcelain)
     if ($LASTEXITCODE -ne 0) {
-        throw "Não foi possível consultar o estado do repositório."
+        throw "Nao foi possivel consultar o estado do repositorio."
     }
 
     $nonGeneratedChanges = @()
@@ -79,20 +131,20 @@ try {
     }
 
     if ($nonGeneratedChanges.Count -gt 0) {
-        Write-CollectorLog "Alterações locais encontradas fora da pasta de dados gerados:"
+        Write-CollectorLog "Alteracoes locais encontradas fora da pasta de dados gerados:"
         foreach ($line in $nonGeneratedChanges) { Write-CollectorLog "  $line" }
-        throw "Faça commit ou stash das alterações locais antes da coleta automática."
+        throw "Faca commit ou stash das alteracoes locais antes da coleta automatica."
     }
 
     if ($generatedChanges.Count -gt 0) {
-        Write-CollectorLog "Limpando arquivos gerados deixados por uma execução anterior interrompida..."
-        & git restore --staged --worktree -- data/processed 2>$null
-        & git clean -fd -- data/processed 2>$null
+        Write-CollectorLog "Limpando arquivos gerados deixados por uma execucao anterior interrompida..."
+        & $GitCommand restore --staged --worktree -- data/processed 2>$null
+        & $GitCommand clean -fd -- data/processed 2>$null
     }
 
     if (-not $SkipPull) {
-        Write-CollectorLog "Atualizando o código a partir da branch main..."
-        Invoke-External "git" @("pull", "--rebase", "origin", "main")
+        Write-CollectorLog "Atualizando o codigo a partir da branch main..."
+        Invoke-External $GitCommand @("pull", "--rebase", "origin", "main")
     }
 
     Write-CollectorLog "Executando coletor nacional do TSE..."
@@ -110,31 +162,31 @@ try {
     Write-CollectorLog ("Carga validada: {0} candidatos; {1} UFs com registros." -f $metadata.records, $metadata.ufs_with_records)
 
     if ($NoPush) {
-        Write-CollectorLog "Modo NoPush: arquivos gerados localmente; publicação no GitHub ignorada."
+        Write-CollectorLog "Modo NoPush: arquivos gerados localmente; publicacao no GitHub ignorada."
         exit 0
     }
 
-    Write-CollectorLog "Preparando publicação no GitHub..."
-    Invoke-External "git" @("add", "data/processed")
-    $staged = (& git diff --cached --name-only) -join "`n"
+    Write-CollectorLog "Preparando publicacao no GitHub..."
+    Invoke-External $GitCommand @("add", "data/processed")
+    $staged = (& $GitCommand diff --cached --name-only) -join "`n"
     if ($LASTEXITCODE -ne 0) {
-        throw "Falha ao verificar alterações geradas."
+        throw "Falha ao verificar alteracoes geradas."
     }
 
     if (-not $staged.Trim()) {
-        Write-CollectorLog "O TSE não trouxe alterações desde a última carga. Nada para publicar."
+        Write-CollectorLog "O TSE nao trouxe alteracoes desde a ultima carga. Nada para publicar."
         exit 0
     }
 
-    Invoke-External "git" @("commit", "-m", "data: atualizar candidaturas nacionais do TSE")
-    Invoke-External "git" @("push", "origin", "main")
+    Invoke-External $GitCommand @("commit", "-m", "data: atualizar candidaturas nacionais do TSE")
+    Invoke-External $GitCommand @("push", "origin", "main")
 
-    Write-CollectorLog "Publicação concluída. O Cloudflare Pages fará o novo deploy automaticamente."
+    Write-CollectorLog "Publicacao concluida. O Cloudflare Pages fara o novo deploy automaticamente."
     Write-CollectorLog "Site: https://eleicoes-2026-ebz.pages.dev"
     exit 0
 }
 catch {
     Write-CollectorLog ("ERRO: " + $_.Exception.Message)
-    Write-CollectorLog "A carga anterior foi preservada. Consulte o arquivo de log para diagnóstico."
+    Write-CollectorLog "A carga anterior foi preservada. Consulte o arquivo de log para diagnostico."
     exit 1
 }
