@@ -1,7 +1,14 @@
 import puppeteer from '@cloudflare/puppeteer';
 
-const WORKER_REVISION = 'tse-multidataset-v3';
+const WORKER_REVISION = 'tse-divulgacand-inspect-v4';
 const DATASET_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
+const DIVULGACAND_URL = 'https://divulgacandcontas.tse.jus.br/divulga/#/';
+const DIVULGACAND_API_BASE = '/divulga/rest/v1';
+const DIVULGACAND_TEST = {
+  ano: 2026,
+  uf: 'AC',
+  sqCandidato: '10002545667',
+};
 const DATASETS = {
   candidatos: {
     url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip',
@@ -15,6 +22,16 @@ const DATASETS = {
   },
 };
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36';
+const RELEVANT_FIELD_TOKENS = [
+  'domic',
+  'municip',
+  'zona',
+  'eleitor',
+  'titulo',
+  'local',
+  'endereco',
+  'ue',
+];
 
 function json(payload, status = 200) {
   return new Response(JSON.stringify(payload, null, 2), {
@@ -61,6 +78,32 @@ function authorized(request, env) {
   if (!expected) return false;
   const header = request.headers.get('Authorization') || '';
   return header === `Bearer ${expected}`;
+}
+
+function collectKeyPaths(value, prefix = '', out = new Set(), depth = 0) {
+  if (depth > 8 || out.size >= 600 || value === null || value === undefined) return out;
+
+  if (Array.isArray(value)) {
+    value.slice(0, 3).forEach((item) => collectKeyPaths(item, prefix ? `${prefix}[]` : '[]', out, depth + 1));
+    return out;
+  }
+
+  if (typeof value !== 'object') return out;
+
+  for (const [key, child] of Object.entries(value)) {
+    if (out.size >= 600) break;
+    const path = prefix ? `${prefix}.${key}` : key;
+    out.add(path);
+    collectKeyPaths(child, path, out, depth + 1);
+  }
+  return out;
+}
+
+function relevantFieldPaths(paths) {
+  return paths.filter((path) => {
+    const normalized = path.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    return RELEVANT_FIELD_TOKENS.some((token) => normalized.includes(token));
+  });
 }
 
 async function openTseDataset(page) {
@@ -233,6 +276,109 @@ async function downloadResponse(env, key, dataset) {
   }
 }
 
+async function inspectDivulgaCandFields(env) {
+  let browser;
+  const startedAt = Date.now();
+  try {
+    browser = await puppeteer.launch(env.BROWSER);
+    const page = await browser.newPage();
+    await page.setUserAgent(USER_AGENT);
+
+    const portalResponse = await page.goto(DIVULGACAND_URL, {
+      waitUntil: 'domcontentloaded',
+      timeout: 30000,
+    });
+    const portalStatus = portalResponse?.status() ?? null;
+    if (portalStatus === null || portalStatus >= 400) {
+      throw new Error(`DivulgaCand retornou status ${portalStatus}`);
+    }
+
+    const raw = await page.evaluate(async ({ apiBase, test }) => {
+      async function getJson(path) {
+        const response = await fetch(path, {
+          method: 'GET',
+          headers: { Accept: 'application/json' },
+          credentials: 'same-origin',
+        });
+        const text = await response.text();
+        let body = null;
+        try {
+          body = JSON.parse(text);
+        } catch {
+          body = null;
+        }
+        return { status: response.status, body };
+      }
+
+      const elections = await getJson(`${apiBase}/eleicao/ordinarias`);
+      const election = Array.isArray(elections.body)
+        ? elections.body.find((item) => Number(item?.ano) === Number(test.ano))
+        : null;
+      const electionId = election?.id ?? null;
+
+      let candidate = { status: null, body: null };
+      if (electionId !== null) {
+        candidate = await getJson(
+          `${apiBase}/candidatura/buscar/${test.ano}/${test.uf}/${electionId}/candidato/${test.sqCandidato}`,
+        );
+      }
+
+      return {
+        electionsStatus: elections.status,
+        electionId,
+        candidateStatus: candidate.status,
+        candidateBody: candidate.body,
+      };
+    }, { apiBase: DIVULGACAND_API_BASE, test: DIVULGACAND_TEST });
+
+    const candidateBody = raw.candidateBody;
+    const paths = candidateBody && typeof candidateBody === 'object'
+      ? [...collectKeyPaths(candidateBody)].sort()
+      : [];
+    const topLevelKeys = candidateBody && !Array.isArray(candidateBody) && typeof candidateBody === 'object'
+      ? Object.keys(candidateBody).sort()
+      : [];
+
+    return {
+      ok: raw.candidateStatus === 200 && paths.length > 0,
+      tested_at_utc: new Date().toISOString(),
+      worker_revision: WORKER_REVISION,
+      source: 'DivulgaCandContas / TSE',
+      test_reference: {
+        ano: DIVULGACAND_TEST.ano,
+        uf: DIVULGACAND_TEST.uf,
+        sq_candidato: DIVULGACAND_TEST.sqCandidato,
+        election_id: raw.electionId,
+      },
+      http: {
+        portal_status: portalStatus,
+        elections_status: raw.electionsStatus,
+        candidate_detail_status: raw.candidateStatus,
+      },
+      field_inventory: {
+        top_level_keys: topLevelKeys,
+        relevant_paths: relevantFieldPaths(paths),
+        total_unique_paths: paths.length,
+      },
+      privacy: {
+        values_returned: false,
+        note: 'O diagnostico retorna somente nomes de campos e status HTTP; valores do candidato nao sao expostos.',
+      },
+      elapsed_ms: Date.now() - startedAt,
+    };
+  } catch (error) {
+    return {
+      ok: false,
+      tested_at_utc: new Date().toISOString(),
+      worker_revision: WORKER_REVISION,
+      error: safeError(error),
+      elapsed_ms: Date.now() - startedAt,
+    };
+  } finally {
+    if (browser) await browser.close().catch(() => undefined);
+  }
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -246,7 +392,8 @@ export default {
         download_test: '/download-test?dataset=candidatos|complementar',
         download: '/download?dataset=candidatos|complementar',
         download_complementar: '/download-complementar',
-        download_auth: 'Bearer token required',
+        inspect_divulgacand_fields: '/inspect-divulgacand-fields',
+        protected_endpoints_auth: 'Bearer token required',
       });
     }
 
@@ -272,6 +419,12 @@ export default {
       const { key, dataset } = selectedDataset(url);
       if (!dataset) return json({ error: 'Dataset invalido', allowed: Object.keys(DATASETS) }, 400);
       return downloadResponse(env, key, dataset);
+    }
+
+    if (url.pathname === '/inspect-divulgacand-fields') {
+      if (!authorized(request, env)) return json({ error: 'Unauthorized' }, 401);
+      const result = await inspectDivulgaCandFields(env);
+      return json(result, result.ok ? 200 : 502);
     }
 
     return json({ error: 'Not found', worker_revision: WORKER_REVISION }, 404);
