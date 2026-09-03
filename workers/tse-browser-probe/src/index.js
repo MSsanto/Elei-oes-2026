@@ -18,6 +18,47 @@ function safeError(error) {
   return error instanceof Error ? error.message : String(error);
 }
 
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function toHex(buffer) {
+  return [...new Uint8Array(buffer)].map((value) => value.toString(16).padStart(2, '0')).join('');
+}
+
+function base64ToBytes(base64) {
+  const binary = atob(base64);
+  const bytes = new Uint8Array(binary.length);
+  for (let index = 0; index < binary.length; index += 1) {
+    bytes[index] = binary.charCodeAt(index);
+  }
+  return bytes;
+}
+
+function headersToObject(headers = []) {
+  return Object.fromEntries(headers.map((header) => [String(header.name).toLowerCase(), header.value]));
+}
+
+async function openTseDataset(page) {
+  await page.setUserAgent(USER_AGENT);
+
+  const portalResponse = await page.goto(DATASET_URL, {
+    waitUntil: 'domcontentloaded',
+    timeout: 30000,
+  });
+
+  const portalStatus = portalResponse?.status() ?? null;
+  const discoveredZip = await page
+    .$$eval('a[href*="consulta_cand_2026.zip"]', (links) => links.map((link) => link.href).find(Boolean) || null)
+    .catch(() => null);
+
+  return {
+    portalStatus,
+    discoveredZip,
+    zipUrl: discoveredZip || ZIP_URL,
+  };
+}
+
 async function probeTse(env) {
   const startedAt = Date.now();
   let browser;
@@ -38,14 +79,8 @@ async function probeTse(env) {
   try {
     browser = await puppeteer.launch(env.BROWSER);
     const page = await browser.newPage();
-    await page.setUserAgent(USER_AGENT);
+    const { portalStatus, discoveredZip, zipUrl } = await openTseDataset(page);
 
-    const portalResponse = await page.goto(DATASET_URL, {
-      waitUntil: 'domcontentloaded',
-      timeout: 30000,
-    });
-
-    const portalStatus = portalResponse?.status() ?? null;
     const portalTitle = await page.title().catch(() => '');
     const bodyText = await page.evaluate(() => document.body?.innerText?.slice(0, 500) || '').catch(() => '');
 
@@ -56,11 +91,6 @@ async function probeTse(env) {
       body_preview: bodyText,
     };
 
-    const discoveredZip = await page
-      .$$eval('a[href*="consulta_cand_2026.zip"]', (links) => links.map((link) => link.href).find(Boolean) || null)
-      .catch(() => null);
-
-    const zipUrl = discoveredZip || ZIP_URL;
     let observedResponse = null;
 
     const onResponse = (response) => {
@@ -92,10 +122,7 @@ async function probeTse(env) {
       }
     } catch (error) {
       navigationError = safeError(error);
-      // Downloads binarios podem abortar a navegacao do Chromium mesmo quando
-      // a resposta HTTP foi aceita. O listener de 'response' acima preserva
-      // o status observado nesses casos.
-      await new Promise((resolve) => setTimeout(resolve, 1200));
+      await sleep(1200);
     } finally {
       page.off('response', onResponse);
     }
@@ -130,6 +157,146 @@ async function probeTse(env) {
   }
 }
 
+async function testZipBodyCapture(env) {
+  const startedAt = Date.now();
+  let browser;
+
+  const result = {
+    ok: false,
+    tested_at_utc: new Date().toISOString(),
+    expected_zip_url: ZIP_URL,
+    strategy: 'Chrome DevTools Protocol Fetch interception',
+    capture: null,
+    note: 'Teste de leitura dos bytes do ZIP via CDP. Nenhum dado publicado e alterado.',
+  };
+
+  try {
+    browser = await puppeteer.launch(env.BROWSER);
+    const page = await browser.newPage();
+    const { portalStatus, discoveredZip, zipUrl } = await openTseDataset(page);
+
+    if (portalStatus === null || portalStatus >= 400) {
+      throw new Error(`Portal do TSE retornou status ${portalStatus}`);
+    }
+
+    const cdp = await page.createCDPSession();
+    await cdp.send('Fetch.enable', {
+      patterns: [
+        {
+          urlPattern: '*consulta_cand_2026.zip*',
+          requestStage: 'Response',
+        },
+      ],
+    });
+
+    let resolveCapture;
+    const capturePromise = new Promise((resolve) => {
+      resolveCapture = resolve;
+    });
+
+    const onPaused = async (event) => {
+      const requestUrl = event?.request?.url || '';
+
+      if (!requestUrl.includes('consulta_cand_2026.zip')) {
+        await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
+        return;
+      }
+
+      const responseHeaders = headersToObject(event.responseHeaders || []);
+      let bodyError = null;
+      let bytes = null;
+
+      try {
+        const body = await cdp.send('Fetch.getResponseBody', { requestId: event.requestId });
+        bytes = body.base64Encoded
+          ? base64ToBytes(body.body)
+          : new TextEncoder().encode(body.body);
+      } catch (error) {
+        bodyError = safeError(error);
+      }
+
+      await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
+
+      resolveCapture({
+        url: requestUrl,
+        status: event.responseStatusCode ?? null,
+        response_headers: responseHeaders,
+        bytes,
+        body_error: bodyError,
+      });
+    };
+
+    cdp.on('Fetch.requestPaused', onPaused);
+
+    let navigationError = null;
+    try {
+      await page.goto(zipUrl, {
+        waitUntil: 'domcontentloaded',
+        timeout: 20000,
+      });
+    } catch (error) {
+      navigationError = safeError(error);
+    }
+
+    const captured = await Promise.race([
+      capturePromise,
+      sleep(12000).then(() => null),
+    ]);
+
+    cdp.off('Fetch.requestPaused', onPaused);
+    await cdp.send('Fetch.disable').catch(() => undefined);
+
+    if (!captured) {
+      throw new Error('A resposta HTTP do ZIP nao foi interceptada pelo CDP.');
+    }
+
+    if (!captured.bytes) {
+      result.capture = {
+        discovered_in_portal: Boolean(discoveredZip),
+        url: captured.url,
+        status: captured.status,
+        content_type: captured.response_headers?.['content-type'] || null,
+        declared_content_length: captured.response_headers?.['content-length'] || null,
+        navigation_error: navigationError,
+        body_error: captured.body_error,
+      };
+      result.elapsed_ms = Date.now() - startedAt;
+      return result;
+    }
+
+    const data = captured.bytes;
+    const digest = await crypto.subtle.digest('SHA-256', data);
+    const signature = Array.from(data.slice(0, 4));
+    const zipMagic = signature.length >= 2 && signature[0] === 0x50 && signature[1] === 0x4b;
+
+    result.capture = {
+      discovered_in_portal: Boolean(discoveredZip),
+      url: captured.url,
+      status: captured.status,
+      content_type: captured.response_headers?.['content-type'] || null,
+      declared_content_length: captured.response_headers?.['content-length'] || null,
+      captured_bytes: data.byteLength,
+      first_four_bytes: signature,
+      zip_magic_ok: zipMagic,
+      sha256: toHex(digest),
+      navigation_error: navigationError,
+      body_error: captured.body_error,
+    };
+
+    result.ok = captured.status === 200 && zipMagic && data.byteLength > 1000000;
+    result.elapsed_ms = Date.now() - startedAt;
+    return result;
+  } catch (error) {
+    result.error = safeError(error);
+    result.elapsed_ms = Date.now() - startedAt;
+    return result;
+  } finally {
+    if (browser) {
+      await browser.close().catch(() => undefined);
+    }
+  }
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -139,6 +306,8 @@ export default {
         service: 'eleicoes-2026-tse-browser-probe',
         status: 'ready',
         probe: '/probe',
+        download_test: '/download-test',
+        download_test_strategy: 'CDP Fetch interception',
         purpose: 'Testar se o TSE aceita Cloudflare Browser Run antes de migrar a coleta automatica.',
       });
     }
@@ -148,6 +317,11 @@ export default {
       return json(result, result.ok ? 200 : 502);
     }
 
-    return json({ error: 'Not found', probe: '/probe' }, 404);
+    if (url.pathname === '/download-test') {
+      const result = await testZipBodyCapture(env);
+      return json(result, result.ok ? 200 : 502);
+    }
+
+    return json({ error: 'Not found', probe: '/probe', download_test: '/download-test' }, 404);
   },
 };

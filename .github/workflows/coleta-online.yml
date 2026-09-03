@@ -1,0 +1,60 @@
+name: Coleta online TSE + Camara
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta-online-eleicoes-2026
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Coletar candidatos do TSE via Cloudflare Browser Run
+        env:
+          TSE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: python scripts/fetch_candidates_cloud.py
+
+      - name: Atualizar catalogo historico da Camara
+        run: python scripts/fetch_camara.py
+
+      - name: Atualizar mapa de identidades TSE e Camara
+        run: python scripts/build_identity_map.py
+
+      - name: Atualizar historico parlamentar
+        run: python scripts/fetch_camara_historico.py --max-age-hours 12
+
+      - name: Atualizar atividade parlamentar de 2026
+        run: python scripts/fetch_camara_atividade.py --ano 2026 --max-age-hours 24
+
+      - name: Publicar dados processados no repositorio
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteracao de dados para publicar."
+            exit 0
+          fi
+
+          git commit -m "data: atualizar TSE e historico da Camara via cloud"
+          git pull --rebase origin main
+          git push origin HEAD:main
