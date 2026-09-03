@@ -2,11 +2,22 @@ name: Atualizar dados do TSE
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/fetch_candidates.py"
+      - ".github/workflows/update-data.yml"
   schedule:
-    - cron: "17 9 * * *"
+    # 00:17, 06:17, 12:17 e 18:17 no horário de Brasília (UTC-3).
+    - cron: "17 3,9,15,21 * * *"
 
 permissions:
   contents: write
+
+concurrency:
+  group: tse-data-update
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -24,7 +35,18 @@ jobs:
       - name: Coletar candidaturas
         run: python scripts/fetch_candidates.py
 
-      - name: Publicar alterações
+      - name: Configurar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Validar build do site
+        run: |
+          npm install
+          npm run build
+
+      - name: Publicar alterações nos dados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
