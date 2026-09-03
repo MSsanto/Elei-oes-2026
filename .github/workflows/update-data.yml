@@ -24,6 +24,23 @@ jobs:
       - name: Validar sintaxe do coletor Python
         run: python3 -m py_compile scripts/fetch_candidates.py
 
+      - name: Validar sintaxe dos coletores PowerShell
+        shell: pwsh
+        run: |
+          $files = @(
+            'scripts/windows/coletar_e_publicar.ps1',
+            'scripts/windows/fetch_candidates_windows.ps1'
+          )
+          foreach ($file in $files) {
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($file, [ref]$null, [ref]$errors)
+            if ($errors.Count -gt 0) {
+              $errors | ForEach-Object { Write-Error $_.Message }
+              exit 1
+            }
+            Write-Host "OK: $file"
+          }
+
       - name: Configurar Node
         uses: actions/setup-node@v4
         with:
