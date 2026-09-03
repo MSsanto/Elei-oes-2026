@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Dados brutos baixados do TSE
+data/raw/
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Ambiente
+.env
+
+# Sistema / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
