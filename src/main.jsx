@@ -44,10 +44,38 @@ function formatBirthDate(value) {
   }
 }
 
+function formatPercent(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return '';
+  return `${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(number)}%`;
+}
+
+function formatNumber(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return '';
+  return number.toLocaleString('pt-BR');
+}
+
 function uniqueSorted(items, field) {
   return [...new Set(items.map((item) => item[field]).filter(Boolean))].sort((a, b) =>
     a.localeCompare(b, 'pt-BR'),
   );
+}
+
+function candidateHistoricalDdds(candidate) {
+  const history = candidate?.historico_eleitoral_2022;
+  const values = Array.isArray(history?.ddds_principais) && history.ddds_principais.length
+    ? history.ddds_principais
+    : history?.ddd_principal ? [history.ddd_principal] : [];
+  return values.map(String).filter(Boolean);
+}
+
+function historicalDddDisplay(history) {
+  const ddds = Array.isArray(history?.ddds_principais) && history.ddds_principais.length
+    ? history.ddds_principais
+    : history?.ddd_principal ? [history.ddd_principal] : [];
+  if (!ddds.length) return '';
+  return ddds.map((ddd) => `DDD ${ddd}`).join(' / ');
 }
 
 function initials(name = '') {
@@ -86,6 +114,8 @@ function CandidateAvatar({ candidate, large = false }) {
 function CandidateCard({ candidate, onOpen }) {
   const hasChamberHistory = candidate.identidade_camara?.historico_camara_localizado === true;
   const situation = displayTseValue(candidate.situacao_candidatura);
+  const history = candidate.historico_eleitoral_2022;
+  const historicalDdd = historicalDddDisplay(history);
 
   return (
     <button className="candidate-card" onClick={() => onOpen(candidate)} type="button">
@@ -102,6 +132,11 @@ function CandidateCard({ candidate, onOpen }) {
           {situation && <span>{situation}</span>}
           {candidate.ocupacao && <span>{candidate.ocupacao}</span>}
           {hasChamberHistory && <span>Histórico na Câmara</span>}
+          {historicalDdd && (
+            <span title="DDD com maior votação nominal mapeada para Deputado Federal em 2022">
+              2022 · {historicalDdd}{history?.percentual_ddd_principal !== undefined ? ` · ${formatPercent(history.percentual_ddd_principal)}` : ''}
+            </span>
+          )}
         </div>
       </div>
       <span className="open-indicator" aria-hidden="true">→</span>
@@ -113,6 +148,12 @@ function CandidateModal({ candidate, onClose }) {
   if (!candidate) return null;
   const identity = candidate.identidade_camara;
   const confirmed = identity?.correspondencia_status === 'confirmada';
+  const history = candidate.historico_eleitoral_2022;
+  const historicalDdd = historicalDddDisplay(history);
+  const distribution = Array.isArray(history?.distribuicao_ddd) ? history.distribuicao_ddd : [];
+  const distributionText = distribution
+    .map((item) => `DDD ${item.ddd}: ${formatPercent(item.percentual)} (${formatNumber(item.votos)} votos)`)
+    .join(' · ');
 
   const rows = [
     ['Nome completo', candidate.nome],
@@ -129,6 +170,15 @@ function CandidateModal({ candidate, onClose }) {
     ['Data de nascimento', formatBirthDate(candidate.data_nascimento)],
     ['Identificador TSE', candidate.id_tse],
   ].filter(([, value]) => value !== null && value !== undefined && value !== '');
+
+  const historyRows = history ? [
+    ['DDD(s) principal(is) da votação', historicalDdd],
+    ['UF da candidatura em 2022', history.uf_2022],
+    ['Parcela dos votos mapeados no DDD principal', formatPercent(history.percentual_ddd_principal)],
+    ['Votos nominais em 2022', formatNumber(history.votos_nominais_total)],
+    ['Cobertura município → DDD', formatPercent(history.cobertura_ddd_percentual)],
+    ['Distribuição dos votos mapeados', distributionText],
+  ].filter(([, value]) => value !== null && value !== undefined && value !== '') : [];
 
   return (
     <div className="modal-backdrop" onMouseDown={onClose} role="presentation">
@@ -154,6 +204,24 @@ function CandidateModal({ candidate, onClose }) {
             <strong>Histórico parlamentar não confirmado.</strong>{' '}
             O projeto só associa uma candidatura à Câmara quando a correspondência entre as fontes oficiais é segura pela metodologia publicada.
           </div>
+        )}
+
+        {history && historyRows.length > 0 && (
+          <>
+            <div className="profile-section-title">Região eleitoral histórica — votação 2022</div>
+            <div className="history-note">
+              <strong>Referência histórica de votação.</strong>{' '}
+              O DDD indica onde se concentrou a maior parcela dos votos nominais mapeados para Deputado Federal em 2022. Não é domicílio eleitoral, residência nem endereço.
+            </div>
+            <dl className="detail-grid history-detail-grid">
+              {historyRows.map(([label, value]) => (
+                <div key={label}>
+                  <dt>{label}</dt>
+                  <dd>{value}</dd>
+                </div>
+              ))}
+            </dl>
+          </>
         )}
 
         <div className="profile-section-title">Candidatura 2026</div>
@@ -228,6 +296,7 @@ function App() {
   const [metadata, setMetadata] = useState(null);
   const [query, setQuery] = useState('');
   const [uf, setUf] = useState('');
+  const [historicalDdd, setHistoricalDdd] = useState('');
   const [party, setParty] = useState('');
   const [selected, setSelected] = useState(null);
   const [status, setStatus] = useState('loading');
@@ -278,21 +347,40 @@ function App() {
 
   const ufs = useMemo(() => uniqueSorted(candidates, 'uf'), [candidates]);
   const parties = useMemo(() => uniqueSorted(candidates, 'partido'), [candidates]);
+  const historicalDdds = useMemo(() => {
+    const pool = uf ? candidates.filter((candidate) => candidate.uf === uf) : candidates;
+    const values = new Set();
+    pool.forEach((candidate) => candidateHistoricalDdds(candidate).forEach((ddd) => values.add(ddd)));
+    return [...values].sort((a, b) => Number(a) - Number(b) || a.localeCompare(b, 'pt-BR'));
+  }, [candidates, uf]);
+  const hasHistoricalRegions = useMemo(
+    () => candidates.some((candidate) => candidateHistoricalDdds(candidate).length > 0),
+    [candidates],
+  );
+
+  useEffect(() => {
+    if (historicalDdd && !historicalDdds.includes(historicalDdd)) setHistoricalDdd('');
+  }, [historicalDdd, historicalDdds]);
 
   const filtered = useMemo(() => {
     const term = normalize(query.trim());
     return candidates.filter((candidate) => {
       if (uf && candidate.uf !== uf) return false;
+      if (historicalDdd && !candidateHistoricalDdds(candidate).includes(historicalDdd)) return false;
       if (party && candidate.partido !== party) return false;
       if (!term) return true;
       return [candidate.nome, candidate.nome_urna, candidate.numero, candidate.partido, candidate.ocupacao].some((value) => normalize(value).includes(term));
     });
-  }, [candidates, query, uf, party]);
+  }, [candidates, query, uf, historicalDdd, party]);
 
   const searchSuggestions = useMemo(() => {
     const term = normalize(query.trim());
     if (term.length < 2 || status !== 'ready') return [];
-    const pool = candidates.filter((candidate) => (!uf || candidate.uf === uf) && (!party || candidate.partido === party));
+    const pool = candidates.filter((candidate) => (
+      (!uf || candidate.uf === uf)
+      && (!historicalDdd || candidateHistoricalDdds(candidate).includes(historicalDdd))
+      && (!party || candidate.partido === party)
+    ));
     const candidateMatches = pool
       .filter((candidate) => [candidate.nome_urna, candidate.nome, candidate.numero, candidate.partido].some((value) => normalize(value).includes(term)))
       .sort((a, b) => {
@@ -305,9 +393,18 @@ function App() {
     const partyMatches = parties
       .filter((item) => normalize(item).includes(term))
       .slice(0, 3)
-      .map((item) => ({ type: 'party', key: `party-${item}`, party: item, count: candidates.filter((candidate) => candidate.partido === item && (!uf || candidate.uf === uf)).length }));
+      .map((item) => ({
+        type: 'party',
+        key: `party-${item}`,
+        party: item,
+        count: candidates.filter((candidate) => (
+          candidate.partido === item
+          && (!uf || candidate.uf === uf)
+          && (!historicalDdd || candidateHistoricalDdds(candidate).includes(historicalDdd))
+        )).length,
+      }));
     return [...candidateMatches, ...partyMatches].slice(0, 10);
-  }, [candidates, parties, query, uf, party, status]);
+  }, [candidates, parties, query, uf, historicalDdd, party, status]);
 
   useEffect(() => {
     setActiveSuggestion(-1);
@@ -347,6 +444,7 @@ function App() {
   function clearFilters() {
     setQuery('');
     setUf('');
+    setHistoricalDdd('');
     setParty('');
     setSuggestionsOpen(false);
     setActiveSuggestion(-1);
@@ -368,7 +466,7 @@ function App() {
         <div className="hero-content" id="top">
           <div className="eyebrow">DADOS PÚBLICOS · TSE · CÂMARA · CÓDIGO ABERTO</div>
           <h1>Da candidatura ao mandato,<br /><span>dados oficiais em um só lugar.</span></h1>
-          <p className="hero-copy">Consulta independente das candidaturas a Deputado Federal em 2026, integrada progressivamente ao histórico parlamentar publicado pelas fontes oficiais.</p>
+          <p className="hero-copy">Consulta independente das candidaturas a Deputado Federal em 2026, integrada progressivamente ao histórico parlamentar e à distribuição regional de votos publicada pelas fontes oficiais.</p>
           <div className="trust-row"><span>Fontes oficiais identificadas</span><span>Sem vínculo partidário</span><span>Metodologia auditável</span></div>
         </div>
       </header>
@@ -385,7 +483,7 @@ function App() {
           <div className="section-heading"><div><span className="section-kicker">CANDIDATURAS 2026</span><h2>Encontre um candidato</h2></div><p>{status === 'ready' ? `${filtered.length.toLocaleString('pt-BR')} resultado(s)` : statusMessage}</p></div>
           {metadata?.mode === 'live-cloudflare' && <div className="live-notice">Prévia ao vivo: dados de SP consultados pelo Cloudflare diretamente no DivulgaCandContas/TSE.</div>}
 
-          <div className="filters">
+          <div className={`filters${hasHistoricalRegions ? ' filters-with-history' : ''}`}>
             <div className="autocomplete" onBlur={() => window.setTimeout(() => setSuggestionsOpen(false), 120)}>
               <label className="search-box" htmlFor="candidate-search"><span>⌕</span><input id="candidate-search" type="search" placeholder="Digite ao menos 2 letras do nome, número ou partido..." value={query} autoComplete="off" role="combobox" aria-autocomplete="list" aria-expanded={suggestionsOpen} aria-controls="search-suggestions" aria-activedescendant={activeSuggestion >= 0 ? `search-suggestion-${activeSuggestion}` : undefined} onFocus={() => query.trim().length >= 2 && searchSuggestions.length && setSuggestionsOpen(true)} onChange={(event) => { setQuery(event.target.value); setSuggestionsOpen(true); }} onKeyDown={handleSearchKeyDown} /></label>
               {suggestionsOpen && searchSuggestions.length > 0 && (
@@ -401,9 +499,20 @@ function App() {
               )}
             </div>
             <select value={uf} onChange={(event) => setUf(event.target.value)} aria-label="Filtrar por UF"><option value="">Todas as UFs</option>{ufs.map((item) => <option key={item} value={item}>{item}</option>)}</select>
+            {hasHistoricalRegions && (
+              <select value={historicalDdd} onChange={(event) => setHistoricalDdd(event.target.value)} aria-label="Filtrar por DDD histórico principal da votação de 2022">
+                <option value="">Todos os DDDs históricos</option>
+                {historicalDdds.map((item) => <option key={item} value={item}>DDD {item}</option>)}
+              </select>
+            )}
             <select value={party} onChange={(event) => setParty(event.target.value)} aria-label="Filtrar por partido"><option value="">Todos os partidos</option>{parties.map((item) => <option key={item} value={item}>{item}</option>)}</select>
-            {(query || uf || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
+            {(query || uf || historicalDdd || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
           </div>
+          {hasHistoricalRegions && (
+            <p className="history-filter-note">
+              <strong>DDD histórico:</strong> região que concentrou a maior parcela dos votos nominais mapeados para Deputado Federal em 2022. Não representa domicílio eleitoral.
+            </p>
+          )}
 
           {status === 'loading' && <div className="state-card"><div className="loader" />{statusMessage}</div>}
           {status === 'waiting' && <div className="state-card waiting"><strong>Site publicado e frontend pronto.</strong><span>{statusMessage}</span></div>}
@@ -415,9 +524,9 @@ function App() {
         <section className="method-section">
           <div><span className="section-kicker">COMO FUNCIONA</span><h2>Da fonte oficial à consulta pública</h2></div>
           <div className="method-grid">
-            <article><span>01</span><h3>Coleta</h3><p>O TSE alimenta a base eleitoral. A Câmara fornece cadastro, histórico, despesas, proposições e registros individuais de votação.</p></article>
-            <article><span>02</span><h3>Vínculo auditável</h3><p>O sistema só confirma TSE ↔ Câmara quando nome civil e data de nascimento coincidem de forma exata e única.</p></article>
-            <article><span>03</span><h3>Publicação</h3><p>Dados processados ficam versionados no GitHub e cada alteração é publicada pelo Cloudflare Pages.</p></article>
+            <article><span>01</span><h3>Coleta</h3><p>O TSE alimenta a base eleitoral e a votação histórica por município. A Anatel fornece o Código Nacional (DDD), e a Câmara fornece o histórico parlamentar.</p></article>
+            <article><span>02</span><h3>Vínculo auditável</h3><p>As correspondências entre eleições e entre TSE ↔ Câmara só são confirmadas quando a metodologia encontra uma identidade exata, única e verificável nos campos utilizados.</p></article>
+            <article><span>03</span><h3>Publicação</h3><p>Dados processados ficam versionados no GitHub e cada alteração é publicada pelo Cloudflare Pages, com distinção explícita entre fatos eleitorais e inferências que o projeto não faz.</p></article>
           </div>
         </section>
       </main>
