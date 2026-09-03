@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "tse_candidaturas_2026",
+      "name": "TSE - Candidaturas 2026",
+      "authority": "Tribunal Superior Eleitoral",
+      "type": "dataset",
+      "url": "https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026",
+      "domains": ["candidatura", "bens", "redes_sociais", "foto"]
+    },
+    {
+      "id": "tse_contas_2026",
+      "name": "TSE - Prestacao de Contas Eleitorais 2026",
+      "authority": "Tribunal Superior Eleitoral",
+      "type": "dataset",
+      "url": "https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026",
+      "domains": ["receitas_eleitorais", "despesas_eleitorais", "fornecedores", "doadores"]
+    },
+    {
+      "id": "camara_dados_abertos",
+      "name": "Camara dos Deputados - Dados Abertos",
+      "authority": "Camara dos Deputados",
+      "type": "api_and_files",
+      "url": "https://dadosabertos.camara.leg.br/swagger/api.html",
+      "api_base": "https://dadosabertos.camara.leg.br/api/v2",
+      "domains": ["deputados", "historico_mandato", "despesas_mandato", "proposicoes", "votacoes", "votos_nominais"]
+    },
+    {
+      "id": "transferegov_especiais",
+      "name": "Transferegov.br - Transferencias Especiais",
+      "authority": "Ministerio da Gestao e da Inovacao em Servicos Publicos",
+      "type": "api",
+      "url": "https://api-publica.transferegov.gestao.gov.br/",
+      "docs": "https://docs.api.transferegov.gestao.gov.br/transferenciasespeciais/",
+      "domains": ["emendas", "transferencias_especiais", "beneficiarios", "municipios", "pagamentos", "planos_trabalho", "relatorios_gestao", "execucao"]
+    }
+  ],
+  "rules": {
+    "official_sources_only_for_facts": true,
+    "keep_source_url_per_record": true,
+    "keep_collected_at_per_record": true,
+    "do_not_infer_missing_execution": true,
+    "do_not_score_or_rank_politicians": true
+  }
+}
