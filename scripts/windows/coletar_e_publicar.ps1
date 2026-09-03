@@ -28,10 +28,6 @@ function Write-CollectorLog {
 function Invoke-External {
     param([string]$Command, [string[]]$Arguments)
 
-    # Windows PowerShell 5.1 transforma a saida STDERR de programas nativos em
-    # ErrorRecord quando usamos 2>&1. Git escreve mensagens normais (por exemplo
-    # "From https://github.com/...") em STDERR, portanto nao podemos deixar
-    # $ErrorActionPreference = Stop durante a captura.
     $previousPreference = $ErrorActionPreference
     $exitCode = 0
     $output = @()
@@ -89,6 +85,49 @@ function Find-GitExecutable {
     return $null
 }
 
+function Test-NativeCommand {
+    param([string]$Command, [string[]]$Arguments)
+    $previousPreference = $ErrorActionPreference
+    try {
+        $ErrorActionPreference = "Continue"
+        & $Command @Arguments *> $null
+        return ($LASTEXITCODE -eq 0)
+    }
+    finally {
+        $ErrorActionPreference = $previousPreference
+    }
+}
+
+function Find-PythonExecutable {
+    $launcher = Get-Command py.exe -ErrorAction SilentlyContinue
+    if ($launcher -and (Test-NativeCommand $launcher.Source @("-3", "--version"))) {
+        return @{ Command = $launcher.Source; Prefix = @("-3") }
+    }
+
+    $python = Get-Command python.exe -ErrorAction SilentlyContinue
+    if ($python -and (Test-NativeCommand $python.Source @("--version"))) {
+        return @{ Command = $python.Source; Prefix = @() }
+    }
+
+    $roots = @(
+        (Join-Path $env:LOCALAPPDATA "Programs\Python"),
+        $env:ProgramFiles
+    )
+    if (${env:ProgramFiles(x86)}) { $roots += ${env:ProgramFiles(x86)} }
+
+    foreach ($root in $roots) {
+        if (-not $root -or -not (Test-Path $root)) { continue }
+        $found = Get-ChildItem -Path $root -Filter "python.exe" -File -Recurse -ErrorAction SilentlyContinue |
+            Where-Object { $_.FullName -match "Python" } |
+            Sort-Object FullName -Descending |
+            Select-Object -First 1
+        if ($found -and (Test-NativeCommand $found.FullName @("--version"))) {
+            return @{ Command = $found.FullName; Prefix = @() }
+        }
+    }
+    return $null
+}
+
 try {
     Set-Location $RepoRoot
     Write-CollectorLog "Iniciando coleta nacional Eleicoes 2026."
@@ -134,10 +173,41 @@ try {
         Invoke-External $GitCommand @("pull", "--rebase", "origin", "main")
     }
 
-    Write-CollectorLog "Executando coletor PowerShell do TSE (sem Python)..."
-    $CollectorScript = Join-Path $PSScriptRoot "fetch_candidates_windows.ps1"
-    if (-not (Test-Path $CollectorScript)) { throw "Coletor PowerShell nao encontrado: $CollectorScript" }
-    Invoke-External "powershell.exe" @("-NoProfile", "-ExecutionPolicy", "Bypass", "-File", $CollectorScript)
+    $DirectCollectorScript = Join-Path $PSScriptRoot "fetch_candidates_windows.ps1"
+    $directSuccess = $false
+    if (Test-Path $DirectCollectorScript) {
+        Write-CollectorLog "Tentando coleta HTTP direta do TSE..."
+        try {
+            Invoke-External "powershell.exe" @("-NoProfile", "-ExecutionPolicy", "Bypass", "-File", $DirectCollectorScript)
+            $directSuccess = $true
+        }
+        catch {
+            Write-CollectorLog "A coleta HTTP direta foi bloqueada. Ativando fallback via Chrome/Python."
+        }
+    }
+
+    if (-not $directSuccess) {
+        $PythonInfo = Find-PythonExecutable
+        if (-not $PythonInfo) {
+            throw "A coleta direta recebeu 403 e Python 3 nao foi localizado para o fallback via Chrome."
+        }
+
+        $PythonCommand = [string]$PythonInfo.Command
+        $PythonPrefix = [string[]]$PythonInfo.Prefix
+        Write-CollectorLog "Python localizado: $PythonCommand"
+        Invoke-External $PythonCommand @($PythonPrefix + @("--version"))
+
+        $seleniumInstalled = Test-NativeCommand $PythonCommand @($PythonPrefix + @("-c", "import selenium"))
+        if (-not $seleniumInstalled) {
+            Write-CollectorLog "Selenium nao encontrado. Instalando dependencia do coletor no seu perfil de usuario..."
+            Invoke-External $PythonCommand @($PythonPrefix + @("-m", "pip", "install", "--user", "-r", "requirements-collector.txt"))
+        }
+
+        Write-CollectorLog "Abrindo Chrome automatizado para atravessar o bloqueio do TSE..."
+        Write-CollectorLog "Uma janela do Chrome pode aparecer. Nao a feche durante a coleta."
+        $BrowserCollector = Join-Path $RepoRoot "scripts\fetch_candidates_browser.py"
+        Invoke-External $PythonCommand @($PythonPrefix + @($BrowserCollector))
+    }
 
     if (-not (Test-Path "data\processed\deputados_federais.json")) {
         throw "O coletor terminou sem gerar data/processed/deputados_federais.json."
