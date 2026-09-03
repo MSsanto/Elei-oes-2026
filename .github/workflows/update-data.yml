@@ -28,11 +28,32 @@ jobs:
           python3 -m py_compile scripts/fetch_candidates_cloud.py
           python3 -m py_compile scripts/inspect_tse_complementary.py
           python3 -m py_compile scripts/inspect_divulgacand_fields.py
+          python3 -m py_compile scripts/build_historical_ddd_2022.py
+          python3 -m py_compile scripts/apply_historical_ddd.py
           python3 -m py_compile scripts/fetch_camara.py
           python3 -m py_compile scripts/build_identity_map.py
           python3 -m py_compile scripts/fetch_camara_historico.py
           python3 -m py_compile scripts/fetch_camara_atividade.py
           python3 -m py_compile scripts/fetch_camara_atividade_cloud.py
+
+      - name: Validar assinatura conservadora do historico regional
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+
+          spec = importlib.util.spec_from_file_location(
+              "historico_ddd", "scripts/build_historical_ddd_2022.py"
+          )
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          a = module.identity_signature("José da Silva", "01/02/1980", "MASCULINO")
+          b = module.identity_signature("JOSE   DA SILVA", "01/02/1980", "masculino")
+          c = module.identity_signature("Jose da Silva", "02/02/1980", "MASCULINO")
+          assert a == b
+          assert a != c
+          print("OK: assinatura exige nome, nascimento e genero")
+          PY
 
       - name: Validar leitura de CSV da Camara com quebra de linha
         run: |
