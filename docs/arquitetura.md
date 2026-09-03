@@ -1,69 +1,218 @@
-# Arquitetura inicial
+# Arquitetura
 
-## Estratégia do MVP
+## Visão geral
 
-O projeto será construído para funcionar sem servidor dedicado no início.
+O projeto continua priorizando pré-processamento e arquivos estáticos para manter custo baixo, mas agora passa a integrar três domínios oficiais distintos:
 
 ```text
-TSE Dados Abertos
-       |
-       v
-GitHub Actions (Python ETL)
-       |
-       +--> data/processed/*.json
-       |
-       v
-Frontend estático (Cloudflare Pages)
-       |
-       +--> consulta arquivos processados
-       |
-       +--> futuramente: Cloudflare Worker + D1 para busca/indexação
+TSE
+│ candidaturas / contas / bens
+│
+├───────────────┐
+│               ▼
+│        identidade politica
+│               ▲
+│               │
+│       Câmara dos Deputados
+│       mandato / despesas
+│       proposições / votações
+│               │
+│               ▼
+│      perfil factual unificado
+│               ▲
+│               │
+└────── Transferegov.br
+        emendas / transferências especiais
+        beneficiário / município / execução publicada
+                │
+                ▼
+       data/processed/*.json
+                │
+                ▼
+             GitHub
+                │
+                ▼
+        Cloudflare Pages
 ```
 
-## Por que começar estático
+## Estratégia de processamento
 
-A maior parte das informações eleitorais muda apenas quando o TSE publica novas extrações. Não precisamos recalcular dados a cada visita do usuário.
+O pipeline faz o trabalho pesado antes da visita do usuário:
 
-O pipeline realiza o trabalho pesado previamente:
+1. coleta dados oficiais;
+2. preserva identificadores de origem;
+3. normaliza campos sem apagar os valores originais relevantes;
+4. resolve identidades entre bases com evidências auditáveis;
+5. calcula somente agregações objetivas;
+6. gera JSONs particionados;
+7. publica apenas uma carga validada.
 
-1. baixa os conjuntos oficiais;
-2. filtra Deputado Federal;
-3. normaliza os campos;
-4. calcula agregações;
-5. gera JSONs pequenos e particionados;
-6. publica as alterações no repositório.
+O site lê os resultados processados e sempre informa a fonte e a data de atualização.
 
-O site apenas lê esses resultados.
+## Domínios
 
-Isso reduz custo, complexidade e superfície de falha.
+### Eleitoral — TSE
 
-## Evolução prevista
+Chave primária: `SQ_CANDIDATO` quando disponível.
 
-### Fase 1 — arquivos estáticos
+Dados:
 
-- candidatos por UF;
-- resumo por candidato;
-- categorias de despesas;
-- maiores fornecedores;
-- metadados de origem e atualização.
+- candidatura;
+- partido/número;
+- bens;
+- redes sociais;
+- receitas/despesas eleitorais;
+- fornecedores/doadores.
 
-### Fase 2 — índice de pesquisa
+### Parlamentar — Câmara dos Deputados
 
-Cloudflare Worker + D1 para:
+Chave de origem: `idDeputado`.
 
-- busca por candidato;
-- busca por fornecedor;
-- filtros combinados;
-- comparação entre candidaturas.
+Dados:
 
-### Fase 3 — API pública
+- cadastro;
+- histórico de exercício;
+- despesas parlamentares;
+- proposições e autoria;
+- tramitações;
+- votações;
+- votos nominais.
 
-Endpoints versionados para permitir que terceiros consumam os dados tratados pelo projeto.
+Para votos individuais, os arquivos anuais `votacoesVotos` são apropriados para processamento em lote. A ligação votação ↔ proposição deve preservar as limitações metodológicas documentadas pela própria Câmara.
 
-## Regra de armazenamento
+### Transferências — Transferegov.br
 
-Os arquivos brutos do TSE não devem ser versionados no Git. Eles são baixados durante o ETL e descartados após o processamento. O repositório guarda apenas dados derivados necessários para auditoria e funcionamento do sistema.
+Dados:
 
-## Identidade dos registros
+- emenda;
+- parlamentar autor;
+- beneficiário;
+- UF/município;
+- valores e situação;
+- planos de ação/trabalho;
+- objeto declarado;
+- relatório de gestão;
+- documentos e informações de execução publicados.
 
-Sempre que disponível, `SQ_CANDIDATO` será a chave principal para relacionar os conjuntos do TSE. Campos textuais como nome de urna não devem ser usados como identificadores.
+A aplicação deve usar o termo oficial `Transferência Especial`; “emenda Pix” pode aparecer somente como explicação/termo de busca.
+
+## Camada de identidade
+
+Bases diferentes não compartilham necessariamente o mesmo identificador.
+
+```text
+politico_id
+├── tse_sq_candidato[]
+├── camara_id_deputado[]
+├── nome_civil
+├── data_nascimento
+├── uf
+├── correspondencia_status
+└── evidencias_correspondencia[]
+```
+
+Nunca promover uma correspondência apenas por semelhança de nome.
+
+Estados:
+
+- `confirmada`;
+- `revisao_manual`;
+- `nao_encontrada`.
+
+## Estrutura de armazenamento
+
+```text
+data/processed/
+├── deputados_federais.json
+├── ufs/
+├── politicos/
+├── camara/
+│   ├── deputados.json
+│   ├── historico/
+│   ├── despesas/
+│   ├── proposicoes/
+│   └── votacoes/
+├── transferencias_especiais/
+│   ├── emendas.json
+│   ├── por_parlamentar/
+│   ├── por_municipio/
+│   └── planos/
+└── mappings/
+    └── identidades.json
+```
+
+Arquivos brutos grandes devem permanecer temporários durante o ETL; o Git recebe apenas derivados necessários à aplicação e auditoria.
+
+## Rastreabilidade de transferências especiais
+
+A aplicação não deve deduzir destino final de recursos.
+
+Estados objetivos:
+
+```text
+indicada
+  ↓
+transferida
+  ↓
+objeto_declarado
+  ↓
+execucao_informada
+  ↓
+documentos_execucao_publicados
+```
+
+Campos distintos:
+
+- `destinacao_declarada`;
+- `execucao_publicada`;
+- `documentos_publicados`;
+- `rastreabilidade`.
+
+Se uma informação não estiver disponível na fonte consultada, exibir `não localizado/publicado na fonte consultada`, sem inferência adicional.
+
+## Neutralidade
+
+O produto não terá ranking, score, nota, selo ou recomendação política. Também não implementará comparação avaliativa entre políticos.
+
+Os perfis usarão o mesmo conjunto de campos e as mesmas regras de transformação. Valores agregados devem ser puramente descritivos e manter ligação com os registros que os originaram.
+
+## Fases
+
+### Fase 1 — eleitoral
+
+- candidaturas;
+- contas eleitorais;
+- fornecedores;
+- gráficos descritivos.
+
+### Fase 2 — identidade e Câmara
+
+- catálogo de políticos;
+- vínculo TSE ↔ Câmara;
+- histórico de mandato;
+- despesas;
+- proposições;
+- votos nominais.
+
+### Fase 3 — Transferegov
+
+- emendas;
+- transferências especiais;
+- beneficiário e município;
+- planos de trabalho;
+- relatório de gestão e documentos publicados.
+
+### Fase 4 — índice/API
+
+Cloudflare Worker + D1 para pesquisa, filtros combinados, indexação de municípios/beneficiários e endpoints públicos versionados.
+
+## Auditoria por registro
+
+Sempre que aplicável, armazenar:
+
+- autoridade/fonte;
+- URL/endpoint;
+- identificador oficial;
+- data da coleta;
+- versão do pipeline;
+- transformação aplicada.
