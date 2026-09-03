@@ -1,7 +1,8 @@
 import puppeteer from '@cloudflare/puppeteer';
 
-const WORKER_REVISION = 'tse-divulgacand-inspect-v4';
-const DATASET_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
+const WORKER_REVISION = 'tse-historico-ddd-v5';
+const DATASET_URL_2026 = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
+const DATASET_URL_2022 = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2022';
 const DIVULGACAND_URL = 'https://divulgacandcontas.tse.jus.br/divulga/#/';
 const DIVULGACAND_API_BASE = '/divulga/rest/v1';
 const DIVULGACAND_TEST = {
@@ -9,18 +10,28 @@ const DIVULGACAND_TEST = {
   uf: 'AC',
   sqCandidato: '10002545667',
 };
+
 const DATASETS = {
   candidatos: {
+    portal: DATASET_URL_2026,
     url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip',
     pattern: '*consulta_cand_2026.zip*',
     filename: 'consulta_cand_2026.zip',
   },
   complementar: {
+    portal: DATASET_URL_2026,
     url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand_complementar/consulta_cand_complementar_2026.zip',
     pattern: '*consulta_cand_complementar_2026.zip*',
     filename: 'consulta_cand_complementar_2026.zip',
   },
+  candidatos2022: {
+    portal: DATASET_URL_2022,
+    url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2022.zip',
+    pattern: '*consulta_cand_2022.zip*',
+    filename: 'consulta_cand_2022.zip',
+  },
 };
+
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36';
 const RELEVANT_FIELD_TOKENS = [
   'domic',
@@ -106,9 +117,9 @@ function relevantFieldPaths(paths) {
   });
 }
 
-async function openTseDataset(page) {
+async function openTseDataset(page, portalUrl) {
   await page.setUserAgent(USER_AGENT);
-  const portalResponse = await page.goto(DATASET_URL, {
+  const portalResponse = await page.goto(portalUrl, {
     waitUntil: 'domcontentloaded',
     timeout: 30000,
   });
@@ -122,7 +133,7 @@ async function captureZip(env, dataset) {
     const page = await browser.newPage();
     await page.setUserAgent(USER_AGENT);
 
-    const portalStatus = await openTseDataset(page);
+    const portalStatus = await openTseDataset(page, dataset.portal || DATASET_URL_2026);
     if (portalStatus === null || portalStatus >= 400) {
       throw new Error(`Portal do TSE retornou status ${portalStatus}`);
     }
@@ -166,12 +177,12 @@ async function captureZip(env, dataset) {
 
     let navigationError = null;
     try {
-      await page.goto(dataset.url, { waitUntil: 'domcontentloaded', timeout: 25000 });
+      await page.goto(dataset.url, { waitUntil: 'domcontentloaded', timeout: 30000 });
     } catch (error) {
       navigationError = safeError(error);
     }
 
-    const captured = await Promise.race([capturePromise, sleep(15000).then(() => null)]);
+    const captured = await Promise.race([capturePromise, sleep(20000).then(() => null)]);
     cdp.off('Fetch.requestPaused', onPaused);
     await cdp.send('Fetch.disable').catch(() => undefined);
 
@@ -200,11 +211,13 @@ async function probeTse(env) {
   const result = {
     ok: false,
     tested_at_utc: new Date().toISOString(),
-    dataset_url: DATASET_URL,
+    dataset_url: DATASET_URL_2026,
     resources: {},
   };
 
-  for (const [key, dataset] of Object.entries(DATASETS)) {
+  // O probe regular permanece leve e valida apenas os dois recursos usados na rotina de 2026.
+  for (const key of ['candidatos', 'complementar']) {
+    const dataset = DATASETS[key];
     try {
       const captured = await captureZip(env, dataset);
       result.resources[key] = {
@@ -389,10 +402,11 @@ export default {
         status: 'ready',
         worker_revision: WORKER_REVISION,
         probe: '/probe',
-        download_test: '/download-test?dataset=candidatos|complementar',
-        download: '/download?dataset=candidatos|complementar',
+        download_test: '/download-test?dataset=candidatos|complementar|candidatos2022',
+        download: '/download?dataset=candidatos|complementar|candidatos2022',
         download_complementar: '/download-complementar',
         inspect_divulgacand_fields: '/inspect-divulgacand-fields',
+        supported_datasets: Object.keys(DATASETS),
         protected_endpoints_auth: 'Bearer token required',
       });
     }
