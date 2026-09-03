@@ -1,143 +1,130 @@
 #!/usr/bin/env python3
-"""Coleta cadastro e histórico de deputados na API oficial da Câmara.
+"""Coleta o catálogo oficial de todos os deputados que já exerceram mandato.
 
-O script usa somente a biblioteca padrão do Python e grava dados processados
-em data/processed/camara/. Não faz qualquer avaliação política.
+Fonte oficial: arquivo diário `deputados.json` dos Dados Abertos da Câmara.
+A escolha do arquivo completo é intencional: o objetivo é descobrir quais
+candidatos de 2026 já exerceram mandato, não apenas listar deputados atuais.
 """
 
 from __future__ import annotations
 
-import argparse
 import json
-import time
-import urllib.parse
+import re
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
-BASE_URL = "https://dadosabertos.camara.leg.br/api/v2"
+SOURCE_URL = "https://dadosabertos.camara.leg.br/arquivos/deputados/json/deputados.json"
 ROOT = Path(__file__).resolve().parents[1]
 OUT_DIR = ROOT / "data" / "processed" / "camara"
-USER_AGENT = "Eleicoes-2026-Transparencia/0.2 (+https://github.com/MSsanto/Elei-oes-2026)"
+USER_AGENT = "Eleicoes-2026-Transparencia/0.3 (+https://github.com/MSsanto/Elei-oes-2026)"
 
 
-def api_get(path: str, params: dict | None = None) -> dict:
-    url = f"{BASE_URL}{path}"
-    if params:
-        url += "?" + urllib.parse.urlencode(params, doseq=True)
+def pick(record: dict, *names):
+    for name in names:
+        value = record.get(name)
+        if value not in (None, ""):
+            return value
+    return None
+
+
+def extract_id(record: dict):
+    direct = pick(record, "id", "idDeputado", "ideCadastro", "codCadastro")
+    if direct not in (None, ""):
+        return direct
+    uri = str(pick(record, "uri", "url") or "")
+    match = re.search(r"/deputados/(\d+)", uri)
+    return int(match.group(1)) if match else None
+
+
+def unwrap(payload):
+    if isinstance(payload, list):
+        return payload
+    if isinstance(payload, dict):
+        for key in ("dados", "data", "deputados", "records"):
+            value = payload.get(key)
+            if isinstance(value, list):
+                return value
+        # Alguns arquivos oficiais podem vir como objeto indexado.
+        values = [value for value in payload.values() if isinstance(value, dict)]
+        if values and all(extract_id(value) for value in values):
+            return values
+    raise RuntimeError("Formato inesperado no arquivo deputados.json da Câmara")
+
+
+def download() -> list[dict]:
     request = urllib.request.Request(
-        url,
+        SOURCE_URL,
         headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
     )
-    with urllib.request.urlopen(request, timeout=60) as response:
-        return json.load(response)
+    with urllib.request.urlopen(request, timeout=120) as response:
+        payload = json.load(response)
+    return unwrap(payload)
 
 
-def iter_pages(path: str, params: dict | None = None):
-    query = dict(params or {})
-    query.setdefault("itens", 100)
-    query.setdefault("pagina", 1)
+def normalize_record(record: dict) -> dict:
+    deputy_id = extract_id(record)
+    return {
+        "camara_id_deputado": deputy_id,
+        "nome": pick(record, "nome", "nomeParlamentar", "nomeDeputado"),
+        "nome_civil": pick(record, "nomeCivil", "nome_civil"),
+        "data_nascimento": pick(record, "dataNascimento", "data_nascimento"),
+        "municipio_nascimento": pick(record, "municipioNascimento", "municipio_nascimento"),
+        "uf_nascimento": pick(record, "ufNascimento", "uf_nascimento"),
+        "primeira_legislatura": pick(
+            record,
+            "idLegislaturaInicial",
+            "legislaturaInicial",
+            "primeiraLegislatura",
+        ),
+        "ultima_legislatura": pick(
+            record,
+            "idLegislaturaFinal",
+            "legislaturaFinal",
+            "ultimaLegislatura",
+        ),
+        "uri": pick(record, "uri", "url") or (
+            f"https://dadosabertos.camara.leg.br/api/v2/deputados/{deputy_id}"
+            if deputy_id else None
+        ),
+        "fonte": "Câmara dos Deputados — Dados Abertos",
+        "fonte_url": SOURCE_URL,
+    }
 
-    while True:
-        payload = api_get(path, query)
-        items = payload.get("dados") or []
-        for item in items:
-            yield item
 
-        links = payload.get("links") or []
-        next_link = next((link for link in links if link.get("rel") == "next"), None)
-        if not next_link or not items:
-            break
-        query["pagina"] += 1
+def main() -> None:
+    print("Baixando catálogo histórico de deputados da Câmara...")
+    raw_records = download()
+    records = [normalize_record(item) for item in raw_records if isinstance(item, dict)]
+    records = [item for item in records if item["camara_id_deputado"]]
 
-
-def safe_data(payload: dict):
-    data = payload.get("dados")
-    if isinstance(data, list):
-        return data[0] if data else {}
-    return data or {}
-
-
-def collect(limit: int | None = None, delay: float = 0.08) -> list[dict]:
-    deputies = list(
-        iter_pages(
-            "/deputados",
-            {"ordem": "ASC", "ordenarPor": "nome", "itens": 100},
+    if len(records) < 500:
+        raise SystemExit(
+            f"Carga da Câmara recusada por segurança: somente {len(records)} registros."
         )
+
+    # IDs da Câmara são universais; duplicatas no arquivo não devem chegar ao site.
+    by_id = {str(item["camara_id_deputado"]): item for item in records}
+    clean = sorted(
+        by_id.values(),
+        key=lambda item: str(item.get("nome_civil") or item.get("nome") or ""),
     )
-    if limit:
-        deputies = deputies[:limit]
 
-    output: list[dict] = []
-    total = len(deputies)
-
-    for index, basic in enumerate(deputies, start=1):
-        deputy_id = basic.get("id")
-        if not deputy_id:
-            continue
-
-        print(f"Camara {index}/{total}: {basic.get('nome', deputy_id)}")
-        detail = safe_data(api_get(f"/deputados/{deputy_id}"))
-        time.sleep(delay)
-
-        try:
-            history_payload = api_get(f"/deputados/{deputy_id}/historico")
-            history = history_payload.get("dados") or []
-        except Exception as exc:  # preserva cadastro mesmo se um histórico falhar
-            print(f"  aviso: historico indisponivel para {deputy_id}: {exc}")
-            history = []
-        time.sleep(delay)
-
-        latest = detail.get("ultimoStatus") or {}
-        output.append(
-            {
-                "camara_id_deputado": deputy_id,
-                "nome": basic.get("nome") or latest.get("nome"),
-                "nome_civil": detail.get("nomeCivil"),
-                "sigla_partido": basic.get("siglaPartido") or latest.get("siglaPartido"),
-                "sigla_uf": basic.get("siglaUf") or latest.get("siglaUf"),
-                "url_foto": basic.get("urlFoto") or latest.get("urlFoto"),
-                "email": basic.get("email") or latest.get("email"),
-                "data_nascimento": detail.get("dataNascimento"),
-                "municipio_nascimento": detail.get("municipioNascimento"),
-                "uf_nascimento": detail.get("ufNascimento"),
-                "escolaridade": detail.get("escolaridade"),
-                "ultimo_status": latest,
-                "historico": history,
-                "fonte": "Camara dos Deputados - Dados Abertos",
-                "fonte_url": f"{BASE_URL}/deputados/{deputy_id}",
-            }
-        )
-
-    return output
-
-
-def save(records: list[dict]) -> None:
     OUT_DIR.mkdir(parents=True, exist_ok=True)
-    collected_at = datetime.now(timezone.utc).isoformat()
-
     (OUT_DIR / "deputados.json").write_text(
-        json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8"
+        json.dumps(clean, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     metadata = {
-        "source": "Camara dos Deputados - Dados Abertos",
-        "source_url": BASE_URL,
-        "generated_at_utc": collected_at,
-        "records": len(records),
-        "domains": ["deputados", "historico_mandato"],
+        "source": "Câmara dos Deputados — Dados Abertos",
+        "source_url": SOURCE_URL,
+        "generated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "records": len(clean),
+        "scope": "todos os parlamentares que já estiveram em exercício na Câmara",
     }
     (OUT_DIR / "metadata.json").write_text(
         json.dumps(metadata, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"Camara: {len(records)} registros gravados em {OUT_DIR}")
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--limit", type=int, default=None, help="limite para testes")
-    parser.add_argument("--delay", type=float, default=0.08, help="pausa entre chamadas")
-    args = parser.parse_args()
-    save(collect(limit=args.limit, delay=args.delay))
+    print(f"Câmara: {len(clean)} parlamentares históricos catalogados.")
 
 
 if __name__ == "__main__":
