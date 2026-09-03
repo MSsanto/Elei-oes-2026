@@ -1,5 +1,6 @@
 import puppeteer from '@cloudflare/puppeteer';
 
+const WORKER_REVISION = 'tse-multidataset-v3';
 const DATASET_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
 const DATASETS = {
   candidatos: {
@@ -213,6 +214,25 @@ async function testZipBodyCapture(env, datasetKey = 'candidatos') {
   }
 }
 
+async function downloadResponse(env, key, dataset) {
+  try {
+    const captured = await captureZip(env, dataset);
+    return new Response(captured.bytes, {
+      status: 200,
+      headers: {
+        'content-type': 'application/zip',
+        'content-disposition': `attachment; filename="${dataset.filename}"`,
+        'cache-control': 'no-store',
+        'x-tse-dataset': key,
+        'x-tse-sha256': captured.sha256,
+        'x-worker-revision': WORKER_REVISION,
+      },
+    });
+  } catch (error) {
+    return json({ error: safeError(error), dataset: key, worker_revision: WORKER_REVISION }, 502);
+  }
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -221,9 +241,11 @@ export default {
       return json({
         service: 'eleicoes-2026-tse-browser-probe',
         status: 'ready',
+        worker_revision: WORKER_REVISION,
         probe: '/probe',
         download_test: '/download-test?dataset=candidatos|complementar',
         download: '/download?dataset=candidatos|complementar',
+        download_complementar: '/download-complementar',
         download_auth: 'Bearer token required',
       });
     }
@@ -240,28 +262,18 @@ export default {
       return json(result, result.ok ? 200 : 502);
     }
 
+    if (url.pathname === '/download-complementar') {
+      if (!authorized(request, env)) return json({ error: 'Unauthorized' }, 401);
+      return downloadResponse(env, 'complementar', DATASETS.complementar);
+    }
+
     if (url.pathname === '/download') {
       if (!authorized(request, env)) return json({ error: 'Unauthorized' }, 401);
       const { key, dataset } = selectedDataset(url);
       if (!dataset) return json({ error: 'Dataset invalido', allowed: Object.keys(DATASETS) }, 400);
-
-      try {
-        const captured = await captureZip(env, dataset);
-        return new Response(captured.bytes, {
-          status: 200,
-          headers: {
-            'content-type': 'application/zip',
-            'content-disposition': `attachment; filename="${dataset.filename}"`,
-            'cache-control': 'no-store',
-            'x-tse-dataset': key,
-            'x-tse-sha256': captured.sha256,
-          },
-        });
-      } catch (error) {
-        return json({ error: safeError(error), dataset: key }, 502);
-      }
+      return downloadResponse(env, key, dataset);
     }
 
-    return json({ error: 'Not found' }, 404);
+    return json({ error: 'Not found', worker_revision: WORKER_REVISION }, 404);
   },
 };
