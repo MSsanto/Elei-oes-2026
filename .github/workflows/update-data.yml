@@ -1,44 +1,25 @@
-name: Atualizar dados do TSE
+name: Validar projeto
 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-    paths:
-      - "functions/api/candidates.js"
-      - "scripts/fetch_candidates_via_cloudflare.py"
-      - ".github/workflows/update-data.yml"
-  schedule:
-    # 00:17, 06:17, 12:17 e 18:17 no horário de Brasília (UTC-3).
-    - cron: "17 3,9,15,21 * * *"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: tse-data-update
-  cancel-in-progress: false
+  group: project-validation-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Configurar Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Aguardar deploy do Cloudflare em alterações do proxy
-        if: github.event_name == 'push'
-        run: sleep 45
-
-      - name: Coletar candidaturas via Cloudflare
-        run: python scripts/fetch_candidates_via_cloudflare.py
 
       - name: Configurar Node
         uses: actions/setup-node@v4
@@ -46,19 +27,8 @@ jobs:
           node-version: "22"
           cache: "npm"
 
-      - name: Validar build do site
-        run: |
-          npm install
-          npm run build
+      - name: Instalar dependências
+        run: npm install
 
-      - name: Publicar alterações nos dados
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/processed
-          if git diff --cached --quiet; then
-            echo "Nenhuma alteração nos dados."
-            exit 0
-          fi
-          git commit -m "data: atualizar candidaturas do TSE via Cloudflare"
-          git push
+      - name: Validar build do site
+        run: npm run build
