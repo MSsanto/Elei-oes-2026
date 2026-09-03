@@ -173,6 +173,15 @@
 .activity-empty { font-style: italic; }
 .methodology-section { background: #fbfcfe; }
 
+.profile-section-title {
+  margin: 28px 0 10px;
+  color: #6f7d91;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
 @media (max-width: 620px) {
   .chamber-module-heading { flex-direction: column; }
   .source-id { text-align: left; min-width: 0; }
