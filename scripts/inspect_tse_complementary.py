@@ -37,18 +37,30 @@ def download() -> Path:
         headers={
             "Authorization": f"Bearer {token}",
             "Accept": "application/zip",
-            "User-Agent": "Eleicoes-2026-Diagnostico/1.0",
+            "User-Agent": "Eleicoes-2026-Diagnostico/1.1",
         },
     )
 
     target = Path(tempfile.gettempdir()) / "consulta_cand_complementar_2026.zip"
     try:
         with urllib.request.urlopen(request, timeout=150) as response:
-            target.write_bytes(response.read())
+            dataset_header = (response.headers.get("X-TSE-Dataset") or "").strip().lower()
+            disposition = response.headers.get("Content-Disposition") or ""
+            payload = response.read()
     except urllib.error.HTTPError as error:
         body = error.read(400).decode("utf-8", errors="replace")
         raise RuntimeError(f"Worker retornou HTTP {error.code}: {body}") from error
 
+    # Evita falso positivo quando uma versão antiga do Worker ignora ?dataset=complementar
+    # e devolve silenciosamente o ZIP principal de candidaturas.
+    if dataset_header != "complementar":
+        raise RuntimeError(
+            "Worker ativo não confirmou o dataset complementar: "
+            f"X-TSE-Dataset={dataset_header!r}, Content-Disposition={disposition!r}. "
+            "Aguarde o deploy do Worker e execute o diagnóstico novamente."
+        )
+
+    target.write_bytes(payload)
     with target.open("rb") as handle:
         if not handle.read(4).startswith(b"PK"):
             raise RuntimeError("Resposta recebida nao e ZIP")
@@ -61,17 +73,25 @@ def main() -> int:
 
     with zipfile.ZipFile(path) as archive:
         csv_names = [name for name in archive.namelist() if name.lower().endswith(".csv")]
+        complementary_names = [
+            name for name in csv_names
+            if "consulta_cand_complementar_2026" in Path(name).name.lower()
+        ]
+        if not complementary_names:
+            raise RuntimeError(
+                "O Worker confirmou 'complementar', mas o ZIP não contém arquivos "
+                "consulta_cand_complementar_2026*.csv. Diagnóstico interrompido."
+            )
+
         print(f"Arquivos CSV no ZIP: {len(csv_names)}")
         for name in csv_names:
             print(f"- {name}")
 
         brasil = next(
-            (name for name in csv_names if Path(name).name.upper() == "CONSULTA_CAND_COMPLEMENTAR_2026_BRASIL.CSV"),
+            (name for name in complementary_names if Path(name).name.upper() == "CONSULTA_CAND_COMPLEMENTAR_2026_BRASIL.CSV"),
             None,
         )
-        selected = brasil or (csv_names[0] if csv_names else None)
-        if not selected:
-            raise RuntimeError("Nenhum CSV encontrado no ZIP complementar")
+        selected = brasil or complementary_names[0]
 
         reader = csv.reader(io.StringIO(decode(archive.read(selected))), delimiter=";")
         headers = next(reader, [])
