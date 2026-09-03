@@ -34,6 +34,9 @@ jobs:
           TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
         run: python scripts/fetch_candidates_cloud.py
 
+      - name: Enriquecer naturalidade com DDD oficial da Anatel
+        run: python scripts/enrich_candidate_region.py
+
       - name: Atualizar catalogo historico da Camara
         run: python scripts/fetch_camara.py --max-age-hours 24
 
