@@ -22,16 +22,11 @@ function Write-CollectorLog {
     param([string]$Message)
     $line = "[{0}] {1}" -f (Get-Date -Format "yyyy-MM-dd HH:mm:ss"), $Message
     Add-Content -Path $LogFile -Value $line -Encoding UTF8
-    if (-not $Silent) {
-        Write-Host $line
-    }
+    if (-not $Silent) { Write-Host $line }
 }
 
 function Invoke-External {
-    param(
-        [string]$Command,
-        [string[]]$Arguments
-    )
+    param([string]$Command, [string[]]$Arguments)
     & $Command @Arguments 2>&1 | Tee-Object -FilePath $LogFile -Append
     if ($LASTEXITCODE -ne 0) {
         throw "Comando falhou ($LASTEXITCODE): $Command $($Arguments -join ' ')"
@@ -40,30 +35,23 @@ function Invoke-External {
 
 function Find-GitExecutable {
     $fromPath = Get-Command git.exe -ErrorAction SilentlyContinue
-    if ($fromPath) {
-        return $fromPath.Source
-    }
+    if ($fromPath) { return $fromPath.Source }
 
     $fixedCandidates = @(
         (Join-Path $env:ProgramFiles "Git\cmd\git.exe"),
         (Join-Path $env:ProgramFiles "Git\bin\git.exe")
     )
-
     if (${env:ProgramFiles(x86)}) {
         $fixedCandidates += (Join-Path ${env:ProgramFiles(x86)} "Git\cmd\git.exe")
     }
-
     foreach ($candidate in $fixedCandidates) {
-        if ($candidate -and (Test-Path $candidate)) {
-            return (Resolve-Path $candidate).Path
-        }
+        if ($candidate -and (Test-Path $candidate)) { return (Resolve-Path $candidate).Path }
     }
 
     $desktopRoot = Join-Path $env:LOCALAPPDATA "GitHubDesktop"
     if (Test-Path $desktopRoot) {
         $desktopApps = Get-ChildItem -Path $desktopRoot -Directory -Filter "app-*" -ErrorAction SilentlyContinue |
             Sort-Object LastWriteTime -Descending
-
         foreach ($app in $desktopApps) {
             $desktopCandidates = @(
                 (Join-Path $app.FullName "resources\app\git\cmd\git.exe"),
@@ -71,13 +59,49 @@ function Find-GitExecutable {
                 (Join-Path $app.FullName "resources\app\git\mingw64\bin\git.exe")
             )
             foreach ($candidate in $desktopCandidates) {
-                if (Test-Path $candidate) {
-                    return (Resolve-Path $candidate).Path
+                if (Test-Path $candidate) { return (Resolve-Path $candidate).Path }
+            }
+        }
+    }
+    return $null
+}
+
+function Find-PythonExecutable {
+    $launcher = Get-Command py.exe -ErrorAction SilentlyContinue
+    if ($launcher) {
+        & $launcher.Source -3 --version *> $null
+        if ($LASTEXITCODE -eq 0) {
+            return @{ Command = $launcher.Source; Prefix = @("-3") }
+        }
+    }
+
+    $python = Get-Command python.exe -ErrorAction SilentlyContinue
+    if ($python) {
+        & $python.Source --version *> $null
+        if ($LASTEXITCODE -eq 0) {
+            return @{ Command = $python.Source; Prefix = @() }
+        }
+    }
+
+    $roots = @(
+        (Join-Path $env:LOCALAPPDATA "Programs\Python"),
+        $env:ProgramFiles
+    )
+    foreach ($root in $roots) {
+        if (-not $root -or -not (Test-Path $root)) { continue }
+        $patterns = if ($root -like "*Programs\Python") { @("Python*\python.exe") } else { @("Python*\python.exe") }
+        foreach ($pattern in $patterns) {
+            $found = Get-ChildItem -Path (Join-Path $root $pattern) -File -ErrorAction SilentlyContinue |
+                Sort-Object FullName -Descending |
+                Select-Object -First 1
+            if ($found) {
+                & $found.FullName --version *> $null
+                if ($LASTEXITCODE -eq 0) {
+                    return @{ Command = $found.FullName; Prefix = @() }
                 }
             }
         }
     }
-
     return $null
 }
 
@@ -97,37 +121,25 @@ try {
     Write-CollectorLog "Git localizado: $GitCommand"
     Invoke-External $GitCommand @("--version")
 
-    $py = Get-Command py.exe -ErrorAction SilentlyContinue
-    $python = Get-Command python.exe -ErrorAction SilentlyContinue
-    if ($py) {
-        $PythonCommand = $py.Source
-        $PythonPrefix = @("-3")
+    $PythonInfo = Find-PythonExecutable
+    if (-not $PythonInfo) {
+        throw "Python 3 nao encontrado. Instale Python 3 pelo python.org ou Microsoft Store e execute novamente."
     }
-    elseif ($python) {
-        $PythonCommand = $python.Source
-        $PythonPrefix = @()
-    }
-    else {
-        throw "Python 3 nao encontrado. Instale o Python 3 e marque a opcao Add Python to PATH."
-    }
+    $PythonCommand = [string]$PythonInfo.Command
+    $PythonPrefix = [string[]]$PythonInfo.Prefix
     Write-CollectorLog "Python localizado: $PythonCommand"
+    Invoke-External $PythonCommand @($PythonPrefix + @("--version"))
 
     $statusLines = @(& $GitCommand status --porcelain)
-    if ($LASTEXITCODE -ne 0) {
-        throw "Nao foi possivel consultar o estado do repositorio."
-    }
+    if ($LASTEXITCODE -ne 0) { throw "Nao foi possivel consultar o estado do repositorio." }
 
     $nonGeneratedChanges = @()
     $generatedChanges = @()
     foreach ($line in $statusLines) {
         if (-not $line) { continue }
         $path = if ($line.Length -ge 4) { $line.Substring(3).Trim() } else { $line.Trim() }
-        if ($path -like "data/processed*" -or $path -like "data\processed*") {
-            $generatedChanges += $line
-        }
-        else {
-            $nonGeneratedChanges += $line
-        }
+        if ($path -like "data/processed*" -or $path -like "data\processed*") { $generatedChanges += $line }
+        else { $nonGeneratedChanges += $line }
     }
 
     if ($nonGeneratedChanges.Count -gt 0) {
@@ -148,8 +160,7 @@ try {
     }
 
     Write-CollectorLog "Executando coletor nacional do TSE..."
-    $pythonArgs = @($PythonPrefix + @("scripts\fetch_candidates.py"))
-    Invoke-External $PythonCommand $pythonArgs
+    Invoke-External $PythonCommand @($PythonPrefix + @("scripts\fetch_candidates.py"))
 
     if (-not (Test-Path "data\processed\deputados_federais.json")) {
         throw "O coletor terminou sem gerar data/processed/deputados_federais.json."
@@ -169,9 +180,7 @@ try {
     Write-CollectorLog "Preparando publicacao no GitHub..."
     Invoke-External $GitCommand @("add", "data/processed")
     $staged = (& $GitCommand diff --cached --name-only) -join "`n"
-    if ($LASTEXITCODE -ne 0) {
-        throw "Falha ao verificar alteracoes geradas."
-    }
+    if ($LASTEXITCODE -ne 0) { throw "Falha ao verificar alteracoes geradas." }
 
     if (-not $staged.Trim()) {
         Write-CollectorLog "O TSE nao trouxe alteracoes desde a ultima carga. Nada para publicar."
