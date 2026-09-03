@@ -1,0 +1,108 @@
+{
+  "camara_id_deputado": "74136",
+  "generated_at_utc": "2026-09-03T17:42:33.521407+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 74136,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74136",
+      "nomeCivil": "ANTONIO VALDECI OLIVEIRA DE OLIVEIRA",
+      "ultimoStatus": {
+        "id": 74136,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74136",
+        "nome": "VALDECI OLIVEIRA",
+        "siglaPartido": "PT",
+        "uriPartido": null,
+        "siglaUf": "RS",
+        "idLegislatura": 51,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74136.jpg",
+        "email": null,
+        "data": null,
+        "nomeEleitoral": "VALDECI OLIVEIRA",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Vacância",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
+      },
+      "cpf": "28783972072",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1957-09-07",
+      "dataFalecimento": null,
+      "ufNascimento": "RS",
+      "municipioNascimento": "Santa Maria",
+      "escolaridade": "Secundário"
+    },
+    "historico": [
+      {
+        "id": 74136,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74136",
+        "nome": "VALDECI OLIVEIRA",
+        "nomeEleitoral": "VALDECI OLIVEIRA",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "RS",
+        "idLegislatura": 51,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74136.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 74136,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74136",
+        "nome": "VALDECI OLIVEIRA",
+        "nomeEleitoral": "VALDECI OLIVEIRA",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "RS",
+        "idLegislatura": 50,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74136.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74136/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74136/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74136",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

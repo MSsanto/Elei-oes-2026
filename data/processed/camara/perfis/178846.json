@@ -1,0 +1,124 @@
+{
+  "camara_id_deputado": "178846",
+  "generated_at_utc": "2026-09-03T17:43:48.481505+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 178846,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178846",
+      "nomeCivil": "ALFREDO PEREIRA DO NASCIMENTO",
+      "ultimoStatus": {
+        "id": 178846,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178846",
+        "nome": "ALFREDO NASCIMENTO",
+        "siglaPartido": "PR",
+        "uriPartido": null,
+        "siglaUf": "AM",
+        "idLegislatura": 55,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178846.jpg",
+        "email": null,
+        "data": "2019-01-31",
+        "nomeEleitoral": "ALFREDO NASCIMENTO",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Fim de Mandato",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
+      },
+      "cpf": "05727600430",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1952-05-05",
+      "dataFalecimento": null,
+      "ufNascimento": "RN",
+      "municipioNascimento": "Martins",
+      "escolaridade": "Superior"
+    },
+    "historico": [
+      {
+        "id": 178846,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178846",
+        "nome": "ALFREDO NASCIMENTO",
+        "nomeEleitoral": "ALFREDO NASCIMENTO",
+        "siglaPartido": "PR",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36814",
+        "siglaUf": "AM",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178846.jpg",
+        "dataHora": "2015-02-01T10:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 178846,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178846",
+        "nome": "ALFREDO NASCIMENTO",
+        "nomeEleitoral": "ALFREDO NASCIMENTO",
+        "siglaPartido": "PR",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36814",
+        "siglaUf": "AM",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178846.jpg",
+        "dataHora": "2019-01-31T23:59",
+        "situacao": "FIM_MANDATO",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Término da Legislatura"
+      },
+      {
+        "id": 178846,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178846",
+        "nome": "ALFREDO NASCIMENTO",
+        "nomeEleitoral": "ALFREDO NASCIMENTO",
+        "siglaPartido": "PR",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36814",
+        "siglaUf": "AM",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178846.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178846/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178846/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178846",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

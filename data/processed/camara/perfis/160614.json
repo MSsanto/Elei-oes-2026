@@ -1,0 +1,127 @@
+{
+  "camara_id_deputado": "160614",
+  "generated_at_utc": "2026-09-03T17:43:32.099646+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 160614,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/160614",
+      "nomeCivil": "CLEUSA ROSANE RIBAS FERREIRA",
+      "ultimoStatus": {
+        "id": 160614,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/160614",
+        "nome": "ROSANE FERREIRA",
+        "siglaPartido": "PV",
+        "uriPartido": null,
+        "siglaUf": "PR",
+        "idLegislatura": 54,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160614.jpg",
+        "email": null,
+        "data": "2015-01-31",
+        "nomeEleitoral": "ROSANE FERREIRA",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Fim de Mandato",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
+      },
+      "cpf": "53210026904",
+      "sexo": "F",
+      "urlWebsite": null,
+      "redeSocial": [
+        "http://www.facebook.com/pages/Rosane-Ferreira-Fanpage/254904331260199?ref=ts&fref=ts",
+        "http://www.twitter.com/rosanedopv"
+      ],
+      "dataNascimento": "1963-07-31",
+      "dataFalecimento": null,
+      "ufNascimento": "PR",
+      "municipioNascimento": "Clevelândia",
+      "escolaridade": "Pós-Graduação"
+    },
+    "historico": [
+      {
+        "id": 160614,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/160614",
+        "nome": "ROSANE FERREIRA",
+        "nomeEleitoral": "ROSANE FERREIRA",
+        "siglaPartido": "PV",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36851",
+        "siglaUf": "PR",
+        "idLegislatura": 54,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160614.jpg",
+        "dataHora": "2011-02-01T00:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 160614,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/160614",
+        "nome": "ROSANE FERREIRA",
+        "nomeEleitoral": "ROSANE FERREIRA",
+        "siglaPartido": "PV",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36851",
+        "siglaUf": "PR",
+        "idLegislatura": 54,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160614.jpg",
+        "dataHora": "2015-01-31T23:59",
+        "situacao": "FIM_MANDATO",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Término da Legislatura"
+      },
+      {
+        "id": 160614,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/160614",
+        "nome": "ROSANE FERREIRA",
+        "nomeEleitoral": "ROSANE FERREIRA",
+        "siglaPartido": "PV",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36851",
+        "siglaUf": "PR",
+        "idLegislatura": 54,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/160614.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160614/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160614/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160614",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

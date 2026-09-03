@@ -1,0 +1,124 @@
+{
+  "camara_id_deputado": "74089",
+  "generated_at_utc": "2026-09-03T17:42:32.157420+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 74089,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74089",
+      "nomeCivil": "ARTHUR VIRGÍLIO DO CARMO RIBEIRO NETO",
+      "ultimoStatus": {
+        "id": 74089,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74089",
+        "nome": "ARTHUR VIRGÍLIO",
+        "siglaPartido": "PSDB",
+        "uriPartido": null,
+        "siglaUf": "AM",
+        "idLegislatura": 51,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74089.jpg",
+        "email": null,
+        "data": null,
+        "nomeEleitoral": "ARTHUR VIRGÍLIO",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": null,
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
+      },
+      "cpf": "15498247753",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1945-11-15",
+      "dataFalecimento": null,
+      "ufNascimento": "AM",
+      "municipioNascimento": "Manaus",
+      "escolaridade": "Superior"
+    },
+    "historico": [
+      {
+        "id": 74089,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74089",
+        "nome": "ARTHUR VIRGÍLIO",
+        "nomeEleitoral": "ARTHUR VIRGÍLIO",
+        "siglaPartido": "PSDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36835",
+        "siglaUf": "AM",
+        "idLegislatura": 51,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74089.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 74089,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74089",
+        "nome": "ARTHUR VIRGÍLIO",
+        "nomeEleitoral": "ARTHUR VIRGÍLIO",
+        "siglaPartido": "PSDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36835",
+        "siglaUf": "AM",
+        "idLegislatura": 50,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74089.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 74089,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74089",
+        "nome": "ARTHUR VIRGÍLIO",
+        "nomeEleitoral": "ARTHUR VIRGÍLIO",
+        "siglaPartido": "PMDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36800",
+        "siglaUf": "AM",
+        "idLegislatura": 47,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74089.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74089/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74089/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74089",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

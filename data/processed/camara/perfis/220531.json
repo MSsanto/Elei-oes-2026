@@ -1,0 +1,124 @@
+{
+  "camara_id_deputado": "220531",
+  "generated_at_utc": "2026-09-03T17:45:06.695066+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 220531,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220531",
+      "nomeCivil": "GILVAM MAXIMO",
+      "ultimoStatus": {
+        "id": 220531,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220531",
+        "nome": "Gilvan Maximo",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": null,
+        "siglaUf": "DF",
+        "idLegislatura": 57,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220531.jpg",
+        "email": null,
+        "data": "2025-07-30",
+        "nomeEleitoral": "Gilvan Maximo",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Suplência",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Lançamento de decisão Judicial"
+      },
+      "cpf": "43523838134",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1969-05-10",
+      "dataFalecimento": null,
+      "ufNascimento": "GO",
+      "municipioNascimento": "Rubiataba",
+      "escolaridade": "Ensino Fundamental"
+    },
+    "historico": [
+      {
+        "id": 220531,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220531",
+        "nome": "Gilvan Maximo",
+        "nomeEleitoral": "GILVAN MAXIMO",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "DF",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220531.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 220531,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220531",
+        "nome": "Gilvan Maximo",
+        "nomeEleitoral": "GILVAN MAXIMO",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "DF",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220531.jpg",
+        "dataHora": "2023-02-01T12:05",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 220531,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220531",
+        "nome": "Gilvan Maximo",
+        "nomeEleitoral": "GILVAN MAXIMO",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "DF",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220531.jpg",
+        "dataHora": "2025-07-30T19:43",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Decisão da Mesa - Afastamento de titular  por Recontagem de Votos"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220531/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220531/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220531",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "camara_id_deputado": "74772",
+  "generated_at_utc": "2026-09-03T17:42:49.042098+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 74772,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74772",
+      "nomeCivil": "JOÃO CARLOS COSER",
+      "ultimoStatus": {
+        "id": 74772,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74772",
+        "nome": "JOÃO COSER",
+        "siglaPartido": "PT",
+        "uriPartido": null,
+        "siglaUf": "ES",
+        "idLegislatura": 51,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74772.jpg",
+        "email": null,
+        "data": null,
+        "nomeEleitoral": "JOÃO COSER",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": null,
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
+      },
+      "cpf": "39495760704",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1956-03-13",
+      "dataFalecimento": null,
+      "ufNascimento": "ES",
+      "municipioNascimento": "Santa Teresa",
+      "escolaridade": "Superior"
+    },
+    "historico": [
+      {
+        "id": 74772,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74772",
+        "nome": "JOÃO COSER",
+        "nomeEleitoral": "JOÃO COSER",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "ES",
+        "idLegislatura": 51,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74772.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 74772,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74772",
+        "nome": "JOÃO COSER",
+        "nomeEleitoral": "JOÃO COSER",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "ES",
+        "idLegislatura": 50,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74772.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74772/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74772/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74772",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

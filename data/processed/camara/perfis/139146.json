@@ -1,0 +1,92 @@
+{
+  "camara_id_deputado": "139146",
+  "generated_at_utc": "2026-09-03T17:43:05.377054+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 139146,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/139146",
+      "nomeCivil": "Antero Paes de Barros Neto",
+      "ultimoStatus": {
+        "id": 139146,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/139146",
+        "nome": "ANTERO DE BARROS",
+        "siglaPartido": "PT",
+        "uriPartido": null,
+        "siglaUf": "MT",
+        "idLegislatura": 48,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/139146.jpg",
+        "email": null,
+        "data": null,
+        "nomeEleitoral": "ANTERO DE BARROS",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": null,
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
+      },
+      "cpf": null,
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1953-01-03",
+      "dataFalecimento": null,
+      "ufNascimento": "MT",
+      "municipioNascimento": "Cuiabá",
+      "escolaridade": "Superior"
+    },
+    "historico": [
+      {
+        "id": 139146,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/139146",
+        "nome": "ANTERO DE BARROS",
+        "nomeEleitoral": "ANTERO DE BARROS",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "MT",
+        "idLegislatura": 48,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/139146.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/139146/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/139146/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=139146",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

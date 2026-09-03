@@ -1,0 +1,140 @@
+{
+  "camara_id_deputado": "141410",
+  "generated_at_utc": "2026-09-03T17:43:07.320539+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 141410,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410",
+      "nomeCivil": "CRISTIANO MATHEUS DA SILVA E SOUSA",
+      "ultimoStatus": {
+        "id": 141410,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410",
+        "nome": "CRISTIANO MATHEUS",
+        "siglaPartido": "PMDB",
+        "uriPartido": null,
+        "siglaUf": "AL",
+        "idLegislatura": 53,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141410.jpg",
+        "email": null,
+        "data": "2009-01-01",
+        "nomeEleitoral": "CRISTIANO MATHEUS",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Vacância",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Prefeito de Marechal Deodoro"
+      },
+      "cpf": "89426851453",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1973-06-03",
+      "dataFalecimento": null,
+      "ufNascimento": "SP",
+      "municipioNascimento": "Ubatuba",
+      "escolaridade": "Superior Incompleto"
+    },
+    "historico": [
+      {
+        "id": 141410,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410",
+        "nome": "CRISTIANO MATHEUS",
+        "nomeEleitoral": "CRISTIANO MATHEUS",
+        "siglaPartido": "PFL",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36790",
+        "siglaUf": "AL",
+        "idLegislatura": 53,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141410.jpg",
+        "dataHora": "2007-02-01T00:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 141410,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410",
+        "nome": "CRISTIANO MATHEUS",
+        "nomeEleitoral": "CRISTIANO MATHEUS",
+        "siglaPartido": "PMDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36800",
+        "siglaUf": "AL",
+        "idLegislatura": 53,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141410.jpg",
+        "dataHora": "2007-03-21T16:43",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Alteração de partido"
+      },
+      {
+        "id": 141410,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410",
+        "nome": "CRISTIANO MATHEUS",
+        "nomeEleitoral": "CRISTIANO MATHEUS",
+        "siglaPartido": "PMDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36800",
+        "siglaUf": "AL",
+        "idLegislatura": 53,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141410.jpg",
+        "dataHora": "2009-01-01T00:00",
+        "situacao": "VACANCIA",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Renúncia"
+      },
+      {
+        "id": 141410,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410",
+        "nome": "CRISTIANO MATHEUS",
+        "nomeEleitoral": "CRISTIANO MATHEUS",
+        "siglaPartido": "PMDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36800",
+        "siglaUf": "AL",
+        "idLegislatura": 53,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/141410.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141410/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141410",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

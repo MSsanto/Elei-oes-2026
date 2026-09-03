@@ -1,0 +1,140 @@
+{
+  "camara_id_deputado": "204575",
+  "generated_at_utc": "2026-09-03T17:44:58.036402+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 204575,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575",
+      "nomeCivil": "GILLIANO FRED NASCIMENTO CUTRIM",
+      "ultimoStatus": {
+        "id": 204575,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575",
+        "nome": "Gil Cutrim",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": null,
+        "siglaUf": "MA",
+        "idLegislatura": 56,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204575.jpg",
+        "email": null,
+        "data": "2023-01-31",
+        "nomeEleitoral": "Gil Cutrim",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Fim de Mandato",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
+      },
+      "cpf": "80405878320",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1979-10-26",
+      "dataFalecimento": null,
+      "ufNascimento": "MA",
+      "municipioNascimento": "São Luís",
+      "escolaridade": "Superior"
+    },
+    "historico": [
+      {
+        "id": 204575,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575",
+        "nome": "Gil Cutrim ",
+        "nomeEleitoral": "GIL CUTRIM ",
+        "siglaPartido": "PDT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36786",
+        "siglaUf": "MA",
+        "idLegislatura": 56,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204575.jpg",
+        "dataHora": "2019-02-01T11:45",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 204575,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575",
+        "nome": "Gil Cutrim ",
+        "nomeEleitoral": "GIL CUTRIM ",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "MA",
+        "idLegislatura": 56,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204575.jpg",
+        "dataHora": "2021-03-22T10:45",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Alteração de partido"
+      },
+      {
+        "id": 204575,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575",
+        "nome": "Gil Cutrim ",
+        "nomeEleitoral": "GIL CUTRIM ",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "MA",
+        "idLegislatura": 56,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204575.jpg",
+        "dataHora": "2023-01-31T23:59",
+        "situacao": "FIM_MANDATO",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Término da Legislatura"
+      },
+      {
+        "id": 204575,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575",
+        "nome": "Gil Cutrim ",
+        "nomeEleitoral": "GIL CUTRIM ",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "MA",
+        "idLegislatura": 56,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/204575.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204575/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204575",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}

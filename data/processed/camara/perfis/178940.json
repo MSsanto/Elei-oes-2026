@@ -1,0 +1,124 @@
+{
+  "camara_id_deputado": "178940",
+  "generated_at_utc": "2026-09-03T17:43:59.573904+00:00",
+  "periodo": {
+    "ano": 2026
+  },
+  "mandato": {
+    "detalhe": {
+      "id": 178940,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178940",
+      "nomeCivil": "JOAO FERREIRA NETO",
+      "ultimoStatus": {
+        "id": 178940,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178940",
+        "nome": "DR. JOÃO",
+        "siglaPartido": "PR",
+        "uriPartido": null,
+        "siglaUf": "RJ",
+        "idLegislatura": 55,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178940.jpg",
+        "email": null,
+        "data": "2017-01-01",
+        "nomeEleitoral": "DR. JOÃO",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Vacância",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Prefeito do Município de São João do Meriti (RJ)"
+      },
+      "cpf": "26144735704",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [],
+      "dataNascimento": "1950-08-05",
+      "dataFalecimento": null,
+      "ufNascimento": "CE",
+      "municipioNascimento": "Fortaleza",
+      "escolaridade": "Superior"
+    },
+    "historico": [
+      {
+        "id": 178940,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178940",
+        "nome": "DR. JOÃO",
+        "nomeEleitoral": "DR. JOÃO",
+        "siglaPartido": "PR",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36814",
+        "siglaUf": "RJ",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178940.jpg",
+        "dataHora": "2015-02-01T10:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 178940,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178940",
+        "nome": "DR. JOÃO",
+        "nomeEleitoral": "DR. JOÃO",
+        "siglaPartido": "PR",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36814",
+        "siglaUf": "RJ",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178940.jpg",
+        "dataHora": "2017-01-01T00:00",
+        "situacao": "VACANCIA",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Renúncia"
+      },
+      {
+        "id": 178940,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178940",
+        "nome": "DR. JOÃO",
+        "nomeEleitoral": "DR. JOÃO",
+        "siglaPartido": "PR",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36814",
+        "siglaUf": "RJ",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178940.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178940/historico"
+  },
+  "despesas": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "valor_liquido_total": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178940/despesas?ano=2026"
+  },
+  "proposicoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178940",
+    "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
+  },
+  "votacoes": {
+    "ano": 2026,
+    "quantidade_registros": 0,
+    "registros_recentes": [],
+    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
+  },
+  "fontes": [
+    "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2026.csv",
+    "votacoes-2026.csv"
+  ]
+}
