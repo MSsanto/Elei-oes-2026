@@ -6,12 +6,12 @@ import os
 import sys
 import tempfile
 import urllib.error
-import urllib.parse
 import urllib.request
 import zipfile
 from pathlib import Path
 
-DEFAULT_WORKER_URL = "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download"
+DEFAULT_WORKER_URL = "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev"
+EXPECTED_REVISION = "tse-multidataset-v3"
 TOKENS = ("DOMIC", "MUNIC", "ZONA", "TITULO", "ELEITOR", "UE")
 
 
@@ -24,20 +24,26 @@ def decode(raw: bytes) -> str:
     return raw.decode("latin-1", errors="replace")
 
 
+def worker_root(value: str) -> str:
+    value = value.strip().rstrip("/")
+    if value.endswith("/download"):
+        value = value[: -len("/download")]
+    return value
+
+
 def download() -> Path:
-    base_url = os.environ.get("TSE_WORKER_URL", DEFAULT_WORKER_URL).strip()
+    root = worker_root(os.environ.get("TSE_WORKER_URL", DEFAULT_WORKER_URL))
     token = os.environ.get("TSE_WORKER_TOKEN", "").strip()
     if not token:
         raise RuntimeError("TSE_WORKER_TOKEN ausente")
 
-    separator = "&" if "?" in base_url else "?"
-    url = f"{base_url}{separator}{urllib.parse.urlencode({'dataset': 'complementar'})}"
+    url = f"{root}/download-complementar"
     request = urllib.request.Request(
         url,
         headers={
             "Authorization": f"Bearer {token}",
             "Accept": "application/zip",
-            "User-Agent": "Eleicoes-2026-Diagnostico/1.1",
+            "User-Agent": "Eleicoes-2026-Diagnostico/1.2",
         },
     )
 
@@ -45,19 +51,22 @@ def download() -> Path:
     try:
         with urllib.request.urlopen(request, timeout=150) as response:
             dataset_header = (response.headers.get("X-TSE-Dataset") or "").strip().lower()
+            revision_header = (response.headers.get("X-Worker-Revision") or "").strip()
             disposition = response.headers.get("Content-Disposition") or ""
             payload = response.read()
     except urllib.error.HTTPError as error:
         body = error.read(400).decode("utf-8", errors="replace")
         raise RuntimeError(f"Worker retornou HTTP {error.code}: {body}") from error
 
-    # Evita falso positivo quando uma versão antiga do Worker ignora ?dataset=complementar
-    # e devolve silenciosamente o ZIP principal de candidaturas.
+    if revision_header != EXPECTED_REVISION:
+        raise RuntimeError(
+            "Worker ativo ainda não é a revisão esperada: "
+            f"X-Worker-Revision={revision_header!r}; esperado={EXPECTED_REVISION!r}."
+        )
     if dataset_header != "complementar":
         raise RuntimeError(
             "Worker ativo não confirmou o dataset complementar: "
-            f"X-TSE-Dataset={dataset_header!r}, Content-Disposition={disposition!r}. "
-            "Aguarde o deploy do Worker e execute o diagnóstico novamente."
+            f"X-TSE-Dataset={dataset_header!r}, Content-Disposition={disposition!r}."
         )
 
     target.write_bytes(payload)
