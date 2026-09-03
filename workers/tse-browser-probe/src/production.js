@@ -1,6 +1,7 @@
 import puppeteer from '@cloudflare/puppeteer';
 import probeWorker from './index.js';
 
+const PRODUCTION_REVISION = 'dataset-router-v2';
 const DATASET_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
 const ZIP_URL = 'https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36';
@@ -158,7 +159,7 @@ function authorize(request, env) {
   return null;
 }
 
-async function download(request, env) {
+async function downloadCurrentCandidates(request, env) {
   const authorizationError = authorize(request, env);
   if (authorizationError) return authorizationError;
 
@@ -173,10 +174,12 @@ async function download(request, env) {
         'cache-control': 'no-store',
         'x-tse-source': captured.sourceUrl,
         'x-tse-sha256': captured.sha256,
+        'x-tse-dataset': 'candidatos',
+        'x-production-revision': PRODUCTION_REVISION,
       },
     });
   } catch (error) {
-    return json({ error: safeError(error), source: ZIP_URL }, 502);
+    return json({ error: safeError(error), source: ZIP_URL, production_revision: PRODUCTION_REVISION }, 502);
   }
 }
 
@@ -185,14 +188,20 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === '/download') {
-      return download(request, env);
+      const dataset = url.searchParams.get('dataset') || 'candidatos';
+      if (dataset === 'candidatos') {
+        return downloadCurrentCandidates(request, env);
+      }
+      // Recursos complementares/historicos sao tratados pela camada multidataset.
+      return probeWorker.fetch(request, env);
     }
 
     const response = await probeWorker.fetch(request, env);
     if (url.pathname === '/' || url.pathname === '/health') {
       try {
         const payload = await response.clone().json();
-        payload.download = '/download';
+        payload.production_revision = PRODUCTION_REVISION;
+        payload.download = '/download?dataset=candidatos|complementar|candidatos2022';
         payload.download_auth = 'Authorization: Bearer <DOWNLOAD_TOKEN>';
         return json(payload, response.status);
       } catch {
