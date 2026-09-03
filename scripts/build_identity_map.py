@@ -144,7 +144,10 @@ def main() -> None:
     OUT_FILE.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print("Identidades TSE ↔ Câmara:", counts)
+
+    # Console do Windows PowerShell 5.1 pode usar cp1252. Mantenha stdout ASCII
+    # para não abortar uma coleta válida por causa de caracteres Unicode de UI.
+    print("Identidades TSE <-> Camara:", json.dumps(counts, ensure_ascii=True))
 
 
 if __name__ == "__main__":
