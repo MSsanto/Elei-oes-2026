@@ -1,0 +1,55 @@
+name: Construir historico regional por DDD
+
+on:
+  workflow_dispatch:
+    inputs:
+      ufs:
+        description: "ALL ou lista de UFs separadas por virgula, ex.: SP,RJ"
+        required: true
+        default: "ALL"
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: historico-regional-ddd-2022
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Construir historico de votacao por DDD com dados oficiais de 2022
+        env:
+          TSE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: python scripts/build_historical_ddd_2022.py --ufs "${{ inputs.ufs }}" --workers 6
+
+      - name: Publicar mapa historico e candidaturas enriquecidas
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteracao historica para publicar."
+            exit 0
+          fi
+
+          git commit -m "data: construir historico regional por DDD com TSE 2022"
+          git pull --rebase origin main
+          git push origin HEAD:main
