@@ -85,3 +85,11 @@ jobs:
 
       - name: Validar build do site
         run: npm run build
+
+      - name: Instalar dependencias do probe Cloudflare
+        working-directory: workers/tse-browser-probe
+        run: npm install
+
+      - name: Validar bundle do probe Cloudflare
+        working-directory: workers/tse-browser-probe
+        run: npm run check
