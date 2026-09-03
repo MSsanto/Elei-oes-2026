@@ -27,6 +27,7 @@ jobs:
           python3 -m py_compile scripts/fetch_candidates_browser.py
           python3 -m py_compile scripts/fetch_candidates_cloud.py
           python3 -m py_compile scripts/inspect_tse_complementary.py
+          python3 -m py_compile scripts/inspect_divulgacand_fields.py
           python3 -m py_compile scripts/fetch_camara.py
           python3 -m py_compile scripts/build_identity_map.py
           python3 -m py_compile scripts/fetch_camara_historico.py
