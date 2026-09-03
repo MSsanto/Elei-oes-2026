@@ -41,7 +41,7 @@ jobs:
         run: python scripts/fetch_camara_historico.py --max-age-hours 12
 
       - name: Atualizar atividade parlamentar de 2026
-        run: python scripts/fetch_camara_atividade.py --ano 2026 --max-age-hours 24
+        run: python scripts/fetch_camara_atividade_cloud.py --ano 2026 --max-age-hours 24
 
       - name: Publicar dados processados no repositorio
         shell: bash
