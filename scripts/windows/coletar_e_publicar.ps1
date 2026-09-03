@@ -218,6 +218,9 @@ try {
     $metadata = Get-Content "data\processed\metadata.json" -Raw -Encoding UTF8 | ConvertFrom-Json
     Write-CollectorLog ("Carga TSE validada: {0} candidatos; {1} UFs com registros." -f $metadata.records, $metadata.ufs_with_records)
 
+    Write-CollectorLog "Enriquecendo naturalidade com Codigo Nacional (DDD) oficial da Anatel..."
+    Invoke-External $PythonCommand @($PythonPrefix + @("scripts\enrich_candidate_region.py"))
+
     Write-CollectorLog "Atualizando catalogo historico oficial da Camara dos Deputados..."
     Invoke-External $PythonCommand @($PythonPrefix + @("scripts\fetch_camara.py"))
 
