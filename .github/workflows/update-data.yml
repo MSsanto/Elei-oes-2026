@@ -27,6 +27,7 @@ jobs:
           python3 -m py_compile scripts/fetch_candidates_browser.py
           python3 -m py_compile scripts/fetch_camara.py
           python3 -m py_compile scripts/build_identity_map.py
+          python3 -m py_compile scripts/fetch_camara_historico.py
 
       - name: Validar sintaxe dos coletores PowerShell
         shell: pwsh
