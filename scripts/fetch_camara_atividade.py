@@ -205,11 +205,15 @@ def profile_fresh(path: Path, max_age_hours: int) -> bool:
 
 
 def collect_one(deputy_id: str, ano: int, votes: list[dict], history_payload: dict, delay: float) -> tuple[str, dict]:
+    # Mantemos somente parametros basicos na API de despesas e ordenamos localmente.
+    # Isso evita depender de campos de ordenacao que podem variar entre versoes.
     expenses = api_all(
         f"/deputados/{deputy_id}/despesas",
-        {"ano": ano, "ordem": "DESC", "ordenarPor": "dataDocumento", "itens": 100},
+        {"ano": ano, "itens": 100},
     )
+    expenses.sort(key=lambda item: str(item.get("dataDocumento") or ""), reverse=True)
     time.sleep(delay)
+
     propositions = api_all(
         "/proposicoes",
         {
