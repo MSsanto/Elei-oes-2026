@@ -30,6 +30,34 @@ jobs:
           python3 -m py_compile scripts/fetch_camara_historico.py
           python3 -m py_compile scripts/fetch_camara_atividade.py
 
+      - name: Validar leitura de CSV da Camara com quebra de linha
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+          import tempfile
+          from pathlib import Path
+
+          spec = importlib.util.spec_from_file_location(
+              "fetch_camara_atividade", "scripts/fetch_camara_atividade.py"
+          )
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          sample = (
+              'id;descricao;data\r\n'
+              '1;"Texto com\r\nquebra de linha interna";2026-09-03\r\n'
+              '2;"Linha simples";2026-09-03\r\n'
+          )
+          with tempfile.TemporaryDirectory() as tmp:
+              path = Path(tmp) / "votacoes.csv"
+              path.write_bytes(sample.encode("utf-8"))
+              rows = module.read_csv(path)
+              assert len(rows) == 2, rows
+              assert rows[0]["id"] == "1", rows[0]
+              assert "quebra de linha interna" in rows[0]["descricao"], rows[0]
+          print("OK: CSV multiline preservado")
+          PY
+
       - name: Validar sintaxe dos coletores PowerShell
         shell: pwsh
         run: |
