@@ -6,7 +6,8 @@ on:
     branches:
       - main
     paths:
-      - "scripts/fetch_candidates.py"
+      - "functions/api/candidates.js"
+      - "scripts/fetch_candidates_via_cloudflare.py"
       - ".github/workflows/update-data.yml"
   schedule:
     # 00:17, 06:17, 12:17 e 18:17 no horário de Brasília (UTC-3).
@@ -32,8 +33,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Coletar candidaturas
-        run: python scripts/fetch_candidates.py
+      - name: Aguardar deploy do Cloudflare em alterações do proxy
+        if: github.event_name == 'push'
+        run: sleep 45
+
+      - name: Coletar candidaturas via Cloudflare
+        run: python scripts/fetch_candidates_via_cloudflare.py
 
       - name: Configurar Node
         uses: actions/setup-node@v4
@@ -55,5 +60,5 @@ jobs:
             echo "Nenhuma alteração nos dados."
             exit 0
           fi
-          git commit -m "data: atualizar candidaturas do TSE"
+          git commit -m "data: atualizar candidaturas do TSE via Cloudflare"
           git push
