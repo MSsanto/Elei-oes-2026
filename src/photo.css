@@ -1,0 +1,23 @@
+.avatar {
+  overflow: hidden;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: inherit;
+  background: #eef3f9;
+}
+
+.live-notice {
+  margin: -8px 0 18px;
+  padding: 10px 13px;
+  border: 1px solid #cfe0ff;
+  border-radius: 10px;
+  background: #f4f8ff;
+  color: #41618f;
+  font-size: 12px;
+  line-height: 1.5;
+}
