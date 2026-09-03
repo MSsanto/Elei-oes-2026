@@ -21,8 +21,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validar sintaxe do coletor Python
-        run: python3 -m py_compile scripts/fetch_candidates.py
+      - name: Validar sintaxe dos coletores Python
+        run: |
+          python3 -m py_compile scripts/fetch_candidates.py
+          python3 -m py_compile scripts/fetch_candidates_browser.py
 
       - name: Validar sintaxe dos coletores PowerShell
         shell: pwsh
@@ -50,4 +52,4 @@ jobs:
         run: npm install
 
       - name: Validar build do site
-        run: npm run build
+        run: npm install && npm run build
