@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-09-03T21:25:31.564096+00:00",
+  "generated_at_utc": "2026-09-03T23:20:16.259219+00:00",
   "method": "confirma somente nome civil normalizado + data de nascimento exatos e únicos",
   "counts": {
-    "nao_encontrada": 7062,
-    "confirmada": 691,
+    "nao_encontrada": 7066,
+    "confirmada": 692,
     "revisao_manual": 4
   },
   "records": [
@@ -16575,6 +16575,20 @@
       "camara": null
     },
     {
+      "politico_id": "tse-60002554365",
+      "tse_sq_candidato": [
+        "60002554365"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "FRANCISCO FRANCIMAR BEZERRA BOTELHO",
+      "data_nascimento": "06/01/1945",
+      "uf_candidatura_2026": "CE",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
       "politico_id": "tse-60002534886",
       "tse_sq_candidato": [
         "60002534886"
@@ -18853,6 +18867,20 @@
       "camara_id_deputado": [],
       "nome_civil": "TAINAH GOMES MARINHO ALDIGUERI ARRUDA",
       "data_nascimento": "09/01/1996",
+      "uf_candidatura_2026": "CE",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
+      "politico_id": "tse-60002554366",
+      "tse_sq_candidato": [
+        "60002554366"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "THAYNARA SOUZA FEITOSA",
+      "data_nascimento": "31/08/1994",
       "uf_candidatura_2026": "CE",
       "correspondencia_status": "nao_encontrada",
       "evidencias_correspondencia": [],
@@ -21307,6 +21335,31 @@
       "evidencias_correspondencia": [],
       "historico_camara_localizado": false,
       "camara": null
+    },
+    {
+      "politico_id": "tse-70002554386",
+      "tse_sq_candidato": [
+        "70002554386"
+      ],
+      "camara_id_deputado": [
+        73805
+      ],
+      "nome_civil": "ROBERTO JOÃO PEREIRA FREIRE",
+      "data_nascimento": "20/04/1942",
+      "uf_candidatura_2026": "DF",
+      "correspondencia_status": "confirmada",
+      "evidencias_correspondencia": [
+        "nome_civil_normalizado",
+        "data_nascimento"
+      ],
+      "historico_camara_localizado": true,
+      "camara": {
+        "nome_parlamentar": "ROBERTO FREIRE",
+        "nome_civil": "ROBERTO JOÃO PEREIRA FREIRE",
+        "primeira_legislatura": 46,
+        "ultima_legislatura": 55,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805"
+      }
     },
     {
       "politico_id": "tse-70002544465",
@@ -26343,7 +26396,7 @@
       ],
       "camara_id_deputado": [],
       "nome_civil": "MAYKEL DE CARVALHO PASSOS",
-      "data_nascimento": "29/04/1983",
+      "data_nascimento": "30/04/1983",
       "uf_candidatura_2026": "GO",
       "correspondencia_status": "nao_encontrada",
       "evidencias_correspondencia": [],
@@ -45257,6 +45310,20 @@
       "camara_id_deputado": [],
       "nome_civil": "CARLOS ODORICO DORILÊO ROSA JUNIOR",
       "data_nascimento": "11/05/1981",
+      "uf_candidatura_2026": "MT",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
+      "politico_id": "tse-110002554362",
+      "tse_sq_candidato": [
+        "110002554362"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "CARLOS HENRIQUE BONSI CHECOLI",
+      "data_nascimento": "16/12/1976",
       "uf_candidatura_2026": "MT",
       "correspondencia_status": "nao_encontrada",
       "evidencias_correspondencia": [],
@@ -81603,6 +81670,20 @@
       "camara": null
     },
     {
+      "politico_id": "tse-200002546765",
+      "tse_sq_candidato": [
+        "200002546765"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "SAMELA SORAYA GOMES DE OLIVEIRA",
+      "data_nascimento": "30/12/1971",
+      "uf_candidatura_2026": "RN",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
       "politico_id": "tse-200002546776",
       "tse_sq_candidato": [
         "200002546776"
@@ -81719,20 +81800,6 @@
       "camara_id_deputado": [],
       "nome_civil": "SAMARA TORRES SOARES",
       "data_nascimento": "05/03/1991",
-      "uf_candidatura_2026": "RN",
-      "correspondencia_status": "nao_encontrada",
-      "evidencias_correspondencia": [],
-      "historico_camara_localizado": false,
-      "camara": null
-    },
-    {
-      "politico_id": "tse-200002546765",
-      "tse_sq_candidato": [
-        "200002546765"
-      ],
-      "camara_id_deputado": [],
-      "nome_civil": "SAMELA SORAYA GOMES DE OLIVEIRA",
-      "data_nascimento": "30/12/1971",
       "uf_candidatura_2026": "RN",
       "correspondencia_status": "nao_encontrada",
       "evidencias_correspondencia": [],
@@ -87500,6 +87567,20 @@
       "camara": null
     },
     {
+      "politico_id": "tse-210002534275",
+      "tse_sq_candidato": [
+        "210002534275"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "JOCASTA HELENA TAGUCHI",
+      "data_nascimento": "08/07/1988",
+      "uf_candidatura_2026": "RS",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
       "politico_id": "tse-210002549650",
       "tse_sq_candidato": [
         "210002549650"
@@ -88866,20 +88947,6 @@
       "camara_id_deputado": [],
       "nome_civil": "JESSÉ SANGALLI DE MELLO",
       "data_nascimento": "01/10/1987",
-      "uf_candidatura_2026": "RS",
-      "correspondencia_status": "nao_encontrada",
-      "evidencias_correspondencia": [],
-      "historico_camara_localizado": false,
-      "camara": null
-    },
-    {
-      "politico_id": "tse-210002534275",
-      "tse_sq_candidato": [
-        "210002534275"
-      ],
-      "camara_id_deputado": [],
-      "nome_civil": "JOCASTA HELENA TAGUCHI",
-      "data_nascimento": "08/07/1988",
       "uf_candidatura_2026": "RS",
       "correspondencia_status": "nao_encontrada",
       "evidencias_correspondencia": [],
@@ -99789,6 +99856,20 @@
       "camara": null
     },
     {
+      "politico_id": "tse-250002530146",
+      "tse_sq_candidato": [
+        "250002530146"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "MARCOS VITOR LESSA",
+      "data_nascimento": "08/12/1968",
+      "uf_candidatura_2026": "SP",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
       "politico_id": "tse-250002548479",
       "tse_sq_candidato": [
         "250002548479"
@@ -102621,6 +102702,20 @@
       "camara_id_deputado": [],
       "nome_civil": "BRUNA CAROLINE ITUASSU",
       "data_nascimento": "11/12/1986",
+      "uf_candidatura_2026": "SP",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
+      "politico_id": "tse-250002554361",
+      "tse_sq_candidato": [
+        "250002554361"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "DAIANE ARAUJO ALMEIDA",
+      "data_nascimento": "19/10/1985",
       "uf_candidatura_2026": "SP",
       "correspondencia_status": "nao_encontrada",
       "evidencias_correspondencia": [],
@@ -108100,20 +108195,6 @@
       "camara_id_deputado": [],
       "nome_civil": "MARCOS JOSÉ PEREIRA",
       "data_nascimento": "28/11/1968",
-      "uf_candidatura_2026": "SP",
-      "correspondencia_status": "nao_encontrada",
-      "evidencias_correspondencia": [],
-      "historico_camara_localizado": false,
-      "camara": null
-    },
-    {
-      "politico_id": "tse-250002530146",
-      "tse_sq_candidato": [
-        "250002530146"
-      ],
-      "camara_id_deputado": [],
-      "nome_civil": "MARCOS VITOR LESSA",
-      "data_nascimento": "08/12/1968",
       "uf_candidatura_2026": "SP",
       "correspondencia_status": "nao_encontrada",
       "evidencias_correspondencia": [],
