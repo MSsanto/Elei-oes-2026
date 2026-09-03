@@ -26,6 +26,19 @@ function toHex(buffer) {
   return [...new Uint8Array(buffer)].map((value) => value.toString(16).padStart(2, '0')).join('');
 }
 
+function base64ToBytes(base64) {
+  const binary = atob(base64);
+  const bytes = new Uint8Array(binary.length);
+  for (let index = 0; index < binary.length; index += 1) {
+    bytes[index] = binary.charCodeAt(index);
+  }
+  return bytes;
+}
+
+function headersToObject(headers = []) {
+  return Object.fromEntries(headers.map((header) => [String(header.name).toLowerCase(), header.value]));
+}
+
 async function openTseDataset(page) {
   await page.setUserAgent(USER_AGENT);
 
@@ -152,8 +165,9 @@ async function testZipBodyCapture(env) {
     ok: false,
     tested_at_utc: new Date().toISOString(),
     expected_zip_url: ZIP_URL,
+    strategy: 'Chrome DevTools Protocol Fetch interception',
     capture: null,
-    note: 'Teste de leitura dos bytes do ZIP. Nenhum dado publicado e alterado.',
+    note: 'Teste de leitura dos bytes do ZIP via CDP. Nenhum dado publicado e alterado.',
   };
 
   try {
@@ -165,18 +179,54 @@ async function testZipBodyCapture(env) {
       throw new Error(`Portal do TSE retornou status ${portalStatus}`);
     }
 
-    let resolveZipResponse;
-    const zipResponsePromise = new Promise((resolve) => {
-      resolveZipResponse = resolve;
+    const cdp = await page.createCDPSession();
+    await cdp.send('Fetch.enable', {
+      patterns: [
+        {
+          urlPattern: '*consulta_cand_2026.zip*',
+          requestStage: 'Response',
+        },
+      ],
     });
 
-    const onResponse = (response) => {
-      if (response.url().includes('consulta_cand_2026.zip')) {
-        resolveZipResponse(response);
+    let resolveCapture;
+    const capturePromise = new Promise((resolve) => {
+      resolveCapture = resolve;
+    });
+
+    const onPaused = async (event) => {
+      const requestUrl = event?.request?.url || '';
+
+      if (!requestUrl.includes('consulta_cand_2026.zip')) {
+        await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
+        return;
       }
+
+      const responseHeaders = headersToObject(event.responseHeaders || []);
+      let bodyError = null;
+      let bytes = null;
+
+      try {
+        const body = await cdp.send('Fetch.getResponseBody', { requestId: event.requestId });
+        bytes = body.base64Encoded
+          ? base64ToBytes(body.body)
+          : new TextEncoder().encode(body.body);
+      } catch (error) {
+        bodyError = safeError(error);
+      }
+
+      await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
+
+      resolveCapture({
+        url: requestUrl,
+        status: event.responseStatusCode ?? null,
+        response_headers: responseHeaders,
+        bytes,
+        body_error: bodyError,
+      });
     };
 
-    page.on('response', onResponse);
+    cdp.on('Fetch.requestPaused', onPaused);
 
     let navigationError = null;
     try {
@@ -188,60 +238,52 @@ async function testZipBodyCapture(env) {
       navigationError = safeError(error);
     }
 
-    const zipResponse = await Promise.race([
-      zipResponsePromise,
-      sleep(5000).then(() => null),
+    const captured = await Promise.race([
+      capturePromise,
+      sleep(12000).then(() => null),
     ]);
-    page.off('response', onResponse);
 
-    if (!zipResponse) {
-      throw new Error('A resposta HTTP do ZIP nao foi capturada pelo navegador.');
+    cdp.off('Fetch.requestPaused', onPaused);
+    await cdp.send('Fetch.disable').catch(() => undefined);
+
+    if (!captured) {
+      throw new Error('A resposta HTTP do ZIP nao foi interceptada pelo CDP.');
     }
 
-    const headers = zipResponse.headers();
-    const status = zipResponse.status();
-    let bytes;
-    let bodyError = null;
-
-    try {
-      bytes = await zipResponse.buffer();
-    } catch (error) {
-      bodyError = safeError(error);
-    }
-
-    if (!bytes) {
+    if (!captured.bytes) {
       result.capture = {
-        url: zipResponse.url(),
-        status,
-        content_type: headers?.['content-type'] || null,
-        declared_content_length: headers?.['content-length'] || null,
+        discovered_in_portal: Boolean(discoveredZip),
+        url: captured.url,
+        status: captured.status,
+        content_type: captured.response_headers?.['content-type'] || null,
+        declared_content_length: captured.response_headers?.['content-length'] || null,
         navigation_error: navigationError,
-        body_error: bodyError,
+        body_error: captured.body_error,
       };
       result.elapsed_ms = Date.now() - startedAt;
       return result;
     }
 
-    const data = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes);
+    const data = captured.bytes;
     const digest = await crypto.subtle.digest('SHA-256', data);
     const signature = Array.from(data.slice(0, 4));
     const zipMagic = signature.length >= 2 && signature[0] === 0x50 && signature[1] === 0x4b;
 
     result.capture = {
       discovered_in_portal: Boolean(discoveredZip),
-      url: zipResponse.url(),
-      status,
-      content_type: headers?.['content-type'] || null,
-      declared_content_length: headers?.['content-length'] || null,
+      url: captured.url,
+      status: captured.status,
+      content_type: captured.response_headers?.['content-type'] || null,
+      declared_content_length: captured.response_headers?.['content-length'] || null,
       captured_bytes: data.byteLength,
       first_four_bytes: signature,
       zip_magic_ok: zipMagic,
       sha256: toHex(digest),
       navigation_error: navigationError,
-      body_error: bodyError,
+      body_error: captured.body_error,
     };
 
-    result.ok = status === 200 && zipMagic && data.byteLength > 1000000;
+    result.ok = captured.status === 200 && zipMagic && data.byteLength > 1000000;
     result.elapsed_ms = Date.now() - startedAt;
     return result;
   } catch (error) {
@@ -265,6 +307,7 @@ export default {
         status: 'ready',
         probe: '/probe',
         download_test: '/download-test',
+        download_test_strategy: 'CDP Fetch interception',
         purpose: 'Testar se o TSE aceita Cloudflare Browser Run antes de migrar a coleta automatica.',
       });
     }
