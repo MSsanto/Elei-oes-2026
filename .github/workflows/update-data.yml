@@ -26,11 +26,36 @@ jobs:
           python3 -m py_compile scripts/fetch_candidates.py
           python3 -m py_compile scripts/fetch_candidates_browser.py
           python3 -m py_compile scripts/fetch_candidates_cloud.py
+          python3 -m py_compile scripts/enrich_candidate_region.py
           python3 -m py_compile scripts/fetch_camara.py
           python3 -m py_compile scripts/build_identity_map.py
           python3 -m py_compile scripts/fetch_camara_historico.py
           python3 -m py_compile scripts/fetch_camara_atividade.py
           python3 -m py_compile scripts/fetch_camara_atividade_cloud.py
+
+      - name: Validar parser oficial de DDD da Anatel
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+
+          spec = importlib.util.spec_from_file_location(
+              "enrich_candidate_region", "scripts/enrich_candidate_region.py"
+          )
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          sample = '''
+          <table>
+            <tr><th>Codigo_IBGE</th><th>UF</th><th>Municipio</th><th>Codigo_Nacional</th></tr>
+            <tr><td>3549904</td><td>SP</td><td>São José dos Campos</td><td>12</td></tr>
+            <tr><td>3550308</td><td>SP</td><td>São Paulo</td><td>11</td></tr>
+          </table>
+          '''
+          mapping = module.parse_pgcn_html(sample)
+          assert mapping[("SP", "SAO JOSE DOS CAMPOS")] == "12", mapping
+          assert mapping[("SP", "SAO PAULO")] == "11", mapping
+          print("OK: parser PGCN/DDD preserva municipio e Codigo Nacional")
+          PY
 
       - name: Validar leitura de CSV da Camara com quebra de linha
         run: |
