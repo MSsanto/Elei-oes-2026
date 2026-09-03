@@ -125,14 +125,28 @@ def cached_download(url: str, filename: str, max_age_hours: int) -> Path:
 
 def read_csv(path: Path):
     raw = path.read_bytes()
-    text = raw.decode("utf-8-sig", errors="replace")
-    sample = text[:8192]
+
+    # O modulo csv exige newline="" para preservar corretamente CR/LF e
+    # quebras de linha dentro de campos citados. TextIOWrapper sobre BytesIO
+    # reproduz a abertura recomendada para arquivos CSV.
+    stream = io.TextIOWrapper(
+        io.BytesIO(raw),
+        encoding="utf-8-sig",
+        errors="replace",
+        newline="",
+    )
     try:
-        dialect = csv.Sniffer().sniff(sample, delimiters=";,\t,")
-    except csv.Error:
-        dialect = csv.excel
-        dialect.delimiter = ";"
-    return list(csv.DictReader(io.StringIO(text), dialect=dialect))
+        sample = stream.read(8192)
+        stream.seek(0)
+        try:
+            dialect = csv.Sniffer().sniff(sample, delimiters=";,\t")
+        except csv.Error:
+            dialect = csv.excel
+            dialect.delimiter = ";"
+
+        return list(csv.DictReader(stream, dialect=dialect))
+    finally:
+        stream.close()
 
 
 def confirmed_ids(mapping: dict) -> list[str]:
