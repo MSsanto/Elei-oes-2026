@@ -118,12 +118,14 @@ function Save-Candidates {
     New-Item -ItemType Directory -Force -Path $ProcessedDir | Out-Null
     New-Item -ItemType Directory -Force -Path $UfDir | Out-Null
 
-    Write-Utf8NoBom (Join-Path $ProcessedDir "deputados_federais.json") (($clean | ConvertTo-Json -Depth 6))
+    $nationalJson = ConvertTo-Json -InputObject @($clean) -Depth 6
+    Write-Utf8NoBom (Join-Path $ProcessedDir "deputados_federais.json") $nationalJson
 
     $ufsWithRecords = @($clean | Select-Object -ExpandProperty uf -Unique | Sort-Object)
     foreach ($uf in $Ufs) {
         $items = @($clean | Where-Object { $_.uf -eq $uf })
-        Write-Utf8NoBom (Join-Path $UfDir "$uf.json") (($items | ConvertTo-Json -Depth 6))
+        $ufJson = ConvertTo-Json -InputObject @($items) -Depth 6
+        Write-Utf8NoBom (Join-Path $UfDir "$uf.json") $ufJson
     }
 
     $metadata = [pscustomobject][ordered]@{
@@ -219,7 +221,7 @@ function Collect-FromRest {
                 if (-not $candidate.uf) { $candidate.uf = $uf }
                 if ($candidate.id_tse) { $all.Add($candidate) }
             }
-            Write-Host "$uf: $($raw.Count) candidaturas"
+            Write-Host "${uf}: $($raw.Count) candidaturas"
         }
         catch {
             throw "Falha ao consultar $uf no DivulgaCandContas: $($_.Exception.Message)"
