@@ -32,7 +32,7 @@ jobs:
         run: python scripts/fetch_candidates_cloud.py
 
       - name: Atualizar catalogo historico da Camara
-        run: python scripts/fetch_camara.py
+        run: python scripts/fetch_camara.py --max-age-hours 24
 
       - name: Atualizar mapa de identidades TSE e Camara
         run: python scripts/build_identity_map.py
