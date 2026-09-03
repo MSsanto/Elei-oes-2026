@@ -1,0 +1,25 @@
+name: Inspecionar campos do DivulgaCand
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspecionar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Inspecionar campos publicos do detalhe de candidatura
+        env:
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: python scripts/inspect_divulgacand_fields.py
