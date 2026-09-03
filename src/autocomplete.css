@@ -1,0 +1,132 @@
+.autocomplete {
+  position: relative;
+  min-width: 0;
+}
+
+.autocomplete .search-box {
+  width: 100%;
+}
+
+.autocomplete-menu {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  max-height: 430px;
+  overflow-y: auto;
+  background: #ffffff;
+  border: 1px solid #d9e2ee;
+  border-radius: 14px;
+  box-shadow: 0 20px 48px rgba(15, 30, 54, 0.16);
+}
+
+.autocomplete-caption {
+  padding: 10px 13px 7px;
+  color: #8a96a8;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.autocomplete-option {
+  width: 100%;
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 11px;
+  padding: 9px 12px;
+  border: 0;
+  border-top: 1px solid #edf1f6;
+  background: #ffffff;
+  color: #1b293e;
+  text-align: left;
+}
+
+.autocomplete-option:hover,
+.autocomplete-option.active {
+  background: #f2f6ff;
+}
+
+.autocomplete-option .avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  font-size: 12px;
+}
+
+.autocomplete-copy {
+  min-width: 0;
+}
+
+.autocomplete-copy strong,
+.autocomplete-copy small {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.autocomplete-copy strong {
+  color: #17243a;
+  font-size: 13px;
+}
+
+.autocomplete-copy small {
+  margin-top: 4px;
+  color: #758196;
+  font-size: 10px;
+}
+
+.autocomplete-kind {
+  padding: 4px 6px;
+  border-radius: 999px;
+  background: #edf3ff;
+  color: #3765b4;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.party-suggestion-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 11px;
+  background: #eef2f7;
+  border: 1px solid #dfe6ef;
+  color: #53647d;
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.autocomplete-help {
+  padding: 8px 12px;
+  border-top: 1px solid #edf1f6;
+  background: #fafbfd;
+  color: #909bad;
+  font-size: 9px;
+  text-align: right;
+}
+
+@media (max-width: 760px) {
+  .autocomplete-menu {
+    max-height: 350px;
+  }
+
+  .autocomplete-kind {
+    display: none;
+  }
+
+  .autocomplete-option {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .autocomplete-help {
+    text-align: left;
+  }
+}
