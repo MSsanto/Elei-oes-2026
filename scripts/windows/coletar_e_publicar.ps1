@@ -60,12 +60,34 @@ try {
         throw "Python 3 não encontrado. Instale o Python 3 e marque a opção 'Add Python to PATH'."
     }
 
-    $dirty = (& git status --porcelain --untracked-files=no) -join "`n"
+    $statusLines = @(& git status --porcelain)
     if ($LASTEXITCODE -ne 0) {
         throw "Não foi possível consultar o estado do repositório."
     }
-    if ($dirty.Trim()) {
-        throw "Há alterações locais não commitadas. Faça commit/stash delas antes da coleta automática para evitar conflitos."
+
+    $nonGeneratedChanges = @()
+    $generatedChanges = @()
+    foreach ($line in $statusLines) {
+        if (-not $line) { continue }
+        $path = if ($line.Length -ge 4) { $line.Substring(3).Trim() } else { $line.Trim() }
+        if ($path -like "data/processed*" -or $path -like "data\processed*") {
+            $generatedChanges += $line
+        }
+        else {
+            $nonGeneratedChanges += $line
+        }
+    }
+
+    if ($nonGeneratedChanges.Count -gt 0) {
+        Write-CollectorLog "Alterações locais encontradas fora da pasta de dados gerados:"
+        foreach ($line in $nonGeneratedChanges) { Write-CollectorLog "  $line" }
+        throw "Faça commit ou stash das alterações locais antes da coleta automática."
+    }
+
+    if ($generatedChanges.Count -gt 0) {
+        Write-CollectorLog "Limpando arquivos gerados deixados por uma execução anterior interrompida..."
+        & git restore --staged --worktree -- data/processed 2>$null
+        & git clean -fd -- data/processed 2>$null
     }
 
     if (-not $SkipPull) {
