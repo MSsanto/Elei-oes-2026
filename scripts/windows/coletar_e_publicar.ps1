@@ -227,6 +227,9 @@ try {
     Write-CollectorLog "Atualizando historico de exercicio dos vinculos confirmados (cache 12h)..."
     Invoke-External $PythonCommand @($PythonPrefix + @("scripts\fetch_camara_historico.py", "--max-age-hours", "12"))
 
+    Write-CollectorLog "Atualizando despesas, proposicoes e votacoes da Camara de 2026 (cache 24h)..."
+    Invoke-External $PythonCommand @($PythonPrefix + @("scripts\fetch_camara_atividade.py", "--ano", "2026", "--max-age-hours", "24"))
+
     if (-not (Test-Path "data\processed\mappings\identidades.json")) {
         throw "O cruzamento TSE-Camara terminou sem gerar identidades.json."
     }
