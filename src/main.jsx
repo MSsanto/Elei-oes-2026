@@ -127,6 +127,9 @@ function CandidateModal({ candidate, onClose }) {
     ['Gênero', candidate.genero],
     ['Cor/raça declarada', candidate.cor_raca],
     ['Data de nascimento', formatBirthDate(candidate.data_nascimento)],
+    ['UF de nascimento', candidate.uf_nascimento],
+    ['Município de nascimento', candidate.municipio_nascimento],
+    ['DDD do município de nascimento', candidate.ddd_nascimento],
     ['Identificador TSE', candidate.id_tse],
   ].filter(([, value]) => value !== null && value !== undefined && value !== '');
 
@@ -228,6 +231,7 @@ function App() {
   const [metadata, setMetadata] = useState(null);
   const [query, setQuery] = useState('');
   const [uf, setUf] = useState('');
+  const [ddd, setDdd] = useState('');
   const [party, setParty] = useState('');
   const [selected, setSelected] = useState(null);
   const [status, setStatus] = useState('loading');
@@ -278,23 +282,45 @@ function App() {
 
   const ufs = useMemo(() => uniqueSorted(candidates, 'uf'), [candidates]);
   const parties = useMemo(() => uniqueSorted(candidates, 'partido'), [candidates]);
+  const ddds = useMemo(() => {
+    const pool = candidates.filter((candidate) => !uf || candidate.uf === uf);
+    return [...new Set(pool.map((candidate) => candidate.ddd_nascimento).filter(Boolean))]
+      .sort((a, b) => Number(a) - Number(b));
+  }, [candidates, uf]);
+
+  useEffect(() => {
+    if (ddd && !ddds.includes(ddd)) setDdd('');
+  }, [ddd, ddds]);
 
   const filtered = useMemo(() => {
     const term = normalize(query.trim());
     return candidates.filter((candidate) => {
       if (uf && candidate.uf !== uf) return false;
+      if (ddd && candidate.ddd_nascimento !== ddd) return false;
       if (party && candidate.partido !== party) return false;
       if (!term) return true;
-      return [candidate.nome, candidate.nome_urna, candidate.numero, candidate.partido, candidate.ocupacao].some((value) => normalize(value).includes(term));
+      return [
+        candidate.nome,
+        candidate.nome_urna,
+        candidate.numero,
+        candidate.partido,
+        candidate.ocupacao,
+        candidate.municipio_nascimento,
+        candidate.ddd_nascimento,
+      ].some((value) => normalize(value).includes(term));
     });
-  }, [candidates, query, uf, party]);
+  }, [candidates, query, uf, ddd, party]);
 
   const searchSuggestions = useMemo(() => {
     const term = normalize(query.trim());
     if (term.length < 2 || status !== 'ready') return [];
-    const pool = candidates.filter((candidate) => (!uf || candidate.uf === uf) && (!party || candidate.partido === party));
+    const pool = candidates.filter((candidate) =>
+      (!uf || candidate.uf === uf)
+      && (!ddd || candidate.ddd_nascimento === ddd)
+      && (!party || candidate.partido === party)
+    );
     const candidateMatches = pool
-      .filter((candidate) => [candidate.nome_urna, candidate.nome, candidate.numero, candidate.partido].some((value) => normalize(value).includes(term)))
+      .filter((candidate) => [candidate.nome_urna, candidate.nome, candidate.numero, candidate.partido, candidate.municipio_nascimento].some((value) => normalize(value).includes(term)))
       .sort((a, b) => {
         const aName = normalize(a.nome_urna || a.nome);
         const bName = normalize(b.nome_urna || b.nome);
@@ -305,9 +331,18 @@ function App() {
     const partyMatches = parties
       .filter((item) => normalize(item).includes(term))
       .slice(0, 3)
-      .map((item) => ({ type: 'party', key: `party-${item}`, party: item, count: candidates.filter((candidate) => candidate.partido === item && (!uf || candidate.uf === uf)).length }));
+      .map((item) => ({
+        type: 'party',
+        key: `party-${item}`,
+        party: item,
+        count: candidates.filter((candidate) =>
+          candidate.partido === item
+          && (!uf || candidate.uf === uf)
+          && (!ddd || candidate.ddd_nascimento === ddd)
+        ).length,
+      }));
     return [...candidateMatches, ...partyMatches].slice(0, 10);
-  }, [candidates, parties, query, uf, party, status]);
+  }, [candidates, parties, query, uf, ddd, party, status]);
 
   useEffect(() => {
     setActiveSuggestion(-1);
@@ -347,6 +382,7 @@ function App() {
   function clearFilters() {
     setQuery('');
     setUf('');
+    setDdd('');
     setParty('');
     setSuggestionsOpen(false);
     setActiveSuggestion(-1);
@@ -366,7 +402,7 @@ function App() {
           <a className="github-link" href="https://github.com/MSsanto/Elei-oes-2026" target="_blank" rel="noreferrer">Código aberto ↗</a>
         </nav>
         <div className="hero-content" id="top">
-          <div className="eyebrow">DADOS PÚBLICOS · TSE · CÂMARA · CÓDIGO ABERTO</div>
+          <div className="eyebrow">DADOS PÚBLICOS · TSE · CÂMARA · ANATEL · CÓDIGO ABERTO</div>
           <h1>Da candidatura ao mandato,<br /><span>dados oficiais em um só lugar.</span></h1>
           <p className="hero-copy">Consulta independente das candidaturas a Deputado Federal em 2026, integrada progressivamente ao histórico parlamentar publicado pelas fontes oficiais.</p>
           <div className="trust-row"><span>Fontes oficiais identificadas</span><span>Sem vínculo partidário</span><span>Metodologia auditável</span></div>
@@ -387,7 +423,7 @@ function App() {
 
           <div className="filters">
             <div className="autocomplete" onBlur={() => window.setTimeout(() => setSuggestionsOpen(false), 120)}>
-              <label className="search-box" htmlFor="candidate-search"><span>⌕</span><input id="candidate-search" type="search" placeholder="Digite ao menos 2 letras do nome, número ou partido..." value={query} autoComplete="off" role="combobox" aria-autocomplete="list" aria-expanded={suggestionsOpen} aria-controls="search-suggestions" aria-activedescendant={activeSuggestion >= 0 ? `search-suggestion-${activeSuggestion}` : undefined} onFocus={() => query.trim().length >= 2 && searchSuggestions.length && setSuggestionsOpen(true)} onChange={(event) => { setQuery(event.target.value); setSuggestionsOpen(true); }} onKeyDown={handleSearchKeyDown} /></label>
+              <label className="search-box" htmlFor="candidate-search"><span>⌕</span><input id="candidate-search" type="search" placeholder="Nome, número, partido ou município de nascimento..." value={query} autoComplete="off" role="combobox" aria-autocomplete="list" aria-expanded={suggestionsOpen} aria-controls="search-suggestions" aria-activedescendant={activeSuggestion >= 0 ? `search-suggestion-${activeSuggestion}` : undefined} onFocus={() => query.trim().length >= 2 && searchSuggestions.length && setSuggestionsOpen(true)} onChange={(event) => { setQuery(event.target.value); setSuggestionsOpen(true); }} onKeyDown={handleSearchKeyDown} /></label>
               {suggestionsOpen && searchSuggestions.length > 0 && (
                 <div className="autocomplete-menu" id="search-suggestions" role="listbox">
                   <div className="autocomplete-caption">Sugestões</div>
@@ -400,10 +436,14 @@ function App() {
                 </div>
               )}
             </div>
-            <select value={uf} onChange={(event) => setUf(event.target.value)} aria-label="Filtrar por UF"><option value="">Todas as UFs</option>{ufs.map((item) => <option key={item} value={item}>{item}</option>)}</select>
+            <select value={uf} onChange={(event) => setUf(event.target.value)} aria-label="Filtrar por UF da candidatura"><option value="">Todas as UFs</option>{ufs.map((item) => <option key={item} value={item}>{item}</option>)}</select>
+            <select value={ddd} onChange={(event) => setDdd(event.target.value)} aria-label="Filtrar pelo DDD do município de nascimento" disabled={!ddds.length}><option value="">DDD de nascimento</option>{ddds.map((item) => <option key={item} value={item}>DDD {item}</option>)}</select>
             <select value={party} onChange={(event) => setParty(event.target.value)} aria-label="Filtrar por partido"><option value="">Todos os partidos</option>{parties.map((item) => <option key={item} value={item}>{item}</option>)}</select>
-            {(query || uf || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
+            {(query || uf || ddd || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
           </div>
+          {metadata?.regionalizacao && (
+            <p className="regional-filter-note"><strong>Sobre o DDD:</strong> é o Código Nacional da Anatel associado ao município de nascimento informado ao TSE. Não representa domicílio eleitoral, base eleitoral ou área de atuação.</p>
+          )}
 
           {status === 'loading' && <div className="state-card"><div className="loader" />{statusMessage}</div>}
           {status === 'waiting' && <div className="state-card waiting"><strong>Site publicado e frontend pronto.</strong><span>{statusMessage}</span></div>}
@@ -416,7 +456,7 @@ function App() {
           <div><span className="section-kicker">COMO FUNCIONA</span><h2>Da fonte oficial à consulta pública</h2></div>
           <div className="method-grid">
             <article><span>01</span><h3>Coleta</h3><p>O TSE alimenta a base eleitoral. A Câmara fornece cadastro, histórico, despesas, proposições e registros individuais de votação.</p></article>
-            <article><span>02</span><h3>Vínculo auditável</h3><p>O sistema só confirma TSE ↔ Câmara quando nome civil e data de nascimento coincidem de forma exata e única.</p></article>
+            <article><span>02</span><h3>Vínculo auditável</h3><p>O sistema só confirma TSE ↔ Câmara quando nome civil e data de nascimento coincidem de forma exata e única. A naturalidade é cruzada separadamente com os Códigos Nacionais da Anatel.</p></article>
             <article><span>03</span><h3>Publicação</h3><p>Dados processados ficam versionados no GitHub e cada alteração é publicada pelo Cloudflare Pages.</p></article>
           </div>
         </section>
