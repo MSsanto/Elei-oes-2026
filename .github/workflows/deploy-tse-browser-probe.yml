@@ -1,0 +1,35 @@
+name: Deploy TSE Browser Probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validar credenciais configuradas
+        shell: bash
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "Configure os secrets CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID no repositorio antes de executar este workflow."
+            exit 1
+          fi
+
+      - name: Instalar dependencias do Worker
+        working-directory: workers/tse-browser-probe
+        run: npm install
+
+      - name: Deploy do probe no Cloudflare Workers
+        working-directory: workers/tse-browser-probe
+        run: npx wrangler deploy

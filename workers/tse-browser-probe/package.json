@@ -1,0 +1,14 @@
+{
+  "name": "eleicoes-2026-tse-browser-probe",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run --outdir .wrangler-dist"
+  },
+  "devDependencies": {
+    "@cloudflare/puppeteer": "1.1.0",
+    "wrangler": "latest"
+  }
+}
