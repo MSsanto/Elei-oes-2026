@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 import './photo.css';
+import './autocomplete.css';
 
 const DATA_URL = '/data/deputados_federais.json';
 const META_URL = '/data/metadata.json';
@@ -197,6 +198,8 @@ function App() {
   const [selected, setSelected] = useState(null);
   const [status, setStatus] = useState('loading');
   const [statusMessage, setStatusMessage] = useState('Carregando base pública...');
+  const [suggestionsOpen, setSuggestionsOpen] = useState(false);
+  const [activeSuggestion, setActiveSuggestion] = useState(-1);
 
   useEffect(() => {
     let active = true;
@@ -235,7 +238,11 @@ function App() {
 
   useEffect(() => {
     const closeOnEscape = (event) => {
-      if (event.key === 'Escape') setSelected(null);
+      if (event.key === 'Escape') {
+        setSelected(null);
+        setSuggestionsOpen(false);
+        setActiveSuggestion(-1);
+      }
     };
     window.addEventListener('keydown', closeOnEscape);
     return () => window.removeEventListener('keydown', closeOnEscape);
@@ -255,6 +262,94 @@ function App() {
         .some((value) => normalize(value).includes(term));
     });
   }, [candidates, query, uf, party]);
+
+  const searchSuggestions = useMemo(() => {
+    const rawTerm = query.trim();
+    const term = normalize(rawTerm);
+    if (term.length < 2 || status !== 'ready') return [];
+
+    const candidatePool = candidates.filter((candidate) => {
+      if (uf && candidate.uf !== uf) return false;
+      if (party && candidate.partido !== party) return false;
+      return true;
+    });
+
+    const candidateMatches = candidatePool
+      .filter((candidate) => [candidate.nome_urna, candidate.nome, candidate.numero, candidate.partido]
+        .some((value) => normalize(value).includes(term)))
+      .sort((a, b) => {
+        const aName = normalize(a.nome_urna || a.nome);
+        const bName = normalize(b.nome_urna || b.nome);
+        const aStarts = aName.startsWith(term) ? 0 : 1;
+        const bStarts = bName.startsWith(term) ? 0 : 1;
+        return aStarts - bStarts || aName.localeCompare(bName, 'pt-BR');
+      })
+      .slice(0, 7)
+      .map((candidate) => ({
+        type: 'candidate',
+        key: `candidate-${candidate.id_tse}`,
+        candidate,
+      }));
+
+    const partyMatches = parties
+      .filter((item) => normalize(item).includes(term))
+      .slice(0, 3)
+      .map((item) => ({
+        type: 'party',
+        key: `party-${item}`,
+        party: item,
+        count: candidates.filter((candidate) => candidate.partido === item && (!uf || candidate.uf === uf)).length,
+      }));
+
+    return [...candidateMatches, ...partyMatches].slice(0, 10);
+  }, [candidates, parties, query, uf, party, status]);
+
+  useEffect(() => {
+    setActiveSuggestion(-1);
+    setSuggestionsOpen(query.trim().length >= 2 && searchSuggestions.length > 0);
+  }, [query, searchSuggestions.length]);
+
+  function chooseSuggestion(suggestion) {
+    if (!suggestion) return;
+
+    if (suggestion.type === 'candidate') {
+      const candidate = suggestion.candidate;
+      setQuery(candidate.nome_urna || candidate.nome || candidate.numero || '');
+      setSelected(candidate);
+    } else if (suggestion.type === 'party') {
+      setParty(suggestion.party);
+      setQuery('');
+    }
+
+    setSuggestionsOpen(false);
+    setActiveSuggestion(-1);
+  }
+
+  function handleSearchKeyDown(event) {
+    if (!suggestionsOpen || searchSuggestions.length === 0) return;
+
+    if (event.key === 'ArrowDown') {
+      event.preventDefault();
+      setActiveSuggestion((current) => (current + 1) % searchSuggestions.length);
+    } else if (event.key === 'ArrowUp') {
+      event.preventDefault();
+      setActiveSuggestion((current) => (current <= 0 ? searchSuggestions.length - 1 : current - 1));
+    } else if (event.key === 'Enter' && activeSuggestion >= 0) {
+      event.preventDefault();
+      chooseSuggestion(searchSuggestions[activeSuggestion]);
+    } else if (event.key === 'Escape') {
+      setSuggestionsOpen(false);
+      setActiveSuggestion(-1);
+    }
+  }
+
+  function clearFilters() {
+    setQuery('');
+    setUf('');
+    setParty('');
+    setSuggestionsOpen(false);
+    setActiveSuggestion(-1);
+  }
 
   const stats = useMemo(() => ({
     candidates: candidates.length,
@@ -306,10 +401,77 @@ function App() {
           )}
 
           <div className="filters">
-            <label className="search-box">
-              <span>⌕</span>
-              <input type="search" placeholder="Nome, número, partido ou ocupação..." value={query} onChange={(event) => setQuery(event.target.value)} />
-            </label>
+            <div
+              className="autocomplete"
+              onBlur={() => window.setTimeout(() => setSuggestionsOpen(false), 120)}
+            >
+              <label className="search-box" htmlFor="candidate-search">
+                <span>⌕</span>
+                <input
+                  id="candidate-search"
+                  type="search"
+                  placeholder="Digite ao menos 2 letras do nome, número ou partido..."
+                  value={query}
+                  autoComplete="off"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded={suggestionsOpen}
+                  aria-controls="search-suggestions"
+                  aria-activedescendant={activeSuggestion >= 0 ? `search-suggestion-${activeSuggestion}` : undefined}
+                  onFocus={() => {
+                    if (query.trim().length >= 2 && searchSuggestions.length > 0) setSuggestionsOpen(true);
+                  }}
+                  onChange={(event) => {
+                    setQuery(event.target.value);
+                    setSuggestionsOpen(true);
+                  }}
+                  onKeyDown={handleSearchKeyDown}
+                />
+              </label>
+
+              {suggestionsOpen && searchSuggestions.length > 0 && (
+                <div className="autocomplete-menu" id="search-suggestions" role="listbox">
+                  <div className="autocomplete-caption">Sugestões</div>
+                  {searchSuggestions.map((suggestion, index) => (
+                    <button
+                      id={`search-suggestion-${index}`}
+                      key={suggestion.key}
+                      className={`autocomplete-option${index === activeSuggestion ? ' active' : ''}`}
+                      role="option"
+                      aria-selected={index === activeSuggestion}
+                      type="button"
+                      onMouseDown={(event) => event.preventDefault()}
+                      onMouseEnter={() => setActiveSuggestion(index)}
+                      onClick={() => chooseSuggestion(suggestion)}
+                    >
+                      {suggestion.type === 'candidate' ? (
+                        <>
+                          <CandidateAvatar candidate={suggestion.candidate} />
+                          <span className="autocomplete-copy">
+                            <strong>{suggestion.candidate.nome_urna || suggestion.candidate.nome}</strong>
+                            <small>
+                              {suggestion.candidate.numero || '—'} · {suggestion.candidate.partido || 'Sem partido'} · {suggestion.candidate.uf || 'BR'}
+                            </small>
+                          </span>
+                          <span className="autocomplete-kind">Candidato</span>
+                        </>
+                      ) : (
+                        <>
+                          <span className="party-suggestion-icon">P</span>
+                          <span className="autocomplete-copy">
+                            <strong>{suggestion.party}</strong>
+                            <small>{suggestion.count.toLocaleString('pt-BR')} candidato(s) nesta carga</small>
+                          </span>
+                          <span className="autocomplete-kind">Partido</span>
+                        </>
+                      )}
+                    </button>
+                  ))}
+                  <div className="autocomplete-help">↑ ↓ para navegar · Enter para selecionar · Esc para fechar</div>
+                </div>
+              )}
+            </div>
+
             <select value={uf} onChange={(event) => setUf(event.target.value)} aria-label="Filtrar por UF">
               <option value="">Todas as UFs</option>
               {ufs.map((item) => <option key={item} value={item}>{item}</option>)}
@@ -318,7 +480,7 @@ function App() {
               <option value="">Todos os partidos</option>
               {parties.map((item) => <option key={item} value={item}>{item}</option>)}
             </select>
-            {(query || uf || party) && <button className="clear-button" onClick={() => { setQuery(''); setUf(''); setParty(''); }} type="button">Limpar</button>}
+            {(query || uf || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
           </div>
 
           {status === 'loading' && <div className="state-card"><div className="loader" />{statusMessage}</div>}
