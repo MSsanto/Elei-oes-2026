@@ -66,69 +66,21 @@ function Find-GitExecutable {
     return $null
 }
 
-function Find-PythonExecutable {
-    $launcher = Get-Command py.exe -ErrorAction SilentlyContinue
-    if ($launcher) {
-        & $launcher.Source -3 --version *> $null
-        if ($LASTEXITCODE -eq 0) {
-            return @{ Command = $launcher.Source; Prefix = @("-3") }
-        }
-    }
-
-    $python = Get-Command python.exe -ErrorAction SilentlyContinue
-    if ($python) {
-        & $python.Source --version *> $null
-        if ($LASTEXITCODE -eq 0) {
-            return @{ Command = $python.Source; Prefix = @() }
-        }
-    }
-
-    $roots = @(
-        (Join-Path $env:LOCALAPPDATA "Programs\Python"),
-        $env:ProgramFiles
-    )
-    foreach ($root in $roots) {
-        if (-not $root -or -not (Test-Path $root)) { continue }
-        $patterns = if ($root -like "*Programs\Python") { @("Python*\python.exe") } else { @("Python*\python.exe") }
-        foreach ($pattern in $patterns) {
-            $found = Get-ChildItem -Path (Join-Path $root $pattern) -File -ErrorAction SilentlyContinue |
-                Sort-Object FullName -Descending |
-                Select-Object -First 1
-            if ($found) {
-                & $found.FullName --version *> $null
-                if ($LASTEXITCODE -eq 0) {
-                    return @{ Command = $found.FullName; Prefix = @() }
-                }
-            }
-        }
-    }
-    return $null
-}
-
 try {
     Set-Location $RepoRoot
     Write-CollectorLog "Iniciando coleta nacional Eleicoes 2026."
     Write-CollectorLog "Repositorio: $RepoRoot"
 
     if (-not (Test-Path (Join-Path $RepoRoot ".git"))) {
-        throw "Esta pasta nao e um clone Git. Clone MSsanto/Elei-oes-2026 antes de executar o coletor."
+        throw "Esta pasta nao e um clone Git."
     }
 
     $GitCommand = Find-GitExecutable
     if (-not $GitCommand) {
-        throw "Git nao encontrado. O coletor procurou no PATH, Git for Windows e no Git embutido do GitHub Desktop."
+        throw "Git nao encontrado. O coletor procurou no PATH, Git for Windows e no GitHub Desktop."
     }
     Write-CollectorLog "Git localizado: $GitCommand"
     Invoke-External $GitCommand @("--version")
-
-    $PythonInfo = Find-PythonExecutable
-    if (-not $PythonInfo) {
-        throw "Python 3 nao encontrado. Instale Python 3 pelo python.org ou Microsoft Store e execute novamente."
-    }
-    $PythonCommand = [string]$PythonInfo.Command
-    $PythonPrefix = [string[]]$PythonInfo.Prefix
-    Write-CollectorLog "Python localizado: $PythonCommand"
-    Invoke-External $PythonCommand @($PythonPrefix + @("--version"))
 
     $statusLines = @(& $GitCommand status --porcelain)
     if ($LASTEXITCODE -ne 0) { throw "Nao foi possivel consultar o estado do repositorio." }
@@ -149,7 +101,7 @@ try {
     }
 
     if ($generatedChanges.Count -gt 0) {
-        Write-CollectorLog "Limpando arquivos gerados deixados por uma execucao anterior interrompida..."
+        Write-CollectorLog "Limpando dados gerados por uma execucao anterior interrompida..."
         & $GitCommand restore --staged --worktree -- data/processed 2>$null
         & $GitCommand clean -fd -- data/processed 2>$null
     }
@@ -159,8 +111,10 @@ try {
         Invoke-External $GitCommand @("pull", "--rebase", "origin", "main")
     }
 
-    Write-CollectorLog "Executando coletor nacional do TSE..."
-    Invoke-External $PythonCommand @($PythonPrefix + @("scripts\fetch_candidates.py"))
+    Write-CollectorLog "Executando coletor PowerShell do TSE (sem Python)..."
+    $CollectorScript = Join-Path $PSScriptRoot "fetch_candidates_windows.ps1"
+    if (-not (Test-Path $CollectorScript)) { throw "Coletor PowerShell nao encontrado: $CollectorScript" }
+    Invoke-External "powershell.exe" @("-NoProfile", "-ExecutionPolicy", "Bypass", "-File", $CollectorScript)
 
     if (-not (Test-Path "data\processed\deputados_federais.json")) {
         throw "O coletor terminou sem gerar data/processed/deputados_federais.json."
@@ -173,7 +127,7 @@ try {
     Write-CollectorLog ("Carga validada: {0} candidatos; {1} UFs com registros." -f $metadata.records, $metadata.ufs_with_records)
 
     if ($NoPush) {
-        Write-CollectorLog "Modo NoPush: arquivos gerados localmente; publicacao no GitHub ignorada."
+        Write-CollectorLog "Modo NoPush: arquivos gerados localmente; publicacao ignorada."
         exit 0
     }
 
@@ -190,12 +144,12 @@ try {
     Invoke-External $GitCommand @("commit", "-m", "data: atualizar candidaturas nacionais do TSE")
     Invoke-External $GitCommand @("push", "origin", "main")
 
-    Write-CollectorLog "Publicacao concluida. O Cloudflare Pages fara o novo deploy automaticamente."
+    Write-CollectorLog "Publicacao concluida. O Cloudflare Pages fara o deploy automaticamente."
     Write-CollectorLog "Site: https://eleicoes-2026-ebz.pages.dev"
     exit 0
 }
 catch {
     Write-CollectorLog ("ERRO: " + $_.Exception.Message)
-    Write-CollectorLog "A carga anterior foi preservada. Consulte o arquivo de log para diagnostico."
+    Write-CollectorLog "A carga anterior foi preservada. Consulte .collector/logs para diagnostico."
     exit 1
 }
