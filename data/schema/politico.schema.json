@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eleicoes-2026-ebz.pages.dev/schema/politico.schema.json",
+  "title": "Perfil factual de politico",
+  "type": "object",
+  "required": ["politico_id", "identidade", "fontes"],
+  "properties": {
+    "politico_id": { "type": "string" },
+    "identidade": {
+      "type": "object",
+      "properties": {
+        "nome_civil": { "type": "string" },
+        "data_nascimento": { "type": ["string", "null"] },
+        "uf": { "type": ["string", "null"] },
+        "tse_sq_candidato": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "camara_id_deputado": {
+          "type": "array",
+          "items": { "type": ["string", "integer"] }
+        },
+        "correspondencia_status": {
+          "enum": ["confirmada", "revisao_manual", "nao_encontrada"]
+        },
+        "evidencias_correspondencia": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "eleicoes": { "type": "array" },
+    "mandatos": { "type": "array" },
+    "despesas_mandato": { "type": "array" },
+    "proposicoes": { "type": "array" },
+    "votacoes": { "type": "array" },
+    "emendas": { "type": "array" },
+    "transferencias_especiais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ano": { "type": ["integer", "string", "null"] },
+          "numero_emenda": { "type": ["string", "null"] },
+          "beneficiario": { "type": ["string", "null"] },
+          "cnpj_beneficiario": { "type": ["string", "null"] },
+          "uf": { "type": ["string", "null"] },
+          "municipio": { "type": ["string", "null"] },
+          "codigo_ibge": { "type": ["string", "null"] },
+          "valor": { "type": ["number", "null"] },
+          "situacao": { "type": ["string", "null"] },
+          "destinacao_declarada": { "type": ["string", "null"] },
+          "execucao_publicada": { "type": ["string", "null"] },
+          "documentos_publicados": { "type": "array" },
+          "rastreabilidade": {
+            "enum": [
+              "indicada",
+              "transferida",
+              "objeto_declarado",
+              "execucao_informada",
+              "documentos_execucao_publicados",
+              null
+            ]
+          },
+          "fonte_url": { "type": ["string", "null"] },
+          "coletado_em": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "fontes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["fonte"],
+        "properties": {
+          "fonte": { "type": "string" },
+          "url": { "type": ["string", "null"] },
+          "identificador_oficial": { "type": ["string", "null"] },
+          "coletado_em": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}
