@@ -186,17 +186,16 @@ try {
         }
     }
 
+    $PythonInfo = Find-PythonExecutable
+    if (-not $PythonInfo) {
+        throw "Python 3 nao foi localizado. Ele e necessario para o fallback do TSE e para o cruzamento com a Camara."
+    }
+    $PythonCommand = [string]$PythonInfo.Command
+    $PythonPrefix = [string[]]$PythonInfo.Prefix
+    Write-CollectorLog "Python localizado: $PythonCommand"
+    Invoke-External $PythonCommand @($PythonPrefix + @("--version"))
+
     if (-not $directSuccess) {
-        $PythonInfo = Find-PythonExecutable
-        if (-not $PythonInfo) {
-            throw "A coleta direta recebeu 403 e Python 3 nao foi localizado para o fallback via Chrome."
-        }
-
-        $PythonCommand = [string]$PythonInfo.Command
-        $PythonPrefix = [string[]]$PythonInfo.Prefix
-        Write-CollectorLog "Python localizado: $PythonCommand"
-        Invoke-External $PythonCommand @($PythonPrefix + @("--version"))
-
         $seleniumInstalled = Test-NativeCommand $PythonCommand @($PythonPrefix + @("-c", "import selenium"))
         if (-not $seleniumInstalled) {
             Write-CollectorLog "Selenium nao encontrado. Instalando dependencia do coletor no seu perfil de usuario..."
@@ -217,24 +216,37 @@ try {
     }
 
     $metadata = Get-Content "data\processed\metadata.json" -Raw -Encoding UTF8 | ConvertFrom-Json
-    Write-CollectorLog ("Carga validada: {0} candidatos; {1} UFs com registros." -f $metadata.records, $metadata.ufs_with_records)
+    Write-CollectorLog ("Carga TSE validada: {0} candidatos; {1} UFs com registros." -f $metadata.records, $metadata.ufs_with_records)
+
+    Write-CollectorLog "Atualizando catalogo historico oficial da Camara dos Deputados..."
+    Invoke-External $PythonCommand @($PythonPrefix + @("scripts\fetch_camara.py"))
+
+    Write-CollectorLog "Cruzando candidatos 2026 com o historico da Camara..."
+    Invoke-External $PythonCommand @($PythonPrefix + @("scripts\build_identity_map.py"))
+
+    Write-CollectorLog "Atualizando historico de exercicio dos vinculos confirmados (cache 12h)..."
+    Invoke-External $PythonCommand @($PythonPrefix + @("scripts\fetch_camara_historico.py", "--max-age-hours", "12"))
+
+    if (-not (Test-Path "data\processed\mappings\identidades.json")) {
+        throw "O cruzamento TSE-Camara terminou sem gerar identidades.json."
+    }
 
     if ($NoPush) {
         Write-CollectorLog "Modo NoPush: arquivos gerados localmente; publicacao ignorada."
         exit 0
     }
 
-    Write-CollectorLog "Preparando publicacao no GitHub..."
+    Write-CollectorLog "Preparando publicacao das bases oficiais no GitHub..."
     Invoke-External $GitCommand @("add", "data/processed")
     $staged = (& $GitCommand diff --cached --name-only) -join "`n"
     if ($LASTEXITCODE -ne 0) { throw "Falha ao verificar alteracoes geradas." }
 
     if (-not $staged.Trim()) {
-        Write-CollectorLog "O TSE nao trouxe alteracoes desde a ultima carga. Nada para publicar."
+        Write-CollectorLog "Nenhuma fonte oficial trouxe alteracoes desde a ultima carga. Nada para publicar."
         exit 0
     }
 
-    Invoke-External $GitCommand @("commit", "-m", "data: atualizar candidaturas nacionais do TSE")
+    Invoke-External $GitCommand @("commit", "-m", "data: atualizar TSE e historico da Camara")
     Invoke-External $GitCommand @("push", "origin", "main")
 
     Write-CollectorLog "Publicacao concluida. O Cloudflare Pages fara o deploy automaticamente."
