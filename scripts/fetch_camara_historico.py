@@ -54,7 +54,7 @@ def main() -> None:
         raise SystemExit(f"Mapa de identidades ausente: {MAP_FILE}")
 
     if not should_refresh(OUT_FILE, args.max_age_hours):
-        print(f"Histórico da Câmara ainda dentro do cache de {args.max_age_hours}h; coleta ignorada.")
+        print(f"Historico da Camara ainda dentro do cache de {args.max_age_hours}h; coleta ignorada.")
         return
 
     mapping = json.loads(MAP_FILE.read_text(encoding="utf-8"))
@@ -72,7 +72,7 @@ def main() -> None:
     errors = []
     total = len(ids)
     for index, deputy_id in enumerate(ids, start=1):
-        print(f"Histórico Câmara {index}/{total}: {deputy_id}")
+        print(f"Historico Camara {index}/{total}: {deputy_id}")
         try:
             detail_payload = get_json(f"{BASE_URL}/deputados/{deputy_id}")
             history_payload = get_json(f"{BASE_URL}/deputados/{deputy_id}/historico")
@@ -97,7 +97,7 @@ def main() -> None:
     OUT_FILE.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(f"Histórico Câmara: {len(output)} perfis coletados; {len(errors)} falhas.")
+    print(f"Historico Camara: {len(output)} perfis coletados; {len(errors)} falhas.")
 
 
 if __name__ == "__main__":
