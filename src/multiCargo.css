@@ -1,0 +1,119 @@
+.multi-cargo-hero {
+  min-height: 520px;
+}
+
+.cargo-tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 28px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, .16);
+  border-radius: 14px;
+  background: rgba(8, 18, 35, .48);
+  backdrop-filter: blur(8px);
+}
+
+.cargo-tabs button {
+  min-height: 38px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: rgba(255, 255, 255, .72);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .16s ease, color .16s ease, transform .16s ease;
+}
+
+.cargo-tabs button:hover,
+.cargo-tabs button:focus-visible {
+  color: white;
+  background: rgba(255, 255, 255, .09);
+  outline: none;
+}
+
+.cargo-tabs button.active {
+  background: white;
+  color: #17345f;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .15);
+}
+
+.multi-cargo-filters {
+  grid-template-columns: minmax(280px, 2fr) repeat(4, minmax(135px, 1fr)) auto !important;
+}
+
+.multi-cargo-filters.without-uf {
+  grid-template-columns: minmax(320px, 2fr) repeat(3, minmax(150px, 1fr)) auto !important;
+}
+
+.multi-cargo-filters select:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.governor-empty-state {
+  min-height: 240px;
+  gap: 10px;
+}
+
+.governor-empty-state strong {
+  color: #263449;
+  font-size: 16px;
+}
+
+.governor-empty-state span {
+  max-width: 540px;
+  color: #7a8698;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1080px) {
+  .multi-cargo-filters,
+  .multi-cargo-filters.without-uf {
+    grid-template-columns: repeat(2, minmax(160px, 1fr)) !important;
+  }
+
+  .multi-cargo-filters .autocomplete {
+    grid-column: 1 / -1 !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .cargo-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .cargo-tabs button:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 620px) {
+  .multi-cargo-hero {
+    min-height: 610px;
+  }
+
+  .cargo-tabs {
+    grid-template-columns: 1fr;
+    margin-bottom: 22px;
+  }
+
+  .cargo-tabs button:last-child {
+    grid-column: auto;
+  }
+
+  .multi-cargo-filters,
+  .multi-cargo-filters.without-uf {
+    grid-template-columns: 1fr !important;
+  }
+
+  .multi-cargo-filters .autocomplete {
+    grid-column: auto !important;
+  }
+}
