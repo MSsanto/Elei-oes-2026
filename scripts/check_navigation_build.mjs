@@ -7,6 +7,7 @@ const dist = path.join(root, 'dist');
 
 const required = [
   'index.html',
+  '_redirects',
   'data/candidatos/presidente/brasil.json',
   'data/candidatos/presidente/manifest.json',
   'data/candidatos/governador/manifest.json',
@@ -34,8 +35,13 @@ const routeMarkers = [
   'senador',
   'deputado-federal',
   'deputado-estadual',
+  '/candidato/',
+  '/metodologia',
+  '/fontes',
+  '/sobre',
   'A consulta não conseguiu iniciar.',
-  'Prestação de Contas 2026',
+  'Finanças da campanha',
+  'Filtros ativos',
 ];
 for (const marker of routeMarkers) {
   if (!bundle.includes(marker)) throw new Error(`Marcador de navegação ausente no bundle: ${marker}`);
@@ -46,4 +52,7 @@ if (!index.includes('<div id="root"></div>')) throw new Error('Root da aplicaç�
 if ((index.match(/<script type="module"/g) || []).length !== 1) throw new Error('O index deve carregar exatamente um script module.');
 if (!index.includes('/assets/')) throw new Error('index.html não referencia o bundle processado pelo Vite.');
 
-console.log('Smoke estático concluído: entrada única, cinco cargos e artefatos essenciais presentes.');
+const redirects = await readFile(path.join(dist, '_redirects'), 'utf8');
+if (!redirects.includes('/* /index.html 200')) throw new Error('Fallback SPA não foi copiado para o artefato de produção.');
+
+console.log('Smoke estático concluído: entrada única, cinco cargos, perfil dedicado, páginas institucionais e fallback SPA presentes.');
