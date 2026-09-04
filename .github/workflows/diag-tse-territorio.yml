@@ -1,0 +1,21 @@
+name: Diagnosticar estrutura territorial TSE 2022
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "scripts/diagnose_tse_result_structure.py"
+      - ".github/workflows/diag-tse-territorio.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  diagnosticar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Inspecionar estrutura territorial
+        run: python3 scripts/diagnose_tse_result_structure.py
