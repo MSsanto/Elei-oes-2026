@@ -1,0 +1,54 @@
+name: Coleta inicial Presidente e Governador
+
+on:
+  push:
+    paths:
+      - ".github/triggers/coleta-multicargo-v1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta-inicial-multicargo-2026
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Baixar ZIP oficial do TSE via Browser Run
+        env:
+          TSE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: python scripts/fetch_candidates_cloud.py
+
+      - name: Gerar Presidente e Governador
+        run: python scripts/build_cargos_2026.py
+
+      - name: Publicar somente as novas bases multi-cargo
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/candidatos
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteracao multi-cargo para publicar."
+            exit 0
+          fi
+
+          git commit -m "data: publicar Presidente e Governador 2026"
+          git pull --rebase origin main
+          git push origin HEAD:main
