@@ -88,10 +88,6 @@
     grid-template-columns: 1fr 1fr;
     width: 100%;
   }
-
-  .cargo-tabs button:last-child {
-    grid-column: 1 / -1;
-  }
 }
 
 @media (max-width: 620px) {
@@ -102,10 +98,6 @@
   .cargo-tabs {
     grid-template-columns: 1fr;
     margin-bottom: 22px;
-  }
-
-  .cargo-tabs button:last-child {
-    grid-column: auto;
   }
 
   .multi-cargo-filters,
