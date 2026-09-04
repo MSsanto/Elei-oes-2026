@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "generated_at_utc": "2026-09-04T08:04:34.891751+00:00",
+  "version": 3,
+  "generated_at_utc": "2026-09-04T08:31:15.905484+00:00",
   "source": "Tribunal Superior Eleitoral (TSE)",
   "cargos": {
     "presidente": {
@@ -19,6 +19,11 @@
     "deputado-federal": {
       "status": "legado_compativel",
       "arquivo": "../deputados_federais.json"
+    },
+    "deputado-estadual": {
+      "total": 11683,
+      "manifest": "deputado-estadual/manifest.json",
+      "carregamento": "uf_obrigatoria_paginas_e_indice_sob_demanda"
     }
   }
 }

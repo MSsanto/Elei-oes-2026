@@ -1,0 +1,178 @@
+{
+  "cargo": "deputado-estadual",
+  "label": "Deputado Estadual/Distrital",
+  "circunscricao": "estadual",
+  "total": 11683,
+  "page_size": 60,
+  "estrategia": "uf_obrigatoria_paginas_e_indice_sob_demanda",
+  "ufs": {
+    "AC": {
+      "total": 246,
+      "page_count": 5,
+      "manifest": "AC/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "AL": {
+      "total": 141,
+      "page_count": 3,
+      "manifest": "AL/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "AP": {
+      "total": 193,
+      "page_count": 4,
+      "manifest": "AP/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "AM": {
+      "total": 289,
+      "page_count": 5,
+      "manifest": "AM/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "BA": {
+      "total": 643,
+      "page_count": 11,
+      "manifest": "BA/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "CE": {
+      "total": 375,
+      "page_count": 7,
+      "manifest": "CE/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "DF": {
+      "total": 431,
+      "page_count": 8,
+      "manifest": "DF/manifest.json",
+      "label": "Deputado Distrital"
+    },
+    "ES": {
+      "total": 410,
+      "page_count": 7,
+      "manifest": "ES/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "GO": {
+      "total": 591,
+      "page_count": 10,
+      "manifest": "GO/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "MA": {
+      "total": 283,
+      "page_count": 5,
+      "manifest": "MA/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "MT": {
+      "total": 267,
+      "page_count": 5,
+      "manifest": "MT/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "MS": {
+      "total": 252,
+      "page_count": 5,
+      "manifest": "MS/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "MG": {
+      "total": 996,
+      "page_count": 17,
+      "manifest": "MG/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "PA": {
+      "total": 416,
+      "page_count": 7,
+      "manifest": "PA/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "PB": {
+      "total": 212,
+      "page_count": 4,
+      "manifest": "PB/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "PR": {
+      "total": 616,
+      "page_count": 11,
+      "manifest": "PR/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "PE": {
+      "total": 517,
+      "page_count": 9,
+      "manifest": "PE/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "PI": {
+      "total": 151,
+      "page_count": 3,
+      "manifest": "PI/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "RJ": {
+      "total": 1186,
+      "page_count": 20,
+      "manifest": "RJ/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "RN": {
+      "total": 153,
+      "page_count": 3,
+      "manifest": "RN/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "RS": {
+      "total": 541,
+      "page_count": 10,
+      "manifest": "RS/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "RO": {
+      "total": 260,
+      "page_count": 5,
+      "manifest": "RO/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "RR": {
+      "total": 245,
+      "page_count": 5,
+      "manifest": "RR/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "SC": {
+      "total": 411,
+      "page_count": 7,
+      "manifest": "SC/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "SP": {
+      "total": 1430,
+      "page_count": 24,
+      "manifest": "SP/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "SE": {
+      "total": 221,
+      "page_count": 4,
+      "manifest": "SE/manifest.json",
+      "label": "Deputado Estadual"
+    },
+    "TO": {
+      "total": 207,
+      "page_count": 4,
+      "manifest": "TO/manifest.json",
+      "label": "Deputado Estadual"
+    }
+  },
+  "source": "Tribunal Superior Eleitoral (TSE)",
+  "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+  "election_id": null,
+  "election_ids": [],
+  "csv_files_read": 29,
+  "generated_at_utc": "2026-09-04T08:31:15.905484+00:00"
+}
