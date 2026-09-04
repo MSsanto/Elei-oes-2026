@@ -2,8 +2,12 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import HomeView, { CARGOS } from './homeView.jsx';
 import ConsultationApp from './consultationApp.jsx';
+import InstitutionalPage from './institutionalPages.jsx';
+import PlatformHeader from './PlatformHeader.jsx';
 import './editorialTrust.js';
 import './runtime.css';
+import './designSystem.css';
+import './uxPolish.css';
 
 class AppErrorBoundary extends React.Component {
   constructor(props) {
@@ -22,20 +26,19 @@ class AppErrorBoundary extends React.Component {
   render() {
     if (!this.state.error) return this.props.children;
     return (
-      <div className="project-home">
-        <header className="home-site-header">
-          <nav className="home-topbar" aria-label="Navegação principal">
-            <a className="home-brand" href="/"><span className="home-brand-mark">E26</span><span><strong>Eleições 2026</strong><small>Transparência Eleitoral</small></span></a>
-          </nav>
-        </header>
-        <section className="home-hero">
-          <div className="home-hero-content">
-            <div className="home-eyebrow">ERRO DE INTERFACE</div>
-            <h1 style={{ fontSize: 'clamp(34px,5vw,54px)' }}>A consulta não conseguiu iniciar.</h1>
-            <p className="home-lead">A página encontrou um erro de execução. Recarregue a consulta ou volte à página inicial.</p>
-            <p style={{ marginTop: 22 }}><button type="button" onClick={() => window.location.reload()} style={{ padding: '12px 16px', border: 0, borderRadius: 10, background: '#2563eb', color: '#fff', fontWeight: 800, cursor: 'pointer' }}>Tentar novamente</button><a href="/" style={{ marginLeft: 14, color: '#dbe5f2' }}>Voltar à home</a></p>
-          </div>
-        </section>
+      <div className="info-page">
+        <PlatformHeader />
+        <main className="info-main">
+          <span className="info-kicker">ERRO DE INTERFACE</span>
+          <h1>A consulta não conseguiu iniciar.</h1>
+          <p className="info-lead">A página encontrou um erro de execução. Você pode tentar novamente ou voltar à página inicial.</p>
+          <section className="info-section">
+            <div className="ux-state-actions">
+              <button className="primary" type="button" onClick={() => window.location.reload()}>Tentar novamente</button>
+              <button type="button" onClick={() => window.location.assign('/')}>Voltar à Home</button>
+            </div>
+          </section>
+        </main>
       </div>
     );
   }
@@ -53,20 +56,27 @@ function normalizeUrl() {
     url.searchParams.delete('cargo');
     changed = true;
   }
-  if (changed) window.history.replaceState({}, '', url);
+  if (changed) window.history.replaceState(window.history.state, '', url);
+}
+
+function routeForLocation() {
+  const pathname = window.location.pathname.replace(/\/+$/, '') || '/';
+  if (pathname === '/metodologia') return <InstitutionalPage kind="metodologia" />;
+  if (pathname === '/fontes') return <InstitutionalPage kind="fontes" />;
+  if (pathname === '/sobre') return <InstitutionalPage kind="sobre" />;
+
+  const params = new URLSearchParams(window.location.search);
+  const isProfile = /^\/candidato\/[^/]+$/.test(pathname);
+  const consultation = isProfile || CARGOS.some((item) => item.slug === params.get('cargo')) || Boolean(params.get('candidato'));
+  return consultation ? <ConsultationApp /> : <HomeView />;
 }
 
 normalizeUrl();
-const params = new URLSearchParams(window.location.search);
-const consultation = CARGOS.some((item) => item.slug === params.get('cargo')) || Boolean(params.get('candidato'));
 const rootElement = document.getElementById('root');
-
 if (!rootElement) throw new Error('Elemento #root não encontrado.');
 
 createRoot(rootElement).render(
   <React.StrictMode>
-    <AppErrorBoundary>
-      {consultation ? <ConsultationApp /> : <HomeView />}
-    </AppErrorBoundary>
+    <AppErrorBoundary>{routeForLocation()}</AppErrorBoundary>
   </React.StrictMode>,
 );
