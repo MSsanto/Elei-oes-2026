@@ -67,6 +67,48 @@ function EmptyBlock({ children }) {
   return <p className="activity-empty">{children}</p>;
 }
 
+function YearSelector({ years, selected, onChange }) {
+  if (!years.length) return null;
+  return (
+    <div className="activity-year-selector" aria-label="Período da atividade parlamentar">
+      <span className="activity-year-selector-label">Período</span>
+      <div className="activity-year-buttons" role="group" aria-label="Selecionar período">
+        <button
+          type="button"
+          className={selected === 'all' ? 'active' : ''}
+          onClick={() => onChange('all')}
+          aria-pressed={selected === 'all'}
+        >
+          4 anos
+        </button>
+        {years.map((year) => (
+          <button
+            type="button"
+            key={year}
+            className={String(selected) === String(year) ? 'active' : ''}
+            onClick={() => onChange(String(year))}
+            aria-pressed={String(selected) === String(year)}
+          >
+            {year}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function sectionForPeriod(profile, section, selectedYear) {
+  if (!profile) return null;
+  if (selectedYear === 'all') return profile?.[section] || null;
+  const year = Number(selectedYear);
+  const block = profile?.anos?.[String(year)]?.[section];
+  if (!block) return null;
+  return {
+    ...block,
+    periodo: { inicio: year, fim: year },
+  };
+}
+
 function AnnualBreakdown({ items, valueKey = 'quantidade_registros', money = false, label }) {
   const rows = Array.isArray(items) ? items : [];
   if (!rows.length) return null;
@@ -203,7 +245,7 @@ function ExpensesSection({ data }) {
                 ))}
               </div>
             ) : <EmptyBlock>Nenhum registro foi retornado para o período consultado.</EmptyBlock>}
-            <p className="chart-scope-note">A lista abaixo dos totais mantém apenas os registros mais recentes para reduzir o peso do perfil; os totais anuais são calculados sobre todos os registros retornados pela fonte.</p>
+            <p className="chart-scope-note">A lista de detalhes mantém uma amostra recente do período selecionado para reduzir o peso do perfil; os totais são calculados sobre todos os registros retornados pela fonte.</p>
             <SourceLink href={source}>Fonte oficial das despesas</SourceLink>
           </>
         )}
@@ -286,11 +328,13 @@ export function ChamberActivity({ candidate, identity }) {
   const chamberId = identity?.camara_id_deputado?.[0];
   const [profile, setProfile] = useState(null);
   const [state, setState] = useState(chamberId ? 'loading' : 'idle');
+  const [selectedYear, setSelectedYear] = useState('all');
 
   useEffect(() => {
     let active = true;
     if (!chamberId) return undefined;
     setState('loading');
+    setSelectedYear('all');
     fetch(`/data/camara/perfis/${chamberId}.json`, { cache: 'no-cache' })
       .then(async (response) => {
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -314,9 +358,20 @@ export function ChamberActivity({ candidate, identity }) {
     return detail?.ultimoStatus?.urlFoto || detail?.urlFoto || chamberBasePhoto(candidate);
   }, [profile, candidate]);
 
+  const years = useMemo(() => {
+    const configured = profile?.periodo?.anos;
+    if (Array.isArray(configured) && configured.length) return [...configured].sort((a, b) => a - b);
+    return Object.keys(profile?.anos || {}).map(Number).filter(Number.isFinite).sort((a, b) => a - b);
+  }, [profile]);
+
   const profilePeriod = profile?.periodo?.inicio && profile?.periodo?.fim
     ? `${profile.periodo.inicio}–${profile.periodo.fim}`
     : '2023–2026';
+  const displayedPeriod = selectedYear === 'all' ? profilePeriod : selectedYear;
+
+  const expensesData = useMemo(() => sectionForPeriod(profile, 'despesas', selectedYear), [profile, selectedYear]);
+  const propositionsData = useMemo(() => sectionForPeriod(profile, 'proposicoes', selectedYear), [profile, selectedYear]);
+  const votesData = useMemo(() => sectionForPeriod(profile, 'votacoes', selectedYear), [profile, selectedYear]);
 
   return (
     <section className="chamber-module" data-photo={photo || undefined}>
@@ -325,7 +380,7 @@ export function ChamberActivity({ candidate, identity }) {
           <span className="module-kicker">O QUE ELE FEZ?</span>
           <h3>Histórico na Câmara localizado</h3>
           <p>Vínculo confirmado por coincidência exata e única de nome civil e data de nascimento nas fontes oficiais.</p>
-          <span className="activity-period-badge">Atividade parlamentar exibida: {profilePeriod}</span>
+          <span className="activity-period-badge">Atividade parlamentar exibida: {displayedPeriod}</span>
         </div>
         <div className="source-id"><span>ID Câmara</span><strong>{chamberId}</strong></div>
       </div>
@@ -333,16 +388,21 @@ export function ChamberActivity({ candidate, identity }) {
       {state === 'loading' && <div className="activity-loading">Carregando atividade parlamentar publicada…</div>}
       {state === 'waiting' && <div className="activity-loading">Histórico básico disponível. Despesas, proposições e votações entrarão após a próxima coleta automática.</div>}
 
+      {state === 'ready' && (
+        <YearSelector years={years} selected={selectedYear} onChange={setSelectedYear} />
+      )}
+
       <div className="activity-sections">
         <MandateSection identity={identity} profile={profile} candidate={candidate} />
-        <ExpensesSection data={profile?.despesas} />
-        <PropositionsSection data={profile?.proposicoes} />
-        <VotesSection data={profile?.votacoes} />
+        <ExpensesSection data={expensesData} />
+        <PropositionsSection data={propositionsData} />
+        <VotesSection data={votesData} />
         <details className="activity-section methodology-section">
           <summary><span><strong>Fontes e metodologia</strong><small>Como os dados foram vinculados e apresentados</small></span></summary>
           <div className="activity-body">
             <p className="method-note">O projeto não atribui nota, ranking ou juízo político. Ausência de registro significa apenas que a informação não foi localizada/publicada na fonte consultada para o período exibido.</p>
-            <p className="method-note">Os totais de 2023–2026 são calculados ano a ano a partir das fontes oficiais. Para manter o site leve, o perfil conserva apenas uma amostra dos registros detalhados mais recentes, sem reduzir os totais anuais.</p>
+            <p className="method-note">Os totais de 2023–2026 são calculados ano a ano a partir das fontes oficiais. A opção “4 anos” consolida o período; os botões anuais permitem inspecionar cada ano separadamente sem baixar outro perfil.</p>
+            <p className="method-note">Para manter o site leve, cada ano conserva apenas uma amostra dos registros detalhados mais recentes, sem reduzir os totais anuais.</p>
             <p className="method-note">A seção de proposições reproduz a autoria publicada pela Câmara. A seção de votações preserva o voto/posicionamento registrado sem interpretar seu mérito.</p>
             <SourceLink href={identity?.camara?.uri}>Cadastro oficial do parlamentar</SourceLink>
           </div>
