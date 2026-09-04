@@ -51,9 +51,11 @@ jobs:
 
           assert module.TARGETS['PRESIDENTE']['code'] == '1'
           assert module.TARGETS['GOVERNADOR']['code'] == '3'
+          assert module.TARGETS['SENADOR']['code'] == '5'
           assert module.TARGETS['PRESIDENTE']['slug'] == 'presidente'
           assert module.TARGETS['GOVERNADOR']['slug'] == 'governador'
-          print('OK: Presidente e Governador configurados no gerador multi-cargo')
+          assert module.TARGETS['SENADOR']['slug'] == 'senador'
+          print('OK: Presidente, Governador e Senador configurados no gerador multi-cargo')
           PY
 
       - name: Validar assinatura conservadora do historico regional
