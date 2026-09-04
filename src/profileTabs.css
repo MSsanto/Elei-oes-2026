@@ -46,12 +46,12 @@
 
 .modal.profile-tabs-enabled[data-profile-tab="resumo"] .campaign-finance-host,
 .modal.profile-tabs-enabled[data-profile-tab="resumo"] .chamber-module,
-.modal.profile-tabs-enabled[data-profile-tab="resumo"] .profile-chamber-unconfirmed {
+.modal.profile-tabs-enabled[data-profile-tab="resumo"] > .coming-soon {
   display: none;
 }
 
 .modal.profile-tabs-enabled[data-profile-tab="financas"] .chamber-module,
-.modal.profile-tabs-enabled[data-profile-tab="financas"] .profile-chamber-unconfirmed,
+.modal.profile-tabs-enabled[data-profile-tab="financas"] > .coming-soon,
 .modal.profile-tabs-enabled[data-profile-tab="financas"] > .profile-section-title,
 .modal.profile-tabs-enabled[data-profile-tab="financas"] > .detail-grid {
   display: none;
@@ -61,10 +61,6 @@
 .modal.profile-tabs-enabled[data-profile-tab="camara"] > .profile-section-title,
 .modal.profile-tabs-enabled[data-profile-tab="camara"] > .detail-grid {
   display: none;
-}
-
-.modal.profile-tabs-enabled[data-profile-tab="camara"] .profile-chamber-unconfirmed {
-  display: block;
 }
 
 .profile-tab-context {
