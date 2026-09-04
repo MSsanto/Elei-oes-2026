@@ -42,6 +42,18 @@ const CARGO_CONFIG = {
     dataUrl: (uf) => `/data/candidatos/governador/${uf}.json`,
     metaUrl: '/data/candidatos/governador/manifest.json',
   },
+  senador: {
+    slug: 'senador',
+    label: 'Senador',
+    plural: 'Senador',
+    kicker: 'SENADO FEDERAL',
+    scopeLabel: 'UF selecionada',
+    requiresUf: true,
+    supportsUf: true,
+    hasChamber: false,
+    dataUrl: (uf) => `/data/candidatos/senador/${uf}.json`,
+    metaUrl: '/data/candidatos/senador/manifest.json',
+  },
   'deputado-federal': {
     slug: 'deputado-federal',
     label: 'Deputado Federal',
@@ -360,7 +372,7 @@ async function loadCargo(cargo, uf) {
 }
 
 function CargoTabs({ cargo, onChange }) {
-  const tabs = ['presidente', 'governador', 'deputado-federal'];
+  const tabs = ['presidente', 'governador', 'senador', 'deputado-federal'];
   return (
     <div className="cargo-tabs" role="tablist" aria-label="Cargo eleitoral">
       {tabs.map((slug) => (
@@ -406,7 +418,7 @@ function App() {
 
     if (config.requiresUf && !uf) {
       setStatus('needs-uf');
-      setStatusMessage('Escolha uma UF para carregar as candidaturas a Governador.');
+      setStatusMessage(`Escolha uma UF para carregar as candidaturas a ${config.label}.`);
     } else {
       setStatus('loading');
       setStatusMessage(`Carregando candidaturas a ${config.label}...`);
@@ -627,7 +639,7 @@ function App() {
 
   const scopeValue = cargo === 'presidente'
     ? 'Brasil'
-    : cargo === 'governador'
+    : config.requiresUf
       ? (uf || 'Escolha uma UF')
       : `${stats.ufs} UFs`;
 
@@ -759,7 +771,7 @@ function App() {
           {status === 'needs-uf' && (
             <div className="state-card governor-empty-state">
               <div className="empty-state-icon" aria-hidden="true">⌖</div>
-              <strong>Escolha uma UF para consultar Governador</strong>
+              <strong>Escolha uma UF para consultar {config.label}</strong>
               <span>A carga é feita somente para o estado selecionado. Nenhuma UF é escolhida automaticamente pelo sistema.</span>
             </div>
           )}
