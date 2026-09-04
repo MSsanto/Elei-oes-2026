@@ -1,10 +1,25 @@
 import puppeteer from '@cloudflare/puppeteer';
 import probeWorker from './index.js';
 
-const PRODUCTION_REVISION = 'dataset-router-v2';
-const DATASET_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
-const ZIP_URL = 'https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip';
+const PRODUCTION_REVISION = 'dataset-router-v3-finance';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36';
+
+const DATASETS = {
+  candidatos: {
+    portal: 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026',
+    url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip',
+    filename: 'consulta_cand_2026.zip',
+    pattern: '*consulta_cand_2026.zip*',
+    minBytes: 1_000_000,
+  },
+  prestacaoCandidatos2026: {
+    portal: 'https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026',
+    url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip',
+    filename: 'prestacao_de_contas_eleitorais_candidatos_2026.zip',
+    pattern: '*prestacao_de_contas_eleitorais_candidatos_2026.zip*',
+    minBytes: 10_000,
+  },
+};
 
 function json(payload, status = 200) {
   return new Response(JSON.stringify(payload, null, 2), {
@@ -41,7 +56,7 @@ function toHex(buffer) {
   return [...new Uint8Array(buffer)].map((value) => value.toString(16).padStart(2, '0')).join('');
 }
 
-async function captureOfficialZip(env) {
+async function captureOfficialZip(env, dataset) {
   let browser;
 
   try {
@@ -49,7 +64,7 @@ async function captureOfficialZip(env) {
     const page = await browser.newPage();
     await page.setUserAgent(USER_AGENT);
 
-    const portalResponse = await page.goto(DATASET_URL, {
+    const portalResponse = await page.goto(dataset.portal, {
       waitUntil: 'domcontentloaded',
       timeout: 30000,
     });
@@ -60,13 +75,13 @@ async function captureOfficialZip(env) {
     }
 
     const discoveredZip = await page
-      .$$eval('a[href*="consulta_cand_2026.zip"]', (links) => links.map((link) => link.href).find(Boolean) || null)
+      .$$eval(`a[href*="${dataset.filename}"]`, (links) => links.map((link) => link.href).find(Boolean) || null)
       .catch(() => null);
-    const zipUrl = discoveredZip || ZIP_URL;
+    const zipUrl = discoveredZip || dataset.url;
 
     const cdp = await page.createCDPSession();
     await cdp.send('Fetch.enable', {
-      patterns: [{ urlPattern: '*consulta_cand_2026.zip*', requestStage: 'Response' }],
+      patterns: [{ urlPattern: dataset.pattern, requestStage: 'Response' }],
     });
 
     let resolveCapture;
@@ -76,7 +91,7 @@ async function captureOfficialZip(env) {
 
     const onPaused = async (event) => {
       const requestUrl = event?.request?.url || '';
-      if (!requestUrl.includes('consulta_cand_2026.zip')) {
+      if (!requestUrl.includes(dataset.filename)) {
         await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
         return;
       }
@@ -105,14 +120,14 @@ async function captureOfficialZip(env) {
     cdp.on('Fetch.requestPaused', onPaused);
 
     try {
-      await page.goto(zipUrl, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      await page.goto(zipUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     } catch {
-      // ZIPs disparam download no Chromium e podem encerrar a navegacao com ERR_ABORTED.
+      // ZIPs podem encerrar a navegacao do Chromium com ERR_ABORTED.
     }
 
     const captured = await Promise.race([
       capturePromise,
-      sleep(12000).then(() => null),
+      sleep(25000).then(() => null),
     ]);
 
     cdp.off('Fetch.requestPaused', onPaused);
@@ -127,7 +142,7 @@ async function captureOfficialZip(env) {
 
     const signature = Array.from(captured.bytes.slice(0, 4));
     const zipMagic = signature[0] === 0x50 && signature[1] === 0x4b;
-    if (captured.status !== 200 || !zipMagic || captured.bytes.byteLength <= 1000000) {
+    if (captured.status !== 200 || !zipMagic || captured.bytes.byteLength <= dataset.minBytes) {
       throw new Error(`Resposta invalida do TSE: status=${captured.status}, bytes=${captured.bytes.byteLength}`);
     }
 
@@ -159,27 +174,27 @@ function authorize(request, env) {
   return null;
 }
 
-async function downloadCurrentCandidates(request, env) {
+async function downloadDataset(request, env, key, dataset) {
   const authorizationError = authorize(request, env);
   if (authorizationError) return authorizationError;
 
   try {
-    const captured = await captureOfficialZip(env);
+    const captured = await captureOfficialZip(env, dataset);
     return new Response(captured.bytes, {
       status: 200,
       headers: {
         'content-type': captured.contentType,
-        'content-disposition': 'attachment; filename="consulta_cand_2026.zip"',
+        'content-disposition': `attachment; filename="${dataset.filename}"`,
         'content-length': String(captured.bytes.byteLength),
         'cache-control': 'no-store',
         'x-tse-source': captured.sourceUrl,
         'x-tse-sha256': captured.sha256,
-        'x-tse-dataset': 'candidatos',
+        'x-tse-dataset': key,
         'x-production-revision': PRODUCTION_REVISION,
       },
     });
   } catch (error) {
-    return json({ error: safeError(error), source: ZIP_URL, production_revision: PRODUCTION_REVISION }, 502);
+    return json({ error: safeError(error), source: dataset.url, dataset: key, production_revision: PRODUCTION_REVISION }, 502);
   }
 }
 
@@ -188,11 +203,12 @@ export default {
     const url = new URL(request.url);
 
     if (url.pathname === '/download') {
-      const dataset = url.searchParams.get('dataset') || 'candidatos';
-      if (dataset === 'candidatos') {
-        return downloadCurrentCandidates(request, env);
+      const datasetKey = url.searchParams.get('dataset') || 'candidatos';
+      const dataset = DATASETS[datasetKey];
+      if (dataset) {
+        return downloadDataset(request, env, datasetKey, dataset);
       }
-      // Recursos complementares/historicos sao tratados pela camada multidataset.
+      // Recursos complementares/historicos continuam na camada multidataset existente.
       return probeWorker.fetch(request, env);
     }
 
@@ -201,7 +217,8 @@ export default {
       try {
         const payload = await response.clone().json();
         payload.production_revision = PRODUCTION_REVISION;
-        payload.download = '/download?dataset=candidatos|complementar|candidatos2022';
+        payload.production_datasets = Object.keys(DATASETS);
+        payload.download = '/download?dataset=candidatos|prestacaoCandidatos2026|complementar|candidatos2022';
         payload.download_auth = 'Authorization: Bearer <DOWNLOAD_TOKEN>';
         return json(payload, response.status);
       } catch {
