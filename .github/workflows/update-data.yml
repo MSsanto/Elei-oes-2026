@@ -26,6 +26,7 @@ jobs:
           python3 -m py_compile scripts/fetch_candidates.py
           python3 -m py_compile scripts/fetch_candidates_browser.py
           python3 -m py_compile scripts/fetch_candidates_cloud.py
+          python3 -m py_compile scripts/build_cargos_2026.py
           python3 -m py_compile scripts/inspect_tse_complementary.py
           python3 -m py_compile scripts/inspect_divulgacand_fields.py
           python3 -m py_compile scripts/build_historical_ddd_2022.py
@@ -36,6 +37,22 @@ jobs:
           python3 -m py_compile scripts/fetch_camara_historico.py
           python3 -m py_compile scripts/fetch_camara_atividade.py
           python3 -m py_compile scripts/fetch_camara_atividade_cloud.py
+
+      - name: Validar configuração dos cargos multi-cargo
+        run: |
+          python3 - <<'PY'
+          import importlib.util
+
+          spec = importlib.util.spec_from_file_location('cargos2026', 'scripts/build_cargos_2026.py')
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          assert module.TARGETS['PRESIDENTE']['code'] == '1'
+          assert module.TARGETS['GOVERNADOR']['code'] == '3'
+          assert module.TARGETS['PRESIDENTE']['slug'] == 'presidente'
+          assert module.TARGETS['GOVERNADOR']['slug'] == 'governador'
+          print('OK: Presidente e Governador configurados no gerador multi-cargo')
+          PY
 
       - name: Validar assinatura conservadora do historico regional
         run: |
