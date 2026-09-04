@@ -72,5 +72,16 @@
   "transport": "cloudflare_browser_run_cdp",
   "downloaded_bytes": 3153573,
   "sha256": "209f6c5868a2572f13a3cd69a1c77e4e4e64c242d48fb8afd993a3734496215b",
-  "content_type": "application/zip"
+  "content_type": "application/zip",
+  "regionalizacao_historica": {
+    "tipo": "DDD principal da votação nominal para Deputado Federal em 2022",
+    "ano_referencia": 2022,
+    "fonte_votos": "Tribunal Superior Eleitoral (TSE) — Resultados 2022",
+    "fonte_ddd": "Agência Nacional de Telecomunicações (Anatel) — Códigos Nacionais",
+    "metodologia_vinculo": "nome civil + data de nascimento + gênero; correspondência normalizada, exata e única entre 2026 e 2022",
+    "candidaturas_com_historico_confirmado": 0,
+    "candidaturas_com_ddd_principal": 0,
+    "mapa_gerado_em_utc": "2026-09-04T01:56:48.460843+00:00",
+    "nota": "Referência histórica de votação. Não representa domicílio eleitoral, residência, endereço ou área atual de atuação política."
+  }
 }
