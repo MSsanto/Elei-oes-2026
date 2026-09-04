@@ -2,6 +2,12 @@ name: Deploy TSE Browser Probe
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'workers/tse-browser-probe/**'
+      - '.github/workflows/deploy-tse-browser-probe.yml'
 
 permissions:
   contents: read
