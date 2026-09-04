@@ -1,4 +1,6 @@
 /* Final UX pass: typography, autocomplete, chamber hierarchy and zoom resilience. */
+.data-strip-update strong { color: var(--ds-ink) !important; }
+
 .autocomplete-list {
   position: absolute;
   top: calc(100% + 6px);
@@ -104,6 +106,10 @@
   .activity-year-buttons button,
   .profile-tabs-new button { min-height: 44px !important; }
   .autocomplete-list button { min-height: 52px; }
+}
+
+@media (max-width: 620px) {
+  .profile-breadcrumb { display: none !important; }
 }
 
 /* Zoom/very narrow view: preserve order and avoid horizontal traps. */
