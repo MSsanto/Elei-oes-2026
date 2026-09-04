@@ -3,9 +3,17 @@ import { createRoot } from 'react-dom/client';
 import './multiCargoMain.jsx';
 import './profileTabs.css';
 import CampaignFinance from './campaignFinance.jsx';
+import './uxRefresh.css';
 
 const mounted = new WeakMap();
 const VALID_TABS = new Set(['resumo', 'financas', 'camara']);
+const CARGO_LABELS = {
+  presidente: 'Presidente',
+  governador: 'Governador',
+  senador: 'Senador',
+  'deputado-federal': 'Deputado Federal',
+  'deputado-estadual': 'Deputado Estadual / Distrital',
+};
 
 function params() {
   return new URLSearchParams(window.location.search);
@@ -103,6 +111,92 @@ function enhanceModal(modal) {
   mounted.set(modal, { root, nav });
 }
 
+function navLink(label, href) {
+  const link = document.createElement('a');
+  link.href = href;
+  link.textContent = label;
+  return link;
+}
+
+function activeCargoLabel() {
+  const active = document.querySelector('.cargo-tabs button[aria-selected="true"]');
+  if (active?.textContent?.trim()) return active.textContent.trim();
+  return CARGO_LABELS[params().get('cargo')] || 'Consulta';
+}
+
+function enhanceConsultationChrome() {
+  const topbar = document.querySelector('.topbar');
+  if (topbar) {
+    const brand = topbar.querySelector('.brand');
+    if (brand) brand.setAttribute('href', '/');
+
+    if (!topbar.querySelector('.consult-nav')) {
+      const nav = document.createElement('div');
+      nav.className = 'consult-nav';
+      nav.setAttribute('aria-label', 'Atalhos do projeto');
+      nav.append(
+        navLink('Consultar', '#consulta'),
+        navLink('Metodologia', '/#metodologia'),
+        navLink('Fontes', '/#fontes'),
+        navLink('Sobre', '/#sobre'),
+      );
+      const github = topbar.querySelector('.github-link');
+      topbar.insertBefore(nav, github || null);
+    }
+  }
+
+  const heroContent = document.querySelector('.hero-content');
+  if (heroContent) {
+    let breadcrumb = heroContent.querySelector(':scope > .consult-breadcrumb');
+    if (!breadcrumb) {
+      breadcrumb = document.createElement('div');
+      breadcrumb.className = 'consult-breadcrumb';
+      breadcrumb.setAttribute('aria-label', 'Navegação estrutural');
+      breadcrumb.innerHTML = '<a href="/">Início</a><span aria-hidden="true">›</span><strong></strong>';
+      heroContent.prepend(breadcrumb);
+    }
+    const label = activeCargoLabel();
+    const current = breadcrumb.querySelector('strong');
+    if (current && current.textContent !== label) current.textContent = label;
+    document.title = `${label} | Eleições 2026`;
+  }
+
+  const firstContent = document.querySelector('.content-section');
+  if (firstContent && !firstContent.id) firstContent.id = 'consulta';
+}
+
+function enhanceFilters() {
+  document.querySelectorAll('.multi-cargo-filters, .state-deputy-filters').forEach((filters) => {
+    const occupation = [...filters.querySelectorAll('select')].find((select) =>
+      (select.getAttribute('aria-label') || '').toLocaleLowerCase('pt-BR').includes('ocupação'),
+    );
+    if (!occupation) return;
+
+    occupation.classList.add('ux-advanced-filter');
+    if (occupation.value) filters.classList.add('advanced-open');
+
+    let button = filters.querySelector('.more-filters-button');
+    if (!button) {
+      button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'more-filters-button';
+      const clear = filters.querySelector('.clear-button');
+      filters.insertBefore(button, clear || null);
+      button.addEventListener('click', () => {
+        filters.classList.toggle('advanced-open');
+        const open = filters.classList.contains('advanced-open');
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
+        button.textContent = open ? 'Menos filtros' : 'Mais filtros';
+        if (open) occupation.focus();
+      });
+    }
+
+    const open = filters.classList.contains('advanced-open');
+    button.setAttribute('aria-expanded', open ? 'true' : 'false');
+    button.textContent = open ? 'Menos filtros' : 'Mais filtros';
+  });
+}
+
 function clearOrphanTabParam() {
   if (document.querySelector('.modal')) return;
   if (currentCandidateId()) return;
@@ -113,10 +207,22 @@ function clearOrphanTabParam() {
 }
 
 function scan() {
+  enhanceConsultationChrome();
+  enhanceFilters();
   document.querySelectorAll('.modal').forEach(enhanceModal);
   clearOrphanTabParam();
 }
 
 const observer = new MutationObserver(scan);
-observer.observe(document.body, { childList: true, subtree: true });
+observer.observe(document.body, {
+  childList: true,
+  subtree: true,
+  attributes: true,
+  attributeFilter: ['aria-selected'],
+});
+
+document.addEventListener('click', (event) => {
+  if (event.target.closest('.cargo-tabs button')) window.setTimeout(scan, 0);
+});
+
 scan();
