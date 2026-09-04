@@ -29,6 +29,7 @@ jobs:
           python3 -m py_compile scripts/inspect_tse_complementary.py
           python3 -m py_compile scripts/inspect_divulgacand_fields.py
           python3 -m py_compile scripts/build_historical_ddd_2022.py
+          python3 -m py_compile scripts/build_historical_ddd_2022_v2.py
           python3 -m py_compile scripts/apply_historical_ddd.py
           python3 -m py_compile scripts/fetch_camara.py
           python3 -m py_compile scripts/build_identity_map.py
