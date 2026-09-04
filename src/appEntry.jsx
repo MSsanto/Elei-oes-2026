@@ -7,6 +7,7 @@ import PlatformHeader from './PlatformHeader.jsx';
 import './editorialTrust.js';
 import './runtime.css';
 import './designSystem.css';
+import './uxPolish.css';
 
 class AppErrorBoundary extends React.Component {
   constructor(props) {
