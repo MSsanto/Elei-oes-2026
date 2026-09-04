@@ -47,6 +47,46 @@ function EmptyBlock({ children }) {
   return <p className="activity-empty">{children}</p>;
 }
 
+function VoteDistributionChart({ data }) {
+  const items = Array.isArray(data?.registros_recentes) ? data.registros_recentes : [];
+  const distribution = useMemo(() => {
+    const counts = new Map();
+    items.forEach((item) => {
+      const label = String(item?.voto || 'Não informado').trim() || 'Não informado';
+      counts.set(label, (counts.get(label) || 0) + 1);
+    });
+    return [...counts.entries()]
+      .map(([label, count]) => ({ label, count }))
+      .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, 'pt-BR'));
+  }, [items]);
+
+  if (!distribution.length) return null;
+  const max = Math.max(...distribution.map((item) => item.count), 1);
+
+  return (
+    <div className="vote-chart" aria-label="Distribuição dos votos e posicionamentos carregados">
+      <div className="vote-chart-heading">
+        <strong>Distribuição dos votos carregados</strong>
+        <span>{items.length.toLocaleString('pt-BR')} registro(s) exibido(s) na carga atual</span>
+      </div>
+      <div className="vote-chart-bars">
+        {distribution.map((item) => (
+          <div className="vote-chart-row" key={item.label}>
+            <span>{item.label}</span>
+            <div className="vote-chart-track" aria-hidden="true">
+              <div className="vote-chart-fill" style={{ width: `${Math.max(7, (item.count / max) * 100)}%` }} />
+            </div>
+            <strong>{item.count.toLocaleString('pt-BR')}</strong>
+          </div>
+        ))}
+      </div>
+      <p className="chart-scope-note">
+        Resumo visual apenas dos registros carregados nesta seção. Quando a carga for parcial, o gráfico não representa todas as votações do mandato.
+      </p>
+    </div>
+  );
+}
+
 function MandateSection({ identity, profile, candidate }) {
   const chamber = identity?.camara || {};
   const history = profile?.mandato?.historico || candidate?.camara_base?.historico || [];
@@ -153,17 +193,20 @@ function VotesSection({ data }) {
       </summary>
       <div className="activity-body">
         {!data ? <EmptyBlock>Aguardando a primeira carga detalhada da Câmara.</EmptyBlock> : data.registros_recentes?.length ? (
-          <div className="record-list">
-            {data.registros_recentes.slice(0, 15).map((item, index) => (
-              <div className="record-row vote-row" key={`${item.id_votacao}-${index}`}>
-                <div>
-                  <strong>{item.descricao || `Votação ${item.id_votacao || ''}`}</strong>
-                  <small>{[item.sigla_orgao, formatDate(item.data_hora_voto || item.data)].filter(Boolean).join(' · ')}</small>
+          <>
+            <VoteDistributionChart data={data} />
+            <div className="record-list">
+              {data.registros_recentes.slice(0, 15).map((item, index) => (
+                <div className="record-row vote-row" key={`${item.id_votacao}-${index}`}>
+                  <div>
+                    <strong>{item.descricao || `Votação ${item.id_votacao || ''}`}</strong>
+                    <small>{[item.sigla_orgao, formatDate(item.data_hora_voto || item.data)].filter(Boolean).join(' · ')}</small>
+                  </div>
+                  <span className="vote-value">{item.voto || '—'}</span>
                 </div>
-                <span className="vote-value">{item.voto || '—'}</span>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </>
         ) : <EmptyBlock>Nenhum voto individual foi retornado para o período consultado.</EmptyBlock>}
         {data?.nota_metodologica && <p className="method-note">{data.nota_metodologica}</p>}
         <SourceLink href={data?.fonte_url}>Arquivo oficial de votos</SourceLink>
