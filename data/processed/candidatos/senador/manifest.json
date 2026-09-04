@@ -1,0 +1,757 @@
+{
+  "cargo": "senador",
+  "label": "Senador",
+  "circunscricao": "estadual",
+  "total": 319,
+  "ufs": {
+    "AC": {
+      "total": 8,
+      "arquivo": "AC.json",
+      "partidos": [
+        "DC",
+        "PL",
+        "PP",
+        "PSD",
+        "PSOL",
+        "PT",
+        "REPUBLICANOS",
+        "SOLIDARIEDADE"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "JORNALISTA E REDATOR",
+        "MÉDICO",
+        "PROFESSOR DE ENSINO FUNDAMENTAL",
+        "SENADOR"
+      ]
+    },
+    "AL": {
+      "total": 7,
+      "arquivo": "AL.json",
+      "partidos": [
+        "DEMOCRATA",
+        "MDB",
+        "PP",
+        "PSDB",
+        "REPUBLICANOS",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "EMPRESÁRIO",
+        "MÉDICO",
+        "SERVIDOR PÚBLICO FEDERAL",
+        "VIGILANTE"
+      ]
+    },
+    "AP": {
+      "total": 9,
+      "arquivo": "AP.json",
+      "partidos": [
+        "DC",
+        "MDB",
+        "PCO",
+        "PODE",
+        "PSB",
+        "PSD",
+        "PT",
+        "UNIÃO"
+      ],
+      "ocupacoes": [
+        "APOSENTADO (EXCETO SERVIDOR PÚBLICO)",
+        "DEPUTADO",
+        "FISCAL",
+        "MÉDICO",
+        "OUTROS",
+        "SENADOR",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO"
+      ]
+    },
+    "AM": {
+      "total": 9,
+      "arquivo": "AM.json",
+      "partidos": [
+        "DC",
+        "MDB",
+        "MOBILIZA",
+        "PL",
+        "PSDB",
+        "PSOL",
+        "PSTU",
+        "REDE",
+        "UNIÃO"
+      ],
+      "ocupacoes": [
+        "COMERCIANTE",
+        "DEPUTADO",
+        "JORNALISTA E REDATOR",
+        "MILITAR REFORMADO",
+        "OUTROS",
+        "PROFESSOR DE ENSINO SUPERIOR",
+        "SENADOR",
+        "TÉCNICO DE MECÂNICA"
+      ]
+    },
+    "BA": {
+      "total": 10,
+      "arquivo": "BA.json",
+      "partidos": [
+        "DC",
+        "MOBILIZA",
+        "PCO",
+        "PL",
+        "PSOL",
+        "PT",
+        "REDE",
+        "REPUBLICANOS",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "ECONOMISTA",
+        "MOTORISTA PARTICULAR",
+        "OUTROS",
+        "PRODUTOR AGROPECUÁRIO",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "SENADOR"
+      ]
+    },
+    "CE": {
+      "total": 8,
+      "arquivo": "CE.json",
+      "partidos": [
+        "NOVO",
+        "PCO",
+        "PL",
+        "PSB",
+        "PSTU",
+        "REDE",
+        "UNIÃO",
+        "UP"
+      ],
+      "ocupacoes": [
+        "DEPUTADO",
+        "ENGENHEIRO",
+        "MILITAR REFORMADO",
+        "POLICIAL MILITAR",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "SENADOR",
+        "SERVIDOR PÚBLICO MUNICIPAL"
+      ]
+    },
+    "DF": {
+      "total": 13,
+      "arquivo": "DF.json",
+      "partidos": [
+        "AGIR",
+        "AVANTE",
+        "DEMOCRATA",
+        "NOVO",
+        "PCO",
+        "PDT",
+        "PL",
+        "PSD",
+        "PSDB",
+        "PSTU",
+        "PT",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "AGRICULTOR",
+        "DEPUTADO",
+        "ECONOMISTA",
+        "EMPRESÁRIO",
+        "MAGISTRADO",
+        "PROFESSOR DE ENSINO FUNDAMENTAL",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "SENADOR",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO"
+      ]
+    },
+    "ES": {
+      "total": 11,
+      "arquivo": "ES.json",
+      "partidos": [
+        "AVANTE",
+        "DC",
+        "MDB",
+        "NOVO",
+        "PL",
+        "PRTB",
+        "PSB",
+        "PSD",
+        "PSOL",
+        "PT",
+        "REPUBLICANOS"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "APOSENTADO (EXCETO SERVIDOR PÚBLICO)",
+        "DEPUTADO",
+        "ENGENHEIRO",
+        "PRODUTOR AGROPECUÁRIO",
+        "PROFESSOR DE ENSINO FUNDAMENTAL",
+        "PUBLICITÁRIO",
+        "SENADOR",
+        "SERVIDOR PÚBLICO ESTADUAL",
+        "VEREADOR"
+      ]
+    },
+    "GO": {
+      "total": 11,
+      "arquivo": "GO.json",
+      "partidos": [
+        "CIDADANIA",
+        "MDB",
+        "PL",
+        "PRD",
+        "PSB",
+        "PSD",
+        "PSDB",
+        "PSOL",
+        "UNIÃO",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "EMPRESÁRIO",
+        "ESTUDANTE, BOLSISTA, ESTAGIÁRIO E ASSEMELHADOS",
+        "MÉDICO",
+        "OUTROS"
+      ]
+    },
+    "MA": {
+      "total": 11,
+      "arquivo": "MA.json",
+      "partidos": [
+        "DC",
+        "MDB",
+        "MOBILIZA",
+        "NOVO",
+        "PCB",
+        "PDT",
+        "PL",
+        "PP",
+        "PSOL",
+        "PSTU",
+        "PT"
+      ],
+      "ocupacoes": [
+        "ADMINISTRADOR",
+        "ANALISTA DE SISTEMAS",
+        "DEPUTADO",
+        "ENGENHEIRO",
+        "MÉDICO",
+        "PESCADOR",
+        "PRODUTOR AGROPECUÁRIO",
+        "SENADOR",
+        "TÉCNICO EM INFORMÁTICA"
+      ]
+    },
+    "MT": {
+      "total": 10,
+      "arquivo": "MT.json",
+      "partidos": [
+        "AGIR",
+        "AVANTE",
+        "DEMOCRATA",
+        "MDB",
+        "PL",
+        "PP",
+        "PSB",
+        "PSD",
+        "UNIÃO"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "AGRICULTOR",
+        "COMERCIANTE",
+        "DEPUTADO",
+        "EMPRESÁRIO",
+        "POLICIAL MILITAR",
+        "PROFESSOR DE ENSINO FUNDAMENTAL",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO"
+      ]
+    },
+    "MS": {
+      "total": 10,
+      "arquivo": "MS.json",
+      "partidos": [
+        "AGIR",
+        "DC",
+        "NOVO",
+        "PCO",
+        "PL",
+        "PRD",
+        "PSB",
+        "PSOL",
+        "PT"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "AGRICULTOR",
+        "BANCÁRIO E ECONOMIÁRIO",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "MEMBRO DAS FORÇAS ARMADAS",
+        "OUTROS",
+        "PRODUTOR AGROPECUÁRIO",
+        "TRABALHADOR DE CONSTRUÇÃO CIVIL"
+      ]
+    },
+    "MG": {
+      "total": 18,
+      "arquivo": "MG.json",
+      "partidos": [
+        "AVANTE",
+        "DC",
+        "MDB",
+        "NOVO",
+        "PCO",
+        "PDT",
+        "PL",
+        "PP",
+        "PSD",
+        "PSDB",
+        "PSOL",
+        "PSTU",
+        "PT",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADMINISTRADOR",
+        "ADVOGADO",
+        "APOSENTADO (EXCETO SERVIDOR PÚBLICO)",
+        "AUXILIAR DE LABORATÓRIO",
+        "CIENTISTA POLÍTICO",
+        "DEPUTADO",
+        "ESTUDANTE, BOLSISTA, ESTAGIÁRIO E ASSEMELHADOS",
+        "INDUSTRIAL",
+        "JORNALISTA E REDATOR",
+        "MAGISTRADO",
+        "MÉDICO",
+        "NÃO DIVULGÁVEL",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO",
+        "TRABALHADOR METALÚRGICO E SIDERÚRGICO",
+        "VETERINÁRIO",
+        "ZOOTECNISTA"
+      ]
+    },
+    "PA": {
+      "total": 13,
+      "arquivo": "PA.json",
+      "partidos": [
+        "DC",
+        "DEMOCRATA",
+        "MDB",
+        "MOBILIZA",
+        "PDT",
+        "PL",
+        "PODE",
+        "PSOL",
+        "SOLIDARIEDADE",
+        "UNIÃO",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ASSISTENTE SOCIAL",
+        "CONTADOR",
+        "DEPUTADO",
+        "ELETRICISTA E ASSEMELHADOS",
+        "EMPRESÁRIO",
+        "POLICIAL MILITAR",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "PROFESSOR DE ENSINO SUPERIOR",
+        "SENADOR",
+        "SERVIDOR PÚBLICO ESTADUAL",
+        "SERVIDOR PÚBLICO FEDERAL"
+      ]
+    },
+    "PB": {
+      "total": 10,
+      "arquivo": "PB.json",
+      "partidos": [
+        "DC",
+        "MDB",
+        "NOVO",
+        "PCO",
+        "PL",
+        "PSB",
+        "REPUBLICANOS",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADMINISTRADOR",
+        "ADVOGADO",
+        "AGRICULTOR",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "GARI OU LIXEIRO",
+        "MILITAR REFORMADO",
+        "MÉDICO",
+        "PEDAGOGO"
+      ]
+    },
+    "PR": {
+      "total": 9,
+      "arquivo": "PR.json",
+      "partidos": [
+        "MISSÃO",
+        "NOVO",
+        "PCO",
+        "PL",
+        "PSD",
+        "PT",
+        "REPUBLICANOS",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "DEPUTADO",
+        "GERENTE",
+        "JORNALISTA E REDATOR",
+        "MECÂNICO DE MANUTENÇÃO",
+        "MÉDICO",
+        "PEDAGOGO"
+      ]
+    },
+    "PE": {
+      "total": 12,
+      "arquivo": "PE.json",
+      "partidos": [
+        "DEMOCRATA",
+        "NOVO",
+        "PCO",
+        "PDT",
+        "PL",
+        "PP",
+        "PSD",
+        "PSTU",
+        "PT",
+        "REDE",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "APOSENTADO (EXCETO SERVIDOR PÚBLICO)",
+        "DEPUTADO",
+        "ENGENHEIRO",
+        "OUTROS",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "PROFESSOR DE ENSINO SUPERIOR",
+        "SENADOR",
+        "TRABALHADOR DE CONSTRUÇÃO CIVIL"
+      ]
+    },
+    "PI": {
+      "total": 20,
+      "arquivo": "PI.json",
+      "partidos": [
+        "AVANTE",
+        "DC",
+        "DEMOCRATA",
+        "MDB",
+        "MOBILIZA",
+        "NOVO",
+        "PCO",
+        "PL",
+        "PP",
+        "PSD",
+        "PSDB",
+        "PSOL",
+        "PSTU",
+        "UP"
+      ],
+      "ocupacoes": [
+        "AGENTE ADMINISTRATIVO",
+        "AGRICULTOR",
+        "APOSENTADO (EXCETO SERVIDOR PÚBLICO)",
+        "COMERCIANTE",
+        "DEPUTADO",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "MEMBRO DAS FORÇAS ARMADAS",
+        "MÉDICO",
+        "OUTROS",
+        "SENADOR",
+        "SERVIDOR PÚBLICO ESTADUAL",
+        "SERVIDOR PÚBLICO FEDERAL",
+        "SERVIDOR PÚBLICO MUNICIPAL"
+      ]
+    },
+    "RJ": {
+      "total": 17,
+      "arquivo": "RJ.json",
+      "partidos": [
+        "DEMOCRATA",
+        "MISSÃO",
+        "PCO",
+        "PL",
+        "PODE",
+        "PRTB",
+        "PSD",
+        "PSOL",
+        "PSTU",
+        "PT",
+        "REPUBLICANOS",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "APOSENTADO (EXCETO SERVIDOR PÚBLICO)",
+        "DEPUTADO",
+        "ECONOMISTA",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "MEMBRO DAS FORÇAS ARMADAS",
+        "MILITAR REFORMADO",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "SENADOR",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO",
+        "TRABALHADOR DE CONSTRUÇÃO CIVIL",
+        "VEREADOR"
+      ]
+    },
+    "RN": {
+      "total": 14,
+      "arquivo": "RN.json",
+      "partidos": [
+        "AGIR",
+        "DC",
+        "PDT",
+        "PL",
+        "PODE",
+        "PSD",
+        "PSOL",
+        "PSTU",
+        "PT",
+        "UNIÃO",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ASSISTENTE SOCIAL",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "MEMBRO DAS FORÇAS ARMADAS",
+        "MÉDICO",
+        "POLICIAL MILITAR",
+        "PROFESSOR DE ENSINO FUNDAMENTAL",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "SENADOR",
+        "SERVIDOR PÚBLICO FEDERAL",
+        "SERVIDOR PÚBLICO MUNICIPAL",
+        "VEREADOR"
+      ]
+    },
+    "RS": {
+      "total": 13,
+      "arquivo": "RS.json",
+      "partidos": [
+        "CIDADANIA",
+        "MDB",
+        "NOVO",
+        "PCO",
+        "PL",
+        "PSD",
+        "PSDB",
+        "PSOL",
+        "PSTU",
+        "PT",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADMINISTRADOR",
+        "ADVOGADO",
+        "AUXILIAR DE ESCRITÓRIO E ASSEMELHADOS",
+        "CIENTISTA POLÍTICO",
+        "DEPUTADO",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "JORNALISTA E REDATOR",
+        "MÉDICO",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO",
+        "SERVIDOR PÚBLICO FEDERAL"
+      ]
+    },
+    "RO": {
+      "total": 10,
+      "arquivo": "RO.json",
+      "partidos": [
+        "MISSÃO",
+        "PDT",
+        "PL",
+        "PP",
+        "PSB",
+        "PSD",
+        "PT",
+        "PV",
+        "REPUBLICANOS"
+      ],
+      "ocupacoes": [
+        "ADMINISTRADOR",
+        "EMPRESÁRIO",
+        "HISTORIADOR",
+        "JORNALISTA E REDATOR",
+        "MÉDICO",
+        "OUTROS"
+      ]
+    },
+    "RR": {
+      "total": 13,
+      "arquivo": "RR.json",
+      "partidos": [
+        "AVANTE",
+        "DC",
+        "MDB",
+        "NOVO",
+        "PL",
+        "PSB",
+        "PSD",
+        "PSDB",
+        "PSOL",
+        "PV",
+        "UNIÃO"
+      ],
+      "ocupacoes": [
+        "AGRICULTOR",
+        "COMERCIANTE",
+        "DEPUTADO",
+        "DESENHISTA",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "MEMBRO DAS FORÇAS ARMADAS",
+        "OUTROS",
+        "PUBLICITÁRIO",
+        "SENADOR",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO"
+      ]
+    },
+    "SC": {
+      "total": 13,
+      "arquivo": "SC.json",
+      "partidos": [
+        "MDB",
+        "MISSÃO",
+        "PCO",
+        "PL",
+        "PP",
+        "PRD",
+        "PSOL",
+        "PSTU",
+        "PT",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "DEPUTADO",
+        "EMPRESÁRIO",
+        "ODONTÓLOGO",
+        "OUTROS",
+        "PRODUTOR AGROPECUÁRIO",
+        "PROFESSOR DE ENSINO FUNDAMENTAL",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "PROFESSOR DE ENSINO SUPERIOR",
+        "SERVIDOR PÚBLICO CIVIL APOSENTADO",
+        "SERVIDOR PÚBLICO FEDERAL",
+        "VEREADOR"
+      ]
+    },
+    "SP": {
+      "total": 16,
+      "arquivo": "SP.json",
+      "partidos": [
+        "AGIR",
+        "CIDADANIA",
+        "MISSÃO",
+        "NOVO",
+        "PCB",
+        "PCO",
+        "PL",
+        "PODE",
+        "PP",
+        "PSB",
+        "PSTU",
+        "REDE",
+        "UP"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "COMERCIANTE",
+        "DEPUTADO",
+        "ELETRICISTA E ASSEMELHADOS",
+        "EMPRESÁRIO",
+        "PROFESSOR DE ENSINO FUNDAMENTAL",
+        "PROFESSOR DE ENSINO MÉDIO",
+        "PUBLICITÁRIO",
+        "RELAÇÕES-PÚBLICAS",
+        "SERVIDOR PÚBLICO MUNICIPAL",
+        "TRABALHADOR METALÚRGICO E SIDERÚRGICO"
+      ]
+    },
+    "SE": {
+      "total": 11,
+      "arquivo": "SE.json",
+      "partidos": [
+        "DC",
+        "MDB",
+        "PDT",
+        "PL",
+        "PSOL",
+        "PT",
+        "REPUBLICANOS",
+        "UNIÃO"
+      ],
+      "ocupacoes": [
+        "ADMINISTRADOR",
+        "ADVOGADO",
+        "EMPRESÁRIO",
+        "ESTUDANTE, BOLSISTA, ESTAGIÁRIO E ASSEMELHADOS",
+        "MILITAR REFORMADO",
+        "MÉDICO",
+        "OUTROS",
+        "PROFESSOR DE ENSINO SUPERIOR",
+        "SENADOR",
+        "SERVIDOR PÚBLICO ESTADUAL"
+      ]
+    },
+    "TO": {
+      "total": 13,
+      "arquivo": "TO.json",
+      "partidos": [
+        "DC",
+        "DEMOCRATA",
+        "MDB",
+        "NOVO",
+        "PL",
+        "PODE",
+        "PSOL",
+        "PT",
+        "REDE",
+        "REPUBLICANOS",
+        "UNIÃO"
+      ],
+      "ocupacoes": [
+        "ADVOGADO",
+        "BOMBEIRO MILITAR",
+        "DEPUTADO",
+        "DIRETOR DE EMPRESAS",
+        "EMPRESÁRIO",
+        "ENGENHEIRO",
+        "PROFESSOR E INSTRUTOR DE FORMAÇÃO PROFISSIONAL",
+        "SENADOR",
+        "SERVIDOR PÚBLICO ESTADUAL",
+        "VENDEDOR PRACISTA, REPRESENTANTE, CAIXEIRO-VIAJANTE E ASSEMELHADOS"
+      ]
+    }
+  },
+  "source": "Tribunal Superior Eleitoral (TSE)",
+  "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+  "election_id": null,
+  "election_ids": [],
+  "csv_files_read": 29,
+  "generated_at_utc": "2026-09-04T03:52:26.922475+00:00"
+}

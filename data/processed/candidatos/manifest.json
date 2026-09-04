@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "generated_at_utc": "2026-09-04T03:35:25.443634+00:00",
+  "version": 2,
+  "generated_at_utc": "2026-09-04T03:52:26.922475+00:00",
   "source": "Tribunal Superior Eleitoral (TSE)",
   "cargos": {
     "presidente": {
@@ -10,6 +10,11 @@
     "governador": {
       "total": 198,
       "manifest": "governador/manifest.json"
+    },
+    "senador": {
+      "total": 319,
+      "manifest": "senador/manifest.json",
+      "historico_senado": "pendente"
     },
     "deputado-federal": {
       "status": "legado_compativel",
