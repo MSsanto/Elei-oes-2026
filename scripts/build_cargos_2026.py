@@ -14,17 +14,26 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_ROOT = ROOT / "data" / "processed" / "candidatos"
 PRESIDENT_DIR = OUTPUT_ROOT / "presidente"
 GOVERNOR_DIR = OUTPUT_ROOT / "governador"
+SENATOR_DIR = OUTPUT_ROOT / "senador"
 
 TARGETS = {
     "PRESIDENTE": {
         "slug": "presidente",
         "code": "1",
         "label": "Presidente",
+        "scope": "nacional",
     },
     "GOVERNADOR": {
         "slug": "governador",
         "code": "3",
         "label": "Governador",
+        "scope": "estadual",
+    },
+    "SENADOR": {
+        "slug": "senador",
+        "code": "5",
+        "label": "Senador",
+        "scope": "estadual",
     },
 }
 
@@ -111,7 +120,7 @@ def collect_targets() -> tuple[dict[str, list[dict[str, object]]], dict[str, obj
                 candidate["cargo_slug"] = target["slug"]
                 candidate["cargo_codigo"] = cargo_code or target["code"]
 
-                if target["slug"] == "presidente":
+                if target["scope"] == "nacional":
                     candidate["uf"] = "BR"
                 else:
                     uf = str(candidate.get("uf") or "").upper()
@@ -170,7 +179,14 @@ def publish_president(records: list[dict[str, object]], metadata: dict[str, obje
     return manifest
 
 
-def publish_governor(records: list[dict[str, object]], metadata: dict[str, object]) -> dict[str, object]:
+def publish_statewide(
+    records: list[dict[str, object]],
+    metadata: dict[str, object],
+    *,
+    slug: str,
+    label: str,
+    output_dir: Path,
+) -> dict[str, object]:
     ordered = unique_sorted(records)
     by_uf: dict[str, list[dict[str, object]]] = defaultdict(list)
     for item in ordered:
@@ -181,7 +197,7 @@ def publish_governor(records: list[dict[str, object]], metadata: dict[str, objec
     uf_meta: dict[str, dict[str, object]] = {}
     for uf in base.UFS:
         payload = by_uf.get(uf, [])
-        compact_json(GOVERNOR_DIR / f"{uf}.json", payload)
+        compact_json(output_dir / f"{uf}.json", payload)
         uf_meta[uf] = {
             "total": len(payload),
             "arquivo": f"{uf}.json",
@@ -190,26 +206,39 @@ def publish_governor(records: list[dict[str, object]], metadata: dict[str, objec
         }
 
     manifest = {
-        "cargo": "governador",
-        "label": "Governador",
+        "cargo": slug,
+        "label": label,
         "circunscricao": "estadual",
         "total": len(ordered),
         "ufs": uf_meta,
         **metadata,
     }
-    pretty_json(GOVERNOR_DIR / "manifest.json", manifest)
+    pretty_json(output_dir / "manifest.json", manifest)
     return manifest
 
 
 def main() -> int:
-    log("Eleições 2026 — geração multi-cargo: Presidente e Governador")
+    log("Eleições 2026 — geração multi-cargo: Presidente, Governador e Senador")
     targets, metadata = collect_targets()
 
     president_manifest = publish_president(targets.get("presidente", []), metadata)
-    governor_manifest = publish_governor(targets.get("governador", []), metadata)
+    governor_manifest = publish_statewide(
+        targets.get("governador", []),
+        metadata,
+        slug="governador",
+        label="Governador",
+        output_dir=GOVERNOR_DIR,
+    )
+    senator_manifest = publish_statewide(
+        targets.get("senador", []),
+        metadata,
+        slug="senador",
+        label="Senador",
+        output_dir=SENATOR_DIR,
+    )
 
     root_manifest = {
-        "version": 1,
+        "version": 2,
         "generated_at_utc": metadata["generated_at_utc"],
         "source": metadata["source"],
         "cargos": {
@@ -220,6 +249,11 @@ def main() -> int:
             "governador": {
                 "total": governor_manifest["total"],
                 "manifest": "governador/manifest.json",
+            },
+            "senador": {
+                "total": senator_manifest["total"],
+                "manifest": "senador/manifest.json",
+                "historico_senado": "pendente",
             },
             "deputado-federal": {
                 "status": "legado_compativel",
@@ -232,12 +266,16 @@ def main() -> int:
     log(
         "Publicação concluída: "
         f"Presidente={president_manifest['total']}; "
-        f"Governador={governor_manifest['total']}"
+        f"Governador={governor_manifest['total']}; "
+        f"Senador={senator_manifest['total']}"
     )
-    if president_manifest["total"] == 0:
-        log("Aviso: nenhuma candidatura a Presidente foi encontrada nesta carga oficial.")
-    if governor_manifest["total"] == 0:
-        log("Aviso: nenhuma candidatura a Governador foi encontrada nesta carga oficial.")
+    for slug, manifest in (
+        ("Presidente", president_manifest),
+        ("Governador", governor_manifest),
+        ("Senador", senator_manifest),
+    ):
+        if manifest["total"] == 0:
+            log(f"Aviso: nenhuma candidatura a {slug} foi encontrada nesta carga oficial.")
     return 0
 
 
