@@ -14,6 +14,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "data" / "processed" / "financas-2026"
+SOURCE_URL = "https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026"
+SHARD_COUNT = 256
 
 
 def text(row: dict[str, str], *keys: str) -> str:
@@ -68,7 +70,9 @@ def read_csv(path: Path):
 
 def find_files(base: Path, pattern: str) -> list[Path]:
     rx = re.compile(pattern, re.I)
-    return sorted(path for path in base.rglob("*.csv") if rx.search(path.name))
+    files = sorted(path for path in base.rglob("*.csv") if rx.search(path.name))
+    national = [path for path in files if "_BRASIL" in path.name.upper()]
+    return national or files
 
 
 def add_sum(store: dict[str, Decimal], key: str, value: Decimal) -> None:
@@ -92,10 +96,66 @@ def aggregate_counterparties(entries: dict[tuple[str, str], Decimal], limit: int
     ]
 
 
+def shard_key(cid: str) -> str:
+    try:
+        value = int(str(cid).strip())
+    except ValueError:
+        value = sum(ord(char) for char in str(cid))
+    return f"{value % SHARD_COUNT:02x}"
+
+
+def month_sort_key(label: str):
+    try:
+        month, year = label.split("/", 1)
+        return int(year), int(month)
+    except (ValueError, AttributeError):
+        return 9999, 99
+
+
+def publish(payloads: dict[str, dict], manifest: dict) -> None:
+    parent = OUTPUT_DIR.parent
+    parent.mkdir(parents=True, exist_ok=True)
+    staging = parent / ".financas-2026.staging"
+    backup = parent / ".financas-2026.backup"
+
+    shutil.rmtree(staging, ignore_errors=True)
+    shutil.rmtree(backup, ignore_errors=True)
+    shards_dir = staging / "shards"
+    shards_dir.mkdir(parents=True, exist_ok=True)
+
+    shards: dict[str, dict[str, dict]] = defaultdict(dict)
+    for cid, payload in payloads.items():
+        shards[shard_key(cid)][cid] = payload
+
+    for key, records in sorted(shards.items()):
+        (shards_dir / f"{key}.json").write_text(
+            json.dumps(records, ensure_ascii=False, separators=(",", ":")),
+            encoding="utf-8",
+        )
+
+    manifest["shard_strategy"] = "SQ_CANDIDATO modulo 256 em hexadecimal"
+    manifest["shard_count"] = len(shards)
+    manifest["shard_slots"] = SHARD_COUNT
+    (staging / "manifest.json").write_text(
+        json.dumps(manifest, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    if OUTPUT_DIR.exists():
+        OUTPUT_DIR.rename(backup)
+    try:
+        staging.rename(OUTPUT_DIR)
+    except Exception:
+        if backup.exists() and not OUTPUT_DIR.exists():
+            backup.rename(OUTPUT_DIR)
+        raise
+    shutil.rmtree(backup, ignore_errors=True)
+
+
 def process(source_dir: Path) -> dict:
     revenue_files = find_files(source_dir, r"receitas?_candidatos|receita.*candidat")
-    expense_files = find_files(source_dir, r"despesas?_contratadas?_candidatos|despesa.*candidat")
-    paid_files = find_files(source_dir, r"despesas?_pagas?_candidatos|pagamento.*candidat")
+    expense_files = find_files(source_dir, r"despesas?_contratadas?_candidatos|despesa.*contrat.*candidat")
+    paid_files = find_files(source_dir, r"despesas?_pagas?_candidatos|pagamento.*candidat|despesa.*paga.*candidat")
 
     if not revenue_files and not expense_files:
         raise RuntimeError("Nenhum CSV de receitas/despesas de candidatos foi localizado no pacote informado.")
@@ -159,14 +219,13 @@ def process(source_dir: Path) -> dict:
                 data[cid]["despesas_pagas_total"] += value
 
     generated = datetime.now(timezone.utc).isoformat()
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    written = 0
-
+    payloads: dict[str, dict] = {}
     for cid, item in data.items():
-        months = sorted(item["timeline"].items(), key=lambda pair: tuple(reversed(pair[0].split("/"))))
-        payload = {
-            "schema_version": 1,
+        months = sorted(item["timeline"].items(), key=lambda pair: month_sort_key(pair[0]))
+        payloads[cid] = {
+            "schema_version": 2,
             "source": "TSE — Prestação de Contas Eleitorais 2026",
+            "source_url": SOURCE_URL,
             "generated_at_utc": generated,
             "id_tse": cid,
             "resumo": {
@@ -184,30 +243,26 @@ def process(source_dir: Path) -> dict:
                 for month, values in months
             ],
         }
-        (OUTPUT_DIR / f"{cid}.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-        written += 1
 
     manifest = {
-        "schema_version": 1,
+        "schema_version": 2,
         "source": "TSE — Prestação de Contas Eleitorais 2026",
+        "source_url": SOURCE_URL,
         "generated_at_utc": generated,
-        "candidates": written,
+        "candidates": len(payloads),
         "revenue_files": [path.name for path in revenue_files],
         "expense_files": [path.name for path in expense_files],
         "paid_files": [path.name for path in paid_files],
     }
-    (OUTPUT_DIR / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
+    publish(payloads, manifest)
     return manifest
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Gera JSONs leves por candidato a partir da Prestação de Contas Eleitorais 2026 do TSE.")
+    parser = argparse.ArgumentParser(description="Gera shards leves por candidato a partir da Prestação de Contas Eleitorais 2026 do TSE.")
     parser.add_argument("source", type=Path, help="Diretório extraído ou arquivo ZIP oficial do TSE")
-    parser.add_argument("--clean", action="store_true", help="Limpa a saída anterior antes de gerar a nova carga")
+    parser.add_argument("--clean", action="store_true", help="Compatibilidade: a publicação já substitui a carga anterior somente após o processamento")
     args = parser.parse_args()
-
-    if args.clean and OUTPUT_DIR.exists():
-        shutil.rmtree(OUTPUT_DIR)
 
     source = args.source.resolve()
     if not source.exists():
