@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - "scripts/diagnose_tse_result_structure.py"
+      - "scripts/build_historical_ddd_2022_v2.py"
       - ".github/workflows/diag-tse-territorio.yml"
 
 permissions:
@@ -17,5 +18,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Inspecionar estrutura territorial
         run: python3 scripts/diagnose_tse_result_structure.py
+
+      - name: Validar codigo municipal TSE para DDD
+        run: |
+          python3 - <<'PY'
+          import sys
+          sys.path.insert(0, 'scripts')
+          import build_historical_ddd_2022 as base
+          import build_historical_ddd_2022_v2 as fixed
+
+          ddd_mapping, _ = fixed._ORIGINAL_LOAD_DDD()
+          codes, names = fixed.build_tse_code_mapping(ddd_mapping)
+
+          assert len(codes) >= 5000, len(codes)
+          assert codes.get(('AC', '01007')) == '68', codes.get(('AC', '01007'))
+          assert base.normalize(names.get(('AC', '01007'))) == 'BUJARI', names.get(('AC', '01007'))
+
+          print(f'OK: {len(codes)} codigos municipais TSE associados a DDD')
+          print('OK: AC/01007 -> BUJARI -> DDD 68')
+          PY
