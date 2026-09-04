@@ -1,5 +1,6 @@
 from pathlib import Path
 
+# Migração temporária e idempotente; remover após aplicar no frontend.
 path = Path('src/multiCargoMain.jsx')
 text = path.read_text(encoding='utf-8')
 
