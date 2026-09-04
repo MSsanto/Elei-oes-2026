@@ -20,6 +20,17 @@ function formatMoney(value) {
   return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(number);
 }
 
+function formatCompactMoney(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return '—';
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+    notation: 'compact',
+    maximumFractionDigits: 1,
+  }).format(number);
+}
+
 function formatDate(value) {
   if (!value) return '—';
   const raw = new Date(value);
@@ -38,6 +49,15 @@ function legislatureLabel(value) {
   return known[id] || (value ? `${value}ª legislatura` : '—');
 }
 
+function periodLabel(data, fallback = '2023–2026') {
+  const period = data?.periodo;
+  if (period?.inicio && period?.fim) {
+    return Number(period.inicio) === Number(period.fim) ? String(period.inicio) : `${period.inicio}–${period.fim}`;
+  }
+  if (data?.ano) return String(data.ano);
+  return fallback;
+}
+
 function SourceLink({ href, children }) {
   if (!href) return null;
   return <a className="source-link" href={href} target="_blank" rel="noreferrer">{children} ↗</a>;
@@ -45,6 +65,39 @@ function SourceLink({ href, children }) {
 
 function EmptyBlock({ children }) {
   return <p className="activity-empty">{children}</p>;
+}
+
+function AnnualBreakdown({ items, valueKey = 'quantidade_registros', money = false, label }) {
+  const rows = Array.isArray(items) ? items : [];
+  if (!rows.length) return null;
+
+  const values = rows.map((item) => Number(item?.[valueKey] || 0));
+  const max = Math.max(...values, 1);
+
+  return (
+    <div className="annual-breakdown" aria-label={label || 'Evolução anual'}>
+      <div className="annual-breakdown-heading">
+        <strong>{label || 'Evolução anual'}</strong>
+        <span>Dados oficiais consolidados por ano</span>
+      </div>
+      <div className="annual-breakdown-grid">
+        {rows.map((item) => {
+          const value = Number(item?.[valueKey] || 0);
+          return (
+            <div className="annual-year" key={item.ano}>
+              <div className="annual-year-top">
+                <span>{item.ano}</span>
+                <strong>{money ? formatCompactMoney(value) : value.toLocaleString('pt-BR')}</strong>
+              </div>
+              <div className="annual-year-track" aria-hidden="true">
+                <div className="annual-year-fill" style={{ width: `${Math.max(value ? 5 : 0, (value / max) * 100)}%` }} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
 
 function VoteDistributionChart({ data }) {
@@ -64,10 +117,10 @@ function VoteDistributionChart({ data }) {
   const max = Math.max(...distribution.map((item) => item.count), 1);
 
   return (
-    <div className="vote-chart" aria-label="Distribuição dos votos e posicionamentos carregados">
+    <div className="vote-chart" aria-label="Distribuição dos votos e posicionamentos recentes carregados">
       <div className="vote-chart-heading">
-        <strong>Distribuição dos votos carregados</strong>
-        <span>{items.length.toLocaleString('pt-BR')} registro(s) exibido(s) na carga atual</span>
+        <strong>Distribuição da amostra recente</strong>
+        <span>{items.length.toLocaleString('pt-BR')} registro(s) recentes do período</span>
       </div>
       <div className="vote-chart-bars">
         {distribution.map((item) => (
@@ -81,7 +134,7 @@ function VoteDistributionChart({ data }) {
         ))}
       </div>
       <p className="chart-scope-note">
-        Resumo visual apenas dos registros carregados nesta seção. Quando a carga for parcial, o gráfico não representa todas as votações do mandato.
+        O gráfico de distribuição usa somente os registros recentes mantidos no perfil. Os totais anuais acima representam toda a carga localizada para cada ano.
       </p>
     </div>
   );
@@ -122,33 +175,36 @@ function MandateSection({ identity, profile, candidate }) {
 }
 
 function ExpensesSection({ data }) {
+  const source = data?.fonte_url || data?.fonte_urls?.filter(Boolean)?.slice(-1)?.[0];
   return (
     <details className="activity-section">
       <summary>
-        <span><strong>Despesas do mandato</strong><small>Cota para o exercício da atividade parlamentar · {data?.ano || 2026}</small></span>
+        <span><strong>Despesas do mandato</strong><small>Cota para o exercício da atividade parlamentar · {periodLabel(data)}</small></span>
         <span className="section-count">{data?.quantidade_registros ?? '—'}</span>
       </summary>
       <div className="activity-body">
         {!data ? <EmptyBlock>Aguardando a primeira carga detalhada da Câmara.</EmptyBlock> : (
           <>
             <div className="metric-strip">
-              <div><span>Valor líquido publicado no período</span><strong>{formatMoney(data.valor_liquido_total)}</strong></div>
-              <div><span>Registros publicados</span><strong>{Number(data.quantidade_registros || 0).toLocaleString('pt-BR')}</strong></div>
+              <div><span>Valor líquido no período</span><strong>{formatMoney(data.valor_liquido_total)}</strong></div>
+              <div><span>Registros no período</span><strong>{Number(data.quantidade_registros || 0).toLocaleString('pt-BR')}</strong></div>
             </div>
+            <AnnualBreakdown items={data.por_ano} valueKey="valor_liquido_total" money label="Despesas por ano" />
             {data.registros_recentes?.length ? (
               <div className="record-list">
                 {data.registros_recentes.slice(0, 12).map((item, index) => (
                   <div className="record-row expense-row" key={`${item.numero_documento || ''}-${index}`}>
                     <div>
                       <strong>{item.tipo_despesa || 'Despesa parlamentar'}</strong>
-                      <small>{item.fornecedor || 'Fornecedor não informado'}{item.cnpj_cpf_fornecedor ? ` · ${item.cnpj_cpf_fornecedor}` : ''}</small>
+                      <small>{item.fornecedor || 'Fornecedor não informado'}{item.ano ? ` · ${item.ano}` : ''}{item.cnpj_cpf_fornecedor ? ` · ${item.cnpj_cpf_fornecedor}` : ''}</small>
                     </div>
                     <span>{formatMoney(item.valor_liquido ?? item.valor_documento)}</span>
                   </div>
                 ))}
               </div>
             ) : <EmptyBlock>Nenhum registro foi retornado para o período consultado.</EmptyBlock>}
-            <SourceLink href={data.fonte_url}>Fonte oficial das despesas</SourceLink>
+            <p className="chart-scope-note">A lista abaixo dos totais mantém apenas os registros mais recentes para reduzir o peso do perfil; os totais anuais são calculados sobre todos os registros retornados pela fonte.</p>
+            <SourceLink href={source}>Fonte oficial das despesas</SourceLink>
           </>
         )}
       </div>
@@ -160,23 +216,28 @@ function PropositionsSection({ data }) {
   return (
     <details className="activity-section">
       <summary>
-        <span><strong>Proposições</strong><small>Autoria publicada pela Câmara · {data?.ano || 2026}</small></span>
+        <span><strong>Proposições</strong><small>Autoria publicada pela Câmara · {periodLabel(data)}</small></span>
         <span className="section-count">{data?.quantidade_registros ?? '—'}</span>
       </summary>
       <div className="activity-body">
-        {!data ? <EmptyBlock>Aguardando a primeira carga detalhada da Câmara.</EmptyBlock> : data.registros_recentes?.length ? (
-          <div className="record-list">
-            {data.registros_recentes.slice(0, 12).map((item) => (
-              <div className="record-row text-row" key={item.id}>
-                <div>
-                  <strong>{[item.sigla_tipo, item.numero, item.ano].filter((v) => v !== null && v !== undefined).join(' ')}</strong>
-                  <small>{item.ementa || 'Ementa não retornada na carga.'}</small>
-                </div>
-                <SourceLink href={item.uri}>Abrir</SourceLink>
+        {!data ? <EmptyBlock>Aguardando a primeira carga detalhada da Câmara.</EmptyBlock> : (
+          <>
+            <AnnualBreakdown items={data.por_ano} label="Proposições por ano" />
+            {data.registros_recentes?.length ? (
+              <div className="record-list">
+                {data.registros_recentes.slice(0, 12).map((item, index) => (
+                  <div className="record-row text-row" key={`${item.id || 'prop'}-${index}`}>
+                    <div>
+                      <strong>{[item.sigla_tipo, item.numero, item.ano].filter((v) => v !== null && v !== undefined).join(' ')}</strong>
+                      <small>{item.ementa || 'Ementa não retornada na carga.'}</small>
+                    </div>
+                    <SourceLink href={item.uri}>Abrir</SourceLink>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        ) : <EmptyBlock>Nenhuma proposição foi retornada para o período consultado.</EmptyBlock>}
+            ) : <EmptyBlock>Nenhuma proposição foi retornada para o período consultado.</EmptyBlock>}
+          </>
+        )}
         {data?.nota_metodologica && <p className="method-note">{data.nota_metodologica}</p>}
         <SourceLink href={data?.fonte_url}>Consulta oficial de proposições</SourceLink>
       </div>
@@ -185,31 +246,37 @@ function PropositionsSection({ data }) {
 }
 
 function VotesSection({ data }) {
+  const source = data?.fonte_url || data?.fonte_urls?.filter(Boolean)?.slice(-1)?.[0];
   return (
     <details className="activity-section">
       <summary>
-        <span><strong>Votações</strong><small>Votos/posicionamentos individuais registrados · {data?.ano || 2026}</small></span>
+        <span><strong>Votações</strong><small>Votos/posicionamentos individuais registrados · {periodLabel(data)}</small></span>
         <span className="section-count">{data?.quantidade_registros ?? '—'}</span>
       </summary>
       <div className="activity-body">
-        {!data ? <EmptyBlock>Aguardando a primeira carga detalhada da Câmara.</EmptyBlock> : data.registros_recentes?.length ? (
+        {!data ? <EmptyBlock>Aguardando a primeira carga detalhada da Câmara.</EmptyBlock> : (
           <>
-            <VoteDistributionChart data={data} />
-            <div className="record-list">
-              {data.registros_recentes.slice(0, 15).map((item, index) => (
-                <div className="record-row vote-row" key={`${item.id_votacao}-${index}`}>
-                  <div>
-                    <strong>{item.descricao || `Votação ${item.id_votacao || ''}`}</strong>
-                    <small>{[item.sigla_orgao, formatDate(item.data_hora_voto || item.data)].filter(Boolean).join(' · ')}</small>
-                  </div>
-                  <span className="vote-value">{item.voto || '—'}</span>
+            <AnnualBreakdown items={data.por_ano} label="Registros de votação por ano" />
+            {data.registros_recentes?.length ? (
+              <>
+                <VoteDistributionChart data={data} />
+                <div className="record-list">
+                  {data.registros_recentes.slice(0, 15).map((item, index) => (
+                    <div className="record-row vote-row" key={`${item.id_votacao}-${index}`}>
+                      <div>
+                        <strong>{item.descricao || `Votação ${item.id_votacao || ''}`}</strong>
+                        <small>{[item.sigla_orgao, formatDate(item.data_hora_voto || item.data)].filter(Boolean).join(' · ')}</small>
+                      </div>
+                      <span className="vote-value">{item.voto || '—'}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            ) : <EmptyBlock>Nenhum voto individual foi retornado para o período consultado.</EmptyBlock>}
           </>
-        ) : <EmptyBlock>Nenhum voto individual foi retornado para o período consultado.</EmptyBlock>}
+        )}
         {data?.nota_metodologica && <p className="method-note">{data.nota_metodologica}</p>}
-        <SourceLink href={data?.fonte_url}>Arquivo oficial de votos</SourceLink>
+        <SourceLink href={source}>Arquivo oficial de votos</SourceLink>
       </div>
     </details>
   );
@@ -247,6 +314,10 @@ export function ChamberActivity({ candidate, identity }) {
     return detail?.ultimoStatus?.urlFoto || detail?.urlFoto || chamberBasePhoto(candidate);
   }, [profile, candidate]);
 
+  const profilePeriod = profile?.periodo?.inicio && profile?.periodo?.fim
+    ? `${profile.periodo.inicio}–${profile.periodo.fim}`
+    : '2023–2026';
+
   return (
     <section className="chamber-module" data-photo={photo || undefined}>
       <div className="chamber-module-heading">
@@ -254,6 +325,7 @@ export function ChamberActivity({ candidate, identity }) {
           <span className="module-kicker">O QUE ELE FEZ?</span>
           <h3>Histórico na Câmara localizado</h3>
           <p>Vínculo confirmado por coincidência exata e única de nome civil e data de nascimento nas fontes oficiais.</p>
+          <span className="activity-period-badge">Atividade parlamentar exibida: {profilePeriod}</span>
         </div>
         <div className="source-id"><span>ID Câmara</span><strong>{chamberId}</strong></div>
       </div>
@@ -270,6 +342,7 @@ export function ChamberActivity({ candidate, identity }) {
           <summary><span><strong>Fontes e metodologia</strong><small>Como os dados foram vinculados e apresentados</small></span></summary>
           <div className="activity-body">
             <p className="method-note">O projeto não atribui nota, ranking ou juízo político. Ausência de registro significa apenas que a informação não foi localizada/publicada na fonte consultada para o período exibido.</p>
+            <p className="method-note">Os totais de 2023–2026 são calculados ano a ano a partir das fontes oficiais. Para manter o site leve, o perfil conserva apenas uma amostra dos registros detalhados mais recentes, sem reduzir os totais anuais.</p>
             <p className="method-note">A seção de proposições reproduz a autoria publicada pela Câmara. A seção de votações preserva o voto/posicionamento registrado sem interpretar seu mérito.</p>
             <SourceLink href={identity?.camara?.uri}>Cadastro oficial do parlamentar</SourceLink>
           </div>
