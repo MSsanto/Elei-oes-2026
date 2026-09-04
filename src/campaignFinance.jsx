@@ -2,6 +2,27 @@ import React, { useEffect, useMemo, useState } from 'react';
 import './campaignFinance.css';
 
 const BASE_URL = '/data/financas-2026';
+const SHARD_CACHE = new Map();
+
+function financeShard(candidateId) {
+  const value = Number(candidateId);
+  if (!Number.isFinite(value)) return '';
+  return (Math.abs(Math.trunc(value)) % 256).toString(16).padStart(2, '0');
+}
+
+async function loadFinanceRecord(candidateId, signal) {
+  const shard = financeShard(candidateId);
+  if (!shard) return null;
+  let payload = SHARD_CACHE.get(shard);
+  if (!payload) {
+    const response = await fetch(`${BASE_URL}/shards/${shard}.json`, { cache: 'no-cache', signal });
+    if (response.status === 404) return null;
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    payload = await response.json();
+    SHARD_CACHE.set(shard, payload);
+  }
+  return payload?.[String(candidateId)] || null;
+}
 
 function money(value) {
   const number = Number(value || 0);
@@ -150,12 +171,7 @@ export default function CampaignFinance({ candidate, candidateId }) {
     const controller = new AbortController();
     setStatus('loading');
     setData(null);
-    fetch(`${BASE_URL}/${resolvedCandidateId}.json`, { cache: 'no-cache', signal: controller.signal })
-      .then(async (response) => {
-        if (response.status === 404) return null;
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        return response.json();
-      })
+    loadFinanceRecord(resolvedCandidateId, controller.signal)
       .then((payload) => {
         if (!payload) {
           setStatus('missing');
@@ -181,7 +197,7 @@ export default function CampaignFinance({ candidate, candidateId }) {
         <div className="finance-section-heading"><div><span>PRESTAÇÃO DE CONTAS 2026</span><h3>Dinheiro da campanha</h3></div></div>
         <div className="finance-state">
           <strong>Prestação financeira ainda não localizada nesta carga.</strong>
-          <span>Isso não significa ausência de movimentação. O painel só é exibido quando há arquivo oficial processado e vinculado pelo identificador TSE da candidatura.</span>
+          <span>Isso não significa ausência de movimentação. O painel só é exibido quando há registro oficial processado e vinculado pelo identificador TSE da candidatura.</span>
         </div>
       </section>
     );
