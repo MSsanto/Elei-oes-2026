@@ -9,9 +9,6 @@ on:
       - completed
   schedule:
     - cron: "17 * * * *"
-  push:
-    paths:
-      - ".github/triggers/watchdog-cloud-v1"
 
 permissions:
   contents: read
