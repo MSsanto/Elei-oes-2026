@@ -6,6 +6,7 @@ import './autocomplete.css';
 import './uxEnhancements.css';
 import './multiCargo.css';
 import { ChamberActivity, chamberBasePhoto, displayTseValue } from './chamberProfile.jsx';
+import StateDeputiesView from './stateDeputies.jsx';
 
 const REPOSITORY_URL = 'https://github.com/MSsanto/Elei-oes-2026';
 const IDENTITY_URL = '/data/mappings/identidades.json';
@@ -53,6 +54,17 @@ const CARGO_CONFIG = {
     hasChamber: false,
     dataUrl: (uf) => `/data/candidatos/senador/${uf}.json`,
     metaUrl: '/data/candidatos/senador/manifest.json',
+  },
+  'deputado-estadual': {
+    slug: 'deputado-estadual',
+    label: 'Deputado Estadual',
+    plural: 'Deputado Estadual/Distrital',
+    kicker: 'ASSEMBLEIAS LEGISLATIVAS E CÂMARA LEGISLATIVA DO DF',
+    scopeLabel: 'UF selecionada',
+    requiresUf: true,
+    supportsUf: true,
+    hasChamber: false,
+    paged: true,
   },
   'deputado-federal': {
     slug: 'deputado-federal',
@@ -372,7 +384,7 @@ async function loadCargo(cargo, uf) {
 }
 
 function CargoTabs({ cargo, onChange }) {
-  const tabs = ['presidente', 'governador', 'senador', 'deputado-federal'];
+  const tabs = ['presidente', 'governador', 'senador', 'deputado-federal', 'deputado-estadual'];
   return (
     <div className="cargo-tabs" role="tablist" aria-label="Cargo eleitoral">
       {tabs.map((slug) => (
@@ -415,6 +427,12 @@ function App() {
     setCandidates([]);
     setMetadata(null);
     setVisibleCount(RESULT_BATCH_SIZE);
+
+    if (config.paged) {
+      setStatus('custom');
+      setStatusMessage('Consulta estadual em modo leve.');
+      return () => { active = false; };
+    }
 
     if (config.requiresUf && !uf) {
       setStatus('needs-uf');
@@ -461,12 +479,12 @@ function App() {
   }, [cargo, uf, party, occupation, query, sortBy, config.supportsUf]);
 
   useEffect(() => {
-    if (status !== 'ready' || candidates.length === 0) return;
+    if (config.paged || status !== 'ready' || candidates.length === 0) return;
     const candidateId = initialParam('candidato');
     if (!candidateId) return;
     const match = candidates.find((candidate) => String(candidate.id_tse) === candidateId);
     if (match) setSelected(match);
-  }, [candidates, status]);
+  }, [candidates, status, config.paged]);
 
   useEffect(() => {
     const closeOnEscape = (event) => {
@@ -667,6 +685,23 @@ function App() {
       </header>
 
       <main>
+        {config.paged ? (
+          <StateDeputiesView
+            uf={uf}
+            setUf={setUf}
+            query={query}
+            setQuery={setQuery}
+            party={party}
+            setParty={setParty}
+            occupation={occupation}
+            setOccupation={setOccupation}
+            sortBy={sortBy}
+            setSortBy={setSortBy}
+            onOpen={openCandidate}
+            onShare={shareCandidate}
+          />
+        ) : (
+          <>
         <section className="stats-wrap" aria-label="Resumo dos dados">
           <div className="stat-card"><strong>{stats.candidates.toLocaleString('pt-BR')}</strong><span>candidaturas carregadas</span></div>
           <div className="stat-card"><strong>{scopeValue}</strong><span>circunscrição da consulta</span></div>
@@ -812,6 +847,9 @@ function App() {
             </button>
           )}
         </section>
+
+          </>
+        )}
 
         <section className="method-section">
           <div><span className="section-kicker">COMO FUNCIONA</span><h2>Da fonte oficial à consulta pública</h2></div>
