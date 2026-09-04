@@ -50,5 +50,6 @@ jobs:
           fi
 
           git commit -m "data: publicar Presidente e Governador 2026"
+          git reset --hard HEAD
           git pull --rebase origin main
           git push origin HEAD:main
