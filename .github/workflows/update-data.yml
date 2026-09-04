@@ -5,6 +5,7 @@ on:
   push:
     branches:
       - main
+  pull_request:
 
 permissions:
   contents: read
@@ -27,6 +28,7 @@ jobs:
           python3 -m py_compile scripts/fetch_candidates_browser.py
           python3 -m py_compile scripts/fetch_candidates_cloud.py
           python3 -m py_compile scripts/build_cargos_2026.py
+          python3 -m py_compile scripts/build_campaign_finance_2026.py
           python3 -m py_compile scripts/inspect_tse_complementary.py
           python3 -m py_compile scripts/inspect_divulgacand_fields.py
           python3 -m py_compile scripts/build_historical_ddd_2022.py
@@ -61,6 +63,48 @@ jobs:
           assert module.TARGETS['DEPUTADO DISTRITAL']['slug'] == 'deputado-estadual'
           assert module.STATE_DEPUTY_PAGE_SIZE == 60
           print('OK: cargos multi-cargo, incluindo Estadual/Distrital, configurados')
+          PY
+
+      - name: Validar processador de financas eleitorais
+        run: |
+          python3 - <<'PY'
+          import csv
+          import importlib.util
+          import json
+          import tempfile
+          from pathlib import Path
+
+          spec = importlib.util.spec_from_file_location('finance', 'scripts/build_campaign_finance_2026.py')
+          finance = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(finance)
+
+          with tempfile.TemporaryDirectory() as tmp:
+              base = Path(tmp)
+              receita = base / 'receitas_candidatos_2026_BRASIL.csv'
+              despesa = base / 'despesas_contratadas_candidatos_2026_BRASIL.csv'
+
+              with receita.open('w', encoding='latin-1', newline='') as f:
+                  writer = csv.DictWriter(f, fieldnames=['SQ_CANDIDATO','VR_RECEITA','DS_FONTE_RECEITA','DS_ORIGEM_RECEITA','NM_DOADOR','DT_RECEITA'], delimiter=';')
+                  writer.writeheader()
+                  writer.writerow({'SQ_CANDIDATO':'123','VR_RECEITA':'1000,00','DS_FONTE_RECEITA':'Fundo Especial','DS_ORIGEM_RECEITA':'Transferência','NM_DOADOR':'Partido Exemplo','DT_RECEITA':'01/09/2026'})
+
+              with despesa.open('w', encoding='latin-1', newline='') as f:
+                  writer = csv.DictWriter(f, fieldnames=['SQ_CANDIDATO','VR_DESPESA_CONTRATADA','DS_ORIGEM_DESPESA','NM_FORNECEDOR','DT_DESPESA'], delimiter=';')
+                  writer.writeheader()
+                  writer.writerow({'SQ_CANDIDATO':'123','VR_DESPESA_CONTRATADA':'250,00','DS_ORIGEM_DESPESA':'Publicidade','NM_FORNECEDOR':'Fornecedor Exemplo','DT_DESPESA':'02/09/2026'})
+
+              original = finance.OUTPUT_DIR
+              finance.OUTPUT_DIR = base / 'out'
+              manifest = finance.process(base)
+              payload = json.loads((finance.OUTPUT_DIR / '123.json').read_text(encoding='utf-8'))
+              finance.OUTPUT_DIR = original
+
+              assert manifest['candidates'] == 1
+              assert payload['resumo']['total_receitas'] == 1000.0
+              assert payload['resumo']['total_despesas_contratadas'] == 250.0
+              assert payload['receitas_por_fonte'][0]['categoria'] == 'Fundo Especial'
+              assert payload['despesas_por_categoria'][0]['categoria'] == 'Publicidade'
+          print('OK: agregacao financeira por candidato')
           PY
 
       - name: Validar assinatura conservadora do historico regional
