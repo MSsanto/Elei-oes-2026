@@ -75,6 +75,17 @@ def find_files(base: Path, pattern: str) -> list[Path]:
     return national or files
 
 
+def find_primary_revenue_files(base: Path) -> list[Path]:
+    """Retorna somente o livro principal de receitas.
+
+    O RDE publica também `receitas_candidatos_doador_originario_*`, que detalha
+    a cadeia anterior de determinadas transferências. Esse arquivo é uma camada
+    de rastreabilidade e não representa novas entradas a serem somadas ao total
+    recebido pela candidatura.
+    """
+    return find_files(base, r"^receitas_candidatos_(?!doador_originario).*\.csv$")
+
+
 def add_sum(store: dict[str, Decimal], key: str, value: Decimal) -> None:
     store[normalize_label(key)] += value
 
@@ -153,7 +164,8 @@ def publish(payloads: dict[str, dict], manifest: dict) -> None:
 
 
 def process(source_dir: Path) -> dict:
-    revenue_files = find_files(source_dir, r"receitas?_candidatos|receita.*candidat")
+    revenue_files = find_primary_revenue_files(source_dir)
+    donor_origin_files = find_files(source_dir, r"^receitas_candidatos_doador_originario_.*\.csv$")
     expense_files = find_files(source_dir, r"despesas?_contratadas?_candidatos|despesa.*contrat.*candidat")
     paid_files = find_files(source_dir, r"despesas?_pagas?_candidatos|pagamento.*candidat|despesa.*paga.*candidat")
 
@@ -184,7 +196,7 @@ def process(source_dir: Path) -> dict:
             item["receitas_total"] += value
             add_sum(item["receitas_por_fonte"], text(row, "DS_FONTE_RECEITA", "DS_FONTE_RECURSO", "DS_FONTE_ORIGEM"), value)
             add_sum(item["receitas_por_origem"], text(row, "DS_ORIGEM_RECEITA", "DS_TIPO_RECEITA"), value)
-            donor = normalize_label(text(row, "NM_DOADOR_RFB", "NM_DOADOR", "NM_DOADOR_ORIGINARIO", "NM_RECEITA"))
+            donor = normalize_label(text(row, "NM_DOADOR_RFB", "NM_DOADOR", "NM_RECEITA"))
             donor_type = normalize_label(text(row, "DS_ORIGEM_RECEITA", "DS_TIPO_RECEITA"))
             item["doadores"][(donor, donor_type)] += value
             month = month_label(text(row, "DT_RECEITA", "DT_GERACAO"))
@@ -251,6 +263,7 @@ def process(source_dir: Path) -> dict:
         "generated_at_utc": generated,
         "candidates": len(payloads),
         "revenue_files": [path.name for path in revenue_files],
+        "donor_origin_files_not_summed": [path.name for path in donor_origin_files],
         "expense_files": [path.name for path in expense_files],
         "paid_files": [path.name for path in paid_files],
     }
