@@ -52,10 +52,15 @@ jobs:
           assert module.TARGETS['PRESIDENTE']['code'] == '1'
           assert module.TARGETS['GOVERNADOR']['code'] == '3'
           assert module.TARGETS['SENADOR']['code'] == '5'
+          assert module.TARGETS['DEPUTADO ESTADUAL']['code'] == '7'
+          assert module.TARGETS['DEPUTADO DISTRITAL']['code'] == '8'
           assert module.TARGETS['PRESIDENTE']['slug'] == 'presidente'
           assert module.TARGETS['GOVERNADOR']['slug'] == 'governador'
           assert module.TARGETS['SENADOR']['slug'] == 'senador'
-          print('OK: Presidente, Governador e Senador configurados no gerador multi-cargo')
+          assert module.TARGETS['DEPUTADO ESTADUAL']['slug'] == 'deputado-estadual'
+          assert module.TARGETS['DEPUTADO DISTRITAL']['slug'] == 'deputado-estadual'
+          assert module.STATE_DEPUTY_PAGE_SIZE == 60
+          print('OK: cargos multi-cargo, incluindo Estadual/Distrital, configurados')
           PY
 
       - name: Validar assinatura conservadora do historico regional
