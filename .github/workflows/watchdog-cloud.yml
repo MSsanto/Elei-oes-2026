@@ -1,0 +1,167 @@
+name: Watchdog cloud eleitoral
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows:
+      - "Coleta online TSE + Camara"
+    types:
+      - completed
+  schedule:
+    - cron: "17 * * * *"
+  push:
+    paths:
+      - ".github/triggers/watchdog-cloud-v1"
+
+permissions:
+  contents: read
+  actions: read
+  issues: write
+
+concurrency:
+  group: watchdog-cloud-eleicoes-2026
+  cancel-in-progress: true
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
+      ALERT_TITLE: "[ALERTA] Coleta eleitoral automática"
+      MAX_AGE_HOURS: "8"
+      MANIFEST_PATH: "data/processed/candidatos/deputado-estadual/manifest.json"
+      SITE_URL: "https://eleicoes-2026-ebz.pages.dev/"
+      WORKER_HEALTH_URL: "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/health"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Verificar coleta, dados, Worker e site
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          declare -a REASONS=()
+          NOW_EPOCH=$(date -u +%s)
+          NOW_ISO=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+
+          DATA_GENERATED="desconhecido"
+          DATA_AGE_MINUTES="desconhecido"
+          LAST_RUN_ID="desconhecido"
+          LAST_RUN_URL="desconhecido"
+          LAST_RUN_CONCLUSION="desconhecido"
+          LAST_RUN_UPDATED="desconhecido"
+          SITE_STATUS="falha"
+          WORKER_STATUS="falha"
+
+          if [[ ! -f "$MANIFEST_PATH" ]]; then
+            REASONS+=("Manifesto de dados ausente: $MANIFEST_PATH")
+          else
+            mapfile -t DATA_META < <(python - <<'PY'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+
+          path = Path("data/processed/candidatos/deputado-estadual/manifest.json")
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          value = payload.get("generated_at_utc") or ""
+          print(value)
+          if value:
+              dt = datetime.fromisoformat(value.replace("Z", "+00:00"))
+              print(int(dt.timestamp()))
+          else:
+              print(0)
+          PY
+          )
+
+            DATA_GENERATED="${DATA_META[0]:-}"
+            DATA_EPOCH="${DATA_META[1]:-0}"
+
+            if [[ "$DATA_EPOCH" =~ ^[0-9]+$ ]] && (( DATA_EPOCH > 0 )); then
+              AGE_SECONDS=$((NOW_EPOCH - DATA_EPOCH))
+              if (( AGE_SECONDS < 0 )); then AGE_SECONDS=0; fi
+              DATA_AGE_MINUTES=$((AGE_SECONDS / 60))
+              MAX_AGE_SECONDS=$((MAX_AGE_HOURS * 3600))
+              if (( AGE_SECONDS > MAX_AGE_SECONDS )); then
+                REASONS+=("Dados desatualizados: ${DATA_AGE_MINUTES} min de idade, limite ${MAX_AGE_HOURS} h")
+              fi
+            else
+              REASONS+=("Manifesto sem generated_at_utc válido")
+            fi
+          fi
+
+          RUNS_JSON=$(gh api "repos/$REPO/actions/workflows/coleta-online.yml/runs?branch=main&status=completed&per_page=1" || echo '{"workflow_runs":[]}')
+          LAST_RUN_ID=$(jq -r '.workflow_runs[0].id // "desconhecido"' <<<"$RUNS_JSON")
+          LAST_RUN_URL=$(jq -r '.workflow_runs[0].html_url // "desconhecido"' <<<"$RUNS_JSON")
+          LAST_RUN_CONCLUSION=$(jq -r '.workflow_runs[0].conclusion // "desconhecido"' <<<"$RUNS_JSON")
+          LAST_RUN_UPDATED=$(jq -r '.workflow_runs[0].updated_at // "desconhecido"' <<<"$RUNS_JSON")
+
+          if [[ "$LAST_RUN_ID" == "desconhecido" ]]; then
+            REASONS+=("Nenhuma execução concluída da coleta online foi encontrada")
+          elif [[ "$LAST_RUN_CONCLUSION" != "success" ]]; then
+            REASONS+=("Última coleta concluída com status: $LAST_RUN_CONCLUSION")
+          fi
+
+          if curl --fail --silent --show-error --location --max-time 20 "$WORKER_HEALTH_URL" >/dev/null; then
+            WORKER_STATUS="ok"
+          else
+            REASONS+=("Cloudflare Worker não respondeu com sucesso em /health")
+          fi
+
+          if curl --fail --silent --show-error --location --max-time 20 "$SITE_URL" >/dev/null; then
+            SITE_STATUS="ok"
+          else
+            REASONS+=("Site público no Cloudflare Pages não respondeu com sucesso")
+          fi
+
+          ISSUE_DATA=$(gh issue list --repo "$REPO" --state all --limit 100 --json number,title,state)
+          ISSUE_NUMBER=$(jq -r --arg title "$ALERT_TITLE" '.[] | select(.title == $title) | .number' <<<"$ISSUE_DATA" | head -n1)
+          ISSUE_STATE=$(jq -r --arg title "$ALERT_TITLE" '.[] | select(.title == $title) | .state' <<<"$ISSUE_DATA" | head -n1)
+
+          if (( ${#REASONS[@]} > 0 )); then
+            {
+              echo "## Watchdog detectou problema"
+              echo
+              echo "Verificação UTC: **$NOW_ISO**"
+              echo
+              echo "### Motivos"
+              for reason in "${REASONS[@]}"; do
+                echo "- $reason"
+              done
+              echo
+              echo "### Diagnóstico"
+              echo "- Última coleta: \`$LAST_RUN_CONCLUSION\`"
+              echo "- Última execução: $LAST_RUN_URL"
+              echo "- Atualização da execução: \`$LAST_RUN_UPDATED\`"
+              echo "- Dados gerados em: \`$DATA_GENERATED\`"
+              echo "- Idade dos dados: \`${DATA_AGE_MINUTES} min\`"
+              echo "- Worker Cloudflare: \`$WORKER_STATUS\`"
+              echo "- Site Cloudflare Pages: \`$SITE_STATUS\`"
+              echo
+              echo "Esta issue é mantida automaticamente por \`.github/workflows/watchdog-cloud.yml\`."
+            } > /tmp/watchdog-body.md
+
+            if [[ -n "$ISSUE_NUMBER" ]]; then
+              if [[ "$ISSUE_STATE" != "OPEN" ]]; then
+                gh issue reopen "$ISSUE_NUMBER" --repo "$REPO"
+              fi
+              gh issue edit "$ISSUE_NUMBER" --repo "$REPO" --body-file /tmp/watchdog-body.md
+            else
+              gh issue create --repo "$REPO" --title "$ALERT_TITLE" --body-file /tmp/watchdog-body.md
+            fi
+
+            echo "Watchdog encontrou ${#REASONS[@]} problema(s)."
+            exit 1
+          fi
+
+          echo "Sistema saudável: coleta=$LAST_RUN_CONCLUSION, dados=${DATA_AGE_MINUTES}min, worker=$WORKER_STATUS, site=$SITE_STATUS"
+
+          if [[ -n "$ISSUE_NUMBER" && "$ISSUE_STATE" == "OPEN" ]]; then
+            gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "✅ Recuperação confirmada automaticamente em **$NOW_ISO**. Coleta, atualidade dos dados, Worker e site público estão saudáveis."
+            gh issue close "$ISSUE_NUMBER" --repo "$REPO" --reason completed
+          fi
