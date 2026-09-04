@@ -1,0 +1,168 @@
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.github-link svg,
+.footer-github svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+}
+
+.filters.filters-enhanced {
+  grid-template-columns: minmax(280px, 2fr) repeat(4, minmax(135px, 1fr)) auto;
+  align-items: stretch;
+}
+
+.candidate-card {
+  position: relative;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+
+.candidate-card-open {
+  width: 100%;
+  min-height: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 58px 18px 18px;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.candidate-share {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #dce4ef;
+  border-radius: 10px;
+  background: #f8faff;
+  color: #66758b;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.candidate-share:hover,
+.candidate-share:focus-visible {
+  color: var(--blue);
+  border-color: #bcd0f7;
+  background: var(--blue-soft);
+  outline: none;
+}
+
+.candidate-share svg,
+.modal-share-button svg {
+  width: 17px;
+  height: 17px;
+}
+
+.modal-heading-copy {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.modal-share-button {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: auto;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: white;
+  color: #53647c;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.modal-share-button:hover,
+.modal-share-button:focus-visible {
+  color: var(--blue);
+  border-color: #bcd0f7;
+  background: var(--blue-soft);
+  outline: none;
+}
+
+.footer-project {
+  min-width: 230px;
+}
+
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 13px;
+  color: #46566d;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.footer-github:hover {
+  color: var(--blue);
+}
+
+@media (max-width: 1080px) {
+  .filters.filters-enhanced {
+    grid-template-columns: minmax(260px, 2fr) repeat(2, minmax(150px, 1fr));
+  }
+
+  .filters.filters-enhanced .autocomplete {
+    grid-column: span 3;
+  }
+}
+
+@media (max-width: 860px) {
+  .filters.filters-enhanced {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .filters.filters-enhanced .autocomplete {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 620px) {
+  .github-link {
+    font-size: 12px;
+    padding: 9px 11px;
+  }
+
+  .github-link::after {
+    content: none;
+  }
+
+  .github-link span:last-child {
+    display: none;
+  }
+
+  .filters.filters-enhanced,
+  .filters.filters-enhanced .autocomplete {
+    grid-template-columns: 1fr;
+    grid-column: auto;
+  }
+
+  .candidate-card-open {
+    grid-template-columns: auto 1fr;
+    padding-right: 54px;
+  }
+
+  .modal-heading {
+    padding-right: 35px;
+  }
+
+  .modal-share-button {
+    margin-left: 0;
+  }
+}
