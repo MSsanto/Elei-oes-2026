@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import HomeView, { CARGOS } from './homeView.jsx';
 import ConsultationApp from './consultationApp.jsx';
 import './editorialTrust.js';
+import './runtime.css';
 
 class AppErrorBoundary extends React.Component {
   constructor(props) {
