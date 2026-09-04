@@ -1,0 +1,124 @@
+/* Final UX pass: typography, autocomplete, chamber hierarchy and zoom resilience. */
+.autocomplete-list {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 90;
+  max-height: 310px;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid var(--ds-line);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 16px 34px rgba(5,12,23,.14);
+}
+.autocomplete-list button {
+  width: 100%;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ds-ink);
+  text-align: left;
+  cursor: pointer;
+}
+.autocomplete-list button:hover,
+.autocomplete-list button:focus-visible { background: var(--ds-blue-soft); }
+.autocomplete-list strong { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; }
+.autocomplete-list span { flex: 0 0 auto; color: var(--ds-muted); font-size: 11px; }
+
+/* Câmara: primeira camada legível, detalhes recolhíveis, sem ID técnico no cabeçalho. */
+.chamber-module { margin: 10px 0 8px !important; border: 0 !important; background: transparent !important; overflow: visible !important; }
+.chamber-module-heading {
+  padding: 16px !important;
+  border: 1px solid var(--ds-line) !important;
+  border-radius: 12px !important;
+  background: #fff !important;
+}
+.chamber-module-heading h3 { color: var(--ds-ink) !important; font-size: 24px !important; }
+.chamber-module-heading p { max-width: 720px !important; color: var(--ds-muted) !important; font-size: 12px !important; }
+.module-kicker,
+.activity-period-badge,
+.activity-year-selector-label,
+.activity-year-buttons button,
+.activity-section summary small,
+.mandate-summary span,
+.metric-strip span,
+.annual-breakdown-heading strong,
+.annual-breakdown-heading span,
+.vote-chart-heading strong,
+.vote-chart-heading span,
+.record-row small,
+.chart-scope-note,
+.method-note,
+.activity-empty,
+.source-link { font-size: 11px !important; }
+.module-kicker { color: var(--ds-blue) !important; }
+.source-id { display: none !important; }
+.activity-period-badge { min-height: 27px; align-items: center; padding: 0 8px !important; border-color: var(--ds-line) !important; background: var(--ds-bg) !important; color: #52657a !important; }
+.activity-year-selector { margin: 10px 0 2px !important; padding: 10px 12px !important; border-color: var(--ds-line) !important; background: #fff !important; }
+.activity-year-buttons button { min-height: 40px; padding: 0 11px !important; border-color: var(--ds-line) !important; background: #fff !important; color: #52647a !important; }
+.activity-year-buttons button.active { border-color: var(--ds-blue) !important; background: var(--ds-blue) !important; color: #fff !important; box-shadow: none !important; }
+.activity-sections { padding: 4px 0 0 !important; }
+.activity-section { margin: 8px 0 !important; border-color: var(--ds-line) !important; border-radius: 12px !important; background: #fff !important; }
+.activity-section > summary { min-height: 58px; padding: 12px 14px !important; }
+.activity-section summary strong { color: var(--ds-ink) !important; font-size: 13px !important; }
+.activity-section summary small { color: var(--ds-muted) !important; line-height: 1.45 !important; }
+.section-count { min-width: 38px !important; min-height: 28px; display: inline-grid; place-items: center; padding: 0 8px !important; background: #f1f4f8 !important; color: #53647a !important; font-size: 11px !important; }
+.activity-body { border-top-color: #edf1f5 !important; padding: 14px !important; }
+.mandate-summary > div,
+.metric-strip > div,
+.annual-breakdown,
+.vote-chart { border-color: var(--ds-line) !important; background: #fbfcfe !important; }
+.mandate-summary strong,
+.metric-strip strong { font-size: 13px !important; }
+.annual-year-top span,
+.annual-year-top strong,
+.vote-chart-row span,
+.vote-chart-row strong { font-size: 11px !important; }
+.record-row { min-height: 48px; }
+.record-row strong { font-size: 12px !important; }
+.vote-value { font-size: 11px !important; }
+
+/* Finance microtype floor. */
+.finance-month > small,
+.finance-bar-row small,
+.finance-table th,
+.finance-donut span,
+.finance-legend > div,
+.finance-legend strong { font-size: 11px !important; }
+
+/* 44px interactive floor where space permits. */
+@media (max-width: 760px) {
+  .cargo-mobile-picker select,
+  .filter-field select,
+  .advanced-filter-field select,
+  .filter-more,
+  .state-uf-gate select,
+  .activity-year-buttons button,
+  .profile-tabs-new button { min-height: 44px !important; }
+  .autocomplete-list button { min-height: 52px; }
+}
+
+/* Zoom/very narrow view: preserve order and avoid horizontal traps. */
+@media (max-width: 480px) {
+  .filter-row { grid-template-columns: 1fr !important; }
+  .data-strip { align-items: flex-start; }
+  .data-strip-item { width: auto; }
+  .data-strip-item + .data-strip-item::before { display: none; }
+  .profile-header { grid-template-columns: 62px minmax(0,1fr) !important; }
+  .profile-header .avatar-large { width: 58px !important; height: 58px !important; }
+  .finance-table { min-width: 520px; }
+  .annual-breakdown-heading,
+  .vote-chart-heading { align-items: flex-start !important; flex-direction: column; }
+}
+
+@media (min-resolution: 1dppx) {
+  body { text-size-adjust: 100%; }
+}
