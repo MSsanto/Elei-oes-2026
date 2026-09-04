@@ -3,6 +3,7 @@ from __future__ import annotations
 import csv
 import io
 import json
+import shutil
 import zipfile
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -15,6 +16,8 @@ OUTPUT_ROOT = ROOT / "data" / "processed" / "candidatos"
 PRESIDENT_DIR = OUTPUT_ROOT / "presidente"
 GOVERNOR_DIR = OUTPUT_ROOT / "governador"
 SENATOR_DIR = OUTPUT_ROOT / "senador"
+STATE_DEPUTY_DIR = OUTPUT_ROOT / "deputado-estadual"
+STATE_DEPUTY_PAGE_SIZE = 60
 
 TARGETS = {
     "PRESIDENTE": {
@@ -33,6 +36,18 @@ TARGETS = {
         "slug": "senador",
         "code": "5",
         "label": "Senador",
+        "scope": "estadual",
+    },
+    "DEPUTADO ESTADUAL": {
+        "slug": "deputado-estadual",
+        "code": "7",
+        "label": "Deputado Estadual",
+        "scope": "estadual",
+    },
+    "DEPUTADO DISTRITAL": {
+        "slug": "deputado-estadual",
+        "code": "8",
+        "label": "Deputado Distrital",
         "scope": "estadual",
     },
 }
@@ -217,8 +232,97 @@ def publish_statewide(
     return manifest
 
 
+def state_deputy_card(item: dict[str, object], page: int) -> dict[str, object]:
+    return {
+        "id_tse": item.get("id_tse"),
+        "nome": item.get("nome"),
+        "nome_urna": item.get("nome_urna"),
+        "numero": item.get("numero"),
+        "partido": item.get("partido"),
+        "ocupacao": item.get("ocupacao"),
+        "uf": item.get("uf"),
+        "cargo": item.get("cargo"),
+        "cargo_slug": "deputado-estadual",
+        "situacao_candidatura": item.get("situacao_candidatura"),
+        "foto_url": item.get("foto_url"),
+        "pagina": page,
+    }
+
+
+def publish_state_deputies(
+    records: list[dict[str, object]],
+    metadata: dict[str, object],
+) -> dict[str, object]:
+    ordered = unique_sorted(records)
+    by_uf: dict[str, list[dict[str, object]]] = defaultdict(list)
+    for item in ordered:
+        uf = str(item.get("uf") or "").upper()
+        if uf in base.UFS:
+            by_uf[uf].append(item)
+
+    STATE_DEPUTY_DIR.mkdir(parents=True, exist_ok=True)
+    uf_meta: dict[str, dict[str, object]] = {}
+
+    for uf in base.UFS:
+        payload = by_uf.get(uf, [])
+        uf_dir = STATE_DEPUTY_DIR / uf
+        if uf_dir.exists():
+            shutil.rmtree(uf_dir)
+        (uf_dir / "cards").mkdir(parents=True, exist_ok=True)
+        (uf_dir / "perfis").mkdir(parents=True, exist_ok=True)
+
+        search_index: list[dict[str, object]] = []
+        page_count = (len(payload) + STATE_DEPUTY_PAGE_SIZE - 1) // STATE_DEPUTY_PAGE_SIZE
+
+        for page_number in range(1, page_count + 1):
+            start = (page_number - 1) * STATE_DEPUTY_PAGE_SIZE
+            chunk = payload[start : start + STATE_DEPUTY_PAGE_SIZE]
+            cards = [state_deputy_card(item, page_number) for item in chunk]
+            search_index.extend(cards)
+            compact_json(uf_dir / "cards" / f"{page_number:03d}.json", cards)
+            compact_json(uf_dir / "perfis" / f"{page_number:03d}.json", chunk)
+
+        compact_json(uf_dir / "search-index.json", search_index)
+        label = "Deputado Distrital" if uf == "DF" else "Deputado Estadual"
+        manifest = {
+            "cargo": "deputado-estadual",
+            "label": label,
+            "circunscricao": "distrital" if uf == "DF" else "estadual",
+            "uf": uf,
+            "total": len(payload),
+            "page_size": STATE_DEPUTY_PAGE_SIZE,
+            "page_count": page_count,
+            "cards_pattern": "cards/{page:03d}.json",
+            "profiles_pattern": "perfis/{page:03d}.json",
+            "search_index": "search-index.json",
+            "partidos": sorted({str(item.get("partido")) for item in payload if item.get("partido")}),
+            "ocupacoes": sorted({str(item.get("ocupacao")) for item in payload if item.get("ocupacao")}),
+            **metadata,
+        }
+        pretty_json(uf_dir / "manifest.json", manifest)
+        uf_meta[uf] = {
+            "total": len(payload),
+            "page_count": page_count,
+            "manifest": f"{uf}/manifest.json",
+            "label": label,
+        }
+
+    root_manifest = {
+        "cargo": "deputado-estadual",
+        "label": "Deputado Estadual/Distrital",
+        "circunscricao": "estadual",
+        "total": len(ordered),
+        "page_size": STATE_DEPUTY_PAGE_SIZE,
+        "estrategia": "uf_obrigatoria_paginas_e_indice_sob_demanda",
+        "ufs": uf_meta,
+        **metadata,
+    }
+    pretty_json(STATE_DEPUTY_DIR / "manifest.json", root_manifest)
+    return root_manifest
+
+
 def main() -> int:
-    log("Eleições 2026 — geração multi-cargo: Presidente, Governador e Senador")
+    log("Eleições 2026 — geração multi-cargo: Presidente, Governador, Senador e Deputado Estadual/Distrital")
     targets, metadata = collect_targets()
 
     president_manifest = publish_president(targets.get("presidente", []), metadata)
@@ -236,9 +340,13 @@ def main() -> int:
         label="Senador",
         output_dir=SENATOR_DIR,
     )
+    state_deputy_manifest = publish_state_deputies(
+        targets.get("deputado-estadual", []),
+        metadata,
+    )
 
     root_manifest = {
-        "version": 2,
+        "version": 3,
         "generated_at_utc": metadata["generated_at_utc"],
         "source": metadata["source"],
         "cargos": {
@@ -259,6 +367,11 @@ def main() -> int:
                 "status": "legado_compativel",
                 "arquivo": "../deputados_federais.json",
             },
+            "deputado-estadual": {
+                "total": state_deputy_manifest["total"],
+                "manifest": "deputado-estadual/manifest.json",
+                "carregamento": "uf_obrigatoria_paginas_e_indice_sob_demanda",
+            },
         },
     }
     pretty_json(OUTPUT_ROOT / "manifest.json", root_manifest)
@@ -267,12 +380,14 @@ def main() -> int:
         "Publicação concluída: "
         f"Presidente={president_manifest['total']}; "
         f"Governador={governor_manifest['total']}; "
-        f"Senador={senator_manifest['total']}"
+        f"Senador={senator_manifest['total']}; "
+        f"Deputado Estadual/Distrital={state_deputy_manifest['total']}"
     )
     for slug, manifest in (
         ("Presidente", president_manifest),
         ("Governador", governor_manifest),
         ("Senador", senator_manifest),
+        ("Deputado Estadual/Distrital", state_deputy_manifest),
     ):
         if manifest["total"] == 0:
             log(f"Aviso: nenhuma candidatura a {slug} foi encontrada nesta carga oficial.")
