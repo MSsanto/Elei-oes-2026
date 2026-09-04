@@ -42,7 +42,9 @@ jobs:
         run: |
           python3 - <<'PY'
           import importlib.util
+          import sys
 
+          sys.path.insert(0, 'scripts')
           spec = importlib.util.spec_from_file_location('cargos2026', 'scripts/build_cargos_2026.py')
           module = importlib.util.module_from_spec(spec)
           spec.loader.exec_module(module)
