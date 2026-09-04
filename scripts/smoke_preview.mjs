@@ -1,34 +1,44 @@
 import { spawn } from 'node:child_process';
+import path from 'node:path';
 import process from 'node:process';
 
 const host = '127.0.0.1';
 const port = 4173;
 const base = `http://${host}:${port}`;
-const child = spawn(process.platform === 'win32' ? 'npx.cmd' : 'npx', ['vite', 'preview', '--host', host, '--port', String(port), '--strictPort'], {
-  stdio: ['ignore', 'pipe', 'pipe'],
+const viteBin = path.join(process.cwd(), 'node_modules', 'vite', 'bin', 'vite.js');
+const child = spawn(process.execPath, [viteBin, 'preview', '--host', host, '--port', String(port), '--strictPort'], {
+  stdio: 'ignore',
   env: { ...process.env, NODE_ENV: 'production' },
 });
-
-let stderr = '';
-child.stderr.on('data', (chunk) => { stderr += chunk.toString(); });
 
 function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
 
 async function waitForServer() {
   for (let attempt = 0; attempt < 40; attempt += 1) {
+    if (child.exitCode !== null) throw new Error(`Preview encerrou antes de iniciar, código ${child.exitCode}.`);
     try {
       const response = await fetch(`${base}/`, { redirect: 'manual' });
       if (response.ok) return;
     } catch {}
     await sleep(250);
   }
-  throw new Error(`Preview não iniciou. ${stderr}`);
+  throw new Error('Preview não iniciou dentro da janela de validação.');
 }
 
-async function expectOk(path, description) {
-  const response = await fetch(`${base}${path}`, { redirect: 'manual' });
-  if (!response.ok) throw new Error(`${description}: HTTP ${response.status} em ${path}`);
+async function expectOk(pathname, description) {
+  const response = await fetch(`${base}${pathname}`, { redirect: 'manual' });
+  if (!response.ok) throw new Error(`${description}: HTTP ${response.status} em ${pathname}`);
   return response;
+}
+
+async function stopPreview() {
+  if (child.exitCode !== null) return;
+  child.kill('SIGTERM');
+  await Promise.race([
+    new Promise((resolve) => child.once('exit', resolve)),
+    sleep(1500),
+  ]);
+  if (child.exitCode === null) child.kill('SIGKILL');
 }
 
 try {
@@ -68,15 +78,13 @@ try {
     ['/data/deputados_federais.json', 'Deputado Federal'],
     ['/data/candidatos/deputado-estadual/SP/cards/001.json', 'Deputado Estadual SP'],
   ];
-  for (const [path, description] of dataChecks) {
-    const response = await expectOk(path, `Base ${description} indisponível`);
+  for (const [pathname, description] of dataChecks) {
+    const response = await expectOk(pathname, `Base ${description} indisponível`);
     const payload = await response.json();
     if (!Array.isArray(payload) || payload.length === 0) throw new Error(`Base ${description} vazia ou inválida.`);
   }
 
   console.log('Smoke de preview concluído: home, cinco cargos, bundle e bases essenciais responderam corretamente.');
 } finally {
-  child.kill('SIGTERM');
-  await sleep(100);
-  if (!child.killed) child.kill('SIGKILL');
+  await stopPreview();
 }
