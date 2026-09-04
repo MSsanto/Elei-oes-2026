@@ -2,9 +2,6 @@ name: Coleta online TSE + Camara
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - ".github/triggers/validar-cloud-only-v1"
   schedule:
     # GitHub Actions usa UTC. Correspondem a 00:25, 06:25, 12:25 e 18:25 em Brasilia (UTC-3).
     - cron: "25 3,9,15,21 * * *"
