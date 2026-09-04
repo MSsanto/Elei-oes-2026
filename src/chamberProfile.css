@@ -52,6 +52,61 @@
   font-weight: 800;
 }
 
+.activity-year-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 14px 18px 2px;
+  padding: 10px 12px;
+  border: 1px solid #dfe7f2;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.activity-year-selector-label {
+  color: #718096;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.activity-year-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.activity-year-buttons button {
+  appearance: none;
+  border: 1px solid #d8e2f0;
+  border-radius: 999px;
+  background: #f7f9fc;
+  color: #586a83;
+  cursor: pointer;
+  font: inherit;
+  font-size: 9px;
+  font-weight: 850;
+  padding: 6px 10px;
+  transition: border-color .15s ease, background .15s ease, color .15s ease, box-shadow .15s ease;
+}
+
+.activity-year-buttons button:hover,
+.activity-year-buttons button:focus-visible {
+  border-color: #9fb9df;
+  outline: none;
+  color: #285fae;
+}
+
+.activity-year-buttons button.active {
+  border-color: #2f6dce;
+  background: #2f6dce;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(47,109,206,.18);
+}
+
 .source-id {
   flex: 0 0 auto;
   min-width: 104px;
@@ -319,6 +374,8 @@
 @media (max-width: 620px) {
   .chamber-module-heading { flex-direction: column; }
   .source-id { text-align: left; min-width: 0; }
+  .activity-year-selector { align-items: flex-start; flex-direction: column; }
+  .activity-year-buttons { justify-content: flex-start; width: 100%; }
   .mandate-summary,
   .metric-strip { grid-template-columns: 1fr; }
   .annual-breakdown-heading,
