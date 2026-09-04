@@ -1,0 +1,42 @@
+.cargo-tabs a {
+  flex: 0 0 auto;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 13px;
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 10px;
+  color: #c8d4e2;
+  background: rgba(255,255,255,.035);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.cargo-tabs a:hover,
+.cargo-tabs a:focus-visible {
+  color: #fff;
+  background: rgba(255,255,255,.09);
+  outline: none;
+}
+
+.cargo-tabs a.active,
+.cargo-tabs a[aria-selected="true"] {
+  color: #fff;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.profile-tab {
+  cursor: pointer;
+}
+
+.state-card button {
+  margin-top: 12px;
+}
+
+@media (max-width: 760px) {
+  .cargo-tabs a { min-width: max-content; }
+}
