@@ -18,32 +18,32 @@ const required = [
   'data/candidatos/deputado-estadual/SP/cards/001.json',
 ];
 
-for (const relative of required) {
-  await access(path.join(dist, relative));
-}
+for (const relative of required) await access(path.join(dist, relative));
 
 const assetsDir = path.join(dist, 'assets');
 const assets = await readdir(assetsDir);
 const jsFiles = assets.filter((name) => name.endsWith('.js'));
-if (!jsFiles.length) throw new Error('Build sem JavaScript em dist/assets.');
+if (jsFiles.length !== 1) {
+  throw new Error(`Esperado um único bundle JS de entrada para reduzir falhas de bootstrap; encontrados ${jsFiles.length}.`);
+}
 
-const bundles = await Promise.all(jsFiles.map((name) => readFile(path.join(assetsDir, name), 'utf8')));
-const joined = bundles.join('\n');
-
+const bundle = await readFile(path.join(assetsDir, jsFiles[0]), 'utf8');
 const routeMarkers = [
   'presidente',
   'governador',
   'senador',
   'deputado-federal',
   'deputado-estadual',
-  'Falha ao carregar bootstrap completo da consulta',
+  'A consulta não conseguiu iniciar.',
+  'Prestação de Contas 2026',
 ];
-
 for (const marker of routeMarkers) {
-  if (!joined.includes(marker)) throw new Error(`Marcador de navegação ausente no bundle: ${marker}`);
+  if (!bundle.includes(marker)) throw new Error(`Marcador de navegação ausente no bundle: ${marker}`);
 }
 
 const index = await readFile(path.join(dist, 'index.html'), 'utf8');
 if (!index.includes('<div id="root"></div>')) throw new Error('Root da aplicação ausente no index.html.');
+if ((index.match(/<script type="module"/g) || []).length !== 1) throw new Error('O index deve carregar exatamente um script module.');
+if (!index.includes('/assets/')) throw new Error('index.html não referencia o bundle processado pelo Vite.');
 
-console.log('Smoke de navegação concluído: rotas, fallback e artefatos essenciais presentes no build.');
+console.log('Smoke estático concluído: entrada única, cinco cargos e artefatos essenciais presentes.');
