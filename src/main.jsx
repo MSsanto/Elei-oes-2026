@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 import './photo.css';
@@ -12,6 +12,7 @@ const IDENTITY_URL = '/data/mappings/identidades.json';
 const CHAMBER_HISTORY_URL = '/data/camara/historico_confirmados.json';
 const LIVE_SP_URL = '/api/candidates?uf=SP&limit=120';
 const REPOSITORY_URL = 'https://github.com/MSsanto/Elei-oes-2026';
+const RESULT_BATCH_SIZE = 60;
 
 function normalize(value = '') {
   return String(value)
@@ -300,11 +301,13 @@ function App() {
   const [occupation, setOccupation] = useState('');
   const [party, setParty] = useState('');
   const [sortBy, setSortBy] = useState('nome');
+  const [visibleCount, setVisibleCount] = useState(RESULT_BATCH_SIZE);
   const [selected, setSelected] = useState(null);
   const [status, setStatus] = useState('loading');
   const [statusMessage, setStatusMessage] = useState('Carregando base pública...');
   const [suggestionsOpen, setSuggestionsOpen] = useState(false);
   const [activeSuggestion, setActiveSuggestion] = useState(-1);
+  const loadMoreRef = useRef(null);
 
   useEffect(() => {
     let active = true;
@@ -372,6 +375,33 @@ function App() {
     });
     return result.sort((a, b) => compareCandidates(a, b, sortBy));
   }, [candidates, query, uf, occupation, party, sortBy]);
+
+  const visibleCandidates = useMemo(
+    () => filtered.slice(0, visibleCount),
+    [filtered, visibleCount],
+  );
+  const hasMoreResults = visibleCount < filtered.length;
+
+  useEffect(() => {
+    setVisibleCount(RESULT_BATCH_SIZE);
+  }, [query, uf, occupation, party, sortBy]);
+
+  useEffect(() => {
+    if (!hasMoreResults || typeof IntersectionObserver === 'undefined') return undefined;
+    const target = loadMoreRef.current;
+    if (!target) return undefined;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries[0]?.isIntersecting) return;
+        setVisibleCount((current) => Math.min(current + RESULT_BATCH_SIZE, filtered.length));
+      },
+      { rootMargin: '500px 0px', threshold: 0.01 },
+    );
+
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, [hasMoreResults, filtered.length]);
 
   const searchSuggestions = useMemo(() => {
     const term = normalize(query.trim());
@@ -479,6 +509,10 @@ function App() {
     setParty('');
     setSuggestionsOpen(false);
     setActiveSuggestion(-1);
+  }
+
+  function loadMoreResults() {
+    setVisibleCount((current) => Math.min(current + RESULT_BATCH_SIZE, filtered.length));
   }
 
   const stats = useMemo(() => ({
@@ -609,14 +643,24 @@ function App() {
           {status === 'loading' && <div className="state-card"><div className="loader" />{statusMessage}</div>}
           {status === 'waiting' && <div className="state-card waiting"><strong>Site publicado e frontend pronto.</strong><span>{statusMessage}</span></div>}
           {status === 'ready' && candidates.length > 0 && filtered.length === 0 && <div className="state-card">Nenhum candidato encontrado com esses filtros.</div>}
-          {filtered.length > 0 && (
+          {visibleCandidates.length > 0 && (
             <div className="candidate-list">
-              {filtered.slice(0, 120).map((candidate) => (
+              {visibleCandidates.map((candidate) => (
                 <CandidateCard key={candidate.id_tse} candidate={candidate} onOpen={openCandidate} onShare={shareCandidate} />
               ))}
             </div>
           )}
-          {filtered.length > 120 && <p className="result-limit">Mostrando os primeiros 120 resultados. Use os filtros para refinar a pesquisa.</p>}
+          {hasMoreResults && (
+            <button
+              ref={loadMoreRef}
+              className="clear-button result-limit"
+              onClick={loadMoreResults}
+              type="button"
+              aria-label={`Carregar mais resultados. ${visibleCandidates.length} de ${filtered.length} exibidos`}
+            >
+              Mostrando {visibleCandidates.length.toLocaleString('pt-BR')} de {filtered.length.toLocaleString('pt-BR')} · carregar mais
+            </button>
+          )}
         </section>
 
         <section className="method-section">
