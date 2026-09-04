@@ -34,7 +34,7 @@ jobs:
           TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
         run: python scripts/fetch_candidates_cloud.py
 
-      - name: Gerar bases de Presidente e Governador
+      - name: Gerar bases de Presidente, Governador e Senador
         run: python scripts/build_cargos_2026.py
 
       - name: Reaplicar historico regional por DDD de 2022
