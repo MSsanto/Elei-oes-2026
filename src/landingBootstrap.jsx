@@ -23,6 +23,20 @@ function GitHubIcon() {
   );
 }
 
+function goToSearch(event) {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const data = new FormData(form);
+  const cargo = String(data.get('cargo') || '').trim();
+  const query = String(data.get('q') || '').trim();
+  if (!cargo) return;
+
+  const url = new URL('/', window.location.origin);
+  url.searchParams.set('cargo', cargo);
+  if (query) url.searchParams.set('q', query);
+  window.location.assign(url.toString());
+}
+
 function Home() {
   return (
     <div className="project-home">
@@ -52,7 +66,7 @@ function Home() {
             Consulte candidaturas, prestação de contas e, quando a associação entre fontes oficiais for confirmada, histórico de atuação parlamentar.
           </p>
 
-          <form className="home-search" action="/" method="get">
+          <form className="home-search" action="/" method="get" onSubmit={goToSearch}>
             <label className="home-search-query">
               <span>Buscar candidato</span>
               <input name="q" type="search" placeholder="Nome ou número" autoComplete="off" />
@@ -157,12 +171,51 @@ function Home() {
   );
 }
 
+function normalizeEmptySearchParam() {
+  const url = new URL(window.location.href);
+  if (!url.searchParams.has('q')) return;
+  if (String(url.searchParams.get('q') || '').trim()) return;
+  url.searchParams.delete('q');
+  window.history.replaceState({}, '', url);
+}
+
+function renderBootStatus(error = null) {
+  const root = document.getElementById('root');
+  if (!root) return;
+  const cargo = CARGOS.find((item) => item.slug === new URLSearchParams(window.location.search).get('cargo'));
+  const title = error ? 'Não foi possível abrir a consulta.' : `Abrindo ${cargo?.title || 'consulta'}…`;
+  const detail = error
+    ? 'A interface principal não conseguiu iniciar. Tente recarregar a página; se o erro continuar, volte à página inicial.'
+    : 'Carregando a interface e a base pública correspondente.';
+  root.innerHTML = `
+    <div class="project-home">
+      <header class="home-site-header"><nav class="home-topbar" aria-label="Navegação principal"><a class="home-brand" href="/"><span class="home-brand-mark">E26</span><span><strong>Eleições 2026</strong><small>Transparência Eleitoral</small></span></a></nav></header>
+      <section class="home-hero"><div class="home-hero-content"><div class="home-eyebrow">CONSULTA ELEITORAL</div><h1 style="font-size:clamp(34px,5vw,54px)">${title}</h1><p class="home-lead">${detail}</p>${error ? '<p style="margin-top:22px"><a href="" onclick="window.location.reload();return false" style="display:inline-block;padding:12px 16px;border-radius:10px;background:#2563eb;color:white;text-decoration:none;font-weight:800">Tentar novamente</a> <a href="/" style="display:inline-block;margin-left:10px;color:#dbe5f2">Voltar à home</a></p>' : ''}</div></section>
+    </div>`;
+}
+
+async function bootConsultation() {
+  normalizeEmptySearchParam();
+  renderBootStatus();
+  try {
+    await import('./financeBootstrap.jsx');
+  } catch (primaryError) {
+    console.error('Falha ao carregar bootstrap completo da consulta.', primaryError);
+    try {
+      await import('./multiCargoMain.jsx');
+    } catch (fallbackError) {
+      console.error('Falha também no bootstrap mínimo da consulta.', fallbackError);
+      renderBootStatus(fallbackError);
+    }
+  }
+}
+
 const params = new URLSearchParams(window.location.search);
 const knownCargo = CARGOS.some((cargo) => cargo.slug === params.get('cargo'));
 const legacyCandidateLink = Boolean(params.get('candidato'));
 
 if (knownCargo || legacyCandidateLink) {
-  import('./financeBootstrap.jsx');
+  bootConsultation();
 } else {
   createRoot(document.getElementById('root')).render(<React.StrictMode><Home /></React.StrictMode>);
 }
