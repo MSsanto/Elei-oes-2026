@@ -144,7 +144,7 @@ function CandidateCard({ candidate, onOpen, onShare }) {
   const situation = displayTseValue(candidate.situacao_candidatura);
 
   return (
-    <article className="candidate-card">
+    <article className={`candidate-card${hasChamberHistory ? ' has-chamber-history' : ''}`}>
       <button className="candidate-card-open" onClick={() => onOpen(candidate)} type="button" aria-label={`Abrir perfil de ${displayName(candidate)}`}>
         <CandidateAvatar candidate={candidate} />
         <div className="candidate-main">
@@ -158,7 +158,7 @@ function CandidateCard({ candidate, onOpen, onShare }) {
           <div className="tags">
             {situation && <span>{situation}</span>}
             {candidate.ocupacao && <span>{candidate.ocupacao}</span>}
-            {hasChamberHistory && <span>Histórico na Câmara</span>}
+            {hasChamberHistory && <span className="history-badge" title="Histórico parlamentar localizado e vinculado com correspondência confirmada nas fontes oficiais">Histórico na Câmara</span>}
           </div>
         </div>
       </button>
@@ -376,6 +376,7 @@ function App() {
     return result.sort((a, b) => compareCandidates(a, b, sortBy));
   }, [candidates, query, uf, occupation, party, sortBy]);
 
+  const hasActiveFilters = Boolean(query.trim() || uf || occupation || party);
   const visibleCandidates = useMemo(
     () => filtered.slice(0, visibleCount),
     [filtered, visibleCount],
@@ -637,12 +638,23 @@ function App() {
               <option value="partido">Partido A–Z</option>
             </select>
 
-            {(query || uf || occupation || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
+            {hasActiveFilters && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
           </div>
 
           {status === 'loading' && <div className="state-card"><div className="loader" />{statusMessage}</div>}
           {status === 'waiting' && <div className="state-card waiting"><strong>Site publicado e frontend pronto.</strong><span>{statusMessage}</span></div>}
-          {status === 'ready' && candidates.length > 0 && filtered.length === 0 && <div className="state-card">Nenhum candidato encontrado com esses filtros.</div>}
+          {status === 'ready' && candidates.length > 0 && filtered.length === 0 && (
+            <div className="state-card search-empty-state">
+              <div className="empty-state-icon" aria-hidden="true">⌕</div>
+              <strong>Nenhum candidato encontrado</strong>
+              <span>
+                {query.trim()
+                  ? `Não encontramos resultados para “${query.trim()}”. Verifique a grafia ou ajuste os filtros selecionados.`
+                  : 'Nenhuma candidatura corresponde à combinação atual de filtros. Tente ampliar a pesquisa.'}
+              </span>
+              {hasActiveFilters && <button className="empty-clear-button" onClick={clearFilters} type="button">Limpar filtros</button>}
+            </div>
+          )}
           {visibleCandidates.length > 0 && (
             <div className="candidate-list">
               {visibleCandidates.map((candidate) => (
