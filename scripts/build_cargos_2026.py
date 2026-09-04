@@ -60,16 +60,11 @@ def collect_targets() -> tuple[dict[str, list[dict[str, object]]], dict[str, obj
             f"ZIP oficial não encontrado em {zip_path}. Rode o coletor TSE antes deste script."
         )
 
-    try:
-        election_id = base.discover_election_id()
-    except Exception as error:
-        election_id = None
-        log(f"Aviso: ID da eleição não localizado; URLs de foto podem ficar vazias: {error}")
-
     found: dict[str, list[dict[str, object]]] = {
         target["slug"]: [] for target in TARGETS.values()
     }
     csv_files = 0
+    election_ids: set[str] = set()
 
     with zipfile.ZipFile(zip_path) as archive:
         names = [
@@ -101,7 +96,14 @@ def collect_targets() -> tuple[dict[str, list[dict[str, object]]], dict[str, obj
                 if target is None:
                     continue
 
-                candidate = base.normalize_candidate(row, election_id=election_id)
+                row_election_id = str(base.first(row, "SQ_ELEICAO")).strip()
+                if row_election_id:
+                    election_ids.add(row_election_id)
+
+                candidate = base.normalize_candidate(
+                    row,
+                    election_id=row_election_id or None,
+                )
                 if not candidate.get("id_tse") or not (candidate.get("nome") or candidate.get("nome_urna")):
                     continue
 
@@ -124,10 +126,12 @@ def collect_targets() -> tuple[dict[str, list[dict[str, object]]], dict[str, obj
                 details = ", ".join(f"{slug}={count}" for slug, count in sorted(local_counts.items()))
                 log(f"{Path(name).name}: {details}")
 
+    sorted_election_ids = sorted(election_ids)
     return found, {
         "source": "Tribunal Superior Eleitoral (TSE)",
         "source_url": base.CANDIDATES_ZIP_URL,
-        "election_id": election_id,
+        "election_id": sorted_election_ids[0] if len(sorted_election_ids) == 1 else None,
+        "election_ids": sorted_election_ids,
         "csv_files_read": csv_files,
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
     }
