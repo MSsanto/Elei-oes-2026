@@ -31,6 +31,13 @@ async function expectOk(pathname, description) {
   return response;
 }
 
+async function expectAppRoute(pathname) {
+  const response = await expectOk(pathname, 'Rota da aplicação indisponível');
+  const body = await response.text();
+  if (!body.includes('<div id="root"></div>')) throw new Error(`Root ausente na rota ${pathname}`);
+  return body;
+}
+
 async function stopPreview() {
   if (child.exitCode !== null) return;
   child.kill('SIGTERM');
@@ -51,13 +58,14 @@ try {
     '/?cargo=senador&uf=SP',
     '/?cargo=deputado-federal',
     '/?cargo=deputado-estadual&uf=SP',
+    '/metodologia',
+    '/fontes',
+    '/sobre',
   ];
 
   let html = '';
   for (const route of routes) {
-    const response = await expectOk(route, 'Rota da aplicação indisponível');
-    const body = await response.text();
-    if (!body.includes('<div id="root"></div>')) throw new Error(`Root ausente na rota ${route}`);
+    const body = await expectAppRoute(route);
     if (!html) html = body;
   }
 
@@ -67,7 +75,17 @@ try {
   const contentType = bundleResponse.headers.get('content-type') || '';
   if (!contentType.includes('javascript')) throw new Error(`Content-Type inesperado para bundle: ${contentType}`);
   const bundle = await bundleResponse.text();
-  for (const marker of ['Presidente','Governador','Senador','Deputado Federal','Deputado Estadual','A consulta não conseguiu iniciar.']) {
+  for (const marker of [
+    'Presidente',
+    'Governador',
+    'Senador',
+    'Deputado Federal',
+    'Deputado Estadual',
+    'A consulta não conseguiu iniciar.',
+    'Como os dados são coletados',
+    'Finanças da campanha',
+    'Filtros ativos',
+  ]) {
     if (!bundle.includes(marker)) throw new Error(`Marcador ausente no bundle servido: ${marker}`);
   }
 
@@ -78,13 +96,19 @@ try {
     ['/data/deputados_federais.json', 'Deputado Federal'],
     ['/data/candidatos/deputado-estadual/SP/cards/001.json', 'Deputado Estadual SP'],
   ];
+  let federalCandidates = null;
   for (const [pathname, description] of dataChecks) {
     const response = await expectOk(pathname, `Base ${description} indisponível`);
     const payload = await response.json();
     if (!Array.isArray(payload) || payload.length === 0) throw new Error(`Base ${description} vazia ou inválida.`);
+    if (pathname === '/data/deputados_federais.json') federalCandidates = payload;
   }
 
-  console.log('Smoke de preview concluído: home, cinco cargos, bundle e bases essenciais responderam corretamente.');
+  const candidateId = federalCandidates?.find((item) => item?.id_tse)?.id_tse;
+  if (!candidateId) throw new Error('Nenhum identificador TSE disponível para testar rota de perfil.');
+  await expectAppRoute(`/candidato/${encodeURIComponent(candidateId)}?cargo=deputado-federal`);
+
+  console.log('Smoke de preview concluído: home, cinco cargos, perfil dedicado, páginas institucionais, bundle e bases essenciais responderam corretamente.');
 } finally {
   await stopPreview();
 }
