@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './styles.css';
 import './photo.css';
 import './autocomplete.css';
+import './uxEnhancements.css';
 import { ChamberActivity, chamberBasePhoto, displayTseValue } from './chamberProfile.jsx';
 
 const DATA_URL = '/data/deputados_federais.json';
@@ -10,6 +11,7 @@ const META_URL = '/data/metadata.json';
 const IDENTITY_URL = '/data/mappings/identidades.json';
 const CHAMBER_HISTORY_URL = '/data/camara/historico_confirmados.json';
 const LIVE_SP_URL = '/api/candidates?uf=SP&limit=120';
+const REPOSITORY_URL = 'https://github.com/MSsanto/Elei-oes-2026';
 
 function normalize(value = '') {
   return String(value)
@@ -44,38 +46,63 @@ function formatBirthDate(value) {
   }
 }
 
-function formatPercent(value) {
-  const number = Number(value);
-  if (!Number.isFinite(number)) return '';
-  return `${new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 2 }).format(number)}%`;
-}
-
-function formatNumber(value) {
-  const number = Number(value);
-  if (!Number.isFinite(number)) return '';
-  return number.toLocaleString('pt-BR');
-}
-
 function uniqueSorted(items, field) {
   return [...new Set(items.map((item) => item[field]).filter(Boolean))].sort((a, b) =>
-    a.localeCompare(b, 'pt-BR'),
+    String(a).localeCompare(String(b), 'pt-BR', { sensitivity: 'base' }),
   );
 }
 
-function candidateHistoricalDdds(candidate) {
-  const history = candidate?.historico_eleitoral_2022;
-  const values = Array.isArray(history?.ddds_principais) && history.ddds_principais.length
-    ? history.ddds_principais
-    : history?.ddd_principal ? [history.ddd_principal] : [];
-  return values.map(String).filter(Boolean);
+function displayName(candidate) {
+  return candidate?.nome_urna || candidate?.nome || 'Candidato sem nome';
 }
 
-function historicalDddDisplay(history) {
-  const ddds = Array.isArray(history?.ddds_principais) && history.ddds_principais.length
-    ? history.ddds_principais
-    : history?.ddd_principal ? [history.ddd_principal] : [];
-  if (!ddds.length) return '';
-  return ddds.map((ddd) => `DDD ${ddd}`).join(' / ');
+function compareCandidates(a, b, sortBy) {
+  const byName = () => displayName(a).localeCompare(displayName(b), 'pt-BR', { sensitivity: 'base' });
+
+  if (sortBy === 'numero') {
+    const aNumber = Number(a.numero);
+    const bNumber = Number(b.numero);
+    if (Number.isFinite(aNumber) && Number.isFinite(bNumber) && aNumber !== bNumber) return aNumber - bNumber;
+    return String(a.numero || '').localeCompare(String(b.numero || ''), 'pt-BR', { numeric: true }) || byName();
+  }
+
+  if (sortBy === 'partido') {
+    const partyResult = String(a.partido || '').localeCompare(String(b.partido || ''), 'pt-BR', { sensitivity: 'base' });
+    return partyResult || byName();
+  }
+
+  return byName();
+}
+
+function candidateProfileUrl(candidate) {
+  const url = new URL(window.location.href);
+  url.hash = '';
+  url.search = '';
+  url.searchParams.set('candidato', String(candidate.id_tse));
+  return url.toString();
+}
+
+function updateCandidateUrl(candidateId = '') {
+  const url = new URL(window.location.href);
+  if (candidateId) url.searchParams.set('candidato', String(candidateId));
+  else url.searchParams.delete('candidato');
+  window.history.replaceState({}, '', url);
+}
+
+function GitHubIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M12 .7A11.3 11.3 0 0 0 8.4 22.8c.6.1.8-.2.8-.5v-2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.2c0 .3.2.6.8.5A11.3 11.3 0 0 0 12 .7Z" />
+    </svg>
+  );
+}
+
+function ShareIcon() {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" d="M8.5 12.7 15.7 8m-7.2 3.3 7.2 4.7M18 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0ZM8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm10 6.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+    </svg>
+  );
 }
 
 function initials(name = '') {
@@ -91,7 +118,7 @@ function initials(name = '') {
 function CandidateAvatar({ candidate, large = false }) {
   const sources = [candidate.foto_url, chamberBasePhoto(candidate)].filter((value, index, array) => value && array.indexOf(value) === index);
   const [sourceIndex, setSourceIndex] = useState(0);
-  const name = candidate.nome_urna || candidate.nome || '';
+  const name = displayName(candidate);
   const className = `avatar${large ? ' avatar-large' : ''}`;
   const source = sources[sourceIndex];
 
@@ -111,49 +138,46 @@ function CandidateAvatar({ candidate, large = false }) {
   return <div className={className} aria-hidden="true">{initials(name)}</div>;
 }
 
-function CandidateCard({ candidate, onOpen }) {
+function CandidateCard({ candidate, onOpen, onShare }) {
   const hasChamberHistory = candidate.identidade_camara?.historico_camara_localizado === true;
   const situation = displayTseValue(candidate.situacao_candidatura);
-  const history = candidate.historico_eleitoral_2022;
-  const historicalDdd = historicalDddDisplay(history);
 
   return (
-    <button className="candidate-card" onClick={() => onOpen(candidate)} type="button">
-      <CandidateAvatar candidate={candidate} />
-      <div className="candidate-main">
-        <div className="candidate-topline">
-          <span className="number">{candidate.numero || '—'}</span>
-          <span className="party">{candidate.partido || 'Sem partido informado'}</span>
-          <span className="uf">{candidate.uf || 'BR'}</span>
+    <article className="candidate-card">
+      <button className="candidate-card-open" onClick={() => onOpen(candidate)} type="button" aria-label={`Abrir perfil de ${displayName(candidate)}`}>
+        <CandidateAvatar candidate={candidate} />
+        <div className="candidate-main">
+          <div className="candidate-topline">
+            <span className="number">{candidate.numero || '—'}</span>
+            <span className="party">{candidate.partido || 'Sem partido informado'}</span>
+            <span className="uf">{candidate.uf || 'BR'}</span>
+          </div>
+          <h3>{displayName(candidate)}</h3>
+          <p>{candidate.nome && candidate.nome !== candidate.nome_urna ? candidate.nome : 'Deputado Federal'}</p>
+          <div className="tags">
+            {situation && <span>{situation}</span>}
+            {candidate.ocupacao && <span>{candidate.ocupacao}</span>}
+            {hasChamberHistory && <span>Histórico na Câmara</span>}
+          </div>
         </div>
-        <h3>{candidate.nome_urna || candidate.nome || 'Candidato sem nome'}</h3>
-        <p>{candidate.nome && candidate.nome !== candidate.nome_urna ? candidate.nome : 'Deputado Federal'}</p>
-        <div className="tags">
-          {situation && <span>{situation}</span>}
-          {candidate.ocupacao && <span>{candidate.ocupacao}</span>}
-          {hasChamberHistory && <span>Histórico na Câmara</span>}
-          {historicalDdd && (
-            <span title="DDD com maior votação nominal mapeada para Deputado Federal em 2022">
-              2022 · {historicalDdd}{history?.percentual_ddd_principal !== undefined ? ` · ${formatPercent(history.percentual_ddd_principal)}` : ''}
-            </span>
-          )}
-        </div>
-      </div>
-      <span className="open-indicator" aria-hidden="true">→</span>
-    </button>
+      </button>
+      <button
+        className="candidate-share"
+        onClick={() => onShare(candidate)}
+        type="button"
+        aria-label={`Compartilhar perfil de ${displayName(candidate)}`}
+        title="Compartilhar perfil"
+      >
+        <ShareIcon />
+      </button>
+    </article>
   );
 }
 
-function CandidateModal({ candidate, onClose }) {
+function CandidateModal({ candidate, onClose, onShare }) {
   if (!candidate) return null;
   const identity = candidate.identidade_camara;
   const confirmed = identity?.correspondencia_status === 'confirmada';
-  const history = candidate.historico_eleitoral_2022;
-  const historicalDdd = historicalDddDisplay(history);
-  const distribution = Array.isArray(history?.distribuicao_ddd) ? history.distribuicao_ddd : [];
-  const distributionText = distribution
-    .map((item) => `DDD ${item.ddd}: ${formatPercent(item.percentual)} (${formatNumber(item.votos)} votos)`)
-    .join(' · ');
 
   const rows = [
     ['Nome completo', candidate.nome],
@@ -171,30 +195,25 @@ function CandidateModal({ candidate, onClose }) {
     ['Identificador TSE', candidate.id_tse],
   ].filter(([, value]) => value !== null && value !== undefined && value !== '');
 
-  const historyRows = history ? [
-    ['DDD(s) principal(is) da votação', historicalDdd],
-    ['UF da candidatura em 2022', history.uf_2022],
-    ['Parcela dos votos mapeados no DDD principal', formatPercent(history.percentual_ddd_principal)],
-    ['Votos nominais em 2022', formatNumber(history.votos_nominais_total)],
-    ['Cobertura município → DDD', formatPercent(history.cobertura_ddd_percentual)],
-    ['Distribuição dos votos mapeados', distributionText],
-  ].filter(([, value]) => value !== null && value !== undefined && value !== '') : [];
-
   return (
     <div className="modal-backdrop" onMouseDown={onClose} role="presentation">
       <section className="modal" role="dialog" aria-modal="true" aria-labelledby="candidate-title" onMouseDown={(event) => event.stopPropagation()}>
         <button className="close-button" onClick={onClose} type="button" aria-label="Fechar">×</button>
         <div className="modal-heading">
           <CandidateAvatar candidate={candidate} large />
-          <div>
+          <div className="modal-heading-copy">
             <div className="candidate-topline">
               <span className="number">{candidate.numero || '—'}</span>
               <span className="party">{candidate.partido || '—'}</span>
               <span className="uf">{candidate.uf || '—'}</span>
             </div>
-            <h2 id="candidate-title">{candidate.nome_urna || candidate.nome}</h2>
+            <h2 id="candidate-title">{displayName(candidate)}</h2>
             <p>Dados oficiais consolidados por fonte</p>
           </div>
+          <button className="modal-share-button" onClick={() => onShare(candidate)} type="button">
+            <ShareIcon />
+            Compartilhar
+          </button>
         </div>
 
         {confirmed ? (
@@ -204,24 +223,6 @@ function CandidateModal({ candidate, onClose }) {
             <strong>Histórico parlamentar não confirmado.</strong>{' '}
             O projeto só associa uma candidatura à Câmara quando a correspondência entre as fontes oficiais é segura pela metodologia publicada.
           </div>
-        )}
-
-        {history && historyRows.length > 0 && (
-          <>
-            <div className="profile-section-title">Região eleitoral histórica — votação 2022</div>
-            <div className="history-note">
-              <strong>Referência histórica de votação.</strong>{' '}
-              O DDD indica onde se concentrou a maior parcela dos votos nominais mapeados para Deputado Federal em 2022. Não é domicílio eleitoral, residência nem endereço.
-            </div>
-            <dl className="detail-grid history-detail-grid">
-              {historyRows.map(([label, value]) => (
-                <div key={label}>
-                  <dt>{label}</dt>
-                  <dd>{value}</dd>
-                </div>
-              ))}
-            </dl>
-          </>
         )}
 
         <div className="profile-section-title">Candidatura 2026</div>
@@ -296,8 +297,9 @@ function App() {
   const [metadata, setMetadata] = useState(null);
   const [query, setQuery] = useState('');
   const [uf, setUf] = useState('');
-  const [historicalDdd, setHistoricalDdd] = useState('');
+  const [occupation, setOccupation] = useState('');
   const [party, setParty] = useState('');
+  const [sortBy, setSortBy] = useState('nome');
   const [selected, setSelected] = useState(null);
   const [status, setStatus] = useState('loading');
   const [statusMessage, setStatusMessage] = useState('Carregando base pública...');
@@ -334,9 +336,18 @@ function App() {
   }, []);
 
   useEffect(() => {
+    if (status !== 'ready' || candidates.length === 0) return;
+    const candidateId = new URLSearchParams(window.location.search).get('candidato');
+    if (!candidateId) return;
+    const match = candidates.find((candidate) => String(candidate.id_tse) === candidateId);
+    if (match) setSelected(match);
+  }, [candidates, status]);
+
+  useEffect(() => {
     const closeOnEscape = (event) => {
       if (event.key === 'Escape') {
         setSelected(null);
+        updateCandidateUrl('');
         setSuggestionsOpen(false);
         setActiveSuggestion(-1);
       }
@@ -346,47 +357,38 @@ function App() {
   }, []);
 
   const ufs = useMemo(() => uniqueSorted(candidates, 'uf'), [candidates]);
+  const occupations = useMemo(() => uniqueSorted(candidates, 'ocupacao'), [candidates]);
   const parties = useMemo(() => uniqueSorted(candidates, 'partido'), [candidates]);
-  const historicalDdds = useMemo(() => {
-    const pool = uf ? candidates.filter((candidate) => candidate.uf === uf) : candidates;
-    const values = new Set();
-    pool.forEach((candidate) => candidateHistoricalDdds(candidate).forEach((ddd) => values.add(ddd)));
-    return [...values].sort((a, b) => Number(a) - Number(b) || a.localeCompare(b, 'pt-BR'));
-  }, [candidates, uf]);
-  const hasHistoricalRegions = useMemo(
-    () => candidates.some((candidate) => candidateHistoricalDdds(candidate).length > 0),
-    [candidates],
-  );
-
-  useEffect(() => {
-    if (historicalDdd && !historicalDdds.includes(historicalDdd)) setHistoricalDdd('');
-  }, [historicalDdd, historicalDdds]);
 
   const filtered = useMemo(() => {
     const term = normalize(query.trim());
-    return candidates.filter((candidate) => {
+    const result = candidates.filter((candidate) => {
       if (uf && candidate.uf !== uf) return false;
-      if (historicalDdd && !candidateHistoricalDdds(candidate).includes(historicalDdd)) return false;
+      if (occupation && candidate.ocupacao !== occupation) return false;
       if (party && candidate.partido !== party) return false;
       if (!term) return true;
-      return [candidate.nome, candidate.nome_urna, candidate.numero, candidate.partido, candidate.ocupacao].some((value) => normalize(value).includes(term));
+      return [candidate.nome, candidate.nome_urna, candidate.numero, candidate.partido, candidate.ocupacao]
+        .some((value) => normalize(value).includes(term));
     });
-  }, [candidates, query, uf, historicalDdd, party]);
+    return result.sort((a, b) => compareCandidates(a, b, sortBy));
+  }, [candidates, query, uf, occupation, party, sortBy]);
 
   const searchSuggestions = useMemo(() => {
     const term = normalize(query.trim());
     if (term.length < 2 || status !== 'ready') return [];
     const pool = candidates.filter((candidate) => (
       (!uf || candidate.uf === uf)
-      && (!historicalDdd || candidateHistoricalDdds(candidate).includes(historicalDdd))
+      && (!occupation || candidate.ocupacao === occupation)
       && (!party || candidate.partido === party)
     ));
     const candidateMatches = pool
-      .filter((candidate) => [candidate.nome_urna, candidate.nome, candidate.numero, candidate.partido].some((value) => normalize(value).includes(term)))
+      .filter((candidate) => [candidate.nome_urna, candidate.nome, candidate.numero, candidate.partido, candidate.ocupacao]
+        .some((value) => normalize(value).includes(term)))
       .sort((a, b) => {
-        const aName = normalize(a.nome_urna || a.nome);
-        const bName = normalize(b.nome_urna || b.nome);
-        return (aName.startsWith(term) ? 0 : 1) - (bName.startsWith(term) ? 0 : 1) || aName.localeCompare(bName, 'pt-BR');
+        const aName = normalize(displayName(a));
+        const bName = normalize(displayName(b));
+        return (aName.startsWith(term) ? 0 : 1) - (bName.startsWith(term) ? 0 : 1)
+          || aName.localeCompare(bName, 'pt-BR');
       })
       .slice(0, 7)
       .map((candidate) => ({ type: 'candidate', key: `candidate-${candidate.id_tse}`, candidate }));
@@ -400,22 +402,51 @@ function App() {
         count: candidates.filter((candidate) => (
           candidate.partido === item
           && (!uf || candidate.uf === uf)
-          && (!historicalDdd || candidateHistoricalDdds(candidate).includes(historicalDdd))
+          && (!occupation || candidate.ocupacao === occupation)
         )).length,
       }));
     return [...candidateMatches, ...partyMatches].slice(0, 10);
-  }, [candidates, parties, query, uf, historicalDdd, party, status]);
+  }, [candidates, parties, query, uf, occupation, party, status]);
 
   useEffect(() => {
     setActiveSuggestion(-1);
     setSuggestionsOpen(query.trim().length >= 2 && searchSuggestions.length > 0);
   }, [query, searchSuggestions.length]);
 
+  function openCandidate(candidate) {
+    setSelected(candidate);
+    updateCandidateUrl(candidate.id_tse);
+  }
+
+  function closeCandidate() {
+    setSelected(null);
+    updateCandidateUrl('');
+  }
+
+  async function shareCandidate(candidate) {
+    const url = candidateProfileUrl(candidate);
+    const title = `${displayName(candidate)} — Eleições 2026`;
+    const details = [candidate.numero, candidate.partido, candidate.uf].filter(Boolean).join(' · ');
+    const text = `${displayName(candidate)}${details ? ` — ${details}` : ''}. Perfil com dados oficiais no Eleições 2026.`;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({ title, text, url });
+        return;
+      } catch (error) {
+        if (error?.name === 'AbortError') return;
+      }
+    }
+
+    const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(`${text}\n${url}`)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  }
+
   function chooseSuggestion(suggestion) {
     if (!suggestion) return;
     if (suggestion.type === 'candidate') {
-      setQuery(suggestion.candidate.nome_urna || suggestion.candidate.nome || suggestion.candidate.numero || '');
-      setSelected(suggestion.candidate);
+      setQuery(displayName(suggestion.candidate));
+      openCandidate(suggestion.candidate);
     } else {
       setParty(suggestion.party);
       setQuery('');
@@ -444,7 +475,7 @@ function App() {
   function clearFilters() {
     setQuery('');
     setUf('');
-    setHistoricalDdd('');
+    setOccupation('');
     setParty('');
     setSuggestionsOpen(false);
     setActiveSuggestion(-1);
@@ -460,13 +491,20 @@ function App() {
     <>
       <header className="hero">
         <nav className="topbar" aria-label="Navegação principal">
-          <a className="brand" href="#top" aria-label="Eleições 2026 — início"><span className="brand-mark">E26</span><span><strong>Eleições 2026</strong><small>Transparência de dados públicos</small></span></a>
-          <a className="github-link" href="https://github.com/MSsanto/Elei-oes-2026" target="_blank" rel="noreferrer">Código aberto ↗</a>
+          <a className="brand" href="#top" aria-label="Eleições 2026 — início">
+            <span className="brand-mark">E26</span>
+            <span><strong>Eleições 2026</strong><small>Transparência de dados públicos</small></span>
+          </a>
+          <a className="github-link" href={REPOSITORY_URL} target="_blank" rel="noreferrer" aria-label="Abrir repositório do projeto no GitHub">
+            <GitHubIcon />
+            <span>GitHub</span>
+            <span aria-hidden="true">↗</span>
+          </a>
         </nav>
         <div className="hero-content" id="top">
           <div className="eyebrow">DADOS PÚBLICOS · TSE · CÂMARA · CÓDIGO ABERTO</div>
           <h1>Da candidatura ao mandato,<br /><span>dados oficiais em um só lugar.</span></h1>
-          <p className="hero-copy">Consulta independente das candidaturas a Deputado Federal em 2026, integrada progressivamente ao histórico parlamentar e à distribuição regional de votos publicada pelas fontes oficiais.</p>
+          <p className="hero-copy">Consulta independente das candidaturas a Deputado Federal em 2026, integrada progressivamente ao histórico parlamentar publicado pelas fontes oficiais.</p>
           <div className="trust-row"><span>Fontes oficiais identificadas</span><span>Sem vínculo partidário</span><span>Metodologia auditável</span></div>
         </div>
       </header>
@@ -480,59 +518,131 @@ function App() {
         </section>
 
         <section className="content-section">
-          <div className="section-heading"><div><span className="section-kicker">CANDIDATURAS 2026</span><h2>Encontre um candidato</h2></div><p>{status === 'ready' ? `${filtered.length.toLocaleString('pt-BR')} resultado(s)` : statusMessage}</p></div>
+          <div className="section-heading">
+            <div><span className="section-kicker">CANDIDATURAS 2026</span><h2>Encontre um candidato</h2></div>
+            <p>{status === 'ready' ? `${filtered.length.toLocaleString('pt-BR')} resultado(s)` : statusMessage}</p>
+          </div>
           {metadata?.mode === 'live-cloudflare' && <div className="live-notice">Prévia ao vivo: dados de SP consultados pelo Cloudflare diretamente no DivulgaCandContas/TSE.</div>}
 
-          <div className={`filters${hasHistoricalRegions ? ' filters-with-history' : ''}`}>
+          <div className="filters filters-enhanced">
             <div className="autocomplete" onBlur={() => window.setTimeout(() => setSuggestionsOpen(false), 120)}>
-              <label className="search-box" htmlFor="candidate-search"><span>⌕</span><input id="candidate-search" type="search" placeholder="Digite ao menos 2 letras do nome, número ou partido..." value={query} autoComplete="off" role="combobox" aria-autocomplete="list" aria-expanded={suggestionsOpen} aria-controls="search-suggestions" aria-activedescendant={activeSuggestion >= 0 ? `search-suggestion-${activeSuggestion}` : undefined} onFocus={() => query.trim().length >= 2 && searchSuggestions.length && setSuggestionsOpen(true)} onChange={(event) => { setQuery(event.target.value); setSuggestionsOpen(true); }} onKeyDown={handleSearchKeyDown} /></label>
+              <label className="search-box" htmlFor="candidate-search">
+                <span>⌕</span>
+                <input
+                  id="candidate-search"
+                  type="search"
+                  placeholder="Nome, número, partido ou ocupação..."
+                  value={query}
+                  autoComplete="off"
+                  role="combobox"
+                  aria-autocomplete="list"
+                  aria-expanded={suggestionsOpen}
+                  aria-controls="search-suggestions"
+                  aria-activedescendant={activeSuggestion >= 0 ? `search-suggestion-${activeSuggestion}` : undefined}
+                  onFocus={() => query.trim().length >= 2 && searchSuggestions.length && setSuggestionsOpen(true)}
+                  onChange={(event) => { setQuery(event.target.value); setSuggestionsOpen(true); }}
+                  onKeyDown={handleSearchKeyDown}
+                />
+              </label>
               {suggestionsOpen && searchSuggestions.length > 0 && (
                 <div className="autocomplete-menu" id="search-suggestions" role="listbox">
                   <div className="autocomplete-caption">Sugestões</div>
                   {searchSuggestions.map((suggestion, index) => (
-                    <button id={`search-suggestion-${index}`} key={suggestion.key} className={`autocomplete-option${index === activeSuggestion ? ' active' : ''}`} role="option" aria-selected={index === activeSuggestion} type="button" onMouseDown={(event) => event.preventDefault()} onMouseEnter={() => setActiveSuggestion(index)} onClick={() => chooseSuggestion(suggestion)}>
-                      {suggestion.type === 'candidate' ? <><CandidateAvatar candidate={suggestion.candidate} /><span className="autocomplete-copy"><strong>{suggestion.candidate.nome_urna || suggestion.candidate.nome}</strong><small>{suggestion.candidate.numero || '—'} · {suggestion.candidate.partido || 'Sem partido'} · {suggestion.candidate.uf || 'BR'}</small></span><span className="autocomplete-kind">Candidato</span></> : <><span className="party-suggestion-icon">P</span><span className="autocomplete-copy"><strong>{suggestion.party}</strong><small>{suggestion.count.toLocaleString('pt-BR')} candidato(s) nesta carga</small></span><span className="autocomplete-kind">Partido</span></>}
+                    <button
+                      id={`search-suggestion-${index}`}
+                      key={suggestion.key}
+                      className={`autocomplete-option${index === activeSuggestion ? ' active' : ''}`}
+                      role="option"
+                      aria-selected={index === activeSuggestion}
+                      type="button"
+                      onMouseDown={(event) => event.preventDefault()}
+                      onMouseEnter={() => setActiveSuggestion(index)}
+                      onClick={() => chooseSuggestion(suggestion)}
+                    >
+                      {suggestion.type === 'candidate' ? (
+                        <>
+                          <CandidateAvatar candidate={suggestion.candidate} />
+                          <span className="autocomplete-copy">
+                            <strong>{displayName(suggestion.candidate)}</strong>
+                            <small>{suggestion.candidate.numero || '—'} · {suggestion.candidate.partido || 'Sem partido'} · {suggestion.candidate.uf || 'BR'}</small>
+                          </span>
+                          <span className="autocomplete-kind">Candidato</span>
+                        </>
+                      ) : (
+                        <>
+                          <span className="party-suggestion-icon">P</span>
+                          <span className="autocomplete-copy"><strong>{suggestion.party}</strong><small>{suggestion.count.toLocaleString('pt-BR')} candidato(s) nesta carga</small></span>
+                          <span className="autocomplete-kind">Partido</span>
+                        </>
+                      )}
                     </button>
                   ))}
                   <div className="autocomplete-help">↑ ↓ para navegar · Enter para selecionar · Esc para fechar</div>
                 </div>
               )}
             </div>
-            <select value={uf} onChange={(event) => setUf(event.target.value)} aria-label="Filtrar por UF"><option value="">Todas as UFs</option>{ufs.map((item) => <option key={item} value={item}>{item}</option>)}</select>
-            {hasHistoricalRegions && (
-              <select value={historicalDdd} onChange={(event) => setHistoricalDdd(event.target.value)} aria-label="Filtrar por DDD histórico principal da votação de 2022">
-                <option value="">Todos os DDDs históricos</option>
-                {historicalDdds.map((item) => <option key={item} value={item}>DDD {item}</option>)}
-              </select>
-            )}
-            <select value={party} onChange={(event) => setParty(event.target.value)} aria-label="Filtrar por partido"><option value="">Todos os partidos</option>{parties.map((item) => <option key={item} value={item}>{item}</option>)}</select>
-            {(query || uf || historicalDdd || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
+
+            <select value={uf} onChange={(event) => setUf(event.target.value)} aria-label="Filtrar por UF">
+              <option value="">Todas as UFs</option>
+              {ufs.map((item) => <option key={item} value={item}>{item}</option>)}
+            </select>
+
+            <select value={occupation} onChange={(event) => setOccupation(event.target.value)} aria-label="Filtrar por ocupação ou profissão">
+              <option value="">Todas as ocupações</option>
+              {occupations.map((item) => <option key={item} value={item}>{item}</option>)}
+            </select>
+
+            <select value={party} onChange={(event) => setParty(event.target.value)} aria-label="Filtrar por partido">
+              <option value="">Todos os partidos</option>
+              {parties.map((item) => <option key={item} value={item}>{item}</option>)}
+            </select>
+
+            <select value={sortBy} onChange={(event) => setSortBy(event.target.value)} aria-label="Ordenar resultados">
+              <option value="nome">Nome A–Z</option>
+              <option value="numero">Número do candidato</option>
+              <option value="partido">Partido A–Z</option>
+            </select>
+
+            {(query || uf || occupation || party) && <button className="clear-button" onClick={clearFilters} type="button">Limpar</button>}
           </div>
-          {hasHistoricalRegions && (
-            <p className="history-filter-note">
-              <strong>DDD histórico:</strong> região que concentrou a maior parcela dos votos nominais mapeados para Deputado Federal em 2022. Não representa domicílio eleitoral.
-            </p>
-          )}
 
           {status === 'loading' && <div className="state-card"><div className="loader" />{statusMessage}</div>}
           {status === 'waiting' && <div className="state-card waiting"><strong>Site publicado e frontend pronto.</strong><span>{statusMessage}</span></div>}
           {status === 'ready' && candidates.length > 0 && filtered.length === 0 && <div className="state-card">Nenhum candidato encontrado com esses filtros.</div>}
-          {filtered.length > 0 && <div className="candidate-list">{filtered.slice(0, 120).map((candidate) => <CandidateCard key={candidate.id_tse} candidate={candidate} onOpen={setSelected} />)}</div>}
+          {filtered.length > 0 && (
+            <div className="candidate-list">
+              {filtered.slice(0, 120).map((candidate) => (
+                <CandidateCard key={candidate.id_tse} candidate={candidate} onOpen={openCandidate} onShare={shareCandidate} />
+              ))}
+            </div>
+          )}
           {filtered.length > 120 && <p className="result-limit">Mostrando os primeiros 120 resultados. Use os filtros para refinar a pesquisa.</p>}
         </section>
 
         <section className="method-section">
           <div><span className="section-kicker">COMO FUNCIONA</span><h2>Da fonte oficial à consulta pública</h2></div>
           <div className="method-grid">
-            <article><span>01</span><h3>Coleta</h3><p>O TSE alimenta a base eleitoral e a votação histórica por município. A Anatel fornece o Código Nacional (DDD), e a Câmara fornece o histórico parlamentar.</p></article>
-            <article><span>02</span><h3>Vínculo auditável</h3><p>As correspondências entre eleições e entre TSE ↔ Câmara só são confirmadas quando a metodologia encontra uma identidade exata, única e verificável nos campos utilizados.</p></article>
-            <article><span>03</span><h3>Publicação</h3><p>Dados processados ficam versionados no GitHub e cada alteração é publicada pelo Cloudflare Pages, com distinção explícita entre fatos eleitorais e inferências que o projeto não faz.</p></article>
+            <article><span>01</span><h3>Coleta</h3><p>O TSE alimenta a base eleitoral e a Câmara dos Deputados fornece o histórico parlamentar publicado em suas bases oficiais.</p></article>
+            <article><span>02</span><h3>Vínculo auditável</h3><p>As correspondências TSE ↔ Câmara só são confirmadas quando a metodologia encontra uma identidade segura, única e verificável nos campos utilizados.</p></article>
+            <article><span>03</span><h3>Publicação</h3><p>Dados processados ficam versionados no GitHub e cada alteração é publicada pelo Cloudflare Pages, preservando rastreabilidade das fontes e da metodologia.</p></article>
           </div>
         </section>
       </main>
 
-      <footer><div><strong>Eleições 2026</strong><span>Projeto independente de transparência pública.</span></div><p>Dados provenientes de fontes públicas oficiais. Ausência de vínculo ou informação significa apenas que o dado não foi confirmado/localizado pela metodologia aplicada.</p></footer>
-      <CandidateModal candidate={selected} onClose={() => setSelected(null)} />
+      <footer>
+        <div className="footer-project">
+          <strong>Eleições 2026</strong>
+          <span>Projeto independente de transparência pública.</span>
+          <a className="footer-github" href={REPOSITORY_URL} target="_blank" rel="noreferrer">
+            <GitHubIcon />
+            Repositório no GitHub
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p>Dados provenientes de fontes públicas oficiais. Ausência de vínculo ou informação significa apenas que o dado não foi confirmado/localizado pela metodologia aplicada.</p>
+      </footer>
+
+      <CandidateModal candidate={selected} onClose={closeCandidate} onShare={shareCandidate} />
     </>
   );
 }
