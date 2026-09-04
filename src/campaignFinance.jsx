@@ -135,13 +135,13 @@ function Timeline({ rows }) {
   );
 }
 
-export default function CampaignFinance({ candidate }) {
+export default function CampaignFinance({ candidate, candidateId }) {
+  const resolvedCandidateId = candidateId || candidate?.id_tse || '';
   const [status, setStatus] = useState('loading');
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const candidateId = candidate?.id_tse;
-    if (!candidateId) {
+    if (!resolvedCandidateId) {
       setStatus('missing');
       setData(null);
       return undefined;
@@ -150,7 +150,7 @@ export default function CampaignFinance({ candidate }) {
     const controller = new AbortController();
     setStatus('loading');
     setData(null);
-    fetch(`${BASE_URL}/${candidateId}.json`, { cache: 'no-cache', signal: controller.signal })
+    fetch(`${BASE_URL}/${resolvedCandidateId}.json`, { cache: 'no-cache', signal: controller.signal })
       .then(async (response) => {
         if (response.status === 404) return null;
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -169,7 +169,7 @@ export default function CampaignFinance({ candidate }) {
       });
 
     return () => controller.abort();
-  }, [candidate?.id_tse]);
+  }, [resolvedCandidateId]);
 
   if (status === 'loading') {
     return <section className="campaign-finance"><div className="finance-state"><span className="finance-loader" />Carregando prestação de contas publicada...</div></section>;
