@@ -1,0 +1,244 @@
+/* Refresh de UX baseado na análise de navegação/layout.
+   Este arquivo entra por último para preservar a lógica existente e ajustar apenas apresentação/interação. */
+
+:root {
+  --ux-bg: #f7f9fc;
+  --ux-surface: #ffffff;
+  --ux-ink: #172033;
+  --ux-muted: #64748b;
+  --ux-navy: #0b1f33;
+  --ux-blue: #2563eb;
+  --ux-blue-soft: #eaf2ff;
+  --ux-green: #14805e;
+  --ux-line: #d9e2ec;
+}
+
+html { scroll-padding-top: 78px; }
+body { background: var(--ux-bg); }
+
+/* Header global da consulta */
+.topbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 80 !important;
+  width: 100% !important;
+  height: 68px !important;
+  margin: 0 !important;
+  padding-left: max(20px, calc((100vw - 1180px) / 2));
+  padding-right: max(20px, calc((100vw - 1180px) / 2));
+  background: rgba(11, 31, 51, .96);
+  border-bottom: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(14px);
+}
+
+.brand-mark { width: 40px; height: 40px; border-radius: 11px; }
+.brand small { font-size: 11px; }
+.github-link { padding: 8px 11px; font-size: 12px; }
+
+.consult-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+  margin-right: 8px;
+}
+.consult-nav a {
+  padding: 8px 10px;
+  border-radius: 9px;
+  color: #c6d1df;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 750;
+}
+.consult-nav a:hover,
+.consult-nav a:focus-visible { color: #fff; background: rgba(255,255,255,.08); outline: none; }
+
+/* Hero compacto: o conteúdo útil passa a aparecer cedo */
+.multi-cargo-hero,
+.hero.multi-cargo-hero {
+  min-height: 300px !important;
+}
+.hero-content {
+  padding-top: 94px !important;
+  padding-bottom: 34px !important;
+}
+.consult-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 14px;
+  color: #9fb0c5;
+  font-size: 10px;
+}
+.consult-breadcrumb a { color: #c8d4e2; text-decoration: none; }
+.consult-breadcrumb a:hover { color: #fff; }
+.consult-breadcrumb strong { color: #fff; font-weight: 750; }
+
+.cargo-tabs {
+  max-width: 100%;
+  margin-bottom: 18px !important;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  white-space: nowrap;
+}
+.cargo-tabs button { flex: 0 0 auto; min-height: 36px; padding: 0 13px; }
+.eyebrow { margin-bottom: 10px !important; }
+.hero h1 {
+  max-width: 820px;
+  font-size: clamp(32px, 4vw, 44px) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -.045em !important;
+}
+.hero-copy {
+  margin-top: 13px !important;
+  max-width: 720px;
+  font-size: 14px !important;
+  line-height: 1.55 !important;
+}
+.trust-row { margin-top: 16px !important; gap: 10px 20px !important; font-size: 10px !important; }
+
+.stats-wrap {
+  margin-top: 22px !important;
+  border-radius: 15px !important;
+  box-shadow: 0 8px 26px rgba(15,30,54,.06) !important;
+}
+.stat-card { min-height: 88px !important; padding: 19px 22px !important; }
+.stat-card strong { font-size: 24px !important; }
+.content-section { padding-top: 54px !important; padding-bottom: 76px !important; }
+.section-heading { margin-bottom: 20px !important; }
+.section-heading h2 { font-size: clamp(30px, 3.6vw, 40px) !important; }
+
+/* Filtros: primeira camada curta, ocupação sob “Mais filtros” */
+.filters.filters-enhanced,
+.multi-cargo-filters,
+.multi-cargo-filters.without-uf,
+.state-deputy-filters {
+  gap: 9px !important;
+  align-items: end !important;
+}
+.multi-cargo-filters {
+  grid-template-columns: minmax(300px, 2fr) minmax(120px,.7fr) minmax(150px,.9fr) minmax(160px,.9fr) auto auto !important;
+}
+.multi-cargo-filters.without-uf {
+  grid-template-columns: minmax(340px, 2fr) minmax(160px,.9fr) minmax(160px,.9fr) auto auto !important;
+}
+.state-deputy-filters {
+  grid-template-columns: minmax(300px,2fr) minmax(160px,1fr) minmax(160px,1fr) auto auto !important;
+}
+.ux-advanced-filter { display: none !important; }
+.filters.advanced-open .ux-advanced-filter { display: block !important; }
+.more-filters-button {
+  min-height: 48px;
+  padding: 0 13px;
+  border: 1px solid var(--ux-line);
+  border-radius: 12px;
+  background: var(--ux-surface);
+  color: #41516a;
+  font-weight: 750;
+  white-space: nowrap;
+}
+.more-filters-button:hover,
+.more-filters-button:focus-visible,
+.more-filters-button[aria-expanded="true"] {
+  color: var(--ux-blue);
+  border-color: #b8cbef;
+  background: var(--ux-blue-soft);
+  outline: none;
+}
+.filters select,
+.search-box,
+.clear-button { min-height: 48px !important; }
+
+/* Cards mais escaneáveis: no máximo dois badges */
+.candidate-card { border-color: var(--ux-line) !important; border-radius: 14px !important; }
+.candidate-card-open { padding-top: 15px !important; padding-bottom: 15px !important; }
+.candidate-card h3 { font-size: 16px !important; }
+.tags { margin-top: 7px !important; }
+.tags span:nth-child(n+3) { display: none; }
+.has-chamber-history .tags span:nth-child(2):not(.history-badge) { display: none; }
+.has-chamber-history .tags .history-badge { display: inline-block; }
+
+/* Perfil: painel lateral no desktop e página inteira no mobile */
+.modal-backdrop {
+  place-items: stretch end !important;
+  padding: 0 !important;
+  background: rgba(5,12,23,.58) !important;
+}
+.modal,
+.modal.profile-tabs-enabled {
+  width: min(980px, 72vw) !important;
+  max-width: 980px !important;
+  height: 100dvh !important;
+  max-height: 100dvh !important;
+  border-radius: 22px 0 0 22px !important;
+  padding: 30px 34px !important;
+  animation: ux-panel-in .18s ease-out both;
+}
+@keyframes ux-panel-in { from { transform: translateX(28px); opacity: .72; } to { transform: translateX(0); opacity: 1; } }
+.close-button { position: sticky !important; top: 0 !important; float: right; z-index: 6; }
+.modal-heading { clear: both; }
+.modal-heading h2 { font-size: clamp(28px,3vw,36px) !important; }
+.profile-tabs { position: sticky; top: -1px; z-index: 5; background: #f5f7fb !important; }
+
+/* Estados e notas: menos ruído visual */
+.state-performance-note,
+.state-load-note { background: #f8fafc !important; }
+.method-section { padding-top: 66px !important; padding-bottom: 66px !important; }
+
+@media (max-width: 1080px) {
+  .multi-cargo-filters,
+  .multi-cargo-filters.without-uf,
+  .state-deputy-filters {
+    grid-template-columns: repeat(2, minmax(160px, 1fr)) !important;
+  }
+  .multi-cargo-filters .autocomplete,
+  .state-deputy-filters .search-box { grid-column: 1 / -1 !important; }
+  .modal,
+  .modal.profile-tabs-enabled { width: min(900px, 82vw) !important; }
+}
+
+@media (max-width: 760px) {
+  .topbar { height: 62px !important; padding-left: 14px; padding-right: 14px; }
+  .brand small { display: none; }
+  .consult-nav { max-width: 44vw; overflow-x: auto; scrollbar-width: none; }
+  .consult-nav::-webkit-scrollbar { display: none; }
+  .consult-nav a { white-space: nowrap; }
+  .consult-nav a:nth-child(n+3) { display: none; }
+  .github-link span { display: none !important; }
+  .github-link { padding: 8px !important; }
+
+  .multi-cargo-hero,
+  .hero.multi-cargo-hero { min-height: 290px !important; }
+  .hero-content { width: min(100% - 28px, 1180px) !important; padding-top: 79px !important; padding-bottom: 27px !important; }
+  .cargo-tabs {
+    display: flex !important;
+    width: 100% !important;
+    padding: 4px !important;
+    gap: 4px !important;
+    margin-bottom: 14px !important;
+  }
+  .cargo-tabs button { min-width: max-content; }
+  .hero h1 { font-size: 32px !important; }
+  .hero-copy { font-size: 13px !important; }
+  .trust-row { display: none !important; }
+  .stats-wrap { margin-top: 14px !important; }
+
+  .multi-cargo-filters,
+  .multi-cargo-filters.without-uf,
+  .state-deputy-filters { grid-template-columns: 1fr !important; }
+  .multi-cargo-filters .autocomplete,
+  .state-deputy-filters .search-box { grid-column: auto !important; }
+  .more-filters-button { width: 100%; }
+
+  .modal,
+  .modal.profile-tabs-enabled {
+    width: 100% !important;
+    max-width: none !important;
+    border-radius: 0 !important;
+    padding: 20px 18px !important;
+  }
+  .modal-heading { padding-right: 0 !important; }
+  .profile-tabs { margin-left: -2px !important; margin-right: -2px !important; }
+}
