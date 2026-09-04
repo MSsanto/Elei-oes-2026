@@ -36,7 +36,7 @@ jobs:
         env:
           TSE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download
           TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
-        run: python scripts/build_historical_ddd_2022.py --ufs "${{ inputs.ufs }}" --workers 6
+        run: python scripts/build_historical_ddd_2022_v2.py --ufs "${{ inputs.ufs }}" --workers 6
 
       - name: Publicar mapa historico e candidaturas enriquecidas
         shell: bash
