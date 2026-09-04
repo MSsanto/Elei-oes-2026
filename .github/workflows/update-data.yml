@@ -29,6 +29,7 @@ jobs:
           python3 -m py_compile scripts/fetch_candidates_cloud.py
           python3 -m py_compile scripts/build_cargos_2026.py
           python3 -m py_compile scripts/build_campaign_finance_2026.py
+          python3 -m py_compile scripts/fetch_campaign_finance_cloud.py
           python3 -m py_compile scripts/inspect_tse_complementary.py
           python3 -m py_compile scripts/inspect_divulgacand_fields.py
           python3 -m py_compile scripts/build_historical_ddd_2022.py
@@ -96,15 +97,18 @@ jobs:
               original = finance.OUTPUT_DIR
               finance.OUTPUT_DIR = base / 'out'
               manifest = finance.process(base)
-              payload = json.loads((finance.OUTPUT_DIR / '123.json').read_text(encoding='utf-8'))
+              shard = finance.shard_key('123')
+              records = json.loads((finance.OUTPUT_DIR / 'shards' / f'{shard}.json').read_text(encoding='utf-8'))
+              payload = records['123']
               finance.OUTPUT_DIR = original
 
               assert manifest['candidates'] == 1
+              assert manifest['shard_count'] == 1
               assert payload['resumo']['total_receitas'] == 1000.0
               assert payload['resumo']['total_despesas_contratadas'] == 250.0
               assert payload['receitas_por_fonte'][0]['categoria'] == 'Fundo Especial'
               assert payload['despesas_por_categoria'][0]['categoria'] == 'Publicidade'
-          print('OK: agregacao financeira por candidato')
+          print('OK: agregacao financeira por candidato em shards')
           PY
 
       - name: Validar assinatura conservadora do historico regional
