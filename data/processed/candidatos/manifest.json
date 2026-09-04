@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "generated_at_utc": "2026-09-04T03:32:40.726445+00:00",
+  "source": "Tribunal Superior Eleitoral (TSE)",
+  "cargos": {
+    "presidente": {
+      "total": 13,
+      "manifest": "presidente/manifest.json"
+    },
+    "governador": {
+      "total": 198,
+      "manifest": "governador/manifest.json"
+    },
+    "deputado-federal": {
+      "status": "legado_compativel",
+      "arquivo": "../deputados_federais.json"
+    }
+  }
+}
