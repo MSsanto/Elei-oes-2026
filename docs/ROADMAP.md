@@ -23,6 +23,12 @@ Ao abrir um perfil, evoluir o modal para um painel visual com gráficos baseados
 - Despesas do mandato, sempre identificadas como despesas parlamentares e nunca como despesas de campanha.
 - Proposições de autoria publicadas pela Câmara.
 
+### Senado Federal
+
+- Integrar histórico parlamentar apenas por correspondência segura com a fonte oficial do Senado.
+- Votações, proposições e atividade parlamentar devem informar período e escopo da carga.
+- Não inferir que toda candidatura a Senador possui histórico no Senado.
+
 ### TSE — campanha e patrimônio
 
 Adicionar somente quando a coleta oficial correspondente estiver consolidada:
@@ -35,15 +41,22 @@ O projeto não deve transformar valores em nota, ranking, recomendação ou julg
 
 ## 3. Arquitetura multi-cargo
 
-Evoluir o frontend e a camada processada para suportar vários cargos sem duplicar regras de interface.
+O frontend e a camada processada já suportam múltiplos cargos com filtros dinâmicos e persistência na URL.
 
-Ordem sugerida:
+### Implementado
 
-1. Presidente e Vice-Presidente.
-2. Governador e Vice-Governador.
-3. Senador e suplentes.
-4. Deputado Federal — já suportado.
-5. Deputado Estadual/Distrital.
+1. Presidente — circunscrição nacional, sem filtro de UF.
+2. Governador — carga sob demanda por UF.
+3. Senador — carga sob demanda por UF.
+4. Deputado Federal — suporte existente, incluindo integração conservadora com histórico da Câmara.
+
+### Próximas extensões
+
+- Vice-Presidente como composição da candidatura presidencial, conforme estrutura oficial do TSE.
+- Vice-Governador como composição da candidatura estadual.
+- 1º e 2º suplentes de Senador como composição da candidatura ao Senado, sem tratá-los como candidaturas independentes quando a fonte oficial permitir o vínculo seguro.
+- Histórico parlamentar oficial do Senado.
+- Deputado Estadual/Distrital com fragmentação/paginação real por UF.
 
 Estrutura conceitual:
 
@@ -58,15 +71,15 @@ Estrutura conceitual:
 
 Cada perfil deve manter uma chave estável da fonte oficial e receber módulos opcionais conforme o cargo e o histórico localizado, por exemplo Câmara para deputados e Senado para senadores.
 
-## 4. Navegação futura
+## 4. Navegação
 
-A página inicial poderá oferecer seleção por cargo antes dos filtros territoriais e partidários:
+A navegação multi-cargo segue a estrutura:
 
 ```text
 Presidente | Governador | Senador | Deputado Federal | Deputado Estadual
 ```
 
-Depois, conforme aplicável:
+Deputado Estadual permanece pendente. Para cargos de circunscrição estadual, a consulta deve usar:
 
 ```text
 UF → Partido → Ocupação → Nome/Número
