@@ -1,8 +1,103 @@
 {
+  "anos": {
+    "2023": {
+      "generated_at_utc": "2026-09-04T10:53:50.609753+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2023"
+      },
+      "proposicoes": {
+        "quantidade_registros": 1,
+        "registros_recentes": [
+          {
+            "id": 1197773,
+            "sigla_tipo": "PL",
+            "numero": 4015,
+            "ano": 2023,
+            "ementa": "Altera o art. 121 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940- Código Penal -  para prever como homicídio qualificado aquele praticado contra membros do Ministério Público e Magistratura, no exercício de sua função ou por causa dela e dá outras providências.  NOVA EMENTA: Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), 12.694, de 24 julho de 2012, e 13.709, de 14 agosto de 2018 (Lei Geral de Proteção de Dados Pessoais), para reconhecer como atividade de risco permanente as atribuições inerentes ao Poder Judiciário e ao Ministério Público e garantir aos seus membros medidas de proteção, bem como recrudescer o tratamento penal destinado aos crimes de homicídio e de lesão corporal dolosa contra eles, desde que no exercício da função ou em decorrência dela, ou contra seu cônjuge, companheiro ou parente, inclusive por afinidade, até o terceiro grau, em razão dessa condição.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/1197773"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178930"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv"
+      }
+    },
+    "2024": {
+      "generated_at_utc": "2026-09-04T10:57:54.164968+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2024"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178930"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv"
+      }
+    },
+    "2025": {
+      "generated_at_utc": "2026-09-04T11:02:51.585660+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2025"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178930"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv"
+      }
+    },
+    "2026": {
+      "generated_at_utc": "2026-09-04T11:06:38.254152+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2026"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178930"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+      }
+    }
+  },
+  "schema_version": 2,
   "camara_id_deputado": "178930",
-  "generated_at_utc": "2026-09-03T17:43:57.955890+00:00",
+  "generated_at_utc": "2026-09-04T11:06:40.693800+00:00",
   "periodo": {
-    "ano": 2026
+    "inicio": 2023,
+    "fim": 2026,
+    "anos": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
   },
   "mandato": {
     "detalhe": {
@@ -245,29 +340,121 @@
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/historico"
   },
   "despesas": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
-    "valor_liquido_total": 0,
+    "valor_liquido_total": 0.0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2026"
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2023",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2024",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2025",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/178930/despesas?ano=2026"
+    ]
   },
   "proposicoes": {
-    "ano": 2026,
-    "quantidade_registros": 0,
-    "registros_recentes": [],
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 1,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 1
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
+    "registros_recentes": [
+      {
+        "id": 1197773,
+        "sigla_tipo": "PL",
+        "numero": 4015,
+        "ano": 2023,
+        "ementa": "Altera o art. 121 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940- Código Penal -  para prever como homicídio qualificado aquele praticado contra membros do Ministério Público e Magistratura, no exercício de sua função ou por causa dela e dá outras providências.  NOVA EMENTA: Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e as Leis nºs 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), 12.694, de 24 julho de 2012, e 13.709, de 14 agosto de 2018 (Lei Geral de Proteção de Dados Pessoais), para reconhecer como atividade de risco permanente as atribuições inerentes ao Poder Judiciário e ao Ministério Público e garantir aos seus membros medidas de proteção, bem como recrudescer o tratamento penal destinado aos crimes de homicídio e de lesão corporal dolosa contra eles, desde que no exercício da função ou em decorrência dela, ou contra seu cônjuge, companheiro ou parente, inclusive por afinidade, até o terceiro grau, em razão dessa condição.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/1197773"
+      }
+    ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178930",
     "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
   },
   "votacoes": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+    ],
     "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
   },
   "fontes": [
     "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2023.csv",
+    "votacoesVotos-2024.csv",
+    "votacoesVotos-2025.csv",
     "votacoesVotos-2026.csv",
+    "votacoes-2023.csv",
+    "votacoes-2024.csv",
+    "votacoes-2025.csv",
     "votacoes-2026.csv"
   ]
 }

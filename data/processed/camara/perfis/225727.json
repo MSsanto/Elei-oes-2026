@@ -1,8 +1,392 @@
 {
+  "anos": {
+    "2023": {
+      "generated_at_utc": "2026-09-04T10:53:21.815926+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2023"
+      },
+      "proposicoes": {
+        "quantidade_registros": 14,
+        "registros_recentes": [
+          {
+            "id": 2391396,
+            "sigla_tipo": "PL",
+            "numero": 4708,
+            "ano": 2023,
+            "ementa": "Institui o Programa Carne no Prato e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2391396"
+          },
+          {
+            "id": 2391393,
+            "sigla_tipo": "PL",
+            "numero": 4707,
+            "ano": 2023,
+            "ementa": "Altera a Lei nº 8.171, de 17 de janeiro de 1991, para instituir o Sistema Unificado Federal de Sanidade Agroindustrial Familiar e de Pequeno Porte.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2391393"
+          },
+          {
+            "id": 2391163,
+            "sigla_tipo": "REQ",
+            "numero": 3311,
+            "ano": 2023,
+            "ementa": "Requer a criação institucional, no âmbito da Câmara dos Deputados, da Frente Parlamentar por Doenças Crônicas de Pele.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2391163"
+          },
+          {
+            "id": 2390356,
+            "sigla_tipo": "REQ",
+            "numero": 3292,
+            "ano": 2023,
+            "ementa": "Requer, nos termos regimentais, o registro da Frente Parlamentar da Longevidade.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2390356"
+          },
+          {
+            "id": 2389971,
+            "sigla_tipo": "DOC",
+            "numero": 1067,
+            "ano": 2023,
+            "ementa": "Novos parlamentares que desejam aderir à Frente Parlamentar da Agropecuária - FPA para a 57ª Legislatura, após o registro formal na Secretaria Geral da Mesa no dia 28/03/2023.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2389971"
+          },
+          {
+            "id": 2389644,
+            "sigla_tipo": "REQ",
+            "numero": 3255,
+            "ano": 2023,
+            "ementa": "Requer o registro da Frente Parlamentar Mista de Apoio ao Mercado Imobiliário.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2389644"
+          },
+          {
+            "id": 2389501,
+            "sigla_tipo": "REQ",
+            "numero": 3235,
+            "ano": 2023,
+            "ementa": "Requeiro, nos termos do Art. 155 do Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei nº 1373/2023, de autoria do Deputado Lázaro Botelho.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2389501"
+          },
+          {
+            "id": 2388325,
+            "sigla_tipo": "REQ",
+            "numero": 3097,
+            "ano": 2023,
+            "ementa": "Requerimento de Urgência Art. 155 PL 952/2019 que “Determina o regramento quanto ao limite imposto ao importador brasileiro de leite em pó sobre o prazo de validade mínimo do produto.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2388325"
+          },
+          {
+            "id": 2387997,
+            "sigla_tipo": "PL",
+            "numero": 4487,
+            "ano": 2023,
+            "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990, para equiparara consumidor o pequeno, o médio e o grande produtor rural na compra de insumos, produtos e maquinários necessários à produção agrícola, ainda que não sejam destinatários finais na cadeia de consumo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2387997"
+          },
+          {
+            "id": 2387996,
+            "sigla_tipo": "PL",
+            "numero": 4486,
+            "ano": 2023,
+            "ementa": "Dispõe sobre a criação da Patrulha Nacional de Prevenção à Violência Doméstica e Familiar contra Crianças e Adolescentes.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2387996"
+          },
+          {
+            "id": 2387995,
+            "sigla_tipo": "PL",
+            "numero": 4485,
+            "ano": 2023,
+            "ementa": "Cria qualificadora no crime de homicídio na hipótese de ter sido cometido em instituição de ensino, aumenta a pena dos crimes de assédio sexual, registro não autorizado da intimidade sexual e de divulgação de cena de estupro ou de cena de estupro de vulnerável, de cena de sexo ou de pornografia, e estabelece causa de aumento de pena para esse último quando dele resultar o suicídio ou a tentativa de suicídio da vítima.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2387995"
+          },
+          {
+            "id": 2382838,
+            "sigla_tipo": "REQ",
+            "numero": 2799,
+            "ano": 2023,
+            "ementa": "Requer o registro da Frente Parlamentar Mista de Apoio ao Sistema Nacional de Fomento para o Financiamento do Desenvolvimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2382838"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=225727"
+      },
+      "votacoes": {
+        "quantidade_registros": 117,
+        "registros_recentes": [
+          {
+            "id_votacao": "2367600-49",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-27T21:40:07",
+            "data": "2023-09-27",
+            "descricao": "Aprovada a Medida Provisória nº 1.177, de 2023. Sim: 270; não: 1; abstenção: 1; total: 272.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-49"
+          },
+          {
+            "id_votacao": "2367600-47",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-27T21:26:04",
+            "data": "2023-09-27",
+            "descricao": "Aprovado, em apreciação preliminar, o Parecer da Comissão Mista de Planos, Orçamentos Públicos e Fiscalização, na parte em que manifesta opinião pelo não atendimento dos pressupostos constitucionais de relevância e urgência e de sua adequação financeira e orçamentária, nos termos do artigo 8º da Resolução nº 01, de 2002-CN. Sim: 259; não: 1; abstenção: 3; total: 263.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-47"
+          },
+          {
+            "id_votacao": "2367600-45",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-27T21:02:02",
+            "data": "2023-09-27",
+            "descricao": "Aprovado, em apreciação preliminar, o Parecer da Comissão Mista de Planos, Orçamentos Públicos e Fiscalização, na parte em que manifesta opinião favorável quanto ao atendimento dos pressupostos constitucionais de relevância e urgência e de sua adequação financeira e orçamentária, nos termos do artigo 8º da Resolução nº 01, de 2002-CN. Sim: 275; não: 2; abstenção: 4; total: 281.\r\n ",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-45"
+          },
+          {
+            "id_votacao": "2367600-35",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-27T20:14:15",
+            "data": "2023-09-27",
+            "descricao": "Rejeitado o Requerimento. Sim: 9; não: 286; abstenção: 3; total: 298.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-35"
+          },
+          {
+            "id_votacao": "2367600-30",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-27T19:06:52",
+            "data": "2023-09-27",
+            "descricao": "Rejeitado o Requerimento. Sim: 19; não: 292; abstenção: 4; total: 315.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-30"
+          },
+          {
+            "id_votacao": "2277279-53",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-26T18:04:43",
+            "data": "2023-09-26",
+            "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  17 votos \"Sim\", 25 votos \"Não\". Quórum de votação: 42 votos.",
+            "aprovacao": "0",
+            "sigla_orgao": "CCJC",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2277279-53"
+          },
+          {
+            "id_votacao": "2288021-113",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-26T16:40:18",
+            "data": "2023-09-26",
+            "descricao": "Aprovado o Parecer com o seguinte resultado:  33 votos \"Sim\", 16 votos \"Não\". Quórum de votação: 49 votos.",
+            "aprovacao": "1",
+            "sigla_orgao": "CCJC",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2288021-113"
+          },
+          {
+            "id_votacao": "559138-191",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-26T15:55:28",
+            "data": "2023-09-26",
+            "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  19 votos \"Sim\", 24 votos \"Não\". Quórum de votação: 43 votos.",
+            "aprovacao": "0",
+            "sigla_orgao": "CCJC",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/559138-191"
+          },
+          {
+            "id_votacao": "2282142-9",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-20T18:00:14",
+            "data": "2023-09-20",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 285; não: 113; abstenção: 2; total: 400.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2282142-9"
+          },
+          {
+            "id_votacao": "2375630-8",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-19T18:49:11",
+            "data": "2023-09-19",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 297; não: 105; abstenção: 1; total: 403.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2375630-8"
+          },
+          {
+            "id_votacao": "2288021-102",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-19T16:31:53",
+            "data": "2023-09-19",
+            "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  18 votos \"Sim\", 22 votos \"Não\". Quórum de votação: 40 votos.",
+            "aprovacao": "0",
+            "sigla_orgao": "CCJC",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2288021-102"
+          },
+          {
+            "id_votacao": "2351506-34",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-19T15:09:48",
+            "data": "2023-09-19",
+            "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  1 voto \"Sim\", 39 votos \"Não\". Quórum de votação: 40 votos.",
+            "aprovacao": "0",
+            "sigla_orgao": "CCJC",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-34"
+          },
+          {
+            "id_votacao": "2372071-44",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-14T19:13:28",
+            "data": "2023-09-14",
+            "descricao": "Mantido o texto. Sim: 270; não: 146; abstenção: 1; total: 417.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2372071-44"
+          },
+          {
+            "id_votacao": "2372071-41",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-14T18:59:26",
+            "data": "2023-09-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 136, de 2023, adotada pelo Relator da Comissão de Finanças e Tributação, ressalvados os destaques. Sim: 349; não: 68; abstenção: 2; total: 419.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2372071-41"
+          },
+          {
+            "id_votacao": "2387067-33",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-14T18:10:54",
+            "data": "2023-09-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 192, de 2023, adotada pelo Relator da Comissão de Constituição e Justiça e de Cidadania, ressalvados os destaques. Sim: 345; não: 55; abstenção: 1; total: 401.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387067-33"
+          },
+          {
+            "id_votacao": "2372071-26",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-14T17:29:47",
+            "data": "2023-09-14",
+            "descricao": "Rejeitado o Requerimento. Sim: 21; não: 341; total: 362.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2372071-26"
+          },
+          {
+            "id_votacao": "2387066-101",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-14T17:18:49",
+            "data": "2023-09-14",
+            "descricao": "Rejeitada a Emenda nº 38. Sim: 38; não: 329; abstenção: 1; total: 368.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-101"
+          },
+          {
+            "id_votacao": "2387066-100",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-14T17:09:59",
+            "data": "2023-09-14",
+            "descricao": "Rejeitada a Emenda de Plenário nº 31. Sim: 125; não: 249; total: 374.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-100"
+          },
+          {
+            "id_votacao": "2387066-94",
+            "voto": "Não",
+            "data_hora_voto": "2023-09-14T16:59:08",
+            "data": "2023-09-14",
+            "descricao": "Aprovada a Emenda de Plenário nº 30. Sim: 246; não: 172; abstenção: 1; total: 419.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-94"
+          },
+          {
+            "id_votacao": "2387066-91",
+            "voto": "Sim",
+            "data_hora_voto": "2023-09-14T16:40:28",
+            "data": "2023-09-14",
+            "descricao": "Suprimido o texto. Sim: 207; não: 215; abstenção: 2; total: 424.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-91"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv"
+      }
+    },
+    "2024": {
+      "generated_at_utc": "2026-09-04T10:57:34.488605+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2024"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=225727"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv"
+      }
+    },
+    "2025": {
+      "generated_at_utc": "2026-09-04T11:02:26.975943+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2025"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=225727"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv"
+      }
+    },
+    "2026": {
+      "generated_at_utc": "2026-09-04T11:06:18.552424+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2026"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=225727"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+      }
+    }
+  },
+  "schema_version": 2,
   "camara_id_deputado": "225727",
-  "generated_at_utc": "2026-09-03T17:46:06.412722+00:00",
+  "generated_at_utc": "2026-09-04T11:06:40.652151+00:00",
   "periodo": {
-    "ano": 2026
+    "inicio": 2023,
+    "fim": 2026,
+    "anos": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
   },
   "mandato": {
     "detalhe": {
@@ -176,29 +560,410 @@
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/historico"
   },
   "despesas": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
-    "valor_liquido_total": 0,
+    "valor_liquido_total": 0.0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2026"
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2023",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2024",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2025",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/225727/despesas?ano=2026"
+    ]
   },
   "proposicoes": {
-    "ano": 2026,
-    "quantidade_registros": 0,
-    "registros_recentes": [],
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 14,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 14
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
+    "registros_recentes": [
+      {
+        "id": 2391396,
+        "sigla_tipo": "PL",
+        "numero": 4708,
+        "ano": 2023,
+        "ementa": "Institui o Programa Carne no Prato e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2391396"
+      },
+      {
+        "id": 2391393,
+        "sigla_tipo": "PL",
+        "numero": 4707,
+        "ano": 2023,
+        "ementa": "Altera a Lei nº 8.171, de 17 de janeiro de 1991, para instituir o Sistema Unificado Federal de Sanidade Agroindustrial Familiar e de Pequeno Porte.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2391393"
+      },
+      {
+        "id": 2391163,
+        "sigla_tipo": "REQ",
+        "numero": 3311,
+        "ano": 2023,
+        "ementa": "Requer a criação institucional, no âmbito da Câmara dos Deputados, da Frente Parlamentar por Doenças Crônicas de Pele.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2391163"
+      },
+      {
+        "id": 2390356,
+        "sigla_tipo": "REQ",
+        "numero": 3292,
+        "ano": 2023,
+        "ementa": "Requer, nos termos regimentais, o registro da Frente Parlamentar da Longevidade.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2390356"
+      },
+      {
+        "id": 2389971,
+        "sigla_tipo": "DOC",
+        "numero": 1067,
+        "ano": 2023,
+        "ementa": "Novos parlamentares que desejam aderir à Frente Parlamentar da Agropecuária - FPA para a 57ª Legislatura, após o registro formal na Secretaria Geral da Mesa no dia 28/03/2023.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2389971"
+      },
+      {
+        "id": 2389644,
+        "sigla_tipo": "REQ",
+        "numero": 3255,
+        "ano": 2023,
+        "ementa": "Requer o registro da Frente Parlamentar Mista de Apoio ao Mercado Imobiliário.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2389644"
+      },
+      {
+        "id": 2389501,
+        "sigla_tipo": "REQ",
+        "numero": 3235,
+        "ano": 2023,
+        "ementa": "Requeiro, nos termos do Art. 155 do Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei nº 1373/2023, de autoria do Deputado Lázaro Botelho.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2389501"
+      },
+      {
+        "id": 2388325,
+        "sigla_tipo": "REQ",
+        "numero": 3097,
+        "ano": 2023,
+        "ementa": "Requerimento de Urgência Art. 155 PL 952/2019 que “Determina o regramento quanto ao limite imposto ao importador brasileiro de leite em pó sobre o prazo de validade mínimo do produto.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2388325"
+      },
+      {
+        "id": 2387997,
+        "sigla_tipo": "PL",
+        "numero": 4487,
+        "ano": 2023,
+        "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990, para equiparara consumidor o pequeno, o médio e o grande produtor rural na compra de insumos, produtos e maquinários necessários à produção agrícola, ainda que não sejam destinatários finais na cadeia de consumo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2387997"
+      },
+      {
+        "id": 2387996,
+        "sigla_tipo": "PL",
+        "numero": 4486,
+        "ano": 2023,
+        "ementa": "Dispõe sobre a criação da Patrulha Nacional de Prevenção à Violência Doméstica e Familiar contra Crianças e Adolescentes.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2387996"
+      },
+      {
+        "id": 2387995,
+        "sigla_tipo": "PL",
+        "numero": 4485,
+        "ano": 2023,
+        "ementa": "Cria qualificadora no crime de homicídio na hipótese de ter sido cometido em instituição de ensino, aumenta a pena dos crimes de assédio sexual, registro não autorizado da intimidade sexual e de divulgação de cena de estupro ou de cena de estupro de vulnerável, de cena de sexo ou de pornografia, e estabelece causa de aumento de pena para esse último quando dele resultar o suicídio ou a tentativa de suicídio da vítima.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2387995"
+      },
+      {
+        "id": 2382838,
+        "sigla_tipo": "REQ",
+        "numero": 2799,
+        "ano": 2023,
+        "ementa": "Requer o registro da Frente Parlamentar Mista de Apoio ao Sistema Nacional de Fomento para o Financiamento do Desenvolvimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2382838"
+      }
+    ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=225727",
     "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
   },
   "votacoes": {
-    "ano": 2026,
-    "quantidade_registros": 0,
-    "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 117,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 117
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
+    "registros_recentes": [
+      {
+        "id_votacao": "2367600-49",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-27T21:40:07",
+        "data": "2023-09-27",
+        "descricao": "Aprovada a Medida Provisória nº 1.177, de 2023. Sim: 270; não: 1; abstenção: 1; total: 272.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-49"
+      },
+      {
+        "id_votacao": "2367600-47",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-27T21:26:04",
+        "data": "2023-09-27",
+        "descricao": "Aprovado, em apreciação preliminar, o Parecer da Comissão Mista de Planos, Orçamentos Públicos e Fiscalização, na parte em que manifesta opinião pelo não atendimento dos pressupostos constitucionais de relevância e urgência e de sua adequação financeira e orçamentária, nos termos do artigo 8º da Resolução nº 01, de 2002-CN. Sim: 259; não: 1; abstenção: 3; total: 263.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-47"
+      },
+      {
+        "id_votacao": "2367600-45",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-27T21:02:02",
+        "data": "2023-09-27",
+        "descricao": "Aprovado, em apreciação preliminar, o Parecer da Comissão Mista de Planos, Orçamentos Públicos e Fiscalização, na parte em que manifesta opinião favorável quanto ao atendimento dos pressupostos constitucionais de relevância e urgência e de sua adequação financeira e orçamentária, nos termos do artigo 8º da Resolução nº 01, de 2002-CN. Sim: 275; não: 2; abstenção: 4; total: 281.\r\n ",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-45"
+      },
+      {
+        "id_votacao": "2367600-35",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-27T20:14:15",
+        "data": "2023-09-27",
+        "descricao": "Rejeitado o Requerimento. Sim: 9; não: 286; abstenção: 3; total: 298.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-35"
+      },
+      {
+        "id_votacao": "2367600-30",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-27T19:06:52",
+        "data": "2023-09-27",
+        "descricao": "Rejeitado o Requerimento. Sim: 19; não: 292; abstenção: 4; total: 315.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2367600-30"
+      },
+      {
+        "id_votacao": "2277279-53",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-26T18:04:43",
+        "data": "2023-09-26",
+        "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  17 votos \"Sim\", 25 votos \"Não\". Quórum de votação: 42 votos.",
+        "aprovacao": "0",
+        "sigla_orgao": "CCJC",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2277279-53"
+      },
+      {
+        "id_votacao": "2288021-113",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-26T16:40:18",
+        "data": "2023-09-26",
+        "descricao": "Aprovado o Parecer com o seguinte resultado:  33 votos \"Sim\", 16 votos \"Não\". Quórum de votação: 49 votos.",
+        "aprovacao": "1",
+        "sigla_orgao": "CCJC",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2288021-113"
+      },
+      {
+        "id_votacao": "559138-191",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-26T15:55:28",
+        "data": "2023-09-26",
+        "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  19 votos \"Sim\", 24 votos \"Não\". Quórum de votação: 43 votos.",
+        "aprovacao": "0",
+        "sigla_orgao": "CCJC",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/559138-191"
+      },
+      {
+        "id_votacao": "2282142-9",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-20T18:00:14",
+        "data": "2023-09-20",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 285; não: 113; abstenção: 2; total: 400.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2282142-9"
+      },
+      {
+        "id_votacao": "2375630-8",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-19T18:49:11",
+        "data": "2023-09-19",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 297; não: 105; abstenção: 1; total: 403.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2375630-8"
+      },
+      {
+        "id_votacao": "2288021-102",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-19T16:31:53",
+        "data": "2023-09-19",
+        "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  18 votos \"Sim\", 22 votos \"Não\". Quórum de votação: 40 votos.",
+        "aprovacao": "0",
+        "sigla_orgao": "CCJC",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2288021-102"
+      },
+      {
+        "id_votacao": "2351506-34",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-19T15:09:48",
+        "data": "2023-09-19",
+        "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  1 voto \"Sim\", 39 votos \"Não\". Quórum de votação: 40 votos.",
+        "aprovacao": "0",
+        "sigla_orgao": "CCJC",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-34"
+      },
+      {
+        "id_votacao": "2372071-44",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-14T19:13:28",
+        "data": "2023-09-14",
+        "descricao": "Mantido o texto. Sim: 270; não: 146; abstenção: 1; total: 417.",
+        "aprovacao": null,
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2372071-44"
+      },
+      {
+        "id_votacao": "2372071-41",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-14T18:59:26",
+        "data": "2023-09-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 136, de 2023, adotada pelo Relator da Comissão de Finanças e Tributação, ressalvados os destaques. Sim: 349; não: 68; abstenção: 2; total: 419.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2372071-41"
+      },
+      {
+        "id_votacao": "2387067-33",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-14T18:10:54",
+        "data": "2023-09-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 192, de 2023, adotada pelo Relator da Comissão de Constituição e Justiça e de Cidadania, ressalvados os destaques. Sim: 345; não: 55; abstenção: 1; total: 401.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387067-33"
+      },
+      {
+        "id_votacao": "2372071-26",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-14T17:29:47",
+        "data": "2023-09-14",
+        "descricao": "Rejeitado o Requerimento. Sim: 21; não: 341; total: 362.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2372071-26"
+      },
+      {
+        "id_votacao": "2387066-101",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-14T17:18:49",
+        "data": "2023-09-14",
+        "descricao": "Rejeitada a Emenda nº 38. Sim: 38; não: 329; abstenção: 1; total: 368.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-101"
+      },
+      {
+        "id_votacao": "2387066-100",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-14T17:09:59",
+        "data": "2023-09-14",
+        "descricao": "Rejeitada a Emenda de Plenário nº 31. Sim: 125; não: 249; total: 374.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-100"
+      },
+      {
+        "id_votacao": "2387066-94",
+        "voto": "Não",
+        "data_hora_voto": "2023-09-14T16:59:08",
+        "data": "2023-09-14",
+        "descricao": "Aprovada a Emenda de Plenário nº 30. Sim: 246; não: 172; abstenção: 1; total: 419.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-94"
+      },
+      {
+        "id_votacao": "2387066-91",
+        "voto": "Sim",
+        "data_hora_voto": "2023-09-14T16:40:28",
+        "data": "2023-09-14",
+        "descricao": "Suprimido o texto. Sim: 207; não: 215; abstenção: 2; total: 424.",
+        "aprovacao": null,
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2387066-91"
+      }
+    ],
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+    ],
     "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
   },
   "fontes": [
     "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2023.csv",
+    "votacoesVotos-2024.csv",
+    "votacoesVotos-2025.csv",
     "votacoesVotos-2026.csv",
+    "votacoes-2023.csv",
+    "votacoes-2024.csv",
+    "votacoes-2025.csv",
     "votacoes-2026.csv"
   ]
 }

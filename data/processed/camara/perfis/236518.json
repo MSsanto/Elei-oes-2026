@@ -1,8 +1,252 @@
 {
+  "anos": {
+    "2023": {
+      "generated_at_utc": "2026-09-04T10:53:06.773221+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2023"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=236518"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv"
+      }
+    },
+    "2024": {
+      "generated_at_utc": "2026-09-04T10:57:24.126746+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2024"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=236518"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv"
+      }
+    },
+    "2025": {
+      "generated_at_utc": "2026-09-04T11:02:16.157140+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2025"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=236518"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv"
+      }
+    },
+    "2026": {
+      "generated_at_utc": "2026-09-04T11:06:09.640667+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2026"
+      },
+      "proposicoes": {
+        "quantidade_registros": 13,
+        "registros_recentes": [
+          {
+            "id": 2644800,
+            "sigla_tipo": "PEC",
+            "numero": 16,
+            "ano": 2026,
+            "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
+          },
+          {
+            "id": 2644734,
+            "sigla_tipo": "REQ",
+            "numero": 4125,
+            "ano": 2026,
+            "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
+          },
+          {
+            "id": 2641684,
+            "sigla_tipo": "PL",
+            "numero": 4811,
+            "ano": 2026,
+            "ementa": "Institui o Programa Jovem Proprietário, que concede isenção de tributos federais na primeira aquisição de imóvel residencial, veículo e bens duráveis por jovens recém-formados, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641684"
+          },
+          {
+            "id": 2641583,
+            "sigla_tipo": "PL",
+            "numero": 4785,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 13.146, de 6 de julho de 2015 (Estatuto da Pessoa com Deficiência), e a Lei nº 8.080, de 19 de setembro de 1990 (Lei Orgânica da Saúde), para instituir o Cadastro Nacional Unificado da Pessoa com Deficiência (CNU-PcD) como instrumento de eficácia probatória autônoma, validade por prazo indeterminado de laudos permanentes e interoperabilidade de dados entre os sistemas de saúde, previdência e assistência social.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641583"
+          },
+          {
+            "id": 2640268,
+            "sigla_tipo": "PL",
+            "numero": 3772,
+            "ano": 2026,
+            "ementa": "Estabelece a não incidência do Imposto de Renda da Pessoa Física (IRPF) sobre lucros e dividendos distribuídos, e altera a redação e revoga dispositivos das Leis nº 9.249, de 26 de dezembro de 1995, nº 9.250, de 26 de dezembro de 1995, e nº 15.270, de 26 de novembro de 2025.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640268"
+          },
+          {
+            "id": 2639831,
+            "sigla_tipo": "DOC",
+            "numero": 1189,
+            "ano": 2026,
+            "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639831"
+          },
+          {
+            "id": 2639830,
+            "sigla_tipo": "DOC",
+            "numero": 1188,
+            "ano": 2026,
+            "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639830"
+          },
+          {
+            "id": 2639165,
+            "sigla_tipo": "REQ",
+            "numero": 27,
+            "ano": 2026,
+            "ementa": "Requer a aprovação de Moção de Louvor ao Movimento Tradicionalista Gaúcho - MTG, em reconhecimento à sua destacada atuação na promoção do turismo brasileiro, da preservação das tradições gaúchas e do desenvolvimento econômico e social por meio dos Centros de Tradições Gaúchas - CTGs.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639165"
+          },
+          {
+            "id": 2638924,
+            "sigla_tipo": "REQ",
+            "numero": 3829,
+            "ano": 2026,
+            "ementa": "Requerimento de inclusão de assinatura em apoio à PEC 03, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638924"
+          },
+          {
+            "id": 2635467,
+            "sigla_tipo": "DOC",
+            "numero": 967,
+            "ano": 2026,
+            "ementa": "Requer sejam registradas novas adesões da Frente Parlamentar Católica Apostólica Romana, a todos que assinarem esse documento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635467"
+          },
+          {
+            "id": 2635206,
+            "sigla_tipo": "PL",
+            "numero": 3292,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.503, de 1997 (Código de Trânsito Brasileiro), para incluir os veículos oficiais de saúde empregados em serviços de urgência, emergência ou atendimento sanitário no rol daqueles em relação aos quais não se aplicam infrações por circulação, parada ou estacionamento em desacordo com a legislação.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635206"
+          },
+          {
+            "id": 2633415,
+            "sigla_tipo": "DOC",
+            "numero": 906,
+            "ano": 2026,
+            "ementa": "Inclusão de Parlamentar no Grupo Parlamentar Brasil Portugal.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633415"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=236518"
+      },
+      "votacoes": {
+        "quantidade_registros": 6,
+        "registros_recentes": [
+          {
+            "id_votacao": "2637721-10",
+            "voto": "Sim",
+            "data_hora_voto": "2026-07-14T17:50:53",
+            "data": "2026-07-14",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 276; Não: 139; Abstenção: 1; Total: 416.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2637721-10"
+          },
+          {
+            "id_votacao": "2610579-7",
+            "voto": "Sim",
+            "data_hora_voto": "2026-07-02T11:08:33",
+            "data": "2026-07-02",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 305; Não: 112; Abstenção: 1; Total: 418.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2610579-7"
+          },
+          {
+            "id_votacao": "2636281-8",
+            "voto": "Não",
+            "data_hora_voto": "2026-07-01T17:46:14",
+            "data": "2026-07-01",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 293; Não: 158; Abstenção: 3; Total: 454.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2636281-8"
+          },
+          {
+            "id_votacao": "2633410-8",
+            "voto": "Sim",
+            "data_hora_voto": "2026-06-17T19:36:47",
+            "data": "2026-06-17",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 273; Não: 160; Abstenção: 4; Total: 437.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2633410-8"
+          },
+          {
+            "id_votacao": "2610975-23",
+            "voto": "Não",
+            "data_hora_voto": "2026-06-17T19:23:39",
+            "data": "2026-06-17",
+            "descricao": "Rejeitada a Emenda n° 102. Sim: 22; Não: 378; Abstenção: 1; Total: 401.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2610975-23"
+          },
+          {
+            "id_votacao": "2122125-115",
+            "voto": "Sim",
+            "data_hora_voto": "2026-06-16T20:00:12",
+            "data": "2026-06-16",
+            "descricao": "Aprovada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 337, de 2017, adotada pelo relator da Comissão de Constituição e Justiça e de Cidadania. Sim: 417; Não: 19; Total: 436.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2122125-115"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+      }
+    }
+  },
+  "schema_version": 2,
   "camara_id_deputado": "236518",
-  "generated_at_utc": "2026-09-03T17:46:23.558191+00:00",
+  "generated_at_utc": "2026-09-04T11:06:40.636644+00:00",
   "periodo": {
-    "ano": 2026
+    "inicio": 2023,
+    "fim": 2026,
+    "anos": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
   },
   "mandato": {
     "detalhe": {
@@ -114,15 +358,66 @@
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/historico"
   },
   "despesas": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
-    "valor_liquido_total": 0,
+    "valor_liquido_total": 0.0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2026"
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2023",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2024",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2025",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2026"
+    ]
   },
   "proposicoes": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 13,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 13
+      }
+    ],
     "registros_recentes": [
       {
         "id": 2644800,
@@ -219,22 +514,35 @@
         "ano": 2026,
         "ementa": "Inclusão de Parlamentar no Grupo Parlamentar Brasil Portugal.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633415"
-      },
-      {
-        "id": 2632571,
-        "sigla_tipo": "PL",
-        "numero": 3126,
-        "ano": 2026,
-        "ementa": "Denomina \"Rodovia Engenheiro Paulinho Dalmaz\" o trecho da rodovia BR-487 compreendido entre o distrito de Serra dos Dourados (Município de Umuarama) e o Município de Cruzeiro do Oeste, no Estado do  Paraná.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632571"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=236518",
     "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
   },
   "votacoes": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 6,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 6
+      }
+    ],
     "registros_recentes": [
       {
         "id_votacao": "2637721-10",
@@ -297,12 +605,23 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2122125-115"
       }
     ],
-    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+    ],
     "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
   },
   "fontes": [
     "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2023.csv",
+    "votacoesVotos-2024.csv",
+    "votacoesVotos-2025.csv",
     "votacoesVotos-2026.csv",
+    "votacoes-2023.csv",
+    "votacoes-2024.csv",
+    "votacoes-2025.csv",
     "votacoes-2026.csv"
   ]
 }

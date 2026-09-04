@@ -1,14 +1,26 @@
 {
   "source": "Câmara dos Deputados - Dados Abertos",
-  "generated_at_utc": "2026-09-03T23:20:31.189236+00:00",
-  "ano": 2026,
+  "generated_at_utc": "2026-09-04T11:06:40.700457+00:00",
+  "anos": [
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "periodo": {
+    "inicio": 2023,
+    "fim": 2026
+  },
   "perfis_confirmados": 692,
-  "perfis_atualizados": 1,
+  "perfis_atualizados": 692,
+  "perfis_com_quatro_anos_processados": 692,
+  "blocos_anuais_atualizados": 2768,
   "falhas": [],
-  "cache_horas": 24,
+  "cache_horas_ano_corrente": 24,
+  "cache_horas_historico": 720,
   "escopo": [
     "despesas",
-    "proposicoes",
+    "proposições",
     "votos nominais/posicionamentos registrados"
   ]
 }

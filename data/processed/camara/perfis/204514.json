@@ -1,8 +1,392 @@
 {
+  "anos": {
+    "2023": {
+      "generated_at_utc": "2026-09-04T10:49:45.271133+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2023"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204514"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv"
+      }
+    },
+    "2024": {
+      "generated_at_utc": "2026-09-04T10:54:52.006907+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2024"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204514"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv"
+      }
+    },
+    "2025": {
+      "generated_at_utc": "2026-09-04T10:59:03.986530+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2025"
+      },
+      "proposicoes": {
+        "quantidade_registros": 19,
+        "registros_recentes": [
+          {
+            "id": 2536850,
+            "sigla_tipo": "PROC",
+            "numero": 91,
+            "ano": 2025,
+            "ementa": "Denúncia por Crime de Responsabilidade do Presidente da República por Atos Lesivos à Dignidade Nacional nas Relações Diplomáticas.\nO presente documento apresenta denúncia por crime de responsabilidade contra o Presidente Luiz Inácio Lula da Silva, com fundamento no art. 85 da Constituição Federal e na Lei nº 1.079/1950. A peça sustenta que o Presidente violou a dignidade da Nação e comprometeu a honra do cargo ao adotar sucessivas condutas diplomáticas hostis aos Estados Unidos da América, fragilizando alianças estratégicas, expondo o Brasil a sanções internacionais e promovendo aproximação ideológica com regimes autoritários, notadamente o Irã, além de incentivar a desdolarização no comércio global, afetando diretamente os interesses nacionais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2536850"
+          },
+          {
+            "id": 2536291,
+            "sigla_tipo": "PL",
+            "numero": 3406,
+            "ano": 2025,
+            "ementa": "Institui o Programa Emergencial de Manutenção do Emprego e da Competitividade nas Exportações Brasileiras – PEMECEB, que estabelece a suspensão temporária de tributos federais incidentes sobre empresas exportadoras comprovadamente afetadas por barreiras comerciais externas, mediante contrapartida de manutenção de empregos, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2536291"
+          },
+          {
+            "id": 2535804,
+            "sigla_tipo": "REQ",
+            "numero": 2754,
+            "ano": 2025,
+            "ementa": "Requer a urgência do Projeto de Lei Complementar nº 91/2025 .",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2535804"
+          },
+          {
+            "id": 2534757,
+            "sigla_tipo": "RCP",
+            "numero": 4,
+            "ano": 2025,
+            "ementa": "Requer, nos termos do § 3° do art. 58 da Constituição Federal, combinado com o art. 35 do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito destinada a investigar fatos relativos a práticas abusivas realizadas por operadoras de planos de saúde suplementar por meio de juntas médicas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2534757"
+          },
+          {
+            "id": 2533391,
+            "sigla_tipo": "REQ",
+            "numero": 124,
+            "ano": 2025,
+            "ementa": "Requer do Excelentíssimo Senhor Ministro das Relações Exteriores do Brasil, Embaixador Mauro Vieira, esclarecimentos acerca das declarações do presidente Lula contra o presidente dos Estados Unidos, Donald Trump.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2533391"
+          },
+          {
+            "id": 2533311,
+            "sigla_tipo": "PL",
+            "numero": 3296,
+            "ano": 2025,
+            "ementa": "Altera a Lei nº 13.954, de 16 de dezembro de 2019, para dispor sobre o tempo mínimo de serviço para transferência à inatividade remunerada, a averbação do tempo de contribuição ao Regime Geral de Previdência Social e a isenção da contribuição previdenciária para militares inativos e pensionistas com proventos até o teto do RGPS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2533311"
+          },
+          {
+            "id": 2531971,
+            "sigla_tipo": "PL",
+            "numero": 3248,
+            "ano": 2025,
+            "ementa": "Institui o Seguro Entressafra para o Seringueiro Profissional, visando à proteção econômica durante o período de rebrota dos seringais, fortalecendo o extrativismo sustentável e a autonomia produtiva nacional em borracha natural.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2531971"
+          },
+          {
+            "id": 2531934,
+            "sigla_tipo": "RIC",
+            "numero": 4076,
+            "ano": 2025,
+            "ementa": "Requer ao Senhor Ministro da Justiça e da Segurança Pública informações sobre a alteração da data de validade dos documentos já emitidos – CR (Certificado de Registro) e CRAF (Certificado de Registro de Arma de Fogo) – dos CACs (Colecionadores, Atiradores Desportivos e Caçadores), nos termos do art. 80 do Decreto nº 11.615, de 21 de julho de 2023.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2531934"
+          },
+          {
+            "id": 2529490,
+            "sigla_tipo": "PDL",
+            "numero": 359,
+            "ano": 2025,
+            "ementa": "Revoga parcialmente a instrução normativa DG/PF Nº 311, de 27 de julho de 2025, que Disciplina as atividades de colecionamento, tiro desportivo e caça.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2529490"
+          },
+          {
+            "id": 2529478,
+            "sigla_tipo": "PL",
+            "numero": 3138,
+            "ano": 2025,
+            "ementa": "Altera a Lei nº 10.826, de 22 de dezembro de 2003, que dispõe sobre registro, posse e comercialização de armas de fogo e munição, sobre o Sistema Nacional de Armas (SINARM) e define crimes, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2529478"
+          },
+          {
+            "id": 2528475,
+            "sigla_tipo": "PL",
+            "numero": 3071,
+            "ano": 2025,
+            "ementa": "Altera a Lei nº 10.826, de 22 de dezembro de 2003, que dispõe sobre registro, posse e comercialização de armas de fogo e munição, sobre o Sistema Nacional de Armas (SINARM) e define crimes, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2528475"
+          },
+          {
+            "id": 2528376,
+            "sigla_tipo": "PL",
+            "numero": 3058,
+            "ano": 2025,
+            "ementa": "Altera a Lei nº 10.826, de 22 de dezembro de 2003, que dispõe sobre registro, posse e comercialização de armas de fogo e munição, sobre o Sistema Nacional de Armas (Sinarm) e define crimes, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2528376"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204514"
+      },
+      "votacoes": {
+        "quantidade_registros": 59,
+        "registros_recentes": [
+          {
+            "id_votacao": "257161-483",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T03:28:50",
+            "data": "2025-07-16",
+            "descricao": "Aprovada a Redação Final assinada pelo Relator, Dep. Zé Vitor (PL-MG). Sim: 231; Não: 87; Total: 318.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-483"
+          },
+          {
+            "id_votacao": "257161-479",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T03:16:15",
+            "data": "2025-07-16",
+            "descricao": "Aprovada a Emenda do Senado nº 28. Sim: 229; Não: 82; Abstenção: 1; Total: 312.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-479"
+          },
+          {
+            "id_votacao": "257161-476",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T03:04:46",
+            "data": "2025-07-16",
+            "descricao": "Aprovada a Emenda do Senado Federal nº 18. Sim: 221; Não: 77; Abstenção: 1; Total: 299.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-476"
+          },
+          {
+            "id_votacao": "257161-467",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T02:36:07",
+            "data": "2025-07-16",
+            "descricao": "Aprovada a Emenda do Senado Federal nº 4.\r\n Sim: 234; Não: 101; Total: 335.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-467"
+          },
+          {
+            "id_votacao": "257161-465",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T02:26:42",
+            "data": "2025-07-16",
+            "descricao": "Aprovada a Emenda do Senado Federal nº 3. Sim: 232; Não: 104; Total: 336.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-465"
+          },
+          {
+            "id_votacao": "257161-462",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T02:03:24",
+            "data": "2025-07-16",
+            "descricao": "Aprovada a Emenda do Senado Federal nº 1. Sim: 242; Não: 117; Total: 359.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-462"
+          },
+          {
+            "id_votacao": "257161-454",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T01:39:03",
+            "data": "2025-07-16",
+            "descricao": "Aprovadas.\r\n Sim: 267; Não: 116; Total: 383.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-454"
+          },
+          {
+            "id_votacao": "257161-450",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-17T01:26:34",
+            "data": "2025-07-16",
+            "descricao": "Aprovado o Requerimento. Sim: 256; Não: 109; Total: 365.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-450"
+          },
+          {
+            "id_votacao": "257161-446",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-17T00:31:52",
+            "data": "2025-07-16",
+            "descricao": "Rejeitado o Requerimento. Sim: 119; Não: 273; Total: 392.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-446"
+          },
+          {
+            "id_votacao": "257161-442",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-17T00:05:03",
+            "data": "2025-07-16",
+            "descricao": "Rejeitado o Requerimento. Sim: 124; Não: 269; Total: 393.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-442"
+          },
+          {
+            "id_votacao": "2398530-73",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-16T22:43:00",
+            "data": "2025-07-16",
+            "descricao": "Aprovado o Substitutivo Reformulado ao Projeto de Lei nº 5.122, de 2023, adotado pelo relator da Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural, ressalvado o destaque. Sim: 346; Não: 93; Abstenção: 1; Total: 440.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-73"
+          },
+          {
+            "id_votacao": "2398530-68",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-16T22:19:21",
+            "data": "2025-07-16",
+            "descricao": "Rejeitado o Requerimento. Sim: 101; Não: 332; Total: 433.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-68"
+          },
+          {
+            "id_votacao": "2398530-60",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-16T21:24:05",
+            "data": "2025-07-16",
+            "descricao": "Rejeitado o Requerimento. Sim: 104; Não: 350; Abstenção: 2; Total: 456.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-60"
+          },
+          {
+            "id_votacao": "2398530-57",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-16T20:59:51",
+            "data": "2025-07-16",
+            "descricao": "Rejeitado o Requerimento. Sim: 100; Não: 350; Total: 450.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-57"
+          },
+          {
+            "id_votacao": "2500330-43",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-16T20:25:00",
+            "data": "2025-07-16",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 1.872, de 2025, adotado pela relatora da Comissão de Finanças e Tributação, ressalvado o destaque.\r\n. Sim: 264; Não: 169; Abstenção: 4; Total: 437.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2500330-43"
+          },
+          {
+            "id_votacao": "2500330-36",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-16T19:30:43",
+            "data": "2025-07-16",
+            "descricao": "Rejeitado o Requerimento. Sim: 174; Não: 268; Abstenção: 1; Total: 443.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2500330-36"
+          },
+          {
+            "id_votacao": "2408145-17",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-16T18:29:47",
+            "data": "2025-07-16",
+            "descricao": "Aprovado o Recurso nº 38/2023 (art. 58, § 1º c/c art. 132, § 2º, RICD). Sim: 291; Não: 173; Total: 464.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2408145-17"
+          },
+          {
+            "id_votacao": "2411961-13",
+            "voto": "Sim",
+            "data_hora_voto": "2025-07-16T18:11:04",
+            "data": "2025-07-16",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 347; Não: 107; Total: 454.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2411961-13"
+          },
+          {
+            "id_votacao": "2489217-10",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-16T17:35:07",
+            "data": "2025-07-16",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 376; Não: 42; Total: 418.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2489217-10"
+          },
+          {
+            "id_votacao": "2533420-8",
+            "voto": "Não",
+            "data_hora_voto": "2025-07-16T00:13:38",
+            "data": "2025-07-15",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 323; Não: 55; Abstenção: 2; Total: 380.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2533420-8"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv"
+      }
+    },
+    "2026": {
+      "generated_at_utc": "2026-09-04T11:03:46.627432+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2026"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204514"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+      }
+    }
+  },
+  "schema_version": 2,
   "camara_id_deputado": "204514",
-  "generated_at_utc": "2026-09-03T17:44:46.004927+00:00",
+  "generated_at_utc": "2026-09-04T11:06:40.358620+00:00",
   "periodo": {
-    "ano": 2026
+    "inicio": 2023,
+    "fim": 2026,
+    "anos": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
   },
   "mandato": {
     "detalhe": {
@@ -213,29 +597,410 @@
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/historico"
   },
   "despesas": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
-    "valor_liquido_total": 0,
+    "valor_liquido_total": 0.0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2026"
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2023",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2024",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2025",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/204514/despesas?ano=2026"
+    ]
   },
   "proposicoes": {
-    "ano": 2026,
-    "quantidade_registros": 0,
-    "registros_recentes": [],
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 19,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 19
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
+    "registros_recentes": [
+      {
+        "id": 2536850,
+        "sigla_tipo": "PROC",
+        "numero": 91,
+        "ano": 2025,
+        "ementa": "Denúncia por Crime de Responsabilidade do Presidente da República por Atos Lesivos à Dignidade Nacional nas Relações Diplomáticas.\nO presente documento apresenta denúncia por crime de responsabilidade contra o Presidente Luiz Inácio Lula da Silva, com fundamento no art. 85 da Constituição Federal e na Lei nº 1.079/1950. A peça sustenta que o Presidente violou a dignidade da Nação e comprometeu a honra do cargo ao adotar sucessivas condutas diplomáticas hostis aos Estados Unidos da América, fragilizando alianças estratégicas, expondo o Brasil a sanções internacionais e promovendo aproximação ideológica com regimes autoritários, notadamente o Irã, além de incentivar a desdolarização no comércio global, afetando diretamente os interesses nacionais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2536850"
+      },
+      {
+        "id": 2536291,
+        "sigla_tipo": "PL",
+        "numero": 3406,
+        "ano": 2025,
+        "ementa": "Institui o Programa Emergencial de Manutenção do Emprego e da Competitividade nas Exportações Brasileiras – PEMECEB, que estabelece a suspensão temporária de tributos federais incidentes sobre empresas exportadoras comprovadamente afetadas por barreiras comerciais externas, mediante contrapartida de manutenção de empregos, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2536291"
+      },
+      {
+        "id": 2535804,
+        "sigla_tipo": "REQ",
+        "numero": 2754,
+        "ano": 2025,
+        "ementa": "Requer a urgência do Projeto de Lei Complementar nº 91/2025 .",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2535804"
+      },
+      {
+        "id": 2534757,
+        "sigla_tipo": "RCP",
+        "numero": 4,
+        "ano": 2025,
+        "ementa": "Requer, nos termos do § 3° do art. 58 da Constituição Federal, combinado com o art. 35 do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito destinada a investigar fatos relativos a práticas abusivas realizadas por operadoras de planos de saúde suplementar por meio de juntas médicas.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2534757"
+      },
+      {
+        "id": 2533391,
+        "sigla_tipo": "REQ",
+        "numero": 124,
+        "ano": 2025,
+        "ementa": "Requer do Excelentíssimo Senhor Ministro das Relações Exteriores do Brasil, Embaixador Mauro Vieira, esclarecimentos acerca das declarações do presidente Lula contra o presidente dos Estados Unidos, Donald Trump.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2533391"
+      },
+      {
+        "id": 2533311,
+        "sigla_tipo": "PL",
+        "numero": 3296,
+        "ano": 2025,
+        "ementa": "Altera a Lei nº 13.954, de 16 de dezembro de 2019, para dispor sobre o tempo mínimo de serviço para transferência à inatividade remunerada, a averbação do tempo de contribuição ao Regime Geral de Previdência Social e a isenção da contribuição previdenciária para militares inativos e pensionistas com proventos até o teto do RGPS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2533311"
+      },
+      {
+        "id": 2531971,
+        "sigla_tipo": "PL",
+        "numero": 3248,
+        "ano": 2025,
+        "ementa": "Institui o Seguro Entressafra para o Seringueiro Profissional, visando à proteção econômica durante o período de rebrota dos seringais, fortalecendo o extrativismo sustentável e a autonomia produtiva nacional em borracha natural.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2531971"
+      },
+      {
+        "id": 2531934,
+        "sigla_tipo": "RIC",
+        "numero": 4076,
+        "ano": 2025,
+        "ementa": "Requer ao Senhor Ministro da Justiça e da Segurança Pública informações sobre a alteração da data de validade dos documentos já emitidos – CR (Certificado de Registro) e CRAF (Certificado de Registro de Arma de Fogo) – dos CACs (Colecionadores, Atiradores Desportivos e Caçadores), nos termos do art. 80 do Decreto nº 11.615, de 21 de julho de 2023.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2531934"
+      },
+      {
+        "id": 2529490,
+        "sigla_tipo": "PDL",
+        "numero": 359,
+        "ano": 2025,
+        "ementa": "Revoga parcialmente a instrução normativa DG/PF Nº 311, de 27 de julho de 2025, que Disciplina as atividades de colecionamento, tiro desportivo e caça.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2529490"
+      },
+      {
+        "id": 2529478,
+        "sigla_tipo": "PL",
+        "numero": 3138,
+        "ano": 2025,
+        "ementa": "Altera a Lei nº 10.826, de 22 de dezembro de 2003, que dispõe sobre registro, posse e comercialização de armas de fogo e munição, sobre o Sistema Nacional de Armas (SINARM) e define crimes, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2529478"
+      },
+      {
+        "id": 2528475,
+        "sigla_tipo": "PL",
+        "numero": 3071,
+        "ano": 2025,
+        "ementa": "Altera a Lei nº 10.826, de 22 de dezembro de 2003, que dispõe sobre registro, posse e comercialização de armas de fogo e munição, sobre o Sistema Nacional de Armas (SINARM) e define crimes, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2528475"
+      },
+      {
+        "id": 2528376,
+        "sigla_tipo": "PL",
+        "numero": 3058,
+        "ano": 2025,
+        "ementa": "Altera a Lei nº 10.826, de 22 de dezembro de 2003, que dispõe sobre registro, posse e comercialização de armas de fogo e munição, sobre o Sistema Nacional de Armas (Sinarm) e define crimes, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2528376"
+      }
+    ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204514",
     "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
   },
   "votacoes": {
-    "ano": 2026,
-    "quantidade_registros": 0,
-    "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 59,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 59
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
+    "registros_recentes": [
+      {
+        "id_votacao": "257161-483",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T03:28:50",
+        "data": "2025-07-16",
+        "descricao": "Aprovada a Redação Final assinada pelo Relator, Dep. Zé Vitor (PL-MG). Sim: 231; Não: 87; Total: 318.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-483"
+      },
+      {
+        "id_votacao": "257161-479",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T03:16:15",
+        "data": "2025-07-16",
+        "descricao": "Aprovada a Emenda do Senado nº 28. Sim: 229; Não: 82; Abstenção: 1; Total: 312.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-479"
+      },
+      {
+        "id_votacao": "257161-476",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T03:04:46",
+        "data": "2025-07-16",
+        "descricao": "Aprovada a Emenda do Senado Federal nº 18. Sim: 221; Não: 77; Abstenção: 1; Total: 299.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-476"
+      },
+      {
+        "id_votacao": "257161-467",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T02:36:07",
+        "data": "2025-07-16",
+        "descricao": "Aprovada a Emenda do Senado Federal nº 4.\r\n Sim: 234; Não: 101; Total: 335.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-467"
+      },
+      {
+        "id_votacao": "257161-465",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T02:26:42",
+        "data": "2025-07-16",
+        "descricao": "Aprovada a Emenda do Senado Federal nº 3. Sim: 232; Não: 104; Total: 336.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-465"
+      },
+      {
+        "id_votacao": "257161-462",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T02:03:24",
+        "data": "2025-07-16",
+        "descricao": "Aprovada a Emenda do Senado Federal nº 1. Sim: 242; Não: 117; Total: 359.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-462"
+      },
+      {
+        "id_votacao": "257161-454",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T01:39:03",
+        "data": "2025-07-16",
+        "descricao": "Aprovadas.\r\n Sim: 267; Não: 116; Total: 383.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-454"
+      },
+      {
+        "id_votacao": "257161-450",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-17T01:26:34",
+        "data": "2025-07-16",
+        "descricao": "Aprovado o Requerimento. Sim: 256; Não: 109; Total: 365.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-450"
+      },
+      {
+        "id_votacao": "257161-446",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-17T00:31:52",
+        "data": "2025-07-16",
+        "descricao": "Rejeitado o Requerimento. Sim: 119; Não: 273; Total: 392.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-446"
+      },
+      {
+        "id_votacao": "257161-442",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-17T00:05:03",
+        "data": "2025-07-16",
+        "descricao": "Rejeitado o Requerimento. Sim: 124; Não: 269; Total: 393.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/257161-442"
+      },
+      {
+        "id_votacao": "2398530-73",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-16T22:43:00",
+        "data": "2025-07-16",
+        "descricao": "Aprovado o Substitutivo Reformulado ao Projeto de Lei nº 5.122, de 2023, adotado pelo relator da Comissão de Agricultura, Pecuária, Abastecimento e Desenvolvimento Rural, ressalvado o destaque. Sim: 346; Não: 93; Abstenção: 1; Total: 440.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-73"
+      },
+      {
+        "id_votacao": "2398530-68",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-16T22:19:21",
+        "data": "2025-07-16",
+        "descricao": "Rejeitado o Requerimento. Sim: 101; Não: 332; Total: 433.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-68"
+      },
+      {
+        "id_votacao": "2398530-60",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-16T21:24:05",
+        "data": "2025-07-16",
+        "descricao": "Rejeitado o Requerimento. Sim: 104; Não: 350; Abstenção: 2; Total: 456.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-60"
+      },
+      {
+        "id_votacao": "2398530-57",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-16T20:59:51",
+        "data": "2025-07-16",
+        "descricao": "Rejeitado o Requerimento. Sim: 100; Não: 350; Total: 450.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2398530-57"
+      },
+      {
+        "id_votacao": "2500330-43",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-16T20:25:00",
+        "data": "2025-07-16",
+        "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 1.872, de 2025, adotado pela relatora da Comissão de Finanças e Tributação, ressalvado o destaque.\r\n. Sim: 264; Não: 169; Abstenção: 4; Total: 437.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2500330-43"
+      },
+      {
+        "id_votacao": "2500330-36",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-16T19:30:43",
+        "data": "2025-07-16",
+        "descricao": "Rejeitado o Requerimento. Sim: 174; Não: 268; Abstenção: 1; Total: 443.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2500330-36"
+      },
+      {
+        "id_votacao": "2408145-17",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-16T18:29:47",
+        "data": "2025-07-16",
+        "descricao": "Aprovado o Recurso nº 38/2023 (art. 58, § 1º c/c art. 132, § 2º, RICD). Sim: 291; Não: 173; Total: 464.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2408145-17"
+      },
+      {
+        "id_votacao": "2411961-13",
+        "voto": "Sim",
+        "data_hora_voto": "2025-07-16T18:11:04",
+        "data": "2025-07-16",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 347; Não: 107; Total: 454.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2411961-13"
+      },
+      {
+        "id_votacao": "2489217-10",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-16T17:35:07",
+        "data": "2025-07-16",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 376; Não: 42; Total: 418.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2489217-10"
+      },
+      {
+        "id_votacao": "2533420-8",
+        "voto": "Não",
+        "data_hora_voto": "2025-07-16T00:13:38",
+        "data": "2025-07-15",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 323; Não: 55; Abstenção: 2; Total: 380.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2533420-8"
+      }
+    ],
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+    ],
     "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
   },
   "fontes": [
     "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2023.csv",
+    "votacoesVotos-2024.csv",
+    "votacoesVotos-2025.csv",
     "votacoesVotos-2026.csv",
+    "votacoes-2023.csv",
+    "votacoes-2024.csv",
+    "votacoes-2025.csv",
     "votacoes-2026.csv"
   ]
 }

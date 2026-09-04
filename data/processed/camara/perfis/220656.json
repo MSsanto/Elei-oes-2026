@@ -1,8 +1,1286 @@
 {
+  "anos": {
+    "2023": {
+      "generated_at_utc": "2026-09-04T10:52:49.071447+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2023"
+      },
+      "proposicoes": {
+        "quantidade_registros": 386,
+        "registros_recentes": [
+          {
+            "id": 2416463,
+            "sigla_tipo": "RCP",
+            "numero": 11,
+            "ano": 2023,
+            "ementa": "Requer a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a renovação do contrato de fornecimento de energia das empresas Âmbar Energia e a Karpowership no Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2416463"
+          },
+          {
+            "id": 2416394,
+            "sigla_tipo": "INC",
+            "numero": 1737,
+            "ano": 2023,
+            "ementa": "Sugere a inclusão de disposições sobre cuidados paliativos nas diretrizes curriculares nacionais dos cursos de graduação na área de Saúde, a exemplo da inclusão já realizada nas diretrizes relativas aos cursos de Medicina.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2416394"
+          },
+          {
+            "id": 2416051,
+            "sigla_tipo": "REQ",
+            "numero": 4446,
+            "ano": 2023,
+            "ementa": "Requer, nos termos regimentais, a inclusão como coautor do Projeto de Lei nº 6.110, de 2023.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2416051"
+          },
+          {
+            "id": 2415657,
+            "sigla_tipo": "REQ",
+            "numero": 4410,
+            "ano": 2023,
+            "ementa": "Requer, nos termos regimentais, a inclusão como coautora do Projeto de Lei nº 6.110, de 2023.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2415657"
+          },
+          {
+            "id": 2415320,
+            "sigla_tipo": "PL",
+            "numero": 6110,
+            "ano": 2023,
+            "ementa": "Dispõe sobre o prazo para realização de diagnóstico e tratamento do paciente com doença rara.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2415320"
+          },
+          {
+            "id": 2414157,
+            "sigla_tipo": "EMC",
+            "numero": 35,
+            "ano": 2023,
+            "ementa": "Dá nova redação à MPV 1185/2023",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2414157"
+          },
+          {
+            "id": 2414156,
+            "sigla_tipo": "EMC",
+            "numero": 34,
+            "ano": 2023,
+            "ementa": "Dá nova redação à MPV 1185/2023",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2414156"
+          },
+          {
+            "id": 2414154,
+            "sigla_tipo": "EMC",
+            "numero": 33,
+            "ano": 2023,
+            "ementa": "Dá nova redação à MPV 1185/2023",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2414154"
+          },
+          {
+            "id": 2414153,
+            "sigla_tipo": "EMC",
+            "numero": 32,
+            "ano": 2023,
+            "ementa": "Dá nova redação à MPV 1185/2023",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2414153"
+          },
+          {
+            "id": 2413433,
+            "sigla_tipo": "REQ",
+            "numero": 4291,
+            "ano": 2023,
+            "ementa": "Requer o registro da Frente Parlamentar em Defesa do Benefício de Prestação Continuada (BPC).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2413433"
+          },
+          {
+            "id": 2412517,
+            "sigla_tipo": "REL",
+            "numero": 5,
+            "ano": 2023,
+            "ementa": "Relatório Final da Subcomissão de Doenças Raras da Comissão de Saúde da Câmara dos Deputados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2412517"
+          },
+          {
+            "id": 2412128,
+            "sigla_tipo": "PL",
+            "numero": 5960,
+            "ano": 2023,
+            "ementa": "Dispõe a prioridade de matrícula dos adolescentes vacinados contra o papilomavírus humano – HPV e a apresentação da caderneta de Saúde do Adolescente quando da matrícula do aluno nas redes públicas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2412128"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220656"
+      },
+      "votacoes": {
+        "quantidade_registros": 307,
+        "registros_recentes": [
+          {
+            "id_votacao": "2374400-121",
+            "voto": "Não",
+            "data_hora_voto": "2023-12-22T00:19:47",
+            "data": "2023-12-21",
+            "descricao": "Rejeitada a Emenda do Senado Federal nº 3. Sim: 120; não: 261; abstenção: 1; total: 382.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2374400-121"
+          },
+          {
+            "id_votacao": "2374400-110",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-21T23:54:49",
+            "data": "2023-12-21",
+            "descricao": "Aprovadas as Emendas do Senado Federal nº 1 (na parte em que altera os arts. 1º e 14 do PL 3.626, de 2023); e das Emendas nºs 2, 4 a 7, 10 a 15, 18 a 22, 25 a 28, 30, 31, 35, 37, 39, 41 e 42. Sim: 292; não: 114; abstenção: 1; total: 407.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2374400-110"
+          },
+          {
+            "id_votacao": "2374400-106",
+            "voto": "Não",
+            "data_hora_voto": "2023-12-21T23:40:00",
+            "data": "2023-12-21",
+            "descricao": "Rejeitado o Requerimento. Sim: 100; não: 275; total: 375.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2374400-106"
+          },
+          {
+            "id_votacao": "2374400-101",
+            "voto": "Não",
+            "data_hora_voto": "2023-12-21T22:57:56",
+            "data": "2023-12-21",
+            "descricao": "Rejeitado o Requerimento. Sim: 106; não: 281; total: 387.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2374400-101"
+          },
+          {
+            "id_votacao": "2414600-8",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-21T22:26:11",
+            "data": "2023-12-21",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 307; não: 115; abstenção: 1; total: 423.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2414600-8"
+          },
+          {
+            "id_votacao": "1548579-144",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-21T22:07:59",
+            "data": "2023-12-21",
+            "descricao": "Mantido o texto. Sim: 301; não: 81; total: 382.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-144"
+          },
+          {
+            "id_votacao": "1548579-126",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-21T21:56:23",
+            "data": "2023-12-21",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei nº 2.148, de 2015, adotada pelo relator da Comissão Especial, ressalvado o destaque. Sim: 299; não: 103; abstenção: 1; total: 403.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-126"
+          },
+          {
+            "id_votacao": "1548579-122",
+            "voto": "Não",
+            "data_hora_voto": "2023-12-21T21:03:24",
+            "data": "2023-12-21",
+            "descricao": "Rejeitado o Requerimento. Sim: 51; não: 295; total: 346.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-122"
+          },
+          {
+            "id_votacao": "1548579-114",
+            "voto": "Não",
+            "data_hora_voto": "2023-12-21T19:41:00",
+            "data": "2023-12-21",
+            "descricao": "Rejeitado o Requerimento. Sim: 56; não: 281; total: 337.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-114"
+          },
+          {
+            "id_votacao": "1548579-109",
+            "voto": "Não",
+            "data_hora_voto": "2023-12-21T19:21:29",
+            "data": "2023-12-21",
+            "descricao": "Rejeitado o Requerimento. Sim:  52;  não: 267; abstenção: 1; total: 320.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1548579-109"
+          },
+          {
+            "id_votacao": "2410517-10",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-21T19:07:52",
+            "data": "2023-12-21",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 318; não: 21; abstenção: 2; total:341.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2410517-10"
+          },
+          {
+            "id_votacao": "2413230-8",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-21T18:40:51",
+            "data": "2023-12-21",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 396; não: 7; abstenção: 1; total: 404.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2413230-8"
+          },
+          {
+            "id_votacao": "2415841-7",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-20T23:35:20",
+            "data": "2023-12-20",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 370; não: 3; abstenção: 3 ; total: 376.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2415841-7"
+          },
+          {
+            "id_votacao": "2395883-58",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-19T23:27:23",
+            "data": "2023-12-19",
+            "descricao": "Mantido o texto. Sim: 288; não: 114; total: 402.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2395883-58"
+          },
+          {
+            "id_votacao": "2395883-53",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-19T23:10:05",
+            "data": "2023-12-19",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 4.994, de 2023, adotado pelo relator da Comissão de Meio Ambiente e Desenvolvimento Sustentável, ressalvados os destaques. Sim: 311; não: 103; abstenção: 1; total: 415.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2395883-53"
+          },
+          {
+            "id_votacao": "2400068-23",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-19T20:51:18",
+            "data": "2023-12-19",
+            "descricao": "Rejeitado o Recurso nº 33/2023, contra a apreciação conclusiva das comissões sobre o Projeto de Lei nº 3.905, de 2021. Sim: 171; não: 262; total: 433.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2400068-23"
+          },
+          {
+            "id_votacao": "2400068-20",
+            "voto": "Não",
+            "data_hora_voto": "2023-12-19T20:32:06",
+            "data": "2023-12-19",
+            "descricao": "Rejeitado o Requerimento. Sim: 155; não: 259; abstenção: 1; total: 415",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2400068-20"
+          },
+          {
+            "id_votacao": "2407521-8",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-19T20:07:02",
+            "data": "2023-12-19",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 371; não: 60;  total: 431.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2407521-8"
+          },
+          {
+            "id_votacao": "2360062-8",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-18T20:14:33",
+            "data": "2023-12-18",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 304; não: 141; total: 445.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2360062-8"
+          },
+          {
+            "id_votacao": "259094-199",
+            "voto": "Sim",
+            "data_hora_voto": "2023-12-15T22:07:56",
+            "data": "2023-12-15",
+            "descricao": "Suprimido o texto. Sim: 293; não: 198; abstenção: 1; total: 492.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/259094-199"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv"
+      }
+    },
+    "2024": {
+      "generated_at_utc": "2026-09-04T10:57:07.817077+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2024"
+      },
+      "proposicoes": {
+        "quantidade_registros": 101,
+        "registros_recentes": [
+          {
+            "id": 2481769,
+            "sigla_tipo": "REQ",
+            "numero": 5058,
+            "ano": 2024,
+            "ementa": "Requer o registro da Frente Parlamentar para a Promoção de Políticas Públicas, Prevenção e Enfrentamento aos Desastres Naturais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2481769"
+          },
+          {
+            "id": 2481405,
+            "sigla_tipo": "REQ",
+            "numero": 5002,
+            "ano": 2024,
+            "ementa": "Requer o registro da Frente Parlamentar Mista da Cadeia Produtiva da Cerveja",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2481405"
+          },
+          {
+            "id": 2479738,
+            "sigla_tipo": "PEC",
+            "numero": 51,
+            "ano": 2024,
+            "ementa": "Altera o art. 7º e o Ato das Disposições Constitucionais Transitórias da Constituição Federal de 1988, para dispor sobre as condições especiais de trabalho do motorista profissional empregado no transporte rodoviário de cargas e de passageiros.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2479738"
+          },
+          {
+            "id": 2477109,
+            "sigla_tipo": "REQ",
+            "numero": 4807,
+            "ano": 2024,
+            "ementa": "Requer a realização de Sessão Solene em comemoração ao centenário do Edson Queiroz",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2477109"
+          },
+          {
+            "id": 2477079,
+            "sigla_tipo": "PLP",
+            "numero": 220,
+            "ano": 2024,
+            "ementa": "Dispõe sobre a alteração das regras de repasse do imposto de veículos automotores nos Estados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2477079"
+          },
+          {
+            "id": 2476028,
+            "sigla_tipo": "REQ",
+            "numero": 4754,
+            "ano": 2024,
+            "ementa": "Requer o Registro da Frente Parlamentar em defesa das Locadoras de Veiculos do Brasil na 57ª legislatura.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2476028"
+          },
+          {
+            "id": 2475685,
+            "sigla_tipo": "REQ",
+            "numero": 4736,
+            "ano": 2024,
+            "ementa": "Requer inclusão, como coautores do Projeto de Lei nº 3284/2024, os deputados e deputadas signatários deste requerimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2475685"
+          },
+          {
+            "id": 2475049,
+            "sigla_tipo": "SOR",
+            "numero": 100,
+            "ano": 2024,
+            "ementa": "SOR 100/2024 - Dep. Fernanda Pessoa - Remanejamento (inclusão) - Subfunção 302 (Assistência Hospitalar e Ambulatorial) - Programa 5118 (Atenção Especializada à Saúde) - Ação 2E90 (Incremento Temporário ao Custeio dos Serviços de Assistência Hospitalar e Ambulatorial para Cumprimento de Metas) - Valor 50.000.000",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2475049"
+          },
+          {
+            "id": 2475045,
+            "sigla_tipo": "SOR",
+            "numero": 99,
+            "ano": 2024,
+            "ementa": "SOR 99/2024 - Dep. Fernanda Pessoa - Remanejamento (inclusão) - Subfunção 305 (Vigilância Epidemiológica) - Programa 5123 (Vigilância em Saúde e Ambiente) - Ação 20YJ (Fortalecimento do Sistema Nacional de Vigilância em Saúde e Ambiente) - Valor 35.000.000",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2475045"
+          },
+          {
+            "id": 2475044,
+            "sigla_tipo": "SOR",
+            "numero": 98,
+            "ano": 2024,
+            "ementa": "SOR 98/2024 - Dep. Fernanda Pessoa - Remanejamento (inclusão) - Subfunção 301 (Atenção Básica) - Programa 5119 (Atenção Primária à Saúde) - Ação 2E89 (Incremento Temporário ao Custeio dos Serviços de Atenção Primária à Saúde para Cumprimento de Metas) - Valor 60.000.000",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2475044"
+          },
+          {
+            "id": 2475042,
+            "sigla_tipo": "SOR",
+            "numero": 97,
+            "ano": 2024,
+            "ementa": "SOR 97/2024 - Dep. Fernanda Pessoa - Remanejamento (inclusão) - Subfunção 302 (Assistência Hospitalar e Ambulatorial) - Programa 5118 (Atenção Especializada à Saúde) - Ação 8535 (Estruturação de Unidades de Atenção Especializada em Saúde) - Valor 50.000.000",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2475042"
+          },
+          {
+            "id": 2475009,
+            "sigla_tipo": "SOR",
+            "numero": 90,
+            "ano": 2024,
+            "ementa": "SOR 90/2024 - Dep. Fernanda Pessoa - Apropriação (inclusão) - Subfunção 305 (Vigilância Epidemiológica) -Programa 5123 (Vigilância em Saúde e Ambiente) - Ação 20YJ (Fortalecimento do Sistema Nacional de Vigilância em Saúde e Ambiente) - Valor 35.000.000",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2475009"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220656"
+      },
+      "votacoes": {
+        "quantidade_registros": 324,
+        "registros_recentes": [
+          {
+            "id_votacao": "2460010-43",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-19T21:27:29",
+            "data": "2024-12-19",
+            "descricao": "Aprovado o Projeto de Lei nº 3.802, de 2024. Sim: 340; Não: 117; Abstenção: 1; Total: 458.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2460010-43"
+          },
+          {
+            "id_votacao": "2460010-35",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-19T21:13:21",
+            "data": "2024-12-19",
+            "descricao": "Rejeitado o Requerimento. Sim: 82; Não: 193; Total: 275.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2460010-35"
+          },
+          {
+            "id_votacao": "2473375-78",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-19T20:59:03",
+            "data": "2024-12-19",
+            "descricao": "Mantido o texto. Sim: 277; Não: 174; Abstenção: 1; Total: 452.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473375-78"
+          },
+          {
+            "id_votacao": "2473375-59",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-19T20:42:26",
+            "data": "2024-12-19",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei nº 4.614, de 2024, adotada pelo relator da Comissão Especial, ressalvado o destaque. Sim: 264; Não: 209; Total: 473.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473375-59"
+          },
+          {
+            "id_votacao": "2473375-53",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-19T20:08:28",
+            "data": "2024-12-19",
+            "descricao": "Aprovado o Requerimento. Sim: 290; Não: 170; Total: 460.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473375-53"
+          },
+          {
+            "id_votacao": "347421-224",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-19T17:43:31",
+            "data": "2024-12-19",
+            "descricao": "Mantido o texto. Sim: 358; Não: 129; Abstenção: 1; Total: 488.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/347421-224"
+          },
+          {
+            "id_votacao": "347421-221",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-19T17:27:57",
+            "data": "2024-12-19",
+            "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 31, de 2007, ressalvado o destaque. Sim: 348; Não: 146; Total: 494.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/347421-221"
+          },
+          {
+            "id_votacao": "2481282-8",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-19T15:59:12",
+            "data": "2024-12-19",
+            "descricao": "Aprovado o Requerimento nº 4.990/2024, dos Senhores Líderes, que solicita a quebra de interstício de 5 sessões previsto no § 6º do art. 202 do RICD, para apreciação do segundo turno da PEC nº 31, de 2007. Sim: 343; Não: 99; Abstenção: 1; Total: 443.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2481282-8"
+          },
+          {
+            "id_votacao": "347421-205",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-19T15:22:07",
+            "data": "2024-12-19",
+            "descricao": "Mantido o texto. Sim: 349; Não: 143; Abstenção: 1; Total: 493.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/347421-205"
+          },
+          {
+            "id_votacao": "347421-202",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-19T15:09:19",
+            "data": "2024-12-19",
+            "descricao": "Suprimido o texto. Sim: 4; Não: 360; Total: 364.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/347421-202"
+          },
+          {
+            "id_votacao": "347421-200",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-19T14:21:00",
+            "data": "2024-12-19",
+            "descricao": "Aprovada, em primeiro turno, a Emenda Aglutinativa Substitutiva à Proposta de Emenda à Constituição nº 31, de 2007. Sim: 344; Não: 154; Abstenção: 2; Total: 500.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/347421-200"
+          },
+          {
+            "id_votacao": "347421-198",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-19T14:11:58",
+            "data": "2024-12-19",
+            "descricao": "Rejeitado o Requerimento. Sim: 149; Não: 302; Abstenção: 1; Total: 452.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/347421-198"
+          },
+          {
+            "id_votacao": "347421-181",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-18T21:18:03",
+            "data": "2024-12-18",
+            "descricao": "Rejeitado o Requerimento. Sim: 147; Não: 295; Total: 442.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/347421-181"
+          },
+          {
+            "id_votacao": "2269745-144",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-18T20:41:53",
+            "data": "2024-12-18",
+            "descricao": "Aprovadas as Emendas do Senado Federal ao Projeto de Lei nº 327, de 2021, com parecer pela aprovação, com exceção da Emenda nº 3; do inciso II, do §1º, do art. 3º da Emenda nº 2; do §2º, do art. 3º da Emenda nº 4; e do inciso VIII e da exclusão do §4º promovida pelo art. 1º da Emenda nº 5. Sim: 448; Não: 14; Abstenção: 1; Total: 463.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2269745-144"
+          },
+          {
+            "id_votacao": "2473389-80",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-18T19:27:44",
+            "data": "2024-12-18",
+            "descricao": "Aprovada a Emenda Aglutinativa nº 1. Sim: 444; Não: 16; Abstenção: 1; Total: 461.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473389-80"
+          },
+          {
+            "id_votacao": "2473389-74",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-18T19:13:41",
+            "data": "2024-12-18",
+            "descricao": "Rejeitado o Requerimento. Sim: 137; Não: 302; Abstenção: 1; Total: 440.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473389-74"
+          },
+          {
+            "id_votacao": "2480642-7",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-18T19:03:23",
+            "data": "2024-12-18",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 299; Não: 134; Abstenção: 3; Total: 436.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2480642-7"
+          },
+          {
+            "id_votacao": "2473389-68",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-17T22:58:55",
+            "data": "2024-12-17",
+            "descricao": "Rejeitada a Emenda de Plenário n° 38. Sim: 59; Não: 385; Abstenção: 1; Total: 445.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473389-68"
+          },
+          {
+            "id_votacao": "2473389-65",
+            "voto": "Não",
+            "data_hora_voto": "2024-12-17T22:46:56",
+            "data": "2024-12-17",
+            "descricao": "Rejeitada a Emenda de Plenário nº 19. Sim: 186; Não: 256; Total: 442.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473389-65"
+          },
+          {
+            "id_votacao": "2473389-62",
+            "voto": "Sim",
+            "data_hora_voto": "2024-12-17T22:34:12",
+            "data": "2024-12-17",
+            "descricao": "Rejeitada a Emenda de Plenário nº 9. Sim: 227; Não: 233; Abstenção: 1; Total: 461.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2473389-62"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv"
+      }
+    },
+    "2025": {
+      "generated_at_utc": "2026-09-04T11:01:58.901754+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2025"
+      },
+      "proposicoes": {
+        "quantidade_registros": 128,
+        "registros_recentes": [
+          {
+            "id": 2584880,
+            "sigla_tipo": "REQ",
+            "numero": 4896,
+            "ano": 2025,
+            "ementa": "Requer o registro da Frente Parlamentar Mista do Crédito de Carbono.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2584880"
+          },
+          {
+            "id": 2583232,
+            "sigla_tipo": "REQ",
+            "numero": 4734,
+            "ano": 2025,
+            "ementa": "Requer a realização de Sessão Solene em comemoração aos 300 anos da Cidade de Fortaleza.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2583232"
+          },
+          {
+            "id": 2582496,
+            "sigla_tipo": "REQ",
+            "numero": 4711,
+            "ano": 2025,
+            "ementa": "Requer o registro, no âmbito da Câmara dos Deputados, da Frente Parlamentar “Frente Parlamentar em Defesa da Ética na Saúde Suplementar”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2582496"
+          },
+          {
+            "id": 2582199,
+            "sigla_tipo": "REQ",
+            "numero": 4700,
+            "ano": 2025,
+            "ementa": "Requer o registro da Frente Parlamentar Mista de Telecomunicações e Soluções Digitais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2582199"
+          },
+          {
+            "id": 2576180,
+            "sigla_tipo": "REQ",
+            "numero": 4415,
+            "ano": 2025,
+            "ementa": "Requer o registro da \"Frente Parlamentar Mista do Serviço Exterior Brasileiro.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2576180"
+          },
+          {
+            "id": 2573002,
+            "sigla_tipo": "REQ",
+            "numero": 4308,
+            "ano": 2025,
+            "ementa": "Requer nos termos do Ato da Mesa n° 69, de 2005, registro da Frente Parlamentar Mista Brasil - Espanha (FREBRAES).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2573002"
+          },
+          {
+            "id": 2572951,
+            "sigla_tipo": "REQ",
+            "numero": 4302,
+            "ano": 2025,
+            "ementa": "Requeiro o registro da Frente Parlamentar em Defesa das Confederações e Federações do Esporte e Paradesporto.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2572951"
+          },
+          {
+            "id": 2571748,
+            "sigla_tipo": "REQ",
+            "numero": 4268,
+            "ano": 2025,
+            "ementa": "Requerimento de criação da Frente Parlamentar Brasil-Israel",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2571748"
+          },
+          {
+            "id": 2570607,
+            "sigla_tipo": "REQ",
+            "numero": 4222,
+            "ano": 2025,
+            "ementa": "Requer o registro da Frente Parlamentar Mista pela Integração Sul-Americana.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2570607"
+          },
+          {
+            "id": 2568476,
+            "sigla_tipo": "EMC",
+            "numero": 22,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1303/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568476"
+          },
+          {
+            "id": 2567630,
+            "sigla_tipo": "REQ",
+            "numero": 4138,
+            "ano": 2025,
+            "ementa": "Requer a realização de Sessão Solene em comemoração aos 190 anos da assembleia legislativa do Estado do Ceará.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2567630"
+          },
+          {
+            "id": 2565930,
+            "sigla_tipo": "REQ",
+            "numero": 3991,
+            "ano": 2025,
+            "ementa": "Requer realização de Sessão Solene em Homenagem ao Dia do Imigrante Grego, data instituída pela Lei 14884/2024.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2565930"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220656"
+      },
+      "votacoes": {
+        "quantidade_registros": 363,
+        "registros_recentes": [
+          {
+            "id_votacao": "2579832-105",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-18T22:21:12",
+            "data": "2025-11-18",
+            "descricao": "Aprovada a Emenda de Plenário nº 25. Sim: 349; Não: 40; Abstenção: 1; Total: 390.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-105"
+          },
+          {
+            "id_votacao": "2579832-99",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-18T22:06:13",
+            "data": "2025-11-18",
+            "descricao": "Rejeitada a preferência. Sim: 107; Não: 298; Abstenção: 2; Total: 407.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-99"
+          },
+          {
+            "id_votacao": "2579832-96",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-18T21:56:56",
+            "data": "2025-11-18",
+            "descricao": "Mantido o texto. Sim: 298; Não: 109; Abstenção: 1; Total: 408.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-96"
+          },
+          {
+            "id_votacao": "2579832-95",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-18T21:43:51",
+            "data": "2025-11-18",
+            "descricao": "Rejeitada a Emenda de Plenário nº 33. Sim: 142; Não: 298; Abstenção: 1; Total: 441.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-95"
+          },
+          {
+            "id_votacao": "2579832-62",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-18T20:41:06",
+            "data": "2025-11-18",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 5.582, de 2025, adotado pelo relator da Comissão de Segurança Pública e Combate ao Crime Organizado, ressalvados os destaques. Sim: 370; Não: 110; Abstenção: 3; Total: 483.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-62"
+          },
+          {
+            "id_votacao": "2579832-61",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-18T20:25:06",
+            "data": "2025-11-18",
+            "descricao": "Rejeitada a Preferência. Sim: 156; Não: 306; Total: 462.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-61"
+          },
+          {
+            "id_votacao": "2579832-54",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-18T19:45:08",
+            "data": "2025-11-18",
+            "descricao": "Aprovado o Requerimento. Sim: 335; Não: 111; Total: 446.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-54"
+          },
+          {
+            "id_votacao": "2579832-49",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-18T18:50:23",
+            "data": "2025-11-18",
+            "descricao": "Rejeitado o Requerimento. Sim: 114; Não: 335; Total: 449.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-49"
+          },
+          {
+            "id_votacao": "2579832-41",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-18T18:04:33",
+            "data": "2025-11-18",
+            "descricao": "Rejeitado o Requerimento. Sim: 110; Não: 316; Total: 426.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-41"
+          },
+          {
+            "id_votacao": "1302214-101",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-18T17:03:31",
+            "data": "2025-11-18",
+            "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  12 votos \"Sim\", 24 votos \"Não\". Quórum de votação: 36 votos.",
+            "aprovacao": "0",
+            "sigla_orgao": "CCJC",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1302214-101"
+          },
+          {
+            "id_votacao": "2270325-92",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-12T20:36:45",
+            "data": "2025-11-12",
+            "descricao": "Rejeitada a Emenda de Plenário nº 6. Sim: 148; Não: 215; Total: 363.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2270325-92"
+          },
+          {
+            "id_votacao": "2270325-88",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-12T20:12:27",
+            "data": "2025-11-12",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 18, de 2021, adotada pelo relator da Comissão de Saúde, ressalvado o destaque. Sim: 348; Não: 100; Abstenção: 1; Total: 449.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2270325-88"
+          },
+          {
+            "id_votacao": "2564132-13",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-12T18:13:00",
+            "data": "2025-11-12",
+            "descricao": "Rejeitado o Requerimento de Urgência (Art. 155 do RICD). Sim: 72; Não: 350; Abstenção: 4; Total: 426.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2564132-13"
+          },
+          {
+            "id_votacao": "2583574-8",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-12T17:54:09",
+            "data": "2025-11-12",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 300; Não: 114; Total: 414.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2583574-8"
+          },
+          {
+            "id_votacao": "2583550-7",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-12T17:40:57",
+            "data": "2025-11-12",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 323; Não: 86; Total: 409.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2583550-7"
+          },
+          {
+            "id_votacao": "2570219-7",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-12T17:35:26",
+            "data": "2025-11-12",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 303; Não: 55; Total: 358.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2570219-7"
+          },
+          {
+            "id_votacao": "2399380-8",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-12T17:30:21",
+            "data": "2025-11-12",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 340; Não: 8; Total: 348.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2399380-8"
+          },
+          {
+            "id_votacao": "536122-92",
+            "voto": "Não",
+            "data_hora_voto": "2025-11-12T12:59:27",
+            "data": "2025-11-06",
+            "descricao": "Rejeitado o texto destacado. Fica modificado o texto do Relator Deputado Leo Prates. Resultado:  4 votos \"Sim\", 14 votos \"Não\". Quórum de votação: 18 votos.",
+            "aprovacao": "0",
+            "sigla_orgao": "CTRAB",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/536122-92"
+          },
+          {
+            "id_votacao": "2481858-53",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-11T17:05:57",
+            "data": "2025-11-11",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 124, de 2022, adotado pelo relator da Comissão de Constituição e Justiça e de Cidadania. Sim: 411; Não: 3; Total: 414.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2481858-53"
+          },
+          {
+            "id_votacao": "2533204-41",
+            "voto": "Sim",
+            "data_hora_voto": "2025-11-05T22:32:02",
+            "data": "2025-11-05",
+            "descricao": "Aprovado o Projeto de Lei nº 3.292, de 2025. Sim: 265; Não: 33; Total: 298.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2533204-41"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv"
+      }
+    },
+    "2026": {
+      "generated_at_utc": "2026-09-04T11:05:55.320368+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2026"
+      },
+      "proposicoes": {
+        "quantidade_registros": 23,
+        "registros_recentes": [
+          {
+            "id": 2644734,
+            "sigla_tipo": "REQ",
+            "numero": 4125,
+            "ano": 2026,
+            "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
+          },
+          {
+            "id": 2644260,
+            "sigla_tipo": "REQ",
+            "numero": 4081,
+            "ano": 2026,
+            "ementa": "Requer a realização de Sessão Solene em comemoração aos 50 ANOS da Igreja da Glória.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644260"
+          },
+          {
+            "id": 2638078,
+            "sigla_tipo": "REQ",
+            "numero": 3812,
+            "ano": 2026,
+            "ementa": "Requer a realização de Sessão Solene em comemoração aos 60 ANOS da Federação da Agricultura e Pecuária do Estado do Ceará – FAEC.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638078"
+          },
+          {
+            "id": 2634051,
+            "sigla_tipo": "PL",
+            "numero": 3209,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a política nacional de prevenção da infecção pelo Vírus Sincicial Respiratório (VSR), mediante a incorporação e oferta do anticorpo monoclonal nirsevimabe no Sistema Único de Saúde – SUS, para crianças em seu primeiro ano de vida e para crianças no segundo ano de vida pertencentes a grupos de maior risco para doença grave.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634051"
+          },
+          {
+            "id": 2634049,
+            "sigla_tipo": "PL",
+            "numero": 3208,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.250, de 26 de dezembro de 1995, para permitir a dedução integral, sem limite de valor, das despesas com educação de dependentes diagnosticados com Transtorno do Espectro Autista – TEA, regularmente matriculados em instituições de ensino.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634049"
+          },
+          {
+            "id": 2633370,
+            "sigla_tipo": "REQ",
+            "numero": 3554,
+            "ano": 2026,
+            "ementa": "Requer a realização de Sessão Solene em comemoração aos 40 anos do Instituto da Primeira Infância - IPREDE.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633370"
+          },
+          {
+            "id": 2630532,
+            "sigla_tipo": "PL",
+            "numero": 2935,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a restrição de acesso de devedores de pensão alimentícia a eventos esportivos, sobre a suspensão e impedimento de emissão de passaporte, e altera a Lei nº 13.105, de 16 de março de 2015 (Código de Processo Civil), a Lei nº 14.597, de 14 de junho de 2023 (Lei Geral do Esporte), e a Lei nº 13.445, de 24 de maio de 2017 (Lei de Migração).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630532"
+          },
+          {
+            "id": 2627583,
+            "sigla_tipo": "REQ",
+            "numero": 3131,
+            "ano": 2026,
+            "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
+          },
+          {
+            "id": 2626582,
+            "sigla_tipo": "REQ",
+            "numero": 147,
+            "ano": 2026,
+            "ementa": "Solicita a realização de audiência pública sobre a dificuldade de acesso ao diagnóstico e ao tratamento adequado das doenças cardiovasculares e renais e as jornadas do paciente no SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626582"
+          },
+          {
+            "id": 2625788,
+            "sigla_tipo": "REQ",
+            "numero": 2947,
+            "ano": 2026,
+            "ementa": "Solicita a retirada de assinatura a emenda  EMC n.º1 da PEC 221/2019.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625788"
+          },
+          {
+            "id": 2625786,
+            "sigla_tipo": "REQ",
+            "numero": 2945,
+            "ano": 2026,
+            "ementa": "Solicita a retirada de assinatura a emenda EMC 2 da PEC 221/2019.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625786"
+          },
+          {
+            "id": 2624883,
+            "sigla_tipo": "REQ",
+            "numero": 138,
+            "ano": 2026,
+            "ementa": "Solicita realização de Audiência Pública sobre a jornada do paciente acometido com Obesidade.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624883"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220656"
+      },
+      "votacoes": {
+        "quantidade_registros": 57,
+        "registros_recentes": [
+          {
+            "id_votacao": "2611313-31",
+            "voto": "Sim",
+            "data_hora_voto": "2026-09-03T17:24:16",
+            "data": "2026-09-03",
+            "descricao": "Aprovada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 74, de 2026, adotada pelo relator da Comissão de Finanças e Tributação. Sim: 346; Não: 46; Abstenção: 3; Total: 395.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2611313-31"
+          },
+          {
+            "id_votacao": "2645346-18",
+            "voto": null,
+            "data_hora_voto": "2026-09-02T11:38:03",
+            "data": "2026-09-02",
+            "descricao": "Aprovado o Projeto de Decreto Legislativo nº 995, de 2026 (Aprova a indicação do Sr. Rodrigo Otávio Soares Pacheco para o cargo de Ministro do Tribunal de Contas da União). Sim: 404; Não: 61; Abstenção: 1; Total: 466.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2645346-18"
+          },
+          {
+            "id_votacao": "2643915-8",
+            "voto": "Sim",
+            "data_hora_voto": "2026-09-01T17:49:21",
+            "data": "2026-09-01",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 320; Não: 67; Abstenção: 1; Total: 388.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2643915-8"
+          },
+          {
+            "id_votacao": "2580259-24",
+            "voto": "Sim",
+            "data_hora_voto": "2026-08-12T19:36:34",
+            "data": "2026-08-12",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 230, de 2025, adotado pela relatora da Comissão de Finanças e Tributação. Sim: 333; Não: 91; Total: 424.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2580259-24"
+          },
+          {
+            "id_votacao": "2611992-24",
+            "voto": "Sim",
+            "data_hora_voto": "2026-08-12T19:08:01",
+            "data": "2026-08-12",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 80, de 2026, adotado pelo relator da Comissão de Finanças e Tributação. Sim: 327; Não: 26; Total: 353.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2611992-24"
+          },
+          {
+            "id_votacao": "2618177-82",
+            "voto": "Não",
+            "data_hora_voto": "2026-08-12T18:04:21",
+            "data": "2026-08-12",
+            "descricao": "Rejeitada a Emenda de Plenário nº 1. Sim: 105; Não: 233; Total: 338.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2618177-82"
+          },
+          {
+            "id_votacao": "2618177-73",
+            "voto": "Não",
+            "data_hora_voto": "2026-08-12T17:51:55",
+            "data": "2026-08-12",
+            "descricao": "Rejeitadas as Emendas de Plenário. Sim: 108; Não: 275; Abstenção: 1; Total: 384.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2618177-73"
+          },
+          {
+            "id_votacao": "2618177-71",
+            "voto": "Sim",
+            "data_hora_voto": "2026-08-12T17:41:40",
+            "data": "2026-08-12",
+            "descricao": "Aprovado o Substitutivo Reformulado ao Projeto de Lei Complementar nº 114, de 2026, adotado pela relatora da Comissão de Minas e Energia, ressalvado o destaque. Sim: 318; Não: 113; Abstenção: 1; Total: 432.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2618177-71"
+          },
+          {
+            "id_votacao": "2638483-34",
+            "voto": "Não",
+            "data_hora_voto": "2026-07-14T18:37:42",
+            "data": "2026-07-14",
+            "descricao": "Rejeitada a Emenda de Plenário nº 2. Sim: 134; Não: 285; Abstenção: 2; Total: 421.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2638483-34"
+          },
+          {
+            "id_votacao": "2637721-10",
+            "voto": "Sim",
+            "data_hora_voto": "2026-07-14T17:47:49",
+            "data": "2026-07-14",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 276; Não: 139; Abstenção: 1; Total: 416.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2637721-10"
+          },
+          {
+            "id_votacao": "2606313-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-07-07T20:27:46",
+            "data": "2026-07-07",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 41, de 2026, adotado pela relatora da Comissão de Defesa dos Direitos da Mulher. Sim: 470; Não: 1; Total: 471.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2606313-36"
+          },
+          {
+            "id_votacao": "2610579-7",
+            "voto": "Sim",
+            "data_hora_voto": "2026-07-02T11:16:24",
+            "data": "2026-07-02",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 305; Não: 112; Abstenção: 1; Total: 418.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2610579-7"
+          },
+          {
+            "id_votacao": "2606189-10",
+            "voto": "Sim",
+            "data_hora_voto": "2026-07-01T18:16:24",
+            "data": "2026-07-01",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 279; Não: 162; Abstenção: 1; Total: 442.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2606189-10"
+          },
+          {
+            "id_votacao": "2636281-8",
+            "voto": "Sim",
+            "data_hora_voto": "2026-07-01T17:27:39",
+            "data": "2026-07-01",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 293; Não: 158; Abstenção: 3; Total: 454.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2636281-8"
+          },
+          {
+            "id_votacao": "2633410-8",
+            "voto": "Sim",
+            "data_hora_voto": "2026-06-17T19:34:22",
+            "data": "2026-06-17",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 273; Não: 160; Abstenção: 4; Total: 437.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2633410-8"
+          },
+          {
+            "id_votacao": "2610975-23",
+            "voto": "Não",
+            "data_hora_voto": "2026-06-17T19:19:41",
+            "data": "2026-06-17",
+            "descricao": "Rejeitada a Emenda n° 102. Sim: 22; Não: 378; Abstenção: 1; Total: 401.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2610975-23"
+          },
+          {
+            "id_votacao": "2382675-97",
+            "voto": "Sim",
+            "data_hora_voto": "2026-06-17T18:38:44",
+            "data": "2026-06-17",
+            "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 4.133, de 2023, adotado pelo relator da Comissão de Ciência, Tecnologia e Inovação. Sim: 308; Não: 129; Abstenção: 1; Total: 438.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2382675-97"
+          },
+          {
+            "id_votacao": "947810-85",
+            "voto": "Sim",
+            "data_hora_voto": "2026-06-17T17:11:12",
+            "data": "2026-06-17",
+            "descricao": "Mantido o texto. Sim: 285; Não: 106; Abstenção: 1; Total: 392.",
+            "aprovacao": null,
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/947810-85"
+          },
+          {
+            "id_votacao": "2122125-115",
+            "voto": "Sim",
+            "data_hora_voto": "2026-06-16T19:58:18",
+            "data": "2026-06-16",
+            "descricao": "Aprovada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 337, de 2017, adotada pelo relator da Comissão de Constituição e Justiça e de Cidadania. Sim: 417; Não: 19; Total: 436.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2122125-115"
+          },
+          {
+            "id_votacao": "2629954-8",
+            "voto": "Sim",
+            "data_hora_voto": "2026-06-03T11:29:03",
+            "data": "2026-06-03",
+            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 311; Não: 135; Abstenção: 2; Total: 448.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2629954-8"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+      }
+    }
+  },
+  "schema_version": 2,
   "camara_id_deputado": "220656",
-  "generated_at_utc": "2026-09-03T17:45:44.537131+00:00",
+  "generated_at_utc": "2026-09-04T11:06:40.605012+00:00",
   "periodo": {
-    "ano": 2026
+    "inicio": 2023,
+    "fim": 2026,
+    "anos": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
   },
   "mandato": {
     "detalhe": {
@@ -128,15 +1406,66 @@
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/historico"
   },
   "despesas": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
-    "valor_liquido_total": 0,
+    "valor_liquido_total": 0.0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2026"
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2023",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2024",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2025",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/220656/despesas?ano=2026"
+    ]
   },
   "proposicoes": {
-    "ano": 2026,
-    "quantidade_registros": 23,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 638,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 386
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 101
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 128
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 23
+      }
+    ],
     "registros_recentes": [
       {
         "id": 2644734,
@@ -235,101 +1564,140 @@
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624883"
       },
       {
-        "id": 2622214,
+        "id": 2584880,
         "sigla_tipo": "REQ",
-        "numero": 2671,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do PL nº 1.602/2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622214"
+        "numero": 4896,
+        "ano": 2025,
+        "ementa": "Requer o registro da Frente Parlamentar Mista do Crédito de Carbono.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2584880"
       },
       {
-        "id": 2620766,
-        "sigla_tipo": "PL",
-        "numero": 2138,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a obrigatoriedade de veiculação de campanhas educativas sobre a vacinação contra o HPV em salas de cinema e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620766"
-      },
-      {
-        "id": 2618180,
-        "sigla_tipo": "PL",
-        "numero": 1961,
-        "ano": 2026,
-        "ementa": "Institui a política de geração livre de tabaco no Brasil, com a proibição progressiva da comercialização de produtos fumígenos para indivíduos nascidos a partir de 1º de janeiro de 2009, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618180"
-      },
-      {
-        "id": 2618113,
+        "id": 2583232,
         "sigla_tipo": "REQ",
-        "numero": 2280,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene em comemoração aos 100 anos do Grupo Mercadinho São Luiz - MSLZ.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618113"
+        "numero": 4734,
+        "ano": 2025,
+        "ementa": "Requer a realização de Sessão Solene em comemoração aos 300 anos da Cidade de Fortaleza.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2583232"
       },
       {
-        "id": 2617923,
+        "id": 2582496,
         "sigla_tipo": "REQ",
-        "numero": 2233,
-        "ano": 2026,
-        "ementa": "Requer a inclusão na ordem do dia do plenário para votação imediata do Projeto de Lei Complementar n.º 185/2024.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617923"
+        "numero": 4711,
+        "ano": 2025,
+        "ementa": "Requer o registro, no âmbito da Câmara dos Deputados, da Frente Parlamentar “Frente Parlamentar em Defesa da Ética na Saúde Suplementar”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2582496"
       },
       {
-        "id": 2613901,
+        "id": 2582199,
         "sigla_tipo": "REQ",
-        "numero": 1933,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene em comemoração aos 100 anos do Mercado São Luiz.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613901"
+        "numero": 4700,
+        "ano": 2025,
+        "ementa": "Requer o registro da Frente Parlamentar Mista de Telecomunicações e Soluções Digitais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2582199"
       },
       {
-        "id": 2613900,
+        "id": 2576180,
         "sigla_tipo": "REQ",
-        "numero": 1932,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene em comemoração aos 20 anos da lei Maria da Penha.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613900"
+        "numero": 4415,
+        "ano": 2025,
+        "ementa": "Requer o registro da \"Frente Parlamentar Mista do Serviço Exterior Brasileiro.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2576180"
       },
       {
-        "id": 2613490,
-        "sigla_tipo": "PL",
-        "numero": 1604,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a manutenção do plano de saúde após o falecimento do titular.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613490"
+        "id": 2573002,
+        "sigla_tipo": "REQ",
+        "numero": 4308,
+        "ano": 2025,
+        "ementa": "Requer nos termos do Ato da Mesa n° 69, de 2005, registro da Frente Parlamentar Mista Brasil - Espanha (FREBRAES).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2573002"
       },
       {
-        "id": 2613489,
-        "sigla_tipo": "PL",
-        "numero": 1603,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a proteção a dublagem no Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613489"
+        "id": 2572951,
+        "sigla_tipo": "REQ",
+        "numero": 4302,
+        "ano": 2025,
+        "ementa": "Requeiro o registro da Frente Parlamentar em Defesa das Confederações e Federações do Esporte e Paradesporto.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2572951"
       },
       {
-        "id": 2613488,
-        "sigla_tipo": "PL",
-        "numero": 1602,
-        "ano": 2026,
-        "ementa": "Institui o Circuito Nordestino de Quadrilhas Juninas, inclui o evento no Calendário Oficial do Ministério do Turismo, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613488"
+        "id": 2571748,
+        "sigla_tipo": "REQ",
+        "numero": 4268,
+        "ano": 2025,
+        "ementa": "Requerimento de criação da Frente Parlamentar Brasil-Israel",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2571748"
       },
       {
-        "id": 2613477,
-        "sigla_tipo": "PL",
-        "numero": 1601,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a responsabilidade objetiva quanto aos golpes de natureza financeira.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613477"
+        "id": 2570607,
+        "sigla_tipo": "REQ",
+        "numero": 4222,
+        "ano": 2025,
+        "ementa": "Requer o registro da Frente Parlamentar Mista pela Integração Sul-Americana.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2570607"
+      },
+      {
+        "id": 2568476,
+        "sigla_tipo": "EMC",
+        "numero": 22,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1303/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568476"
+      },
+      {
+        "id": 2567630,
+        "sigla_tipo": "REQ",
+        "numero": 4138,
+        "ano": 2025,
+        "ementa": "Requer a realização de Sessão Solene em comemoração aos 190 anos da assembleia legislativa do Estado do Ceará.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2567630"
+      },
+      {
+        "id": 2565930,
+        "sigla_tipo": "REQ",
+        "numero": 3991,
+        "ano": 2025,
+        "ementa": "Requer realização de Sessão Solene em Homenagem ao Dia do Imigrante Grego, data instituída pela Lei 14884/2024.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2565930"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220656",
     "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
   },
   "votacoes": {
-    "ano": 2026,
-    "quantidade_registros": 56,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 1051,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 307
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 324
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 363
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 57
+      }
+    ],
     "registros_recentes": [
+      {
+        "id_votacao": "2611313-31",
+        "voto": "Sim",
+        "data_hora_voto": "2026-09-03T17:24:16",
+        "data": "2026-09-03",
+        "descricao": "Aprovada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 74, de 2026, adotada pelo relator da Comissão de Finanças e Tributação. Sim: 346; Não: 46; Abstenção: 3; Total: 395.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2611313-31"
+      },
       {
         "id_votacao": "2645346-18",
         "voto": null,
@@ -521,382 +1889,223 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2629954-8"
       },
       {
-        "id_votacao": "2351506-122",
+        "id_votacao": "2579832-105",
         "voto": "Sim",
-        "data_hora_voto": "2026-05-28T16:49:44",
-        "data": "2026-05-28",
-        "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 5, de 2023. Sim: 368; Não: 96; Abstenção: 7; Total: 471.",
+        "data_hora_voto": "2025-11-18T22:21:12",
+        "data": "2025-11-18",
+        "descricao": "Aprovada a Emenda de Plenário nº 25. Sim: 349; Não: 40; Abstenção: 1; Total: 390.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-122"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-105"
       },
       {
-        "id_votacao": "2351506-115",
+        "id_votacao": "2579832-99",
+        "voto": "Não",
+        "data_hora_voto": "2025-11-18T22:06:13",
+        "data": "2025-11-18",
+        "descricao": "Rejeitada a preferência. Sim: 107; Não: 298; Abstenção: 2; Total: 407.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-99"
+      },
+      {
+        "id_votacao": "2579832-96",
         "voto": "Sim",
-        "data_hora_voto": "2026-05-28T16:19:15",
-        "data": "2026-05-28",
-        "descricao": "Mantido o texto. Sim: 335; Não: 117; Abstenção: 5; Total: 457.",
+        "data_hora_voto": "2025-11-18T21:56:56",
+        "data": "2025-11-18",
+        "descricao": "Mantido o texto. Sim: 298; Não: 109; Abstenção: 1; Total: 408.",
         "aprovacao": null,
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-115"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-96"
       },
       {
-        "id_votacao": "2351506-112",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-28T15:47:06",
-        "data": "2026-05-28",
-        "descricao": "Mantido o texto. Sim: 342; Não: 113; Abstenção: 5; Total: 460.",
-        "aprovacao": null,
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-112"
-      },
-      {
-        "id_votacao": "2351506-108",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-28T15:19:37",
-        "data": "2026-05-28",
-        "descricao": "Mantido o texto. Sim: 340; Não: 110; Abstenção: 7; Total: 457.",
-        "aprovacao": null,
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-108"
-      },
-      {
-        "id_votacao": "2351506-104",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-28T14:37:54",
-        "data": "2026-05-28",
-        "descricao": "Aprovada, em primeiro turno, a Proposta de Emenda à Constituição nº 5, de 2023, na forma da Emenda Aglutinativa Substitutiva nº 3. Sim: 385; Não: 93; Abstenção: 7; Total: 485.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-104"
-      },
-      {
-        "id_votacao": "2351506-102",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-28T14:09:25",
-        "data": "2026-05-28",
-        "descricao": "Aprovada a preferência. Sim: 467; Não: 4; Abstenção: 1; Total: 472.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-102"
-      },
-      {
-        "id_votacao": "2351506-95",
+        "id_votacao": "2579832-95",
         "voto": "Não",
-        "data_hora_voto": "2026-05-28T11:51:00",
-        "data": "2026-05-28",
-        "descricao": "Rejeitado o Requerimento. Sim: 102; Não: 322; Abstenção: 1; Total: 425.",
+        "data_hora_voto": "2025-11-18T21:43:51",
+        "data": "2025-11-18",
+        "descricao": "Rejeitada a Emenda de Plenário nº 33. Sim: 142; Não: 298; Abstenção: 1; Total: 441.",
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-95"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-95"
       },
       {
-        "id_votacao": "2433663-44",
+        "id_votacao": "2579832-62",
+        "voto": "Sim",
+        "data_hora_voto": "2025-11-18T20:41:06",
+        "data": "2025-11-18",
+        "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 5.582, de 2025, adotado pelo relator da Comissão de Segurança Pública e Combate ao Crime Organizado, ressalvados os destaques. Sim: 370; Não: 110; Abstenção: 3; Total: 483.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-62"
+      },
+      {
+        "id_votacao": "2579832-61",
         "voto": "Não",
-        "data_hora_voto": "2026-05-28T10:05:21",
-        "data": "2026-05-28",
-        "descricao": "Rejeitado o Requerimento. Sim: 99; Não: 277; Total: 376.",
+        "data_hora_voto": "2025-11-18T20:25:06",
+        "data": "2025-11-18",
+        "descricao": "Rejeitada a Preferência. Sim: 156; Não: 306; Total: 462.",
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2433663-44"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-61"
       },
       {
-        "id_votacao": "2233802-438",
+        "id_votacao": "2579832-54",
         "voto": "Sim",
-        "data_hora_voto": "2026-05-27T23:19:50",
-        "data": "2026-05-27",
-        "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 221, de 2019. . Sim: 461; Não: 19; Total: 480.",
+        "data_hora_voto": "2025-11-18T19:45:08",
+        "data": "2025-11-18",
+        "descricao": "Aprovado o Requerimento. Sim: 335; Não: 111; Total: 446.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-438"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-54"
       },
       {
-        "id_votacao": "2233802-424",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-27T21:18:33",
-        "data": "2026-05-27",
-        "descricao": "Aprovada, em primeiro turno, a Proposta de Emenda à Constituição nº 221, de 2019. Sim: 472; Não: 22; Total: 494.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-424"
-      },
-      {
-        "id_votacao": "2233802-416",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-27T20:38:45",
-        "data": "2026-05-27",
-        "descricao": "Aprovado o Requerimento. Sim: 372; Não: 101; Total: 473.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-416"
-      },
-      {
-        "id_votacao": "2626432-8",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-26T16:39:50",
-        "data": "2026-05-26",
-        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 358; Não: 68; Total: 426.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2626432-8"
-      },
-      {
-        "id_votacao": "2613731-47",
+        "id_votacao": "2579832-49",
         "voto": "Não",
-        "data_hora_voto": "2026-05-20T22:05:40",
-        "data": "2026-05-20",
-        "descricao": "Rejeitada a Emenda de Plenário nº 2. Sim: 196; Não: 200; Abstenção: 1; Total: 397.",
+        "data_hora_voto": "2025-11-18T18:50:23",
+        "data": "2025-11-18",
+        "descricao": "Rejeitado o Requerimento. Sim: 114; Não: 335; Total: 449.",
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2613731-47"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-49"
       },
       {
-        "id_votacao": "2613731-65",
+        "id_votacao": "2579832-41",
         "voto": "Não",
-        "data_hora_voto": "2026-05-20T21:42:42",
-        "data": "2026-05-20",
-        "descricao": "Resultado. Sim: 182; Não: 182; Abstenção: 2; Total: 366.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2613731-65"
-      },
-      {
-        "id_votacao": "2613731-29",
-        "voto": "Não",
-        "data_hora_voto": "2026-05-20T20:36:25",
-        "data": "2026-05-20",
-        "descricao": "Rejeitado o Requerimento. Sim: 115; Não: 313; Total: 428.",
+        "data_hora_voto": "2025-11-18T18:04:33",
+        "data": "2025-11-18",
+        "descricao": "Rejeitado o Requerimento. Sim: 110; Não: 316; Total: 426.",
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2613731-29"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2579832-41"
       },
       {
-        "id_votacao": "2625979-8",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-20T16:57:52",
-        "data": "2026-05-20",
-        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 269; Não: 125; Abstenção: 2; Total: 396.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2625979-8"
-      },
-      {
-        "id_votacao": "2447983-57",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-19T20:30:12",
-        "data": "2026-05-19",
-        "descricao": "Aprovado o Projeto de Lei Complementar nº 262, de 2019. Sim: 442; Não: 2; Total: 444.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2447983-57"
-      },
-      {
-        "id_votacao": "2422887-23",
+        "id_votacao": "1302214-101",
         "voto": "Não",
-        "data_hora_voto": "2026-05-19T17:59:52",
-        "data": "2026-05-19",
-        "descricao": "Rejeitado o Requerimento. Sim: 126; Não: 274; Abstenção: 2; Total: 402.",
+        "data_hora_voto": "2025-11-18T17:03:31",
+        "data": "2025-11-18",
+        "descricao": "Rejeitado o Requerimento de Retirada de Pauta. Resultado:  12 votos \"Sim\", 24 votos \"Não\". Quórum de votação: 36 votos.",
+        "aprovacao": "0",
+        "sigla_orgao": "CCJC",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/1302214-101"
+      },
+      {
+        "id_votacao": "2270325-92",
+        "voto": "Não",
+        "data_hora_voto": "2025-11-12T20:36:45",
+        "data": "2025-11-12",
+        "descricao": "Rejeitada a Emenda de Plenário nº 6. Sim: 148; Não: 215; Total: 363.",
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2422887-23"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2270325-92"
       },
       {
-        "id_votacao": "2605243-12",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-19T16:56:21",
-        "data": "2026-05-19",
-        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 317; Não: 123; Total: 440.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2605243-12"
-      },
-      {
-        "id_votacao": "2601990-42",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-13T16:24:52",
-        "data": "2026-05-13",
-        "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 21, de 2026, adotado pelo relator da Comissão de Finanças e Tributação. Sim: 421; Não: 3; Abstenção: 1; Total: 425.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2601990-42"
-      },
-      {
-        "id_votacao": "2191208-67",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-12T18:12:30",
-        "data": "2026-05-12",
-        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei nº 488, de 2019, adotada pelo relator da Comissão de Constituição e Justiça e de Cidadania, ressalvado o destaque. Sim: 436; Não: 3; Total: 439.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2191208-67"
-      },
-      {
-        "id_votacao": "2447259-99",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-06T20:43:57",
-        "data": "2026-05-06",
-        "descricao": "Mantido o texto. Sim: 343; Não: 97; Abstenção: 1; Total: 441.",
-        "aprovacao": null,
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2447259-99"
-      },
-      {
-        "id_votacao": "2617164-10",
+        "id_votacao": "2270325-88",
         "voto": "Não",
-        "data_hora_voto": "2026-04-29T18:01:20",
-        "data": "2026-04-29",
-        "descricao": "Rejeitado o Recurso nº 7/2026 (art. 58, § 1º c/c art. 132, § 2º, RICD). Sim: 154; Não: 245; Abstenção: 3; Total: 402.",
+        "data_hora_voto": "2025-11-12T20:12:27",
+        "data": "2025-11-12",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 18, de 2021, adotada pelo relator da Comissão de Saúde, ressalvado o destaque. Sim: 348; Não: 100; Abstenção: 1; Total: 449.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2270325-88"
+      },
+      {
+        "id_votacao": "2564132-13",
+        "voto": "Não",
+        "data_hora_voto": "2025-11-12T18:13:00",
+        "data": "2025-11-12",
+        "descricao": "Rejeitado o Requerimento de Urgência (Art. 155 do RICD). Sim: 72; Não: 350; Abstenção: 4; Total: 426.",
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2617164-10"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2564132-13"
       },
       {
-        "id_votacao": "2162116-181",
+        "id_votacao": "2583574-8",
         "voto": "Sim",
-        "data_hora_voto": "2026-04-28T21:23:44",
-        "data": "2026-04-28",
-        "descricao": "Aprovada a Emenda de Redação nº 4. Sim: 386; Não: 1; Total: 387.",
+        "data_hora_voto": "2025-11-12T17:54:09",
+        "data": "2025-11-12",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 300; Não: 114; Total: 414.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2162116-181"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2583574-8"
       },
       {
-        "id_votacao": "2162116-178",
+        "id_votacao": "2583550-7",
         "voto": "Sim",
-        "data_hora_voto": "2026-04-28T21:02:35",
-        "data": "2026-04-28",
-        "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 383, de 2017. Sim: 444; Não: 12; Total: 456.",
+        "data_hora_voto": "2025-11-12T17:40:57",
+        "data": "2025-11-12",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 323; Não: 86; Total: 409.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2162116-178"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2583550-7"
       },
       {
-        "id_votacao": "2618104-8",
+        "id_votacao": "2570219-7",
         "voto": "Sim",
-        "data_hora_voto": "2026-04-28T20:35:57",
-        "data": "2026-04-28",
-        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 330; Não: 104; Total: 434.",
+        "data_hora_voto": "2025-11-12T17:35:26",
+        "data": "2025-11-12",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 303; Não: 55; Total: 358.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2618104-8"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2570219-7"
       },
       {
-        "id_votacao": "2234260-164",
+        "id_votacao": "2399380-8",
         "voto": "Sim",
-        "data_hora_voto": "2026-04-22T22:27:42",
-        "data": "2026-04-22",
-        "descricao": "Mantido o texto. Sim: 252; Não: 161; Total: 413.",
-        "aprovacao": null,
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2234260-164"
-      },
-      {
-        "id_votacao": "2469569-38",
-        "voto": "Sim",
-        "data_hora_voto": "2026-04-22T22:14:49",
-        "data": "2026-04-22",
-        "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 4.397, de 2024, adotado pelo relator da Comissão de Constituição e Justiça e de Cidadania. Sim: 300; Não: 36; Abstenção: 1; Total: 337.",
+        "data_hora_voto": "2025-11-12T17:30:21",
+        "data": "2025-11-12",
+        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 340; Não: 8; Total: 348.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2469569-38"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2399380-8"
       },
       {
-        "id_votacao": "2368697-49",
+        "id_votacao": "536122-92",
         "voto": "Não",
-        "data_hora_voto": "2026-04-22T21:19:04",
-        "data": "2026-04-22",
-        "descricao": "Rejeitado o Requerimento. Sim: 119; Não: 241; Total: 360.",
+        "data_hora_voto": "2025-11-12T12:59:27",
+        "data": "2025-11-06",
+        "descricao": "Rejeitado o texto destacado. Fica modificado o texto do Relator Deputado Leo Prates. Resultado:  4 votos \"Sim\", 14 votos \"Não\". Quórum de votação: 18 votos.",
         "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2368697-49"
+        "sigla_orgao": "CTRAB",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/536122-92"
       },
       {
-        "id_votacao": "2368697-43",
-        "voto": "Não",
-        "data_hora_voto": "2026-04-22T20:53:21",
-        "data": "2026-04-22",
-        "descricao": "Rejeitado o Requerimento. Sim: 120; Não: 270; Total: 390.",
-        "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2368697-43"
-      },
-      {
-        "id_votacao": "2419128-78",
-        "voto": "Não",
-        "data_hora_voto": "2026-04-22T19:18:45",
-        "data": "2026-04-22",
-        "descricao": "Rejeitado o Requerimento. Sim: 127; Não: 268; Total: 395.",
-        "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2419128-78"
-      },
-      {
-        "id_votacao": "2608575-64",
+        "id_votacao": "2481858-53",
         "voto": "Sim",
-        "data_hora_voto": "2026-04-15T21:41:04",
-        "data": "2026-04-15",
-        "descricao": "Aprovado o Projeto de Lei Complementar nº 55, de 2026. Sim: 342; Não: 39; Total: 381.",
+        "data_hora_voto": "2025-11-11T17:05:57",
+        "data": "2025-11-11",
+        "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 124, de 2022, adotado pelo relator da Comissão de Constituição e Justiça e de Cidadania. Sim: 411; Não: 3; Total: 414.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2608575-64"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2481858-53"
       },
       {
-        "id_votacao": "2162116-169",
+        "id_votacao": "2533204-41",
         "voto": "Sim",
-        "data_hora_voto": "2026-04-08T19:13:59",
-        "data": "2026-04-08",
-        "descricao": "Aprovada, em primeiro turno, a Proposta de Emenda à Constituição nº 383, de 2017, na forma da Emenda Aglutinativa nº 2. Sim: 464; Não: 16; Total: 480.",
+        "data_hora_voto": "2025-11-05T22:32:02",
+        "data": "2025-11-05",
+        "descricao": "Aprovado o Projeto de Lei nº 3.292, de 2025. Sim: 265; Não: 33; Total: 298.",
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2162116-169"
-      },
-      {
-        "id_votacao": "2162116-161",
-        "voto": "Não",
-        "data_hora_voto": "2026-04-08T17:46:33",
-        "data": "2026-04-08",
-        "descricao": "Rejeitado o Requerimento. Sim: 36; Não: 409; Total: 445.",
-        "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2162116-161"
-      },
-      {
-        "id_votacao": "2503998-75",
-        "voto": "Sim",
-        "data_hora_voto": "2026-04-07T19:08:44",
-        "data": "2026-04-07",
-        "descricao": "Aprovado o Substitutivo ao Projeto de Lei Complementar nº 109, de 2025, adotado pelo relator da Comissão de Constituição e Justiça e de Cidadania. Sim: 381; Não: 2; Total: 383.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2503998-75"
-      },
-      {
-        "id_votacao": "2503998-70",
-        "voto": "Não",
-        "data_hora_voto": "2026-04-07T18:46:59",
-        "data": "2026-04-07",
-        "descricao": "Rejeitado o Requerimento. Sim: 60; Não: 306; Total: 366.",
-        "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2503998-70"
-      },
-      {
-        "id_votacao": "2562289-8",
-        "voto": "Sim",
-        "data_hora_voto": "2026-04-07T16:49:07",
-        "data": "2026-04-07",
-        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 272; Não: 18; Total: 290.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2562289-8"
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2533204-41"
       }
     ],
-    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+    ],
     "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
   },
   "fontes": [
     "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2023.csv",
+    "votacoesVotos-2024.csv",
+    "votacoesVotos-2025.csv",
     "votacoesVotos-2026.csv",
+    "votacoes-2023.csv",
+    "votacoes-2024.csv",
+    "votacoes-2025.csv",
     "votacoes-2026.csv"
   ]
 }

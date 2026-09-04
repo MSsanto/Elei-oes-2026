@@ -1,8 +1,305 @@
 {
+  "anos": {
+    "2023": {
+      "generated_at_utc": "2026-09-04T10:52:07.781963+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2023"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=4931"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv"
+      }
+    },
+    "2024": {
+      "generated_at_utc": "2026-09-04T10:56:37.917865+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2024"
+      },
+      "proposicoes": {
+        "quantidade_registros": 2,
+        "registros_recentes": [
+          {
+            "id": 2428081,
+            "sigla_tipo": "EMC",
+            "numero": 157,
+            "ano": 2024,
+            "ementa": "Dá nova redação à MPV 1202/2023",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2428081"
+          },
+          {
+            "id": 2428079,
+            "sigla_tipo": "EMC",
+            "numero": 155,
+            "ano": 2024,
+            "ementa": "Dá nova redação à MPV 1202/2023",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2428079"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=4931"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv"
+      }
+    },
+    "2025": {
+      "generated_at_utc": "2026-09-04T11:01:13.454898+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2025"
+      },
+      "proposicoes": {
+        "quantidade_registros": 20,
+        "registros_recentes": [
+          {
+            "id": 2598943,
+            "sigla_tipo": "EMC",
+            "numero": 30,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1317/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2598943"
+          },
+          {
+            "id": 2598942,
+            "sigla_tipo": "EMC",
+            "numero": 29,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1317/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2598942"
+          },
+          {
+            "id": 2593517,
+            "sigla_tipo": "EMC",
+            "numero": 45,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1313/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593517"
+          },
+          {
+            "id": 2593480,
+            "sigla_tipo": "EMC",
+            "numero": 10,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1313/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593480"
+          },
+          {
+            "id": 2593479,
+            "sigla_tipo": "EMC",
+            "numero": 9,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1313/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593479"
+          },
+          {
+            "id": 2593478,
+            "sigla_tipo": "EMC",
+            "numero": 8,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1313/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593478"
+          },
+          {
+            "id": 2568902,
+            "sigla_tipo": "EMC",
+            "numero": 440,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1303/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568902"
+          },
+          {
+            "id": 2568901,
+            "sigla_tipo": "EMC",
+            "numero": 439,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1303/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568901"
+          },
+          {
+            "id": 2568900,
+            "sigla_tipo": "EMC",
+            "numero": 438,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1303/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568900"
+          },
+          {
+            "id": 2568894,
+            "sigla_tipo": "EMC",
+            "numero": 432,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1303/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568894"
+          },
+          {
+            "id": 2568795,
+            "sigla_tipo": "EMC",
+            "numero": 336,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1303/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568795"
+          },
+          {
+            "id": 2568794,
+            "sigla_tipo": "EMC",
+            "numero": 335,
+            "ano": 2025,
+            "ementa": "Dá nova redação à MPV 1303/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568794"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=4931"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv"
+      }
+    },
+    "2026": {
+      "generated_at_utc": "2026-09-04T11:05:24.748351+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2026"
+      },
+      "proposicoes": {
+        "quantidade_registros": 13,
+        "registros_recentes": [
+          {
+            "id": 2645802,
+            "sigla_tipo": "EMC",
+            "numero": 70,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1357/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645802"
+          },
+          {
+            "id": 2645801,
+            "sigla_tipo": "EMC",
+            "numero": 69,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1357/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645801"
+          },
+          {
+            "id": 2645800,
+            "sigla_tipo": "EMC",
+            "numero": 68,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1357/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645800"
+          },
+          {
+            "id": 2636378,
+            "sigla_tipo": "EMC",
+            "numero": 81,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1348/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636378"
+          },
+          {
+            "id": 2622659,
+            "sigla_tipo": "EMC",
+            "numero": 132,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1327/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622659"
+          },
+          {
+            "id": 2612147,
+            "sigla_tipo": "EMC",
+            "numero": 83,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1326/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612147"
+          },
+          {
+            "id": 2612145,
+            "sigla_tipo": "EMC",
+            "numero": 82,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1326/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612145"
+          },
+          {
+            "id": 2612144,
+            "sigla_tipo": "EMC",
+            "numero": 81,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1326/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612144"
+          },
+          {
+            "id": 2612143,
+            "sigla_tipo": "EMC",
+            "numero": 80,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1326/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612143"
+          },
+          {
+            "id": 2612142,
+            "sigla_tipo": "EMC",
+            "numero": 79,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1326/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612142"
+          },
+          {
+            "id": 2612080,
+            "sigla_tipo": "EMC",
+            "numero": 27,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1326/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612080"
+          },
+          {
+            "id": 2612078,
+            "sigla_tipo": "EMC",
+            "numero": 26,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1326/2025",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612078"
+          }
+        ],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=4931"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+      }
+    }
+  },
+  "schema_version": 2,
   "camara_id_deputado": "4931",
-  "generated_at_utc": "2026-09-03T17:42:15.760638+00:00",
+  "generated_at_utc": "2026-09-04T11:06:40.553657+00:00",
   "periodo": {
-    "ano": 2026
+    "inicio": 2023,
+    "fim": 2026,
+    "anos": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
   },
   "mandato": {
     "detalhe": {
@@ -336,16 +633,91 @@
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/historico"
   },
   "despesas": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
-    "valor_liquido_total": 0,
+    "valor_liquido_total": 0.0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2026"
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2023",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2024",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2025",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/4931/despesas?ano=2026"
+    ]
   },
   "proposicoes": {
-    "ano": 2026,
-    "quantidade_registros": 10,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
+    "quantidade_registros": 35,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 2
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 20
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 13
+      }
+    ],
     "registros_recentes": [
+      {
+        "id": 2645802,
+        "sigla_tipo": "EMC",
+        "numero": 70,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1357/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645802"
+      },
+      {
+        "id": 2645801,
+        "sigla_tipo": "EMC",
+        "numero": 69,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1357/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645801"
+      },
+      {
+        "id": 2645800,
+        "sigla_tipo": "EMC",
+        "numero": 68,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1357/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645800"
+      },
       {
         "id": 2636378,
         "sigla_tipo": "EMC",
@@ -419,27 +791,147 @@
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612078"
       },
       {
-        "id": 2612076,
+        "id": 2598943,
         "sigla_tipo": "EMC",
-        "numero": 25,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1326/2025",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612076"
+        "numero": 30,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1317/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2598943"
+      },
+      {
+        "id": 2598942,
+        "sigla_tipo": "EMC",
+        "numero": 29,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1317/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2598942"
+      },
+      {
+        "id": 2593517,
+        "sigla_tipo": "EMC",
+        "numero": 45,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1313/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593517"
+      },
+      {
+        "id": 2593480,
+        "sigla_tipo": "EMC",
+        "numero": 10,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1313/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593480"
+      },
+      {
+        "id": 2593479,
+        "sigla_tipo": "EMC",
+        "numero": 9,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1313/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593479"
+      },
+      {
+        "id": 2593478,
+        "sigla_tipo": "EMC",
+        "numero": 8,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1313/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2593478"
+      },
+      {
+        "id": 2568902,
+        "sigla_tipo": "EMC",
+        "numero": 440,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1303/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568902"
+      },
+      {
+        "id": 2568901,
+        "sigla_tipo": "EMC",
+        "numero": 439,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1303/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568901"
+      },
+      {
+        "id": 2568900,
+        "sigla_tipo": "EMC",
+        "numero": 438,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1303/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568900"
+      },
+      {
+        "id": 2568894,
+        "sigla_tipo": "EMC",
+        "numero": 432,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1303/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568894"
+      },
+      {
+        "id": 2568795,
+        "sigla_tipo": "EMC",
+        "numero": 336,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1303/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568795"
+      },
+      {
+        "id": 2568794,
+        "sigla_tipo": "EMC",
+        "numero": 335,
+        "ano": 2025,
+        "ementa": "Dá nova redação à MPV 1303/2025",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2568794"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=4931",
     "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
   },
   "votacoes": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+    ],
     "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
   },
   "fontes": [
     "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2023.csv",
+    "votacoesVotos-2024.csv",
+    "votacoesVotos-2025.csv",
     "votacoesVotos-2026.csv",
+    "votacoes-2023.csv",
+    "votacoes-2024.csv",
+    "votacoes-2025.csv",
     "votacoes-2026.csv"
   ]
 }

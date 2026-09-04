@@ -1,38 +1,905 @@
 {
+  "anos": {
+    "2023": {
+      "generated_at_utc": "2026-09-04T10:52:57.138024+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2023"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=73805"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv"
+      }
+    },
+    "2024": {
+      "generated_at_utc": "2026-09-04T10:57:15.142296+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2024"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=73805"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv"
+      }
+    },
+    "2025": {
+      "generated_at_utc": "2026-09-04T11:02:06.356709+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2025"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=73805"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv"
+      }
+    },
+    "2026": {
+      "generated_at_utc": "2026-09-04T11:06:02.027375+00:00",
+      "despesas": {
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2026"
+      },
+      "proposicoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=73805"
+      },
+      "votacoes": {
+        "quantidade_registros": 0,
+        "registros_recentes": [],
+        "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+      }
+    }
+  },
+  "schema_version": 2,
   "camara_id_deputado": "73805",
-  "generated_at_utc": "2026-09-03T23:20:31.188586+00:00",
+  "generated_at_utc": "2026-09-04T11:06:40.621377+00:00",
   "periodo": {
-    "ano": 2026
+    "inicio": 2023,
+    "fim": 2026,
+    "anos": [
+      2023,
+      2024,
+      2025,
+      2026
+    ]
   },
   "mandato": {
-    "detalhe": {},
-    "historico": [],
+    "detalhe": {
+      "id": 73805,
+      "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+      "nomeCivil": "ROBERTO JOÃO PEREIRA FREIRE",
+      "ultimoStatus": {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": null,
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "email": null,
+        "data": "2018-04-06",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "gabinete": {
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
+        },
+        "situacao": "Suplência",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": null
+      },
+      "cpf": "00235369420",
+      "sexo": "M",
+      "urlWebsite": null,
+      "redeSocial": [
+        "http://www.twitter.com/freire_roberto",
+        "https://www.facebook.com/DepRobertoFreire",
+        "https://www.youtube.com/user/robertofreire2010"
+      ],
+      "dataNascimento": "1942-04-20",
+      "dataFalecimento": null,
+      "ufNascimento": "PE",
+      "municipioNascimento": "Recife",
+      "escolaridade": "Superior"
+    },
+    "historico": [
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-03-19T18:58",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": null,
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-03-19T18:58",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": null,
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-03-20T15:15",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Posse de Suplente - Posse como Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-07-07T09:26",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-07-14T11:41",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-07-14T11:41",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-07-14T17:10",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-10-19T10:10",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-10-21T12:51",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-10-21T12:51",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-10-22T14:50",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-04T19:02",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-06T09:17",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-06T09:17",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-07T12:46",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-14T10:44",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-19T15:35",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-19T15:35",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-04-19T15:42",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-10-19T09:19",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-10-21T15:15",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-10-21T15:15",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-10-21T15:20",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2016-11-23T20:20",
+        "situacao": "Licença",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Ministro de Estado"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2017-05-23T16:09",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2017-10-19T11:56",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2017-10-21T00:00",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2017-10-23T16:55",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2017-10-23T16:59",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2018-04-06T10:47",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 55,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 54,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2011-02-01T00:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 54,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2015-01-31T23:59",
+        "situacao": "FIM_MANDATO",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Término da Legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "SP",
+        "idLegislatura": 54,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "PE",
+        "idLegislatura": 52,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2003-02-01T00:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "PE",
+        "idLegislatura": 52,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2007-01-31T00:00",
+        "situacao": "FIM_MANDATO",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Término da Legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "PE",
+        "idLegislatura": 52,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PPS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36813",
+        "siglaUf": "PE",
+        "idLegislatura": 49,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PCB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37986",
+        "siglaUf": "PE",
+        "idLegislatura": 48,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PCB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37986",
+        "siglaUf": "PE",
+        "idLegislatura": 47,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
+      {
+        "id": 73805,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805",
+        "nome": "ROBERTO FREIRE",
+        "nomeEleitoral": "ROBERTO FREIRE",
+        "siglaPartido": "PMDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36800",
+        "siglaUf": "PE",
+        "idLegislatura": 46,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/73805.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      }
+    ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/historico"
   },
   "despesas": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
-    "valor_liquido_total": 0,
+    "valor_liquido_total": 0.0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0,
+        "valor_liquido_total": 0.0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2026"
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2023",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2024",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2025",
+      "https://dadosabertos.camara.leg.br/api/v2/deputados/73805/despesas?ano=2026"
+    ]
   },
   "proposicoes": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
     "registros_recentes": [],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=73805",
     "nota_metodologica": "A Câmara considera autores todos os signatários publicados da proposição."
   },
   "votacoes": {
-    "ano": 2026,
+    "periodo": {
+      "inicio": 2023,
+      "fim": 2026
+    },
     "quantidade_registros": 0,
+    "por_ano": [
+      {
+        "ano": 2023,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2024,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2025,
+        "quantidade_registros": 0
+      },
+      {
+        "ano": 2026,
+        "quantidade_registros": 0
+      }
+    ],
     "registros_recentes": [],
-    "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv",
+    "fonte_urls": [
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2023.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2024.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2025.csv",
+      "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
+    ],
     "nota_metodologica": "Os registros individuais são especialmente relevantes em votações nominais; a fonte também pode conter manifestações registradas em algumas votações simbólicas."
   },
   "fontes": [
     "Câmara dos Deputados - Dados Abertos API v2",
+    "votacoesVotos-2023.csv",
+    "votacoesVotos-2024.csv",
+    "votacoesVotos-2025.csv",
     "votacoesVotos-2026.csv",
+    "votacoes-2023.csv",
+    "votacoes-2024.csv",
+    "votacoes-2025.csv",
     "votacoes-2026.csv"
   ]
 }
