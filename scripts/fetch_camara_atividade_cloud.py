@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """Adaptador do coletor de atividade da Câmara para execução em nuvem.
 
-A API /proposicoes aceita o filtro por ano de apresentação diretamente. Usar
-uma data final futura (31/12 durante o ano corrente) passou a produzir HTTP
-400 na versão atual da API. Este adaptador preserva o coletor principal e
-normaliza apenas essa consulta antes da execução.
+A API /proposicoes aceita filtro por ano diretamente. O coletor principal usa
+intervalos de datas para manter compatibilidade local; este adaptador converte
+cada intervalo para o parâmetro `ano` antes de chamar a API.
 
-Também transforma uma falha total (0 perfis atualizados) em erro do processo,
-para impedir um workflow verde sem dados de atividade parlamentar.
+A validação final rejeita apenas uma coleta que precisava atualizar blocos e
+não conseguiu atualizar nenhum. Execuções totalmente em cache continuam
+válidas.
 """
 
 from __future__ import annotations
@@ -47,14 +47,16 @@ def main() -> None:
 
     metadata = json.loads(Path(metadata_path).read_text(encoding="utf-8"))
     confirmed = int(metadata.get("perfis_confirmados") or 0)
-    updated = int(metadata.get("perfis_atualizados") or 0)
+    updated_profiles = int(metadata.get("perfis_atualizados") or 0)
+    updated_blocks = int(metadata.get("blocos_anuais_atualizados") or 0)
     failures = metadata.get("falhas") or []
 
-    if confirmed > 0 and updated == 0:
-        first_error = failures[0].get("erro") if failures and isinstance(failures[0], dict) else None
+    # Se houve falhas e nenhum bloco foi produzido, a execução não pode ficar verde.
+    if confirmed > 0 and failures and updated_profiles == 0 and updated_blocks == 0:
+        first_error = failures[0].get("erro") if isinstance(failures[0], dict) else None
         detail = f" Primeiro erro: {first_error}" if first_error else ""
         raise SystemExit(
-            "Coleta de atividade da Câmara recusada: nenhum perfil foi atualizado."
+            "Coleta de atividade da Câmara recusada: nenhum bloco anual foi atualizado."
             + detail
         )
 
