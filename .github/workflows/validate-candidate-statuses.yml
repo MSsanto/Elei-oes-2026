@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'scripts/enrich_candidate_statuses.py'
+      - 'workers/tse-browser-probe/src/production.js'
       - '.github/workflows/coleta-online.yml'
       - '.github/workflows/validate-candidate-statuses.yml'
   push:
@@ -11,6 +12,7 @@ on:
       - main
     paths:
       - 'scripts/enrich_candidate_statuses.py'
+      - 'workers/tse-browser-probe/src/production.js'
       - '.github/workflows/coleta-online.yml'
       - '.github/workflows/validate-candidate-statuses.yml'
 
@@ -30,7 +32,9 @@ jobs:
           python-version: '3.13'
 
       - name: Validar sintaxe
-        run: python -m py_compile scripts/enrich_candidate_statuses.py
+        run: |
+          python -m py_compile scripts/enrich_candidate_statuses.py
+          node --check workers/tse-browser-probe/src/production.js
 
       - name: Validar normalização sem rede
         run: |
@@ -61,5 +65,23 @@ jobs:
 
           payload = {'candidatos': [item]}
           assert status.normalize_listing_payload(payload) == [item]
-          print('OK: status legível preservado, marcador técnico ignorado e plano completo validado')
+
+          worker_payload = {
+              'ok': True,
+              'source': 'DivulgaCandContas — Tribunal Superior Eleitoral (TSE)',
+              'source_url': 'https://divulgacandcontas.tse.jus.br/divulga/',
+              'collected_at_utc': '2026-09-05T00:00:00+00:00',
+              'election_id': 20322002026,
+              'queries_expected': 109,
+              'queries_succeeded': 109,
+              'queries_failed': 0,
+              'failures': [],
+              'records': [item],
+              'production_revision': 'test',
+          }
+          snapshot, metadata = status.normalize_worker_payload(worker_payload)
+          assert snapshot['123']['situacao_candidatura'] == 'INDEFERIDO COM RECURSO'
+          assert metadata['transport'] == 'cloudflare_browser_worker'
+          assert metadata['queries_succeeded'] == 109
+          print('OK: status legível, fallback técnico e payload do Browser Worker validados')
           PY
