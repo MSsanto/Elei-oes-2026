@@ -1,5 +1,0 @@
-- CI do projeto verde
-- Browser Worker com bens2026/bens2022 verde
-- Cloudflare Pages verde
-- coleta inaugural após deploy do Worker
-- validar manifest e shard real
