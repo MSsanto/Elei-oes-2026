@@ -5,18 +5,18 @@
   "transport": "cloudflare_browser_worker",
   "worker_revision": "dataset-router-v5-candidate-statuses",
   "election_id": 20322002026,
-  "collected_at_utc": "2026-09-05T19:35:29.913Z",
+  "collected_at_utc": "2026-09-05T22:59:26.905Z",
   "queries_expected": 109,
   "queries_succeeded": 109,
   "queries_failed": 0,
   "failures": [],
-  "records": 19996,
-  "worker_elapsed_ms": 14717,
+  "records": 19999,
+  "worker_elapsed_ms": 7018,
   "fallback_used": false,
-  "snapshot_records": 19996,
+  "snapshot_records": 19999,
   "applied": true,
   "policy": "situacao_oficial_sem_classificacao_editorial",
   "files_scanned": 499,
   "files_changed": 499,
-  "candidate_rows_enriched": 43368
+  "candidate_rows_enriched": 43381
 }
