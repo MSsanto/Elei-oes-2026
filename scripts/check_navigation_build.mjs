@@ -17,6 +17,10 @@ const required = [
   'data/candidatos/deputado-estadual/manifest.json',
   'data/candidatos/deputado-estadual/SP/manifest.json',
   'data/candidatos/deputado-estadual/SP/cards/001.json',
+  'data/editorial/manifest.json',
+  'data/editorial/radar.json',
+  'data/editorial/finance-overview.json',
+  'data/editorial/fornecedores/index.json',
 ];
 
 for (const relative of required) await access(path.join(dist, relative));
@@ -39,6 +43,11 @@ const routeMarkers = [
   '/metodologia',
   '/fontes',
   '/sobre',
+  '/radar',
+  '/siga-o-dinheiro',
+  '/fornecedor/',
+  'Radar Eleitoral',
+  'Siga o Dinheiro',
   'A consulta não conseguiu iniciar.',
   'Finanças da campanha',
   'Filtros ativos',
@@ -46,6 +55,11 @@ const routeMarkers = [
 for (const marker of routeMarkers) {
   if (!bundle.includes(marker)) throw new Error(`Marcador de navegação ausente no bundle: ${marker}`);
 }
+
+const editorialManifest = JSON.parse(await readFile(path.join(dist, 'data/editorial/manifest.json'), 'utf8'));
+if (!Number(editorialManifest.finance_records)) throw new Error('Camada editorial sem perfis financeiros.');
+const supplierIndex = JSON.parse(await readFile(path.join(dist, 'data/editorial/fornecedores/index.json'), 'utf8'));
+if (!Array.isArray(supplierIndex.records)) throw new Error('Diretório editorial de fornecedores inválido.');
 
 const index = await readFile(path.join(dist, 'index.html'), 'utf8');
 if (!index.includes('<div id="root"></div>')) throw new Error('Root da aplicação ausente no index.html.');
@@ -55,4 +69,4 @@ if (!index.includes('/assets/')) throw new Error('index.html não referencia o b
 const redirects = await readFile(path.join(dist, '_redirects'), 'utf8');
 if (!redirects.includes('/* /index.html 200')) throw new Error('Fallback SPA não foi copiado para o artefato de produção.');
 
-console.log('Smoke estático concluído: entrada única, cinco cargos, perfil dedicado, páginas institucionais e fallback SPA presentes.');
+console.log(`Smoke estático concluído: núcleo, Fase Editorial, ${supplierIndex.records.length} fornecedores e fallback SPA presentes.`);
