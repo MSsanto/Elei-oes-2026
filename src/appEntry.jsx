@@ -5,6 +5,7 @@ import ConsultationApp from './consultationApp.jsx';
 import InstitutionalPage from './institutionalPages.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
 import { MoneyPage, RadarPage, SupplierPage } from './editorialPhase2.jsx';
+import EditorialDirectory from './editorialDirectory.jsx';
 import './editorialTrust.js';
 import './runtime.css';
 import './designSystem.css';
@@ -68,6 +69,7 @@ function routeForLocation() {
   if (pathname === '/radar') return <RadarPage />;
   if (pathname === '/siga-o-dinheiro') return <MoneyPage />;
   if (/^\/fornecedor\/[a-f0-9]{16}(?:-[^/]+)?$/i.test(pathname)) return <SupplierPage />;
+  if (/^\/candidatos\/[^/]+(?:\/[^/]+){0,3}$/i.test(pathname)) return <EditorialDirectory />;
 
   const params = new URLSearchParams(window.location.search);
   const isProfile = /^\/candidato\/[^/]+$/.test(pathname);
