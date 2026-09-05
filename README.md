@@ -1,6 +1,6 @@
 # Eleições 2026 — Transparência de Campanhas e Mandatos
 
-Projeto open source para organizar e tornar mais acessíveis dados públicos eleitorais e parlamentares, com foco inicial nas candidaturas a **Deputado Federal** e expansão para os demais cargos das Eleições 2026.
+Projeto open source para organizar e tornar mais acessíveis dados públicos eleitorais e parlamentares das **Eleições 2026**.
 
 **Site:** https://eleicoes-2026-ebz.pages.dev
 
@@ -38,7 +38,7 @@ Catálogo legível por máquina: [`config/fontes_oficiais.json`](config/fontes_o
 
 ## Patrimônio declarado
 
-A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e publica arquivos processados em `data/processed/patrimonio-2026/`.
+A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e foi projetada para publicar arquivos processados em `data/processed/patrimonio-2026/`.
 
 - os perfis são divididos em até 256 shards usando `SQ_CANDIDATO`, como a camada financeira;
 - o frontend só baixa o shard da candidatura quando a aba **Patrimônio** é aberta;
@@ -47,6 +47,8 @@ A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e publi
 - ausência de registro na carga é apresentada como ausência de localização, não como afirmação de patrimônio zero;
 - descrições com padrões de endereço, conta/agência, documentos, telefone, CEP, placas, matrículas e identificadores extensos são reduzidas antes da publicação na interface;
 - a categoria e o valor continuam preservados mesmo quando a descrição é reduzida.
+
+A primeira ingestão real de produção ainda está em estabilização e é acompanhada no [`docs/BACKLOG.md`](docs/BACKLOG.md).
 
 ### Evolução 2022 → 2026
 
@@ -114,6 +116,8 @@ A rotina automática está em `.github/workflows/coleta-patrimonio-2026.yml`.
 
 TSE e Câmara possuem identificadores próprios. O projeto não deve associar pessoas somente pelo nome: o vínculo entre bases terá status de correspondência e evidências auditáveis.
 
+A integração com Transferegov permanece como expansão planejada; consulte o backlog para o estado atual.
+
 ## “O que ele fez?”
 
 A especificação da nova camada está em [`docs/O_QUE_ELE_FEZ.md`](docs/O_QUE_ELE_FEZ.md).
@@ -177,19 +181,21 @@ Para instalar atualização automática 4 vezes ao dia:
 
 Documentação: [`docs/COLETA_WINDOWS.md`](docs/COLETA_WINDOWS.md)
 
-## Roadmap
+## Planejamento e governança
 
-1. Carga nacional de candidaturas aos cargos das Eleições 2026.
-2. Busca com autocomplete por candidato, número e partido.
-3. Foto e dados cadastrais oficiais.
-4. Prestação de contas eleitoral, receitas, despesas e fornecedores.
-5. Patrimônio declarado, composição e histórico conservador entre eleições.
-6. Catálogo interno de identidade TSE ↔ Câmara.
-7. Histórico de mandato e despesas parlamentares.
-8. Proposições e votos nominais.
-9. Emendas e transferências especiais por parlamentar, beneficiário e município.
-10. Rastreabilidade de plano de trabalho, relatório de gestão e documentos publicados.
-11. Páginas editoriais por partido e UF, sitemap e SEO estrutural.
-12. API pública versionada.
+O planejamento do projeto também é versionado em Git.
+
+- **[`docs/BACKLOG.md`](docs/BACKLOG.md)** — fonte canônica operacional: prioridades, tarefas, estado, Issues e PRs relacionados.
+- **[`docs/ROADMAP.md`](docs/ROADMAP.md)** — direção estratégica por fases.
+
+Convenção operacional:
+
+- ✅ concluído: entregue na `main` e validado;
+- 🚧 em andamento: implementação ou validação operacional aberta;
+- 📋 backlog: trabalho aprovado ainda não iniciado;
+- 🔎 pesquisa: hipótese dependente de fonte, arquitetura ou escopo;
+- 🧊 suspenso: preservado historicamente, mas fora da prioridade atual.
+
+Mudanças relevantes de escopo ou prioridade devem atualizar o `BACKLOG.md` no mesmo PR sempre que possível. Entregas concluídas permanecem registradas com referências históricas; não são apagadas silenciosamente.
 
 > Projeto independente, sem vínculo com TSE, Câmara dos Deputados, Transferegov.br, partidos ou candidatos.
