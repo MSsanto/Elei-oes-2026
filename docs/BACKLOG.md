@@ -26,19 +26,7 @@ O `BACKLOG.md` registra tarefas concretas, prioridades, estado e vínculos com I
 
 ## 🚧 Em andamento
 
-### Patrimônio — estabilizar primeira carga real de produção
-
-A interface, o pipeline, a sanitização e o vínculo histórico conservador foram implementados no PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17). O deploy alternativo do Worker foi corrigido no PR [#18](https://github.com/MSsanto/Elei-oes-2026/pull/18).
-
-Ainda falta concluir a primeira carga patrimonial real na `main`. O diretório `data/processed/patrimonio-2026/` ainda não está publicado na base atual.
-
-- [ ] Finalizar o PR [#19](https://github.com/MSsanto/Elei-oes-2026/pull/19) — respeitar rate limit do Browser Run.
-- [ ] Reexecutar a coleta oficial de `bem_candidato_2026.zip`, `consulta_cand_2022.zip` e `bem_candidato_2022.zip`.
-- [ ] Validar ZIP, SHA-256, processamento e publicação atômica.
-- [ ] Confirmar `data/processed/patrimonio-2026/manifest.json` e shards reais em produção.
-- [ ] Confirmar uma amostra de perfis com e sem bens localizados e, quando aplicável, histórico 2022 → 2026.
-
-Referências: [`docs/PATRIMONIO.md`](PATRIMONIO.md) · PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17) · PR [#19](https://github.com/MSsanto/Elei-oes-2026/pull/19)
+Nenhuma entrega da fundação editorial está em validação operacional neste momento. Novos trabalhos entram nesta seção quando houver Issue/PR/branch ativo.
 
 ---
 
@@ -185,7 +173,7 @@ Permanece experimental. Nunca apresentar como domicílio eleitoral, residência,
 - ✅ Radar Eleitoral — PR [#16](https://github.com/MSsanto/Elei-oes-2026/pull/16).
 - ✅ Siga o Dinheiro — PR [#16](https://github.com/MSsanto/Elei-oes-2026/pull/16).
 - ✅ Diretório e páginas de fornecedor — PR [#16](https://github.com/MSsanto/Elei-oes-2026/pull/16).
-- ✅ Interface e pipeline de Patrimônio — PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17); ingestão real ainda listada em 🚧 acima.
+- ✅ Patrimônio: interface/pipeline no PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17), correção operacional e fonte oficial secundária no PR [#24](https://github.com/MSsanto/Elei-oes-2026/pull/24), com primeira carga real publicada no commit `6218591f4bd8862f88f86bce20cfe35017a952ba` — **13.843 candidaturas, 76.806 bens e 4.019 vínculos históricos**.
 - ✅ Perfis individuais com HTML/metadata server-side, Open Graph, canonical, sitemap e `robots.txt` — PR [#20](https://github.com/MSsanto/Elei-oes-2026/pull/20).
 - ✅ Build SEO atual: **19.988 perfis em 100 shards**, com proteção contra o limite de arquivos do Cloudflare Pages.
 
@@ -193,6 +181,7 @@ Permanece experimental. Nunca apresentar como domicílio eleitoral, residência,
 
 - ✅ `BACKLOG.md` como fonte canônica operacional e `ROADMAP.md` por fases — PR [#22](https://github.com/MSsanto/Elei-oes-2026/pull/22).
 - ✅ Coleta principal documentada como cloud-first; Windows mantido como fallback manual — [`COLETA_CLOUD.md`](COLETA_CLOUD.md).
+- ✅ Diagnóstico e hierarquia de fontes patrimoniais documentados — [`PATRIMONIO_FONTES.md`](PATRIMONIO_FONTES.md).
 
 ---
 
