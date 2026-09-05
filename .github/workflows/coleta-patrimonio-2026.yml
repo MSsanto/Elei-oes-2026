@@ -1,0 +1,89 @@
+name: Coleta patrimonio eleitoral 2026
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 07:20 em Brasilia (UTC-3). Patrimonio muda mais lentamente que prestacao de contas.
+    - cron: "20 10 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/assets-trigger.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta-patrimonio-eleicoes-2026
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Baixar e processar bens declarados
+        env:
+          TSE_ASSETS_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: python scripts/fetch_candidate_assets_cloud.py
+
+      - name: Validar carga de patrimonio
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path('data/processed/patrimonio-2026')
+          manifest = json.loads((root / 'manifest.json').read_text(encoding='utf-8'))
+          candidates = int(manifest.get('candidates', 0))
+          assets = int(manifest.get('asset_rows', 0))
+          shards = int(manifest.get('shard_count', 0))
+          assert candidates > 0, manifest
+          assert assets > 0, manifest
+          assert 0 < shards <= 256, manifest
+          assert manifest.get('privacy_method'), manifest
+          assert manifest.get('history_method'), manifest
+
+          shard_files = list((root / 'shards').glob('*.json'))
+          assert len(shard_files) == shards, (len(shard_files), shards)
+          sampled = 0
+          for path in shard_files[:8]:
+              payload = json.loads(path.read_text(encoding='utf-8'))
+              for candidate_id, record in list(payload.items())[:4]:
+                  assert str(record.get('id_tse')) == str(candidate_id)
+                  assert 'resumo' in record and 'bens' in record and 'bens_por_tipo' in record
+                  assert isinstance(record.get('historico'), list)
+                  sampled += 1
+          assert sampled > 0
+          print(f'OK: {candidates} candidaturas com {assets} bens em {shards} shards; {manifest.get("historical_matches", 0)} vinculos historicos; {sampled} registros amostrados')
+          PY
+
+      - name: Publicar carga processada
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/processed/patrimonio-2026
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteracao patrimonial para publicar."
+            exit 0
+          fi
+
+          git commit -m "data: atualizar patrimonio declarado de candidaturas 2026"
+          git pull --rebase origin main
+          git push origin HEAD:main

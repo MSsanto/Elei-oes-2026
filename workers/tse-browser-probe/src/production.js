@@ -1,7 +1,7 @@
 import puppeteer from '@cloudflare/puppeteer';
 import probeWorker from './index.js';
 
-const PRODUCTION_REVISION = 'dataset-router-v3-finance';
+const PRODUCTION_REVISION = 'dataset-router-v4-assets';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36';
 
 const DATASETS = {
@@ -17,6 +17,20 @@ const DATASETS = {
     url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip',
     filename: 'prestacao_de_contas_eleitorais_candidatos_2026.zip',
     pattern: '*prestacao_de_contas_eleitorais_candidatos_2026.zip*',
+    minBytes: 10_000,
+  },
+  bens2026: {
+    portal: 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026',
+    url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip',
+    filename: 'bem_candidato_2026.zip',
+    pattern: '*bem_candidato_2026.zip*',
+    minBytes: 10_000,
+  },
+  bens2022: {
+    portal: 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2022',
+    url: 'https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip',
+    filename: 'bem_candidato_2022.zip',
+    pattern: '*bem_candidato_2022.zip*',
     minBytes: 10_000,
   },
 };
@@ -218,7 +232,7 @@ export default {
         const payload = await response.clone().json();
         payload.production_revision = PRODUCTION_REVISION;
         payload.production_datasets = Object.keys(DATASETS);
-        payload.download = '/download?dataset=candidatos|prestacaoCandidatos2026|complementar|candidatos2022';
+        payload.download = '/download?dataset=candidatos|prestacaoCandidatos2026|bens2026|bens2022|complementar|candidatos2022';
         payload.download_auth = 'Authorization: Bearer <DOWNLOAD_TOKEN>';
         return json(payload, response.status);
       } catch {

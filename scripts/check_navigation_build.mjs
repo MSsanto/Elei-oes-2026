@@ -48,6 +48,8 @@ const routeMarkers = [
   'Radar Eleitoral',
   'Siga o Dinheiro',
   'Fornecedor',
+  'Patrimônio',
+  'Bens informados à Justiça Eleitoral',
   'A consulta não conseguiu iniciar.',
   'Finanças da campanha',
   'Filtros ativos',
@@ -73,4 +75,4 @@ if (!index.includes('/assets/')) throw new Error('index.html não referencia o b
 const redirects = await readFile(path.join(dist, '_redirects'), 'utf8');
 if (!redirects.includes('/* /index.html 200')) throw new Error('Fallback SPA não foi copiado para o artefato de produção.');
 
-console.log(`Smoke estático concluído: núcleo, Fase Editorial, ${supplierIndex.records.length} fornecedores e fallback SPA presentes.`);
+console.log(`Smoke estático concluído: núcleo, Fase Editorial, patrimônio, ${supplierIndex.records.length} fornecedores e fallback SPA presentes.`);

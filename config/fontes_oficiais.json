@@ -1,13 +1,29 @@
 {
-  "version": 1,
+  "version": 2,
   "sources": [
     {
       "id": "tse_candidaturas_2026",
-      "name": "TSE - Candidaturas 2026",
+      "name": "TSE - Candidaturas e Bens de Candidatos 2026",
       "authority": "Tribunal Superior Eleitoral",
       "type": "dataset",
       "url": "https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026",
+      "resources": {
+        "candidaturas": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+        "bens": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip"
+      },
       "domains": ["candidatura", "bens", "redes_sociais", "foto"]
+    },
+    {
+      "id": "tse_candidaturas_2022",
+      "name": "TSE - Candidaturas e Bens de Candidatos 2022",
+      "authority": "Tribunal Superior Eleitoral",
+      "type": "historical_dataset",
+      "url": "https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2022",
+      "resources": {
+        "candidaturas": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2022.zip",
+        "bens": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip"
+      },
+      "domains": ["identidade_historica", "bens_historicos"]
     },
     {
       "id": "tse_contas_2026",
@@ -41,6 +57,8 @@
     "keep_source_url_per_record": true,
     "keep_collected_at_per_record": true,
     "do_not_infer_missing_execution": true,
-    "do_not_score_or_rank_politicians": true
+    "do_not_score_or_rank_politicians": true,
+    "historical_identity_requires_exact_unique_signature": true,
+    "reduce_identifying_asset_descriptions": true
   }
 }

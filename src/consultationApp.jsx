@@ -3,6 +3,7 @@ import './photo.css';
 import { ChamberActivity, chamberBasePhoto, displayTseValue } from './chamberProfile.jsx';
 import StateDeputiesView from './stateDeputies.jsx';
 import CampaignFinance from './campaignFinance.jsx';
+import CandidateAssets from './candidateAssets.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
 
 const REPOSITORY_URL = 'https://github.com/MSsanto/Elei-oes-2026';
@@ -220,6 +221,7 @@ function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef}) {
   const confirmed=config.hasChamber&&identity?.correspondencia_status==='confirmada';
   const availableTabs = useMemo(()=>[
     {id:'resumo',label:'Resumo'},
+    {id:'patrimonio',label:'Patrimônio'},
     {id:'financas',label:'Finanças'},
     ...(confirmed?[{id:'camara',label:'Atuação parlamentar'}]:[]),
   ],[confirmed]);
@@ -308,8 +310,8 @@ function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef}) {
             <dl className="profile-summary-grid">{humanRows.map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
             <div className="profile-method-card">
               <strong>Fonte e atualização</strong>
-              <p>Dados de candidatura são apresentados conforme a carga pública identificada pelo projeto. Informações financeiras usam a prestação de contas eleitoral. Dados parlamentares só aparecem quando a correspondência entre fontes atende aos critérios documentados.</p>
-              <div className="profile-method-links"><a href={TSE_CANDIDATES_URL} target="_blank" rel="noreferrer">Candidaturas — TSE ↗</a><a href={TSE_ACCOUNTS_URL} target="_blank" rel="noreferrer">Prestação de contas — TSE ↗</a>{confirmed&&<a href={CAMARA_URL} target="_blank" rel="noreferrer">Dados Abertos — Câmara ↗</a>}<a href="/metodologia">Como tratamos esses dados?</a></div>
+              <p>Dados de candidatura são apresentados conforme a carga pública identificada pelo projeto. Informações patrimoniais usam o arquivo de bens de candidatos e informações financeiras usam a prestação de contas eleitoral. Dados parlamentares só aparecem quando a correspondência entre fontes atende aos critérios documentados.</p>
+              <div className="profile-method-links"><a href={TSE_CANDIDATES_URL} target="_blank" rel="noreferrer">Candidaturas e bens — TSE ↗</a><a href={TSE_ACCOUNTS_URL} target="_blank" rel="noreferrer">Prestação de contas — TSE ↗</a>{confirmed&&<a href={CAMARA_URL} target="_blank" rel="noreferrer">Dados Abertos — Câmara ↗</a>}<a href="/metodologia">Como tratamos esses dados?</a></div>
             </div>
             <details className="profile-technical-details">
               <summary>Identificadores e campos técnicos</summary>
@@ -317,6 +319,7 @@ function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef}) {
             </details>
           </section>
         )}
+        {tab==='patrimonio'&&<section id="panel-patrimonio" className="profile-tabpanel" role="tabpanel" aria-labelledby="tab-patrimonio" tabIndex={0}><CandidateAssets candidate={candidate}/></section>}
         {tab==='financas'&&<section id="panel-financas" className="profile-tabpanel" role="tabpanel" aria-labelledby="tab-financas" tabIndex={0}><CampaignFinance candidate={candidate}/></section>}
         {tab==='camara'&&confirmed&&<section id="panel-camara" className="profile-tabpanel" role="tabpanel" aria-labelledby="tab-camara" tabIndex={0}><ChamberActivity candidate={candidate} identity={identity}/></section>}
       </section>
@@ -554,8 +557,8 @@ export default function ConsultationApp(){
 
         <aside className="profile-method-card" style={{width:'min(1180px, calc(100% - 40px))',margin:'0 auto 54px'}}>
           <strong>Origem e metodologia</strong>
-          <p>Dados eleitorais: TSE. Quando houver associação confirmada de histórico parlamentar, a fonte correspondente é indicada no perfil. A plataforma não cria ranking ou recomendação.</p>
-          <div className="profile-method-links"><a href={TSE_CANDIDATES_URL} target="_blank" rel="noreferrer">Fonte eleitoral ↗</a><a href={TSE_ACCOUNTS_URL} target="_blank" rel="noreferrer">Prestação de contas ↗</a>{config.hasChamber&&<a href={CAMARA_URL} target="_blank" rel="noreferrer">Câmara ↗</a>}<a href="/metodologia">Como tratamos esses dados?</a><a href={REPOSITORY_URL} target="_blank" rel="noreferrer">Código ↗</a></div>
+          <p>Dados eleitorais e patrimoniais: TSE. Quando houver associação confirmada de histórico parlamentar, a fonte correspondente é indicada no perfil. A plataforma não cria ranking ou recomendação.</p>
+          <div className="profile-method-links"><a href={TSE_CANDIDATES_URL} target="_blank" rel="noreferrer">Fonte eleitoral e bens ↗</a><a href={TSE_ACCOUNTS_URL} target="_blank" rel="noreferrer">Prestação de contas ↗</a>{config.hasChamber&&<a href={CAMARA_URL} target="_blank" rel="noreferrer">Câmara ↗</a>}<a href="/metodologia">Como tratamos esses dados?</a><a href={REPOSITORY_URL} target="_blank" rel="noreferrer">Código ↗</a></div>
         </aside>
       </main>
 
