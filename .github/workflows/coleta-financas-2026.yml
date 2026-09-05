@@ -65,21 +65,45 @@ jobs:
                   assert 'resumo' in record
                   sampled += 1
           assert sampled > 0
-          print(f'OK: {candidates} candidaturas financeiras em {shards} shards; {sampled} registros amostrados')
+
+          supplier_index = root / 'fornecedores' / 'index.json'
+          assert supplier_index.exists(), 'Indice integral de fornecedores nao foi gerado.'
+          suppliers = json.loads(supplier_index.read_text(encoding='utf-8'))
+          assert isinstance(suppliers, list), type(suppliers)
+          print(f'OK: {candidates} candidaturas financeiras em {shards} shards; {sampled} registros amostrados; {len(suppliers)} fornecedores')
           PY
+
+      - name: Atualizar camada editorial
+        shell: bash
+        run: node scripts/build_editorial_phase2.mjs --persist
+
+      - name: Validar camada editorial
+        shell: bash
+        run: |
+          node - <<'JS'
+          const fs = require('fs');
+          const base = 'data/processed/editorial';
+          const manifest = JSON.parse(fs.readFileSync(`${base}/manifest.json`, 'utf8'));
+          const radar = JSON.parse(fs.readFileSync(`${base}/radar.json`, 'utf8'));
+          const finance = JSON.parse(fs.readFileSync(`${base}/finance-overview.json`, 'utf8'));
+          if (!manifest.finance_records) throw new Error('Camada editorial sem perfis financeiros.');
+          if (!Array.isArray(radar.events)) throw new Error('Radar editorial invalido.');
+          if (!Number.isFinite(Number(finance.total_receitas))) throw new Error('Agregado financeiro invalido.');
+          console.log(`OK: editorial com ${radar.events.length} eventos e ${manifest.supplier_records} fornecedores.`);
+          JS
 
       - name: Publicar carga processada
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/processed/financas-2026
+          git add data/processed/financas-2026 data/processed/editorial
 
           if git diff --cached --quiet; then
-            echo "Nenhuma alteracao financeira para publicar."
+            echo "Nenhuma alteracao financeira/editorial para publicar."
             exit 0
           fi
 
-          git commit -m "data: atualizar prestacao de contas eleitoral 2026"
+          git commit -m "data: atualizar prestacao de contas e camada editorial"
           git pull --rebase origin main
           git push origin HEAD:main

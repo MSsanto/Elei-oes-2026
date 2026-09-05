@@ -4,6 +4,7 @@ import HomeView, { CARGOS } from './homeView.jsx';
 import ConsultationApp from './consultationApp.jsx';
 import InstitutionalPage from './institutionalPages.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
+import { MoneyPage, RadarPage, SupplierPage } from './editorialPhase2.jsx';
 import './editorialTrust.js';
 import './runtime.css';
 import './designSystem.css';
@@ -64,6 +65,9 @@ function routeForLocation() {
   if (pathname === '/metodologia') return <InstitutionalPage kind="metodologia" />;
   if (pathname === '/fontes') return <InstitutionalPage kind="fontes" />;
   if (pathname === '/sobre') return <InstitutionalPage kind="sobre" />;
+  if (pathname === '/radar') return <RadarPage />;
+  if (pathname === '/siga-o-dinheiro') return <MoneyPage />;
+  if (/^\/fornecedor\/[a-f0-9]{16}(?:-[^/]+)?$/i.test(pathname)) return <SupplierPage />;
 
   const params = new URLSearchParams(window.location.search);
   const isProfile = /^\/candidato\/[^/]+$/.test(pathname);

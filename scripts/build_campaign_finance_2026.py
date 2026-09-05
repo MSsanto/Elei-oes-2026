@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import shutil
@@ -45,6 +46,10 @@ def number(value: Decimal) -> float:
 def normalize_label(value: str) -> str:
     value = re.sub(r"\s+", " ", str(value or "").strip())
     return value or "Não informado"
+
+
+def normalize_identity(value: str) -> str:
+    return re.sub(r"\s+", " ", str(value or "").strip()).upper()
 
 
 def month_label(value: str) -> str:
@@ -115,6 +120,11 @@ def shard_key(cid: str) -> str:
     return f"{value % SHARD_COUNT:02x}"
 
 
+def supplier_id(name: str, kind: str) -> str:
+    raw = f"{normalize_identity(name)}|{normalize_identity(kind)}".encode("utf-8")
+    return hashlib.sha1(raw).hexdigest()[:16]
+
+
 def month_sort_key(label: str):
     try:
         month, year = label.split("/", 1)
@@ -123,7 +133,58 @@ def month_sort_key(label: str):
         return 9999, 99
 
 
-def publish(payloads: dict[str, dict], manifest: dict) -> None:
+def publish_suppliers(staging: Path, suppliers: dict[tuple[str, str], dict[str, Decimal]], generated: str) -> int:
+    base = staging / "fornecedores"
+    shards_dir = base / "shards"
+    shards_dir.mkdir(parents=True, exist_ok=True)
+    index: list[dict] = []
+    shards: dict[str, dict[str, dict]] = defaultdict(dict)
+
+    for (name, kind), candidate_values in sorted(suppliers.items(), key=lambda item: (item[0][0], item[0][1])):
+        sid = supplier_id(name, kind)
+        candidaturas = [
+            {"id_tse": cid, "valor": number(value)}
+            for cid, value in sorted(candidate_values.items(), key=lambda item: item[0])
+            if value > 0
+        ]
+        if not candidaturas:
+            continue
+        total = sum((value for value in candidate_values.values()), Decimal("0"))
+        record = {
+            "schema_version": 1,
+            "id": sid,
+            "nome": name,
+            "tipo": kind,
+            "valor_total": number(total),
+            "candidaturas": candidaturas,
+            "generated_at_utc": generated,
+            "source": "TSE — Prestação de Contas Eleitorais 2026",
+            "source_url": SOURCE_URL,
+        }
+        shards[sid[:2]][sid] = record
+        index.append({
+            "id": sid,
+            "nome": name,
+            "tipo": kind,
+            "valor_total": number(total),
+            "candidaturas": len(candidaturas),
+        })
+
+    for key, records in sorted(shards.items()):
+        (shards_dir / f"{key}.json").write_text(
+            json.dumps(records, ensure_ascii=False, separators=(",", ":")),
+            encoding="utf-8",
+        )
+
+    index.sort(key=lambda item: (normalize_identity(item["nome"]), normalize_identity(item["tipo"])))
+    (base / "index.json").write_text(
+        json.dumps(index, ensure_ascii=False, separators=(",", ":")),
+        encoding="utf-8",
+    )
+    return len(index)
+
+
+def publish(payloads: dict[str, dict], manifest: dict, suppliers: dict[tuple[str, str], dict[str, Decimal]]) -> None:
     parent = OUTPUT_DIR.parent
     parent.mkdir(parents=True, exist_ok=True)
     staging = parent / ".financas-2026.staging"
@@ -147,6 +208,8 @@ def publish(payloads: dict[str, dict], manifest: dict) -> None:
     manifest["shard_strategy"] = "SQ_CANDIDATO modulo 256 em hexadecimal"
     manifest["shard_count"] = len(shards)
     manifest["shard_slots"] = SHARD_COUNT
+    manifest["supplier_count"] = publish_suppliers(staging, suppliers, manifest["generated_at_utc"])
+    manifest["supplier_scope"] = "todos os registros processados de despesas contratadas"
     (staging / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -183,6 +246,7 @@ def process(source_dir: Path) -> dict:
         "fornecedores": defaultdict(Decimal),
         "timeline": defaultdict(lambda: {"receitas": Decimal("0"), "despesas": Decimal("0")}),
     })
+    suppliers: dict[tuple[str, str], dict[str, Decimal]] = defaultdict(lambda: defaultdict(Decimal))
 
     for path in revenue_files:
         for row in read_csv(path):
@@ -217,6 +281,7 @@ def process(source_dir: Path) -> dict:
             supplier = normalize_label(text(row, "NM_FORNECEDOR_RFB", "NM_FORNECEDOR", "NM_FORNECEDOR_ORIGINARIO"))
             supplier_type = normalize_label(text(row, "DS_ORIGEM_DESPESA", "DS_TIPO_DESPESA"))
             item["fornecedores"][(supplier, supplier_type)] += value
+            suppliers[(supplier, supplier_type)][cid] += value
             month = month_label(text(row, "DT_DESPESA", "DT_CONTRATACAO", "DT_GERACAO"))
             if month:
                 item["timeline"][month]["despesas"] += value
@@ -267,7 +332,7 @@ def process(source_dir: Path) -> dict:
         "expense_files": [path.name for path in expense_files],
         "paid_files": [path.name for path in paid_files],
     }
-    publish(payloads, manifest)
+    publish(payloads, manifest, suppliers)
     return manifest
 
 

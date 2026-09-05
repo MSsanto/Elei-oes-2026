@@ -43,3 +43,7 @@ if (await exists(sourceDir)) {
     'utf8',
   );
 }
+
+if (await exists(sourceDir)) {
+  await import('./build_editorial_phase2.mjs');
+}

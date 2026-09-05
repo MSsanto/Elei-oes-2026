@@ -45,6 +45,8 @@ export default function HomeView() {
           </a>
           <div className="home-nav-links">
             <a href="#consultar">Consultar</a>
+            <a href="/radar">Radar</a>
+            <a href="/siga-o-dinheiro">Siga o Dinheiro</a>
             <a href="#metodologia">Metodologia</a>
             <a href="#fontes">Fontes</a>
             <a href="#sobre">Sobre</a>
@@ -74,6 +76,14 @@ export default function HomeView() {
           <div className="home-section-heading compact"><span className="home-kicker">CONSULTAR</span><h2 id="consultar-title">Escolha o cargo.</h2><p>Nenhum cargo é priorizado na entrada. A consulta começa pela escolha explícita do usuário.</p></div>
           <div className="home-cargo-grid" aria-label="Cargos disponíveis">
             {CARGOS.map((cargo) => <a key={cargo.slug} className="home-cargo-card" href={`/?cargo=${cargo.slug}`}><span>{cargo.eyebrow}</span><h3>{cargo.title}</h3><p>{cargo.text}</p><strong>Consultar <b aria-hidden="true">→</b></strong></a>)}
+          </div>
+        </section>
+
+        <section className="home-editorial-discovery" aria-labelledby="descobrir-title">
+          <div className="home-section-heading"><span className="home-kicker">FASE EDITORIAL</span><h2 id="descobrir-title">Os dados também podem encontrar você.</h2><p>A plataforma passa a oferecer caminhos de descoberta além da busca nominal: alterações entre cargas, visão agregada do financiamento e entidades presentes na prestação de contas.</p></div>
+          <div className="home-editorial-grid">
+            <a href="/radar"><span>ATUALIZAÇÕES ENTRE CARGAS</span><h3>Radar Eleitoral</h3><p>Veja alterações detectadas pelo pipeline entre duas versões comparáveis das fontes processadas.</p><strong>Abrir Radar <b aria-hidden="true">→</b></strong></a>
+            <a href="/siga-o-dinheiro"><span>PRESTAÇÃO DE CONTAS</span><h3>Siga o Dinheiro</h3><p>Explore receitas, despesas, categorias oficiais e o diretório de fornecedores publicados.</p><strong>Explorar finanças <b aria-hidden="true">→</b></strong></a>
           </div>
         </section>
 

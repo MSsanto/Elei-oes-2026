@@ -58,6 +58,8 @@ try {
     '/?cargo=senador&uf=SP',
     '/?cargo=deputado-federal',
     '/?cargo=deputado-estadual&uf=SP',
+    '/radar',
+    '/siga-o-dinheiro',
     '/metodologia',
     '/fontes',
     '/sobre',
@@ -81,6 +83,9 @@ try {
     'Senador',
     'Deputado Federal',
     'Deputado Estadual',
+    'Radar Eleitoral',
+    'Siga o Dinheiro',
+    'Fornecedor',
     'A consulta não conseguiu iniciar.',
     'Como os dados são coletados',
     'Finanças da campanha',
@@ -90,25 +95,38 @@ try {
   }
 
   const dataChecks = [
-    ['/data/candidatos/presidente/brasil.json', 'Presidente'],
-    ['/data/candidatos/governador/SP.json', 'Governador SP'],
-    ['/data/candidatos/senador/SP.json', 'Senador SP'],
-    ['/data/deputados_federais.json', 'Deputado Federal'],
-    ['/data/candidatos/deputado-estadual/SP/cards/001.json', 'Deputado Estadual SP'],
+    ['/data/candidatos/presidente/brasil.json', 'Presidente', 'array'],
+    ['/data/candidatos/governador/SP.json', 'Governador SP', 'array'],
+    ['/data/candidatos/senador/SP.json', 'Senador SP', 'array'],
+    ['/data/deputados_federais.json', 'Deputado Federal', 'array'],
+    ['/data/candidatos/deputado-estadual/SP/cards/001.json', 'Deputado Estadual SP', 'array'],
+    ['/data/editorial/radar.json', 'Radar editorial', 'object'],
+    ['/data/editorial/finance-overview.json', 'Siga o Dinheiro', 'object'],
+    ['/data/editorial/fornecedores/index.json', 'Fornecedores', 'object'],
   ];
   let federalCandidates = null;
-  for (const [pathname, description] of dataChecks) {
+  let supplierIndex = null;
+  for (const [pathname, description, kind] of dataChecks) {
     const response = await expectOk(pathname, `Base ${description} indisponível`);
     const payload = await response.json();
-    if (!Array.isArray(payload) || payload.length === 0) throw new Error(`Base ${description} vazia ou inválida.`);
+    if (kind === 'array' && (!Array.isArray(payload) || payload.length === 0)) throw new Error(`Base ${description} vazia ou inválida.`);
+    if (kind === 'object' && (!payload || Array.isArray(payload) || typeof payload !== 'object')) throw new Error(`Base ${description} inválida.`);
     if (pathname === '/data/deputados_federais.json') federalCandidates = payload;
+    if (pathname === '/data/editorial/fornecedores/index.json') supplierIndex = payload;
   }
 
   const candidateId = federalCandidates?.find((item) => item?.id_tse)?.id_tse;
   if (!candidateId) throw new Error('Nenhum identificador TSE disponível para testar rota de perfil.');
   await expectAppRoute(`/candidato/${encodeURIComponent(candidateId)}?cargo=deputado-federal`);
 
-  console.log('Smoke de preview concluído: home, cinco cargos, perfil dedicado, páginas institucionais, bundle e bases essenciais responderam corretamente.');
+  const firstSupplier = supplierIndex?.records?.find((item) => /^[a-f0-9]{16}$/i.test(item?.id));
+  if (!firstSupplier) throw new Error('Nenhum fornecedor disponível para testar rota dedicada.');
+  await expectAppRoute(firstSupplier.href || `/fornecedor/${firstSupplier.id}`);
+  const supplierShardResponse = await expectOk(`/data/editorial/fornecedores/shards/${firstSupplier.id.slice(0,2)}.json`, 'Shard editorial de fornecedor indisponível');
+  const supplierShard = await supplierShardResponse.json();
+  if (!supplierShard[firstSupplier.id]) throw new Error('Fornecedor de teste ausente no shard editorial.');
+
+  console.log('Smoke de preview concluído: núcleo, Radar, Siga o Dinheiro, fornecedor, perfil dedicado e páginas institucionais responderam corretamente.');
 } finally {
   await stopPreview();
 }
