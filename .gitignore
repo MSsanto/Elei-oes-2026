@@ -10,6 +10,11 @@ data/raw/
 # Coletor local Windows
 .collector/
 
+# Dados e artefatos gerados para o build
+public/data/
+public/sitemap.xml
+public/robots.txt
+
 # Arquivos temporários
 *.tmp
 *.log

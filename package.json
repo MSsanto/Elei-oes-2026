@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/prepare-public-data.mjs",
+    "prebuild": "node scripts/prepare-public-data.mjs && node scripts/build_candidate_seo.mjs",
     "build": "vite build",
-    "postbuild": "node scripts/check_navigation_build.mjs && node scripts/smoke_preview.mjs",
+    "postbuild": "node scripts/check_navigation_build.mjs && node scripts/check_candidate_seo.mjs && node scripts/test_candidate_seo_function.mjs && node scripts/smoke_preview.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
