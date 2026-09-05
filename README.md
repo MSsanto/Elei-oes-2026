@@ -28,6 +28,7 @@ O projeto passa a ter duas camadas principais:
 ## Fontes oficiais
 
 - TSE — Candidaturas e Bens de candidatos 2026: `https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026`
+- TSE — DivulgaCandContas, fonte secundária de conferência por candidatura: `https://divulgacandcontas.tse.jus.br/divulga/#/`
 - TSE — Candidaturas e Bens de candidatos 2022, para histórico conservador: `https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2022`
 - TSE — Prestação de Contas Eleitorais 2026: `https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026`
 - Câmara dos Deputados — Dados Abertos: `https://dadosabertos.camara.leg.br/swagger/api.html`
@@ -38,9 +39,9 @@ Catálogo legível por máquina: [`config/fontes_oficiais.json`](config/fontes_o
 
 ## Patrimônio declarado
 
-A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e foi projetada para publicar arquivos processados em `data/processed/patrimonio-2026/`.
+A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e publica arquivos processados em `data/processed/patrimonio-2026/`.
 
-- os perfis são divididos em até 256 shards usando `SQ_CANDIDATO`, como a camada financeira;
+- os perfis são divididos em 256 shards usando `SQ_CANDIDATO`, como a camada financeira;
 - o frontend só baixa o shard da candidatura quando a aba **Patrimônio** é aberta;
 - valores são exibidos nominalmente, sem estimativa de preço de mercado, correção monetária, nota ou classificação;
 - composição por tipo de bem usa a classificação publicada pelo TSE;
@@ -48,7 +49,7 @@ A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e foi p
 - descrições com padrões de endereço, conta/agência, documentos, telefone, CEP, placas, matrículas e identificadores extensos são reduzidas antes da publicação na interface;
 - a categoria e o valor continuam preservados mesmo quando a descrição é reduzida.
 
-A primeira ingestão real de produção ainda está em estabilização e é acompanhada no [`docs/BACKLOG.md`](docs/BACKLOG.md).
+A primeira carga real foi validada e publicada em **05/09/2026**, com **13.843 candidaturas**, **76.806 registros de bens** e **4.019 vínculos históricos 2022 → 2026** confirmados pela metodologia conservadora. O diagnóstico das fontes e a correção operacional estão em [`docs/PATRIMONIO_FONTES.md`](docs/PATRIMONIO_FONTES.md).
 
 ### Evolução 2022 → 2026
 
