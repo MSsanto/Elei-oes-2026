@@ -16,6 +16,7 @@ const LINKS = [
   { href: '/siga-o-dinheiro', label: 'Siga o Dinheiro', key: 'dinheiro' },
   { href: '/metodologia', label: 'Metodologia', key: 'metodologia' },
   { href: '/fontes', label: 'Fontes', key: 'fontes' },
+  { href: '/expediente', label: 'Expediente', key: 'expediente' },
   { href: '/sobre', label: 'Sobre', key: 'sobre' },
 ];
 
@@ -73,6 +74,8 @@ export default function PlatformHeader({ current = '', compact = false }) {
       {menuOpen && (
         <nav ref={menuRef} id="platform-mobile-menu" className="platform-mobile-menu" aria-label="Menu móvel">
           {LINKS.map((item) => <a key={item.key} href={item.href} aria-current={current === item.key ? 'page' : undefined} onClick={() => setMenuOpen(false)}>{item.label}</a>)}
+          <a href="/correcoes" onClick={() => setMenuOpen(false)}>Correções</a>
+          <a href="/situacao-candidatura" onClick={() => setMenuOpen(false)}>Situação da candidatura</a>
           <a href={REPOSITORY_URL} target="_blank" rel="noreferrer">GitHub ↗</a>
         </nav>
       )}

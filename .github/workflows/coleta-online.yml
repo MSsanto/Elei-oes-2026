@@ -37,6 +37,9 @@ jobs:
       - name: Gerar bases de Presidente, Governador, Senador e Deputado Estadual/Distrital
         run: python scripts/build_cargos_2026.py
 
+      - name: Enriquecer situação oficial dos registros de candidatura
+        run: python scripts/enrich_candidate_statuses.py
+
       - name: Reaplicar historico regional por DDD de 2022
         run: python scripts/apply_historical_ddd.py
 
