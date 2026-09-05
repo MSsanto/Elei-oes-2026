@@ -143,22 +143,20 @@ Schema inicial do perfil unificado: [`data/schema/politico.schema.json`](data/sc
 
 ## Arquitetura atual de coleta
 
+A operação normal é **cloud-first** e não depende de um computador pessoal ligado.
+
 ```text
-TSE
- │
- ├── Browser Worker para recursos oficiais com bloqueio a automação direta
- └── coleta local como rota alternativa
+Fontes oficiais
  │
  ▼
-Processadores por domínio
- │
- ├── candidaturas
- ├── patrimônio
- ├── prestação de contas
- └── histórico parlamentar
+Cloudflare Browser Worker (quando necessário)
  │
  ▼
-GitHub
+GitHub Actions
+ │ download / validação / processamento
+ │
+ ▼
+data/processed → commit automático na main
  │
  ▼
 Cloudflare Pages
@@ -167,19 +165,22 @@ Cloudflare Pages
 Site público
 ```
 
-Os primeiros testes receberam HTTP 403 do TSE em acessos automatizados. Por isso, o pipeline possui estratégias alternativas de coleta e um Browser Worker dedicado, enquanto o GitHub Actions valida as transformações antes da publicação.
+As candidaturas e os dados da Câmara são coletados quatro vezes ao dia; Finanças e a camada editorial, duas vezes ao dia; Patrimônio possui workflow diário próprio. Frequências, responsabilidades, validações e estado operacional estão documentados em [`docs/COLETA_CLOUD.md`](docs/COLETA_CLOUD.md).
 
-## Coleta nacional no Windows
+Os primeiros testes receberam HTTP 403 do TSE em acessos automatizados. Por isso, o pipeline usa um Browser Worker dedicado quando necessário. GitHub Actions executa as transformações e validações antes de publicar alterações na `main`.
 
-Depois de clonar o repositório, execute:
+## Fallback local / Windows
+
+Os scripts Windows permanecem como **rota manual de contingência, reprodução e desenvolvimento**. Eles não são necessários para que as atualizações programadas de produção continuem rodando.
+
+Depois de clonar o repositório, a coleta manual pode ser executada com:
 
 `COLETAR_E_PUBLICAR.bat`
 
-Para instalar atualização automática 4 vezes ao dia:
+A instalação de tarefa local com `INSTALAR_ATUALIZACAO_AUTOMATICA.bat` é uma alternativa opcional e não a fonte primária de atualização em produção.
 
-`INSTALAR_ATUALIZACAO_AUTOMATICA.bat`
-
-Documentação: [`docs/COLETA_WINDOWS.md`](docs/COLETA_WINDOWS.md)
+Documentação operacional cloud: [`docs/COLETA_CLOUD.md`](docs/COLETA_CLOUD.md)  
+Documentação do fallback Windows: [`docs/COLETA_WINDOWS.md`](docs/COLETA_WINDOWS.md)
 
 ## Planejamento e governança
 

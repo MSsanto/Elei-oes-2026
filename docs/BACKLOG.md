@@ -130,6 +130,7 @@ Essa configuração é externa aos arquivos versionados, mas permanece no backlo
 
 ### Observabilidade dos dados
 
+- [x] Documentar a matriz operacional de coleta cloud, frequências, workflows, publicação automática e fallback local — [`COLETA_CLOUD.md`](COLETA_CLOUD.md).
 - [ ] Alertar quando uma fonte oficial mudar schema/colunas esperadas.
 - [ ] Registrar versão/hashes de cada carga de forma uniforme entre domínios.
 - [ ] Criar status público simples das últimas cargas válidas por fonte.
@@ -187,6 +188,11 @@ Permanece experimental. Nunca apresentar como domicílio eleitoral, residência,
 - ✅ Interface e pipeline de Patrimônio — PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17); ingestão real ainda listada em 🚧 acima.
 - ✅ Perfis individuais com HTML/metadata server-side, Open Graph, canonical, sitemap e `robots.txt` — PR [#20](https://github.com/MSsanto/Elei-oes-2026/pull/20).
 - ✅ Build SEO atual: **19.988 perfis em 100 shards**, com proteção contra o limite de arquivos do Cloudflare Pages.
+
+### Operação e governança
+
+- ✅ `BACKLOG.md` como fonte canônica operacional e `ROADMAP.md` por fases — PR [#22](https://github.com/MSsanto/Elei-oes-2026/pull/22).
+- ✅ Coleta principal documentada como cloud-first; Windows mantido como fallback manual — [`COLETA_CLOUD.md`](COLETA_CLOUD.md).
 
 ---
 
