@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'scripts/enrich_candidate_statuses.py'
+      - 'workers/tse-browser-probe/src/production.js'
       - '.github/workflows/coleta-online.yml'
   schedule:
     # GitHub Actions usa UTC. Correspondem a 00:25, 06:25, 12:25 e 18:25 em Brasilia (UTC-3).
@@ -44,6 +45,9 @@ jobs:
         run: python scripts/build_cargos_2026.py
 
       - name: Enriquecer situação oficial dos registros de candidatura
+        env:
+          TSE_STATUS_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/candidate-statuses
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
         run: python scripts/enrich_candidate_statuses.py
 
       - name: Reaplicar historico regional por DDD de 2022
