@@ -1,9 +1,19 @@
 const SITE_ORIGIN = 'https://eleicoes-2026-ebz.pages.dev';
 const UF_REQUIRED = new Set(['governador', 'senador', 'deputado-estadual']);
+const EDITORIAL_UF_CARGOS = new Set(['governador', 'senador', 'deputado-federal', 'deputado-estadual']);
 const VALID_TABS = new Set(['patrimonio', 'financas', 'camara']);
 
 function text(value = '') {
   return String(value ?? '').trim();
+}
+
+function slugify(value = '') {
+  return text(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
 }
 
 export function candidateShard(id) {
@@ -50,6 +60,25 @@ function candidateDescription(candidate) {
   return `Perfil de ${name}, ${cargo}${details ? ` — ${details}` : ''}. Dados públicos eleitorais organizados com fonte e metodologia identificadas.`;
 }
 
+function editorialProfileLinks(candidate) {
+  const cargo = text(candidate.cargo_slug);
+  if (!cargo) return [];
+  const links = [{ label: `Candidaturas para ${text(candidate.cargo || cargo)}`, href: `/candidatos/${cargo}` }];
+  const uf = text(candidate.uf).toLowerCase();
+  const party = text(candidate.partido);
+  const partySlug = slugify(party);
+  if (uf && EDITORIAL_UF_CARGOS.has(cargo)) {
+    links.push({ label: `Candidaturas em ${text(candidate.uf).toUpperCase()}`, href: `/candidatos/${cargo}/${uf}` });
+  }
+  if (partySlug) {
+    links.push({ label: `Candidaturas do ${party}`, href: `/candidatos/${cargo}/partido/${partySlug}` });
+    if (uf && EDITORIAL_UF_CARGOS.has(cargo)) {
+      links.push({ label: `${party} em ${text(candidate.uf).toUpperCase()}`, href: `/candidatos/${cargo}/${uf}/partido/${partySlug}` });
+    }
+  }
+  return links;
+}
+
 async function fetchShell(context) {
   const shellUrl = new URL('/', context.request.url);
   return context.env.ASSETS.fetch(new Request(shellUrl, { method: 'GET', headers: context.request.headers }));
@@ -73,6 +102,7 @@ function staticCandidateMarkup(candidate) {
   const number = text(candidate.numero);
   const occupation = cleanPublicValue(candidate.ocupacao);
   const situation = cleanPublicValue(candidate.situacao_candidatura);
+  const editorialLinks = editorialProfileLinks(candidate);
 
   const facts = [
     cargo && `<li><strong>Cargo:</strong> ${escapeHtml(cargo)}</li>`,
@@ -83,12 +113,17 @@ function staticCandidateMarkup(candidate) {
     situation && `<li><strong>Situação publicada:</strong> ${escapeHtml(situation)}</li>`,
   ].filter(Boolean).join('');
 
+  const related = editorialLinks.length
+    ? `<nav aria-label="Explorar candidaturas relacionadas"><strong>Explorar o mesmo recorte:</strong> ${editorialLinks.map((item) => `<a href="${escapeHtml(item.href)}">${escapeHtml(item.label)}</a>`).join(' · ')}</nav>`
+    : '';
+
   return `<main data-seo-prerender="candidate" style="max-width:900px;margin:0 auto;padding:32px 20px;font-family:Arial,sans-serif;color:#0b1f33">
     <p style="font-size:13px;margin:0 0 10px">Eleições 2026 · Transparência Eleitoral</p>
     <article>
       <h1 style="font-size:34px;line-height:1.12;margin:0 0 8px">${escapeHtml(name)}</h1>
       ${fullName && fullName !== name ? `<p style="margin:0 0 18px">Nome completo: ${escapeHtml(fullName)}</p>` : ''}
       <ul style="line-height:1.7;padding-left:20px">${facts}</ul>
+      ${related}
       <p>Dados públicos organizados a partir de fontes oficiais. O projeto é independente e não atribui nota, ranking ou recomendação a candidaturas.</p>
       <p><a href="/metodologia">Metodologia</a> · <a href="/fontes">Fontes</a> · <a href="/">Consultar outras candidaturas</a></p>
     </article>
