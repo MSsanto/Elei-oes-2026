@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "sources": [
     {
       "id": "tse_candidaturas_2026",
@@ -12,6 +12,17 @@
         "bens": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip"
       },
       "domains": ["candidatura", "bens", "redes_sociais", "foto"]
+    },
+    {
+      "id": "tse_divulgacandcontas",
+      "name": "TSE - DivulgaCandContas",
+      "authority": "Tribunal Superior Eleitoral",
+      "type": "official_application_api",
+      "url": "https://divulgacandcontas.tse.jus.br/divulga/#/",
+      "api_base": "https://divulgacandcontas.tse.jus.br/divulga/rest/v1",
+      "domains": ["candidatura", "bens", "documentos", "contas_eleitorais"],
+      "role": "secondary_verification_and_candidate_level_fallback",
+      "notes": "O detalhe da candidatura publicado pelo sistema inclui os bens declarados. Para processamento nacional, o ZIP de Dados Abertos permanece preferencial por eficiência e reprodutibilidade."
     },
     {
       "id": "tse_candidaturas_2022",
@@ -59,6 +70,8 @@
     "do_not_infer_missing_execution": true,
     "do_not_score_or_rank_politicians": true,
     "historical_identity_requires_exact_unique_signature": true,
-    "reduce_identifying_asset_descriptions": true
+    "reduce_identifying_asset_descriptions": true,
+    "prefer_bulk_official_dataset_for_national_processing": true,
+    "allow_official_candidate_detail_as_secondary_verification": true
   }
 }
