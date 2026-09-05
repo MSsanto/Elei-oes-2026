@@ -5,6 +5,7 @@ import json
 import os
 import sys
 import tempfile
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -16,6 +17,8 @@ import build_candidate_assets_2026 as builder
 DEFAULT_WORKER_BASE = "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download"
 ROOT = Path(__file__).resolve().parents[1]
 CACHE_DIR = ROOT / ".collector" / "patrimonio-2026"
+BROWSER_LAUNCH_SPACING_SECONDS = 22
+RATE_LIMIT_RETRIES = 3
 
 DATASETS = {
     "bens2026": ("bem_candidato_2026.zip", 10_000),
@@ -107,10 +110,29 @@ def download(dataset: str, url: str, token: str, destination: Path, minimum: int
     }
 
 
+def is_browser_rate_limit(error: Exception) -> bool:
+    message = str(error).lower()
+    return "429" in message and ("rate limit" in message or "too many" in message or "new browser" in message)
+
+
+def download_with_retry(dataset: str, url: str, token: str, destination: Path, minimum: int) -> dict:
+    for attempt in range(RATE_LIMIT_RETRIES + 1):
+        try:
+            return download(dataset, url, token, destination, minimum)
+        except RuntimeError as error:
+            if not is_browser_rate_limit(error) or attempt >= RATE_LIMIT_RETRIES:
+                raise
+            wait_seconds = BROWSER_LAUNCH_SPACING_SECONDS * (attempt + 1)
+            log(f"Limite temporario do Browser Run em {dataset}; nova tentativa apos {wait_seconds}s.")
+            time.sleep(wait_seconds)
+    raise RuntimeError(f"Falha inesperada ao baixar {dataset}.")
+
+
 def enrich_manifest(transports: list[dict]) -> None:
     manifest_path = builder.OUTPUT_DIR / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     manifest["transport"] = transports
+    manifest["browser_launch_spacing_seconds"] = BROWSER_LAUNCH_SPACING_SECONDS
     manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
@@ -119,13 +141,17 @@ def main() -> int:
     token = os.environ.get("TSE_WORKER_TOKEN", "").strip()
     transports = []
     paths = {}
+    datasets = list(DATASETS.items())
 
     try:
-        for dataset, (filename, minimum) in DATASETS.items():
+        for index, (dataset, (filename, minimum)) in enumerate(datasets):
             destination = CACHE_DIR / filename
             url = worker_url(base, dataset)
-            transports.append(download(dataset, url, token, destination, minimum))
+            transports.append(download_with_retry(dataset, url, token, destination, minimum))
             paths[dataset] = destination
+            if index < len(datasets) - 1:
+                log(f"Aguardando {BROWSER_LAUNCH_SPACING_SECONDS}s antes da proxima instancia do Browser Run.")
+                time.sleep(BROWSER_LAUNCH_SPACING_SECONDS)
 
         with tempfile.TemporaryDirectory(prefix="eleicoes-patrimonio-2026-") as temp:
             root = Path(temp)
