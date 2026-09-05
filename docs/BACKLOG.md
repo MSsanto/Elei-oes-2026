@@ -26,21 +26,7 @@ O `BACKLOG.md` registra tarefas concretas, prioridades, estado e vínculos com I
 
 ## 🚧 Em andamento
 
-### SEO editorial — fechamento da P1
-
-A implementação da malha indexável por cargo, UF e partido está no PR [#26](https://github.com/MSsanto/Elei-oes-2026/pull/26), vinculada à Issue [#21](https://github.com/MSsanto/Elei-oes-2026/issues/21).
-
-- [x] Rotas indexáveis por cargo.
-- [x] Rotas por cargo + UF quando aplicável.
-- [x] Rotas por partido com escopo de cargo e, quando aplicável, UF.
-- [x] Links internos agregador → perfil e perfil → agregadores.
-- [x] `title`, `description`, canonical e Open Graph server-side.
-- [x] Inclusão das novas rotas no sitemap.
-- [x] Canonicalização sem combinações arbitrárias de filtros.
-- [x] Preservação da arquitetura leve de Deputado Estadual/Distrital, com amostra nacional A–Z de até 60 registros.
-- [x] Testes de rota, canonical, sitemap, ordenação e navegação interna.
-
-Validação do PR: **19.991 perfis**, **1.828 páginas agregadoras** e **4.228 arquivos estáticos** no build. Após o merge, mover este bloco para as entregas consolidadas e fechar a Issue #21.
+Nenhuma entrega da fundação editorial está em validação operacional neste momento. Novos trabalhos entram nesta seção quando houver Issue/PR/branch ativo.
 
 ---
 
@@ -174,7 +160,7 @@ Permanece experimental. Nunca apresentar como domicílio eleitoral, residência,
 - ✅ Patrimônio: interface/pipeline no PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17), correção operacional e fonte oficial secundária no PR [#24](https://github.com/MSsanto/Elei-oes-2026/pull/24), com primeira carga real publicada no commit `6218591f4bd8862f88f86bce20cfe35017a952ba` — **13.843 candidaturas, 76.806 bens e 4.019 vínculos históricos**.
 - ✅ Perfis individuais com HTML/metadata server-side, Open Graph, canonical, sitemap e `robots.txt` — PR [#20](https://github.com/MSsanto/Elei-oes-2026/pull/20).
 - ✅ Build SEO de perfis em 100 shards, com proteção contra o limite de arquivos do Cloudflare Pages.
-- 🚧 Malha SEO editorial por cargo, UF e partido — PR [#26](https://github.com/MSsanto/Elei-oes-2026/pull/26); aguardando merge para consolidação final.
+- ✅ Malha SEO editorial por cargo, UF e partido — PR [#26](https://github.com/MSsanto/Elei-oes-2026/pull/26), com **1.828 páginas agregadoras para 19.991 candidaturas**, links bidirecionais perfil ↔ agregadores, sitemap, canonical/OG server-side e ordenação neutra **Nome A–Z**.
 
 ### Operação e governança
 
