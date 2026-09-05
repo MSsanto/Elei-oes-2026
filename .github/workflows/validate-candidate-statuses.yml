@@ -1,0 +1,65 @@
+name: Validar situação de candidaturas
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/enrich_candidate_statuses.py'
+      - '.github/workflows/coleta-online.yml'
+      - '.github/workflows/validate-candidate-statuses.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/enrich_candidate_statuses.py'
+      - '.github/workflows/coleta-online.yml'
+      - '.github/workflows/validate-candidate-statuses.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate-status-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Validar sintaxe
+        run: python -m py_compile scripts/enrich_candidate_statuses.py
+
+      - name: Validar normalização sem rede
+        run: |
+          python - <<'PY'
+          import sys
+          sys.path.insert(0, 'scripts')
+          import enrich_candidate_statuses as status
+
+          assert len(status.QUERY_PLAN) == 109
+          item = {
+              'id': 123,
+              'descricaoSituacao': 'INDEFERIDO COM RECURSO',
+              'codigoSituacao': 7,
+              'dataUltimaAtualizacao': '05/09/2026',
+          }
+          candidate_id, record = status.normalize_status_record(
+              item,
+              collected_at='2026-09-05T00:00:00+00:00',
+          )
+          assert candidate_id == '123'
+          assert record['situacao_candidatura'] == 'INDEFERIDO COM RECURSO'
+          assert record['situacao_candidatura_codigo'] == '7'
+          assert record['situacao_candidatura_fonte'].startswith('DivulgaCandContas')
+          assert status.normalize_status_record(
+              {'id': 456, 'descricaoSituacao': '#NE'},
+              collected_at='2026-09-05T00:00:00+00:00',
+          ) is None
+
+          payload = {'candidatos': [item]}
+          assert status.normalize_listing_payload(payload) == [item]
+          print('OK: status legível preservado, marcador técnico ignorado e plano completo validado')
+          PY
