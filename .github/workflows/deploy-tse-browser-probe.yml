@@ -24,18 +24,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Validar credenciais configuradas
+      - name: Verificar credenciais do deploy alternativo
+        id: credentials
         shell: bash
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "Configure os secrets CLOUDFLARE_API_TOKEN e CLOUDFLARE_ACCOUNT_ID no repositorio antes de executar este workflow."
-            exit 1
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+            echo "Deploy via GitHub Actions ignorado: CLOUDFLARE_API_TOKEN/CLOUDFLARE_ACCOUNT_ID nao configurados."
+            echo "A integracao Git do Cloudflare continua responsavel pelo deploy automatico do Worker."
+          else
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+            echo "Credenciais opcionais configuradas; executando deploy via Wrangler."
           fi
 
       - name: Instalar dependencias do Worker
+        if: steps.credentials.outputs.configured == 'true'
         working-directory: workers/tse-browser-probe
         run: npm install
 
       - name: Deploy do probe no Cloudflare Workers
+        if: steps.credentials.outputs.configured == 'true'
         working-directory: workers/tse-browser-probe
         run: npx wrangler deploy
+
+      - name: Confirmar rota de deploy utilizada
+        if: steps.credentials.outputs.configured != 'true'
+        run: echo "Workflow concluido sem erro; deploy automatico delegado a integracao Git do Cloudflare."
