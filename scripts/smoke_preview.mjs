@@ -86,6 +86,8 @@ try {
     'Radar Eleitoral',
     'Siga o Dinheiro',
     'Fornecedor',
+    'Patrimônio',
+    'Bens informados à Justiça Eleitoral',
     'A consulta não conseguiu iniciar.',
     'Como os dados são coletados',
     'Finanças da campanha',
@@ -118,6 +120,7 @@ try {
   const candidateId = federalCandidates?.find((item) => item?.id_tse)?.id_tse;
   if (!candidateId) throw new Error('Nenhum identificador TSE disponível para testar rota de perfil.');
   await expectAppRoute(`/candidato/${encodeURIComponent(candidateId)}?cargo=deputado-federal`);
+  await expectAppRoute(`/candidato/${encodeURIComponent(candidateId)}?cargo=deputado-federal&aba=patrimonio`);
 
   const firstSupplier = supplierIndex?.records?.find((item) => /^[a-f0-9]{16}$/i.test(item?.id));
   if (!firstSupplier) throw new Error('Nenhum fornecedor disponível para testar rota dedicada.');
@@ -126,7 +129,7 @@ try {
   const supplierShard = await supplierShardResponse.json();
   if (!supplierShard[firstSupplier.id]) throw new Error('Fornecedor de teste ausente no shard editorial.');
 
-  console.log('Smoke de preview concluído: núcleo, Radar, Siga o Dinheiro, fornecedor, perfil dedicado e páginas institucionais responderam corretamente.');
+  console.log('Smoke de preview concluído: núcleo, Radar, Siga o Dinheiro, patrimônio, fornecedor, perfil dedicado e páginas institucionais responderam corretamente.');
 } finally {
   await stopPreview();
 }
