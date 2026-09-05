@@ -49,7 +49,7 @@ Horários abaixo em **Brasília (UTC-3)**.
 | Radar Eleitoral | `.github/workflows/coleta-financas-2026.yml` | junto de Finanças | compara snapshots editoriais e publica somente diferenças detectadas | Não |
 | Siga o Dinheiro | `.github/workflows/coleta-financas-2026.yml` | junto de Finanças | reconstrói agregados editoriais | Não |
 | Fornecedores | `.github/workflows/coleta-financas-2026.yml` | junto de Finanças | atualiza índice e entidades de fornecedor | Não |
-| Patrimônio | `.github/workflows/coleta-patrimonio-2026.yml` | 07:20 | pipeline cloud diário; primeira ingestão real ainda em estabilização conforme `BACKLOG.md` / PR #19 | Não |
+| Patrimônio | `.github/workflows/coleta-patrimonio-2026.yml` | 07:20 | GitHub Actions → `data/processed/patrimonio-2026` → `main`; operação validada em produção em 05/09/2026 | Não |
 | Build/validação do frontend | `.github/workflows/update-data.yml` | push na `main`, PR e execução manual | valida coletores, processadores, build Vite e Worker | Não |
 | Publicação do site | integração Git do Cloudflare Pages | após mudanças publicadas | build/deploy a partir do repositório | Não |
 | Browser Worker | integração Git do Cloudflare | após mudanças do Worker | build/deploy do Worker; Wrangler é rota opcional quando os secrets estiverem configurados | Não |
@@ -85,9 +85,20 @@ A publicação só ocorre depois das validações da carga financeira e da camad
 
 ## Patrimônio
 
-O workflow `coleta-patrimonio-2026.yml` está programado para uma execução diária às 07:20. Ele foi projetado para coletar os recursos oficiais de bens, validar a carga e publicar os shards patrimoniais.
+O workflow `coleta-patrimonio-2026.yml` está programado para uma execução diária às 07:20. Ele coleta os recursos oficiais de bens, valida a carga e publica os shards patrimoniais.
 
-No estado documentado em 05/09/2026, a interface, o processador, a sanitização e o vínculo histórico conservador já estão implementados, mas a **primeira ingestão real de produção ainda está em estabilização**, acompanhada no PR #19 e no `BACKLOG.md`. O bloqueio operacional é tratado na própria automação cloud; não exige que um PC permaneça ligado.
+A operação real foi validada em **05/09/2026** depois da correção do controle de cadência do Cloudflare Browser Run no PR #24. O coletor passou a aguardar 22 segundos entre novas instâncias e repetir somente falhas temporárias compatíveis com HTTP 429.
+
+A primeira carga publicada contém:
+
+- **13.843 candidaturas** com bens localizados;
+- **76.806 registros patrimoniais de 2026**;
+- **256 shards**;
+- **4.019 vínculos históricos 2022 → 2026** confirmados pela metodologia conservadora.
+
+Manifest: `data/processed/patrimonio-2026/manifest.json`.
+
+O Portal de Dados Abertos do TSE permanece como fonte nacional em lote. O **DivulgaCandContas**, também do TSE, está catalogado como fonte oficial secundária para conferência/fallback por candidatura. Consulte [`PATRIMONIO.md`](PATRIMONIO.md) e [`PATRIMONIO_FONTES.md`](PATRIMONIO_FONTES.md).
 
 ## Validação e proteção da última base válida
 
@@ -132,6 +143,7 @@ Documentação do fallback local: [`COLETA_WINDOWS.md`](COLETA_WINDOWS.md).
 - Estado das tarefas e pendências: [`BACKLOG.md`](BACKLOG.md)
 - Direção por fases: [`ROADMAP.md`](ROADMAP.md)
 - Coleta patrimonial: [`PATRIMONIO.md`](PATRIMONIO.md)
+- Diagnóstico das fontes patrimoniais: [`PATRIMONIO_FONTES.md`](PATRIMONIO_FONTES.md)
 - Finanças: [`FINANCAS_ELEITORAIS_2026.md`](FINANCAS_ELEITORAIS_2026.md)
 
 Sempre que frequência, workflow ou responsabilidade de publicação mudar, este documento deve ser atualizado no mesmo PR.
