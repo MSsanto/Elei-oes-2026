@@ -12,6 +12,8 @@ function GitHubIcon() {
 
 const LINKS = [
   { href: '/?cargo=deputado-federal', label: 'Consultar', key: 'consultar' },
+  { href: '/radar', label: 'Radar', key: 'radar' },
+  { href: '/siga-o-dinheiro', label: 'Siga o Dinheiro', key: 'dinheiro' },
   { href: '/metodologia', label: 'Metodologia', key: 'metodologia' },
   { href: '/fontes', label: 'Fontes', key: 'fontes' },
   { href: '/sobre', label: 'Sobre', key: 'sobre' },
