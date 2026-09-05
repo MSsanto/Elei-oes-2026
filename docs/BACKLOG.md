@@ -26,29 +26,27 @@ O `BACKLOG.md` registra tarefas concretas, prioridades, estado e vínculos com I
 
 ## 🚧 Em andamento
 
-Nenhuma entrega da fundação editorial está em validação operacional neste momento. Novos trabalhos entram nesta seção quando houver Issue/PR/branch ativo.
+### SEO editorial — fechamento da P1
+
+A implementação da malha indexável por cargo, UF e partido está no PR [#26](https://github.com/MSsanto/Elei-oes-2026/pull/26), vinculada à Issue [#21](https://github.com/MSsanto/Elei-oes-2026/issues/21).
+
+- [x] Rotas indexáveis por cargo.
+- [x] Rotas por cargo + UF quando aplicável.
+- [x] Rotas por partido com escopo de cargo e, quando aplicável, UF.
+- [x] Links internos agregador → perfil e perfil → agregadores.
+- [x] `title`, `description`, canonical e Open Graph server-side.
+- [x] Inclusão das novas rotas no sitemap.
+- [x] Canonicalização sem combinações arbitrárias de filtros.
+- [x] Preservação da arquitetura leve de Deputado Estadual/Distrital, com amostra nacional A–Z de até 60 registros.
+- [x] Testes de rota, canonical, sitemap, ordenação e navegação interna.
+
+Validação do PR: **19.991 perfis**, **1.828 páginas agregadoras** e **4.228 arquivos estáticos** no build. Após o merge, mover este bloco para as entregas consolidadas e fechar a Issue #21.
 
 ---
 
 ## 📋 Próximas prioridades
 
-### P1 — SEO editorial: páginas por cargo, UF e partido
-
-Issue: [#21 — SEO editorial — páginas indexáveis por cargo, UF e partido](https://github.com/MSsanto/Elei-oes-2026/issues/21)
-
-- [ ] Rotas indexáveis por cargo.
-- [ ] Rotas por cargo + UF quando aplicável.
-- [ ] Rotas por partido com escopo claro.
-- [ ] Links internos agregador → perfil e perfil → agregadores.
-- [ ] `title`, `description`, canonical e Open Graph server-side.
-- [ ] Inclusão das novas rotas no sitemap.
-- [ ] Regras para evitar conteúdo duplicado por combinações de filtros.
-- [ ] Preservar a arquitetura leve de Deputado Estadual/Distrital.
-- [ ] Smoke tests de rota, canonical, sitemap e navegação interna.
-
-A ordenação padrão deve continuar neutra: **Nome A–Z**. Não criar popularidade, score, selo ou recomendação.
-
-### P2 — Expediente e política de correções
+### P1 — Expediente e política de correções
 
 - [ ] Criar página pública de expediente.
 - [ ] Criar política de correções e retificações.
@@ -56,7 +54,7 @@ A ordenação padrão deve continuar neutra: **Nome A–Z**. Não criar populari
 - [ ] Definir como correções relevantes aparecem no site e no repositório.
 - [ ] Ligar `/sobre`, `/metodologia` e a política de correções entre si.
 
-### P3 — Domínio próprio
+### P2 — Domínio próprio
 
 - [ ] Definir domínio canônico do projeto.
 - [ ] Configurar domínio no Cloudflare Pages.
@@ -64,7 +62,7 @@ A ordenação padrão deve continuar neutra: **Nome A–Z**. Não criar populari
 - [ ] Configurar redirecionamento permanente do domínio `pages.dev` para o domínio canônico, quando seguro.
 - [ ] Atualizar README, GitHub About e referências públicas.
 
-### P4 — Programas/propostas de governo para Executivo
+### P3 — Programas/propostas de governo para Executivo
 
 Escopo futuro para Presidente e Governador, condicionado a documentos oficiais disponíveis.
 
@@ -74,7 +72,7 @@ Escopo futuro para Presidente e Governador, condicionado a documentos oficiais d
 - [ ] Exibir conteúdo de maneira descritiva, sem nota, ranking, recomendação ou juízo de mérito.
 - [ ] Documentar metodologia antes da publicação.
 
-### P5 — “O que ele fez?”: emendas e Transferências Especiais
+### P4 — “O que ele fez?”: emendas e Transferências Especiais
 
 Issue: [#1 — O que ele fez? — integrar Câmara e Transferências Especiais](https://github.com/MSsanto/Elei-oes-2026/issues/1)
 
@@ -89,7 +87,7 @@ A camada Câmara já possui histórico, despesas parlamentares, proposições e 
 
 Nunca inferir destino final de verba quando a fonte oficial não o comprovar.
 
-### P6 — Metadados do repositório GitHub
+### P5 — Metadados do repositório GitHub
 
 - [ ] Preencher **Description** do About.
 - [ ] Preencher **Website** com o domínio canônico atual.
@@ -175,7 +173,8 @@ Permanece experimental. Nunca apresentar como domicílio eleitoral, residência,
 - ✅ Diretório e páginas de fornecedor — PR [#16](https://github.com/MSsanto/Elei-oes-2026/pull/16).
 - ✅ Patrimônio: interface/pipeline no PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17), correção operacional e fonte oficial secundária no PR [#24](https://github.com/MSsanto/Elei-oes-2026/pull/24), com primeira carga real publicada no commit `6218591f4bd8862f88f86bce20cfe35017a952ba` — **13.843 candidaturas, 76.806 bens e 4.019 vínculos históricos**.
 - ✅ Perfis individuais com HTML/metadata server-side, Open Graph, canonical, sitemap e `robots.txt` — PR [#20](https://github.com/MSsanto/Elei-oes-2026/pull/20).
-- ✅ Build SEO atual: **19.988 perfis em 100 shards**, com proteção contra o limite de arquivos do Cloudflare Pages.
+- ✅ Build SEO de perfis em 100 shards, com proteção contra o limite de arquivos do Cloudflare Pages.
+- 🚧 Malha SEO editorial por cargo, UF e partido — PR [#26](https://github.com/MSsanto/Elei-oes-2026/pull/26); aguardando merge para consolidação final.
 
 ### Operação e governança
 
