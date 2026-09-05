@@ -1,6 +1,6 @@
 # Eleições 2026 — Transparência de Campanhas e Mandatos
 
-Projeto open source para organizar e tornar mais acessíveis dados públicos eleitorais e parlamentares, com foco inicial nas candidaturas a **Deputado Federal**.
+Projeto open source para organizar e tornar mais acessíveis dados públicos eleitorais e parlamentares, com foco inicial nas candidaturas a **Deputado Federal** e expansão para os demais cargos das Eleições 2026.
 
 **Site:** https://eleicoes-2026-ebz.pages.dev
 
@@ -27,7 +27,8 @@ O projeto passa a ter duas camadas principais:
 
 ## Fontes oficiais
 
-- TSE — Candidaturas 2026: `https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026`
+- TSE — Candidaturas e Bens de candidatos 2026: `https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026`
+- TSE — Candidaturas e Bens de candidatos 2022, para histórico conservador: `https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2022`
 - TSE — Prestação de Contas Eleitorais 2026: `https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026`
 - Câmara dos Deputados — Dados Abertos: `https://dadosabertos.camara.leg.br/swagger/api.html`
 - Transferegov.br — Dados Abertos: `https://api-publica.transferegov.gestao.gov.br/`
@@ -35,12 +36,58 @@ O projeto passa a ter duas camadas principais:
 
 Catálogo legível por máquina: [`config/fontes_oficiais.json`](config/fontes_oficiais.json)
 
+## Patrimônio declarado
+
+A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e publica arquivos processados em `data/processed/patrimonio-2026/`.
+
+- os perfis são divididos em até 256 shards usando `SQ_CANDIDATO`, como a camada financeira;
+- o frontend só baixa o shard da candidatura quando a aba **Patrimônio** é aberta;
+- valores são exibidos nominalmente, sem estimativa de preço de mercado, correção monetária, nota ou classificação;
+- composição por tipo de bem usa a classificação publicada pelo TSE;
+- ausência de registro na carga é apresentada como ausência de localização, não como afirmação de patrimônio zero;
+- descrições com padrões de endereço, conta/agência, documentos, telefone, CEP, placas, matrículas e identificadores extensos são reduzidas antes da publicação na interface;
+- a categoria e o valor continuam preservados mesmo quando a descrição é reduzida.
+
+### Evolução 2022 → 2026
+
+O projeto não associa candidaturas de eleições diferentes somente pelo nome. A evolução patrimonial anterior é exibida apenas quando **nome civil + data de nascimento + gênero** formam uma assinatura normalizada, exata e única nas duas eleições.
+
+Se esse critério não puder ser satisfeito, o perfil mostra somente 2026. Os valores históricos são nominais de cada eleição; a interface não calcula ganho real, valorização de mercado nem inferência patrimonial.
+
+Pipeline:
+
+```text
+TSE — Candidatos 2026
+ └── bem_candidato_2026.zip
+             │
+             ├───────────────┐
+             │               │
+TSE — Candidatos 2022       │
+ ├── consulta_cand_2022.zip │
+ └── bem_candidato_2022.zip │
+             │               │
+             ▼               ▼
+      Browser Worker / validação ZIP + SHA-256
+                       │
+                       ▼
+             processamento offline
+       agregação + privacidade + vínculo histórico
+                       │
+                       ▼
+         patrimonio-2026 / shards por candidato
+                       │
+                       ▼
+                aba Patrimônio
+```
+
+A rotina automática está em `.github/workflows/coleta-patrimonio-2026.yml`.
+
 ## Arquitetura resumida
 
 ```text
                  TSE
                   │
-                  ├── candidaturas / contas
+                  ├── candidaturas / bens / contas
                   │
                   ▼
            identidade politica
@@ -95,13 +142,16 @@ Schema inicial do perfil unificado: [`data/schema/politico.schema.json`](data/sc
 ```text
 TSE
  │
- │ coleta a partir de conexão brasileira
- ▼
-Coletor local no Windows
+ ├── Browser Worker para recursos oficiais com bloqueio a automação direta
+ └── coleta local como rota alternativa
  │
- ├── deputados_federais.json
- ├── metadata.json
- └── ufs/*.json
+ ▼
+Processadores por domínio
+ │
+ ├── candidaturas
+ ├── patrimônio
+ ├── prestação de contas
+ └── histórico parlamentar
  │
  ▼
 GitHub
@@ -113,7 +163,7 @@ Cloudflare Pages
 Site público
 ```
 
-Os primeiros testes receberam HTTP 403 do TSE em acessos automatizados. Por isso, o pipeline possui estratégias alternativas de coleta local, enquanto o GitHub Actions fica responsável pela validação do projeto.
+Os primeiros testes receberam HTTP 403 do TSE em acessos automatizados. Por isso, o pipeline possui estratégias alternativas de coleta e um Browser Worker dedicado, enquanto o GitHub Actions valida as transformações antes da publicação.
 
 ## Coleta nacional no Windows
 
@@ -129,15 +179,17 @@ Documentação: [`docs/COLETA_WINDOWS.md`](docs/COLETA_WINDOWS.md)
 
 ## Roadmap
 
-1. Carga nacional de candidaturas a Deputado Federal.
+1. Carga nacional de candidaturas aos cargos das Eleições 2026.
 2. Busca com autocomplete por candidato, número e partido.
 3. Foto e dados cadastrais oficiais.
 4. Prestação de contas eleitoral, receitas, despesas e fornecedores.
-5. Catálogo interno de identidade TSE ↔ Câmara.
-6. Histórico de mandato e despesas parlamentares.
-7. Proposições e votos nominais.
-8. Emendas e transferências especiais por parlamentar, beneficiário e município.
-9. Rastreabilidade de plano de trabalho, relatório de gestão e documentos publicados.
-10. API pública versionada.
+5. Patrimônio declarado, composição e histórico conservador entre eleições.
+6. Catálogo interno de identidade TSE ↔ Câmara.
+7. Histórico de mandato e despesas parlamentares.
+8. Proposições e votos nominais.
+9. Emendas e transferências especiais por parlamentar, beneficiário e município.
+10. Rastreabilidade de plano de trabalho, relatório de gestão e documentos publicados.
+11. Páginas editoriais por partido e UF, sitemap e SEO estrutural.
+12. API pública versionada.
 
 > Projeto independente, sem vínculo com TSE, Câmara dos Deputados, Transferegov.br, partidos ou candidatos.
