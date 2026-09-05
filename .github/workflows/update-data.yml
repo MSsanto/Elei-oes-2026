@@ -30,6 +30,8 @@ jobs:
           python3 -m py_compile scripts/build_cargos_2026.py
           python3 -m py_compile scripts/build_campaign_finance_2026.py
           python3 -m py_compile scripts/fetch_campaign_finance_cloud.py
+          python3 -m py_compile scripts/build_candidate_assets_2026.py
+          python3 -m py_compile scripts/fetch_candidate_assets_cloud.py
           python3 -m py_compile scripts/inspect_tse_complementary.py
           python3 -m py_compile scripts/inspect_divulgacand_fields.py
           python3 -m py_compile scripts/build_historical_ddd_2022.py
@@ -109,6 +111,51 @@ jobs:
               assert payload['receitas_por_fonte'][0]['categoria'] == 'Fundo Especial'
               assert payload['despesas_por_categoria'][0]['categoria'] == 'Publicidade'
           print('OK: agregacao financeira por candidato em shards')
+          PY
+
+      - name: Validar processador de patrimonio eleitoral
+        run: |
+          python3 - <<'PY'
+          import csv
+          import importlib.util
+          import json
+          import tempfile
+          from pathlib import Path
+
+          spec = importlib.util.spec_from_file_location('assets', 'scripts/build_candidate_assets_2026.py')
+          assets = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(assets)
+
+          with tempfile.TemporaryDirectory() as tmp:
+              base = Path(tmp)
+              source = base / 'source'
+              source.mkdir()
+              target = source / 'bem_candidato_2026_BRASIL.csv'
+              with target.open('w', encoding='latin-1', newline='') as f:
+                  writer = csv.DictWriter(f, fieldnames=['SQ_CANDIDATO','DS_TIPO_BEM_CANDIDATO','DS_BEM_CANDIDATO','VR_BEM_CANDIDATO'], delimiter=';')
+                  writer.writeheader()
+                  writer.writerow({'SQ_CANDIDATO':'123','DS_TIPO_BEM_CANDIDATO':'Apartamento','DS_BEM_CANDIDATO':'Apartamento na Rua Exemplo, 123, CEP 01000-000','VR_BEM_CANDIDATO':'100000,00'})
+                  writer.writerow({'SQ_CANDIDATO':'123','DS_TIPO_BEM_CANDIDATO':'Aplicação financeira','DS_BEM_CANDIDATO':'CDB sem identificador','VR_BEM_CANDIDATO':'2500,00'})
+
+              original = assets.OUTPUT_DIR
+              assets.OUTPUT_DIR = base / 'out'
+              manifest = assets.process(source)
+              shard = assets.shard_key('123')
+              records = json.loads((assets.OUTPUT_DIR / 'shards' / f'{shard}.json').read_text(encoding='utf-8'))
+              payload = records['123']
+              assets.OUTPUT_DIR = original
+
+              assert manifest['candidates'] == 1
+              assert manifest['asset_rows'] == 2
+              assert manifest['asset_rows_with_reduced_description'] >= 1
+              assert payload['resumo']['total_declarado'] == 102500.0
+              assert payload['resumo']['quantidade_bens'] == 2
+              assert any(item['descricao_reduzida'] for item in payload['bens'])
+              public_descriptions = ' '.join(item['descricao'] for item in payload['bens'])
+              assert 'Rua Exemplo' not in public_descriptions
+              assert assets.identity_signature('José da Silva','01/02/1980','MASCULINO') == assets.identity_signature('JOSE   DA SILVA','01/02/1980','masculino')
+              assert assets.identity_signature('Jose da Silva','02/02/1980','MASCULINO') != assets.identity_signature('Jose da Silva','01/02/1980','MASCULINO')
+          print('OK: patrimonio agregado, sanitizado e assinatura historica conservadora validada')
           PY
 
       - name: Validar assinatura conservadora do historico regional
