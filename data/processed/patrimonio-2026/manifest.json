@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "source": "TSE — Candidatos 2026 / Bens de candidatos",
+  "source_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
+  "historical_source": "TSE — Candidatos 2022 / Bens de candidatos",
+  "historical_source_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2022",
+  "generated_at_utc": "2026-09-05T12:25:37.631270+00:00",
+  "candidates": 13843,
+  "asset_rows": 76806,
+  "asset_rows_with_reduced_description": 19185,
+  "historical_asset_rows": 92559,
+  "historical_matches": 4019,
+  "privacy_method": "Redação conservadora de descrições com padrões de endereço, conta/agência, documentos, telefone, CEP, placas, matrículas e outros identificadores extensos.",
+  "history_method": "Vínculo 2022→2026 exige nome civil + data de nascimento + gênero, com assinatura exata e única nos dois anos.",
+  "current_files": [
+    "bem_candidato_2026_BRASIL.csv"
+  ],
+  "shard_strategy": "SQ_CANDIDATO modulo 256 em hexadecimal",
+  "shard_count": 256,
+  "shard_slots": 256,
+  "transport": [
+    {
+      "dataset": "bens2026",
+      "transport": "cloudflare_browser_run_cdp",
+      "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=bens2026",
+      "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+      "downloaded_bytes": 3872878,
+      "sha256": "525abaf4305dacb4b4c7f0a0560e7f8e9a5bb6c95c6989e0910d1a5894e54903",
+      "content_type": "application/zip",
+      "worker_revision": "dataset-router-v4-assets",
+      "archive_entries": 30
+    },
+    {
+      "dataset": "candidatos2022",
+      "transport": "cloudflare_browser_run_cdp",
+      "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=candidatos2022",
+      "source_url": "",
+      "downloaded_bytes": 4389914,
+      "sha256": "cebb0a932e24d8536c644fac04575f4829e7bfe89924a7f19adaf9c3f5d886da",
+      "content_type": "application/zip",
+      "worker_revision": "",
+      "archive_entries": 30
+    },
+    {
+      "dataset": "bens2022",
+      "transport": "cloudflare_browser_run_cdp",
+      "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=bens2022",
+      "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip",
+      "downloaded_bytes": 5369508,
+      "sha256": "acb75c82d2db0514537d6ecc3dcd11999232f34a8f456ade5ddbba41e06b5ea2",
+      "content_type": "application/zip",
+      "worker_revision": "dataset-router-v4-assets",
+      "archive_entries": 30
+    }
+  ],
+  "browser_launch_spacing_seconds": 22
+}
