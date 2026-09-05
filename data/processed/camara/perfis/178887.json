@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:05:48.831859+00:00",
+      "generated_at_utc": "2026-09-05T12:53:39.531300+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178887/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 140,
+        "quantidade_registros": 141,
         "registros_recentes": [
+          {
+            "id": 2645995,
+            "sigla_tipo": "PL",
+            "numero": 5300,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.914, de 3 de julho de 2024, para instituir, no âmbito da Política Nacional de Assistência Estudantil, o Programa Pé-de-Meia Universitário, destinado à permanência e à conclusão da educação superior por estudantes de baixa renda, com incentivos de matrícula, permanência e conclusão na modalidade de poupança; e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645995"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Proíbe visitas domiciliares não solicitadas por instituições financeiras, correspondentes bancários e seus prepostos a aposentados e pensionistas do INSS para oferta de crédito consignado; exige que qualquer oferta a esse grupo ocorra somente mediante comunicação prévia e expressa do consumidor (por escrito ou por meio eletrônico autorizado), com informação clara sobre custos e direito de arrependimento mínimo de 7 dias; estabelece presunção de abusividade e nulidade relativa dos contratos celebrados em domicílio sem observância das regras; obriga registro e identificação dos prepostos, gravação/registro de ofertas em contato remoto, cria regime sancionador administrativo e civil, determina competência do Banco Central, do INSS e dos órgãos de defesa do consumidor para fiscalização e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636059"
-          },
-          {
-            "id": 2636055,
-            "sigla_tipo": "PL",
-            "numero": 3388,
-            "ano": 2026,
-            "ementa": "Institui o Programa Nacional de Parcerias para Inovação (PNPI), disciplina a vinculação de parcela dos recursos do Fundo Nacional de Desenvolvimento Científico e Tecnológico (FNDCT) para subvenções econômicas não reembolsáveis, financiamentos reembolsáveis revolventes, financiamento e certificação de Escritórios de Transferência de Tecnologia (ETTs) em universidades públicas, criação de sandboxes regulatórios setoriais temporários, e medidas de simplificação administrativa para startups derivadas de pesquisa; estabelece metas públicas de indicadores de transferência tecnológica, governança tripartite e prazos mínimos de continuidade dos programas financiados; define disposições sobre governança, prestação de contas e fiscalização, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636055"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178887"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178887",
-  "generated_at_utc": "2026-09-04T11:06:40.589686+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.712132+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1644,7 +1644,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 538,
+    "quantidade_registros": 539,
     "por_ano": [
       {
         "ano": 2023,
@@ -1660,10 +1660,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 140
+        "quantidade_registros": 141
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2645995,
+        "sigla_tipo": "PL",
+        "numero": 5300,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.914, de 3 de julho de 2024, para instituir, no âmbito da Política Nacional de Assistência Estudantil, o Programa Pé-de-Meia Universitário, destinado à permanência e à conclusão da educação superior por estudantes de baixa renda, com incentivos de matrícula, permanência e conclusão na modalidade de poupança; e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645995"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1751,14 +1759,6 @@
         "ano": 2026,
         "ementa": "Proíbe visitas domiciliares não solicitadas por instituições financeiras, correspondentes bancários e seus prepostos a aposentados e pensionistas do INSS para oferta de crédito consignado; exige que qualquer oferta a esse grupo ocorra somente mediante comunicação prévia e expressa do consumidor (por escrito ou por meio eletrônico autorizado), com informação clara sobre custos e direito de arrependimento mínimo de 7 dias; estabelece presunção de abusividade e nulidade relativa dos contratos celebrados em domicílio sem observância das regras; obriga registro e identificação dos prepostos, gravação/registro de ofertas em contato remoto, cria regime sancionador administrativo e civil, determina competência do Banco Central, do INSS e dos órgãos de defesa do consumidor para fiscalização e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636059"
-      },
-      {
-        "id": 2636055,
-        "sigla_tipo": "PL",
-        "numero": 3388,
-        "ano": 2026,
-        "ementa": "Institui o Programa Nacional de Parcerias para Inovação (PNPI), disciplina a vinculação de parcela dos recursos do Fundo Nacional de Desenvolvimento Científico e Tecnológico (FNDCT) para subvenções econômicas não reembolsáveis, financiamentos reembolsáveis revolventes, financiamento e certificação de Escritórios de Transferência de Tecnologia (ETTs) em universidades públicas, criação de sandboxes regulatórios setoriais temporários, e medidas de simplificação administrativa para startups derivadas de pesquisa; estabelece metas públicas de indicadores de transferência tecnológica, governança tripartite e prazos mínimos de continuidade dos programas financiados; define disposições sobre governança, prestação de contas e fiscalização, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636055"
       },
       {
         "id": 2598301,

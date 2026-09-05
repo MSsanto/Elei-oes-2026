@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:06:09.388814+00:00",
+      "generated_at_utc": "2026-09-05T12:54:33.912909+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160598/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 76,
+        "quantidade_registros": 77,
         "registros_recentes": [
+          {
+            "id": 2645996,
+            "sigla_tipo": "REQ",
+            "numero": 4194,
+            "ano": 2026,
+            "ementa": "Requer regime de urgência urgentíssima para a apreciação do Substitutivo do Senado Federal ao Projeto de Lei nº 3.099, de 2019, que institui o Dia Nacional do Autocuidado e altera a Lei nº 8.080, de 19 de setembro de 1990, para prever o estímulo ao autocuidado responsável no âmbito do Sistema Único de Saúde – SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645996"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Estabelece deveres de transparência e informação em publicidade de apostas de quota fixa e conteúdos promocionais relacionados a apostas online.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640015"
-          },
-          {
-            "id": 2635608,
-            "sigla_tipo": "REQ",
-            "numero": 3663,
-            "ano": 2026,
-            "ementa": "Requer, nos termos dos incisos I e II do art. 164 do Regimento Interno da Câmara dos Deputados, a declaração de prejudicialidade do Projeto de Lei nº 2.142, de 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635608"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160598"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160598",
-  "generated_at_utc": "2026-09-04T11:06:40.635757+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.753912+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1562,7 +1562,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1211,
+    "quantidade_registros": 1212,
     "por_ano": [
       {
         "ano": 2023,
@@ -1578,10 +1578,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 76
+        "quantidade_registros": 77
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2645996,
+        "sigla_tipo": "REQ",
+        "numero": 4194,
+        "ano": 2026,
+        "ementa": "Requer regime de urgência urgentíssima para a apreciação do Substitutivo do Senado Federal ao Projeto de Lei nº 3.099, de 2019, que institui o Dia Nacional do Autocuidado e altera a Lei nº 8.080, de 19 de setembro de 1990, para prever o estímulo ao autocuidado responsável no âmbito do Sistema Único de Saúde – SUS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645996"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1669,14 +1677,6 @@
         "ano": 2026,
         "ementa": "Estabelece deveres de transparência e informação em publicidade de apostas de quota fixa e conteúdos promocionais relacionados a apostas online.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640015"
-      },
-      {
-        "id": 2635608,
-        "sigla_tipo": "REQ",
-        "numero": 3663,
-        "ano": 2026,
-        "ementa": "Requer, nos termos dos incisos I e II do art. 164 do Regimento Interno da Câmara dos Deputados, a declaração de prejudicialidade do Projeto de Lei nº 2.142, de 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635608"
       },
       {
         "id": 2598301,

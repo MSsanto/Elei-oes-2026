@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:06:16.748331+00:00",
+      "generated_at_utc": "2026-09-05T12:50:39.971688+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204457/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 12,
+        "quantidade_registros": 13,
         "registros_recentes": [
+          {
+            "id": 2645996,
+            "sigla_tipo": "REQ",
+            "numero": 4194,
+            "ano": 2026,
+            "ementa": "Requer regime de urgência urgentíssima para a apreciação do Substitutivo do Senado Federal ao Projeto de Lei nº 3.099, de 2019, que institui o Dia Nacional do Autocuidado e altera a Lei nº 8.080, de 19 de setembro de 1990, para prever o estímulo ao autocuidado responsável no âmbito do Sistema Único de Saúde – SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645996"
+          },
           {
             "id": 2640403,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco da evolução das obras, bem como da sinalização, segurança viária e demais aspectos relacionados à duplicação necessária na pista do trecho Serra das Araras - BR-116 (Via Dutra).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607379"
-          },
-          {
-            "id": 2604857,
-            "sigla_tipo": "REQ",
-            "numero": 1132,
-            "ano": 2026,
-            "ementa": "Requer a instalação da Frente Parlamentar Mista em apoio à Integração União Europeia – Mercosul.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604857"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204457"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204457",
-  "generated_at_utc": "2026-09-04T11:06:40.648826+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.598799+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1546,7 +1546,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 387,
+    "quantidade_registros": 388,
     "por_ano": [
       {
         "ano": 2023,
@@ -1562,10 +1562,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 12
+        "quantidade_registros": 13
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2645996,
+        "sigla_tipo": "REQ",
+        "numero": 4194,
+        "ano": 2026,
+        "ementa": "Requer regime de urgência urgentíssima para a apreciação do Substitutivo do Senado Federal ao Projeto de Lei nº 3.099, de 2019, que institui o Dia Nacional do Autocuidado e altera a Lei nº 8.080, de 19 de setembro de 1990, para prever o estímulo ao autocuidado responsável no âmbito do Sistema Único de Saúde – SUS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645996"
+      },
       {
         "id": 2640403,
         "sigla_tipo": "REQ",
@@ -1653,14 +1661,6 @@
         "ano": 2026,
         "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco da evolução das obras, bem como da sinalização, segurança viária e demais aspectos relacionados à duplicação necessária na pista do trecho Serra das Araras - BR-116 (Via Dutra).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607379"
-      },
-      {
-        "id": 2604857,
-        "sigla_tipo": "REQ",
-        "numero": 1132,
-        "ano": 2026,
-        "ementa": "Requer a instalação da Frente Parlamentar Mista em apoio à Integração União Europeia – Mercosul.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604857"
       },
       {
         "id": 2598301,

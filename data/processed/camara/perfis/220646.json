@@ -692,7 +692,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:04:33.598499+00:00",
+      "generated_at_utc": "2026-09-05T12:57:10.185945+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -700,8 +700,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220646/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 93,
+        "quantidade_registros": 94,
         "registros_recentes": [
+          {
+            "id": 2646028,
+            "sigla_tipo": "REQ",
+            "numero": 4195,
+            "ano": 2026,
+            "ementa": "Requer a aprovação de Moção de Aplausos à Polícia Militar do Estado de São Paulo pela relevante atuação que resultou na prisão em flagrante de indivíduo suspeito da prática do crime de feminicídio.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646028"
+          },
           {
             "id": 2645967,
             "sigla_tipo": "REQ",
@@ -789,14 +797,6 @@
             "ano": 2026,
             "ementa": "Institui a Virada Nacional da Castração de Cães e Gatos e estabelece diretrizes para ações intensivas de manejo populacional ético no território nacional.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634117"
-          },
-          {
-            "id": 2633488,
-            "sigla_tipo": "PEC",
-            "numero": 15,
-            "ano": 2026,
-            "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220646"
@@ -1011,7 +1011,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220646",
-  "generated_at_utc": "2026-09-04T11:06:40.451758+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.861141+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1224,7 +1224,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 766,
+    "quantidade_registros": 767,
     "por_ano": [
       {
         "ano": 2023,
@@ -1240,10 +1240,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 93
+        "quantidade_registros": 94
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646028,
+        "sigla_tipo": "REQ",
+        "numero": 4195,
+        "ano": 2026,
+        "ementa": "Requer a aprovação de Moção de Aplausos à Polícia Militar do Estado de São Paulo pela relevante atuação que resultou na prisão em flagrante de indivíduo suspeito da prática do crime de feminicídio.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646028"
+      },
       {
         "id": 2645967,
         "sigla_tipo": "REQ",
@@ -1331,14 +1339,6 @@
         "ano": 2026,
         "ementa": "Institui a Virada Nacional da Castração de Cães e Gatos e estabelece diretrizes para ações intensivas de manejo populacional ético no território nacional.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634117"
-      },
-      {
-        "id": 2633488,
-        "sigla_tipo": "PEC",
-        "numero": 15,
-        "ano": 2026,
-        "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
       },
       {
         "id": 2597312,

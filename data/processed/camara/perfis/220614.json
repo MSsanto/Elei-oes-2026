@@ -820,7 +820,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:04:18.308986+00:00",
+      "generated_at_utc": "2026-09-05T12:55:37.649531+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -828,8 +828,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220614/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 28,
+        "quantidade_registros": 30,
         "registros_recentes": [
+          {
+            "id": 2646124,
+            "sigla_tipo": "REL",
+            "numero": 5,
+            "ano": 2026,
+            "ementa": "Relatório de visitas técnicas às unidades federais de saúde do Rio de Janeiro (em atendimento aos Requerimentos CFFC nº 94/2026, nº 112/2026 e nº 157/2026, de autoria do Deputado Daniel Soranz).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646124"
+          },
+          {
+            "id": 2646123,
+            "sigla_tipo": "REL",
+            "numero": 4,
+            "ano": 2026,
+            "ementa": "Relatório de visitas técnicas às unidades federais de saúde do Rio de Janeiro (em atendimento aos Requerimentos CFFC nº 94/2026, nº 112/2026 e nº 157/2026, de autoria do Deputado Daniel Soranz).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646123"
+          },
           {
             "id": 2645721,
             "sigla_tipo": "REL",
@@ -909,22 +925,6 @@
             "ano": 2026,
             "ementa": "Institui a Política de Prevenção da Síndrome de Burnout e de Proteção à Saúde Mental dos profissionais de saúde mental no âmbito do Sistema Único de Saúde (SUS).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628768"
-          },
-          {
-            "id": 2623356,
-            "sigla_tipo": "REQ",
-            "numero": 112,
-            "ano": 2026,
-            "ementa": "Requer a realização de visita técnica de membros da Comissão de Fiscalização Financeira e Controle ao Hospital Universitário Clementino Fraga Filho.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623356"
-          },
-          {
-            "id": 2622213,
-            "sigla_tipo": "REQ",
-            "numero": 2670,
-            "ano": 2026,
-            "ementa": "Requer a inclusão na Ordem do Dia do PLP 185/2024, que “Regulamenta a aposentadoria especial dos agentes comunitários de saúde e dos agentes de combate às endemias, prevista no § 10 do art. 198 da Constituição Federal”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622213"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220614"
@@ -1139,7 +1139,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220614",
-  "generated_at_utc": "2026-09-04T11:06:40.423066+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.800545+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1734,7 +1734,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 229,
+    "quantidade_registros": 231,
     "por_ano": [
       {
         "ano": 2023,
@@ -1750,10 +1750,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 28
+        "quantidade_registros": 30
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646124,
+        "sigla_tipo": "REL",
+        "numero": 5,
+        "ano": 2026,
+        "ementa": "Relatório de visitas técnicas às unidades federais de saúde do Rio de Janeiro (em atendimento aos Requerimentos CFFC nº 94/2026, nº 112/2026 e nº 157/2026, de autoria do Deputado Daniel Soranz).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646124"
+      },
+      {
+        "id": 2646123,
+        "sigla_tipo": "REL",
+        "numero": 4,
+        "ano": 2026,
+        "ementa": "Relatório de visitas técnicas às unidades federais de saúde do Rio de Janeiro (em atendimento aos Requerimentos CFFC nº 94/2026, nº 112/2026 e nº 157/2026, de autoria do Deputado Daniel Soranz).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646123"
+      },
       {
         "id": 2645721,
         "sigla_tipo": "REL",
@@ -1833,22 +1849,6 @@
         "ano": 2026,
         "ementa": "Institui a Política de Prevenção da Síndrome de Burnout e de Proteção à Saúde Mental dos profissionais de saúde mental no âmbito do Sistema Único de Saúde (SUS).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628768"
-      },
-      {
-        "id": 2623356,
-        "sigla_tipo": "REQ",
-        "numero": 112,
-        "ano": 2026,
-        "ementa": "Requer a realização de visita técnica de membros da Comissão de Fiscalização Financeira e Controle ao Hospital Universitário Clementino Fraga Filho.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623356"
-      },
-      {
-        "id": 2622213,
-        "sigla_tipo": "REQ",
-        "numero": 2670,
-        "ano": 2026,
-        "ementa": "Requer a inclusão na Ordem do Dia do PLP 185/2024, que “Regulamenta a aposentadoria especial dos agentes comunitários de saúde e dos agentes de combate às endemias, prevista no § 10 do art. 198 da Constituição Federal”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622213"
       },
       {
         "id": 2599009,

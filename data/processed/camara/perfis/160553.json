@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:03:05.121065+00:00",
+      "generated_at_utc": "2026-09-05T12:50:15.908307+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160553/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 172,
+        "quantidade_registros": 173,
         "registros_recentes": [
+          {
+            "id": 2645996,
+            "sigla_tipo": "REQ",
+            "numero": 4194,
+            "ano": 2026,
+            "ementa": "Requer regime de urgência urgentíssima para a apreciação do Substitutivo do Senado Federal ao Projeto de Lei nº 3.099, de 2019, que institui o Dia Nacional do Autocuidado e altera a Lei nº 8.080, de 19 de setembro de 1990, para prever o estímulo ao autocuidado responsável no âmbito do Sistema Único de Saúde – SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645996"
+          },
           {
             "id": 2645059,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requeiro nos termos do art. 155, do Regimento Interno da Câmara dos Deputados, Regime de Urgência para a apreciação do Projeto de Lei nº 4.845 de 2026 de autoria da Deputada Laura Carneiro que “Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, a Lei nº 8.069, de 13 de julho de 1990 - Estatuto da Criança e do Adolescente, e a Lei nº 12.965, de 23 de abril de 2014 - Marco Civil da Internet, para majorar penas quando o crime contra a honra for cometido contra criança e adolescente com o fim específico de obter engajamento, viralização ou vantagem econômica, e para estabelecer medidas de proteção à imagem, à honra e à privacidade de criança e adolescente em ambiente digital, bem como dever de disponibilização de canal de notificação pelos provedores de aplicação”.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644295"
-          },
-          {
-            "id": 2644294,
-            "sigla_tipo": "REQ",
-            "numero": 4098,
-            "ano": 2026,
-            "ementa": "Requeiro nos termos do art. 155, do Regimento Interno da Câmara dos Deputados, Regime de Urgência para a apreciação do Projeto de Lei nº 4.843 de 2026 de autoria da Deputada Laura Carneiro que “Altera as Leis nº 10.741, de 1º de outubro de 2003 - Estatuto da Pessoa Idosa, nº 13.146, de 6 de julho de 2015 - Estatuto da Pessoa com Deficiência, e nº 8.069, de 13 de julho de 1990 - Estatuto da Criança e do Adolescente, para majorar em um terço as penas dos crimes cometidos por cuidador ou cuidador social contra pessoa idosa, pessoa com deficiência, criança e adolescente",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644294"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160553"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160553",
-  "generated_at_utc": "2026-09-04T11:06:40.253795+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.579936+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1561,7 +1561,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1191,
+    "quantidade_registros": 1192,
     "por_ano": [
       {
         "ano": 2023,
@@ -1577,10 +1577,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 172
+        "quantidade_registros": 173
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2645996,
+        "sigla_tipo": "REQ",
+        "numero": 4194,
+        "ano": 2026,
+        "ementa": "Requer regime de urgência urgentíssima para a apreciação do Substitutivo do Senado Federal ao Projeto de Lei nº 3.099, de 2019, que institui o Dia Nacional do Autocuidado e altera a Lei nº 8.080, de 19 de setembro de 1990, para prever o estímulo ao autocuidado responsável no âmbito do Sistema Único de Saúde – SUS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645996"
+      },
       {
         "id": 2645059,
         "sigla_tipo": "REQ",
@@ -1668,14 +1676,6 @@
         "ano": 2026,
         "ementa": "Requeiro nos termos do art. 155, do Regimento Interno da Câmara dos Deputados, Regime de Urgência para a apreciação do Projeto de Lei nº 4.845 de 2026 de autoria da Deputada Laura Carneiro que “Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 - Código Penal, a Lei nº 8.069, de 13 de julho de 1990 - Estatuto da Criança e do Adolescente, e a Lei nº 12.965, de 23 de abril de 2014 - Marco Civil da Internet, para majorar penas quando o crime contra a honra for cometido contra criança e adolescente com o fim específico de obter engajamento, viralização ou vantagem econômica, e para estabelecer medidas de proteção à imagem, à honra e à privacidade de criança e adolescente em ambiente digital, bem como dever de disponibilização de canal de notificação pelos provedores de aplicação”.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644295"
-      },
-      {
-        "id": 2644294,
-        "sigla_tipo": "REQ",
-        "numero": 4098,
-        "ano": 2026,
-        "ementa": "Requeiro nos termos do art. 155, do Regimento Interno da Câmara dos Deputados, Regime de Urgência para a apreciação do Projeto de Lei nº 4.843 de 2026 de autoria da Deputada Laura Carneiro que “Altera as Leis nº 10.741, de 1º de outubro de 2003 - Estatuto da Pessoa Idosa, nº 13.146, de 6 de julho de 2015 - Estatuto da Pessoa com Deficiência, e nº 8.069, de 13 de julho de 1990 - Estatuto da Criança e do Adolescente, para majorar em um terço as penas dos crimes cometidos por cuidador ou cuidador social contra pessoa idosa, pessoa com deficiência, criança e adolescente",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644294"
       },
       {
         "id": 2599057,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:03:24.376474+00:00",
+      "generated_at_utc": "2026-09-05T12:49:51.129585+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/69871/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 34,
+        "quantidade_registros": 35,
         "registros_recentes": [
+          {
+            "id": 2645984,
+            "sigla_tipo": "PL",
+            "numero": 5296,
+            "ano": 2026,
+            "ementa": "Estabelece garantias mínimas e simplifica a concessão do benefício eventual por situação de morte destinado às despesas com funeral de famílias em situação de vulnerabilidade social, prevendo sua identificação e atendimento de forma ativa pelo Poder Público.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645984"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 9.503, de 1997, que institui o Código de Trânsito Brasileiro, para dispor sobre a apresentação prévia de documentação médica por paciente em tratamento com medicamentos à base de Cannabis no exame toxicológico exigido para a obtenção e a renovação da Carteira Nacional de Habilitação.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636573"
-          },
-          {
-            "id": 2636572,
-            "sigla_tipo": "PL",
-            "numero": 3433,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 9.991, de 24 de julho de 2000, para instituir obrigação de aplicação de recursos em ações adicionais e complementares de compatibilização entre infraestrutura elétrica, arborização urbana, paisagem urbana e adaptação climática das cidades por concessionárias e permissionárias de distribuição de energia elétrica.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636572"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=69871"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "69871",
-  "generated_at_utc": "2026-09-04T11:06:40.302592+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.566978+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1531,7 +1531,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 506,
+    "quantidade_registros": 507,
     "por_ano": [
       {
         "ano": 2023,
@@ -1547,10 +1547,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 34
+        "quantidade_registros": 35
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2645984,
+        "sigla_tipo": "PL",
+        "numero": 5296,
+        "ano": 2026,
+        "ementa": "Estabelece garantias mínimas e simplifica a concessão do benefício eventual por situação de morte destinado às despesas com funeral de famílias em situação de vulnerabilidade social, prevendo sua identificação e atendimento de forma ativa pelo Poder Público.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645984"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1638,14 +1646,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 9.503, de 1997, que institui o Código de Trânsito Brasileiro, para dispor sobre a apresentação prévia de documentação médica por paciente em tratamento com medicamentos à base de Cannabis no exame toxicológico exigido para a obtenção e a renovação da Carteira Nacional de Habilitação.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636573"
-      },
-      {
-        "id": 2636572,
-        "sigla_tipo": "PL",
-        "numero": 3433,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 9.991, de 24 de julho de 2000, para instituir obrigação de aplicação de recursos em ações adicionais e complementares de compatibilização entre infraestrutura elétrica, arborização urbana, paisagem urbana e adaptação climática das cidades por concessionárias e permissionárias de distribuição de energia elétrica.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636572"
       },
       {
         "id": 2598301,

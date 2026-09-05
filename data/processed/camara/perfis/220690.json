@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:05:37.237189+00:00",
+      "generated_at_utc": "2026-09-05T12:53:27.790812+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220690/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 279,
+        "quantidade_registros": 280,
         "registros_recentes": [
+          {
+            "id": 2645985,
+            "sigla_tipo": "PL",
+            "numero": 5297,
+            "ano": 2026,
+            "ementa": "Dispõe sobre o porte de arma de fogo para possuidores de ativos virtuais sob risco de coação física.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645985"
+          },
           {
             "id": 2645842,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui a Política Nacional Escudo da Vida, destinada à prevenção de mortes, lesões, incapacidades e outros agravos à saúde dos profissionais de segurança pública e defesa social, mediante ações de proteção, capacitação, prevenção, assistência e fornecimento de equipamentos, e altera as Leis nº 13.675, de 11 de junho de 2018, e nº 13.756, de 12 de dezembro de 2018.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644388"
-          },
-          {
-            "id": 2644385,
-            "sigla_tipo": "PL",
-            "numero": 5157,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 13.675, de 11 de junho de 2018, e a Lei nº 14.312, de 14 de março de 2022, para fortalecer o Programa Nacional de Qualidade de Vida para Profissionais de Segurança Pública (Pró-Vida) e para ampliar o amparo ao profissional vitimado ou lesionado no exercício da função.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644385"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220690"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220690",
-  "generated_at_utc": "2026-09-04T11:06:40.572298+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.702228+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1010,
+    "quantidade_registros": 1011,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 279
+        "quantidade_registros": 280
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2645985,
+        "sigla_tipo": "PL",
+        "numero": 5297,
+        "ano": 2026,
+        "ementa": "Dispõe sobre o porte de arma de fogo para possuidores de ativos virtuais sob risco de coação física.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645985"
+      },
       {
         "id": 2645842,
         "sigla_tipo": "EMC",
@@ -1509,14 +1517,6 @@
         "ano": 2026,
         "ementa": "Institui a Política Nacional Escudo da Vida, destinada à prevenção de mortes, lesões, incapacidades e outros agravos à saúde dos profissionais de segurança pública e defesa social, mediante ações de proteção, capacitação, prevenção, assistência e fornecimento de equipamentos, e altera as Leis nº 13.675, de 11 de junho de 2018, e nº 13.756, de 12 de dezembro de 2018.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644388"
-      },
-      {
-        "id": 2644385,
-        "sigla_tipo": "PL",
-        "numero": 5157,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 13.675, de 11 de junho de 2018, e a Lei nº 14.312, de 14 de março de 2022, para fortalecer o Programa Nacional de Qualidade de Vida para Profissionais de Segurança Pública (Pró-Vida) e para ampliar o amparo ao profissional vitimado ou lesionado no exercício da função.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644385"
       },
       {
         "id": 2598450,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:03:15.257049+00:00",
+      "generated_at_utc": "2026-09-05T13:00:12.588778+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220658/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 54,
+        "quantidade_registros": 55,
         "registros_recentes": [
+          {
+            "id": 2646130,
+            "sigla_tipo": "REQ",
+            "numero": 189,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro do Meio Ambiente e Mudança do Clima, Sr. João Paulo Ribeiro Capobianco, a fim de prestar esclarecimentos sobre a fundamentação técnica e jurídica, o processo de elaboração e os mecanismos de fiscalização do Plano de Manejo da Área de Proteção Ambiental (APA) da Chapada do Araripe, aprovado por meio da Portaria ICMBio nº 3.607/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646130"
+          },
           {
             "id": 2645765,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "solicito a V. Exa. sejam registradas novas adesões da Frente Parlamentar Católica Apostólica Romana, a todos que assinarem esse documento",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642571"
-          },
-          {
-            "id": 2642132,
-            "sigla_tipo": "REQ",
-            "numero": 30,
-            "ano": 2026,
-            "ementa": "Sugere à Secretaria de Relações Institucionais da Presidência da República a adoção de medidas destinadas à construção de solução jurídica definitiva para a gestão do Santuário Cristo Redentor, localizado no Alto Corcovado, no interior do Parque Nacional da Tijuca, assegurando segurança jurídica às atividades religiosas, culturais e turísticas desenvolvidas pela Arquidiocese de São Sebastião do Rio de Janeiro, em harmonia com a proteção ambiental e patrimonial da área.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642132"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220658"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220658",
-  "generated_at_utc": "2026-09-04T11:06:40.278069+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.985708+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 328,
+    "quantidade_registros": 329,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 54
+        "quantidade_registros": 55
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646130,
+        "sigla_tipo": "REQ",
+        "numero": 189,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro do Meio Ambiente e Mudança do Clima, Sr. João Paulo Ribeiro Capobianco, a fim de prestar esclarecimentos sobre a fundamentação técnica e jurídica, o processo de elaboração e os mecanismos de fiscalização do Plano de Manejo da Área de Proteção Ambiental (APA) da Chapada do Araripe, aprovado por meio da Portaria ICMBio nº 3.607/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646130"
+      },
       {
         "id": 2645765,
         "sigla_tipo": "EMC",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "solicito a V. Exa. sejam registradas novas adesões da Frente Parlamentar Católica Apostólica Romana, a todos que assinarem esse documento",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642571"
-      },
-      {
-        "id": 2642132,
-        "sigla_tipo": "REQ",
-        "numero": 30,
-        "ano": 2026,
-        "ementa": "Sugere à Secretaria de Relações Institucionais da Presidência da República a adoção de medidas destinadas à construção de solução jurídica definitiva para a gestão do Santuário Cristo Redentor, localizado no Alto Corcovado, no interior do Parque Nacional da Tijuca, assegurando segurança jurídica às atividades religiosas, culturais e turísticas desenvolvidas pela Arquidiocese de São Sebastião do Rio de Janeiro, em harmonia com a proteção ambiental e patrimonial da área.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642132"
       },
       {
         "id": 2617503,

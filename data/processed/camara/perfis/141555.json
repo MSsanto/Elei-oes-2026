@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:04:12.053820+00:00",
+      "generated_at_utc": "2026-09-05T12:53:07.101886+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141555/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 48,
+        "quantidade_registros": 50,
         "registros_recentes": [
+          {
+            "id": 2645987,
+            "sigla_tipo": "PL",
+            "numero": 5299,
+            "ano": 2026,
+            "ementa": "Reconhece os serviços da atividade varejista de mercados e hipermercados como essenciais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645987"
+          },
+          {
+            "id": 2645986,
+            "sigla_tipo": "PL",
+            "numero": 5298,
+            "ano": 2026,
+            "ementa": "Torna crime o transporte coletivo irregular de passageiros.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645986"
+          },
           {
             "id": 2644885,
             "sigla_tipo": "EMC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "COMISSÃO DE DESENVOLVIMENTO ECONÔMICO\n\nPROJETO DE LEI Nº 1.571, DE 2026\n\nDispõe sobre o marco regulatório das relações contratuais de correspondência bancária no País, estabelece diretrizes de proteção econômica, paridade de condições comerciais, transparência e devido processo sancionador, e dá outras providências.\n\nEMENDA MODIFICATIVA",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642805"
-          },
-          {
-            "id": 2642761,
-            "sigla_tipo": "REQ",
-            "numero": 4021,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em comemoração aos 70 anos do legado educacional do brasileiro Amador Aguiar, por seu ideal visionário de promover a transformação social por meio do oferecimento de educação gratuita e de alta qualidade, especialmente em comunidades de vulnerabilidade socioeconômica, por meio das 40 escolas da Fundação por ele criada, presentes em todo os estados país.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642761"
-          },
-          {
-            "id": 2642549,
-            "sigla_tipo": "EMC",
-            "numero": 6,
-            "ano": 2026,
-            "ementa": "COMISSÃO DE DESENVOLVIMENTO ECONÔMICO\n\nPROJETO DE LEI Nº 1.571, DE 2026\n\nDispõe sobre o marco regulatório das relações contratuais de correspondência bancária no País, estabelece diretrizes de proteção econômica, paridade de condições comerciais, transparência e devido processo sancionador, e dá outras providências.\n\nEMENDA MODIFICATIVA",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642549"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141555"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141555",
-  "generated_at_utc": "2026-09-04T11:06:40.413757+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.691411+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1580,7 +1580,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 732,
+    "quantidade_registros": 734,
     "por_ano": [
       {
         "ano": 2023,
@@ -1596,10 +1596,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 48
+        "quantidade_registros": 50
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2645987,
+        "sigla_tipo": "PL",
+        "numero": 5299,
+        "ano": 2026,
+        "ementa": "Reconhece os serviços da atividade varejista de mercados e hipermercados como essenciais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645987"
+      },
+      {
+        "id": 2645986,
+        "sigla_tipo": "PL",
+        "numero": 5298,
+        "ano": 2026,
+        "ementa": "Torna crime o transporte coletivo irregular de passageiros.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645986"
+      },
       {
         "id": 2644885,
         "sigla_tipo": "EMC",
@@ -1679,22 +1695,6 @@
         "ano": 2026,
         "ementa": "COMISSÃO DE DESENVOLVIMENTO ECONÔMICO\n\nPROJETO DE LEI Nº 1.571, DE 2026\n\nDispõe sobre o marco regulatório das relações contratuais de correspondência bancária no País, estabelece diretrizes de proteção econômica, paridade de condições comerciais, transparência e devido processo sancionador, e dá outras providências.\n\nEMENDA MODIFICATIVA",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642805"
-      },
-      {
-        "id": 2642761,
-        "sigla_tipo": "REQ",
-        "numero": 4021,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em comemoração aos 70 anos do legado educacional do brasileiro Amador Aguiar, por seu ideal visionário de promover a transformação social por meio do oferecimento de educação gratuita e de alta qualidade, especialmente em comunidades de vulnerabilidade socioeconômica, por meio das 40 escolas da Fundação por ele criada, presentes em todo os estados país.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642761"
-      },
-      {
-        "id": 2642549,
-        "sigla_tipo": "EMC",
-        "numero": 6,
-        "ano": 2026,
-        "ementa": "COMISSÃO DE DESENVOLVIMENTO ECONÔMICO\n\nPROJETO DE LEI Nº 1.571, DE 2026\n\nDispõe sobre o marco regulatório das relações contratuais de correspondência bancária no País, estabelece diretrizes de proteção econômica, paridade de condições comerciais, transparência e devido processo sancionador, e dá outras providências.\n\nEMENDA MODIFICATIVA",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642549"
       },
       {
         "id": 2598301,

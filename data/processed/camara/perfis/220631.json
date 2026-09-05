@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-04T11:04:59.490815+00:00",
+      "generated_at_utc": "2026-09-05T12:57:05.594590+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220631/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 26,
+        "quantidade_registros": 27,
         "registros_recentes": [
+          {
+            "id": 2646104,
+            "sigla_tipo": "RIC",
+            "numero": 2567,
+            "ano": 2026,
+            "ementa": "Requer ao Ministro de Estado de Minas e Energia informações acerca dos direitos minerários, do acompanhamento federal e da atuação dos órgãos vinculados ao Ministério em relação ao empreendimento de mineração e beneficiamento de lítio desenvolvido pela PLS Brasil Mineração Ltda., no Município de Salinas/MG, especialmente quanto à dependência hídrica do empreendimento e à captação de água autorizada na Barragem de Salinas",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646104"
+          },
           {
             "id": 2644847,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1327/2025",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622730"
-          },
-          {
-            "id": 2622729,
-            "sigla_tipo": "EMC",
-            "numero": 200,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1327/2025",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622729"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220631"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220631",
-  "generated_at_utc": "2026-09-04T11:06:40.504447+00:00",
+  "generated_at_utc": "2026-09-05T13:00:22.858618+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1436,7 +1436,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 211,
+    "quantidade_registros": 212,
     "por_ano": [
       {
         "ano": 2023,
@@ -1452,10 +1452,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 26
+        "quantidade_registros": 27
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646104,
+        "sigla_tipo": "RIC",
+        "numero": 2567,
+        "ano": 2026,
+        "ementa": "Requer ao Ministro de Estado de Minas e Energia informações acerca dos direitos minerários, do acompanhamento federal e da atuação dos órgãos vinculados ao Ministério em relação ao empreendimento de mineração e beneficiamento de lítio desenvolvido pela PLS Brasil Mineração Ltda., no Município de Salinas/MG, especialmente quanto à dependência hídrica do empreendimento e à captação de água autorizada na Barragem de Salinas",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646104"
+      },
       {
         "id": 2644847,
         "sigla_tipo": "EMC",
@@ -1543,14 +1551,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1327/2025",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622730"
-      },
-      {
-        "id": 2622729,
-        "sigla_tipo": "EMC",
-        "numero": 200,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1327/2025",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622729"
       },
       {
         "id": 2598197,
