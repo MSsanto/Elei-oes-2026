@@ -4,10 +4,10 @@
   "source_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2026",
   "historical_source": "TSE — Candidatos 2022 / Bens de candidatos",
   "historical_source_url": "https://dadosabertos.tse.jus.br/dataset/candidatos-2022",
-  "generated_at_utc": "2026-09-05T12:35:19.089889+00:00",
-  "candidates": 13843,
-  "asset_rows": 76806,
-  "asset_rows_with_reduced_description": 19185,
+  "generated_at_utc": "2026-09-06T13:44:20.884688+00:00",
+  "candidates": 13846,
+  "asset_rows": 76826,
+  "asset_rows_with_reduced_description": 19193,
   "historical_asset_rows": 92559,
   "historical_matches": 4019,
   "privacy_method": "Redação conservadora de descrições com padrões de endereço, conta/agência, documentos, telefone, CEP, placas, matrículas e outros identificadores extensos.",
@@ -24,10 +24,10 @@
       "transport": "cloudflare_browser_run_cdp",
       "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=bens2026",
       "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-      "downloaded_bytes": 3872878,
-      "sha256": "525abaf4305dacb4b4c7f0a0560e7f8e9a5bb6c95c6989e0910d1a5894e54903",
+      "downloaded_bytes": 3881161,
+      "sha256": "072569c46a14df0ab0b42cc96607984003231723af852ca296472273c7a22d4b",
       "content_type": "application/zip",
-      "worker_revision": "dataset-router-v4-assets",
+      "worker_revision": "dataset-router-v5-candidate-statuses",
       "archive_entries": 30
     },
     {
@@ -49,7 +49,7 @@
       "downloaded_bytes": 5369508,
       "sha256": "acb75c82d2db0514537d6ecc3dcd11999232f34a8f456ade5ddbba41e06b5ea2",
       "content_type": "application/zip",
-      "worker_revision": "dataset-router-v4-assets",
+      "worker_revision": "dataset-router-v5-candidate-statuses",
       "archive_entries": 30
     }
   ],
