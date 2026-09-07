@@ -2,6 +2,11 @@ name: Watchdog cloud eleitoral
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/watchdog-cloud.yml'
   workflow_run:
     workflows:
       - "Coleta online TSE + Camara"
@@ -27,7 +32,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       REPO: ${{ github.repository }}
       ALERT_TITLE: "[ALERTA] Coleta eleitoral automática"
-      MAX_AGE_HOURS: "8"
+      COLLECTION_CADENCE_HOURS: "6"
+      SCHEDULER_GRACE_HOURS: "6"
       MANIFEST_PATH: "data/processed/candidatos/deputado-estadual/manifest.json"
       SITE_URL: "https://eleicoes-2026-ebz.pages.dev/"
       WORKER_HEALTH_URL: "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/health"
@@ -46,9 +52,11 @@ jobs:
           declare -a REASONS=()
           NOW_EPOCH=$(date -u +%s)
           NOW_ISO=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          MAX_AGE_HOURS=$((COLLECTION_CADENCE_HOURS + SCHEDULER_GRACE_HOURS))
 
           DATA_GENERATED="desconhecido"
           DATA_AGE_MINUTES="desconhecido"
+          DATA_FRESHNESS="desconhecido"
           LAST_RUN_ID="desconhecido"
           LAST_RUN_URL="desconhecido"
           LAST_RUN_CONCLUSION="desconhecido"
@@ -83,9 +91,16 @@ jobs:
               AGE_SECONDS=$((NOW_EPOCH - DATA_EPOCH))
               if (( AGE_SECONDS < 0 )); then AGE_SECONDS=0; fi
               DATA_AGE_MINUTES=$((AGE_SECONDS / 60))
+              CADENCE_SECONDS=$((COLLECTION_CADENCE_HOURS * 3600))
               MAX_AGE_SECONDS=$((MAX_AGE_HOURS * 3600))
+
               if (( AGE_SECONDS > MAX_AGE_SECONDS )); then
-                REASONS+=("Dados desatualizados: ${DATA_AGE_MINUTES} min de idade, limite ${MAX_AGE_HOURS} h")
+                DATA_FRESHNESS="desatualizado"
+                REASONS+=("Dados desatualizados: ${DATA_AGE_MINUTES} min de idade, limite ${MAX_AGE_HOURS} h (${COLLECTION_CADENCE_HOURS} h de cadência + ${SCHEDULER_GRACE_HOURS} h de tolerância ao scheduler)")
+              elif (( AGE_SECONDS > CADENCE_SECONDS )); then
+                DATA_FRESHNESS="atraso_tolerado"
+              else
+                DATA_FRESHNESS="atual"
               fi
             else
               REASONS+=("Manifesto sem generated_at_utc válido")
@@ -137,6 +152,8 @@ jobs:
               echo "- Atualização da execução: \`$LAST_RUN_UPDATED\`"
               echo "- Dados gerados em: \`$DATA_GENERATED\`"
               echo "- Idade dos dados: \`${DATA_AGE_MINUTES} min\`"
+              echo "- Estado de atualidade: \`$DATA_FRESHNESS\`"
+              echo "- Janela de alerta: \`${MAX_AGE_HOURS} h\` (${COLLECTION_CADENCE_HOURS} h de cadência + ${SCHEDULER_GRACE_HOURS} h de tolerância)"
               echo "- Worker Cloudflare: \`$WORKER_STATUS\`"
               echo "- Site Cloudflare Pages: \`$SITE_STATUS\`"
               echo
@@ -156,9 +173,9 @@ jobs:
             exit 1
           fi
 
-          echo "Sistema saudável: coleta=$LAST_RUN_CONCLUSION, dados=${DATA_AGE_MINUTES}min, worker=$WORKER_STATUS, site=$SITE_STATUS"
+          echo "Sistema saudável: coleta=$LAST_RUN_CONCLUSION, dados=${DATA_AGE_MINUTES}min ($DATA_FRESHNESS), janela=${MAX_AGE_HOURS}h, worker=$WORKER_STATUS, site=$SITE_STATUS"
 
           if [[ -n "$ISSUE_NUMBER" && "$ISSUE_STATE" == "OPEN" ]]; then
-            gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "✅ Recuperação confirmada automaticamente em **$NOW_ISO**. Coleta, atualidade dos dados, Worker e site público estão saudáveis."
+            gh issue comment "$ISSUE_NUMBER" --repo "$REPO" --body "✅ Recuperação confirmada automaticamente em **$NOW_ISO**. Coleta, atualidade dos dados, Worker e site público estão saudáveis. Janela operacional: ${MAX_AGE_HOURS} h (${COLLECTION_CADENCE_HOURS} h de cadência + ${SCHEDULER_GRACE_HOURS} h de tolerância ao scheduler)."
             gh issue close "$ISSUE_NUMBER" --repo "$REPO" --reason completed
           fi
