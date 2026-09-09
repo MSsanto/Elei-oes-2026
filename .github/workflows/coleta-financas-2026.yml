@@ -35,10 +35,37 @@ jobs:
           python-version: "3.13"
 
       - name: Baixar e processar Prestacao de Contas Eleitorais 2026
+        id: collect
+        continue-on-error: true
         env:
           TSE_FINANCE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026
           TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+          TSE_FINANCE_MAX_ATTEMPTS: "3"
+          TSE_FINANCE_RETRY_SECONDS: "15"
         run: python scripts/fetch_campaign_finance_cloud.py
+
+      - name: Publicar diagnostico da falha
+        if: steps.collect.outcome != 'success'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/status/finance-collection.json
+
+          if git diff --cached --quiet; then
+            echo "Nenhum diagnostico novo para publicar."
+          else
+            git commit -m "status: registrar falha da coleta financeira"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Encerrar com falha se a coleta nao concluiu
+        if: steps.collect.outcome != 'success'
+        shell: bash
+        run: |
+          echo "A coleta financeira falhou; o ultimo snapshot valido foi preservado."
+          exit 1
 
       - name: Validar carga financeira
         shell: bash
@@ -97,10 +124,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/processed/financas-2026 data/processed/editorial
+          git add data/processed/financas-2026 data/processed/editorial data/status/finance-collection.json
 
           if git diff --cached --quiet; then
-            echo "Nenhuma alteracao financeira/editorial para publicar."
+            echo "Nenhuma alteracao financeira/editorial/status para publicar."
             exit 0
           fi
 
