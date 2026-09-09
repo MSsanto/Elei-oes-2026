@@ -51,11 +51,17 @@ A camada patrimonial usa o recurso oficial **Bens de candidatos** do TSE e publi
 
 A primeira carga real foi validada e publicada em **05/09/2026**, com **13.843 candidaturas**, **76.806 registros de bens** e **4.019 vínculos históricos 2022 → 2026** confirmados pela metodologia conservadora. O diagnóstico das fontes e a correção operacional estão em [`docs/PATRIMONIO_FONTES.md`](docs/PATRIMONIO_FONTES.md).
 
-### Evolução 2022 → 2026
+### Histórico de declarações patrimoniais — 2022 e 2026
 
-O projeto não associa candidaturas de eleições diferentes somente pelo nome. A evolução patrimonial anterior é exibida apenas quando **nome civil + data de nascimento + gênero** formam uma assinatura normalizada, exata e única nas duas eleições.
+O projeto não associa candidaturas de eleições diferentes somente pelo nome. O histórico é exibido apenas quando **nome civil + data de nascimento + gênero** formam uma assinatura normalizada, exata e única nas duas eleições.
 
-Se esse critério não puder ser satisfeito, o perfil mostra somente 2026. Os valores históricos são nominais de cada eleição; a interface não calcula ganho real, valorização de mercado nem inferência patrimonial.
+Quando o vínculo é confirmado, a interface apresenta as declarações em ordem cronológica e identifica separadamente **2022 — declaração histórica localizada** e **2026 — candidatura atual**. Cada valor corresponde ao total nominal declarado na respectiva eleição.
+
+A existência de uma declaração anterior comprova o registro daquela candidatura e de seus bens no conjunto oficial consultado, mas não é usada isoladamente para afirmar eleição ou exercício de mandato. Informações de mandato permanecem em módulo próprio e dependem de fonte parlamentar correspondente.
+
+A interface não calcula percentual de aumento ou redução, diferença patrimonial agregada, ranking, score, correção monetária automática, estimativa de mercado ou conclusão sobre origem de recursos ou eventual irregularidade.
+
+Metodologia detalhada: [`docs/HISTORICO_PATRIMONIAL.md`](docs/HISTORICO_PATRIMONIAL.md).
 
 Pipeline:
 
