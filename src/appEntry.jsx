@@ -9,6 +9,7 @@ import { MoneyPage, RadarPage, SupplierPage } from './editorialPhase2.jsx';
 import EditorialDirectory from './editorialDirectory.jsx';
 import CivicEducationPage from './CivicEducationPage.jsx';
 import FederalElectionStats from './FederalElectionStats.jsx';
+import StatusPage from './StatusPage.jsx';
 import './editorialTrust.js';
 import './runtime.css';
 import './designSystem.css';
@@ -72,6 +73,7 @@ function routeForLocation() {
   if (pathname === '/expediente') return <GovernancePage kind="expediente" />;
   if (pathname === '/correcoes') return <GovernancePage kind="correcoes" />;
   if (pathname === '/situacao-candidatura') return <GovernancePage kind="situacao" />;
+  if (pathname === '/status') return <StatusPage />;
   if (pathname === '/radar') return <RadarPage />;
   if (pathname === '/siga-o-dinheiro') return <MoneyPage />;
   if (pathname === '/entenda') return <CivicEducationPage />;

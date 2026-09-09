@@ -5,9 +5,11 @@ import json
 import os
 import sys
 import tempfile
+import time
 import urllib.error
 import urllib.request
 import zipfile
+from datetime import datetime, timezone
 from pathlib import Path
 
 import build_campaign_finance_2026 as builder
@@ -19,10 +21,70 @@ DEFAULT_WORKER_URL = (
 ROOT = Path(__file__).resolve().parents[1]
 CACHE_DIR = ROOT / ".collector" / "financas-2026"
 ZIP_PATH = CACHE_DIR / "prestacao_de_contas_eleitorais_candidatos_2026.zip"
+STATUS_PATH = ROOT / "data" / "status" / "finance-collection.json"
+DEFAULT_MAX_ATTEMPTS = 3
+DEFAULT_RETRY_SECONDS = 15
 
 
 def log(message: str) -> None:
     print(message, flush=True)
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+
+def classify_origin(error: Exception) -> str:
+    message = str(error).lower()
+    if "token" in message or "configurado" in message:
+        return "platform_configuration"
+    if "worker" in message or "http 5" in message or "baixar" in message:
+        return "collection_infrastructure"
+    return "platform_processing"
+
+
+def write_status(
+    status: str,
+    *,
+    attempts: int,
+    worker_url: str,
+    error: Exception | None = None,
+    transport: dict | None = None,
+    manifest: dict | None = None,
+) -> None:
+    payload = {
+        "schema_version": 1,
+        "generated_at": utc_now(),
+        "component": "financas_2026",
+        "status": status,
+        "source": "TSE - Prestacao de Contas Eleitorais 2026",
+        "collector": "cloudflare_browser_worker",
+        "attempts": attempts,
+        "worker_url": worker_url,
+        "origin": "none" if error is None else classify_origin(error),
+        "message": (
+            "Coleta financeira concluida e validada pelo coletor."
+            if error is None
+            else "A ultima carga financeira valida foi preservada; uma nova coleta nao foi publicada."
+        ),
+        "last_error": None if error is None else str(error)[:2000],
+    }
+    if transport:
+        payload["transport"] = transport
+    if manifest:
+        payload["snapshot"] = {
+            "generated_at": manifest.get("generated_at"),
+            "candidates": manifest.get("candidates"),
+            "shard_count": manifest.get("shard_count"),
+        }
+
+    STATUS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    temporary = STATUS_PATH.with_suffix(".json.tmp")
+    temporary.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    temporary.replace(STATUS_PATH)
 
 
 def download(url: str, token: str, destination: Path) -> dict:
@@ -33,13 +95,14 @@ def download(url: str, token: str, destination: Path) -> dict:
         url,
         headers={
             "Authorization": f"Bearer {token}",
-            "User-Agent": "Eleicoes-2026-Financas/1.0",
+            "User-Agent": "Eleicoes-2026-Financas/1.1",
             "Accept": "application/zip",
         },
     )
 
     destination.parent.mkdir(parents=True, exist_ok=True)
     partial = destination.with_suffix(destination.suffix + ".tmp")
+    partial.unlink(missing_ok=True)
     digest = hashlib.sha256()
     total = 0
 
@@ -103,6 +166,27 @@ def download(url: str, token: str, destination: Path) -> dict:
     }
 
 
+def download_with_retry(url: str, token: str, destination: Path) -> tuple[dict, int]:
+    max_attempts = max(1, int(os.environ.get("TSE_FINANCE_MAX_ATTEMPTS", DEFAULT_MAX_ATTEMPTS)))
+    base_delay = max(1, int(os.environ.get("TSE_FINANCE_RETRY_SECONDS", DEFAULT_RETRY_SECONDS)))
+    last_error: Exception | None = None
+
+    for attempt in range(1, max_attempts + 1):
+        try:
+            log(f"Tentativa {attempt}/{max_attempts} da coleta financeira.")
+            return download(url, token, destination), attempt
+        except Exception as error:
+            last_error = error
+            log(f"Tentativa {attempt}/{max_attempts} falhou: {error}")
+            if attempt < max_attempts:
+                delay = base_delay * (2 ** (attempt - 1))
+                log(f"Nova tentativa em {delay}s.")
+                time.sleep(delay)
+
+    assert last_error is not None
+    raise RuntimeError(f"Coleta falhou apos {max_attempts} tentativas: {last_error}") from last_error
+
+
 def enrich_manifest(metadata: dict) -> None:
     manifest_path = builder.OUTPUT_DIR / "manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -116,9 +200,10 @@ def enrich_manifest(metadata: dict) -> None:
 def main() -> int:
     worker_url = os.environ.get("TSE_FINANCE_WORKER_URL", DEFAULT_WORKER_URL).strip()
     token = os.environ.get("TSE_WORKER_TOKEN", "")
+    attempts = 0
 
     try:
-        transport = download(worker_url, token, ZIP_PATH)
+        transport, attempts = download_with_retry(worker_url, token, ZIP_PATH)
         with tempfile.TemporaryDirectory(prefix="eleicoes-financas-2026-") as temp:
             target = Path(temp)
             with zipfile.ZipFile(ZIP_PATH) as archive:
@@ -131,9 +216,26 @@ def main() -> int:
         if int(manifest.get("shard_count", 0)) <= 0:
             raise RuntimeError("A carga foi processada sem shards publicaveis.")
 
+        write_status(
+            "ok",
+            attempts=attempts,
+            worker_url=worker_url,
+            transport=transport,
+            manifest=manifest,
+        )
         log(json.dumps(manifest, ensure_ascii=False, indent=2))
         return 0
     except Exception as error:
+        configured_attempts = max(
+            1,
+            int(os.environ.get("TSE_FINANCE_MAX_ATTEMPTS", DEFAULT_MAX_ATTEMPTS)),
+        )
+        write_status(
+            "error",
+            attempts=attempts or configured_attempts,
+            worker_url=worker_url,
+            error=error,
+        )
         log(f"ERRO: carga financeira nao publicada: {error}")
         return 1
 

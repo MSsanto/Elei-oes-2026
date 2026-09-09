@@ -1,0 +1,47 @@
+.status-main { padding-bottom: 64px; }
+.status-summary { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin: 28px 0; }
+.status-summary article { min-height: 132px; padding: 20px; border: 1px solid var(--ds-line); border-radius: var(--ds-radius-lg); background: var(--ds-surface); box-shadow: var(--ds-shadow-soft); }
+.status-summary small, .status-summary span { display: block; color: var(--ds-muted); }
+.status-summary small { font-size: 12px; font-weight: 750; text-transform: uppercase; letter-spacing: .04em; }
+.status-summary strong { display: block; margin: 10px 0 5px; color: var(--ds-navy); font-size: clamp(28px, 4vw, 40px); line-height: 1; }
+.status-summary span { font-size: 13px; }
+.status-section-heading, .status-incident-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.status-section-heading h2 { margin-top: 4px; }
+.status-check-list { list-style: none; margin: 20px 0 0; padding: 0; border: 1px solid var(--ds-line); border-radius: var(--ds-radius); overflow: hidden; background: var(--ds-surface); }
+.status-check-row { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 16px 18px; border-bottom: 1px solid var(--ds-line); }
+.status-check-row:last-child { border-bottom: 0; }
+.status-check-copy strong, .status-check-copy small { display: block; }
+.status-check-copy strong { color: var(--ds-ink); }
+.status-check-copy small { margin-top: 4px; color: var(--ds-muted); }
+.status-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--ds-muted); box-shadow: 0 0 0 4px rgba(100,116,139,.12); }
+.status-dot--ok { background: var(--ds-success); box-shadow: 0 0 0 4px var(--ds-success-soft); }
+.status-dot--stale { background: var(--ds-warning); box-shadow: 0 0 0 4px rgba(148,98,0,.12); }
+.status-dot--error { background: var(--ds-danger); box-shadow: 0 0 0 4px var(--ds-danger-soft); }
+.status-pill { display: inline-flex; align-items: center; min-height: 28px; padding: 4px 9px; border-radius: 999px; font-size: 12px; font-weight: 800; white-space: nowrap; background: #eef2f7; color: var(--ds-muted); }
+.status-pill--ok { background: var(--ds-success-soft); color: var(--ds-success); }
+.status-pill--stale { background: #fff6dd; color: var(--ds-warning); }
+.status-pill--error { background: var(--ds-danger-soft); color: var(--ds-danger); }
+.status-incident { margin-top: 18px; padding: 20px; border: 1px solid #f2c8c4; border-left: 4px solid var(--ds-danger); border-radius: var(--ds-radius); background: var(--ds-danger-soft); }
+.status-incident-head small { display: block; margin-top: 5px; color: var(--ds-muted); }
+.status-incident p { margin: 14px 0; }
+.status-incident dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; }
+.status-incident dl div { padding: 12px; border-radius: var(--ds-radius-xs); background: rgba(255,255,255,.7); }
+.status-incident dt { margin-bottom: 4px; color: var(--ds-muted); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }
+.status-incident dd { margin: 0; overflow-wrap: anywhere; }
+.status-empty { margin-top: 16px; padding: 16px; border: 1px solid var(--ds-line); border-radius: var(--ds-radius); background: var(--ds-success-soft); color: var(--ds-success); }
+.status-origin-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.status-origin-grid article { padding: 18px; border: 1px solid var(--ds-line); border-radius: var(--ds-radius); background: var(--ds-surface); }
+.status-origin-grid strong { color: var(--ds-navy); }
+.status-origin-grid p { margin: 8px 0 0; color: var(--ds-muted); }
+@media (max-width: 860px) {
+  .status-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .status-origin-grid { grid-template-columns: 1fr; }
+  .status-incident dl { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .status-summary { grid-template-columns: 1fr 1fr; gap: 9px; }
+  .status-summary article { min-height: 110px; padding: 14px; }
+  .status-check-row { grid-template-columns: auto minmax(0, 1fr); }
+  .status-check-row .status-pill { grid-column: 2; justify-self: start; }
+  .status-section-heading, .status-incident-head { flex-direction: column; }
+}
