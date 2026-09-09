@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
-"""Gera contexto eleitoral 2026 a partir de fontes oficiais do TSE.
-
-Saída: data/processed/election-context.json
-
-O arquivo combina contagens de candidaturas já processadas pelo projeto com:
-- consulta_vagas_2026.zip (TSE)
-- perfil_eleitorado_2026.zip (TSE)
-
-A relação candidaturas/vaga é apenas uma razão descritiva. Não representa
-probabilidade de eleição, competitividade, qualidade ou recomendação.
-"""
+"""Gera contexto eleitoral 2026 a partir de fontes oficiais do TSE."""
 
 from __future__ import annotations
 
@@ -28,6 +18,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PROCESSED = ROOT / "data" / "processed"
 OUTPUT = PROCESSED / "election-context.json"
+RAW_CONTEXT_DIR = ROOT / "data" / "raw" / "contexto-eleitoral"
+RAW_VAGAS_ZIP = RAW_CONTEXT_DIR / "consulta_vagas_2026.zip"
+RAW_ELEITORADO_ZIP = RAW_CONTEXT_DIR / "perfil_eleitorado_2026.zip"
 
 VAGAS_URL = "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_vagas/consulta_vagas_2026.zip"
 ELEITORADO_URL = "https://cdn.tse.jus.br/estatistica/sead/odsele/perfil_eleitorado/perfil_eleitorado_2026.zip"
@@ -73,6 +66,15 @@ def download(url: str) -> bytes:
         return response.read()
 
 
+def source_bytes(local_path: Path, url: str) -> bytes:
+    if local_path.exists():
+        payload = local_path.read_bytes()
+        if not payload.startswith(b"PK"):
+            raise ValueError(f"Arquivo local sem assinatura ZIP: {local_path}")
+        return payload
+    return download(url)
+
+
 def decode_csv(raw: bytes) -> str:
     for encoding in ("utf-8-sig", "latin-1"):
         try:
@@ -87,17 +89,16 @@ def csv_rows_from_zip(payload: bytes, required_columns: set[str]) -> tuple[list[
         candidates = [name for name in archive.namelist() if name.lower().endswith(".csv")]
         if not candidates:
             raise ValueError("ZIP do TSE não contém CSV")
-
         for name in sorted(candidates, key=lambda item: ("2026.csv" not in item.lower(), len(item))):
             text = decode_csv(archive.read(name))
             reader = csv.DictReader(io.StringIO(text), delimiter=";")
             fields = {str(field or "").lstrip("\ufeff").strip() for field in (reader.fieldnames or [])}
             if required_columns.issubset(fields):
-                rows = []
-                for row in reader:
-                    rows.append({str(key or "").lstrip("\ufeff").strip(): value for key, value in row.items()})
+                rows = [
+                    {str(key or "").lstrip("\ufeff").strip(): value for key, value in row.items()}
+                    for row in reader
+                ]
                 return rows, name
-
     raise ValueError(f"Nenhum CSV contém as colunas obrigatórias: {sorted(required_columns)}")
 
 
@@ -111,7 +112,6 @@ def source_timestamp(rows: list[dict[str, str]]) -> str | None:
 
 def load_candidate_counts() -> dict[str, dict[str, int]]:
     counts: dict[str, dict[str, int]] = {}
-
     for cargo in ("presidente", "governador", "senador", "deputado-estadual"):
         manifest = read_json(PROCESSED / "candidatos" / cargo / "manifest.json")
         if not isinstance(manifest, dict):
@@ -131,17 +131,13 @@ def load_candidate_counts() -> dict[str, dict[str, int]]:
         if uf in UFS:
             federal_ufs[uf] += 1
     counts["deputado-federal"] = {"BR": len(federal), **{uf: federal_ufs[uf] for uf in UFS}}
-
     return counts
 
 
 def load_seats() -> tuple[dict[str, dict[str, int]], dict[str, object]]:
-    raw = download(VAGAS_URL)
-    rows, filename = csv_rows_from_zip(raw, {"SG_UF", "DS_CARGO", "QT_VAGAS"})
-
+    rows, filename = csv_rows_from_zip(source_bytes(RAW_VAGAS_ZIP, VAGAS_URL), {"SG_UF", "DS_CARGO", "QT_VAGAS"})
     seats = {cargo: defaultdict(int) for cargo in CARGO_LABELS}
     seen: set[tuple[str, ...]] = set()
-
     cargo_map = {
         "PRESIDENTE": "presidente",
         "GOVERNADOR": "governador",
@@ -159,11 +155,8 @@ def load_seats() -> tuple[dict[str, dict[str, int]], dict[str, object]]:
         if not cargo:
             continue
         uf = str(row.get("SG_UF") or "").strip().upper()
-        if cargo == "presidente":
-            scope = "BR"
-        elif uf in UFS:
-            scope = uf
-        else:
+        scope = "BR" if cargo == "presidente" else uf
+        if scope != "BR" and scope not in UFS:
             continue
         value = as_int(row.get("QT_VAGAS"))
         if value <= 0:
@@ -183,7 +176,6 @@ def load_seats() -> tuple[dict[str, dict[str, int]], dict[str, object]]:
 
     for cargo in ("governador", "senador", "deputado-federal", "deputado-estadual"):
         seats[cargo]["BR"] = sum(seats[cargo][uf] for uf in UFS)
-
     normalized = {cargo: dict(values) for cargo, values in seats.items()}
     validate_seats(normalized)
     return normalized, {"url": VAGAS_URL, "file": filename, "source_generated_at": source_timestamp(rows)}
@@ -206,10 +198,11 @@ def validate_seats(seats: dict[str, dict[str, int]]) -> None:
 
 
 def load_electorate() -> tuple[dict[str, int], dict[str, object]]:
-    raw = download(ELEITORADO_URL)
-    rows, filename = csv_rows_from_zip(raw, {"SG_UF", "QT_ELEITORES_PERFIL"})
+    rows, filename = csv_rows_from_zip(
+        source_bytes(RAW_ELEITORADO_ZIP, ELEITORADO_URL),
+        {"SG_UF", "QT_ELEITORES_PERFIL"},
+    )
     totals = defaultdict(int)
-
     for row in rows:
         if row.get("ANO_ELEICAO") and str(row["ANO_ELEICAO"]).strip() != "2026":
             continue
@@ -220,11 +213,9 @@ def load_electorate() -> tuple[dict[str, int], dict[str, object]]:
     missing = [uf for uf in UFS if totals[uf] <= 0]
     if missing:
         raise ValueError(f"Eleitorado ausente para UFs: {', '.join(missing)}")
-
     national = sum(totals[uf] for uf in UFS) + totals["ZZ"]
     if not 150_000_000 <= national <= 170_000_000:
         raise ValueError(f"Total nacional de eleitorado fora da faixa de validação: {national}")
-
     output = {"BR": national, **{uf: totals[uf] for uf in UFS}}
     if totals["ZZ"]:
         output["ZZ"] = totals["ZZ"]
@@ -239,7 +230,6 @@ def build_payload() -> dict[str, object]:
     candidates = load_candidate_counts()
     seats, seats_source = load_seats()
     electorate, electorate_source = load_electorate()
-
     cargos: dict[str, object] = {}
     for cargo, label in CARGO_LABELS.items():
         scopes: dict[str, object] = {}
@@ -299,11 +289,7 @@ def atomic_write(payload: dict[str, object]) -> None:
 def main() -> None:
     payload = build_payload()
     atomic_write(payload)
-    print(
-        "Contexto eleitoral gerado: "
-        f"eleitorado={payload['electorate']['BR']:,}, "
-        f"arquivo={OUTPUT.relative_to(ROOT)}"
-    )
+    print(f"Contexto eleitoral gerado: eleitorado={payload['electorate']['BR']:,}, arquivo={OUTPUT.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":
