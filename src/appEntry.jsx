@@ -7,6 +7,8 @@ import GovernancePage from './governancePages.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
 import { MoneyPage, RadarPage, SupplierPage } from './editorialPhase2.jsx';
 import EditorialDirectory from './editorialDirectory.jsx';
+import CivicEducationPage from './CivicEducationPage.jsx';
+import FederalElectionStats from './FederalElectionStats.jsx';
 import './editorialTrust.js';
 import './runtime.css';
 import './designSystem.css';
@@ -72,13 +74,14 @@ function routeForLocation() {
   if (pathname === '/situacao-candidatura') return <GovernancePage kind="situacao" />;
   if (pathname === '/radar') return <RadarPage />;
   if (pathname === '/siga-o-dinheiro') return <MoneyPage />;
+  if (pathname === '/entenda') return <CivicEducationPage />;
   if (/^\/fornecedor\/[a-f0-9]{16}(?:-[^/]+)?$/i.test(pathname)) return <SupplierPage />;
   if (/^\/candidatos\/[^/]+(?:\/[^/]+){0,3}$/i.test(pathname)) return <EditorialDirectory />;
 
   const params = new URLSearchParams(window.location.search);
   const isProfile = /^\/candidato\/[^/]+$/.test(pathname);
   const consultation = isProfile || CARGOS.some((item) => item.slug === params.get('cargo')) || Boolean(params.get('candidato'));
-  return consultation ? <ConsultationApp /> : <HomeView />;
+  return consultation ? <><ConsultationApp /><FederalElectionStats /></> : <HomeView />;
 }
 
 normalizeUrl();

@@ -1,0 +1,132 @@
+.federal-election-stats-mount {
+  width: 100%;
+}
+
+.federal-election-stats {
+  width: min(1180px, calc(100% - 40px));
+  margin: 16px auto 30px;
+  padding: 20px;
+  border: 1px solid #d9e2ec;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(11, 31, 51, 0.06);
+}
+
+.federal-election-stats-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 14px;
+}
+
+.federal-election-stats-heading span {
+  display: block;
+  margin-bottom: 4px;
+  color: #5b7085;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.federal-election-stats-heading h2 {
+  margin: 0;
+  color: #0b1f33;
+  font-size: clamp(21px, 2vw, 28px);
+}
+
+.federal-election-stats-heading a,
+.federal-election-stats-links a {
+  color: #175cd3;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.federal-election-stats-heading a:hover,
+.federal-election-stats-links a:hover {
+  text-decoration: underline;
+}
+
+.federal-election-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.federal-election-stat {
+  min-height: 96px;
+  padding: 15px;
+  border: 1px solid #e4eaf0;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.federal-election-stat strong,
+.federal-election-stat span {
+  display: block;
+}
+
+.federal-election-stat strong {
+  margin-bottom: 7px;
+  color: #0b1f33;
+  font-size: clamp(22px, 2.3vw, 31px);
+  line-height: 1;
+}
+
+.federal-election-stat span {
+  color: #566b7f;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.federal-election-stat-accent {
+  border-color: #b9d2ff;
+  background: #f2f7ff;
+}
+
+.federal-election-stat-accent strong {
+  color: #175cd3;
+}
+
+.federal-election-stats-note {
+  margin: 14px 0 8px;
+  color: #5c6f82;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.federal-election-stats-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  font-size: 12px;
+}
+
+.federal-election-stats-error {
+  margin: 10px 0 0;
+  color: #9a3412;
+  font-size: 12px;
+}
+
+@media (max-width: 780px) {
+  .federal-election-stats {
+    width: min(100% - 24px, 1180px);
+    padding: 14px;
+  }
+
+  .federal-election-stats-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .federal-election-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 440px) {
+  .federal-election-stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
