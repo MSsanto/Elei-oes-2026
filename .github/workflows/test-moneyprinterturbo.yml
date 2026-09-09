@@ -1,0 +1,99 @@
+name: Teste MoneyPrinterTurbo (PoC)
+
+on:
+  workflow_dispatch:
+    inputs:
+      roteiro:
+        description: "Roteiro curto para o teste tecnico"
+        required: false
+        default: "Este e um teste tecnico do pipeline de video da Transparencia Eleitoral. Nenhuma informacao sobre candidatos esta sendo apresentada nesta demonstracao. O objetivo e validar geracao de voz, legendas e renderizacao automatica em nuvem."
+
+permissions:
+  contents: read
+
+jobs:
+  gerar-video:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout do projeto eleitoral
+        uses: actions/checkout@v4
+
+      - name: Instalar FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version | head -n 1
+
+      - name: Configurar uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Baixar MoneyPrinterTurbo v1.3.6
+        run: |
+          git clone --depth 1 --branch v1.3.6 https://github.com/harry0703/MoneyPrinterTurbo.git mpt
+
+      - name: Preparar Python e dependencias
+        working-directory: mpt
+        run: |
+          uv python install 3.11
+          uv sync --frozen
+
+      - name: Criar material local neutro
+        working-directory: mpt
+        run: |
+          mkdir -p test-assets
+          ffmpeg -y \
+            -f lavfi \
+            -i "color=c=0x102A43:s=720x1280:d=20:r=30" \
+            -c:v libx264 \
+            -pix_fmt yuv420p \
+            test-assets/base.mp4
+
+      - name: Gerar video com MoneyPrinterTurbo
+        working-directory: mpt
+        env:
+          ROTEIRO: ${{ inputs.roteiro }}
+        run: |
+          set -euo pipefail
+          uv run python cli.py \
+            --video-script "$ROTEIRO" \
+            --video-language pt-BR \
+            --video-source local \
+            --video-materials "$PWD/test-assets/base.mp4" \
+            --video-aspect 9:16 \
+            --video-concat-mode sequential \
+            --video-clip-duration 20 \
+            --voice-name pt-BR-AntonioNeural \
+            --bgm-type none \
+            --stop-at video \
+            | tee mpt-result.json
+
+      - name: Coletar MP4 final
+        run: |
+          set -euo pipefail
+          mkdir -p artifacts
+          VIDEO_FILE="$(find mpt/storage/tasks -type f -name 'final-*.mp4' -print -quit)"
+          if [ -z "$VIDEO_FILE" ]; then
+            echo "Nenhum final-*.mp4 encontrado."
+            find mpt/storage/tasks -maxdepth 3 -type f -print || true
+            exit 1
+          fi
+          cp "$VIDEO_FILE" artifacts/moneyprinterturbo-poc.mp4
+          cp mpt/mpt-result.json artifacts/mpt-result.json
+          ffprobe -v error \
+            -show_entries format=duration,size \
+            -show_entries stream=codec_name,width,height \
+            -of json \
+            artifacts/moneyprinterturbo-poc.mp4 \
+            > artifacts/ffprobe.json
+          cat artifacts/ffprobe.json
+
+      - name: Publicar artefato do teste
+        uses: actions/upload-artifact@v4
+        with:
+          name: moneyprinterturbo-poc
+          path: artifacts/
+          retention-days: 7
