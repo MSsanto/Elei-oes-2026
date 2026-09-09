@@ -1,6 +1,9 @@
 name: Teste MoneyPrinterTurbo (PoC)
 
 on:
+  push:
+    branches:
+      - test/moneyprinterturbo-poc
   pull_request:
     branches:
       - main
