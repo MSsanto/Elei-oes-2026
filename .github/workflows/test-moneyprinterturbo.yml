@@ -1,6 +1,9 @@
 name: Teste MoneyPrinterTurbo (PoC)
 
 on:
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       roteiro:
@@ -55,7 +58,7 @@ jobs:
       - name: Gerar video com MoneyPrinterTurbo
         working-directory: mpt
         env:
-          ROTEIRO: ${{ inputs.roteiro }}
+          ROTEIRO: ${{ inputs.roteiro || 'Este é um teste técnico do pipeline de vídeo da Transparência Eleitoral. Nenhuma informação sobre candidatos está sendo apresentada nesta demonstração. O objetivo é validar geração de voz, legendas e renderização automática em nuvem.' }}
         run: |
           set -euo pipefail
           uv run python cli.py \
