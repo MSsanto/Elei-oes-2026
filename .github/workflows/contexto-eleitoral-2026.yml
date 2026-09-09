@@ -1,0 +1,68 @@
+name: Contexto eleitoral 2026
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - feat/contexto-eleitoral-vagas-eleitorado
+    paths:
+      - 'scripts/build_election_context_2026.py'
+      - '.github/workflows/contexto-eleitoral-2026.yml'
+  schedule:
+    - cron: '40 4 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contexto-eleitoral-2026-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Gerar contexto oficial de vagas e eleitorado
+        run: python scripts/build_election_context_2026.py
+
+      - name: Validar saída
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('data/processed/election-context.json')
+          payload = json.loads(path.read_text(encoding='utf-8'))
+          assert payload['cargos']['presidente']['scopes']['BR']['seats'] == 1
+          assert payload['cargos']['senador']['scopes']['BR']['seats'] == 54
+          assert payload['cargos']['deputado-federal']['scopes']['BR']['seats'] == 513
+          assert payload['cargos']['deputado-estadual']['scopes']['BR']['seats'] == 1059
+          assert payload['electorate']['BR'] > 150_000_000
+          assert len(payload['electorate']['ufs']) == 27
+          print('Contexto eleitoral validado.')
+          PY
+
+      - name: Versionar atualização
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/processed/election-context.json
+          if git diff --cached --quiet; then
+            echo 'Sem alteração no contexto eleitoral.'
+            exit 0
+          fi
+          git commit -m 'data: atualizar vagas e eleitorado 2026'
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
