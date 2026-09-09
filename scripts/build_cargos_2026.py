@@ -9,6 +9,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+import build_election_context_2026 as election_context
 import fetch_candidates as base
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -376,12 +377,16 @@ def main() -> int:
     }
     pretty_json(OUTPUT_ROOT / "manifest.json", root_manifest)
 
+    context_payload = election_context.build_payload()
+    election_context.atomic_write(context_payload)
+
     log(
         "Publicação concluída: "
         f"Presidente={president_manifest['total']}; "
         f"Governador={governor_manifest['total']}; "
         f"Senador={senator_manifest['total']}; "
-        f"Deputado Estadual/Distrital={state_deputy_manifest['total']}"
+        f"Deputado Estadual/Distrital={state_deputy_manifest['total']}; "
+        f"Eleitorado={context_payload['electorate']['BR']}"
     )
     for slug, manifest in (
         ("Presidente", president_manifest),
