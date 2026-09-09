@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'scripts/enrich_candidate_statuses.py'
+      - 'scripts/build_election_context_2026.py'
       - 'workers/tse-browser-probe/src/production.js'
       - '.github/workflows/coleta-online.yml'
   schedule:
@@ -43,6 +44,9 @@ jobs:
 
       - name: Gerar bases de Presidente, Governador, Senador e Deputado Estadual/Distrital
         run: python scripts/build_cargos_2026.py
+
+      - name: Gerar contexto de candidaturas, vagas e eleitorado
+        run: python scripts/build_election_context_2026.py
 
       - name: Enriquecer situação oficial dos registros de candidatura
         env:
