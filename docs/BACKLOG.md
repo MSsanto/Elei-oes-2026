@@ -1,6 +1,6 @@
 # Backlog — Eleições 2026 — Transparência Eleitoral
 
-Última revisão: **05/09/2026**  
+Última revisão: **09/09/2026**  
 Fase atual: **Fase 2 — Editorial**  
 Fonte canônica do trabalho planejado: **este arquivo**.
 
@@ -158,6 +158,8 @@ Permanece experimental. Nunca apresentar como domicílio eleitoral, residência,
 - ✅ Siga o Dinheiro — PR [#16](https://github.com/MSsanto/Elei-oes-2026/pull/16).
 - ✅ Diretório e páginas de fornecedor — PR [#16](https://github.com/MSsanto/Elei-oes-2026/pull/16).
 - ✅ Patrimônio: interface/pipeline no PR [#17](https://github.com/MSsanto/Elei-oes-2026/pull/17), correção operacional e fonte oficial secundária no PR [#24](https://github.com/MSsanto/Elei-oes-2026/pull/24), com primeira carga real publicada no commit `6218591f4bd8862f88f86bce20cfe35017a952ba` — **13.843 candidaturas, 76.806 bens e 4.019 vínculos históricos**.
+- ✅ Panorama eleitoral e educação cívica: estatísticas de candidaturas/vagas na consulta de Deputado Federal, eleitorado por UF e página `/entenda` com explicadores — PR [#33](https://github.com/MSsanto/Elei-oes-2026/pull/33), documentação em [`EDITORIAL_E_DADOS_ELEITORAIS_2026.md`](EDITORIAL_E_DADOS_ELEITORAIS_2026.md).
+- ✅ Histórico de declarações patrimoniais por eleição: apresentação cronológica de registros históricos confirmados e candidatura atual, separando declaração eleitoral de comprovação de mandato — PR [#35](https://github.com/MSsanto/Elei-oes-2026/pull/35), documentação em [`HISTORICO_PATRIMONIAL.md`](HISTORICO_PATRIMONIAL.md).
 - ✅ Perfis individuais com HTML/metadata server-side, Open Graph, canonical, sitemap e `robots.txt` — PR [#20](https://github.com/MSsanto/Elei-oes-2026/pull/20).
 - ✅ Build SEO de perfis em 100 shards, com proteção contra o limite de arquivos do Cloudflare Pages.
 - ✅ Malha SEO editorial por cargo, UF e partido — PR [#26](https://github.com/MSsanto/Elei-oes-2026/pull/26), com **1.828 páginas agregadoras para 19.991 candidaturas**, links bidirecionais perfil ↔ agregadores, sitemap, canonical/OG server-side e ordenação neutra **Nome A–Z**.
@@ -167,6 +169,7 @@ Permanece experimental. Nunca apresentar como domicílio eleitoral, residência,
 - ✅ `BACKLOG.md` como fonte canônica operacional e `ROADMAP.md` por fases — PR [#22](https://github.com/MSsanto/Elei-oes-2026/pull/22).
 - ✅ Coleta principal documentada como cloud-first; Windows mantido como fallback manual — [`COLETA_CLOUD.md`](COLETA_CLOUD.md).
 - ✅ Diagnóstico e hierarquia de fontes patrimoniais documentados — [`PATRIMONIO_FONTES.md`](PATRIMONIO_FONTES.md).
+- ✅ Histórico patrimonial documentado de forma separada, com critérios de vínculo entre eleições, privacidade, valores nominais e distinção entre candidatura e mandato — [`HISTORICO_PATRIMONIAL.md`](HISTORICO_PATRIMONIAL.md), PR [#35](https://github.com/MSsanto/Elei-oes-2026/pull/35).
 
 ---
 
