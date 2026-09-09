@@ -17,6 +17,7 @@ const LINKS = [
   { href: '/siga-o-dinheiro', label: 'Siga o Dinheiro', key: 'dinheiro' },
   { href: '/metodologia', label: 'Metodologia', key: 'metodologia' },
   { href: '/fontes', label: 'Fontes', key: 'fontes' },
+  { href: '/status', label: 'Status', key: 'status' },
   { href: '/expediente', label: 'Expediente', key: 'expediente' },
   { href: '/sobre', label: 'Sobre', key: 'sobre' },
 ];
