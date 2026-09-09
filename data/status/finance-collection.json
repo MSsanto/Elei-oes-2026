@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-05T13:00:52Z",
+  "component": "financas_2026",
+  "status": "error",
+  "source": "TSE - Prestacao de Contas Eleitorais 2026",
+  "collector": "cloudflare_browser_worker",
+  "attempts": 1,
+  "worker_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
+  "origin": "collection_infrastructure",
+  "message": "A ultima carga financeira valida foi preservada; uma nova coleta nao foi publicada.",
+  "last_error": "Browser Worker retornou HTTP 502; a sessao do navegador foi encerrada durante o acesso ao dataset (Target page, context or browser has been closed)."
+}
