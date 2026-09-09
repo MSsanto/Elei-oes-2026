@@ -72,6 +72,10 @@ def source_bytes(local_path: Path, url: str) -> bytes:
         if not payload.startswith(b"PK"):
             raise ValueError(f"Arquivo local sem assinatura ZIP: {local_path}")
         return payload
+    if os.environ.get("GITHUB_ACTIONS", "").lower() == "true":
+        raise FileNotFoundError(
+            f"Arquivo cloud ainda não disponível no runner: {local_path.relative_to(ROOT)}"
+        )
     return download(url)
 
 
@@ -226,10 +230,41 @@ def ratio(candidates: int, seats: int) -> float | None:
     return round(candidates / seats, 2) if seats > 0 else None
 
 
+def unavailable_payload(error: Exception) -> dict[str, object]:
+    if OUTPUT.exists():
+        try:
+            previous = read_json(OUTPUT)
+            if isinstance(previous, dict) and previous.get("status") == "ready":
+                previous["fallback_used"] = True
+                previous["fallback_reason"] = str(error)
+                return previous
+        except (OSError, ValueError, json.JSONDecodeError):
+            pass
+    return {
+        "schema_version": 1,
+        "status": "awaiting_official_context_source",
+        "generated_at_utc": None,
+        "method": "contagem_descritiva_sem_ranking",
+        "cargos": {},
+        "electorate": {"BR": 0, "ufs": {}, "exterior": 0},
+        "sources": {
+            "seats": {"name": "TSE — Vagas 2026", "url": VAGAS_URL},
+            "electorate": {"name": "TSE — Eleitorado 2026", "url": ELEITORADO_URL},
+        },
+        "fallback_used": True,
+        "fallback_reason": str(error),
+        "notes": ["Nenhum número de vagas/eleitorado é publicado enquanto a carga oficial não passar pelas validações."],
+    }
+
+
 def build_payload() -> dict[str, object]:
     candidates = load_candidate_counts()
-    seats, seats_source = load_seats()
-    electorate, electorate_source = load_electorate()
+    try:
+        seats, seats_source = load_seats()
+        electorate, electorate_source = load_electorate()
+    except (OSError, ValueError, zipfile.BadZipFile, urllib.error.URLError) as error:
+        return unavailable_payload(error)
+
     cargos: dict[str, object] = {}
     for cargo, label in CARGO_LABELS.items():
         scopes: dict[str, object] = {}
@@ -249,6 +284,7 @@ def build_payload() -> dict[str, object]:
 
     return {
         "schema_version": 1,
+        "status": "ready",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "method": "contagem_descritiva_sem_ranking",
         "cargos": cargos,
@@ -265,6 +301,7 @@ def build_payload() -> dict[str, object]:
             "seats": {"name": "TSE — Vagas 2026", **seats_source},
             "electorate": {"name": "TSE — Eleitorado 2026", **electorate_source},
         },
+        "fallback_used": False,
         "notes": [
             "Candidaturas correspondem aos registros presentes na carga eleitoral do projeto, sem exclusão por situação do registro.",
             "Candidaturas por vaga é uma divisão aritmética descritiva e não mede chance de eleição ou competitividade.",
@@ -289,7 +326,10 @@ def atomic_write(payload: dict[str, object]) -> None:
 def main() -> None:
     payload = build_payload()
     atomic_write(payload)
-    print(f"Contexto eleitoral gerado: eleitorado={payload['electorate']['BR']:,}, arquivo={OUTPUT.relative_to(ROOT)}")
+    if payload.get("status") == "ready":
+        print(f"Contexto eleitoral gerado: eleitorado={payload['electorate']['BR']:,}, arquivo={OUTPUT.relative_to(ROOT)}")
+    else:
+        print(f"Contexto eleitoral aguardando fonte oficial válida: {payload.get('fallback_reason', 'sem detalhe')}")
 
 
 if __name__ == "__main__":
