@@ -3,7 +3,9 @@ from __future__ import annotations
 import hashlib
 import os
 import sys
+import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -13,13 +15,31 @@ import fetch_candidates as base
 DEFAULT_WORKER_URL = (
     "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download"
 )
+ROOT = Path(__file__).resolve().parents[1]
+CONTEXT_RAW_DIR = ROOT / "data" / "raw" / "contexto-eleitoral"
+VAGAS_ZIP_PATH = CONTEXT_RAW_DIR / "consulta_vagas_2026.zip"
+ELEITORADO_ZIP_PATH = CONTEXT_RAW_DIR / "perfil_eleitorado_2026.zip"
+BROWSER_LAUNCH_GAP_SECONDS = 22
 
 
 def log(message: str) -> None:
     print(message, flush=True)
 
 
-def download_from_worker(url: str, token: str, destination: Path) -> dict[str, str | int]:
+def dataset_url(worker_url: str, dataset: str) -> str:
+    parsed = urllib.parse.urlparse(worker_url)
+    query = urllib.parse.parse_qs(parsed.query, keep_blank_values=True)
+    query["dataset"] = [dataset]
+    return urllib.parse.urlunparse(parsed._replace(query=urllib.parse.urlencode(query, doseq=True)))
+
+
+def download_from_worker(
+    url: str,
+    token: str,
+    destination: Path,
+    *,
+    min_bytes: int = 1_000,
+) -> dict[str, str | int]:
     if not token:
         raise RuntimeError(
             "TSE_WORKER_TOKEN nao configurado. Adicione o mesmo segredo no Cloudflare Worker e no GitHub Actions."
@@ -39,7 +59,7 @@ def download_from_worker(url: str, token: str, destination: Path) -> dict[str, s
 
     log(f"Solicitando ZIP oficial do TSE via Browser Run: {url}")
     try:
-        with urllib.request.urlopen(request, timeout=120) as response, partial.open("wb") as output:
+        with urllib.request.urlopen(request, timeout=180) as response, partial.open("wb") as output:
             digest = hashlib.sha256()
             total = 0
             while chunk := response.read(1024 * 1024):
@@ -62,9 +82,9 @@ def download_from_worker(url: str, token: str, destination: Path) -> dict[str, s
         partial.unlink(missing_ok=True)
         raise RuntimeError(f"Worker retornou status inesperado: {status}")
 
-    if total < 1_000_000:
+    if total < min_bytes:
         partial.unlink(missing_ok=True)
-        raise RuntimeError(f"ZIP recebido e pequeno demais: {total} bytes")
+        raise RuntimeError(f"ZIP recebido e pequeno demais: {total} bytes; minimo={min_bytes}")
 
     with partial.open("rb") as handle:
         signature = handle.read(4)
@@ -98,12 +118,34 @@ def download_from_worker(url: str, token: str, destination: Path) -> dict[str, s
     }
 
 
+def collect_context_archives(worker_url: str, token: str) -> None:
+    datasets = (
+        ("vagas2026", VAGAS_ZIP_PATH, 1_000),
+        ("eleitorado2026", ELEITORADO_ZIP_PATH, 10_000),
+    )
+    for dataset, destination, min_bytes in datasets:
+        log(f"Aguardando {BROWSER_LAUNCH_GAP_SECONDS}s para respeitar a cadencia do Browser Run.")
+        time.sleep(BROWSER_LAUNCH_GAP_SECONDS)
+        download_from_worker(
+            dataset_url(worker_url, dataset),
+            token,
+            destination,
+            min_bytes=min_bytes,
+        )
+
+
 def main() -> int:
     worker_url = os.environ.get("TSE_WORKER_URL", DEFAULT_WORKER_URL).strip()
     token = os.environ.get("TSE_WORKER_TOKEN", "")
 
     try:
-        transport_metadata = download_from_worker(worker_url, token, base.RAW_ZIP_PATH)
+        transport_metadata = download_from_worker(
+            worker_url,
+            token,
+            base.RAW_ZIP_PATH,
+            min_bytes=1_000_000,
+        )
+        collect_context_archives(worker_url, token)
 
         # O coletor existente continua responsavel por interpretar e publicar os dados.
         # Apenas substituimos o passo de download, preservando o mesmo parser usado no Windows.
@@ -118,6 +160,10 @@ def main() -> int:
             {
                 "mode": "cloudflare_browser_run_zip",
                 **transport_metadata,
+                "context_archives": {
+                    "vagas": str(VAGAS_ZIP_PATH.relative_to(ROOT)),
+                    "eleitorado": str(ELEITORADO_ZIP_PATH.relative_to(ROOT)),
+                },
             }
         )
         base.write_outputs(candidates, source_metadata)
