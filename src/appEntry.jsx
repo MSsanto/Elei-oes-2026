@@ -7,6 +7,7 @@ import GovernancePage from './governancePages.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
 import { MoneyPage, RadarPage, SupplierPage } from './editorialPhase2.jsx';
 import EditorialDirectory from './editorialDirectory.jsx';
+import { ElectionContextPortal } from './electionContext.jsx';
 import './editorialTrust.js';
 import './runtime.css';
 import './designSystem.css';
@@ -78,7 +79,7 @@ function routeForLocation() {
   const params = new URLSearchParams(window.location.search);
   const isProfile = /^\/candidato\/[^/]+$/.test(pathname);
   const consultation = isProfile || CARGOS.some((item) => item.slug === params.get('cargo')) || Boolean(params.get('candidato'));
-  return consultation ? <ConsultationApp /> : <HomeView />;
+  return consultation ? <><ConsultationApp /><ElectionContextPortal /></> : <HomeView />;
 }
 
 normalizeUrl();
