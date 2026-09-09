@@ -4,7 +4,9 @@ import process from 'node:process';
 
 const root = process.cwd();
 const sourceDir = path.join(root, 'data', 'processed');
+const statusSourceDir = path.join(root, 'data', 'status');
 const targetDir = path.join(root, 'public', 'data');
+const statusTargetDir = path.join(targetDir, 'status');
 
 async function exists(target) {
   try {
@@ -42,6 +44,12 @@ if (await exists(sourceDir)) {
     ),
     'utf8',
   );
+}
+
+if (await exists(statusSourceDir)) {
+  await mkdir(statusTargetDir, { recursive: true });
+  await cp(statusSourceDir, statusTargetDir, { recursive: true, force: true });
+  console.log('Status operacional copiado para public/data/status.');
 }
 
 if (await exists(sourceDir)) {
