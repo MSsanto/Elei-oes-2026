@@ -1,9 +1,25 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { createPortal } from 'react-dom';
 import './electionContext.css';
 
 const CONTEXT_URL = '/data/election-context.json';
 const TSE_CANDIDATES_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
 const TSE_ELECTORATE_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/eleitorado-2026';
+const LOCATION_EVENT = 'election-context-locationchange';
+
+if (typeof window !== 'undefined' && !window.__electionContextHistoryPatched) {
+  const patch = (method) => {
+    const original = window.history[method].bind(window.history);
+    window.history[method] = (...args) => {
+      const result = original(...args);
+      window.dispatchEvent(new Event(LOCATION_EVENT));
+      return result;
+    };
+  };
+  patch('pushState');
+  patch('replaceState');
+  window.__electionContextHistoryPatched = true;
+}
 
 function formatInteger(value) {
   return Number.isFinite(Number(value)) ? Number(value).toLocaleString('pt-BR') : '—';
@@ -29,6 +45,14 @@ function resolveScope(cargo, uf) {
   if (cargo === 'presidente') return 'BR';
   if (cargo === 'deputado-federal') return uf || 'BR';
   return uf || '';
+}
+
+function readContextLocation() {
+  const params = new URLSearchParams(window.location.search);
+  return {
+    cargo: params.get('cargo') || 'deputado-federal',
+    uf: String(params.get('uf') || '').toUpperCase(),
+  };
 }
 
 export default function ElectionContext({ cargo, uf }) {
@@ -116,4 +140,31 @@ export default function ElectionContext({ cargo, uf }) {
       </p>
     </section>
   );
+}
+
+export function ElectionContextPortal() {
+  const [target, setTarget] = useState(null);
+  const [location, setLocation] = useState(() => readContextLocation());
+
+  useEffect(() => {
+    const hero = document.querySelector('.consult-hero');
+    if (!hero) return undefined;
+    const mount = document.createElement('div');
+    mount.className = 'election-context-portal';
+    hero.insertAdjacentElement('afterend', mount);
+    setTarget(mount);
+    return () => mount.remove();
+  }, []);
+
+  useEffect(() => {
+    const sync = () => setLocation(readContextLocation());
+    window.addEventListener(LOCATION_EVENT, sync);
+    window.addEventListener('popstate', sync);
+    return () => {
+      window.removeEventListener(LOCATION_EVENT, sync);
+      window.removeEventListener('popstate', sync);
+    };
+  }, []);
+
+  return target ? createPortal(<ElectionContext cargo={location.cargo} uf={location.uf} />, target) : null;
 }
