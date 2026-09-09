@@ -23,6 +23,11 @@ function updatedAt(value) {
   return new Intl.DateTimeFormat('pt-BR', { dateStyle: 'short', timeStyle: 'short', timeZone: 'America/Sao_Paulo' }).format(date);
 }
 
+function declarationContext(year) {
+  if (Number(year) === 2026) return 'Candidatura atual — Eleições 2026';
+  return `Declaração histórica localizada — Eleições ${year}`;
+}
+
 async function optionalJson(url, signal) {
   try {
     const response = await fetch(url, { cache: 'no-cache', signal });
@@ -65,10 +70,12 @@ export default function CandidateAssets({ candidate }) {
 
   const composition = useMemo(() => Array.isArray(record?.bens_por_tipo) ? record.bens_por_tipo : [], [record]);
   const assets = useMemo(() => Array.isArray(record?.bens) ? record.bens : [], [record]);
-  const history = useMemo(() => Array.isArray(record?.historico) ? record.historico : [], [record]);
+  const history = useMemo(() => {
+    const items = Array.isArray(record?.historico) ? record.historico : [];
+    return [...items].sort((a, b) => Number(a.ano || 0) - Number(b.ano || 0));
+  }, [record]);
   const total = Number(record?.resumo?.total_declarado || 0);
   const maxComposition = Math.max(1, ...composition.map((item) => Number(item.valor || 0)));
-  const maxHistory = Math.max(1, ...history.map((item) => Number(item.total_declarado || 0)));
 
   if (status === 'loading') {
     return <div className="assets-loading" aria-label="Carregando patrimônio"><span/><span/><span/><p>Consultando a carga patrimonial desta candidatura…</p></div>;
@@ -121,20 +128,22 @@ export default function CandidateAssets({ candidate }) {
         </section>
 
         <section className="assets-card">
-          <div className="assets-card-heading"><h4>Histórico nominal de declarações</h4><p>Exibido somente quando a identidade entre eleições atende ao critério conservador do projeto.</p></div>
+          <div className="assets-card-heading"><h4>Declarações patrimoniais por eleição</h4><p>Valores oficiais exibidos cronologicamente quando o vínculo de identidade entre eleições é confirmado pelo método conservador do projeto.</p></div>
           {history.length > 1 ? (
-            <div className="assets-history">
+            <div className="assets-declarations" aria-label="Histórico de declarações patrimoniais">
               {history.map((item) => (
-                <div className="assets-history-row" key={item.ano}>
-                  <span>{item.ano}</span>
-                  <div className="assets-history-track" aria-hidden="true"><i style={{ width: `${Math.max(1, Number(item.total_declarado || 0) / maxHistory * 100)}%` }}/></div>
+                <article className="assets-declaration" key={item.ano}>
+                  <div>
+                    <span>{item.ano}</span>
+                    <small>{declarationContext(item.ano)}</small>
+                  </div>
                   <strong>{money(item.total_declarado)}</strong>
-                </div>
+                </article>
               ))}
-              <small>Valores nominais de cada eleição, sem correção monetária e sem estimativa de preço atual de mercado.</small>
+              <p className="assets-declarations-note">Cada valor corresponde à declaração daquela eleição, em reais nominais. A interface não calcula índice, score ou conclusão sobre mudança patrimonial.</p>
             </div>
           ) : (
-            <div className="assets-history-empty"><strong>Histórico anterior não confirmado.</strong><p>O projeto não exibe associação histórica baseada apenas em semelhança de nome.</p></div>
+            <div className="assets-history-empty"><strong>Declaração histórica anterior não confirmada.</strong><p>O projeto não exibe associação histórica baseada apenas em semelhança de nome.</p></div>
           )}
         </section>
       </div>
@@ -155,7 +164,8 @@ export default function CandidateAssets({ candidate }) {
         <summary>Fonte, privacidade e vínculo histórico</summary>
         <p><strong>2026:</strong> arquivo “Bens de candidatos”, Portal de Dados Abertos do TSE. Os valores são reproduzidos como valores nominais declarados e não representam avaliação de mercado.</p>
         <p><strong>Privacidade:</strong> a plataforma reduz descrições quando encontra padrões de endereço, conta/agência, documentos, telefone, CEP, placas, matrículas ou outros identificadores extensos. A categoria e o valor permanecem preservados.</p>
-        <p><strong>Histórico:</strong> 2022 só é associado quando nome civil, data de nascimento e gênero formam uma assinatura exata e única nas duas eleições. Ausência de vínculo significa apenas que o critério não foi satisfeito.</p>
+        <p><strong>Histórico:</strong> 2022 só é associado quando nome civil, data de nascimento e gênero formam uma assinatura exata e única nas duas eleições. A existência de uma declaração anterior confirma uma candidatura naquele pleito, mas não é usada pela plataforma, isoladamente, para afirmar exercício de mandato.</p>
+        <p><strong>Leitura:</strong> os valores são apresentados por eleição e sem correção monetária. A plataforma não infere renda, valorização de mercado, origem de recursos ou qualquer irregularidade a partir das declarações.</p>
         <div><a href={TSE_2026_URL} target="_blank" rel="noreferrer">Fonte 2026 — TSE ↗</a><a href={TSE_2022_URL} target="_blank" rel="noreferrer">Fonte histórica 2022 — TSE ↗</a><a href="/metodologia">Metodologia do projeto</a></div>
       </details>
     </section>
