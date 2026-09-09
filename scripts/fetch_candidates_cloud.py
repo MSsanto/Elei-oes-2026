@@ -118,20 +118,30 @@ def download_from_worker(
     }
 
 
-def collect_context_archives(worker_url: str, token: str) -> None:
+def collect_context_archives(worker_url: str, token: str) -> dict[str, object]:
     datasets = (
         ("vagas2026", VAGAS_ZIP_PATH, 1_000),
         ("eleitorado2026", ELEITORADO_ZIP_PATH, 10_000),
     )
-    for dataset, destination, min_bytes in datasets:
-        log(f"Aguardando {BROWSER_LAUNCH_GAP_SECONDS}s para respeitar a cadencia do Browser Run.")
-        time.sleep(BROWSER_LAUNCH_GAP_SECONDS)
-        download_from_worker(
-            dataset_url(worker_url, dataset),
-            token,
-            destination,
-            min_bytes=min_bytes,
+    collected: dict[str, object] = {}
+    try:
+        for dataset, destination, min_bytes in datasets:
+            log(f"Aguardando {BROWSER_LAUNCH_GAP_SECONDS}s para respeitar a cadencia do Browser Run.")
+            time.sleep(BROWSER_LAUNCH_GAP_SECONDS)
+            collected[dataset] = download_from_worker(
+                dataset_url(worker_url, dataset),
+                token,
+                destination,
+                min_bytes=min_bytes,
+            )
+    except Exception as error:
+        log(
+            "AVISO: contexto de vagas/eleitorado ainda nao foi coletado; "
+            f"a coleta principal de candidaturas sera preservada. Motivo: {error}"
         )
+        return {"available": False, "error": str(error), "datasets": collected}
+
+    return {"available": True, "datasets": collected}
 
 
 def main() -> int:
@@ -145,7 +155,7 @@ def main() -> int:
             base.RAW_ZIP_PATH,
             min_bytes=1_000_000,
         )
-        collect_context_archives(worker_url, token)
+        context_metadata = collect_context_archives(worker_url, token)
 
         # O coletor existente continua responsavel por interpretar e publicar os dados.
         # Apenas substituimos o passo de download, preservando o mesmo parser usado no Windows.
@@ -160,10 +170,7 @@ def main() -> int:
             {
                 "mode": "cloudflare_browser_run_zip",
                 **transport_metadata,
-                "context_archives": {
-                    "vagas": str(VAGAS_ZIP_PATH.relative_to(ROOT)),
-                    "eleitorado": str(ELEITORADO_ZIP_PATH.relative_to(ROOT)),
-                },
+                "context_archives": context_metadata,
             }
         )
         base.write_outputs(candidates, source_metadata)
