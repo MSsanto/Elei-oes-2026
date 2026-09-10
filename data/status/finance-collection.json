@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-09T23:30:05.755617Z",
+  "generated_at": "2026-09-10T13:47:48.825486Z",
   "component": "financas_2026",
   "status": "error",
   "source": "TSE - Prestacao de Contas Eleitorais 2026",
@@ -9,5 +9,5 @@
   "worker_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
   "origin": "collection_infrastructure",
   "message": "A ultima carga financeira valida foi preservada; uma nova coleta nao foi publicada.",
-  "last_error": "Coleta falhou apos 3 tentativas: Worker retornou HTTP 502: {\n  \"error\": \"Unable to create new browser: code: 429: message: Rate limit exceeded\",\n  \"source\": \"https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip\",\n  \"dataset\": \"prestacaoCandidatos2026\",\n  \"production_revision\": \"dataset-router-v5-candidate-statuses\"\n}"
+  "last_error": "Coleta falhou apos 3 tentativas: Worker retornou HTTP 502: {\n  \"error\": \"O corpo do ZIP nao pode ser lido: Protocol error (Fetch.getResponseBody): Target closed\",\n  \"source\": \"https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip\",\n  \"dataset\": \"prestacaoCandidatos2026\",\n  \"production_revision\": \"dataset-router-v5-candidate-statuses\"\n}"
 }
