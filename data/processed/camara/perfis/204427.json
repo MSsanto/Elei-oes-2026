@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:42:02.649977+00:00",
+      "generated_at_utc": "2026-09-10T17:09:10.371805+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204427/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 20,
+        "quantidade_registros": 21,
         "registros_recentes": [
+          {
+            "id": 2646212,
+            "sigla_tipo": "PL",
+            "numero": 5311,
+            "ano": 2026,
+            "ementa": "Institui o Estatuto de Proteção ao Trabalhador, destinado a assegurar a previsibilidade da jornada, a proteção do tempo de descanso, o direito à desconexão, a conciliação entre trabalho e responsabilidades familiares, a proteção e o incentivo à contratação do trabalhador-cuidador, a proteção ocupacional dos trabalhadores expostos a situações de crise, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646212"
+          },
           {
             "id": 2645233,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre a obrigatoriedade da oferta de professor de apoio especializado e de sala especial para o atendimento educacional especializado a estudantes com Transtorno do Espectro Autista (TEA) nas redes públicas de ensino, institui o Adicional de Valorização do Professor de Apoio e Sala TEA, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616019"
-          },
-          {
-            "id": 2612948,
-            "sigla_tipo": "PL",
-            "numero": 1551,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 4.119, de 27 de agosto de 1962, que dispõe sobre os cursos de formação em psicologia e regulamenta a profissão de psicólogo, para instituir o piso salarial nacional da categoria.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612948"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204427"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204427",
-  "generated_at_utc": "2026-09-08T04:43:13.941260+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.454171+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1498,7 +1498,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 374,
+    "quantidade_registros": 375,
     "por_ano": [
       {
         "ano": 2023,
@@ -1514,10 +1514,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 20
+        "quantidade_registros": 21
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646212,
+        "sigla_tipo": "PL",
+        "numero": 5311,
+        "ano": 2026,
+        "ementa": "Institui o Estatuto de Proteção ao Trabalhador, destinado a assegurar a previsibilidade da jornada, a proteção do tempo de descanso, o direito à desconexão, a conciliação entre trabalho e responsabilidades familiares, a proteção e o incentivo à contratação do trabalhador-cuidador, a proteção ocupacional dos trabalhadores expostos a situações de crise, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646212"
+      },
       {
         "id": 2645233,
         "sigla_tipo": "PL",
@@ -1605,14 +1613,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre a obrigatoriedade da oferta de professor de apoio especializado e de sala especial para o atendimento educacional especializado a estudantes com Transtorno do Espectro Autista (TEA) nas redes públicas de ensino, institui o Adicional de Valorização do Professor de Apoio e Sala TEA, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616019"
-      },
-      {
-        "id": 2612948,
-        "sigla_tipo": "PL",
-        "numero": 1551,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 4.119, de 27 de agosto de 1962, que dispõe sobre os cursos de formação em psicologia e regulamenta a profissão de psicólogo, para instituir o piso salarial nacional da categoria.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612948"
       },
       {
         "id": 2598197,

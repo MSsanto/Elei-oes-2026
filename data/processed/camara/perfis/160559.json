@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:34:54.601188+00:00",
+      "generated_at_utc": "2026-09-10T17:07:39.100896+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160559/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 56,
+        "quantidade_registros": 58,
         "registros_recentes": [
+          {
+            "id": 2646326,
+            "sigla_tipo": "PL",
+            "numero": 5335,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.393, de 19 de dezembro de 1996, para conceder isenção do Imposto sobre a Propriedade Territorial Rural – ITR aos imóveis rurais atingidos por estado de calamidade pública decretado pelo Poder Público municipal e reconhecido pelo Governo Federal.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646326"
+          },
+          {
+            "id": 2646256,
+            "sigla_tipo": "REQ",
+            "numero": 4210,
+            "ano": 2026,
+            "ementa": "Requer revisão de despacho para o Projeto de Lei nº 2.140/2023.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646256"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1343/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633852"
-          },
-          {
-            "id": 2633840,
-            "sigla_tipo": "EMC",
-            "numero": 329,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633840"
-          },
-          {
-            "id": 2633828,
-            "sigla_tipo": "EMC",
-            "numero": 318,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633828"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160559"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160559",
-  "generated_at_utc": "2026-09-08T04:43:13.769578+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.268516+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1561,7 +1561,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 503,
+    "quantidade_registros": 505,
     "por_ano": [
       {
         "ano": 2023,
@@ -1577,10 +1577,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 56
+        "quantidade_registros": 58
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646326,
+        "sigla_tipo": "PL",
+        "numero": 5335,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.393, de 19 de dezembro de 1996, para conceder isenção do Imposto sobre a Propriedade Territorial Rural – ITR aos imóveis rurais atingidos por estado de calamidade pública decretado pelo Poder Público municipal e reconhecido pelo Governo Federal.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646326"
+      },
+      {
+        "id": 2646256,
+        "sigla_tipo": "REQ",
+        "numero": 4210,
+        "ano": 2026,
+        "ementa": "Requer revisão de despacho para o Projeto de Lei nº 2.140/2023.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646256"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1660,22 +1676,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1343/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633852"
-      },
-      {
-        "id": 2633840,
-        "sigla_tipo": "EMC",
-        "numero": 329,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633840"
-      },
-      {
-        "id": 2633828,
-        "sigla_tipo": "EMC",
-        "numero": 318,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633828"
       },
       {
         "id": 2598492,

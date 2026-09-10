@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:37:21.147466+00:00",
+      "generated_at_utc": "2026-09-10T17:06:34.376838+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/191923/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 22,
+        "quantidade_registros": 23,
         "registros_recentes": [
+          {
+            "id": 2646271,
+            "sigla_tipo": "REQ",
+            "numero": 4211,
+            "ano": 2026,
+            "ementa": "Requer a desapensação do Projeto de Lei nº 519, de 2026, do Projeto de Lei nº 3.789, de 2023, e sua redistribuição à Comissão de Segurança Pública e Combate ao Crime Organizado.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646271"
+          },
           {
             "id": 2642303,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui a TerraBras, empresa pública destinada à defesa da soberania nacional e ao aproveitamento dos minerais críticos ou estratégicos; estabelece o regime de partilha da produção mineral; altera o Decreto-Lei nº 227, de 28 de fevereiro de 1967, a Lei nº 8.970, de 28 de dezembro de 1994, e a Lei nº 13.575, de 26 de dezembro de 2017; e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2615287"
-          },
-          {
-            "id": 2612584,
-            "sigla_tipo": "REQ",
-            "numero": 1727,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene em comemoração do Dia do Médico Pneumologista a ser comemorado no dia 02 de junho.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612584"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=191923"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "191923",
-  "generated_at_utc": "2026-09-08T04:43:13.834316+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.149145+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1708,7 +1708,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 308,
+    "quantidade_registros": 309,
     "por_ano": [
       {
         "ano": 2023,
@@ -1724,10 +1724,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 22
+        "quantidade_registros": 23
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646271,
+        "sigla_tipo": "REQ",
+        "numero": 4211,
+        "ano": 2026,
+        "ementa": "Requer a desapensação do Projeto de Lei nº 519, de 2026, do Projeto de Lei nº 3.789, de 2023, e sua redistribuição à Comissão de Segurança Pública e Combate ao Crime Organizado.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646271"
+      },
       {
         "id": 2642303,
         "sigla_tipo": "REQ",
@@ -1815,14 +1823,6 @@
         "ano": 2026,
         "ementa": "Institui a TerraBras, empresa pública destinada à defesa da soberania nacional e ao aproveitamento dos minerais críticos ou estratégicos; estabelece o regime de partilha da produção mineral; altera o Decreto-Lei nº 227, de 28 de fevereiro de 1967, a Lei nº 8.970, de 28 de dezembro de 1994, e a Lei nº 13.575, de 26 de dezembro de 2017; e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2615287"
-      },
-      {
-        "id": 2612584,
-        "sigla_tipo": "REQ",
-        "numero": 1727,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene em comemoração do Dia do Médico Pneumologista a ser comemorado no dia 02 de junho.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612584"
       },
       {
         "id": 2596838,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:26:19.910603+00:00",
+      "generated_at_utc": "2026-09-10T17:06:47.882059+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220550/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 44,
+        "quantidade_registros": 46,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
+          {
+            "id": 2646300,
+            "sigla_tipo": "RIC",
+            "numero": 2591,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Saúde acerca dos critérios regulatórios aplicáveis ao uso compassivo da polilaminina, das análises e decisões da Agência Nacional de Vigilância Sanitária – Anvisa sobre o produto e de questões relacionadas ao caso do Sr. Thiago José Camargos (“Tiba Camargos”).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646300"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1343/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633673"
-          },
-          {
-            "id": 2633669,
-            "sigla_tipo": "EMC",
-            "numero": 163,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633669"
-          },
-          {
-            "id": 2629783,
-            "sigla_tipo": "PLP",
-            "numero": 154,
-            "ano": 2026,
-            "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para reduzir a zero as alíquotas do Imposto sobre Bens e Serviços — IBS e da Contribuição Social sobre Bens e Serviços — CBS incidentes sobre produtos alimentícios industrializados sem glúten destinados à alimentação humana e sobre insumos, ingredientes, preparações e matérias-primas destinados à sua fabricação.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629783"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220550"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220550",
-  "generated_at_utc": "2026-09-08T04:43:13.574507+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.176289+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 603,
+    "quantidade_registros": 605,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 44
+        "quantidade_registros": 46
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
+      {
+        "id": 2646300,
+        "sigla_tipo": "RIC",
+        "numero": 2591,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Saúde acerca dos critérios regulatórios aplicáveis ao uso compassivo da polilaminina, das análises e decisões da Agência Nacional de Vigilância Sanitária – Anvisa sobre o produto e de questões relacionadas ao caso do Sr. Thiago José Camargos (“Tiba Camargos”).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646300"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1514,22 +1530,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1343/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633673"
-      },
-      {
-        "id": 2633669,
-        "sigla_tipo": "EMC",
-        "numero": 163,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633669"
-      },
-      {
-        "id": 2629783,
-        "sigla_tipo": "PLP",
-        "numero": 154,
-        "ano": 2026,
-        "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para reduzir a zero as alíquotas do Imposto sobre Bens e Serviços — IBS e da Contribuição Social sobre Bens e Serviços — CBS incidentes sobre produtos alimentícios industrializados sem glúten destinados à alimentação humana e sobre insumos, ingredientes, preparações e matérias-primas destinados à sua fabricação.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629783"
       },
       {
         "id": 2598197,

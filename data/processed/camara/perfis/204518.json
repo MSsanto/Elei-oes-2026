@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:28:50.456394+00:00",
+      "generated_at_utc": "2026-09-10T17:08:11.983042+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204518/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 128,
+        "quantidade_registros": 129,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2645944,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer ao Ministério dos Direitos Humanos e da Cidadania (MDHC) informações atualizadas e complementares acerca da população de rua no País, do Plano Nacional Ruas Visíveis e do Programa Moradia Cidadã, diante da necessidade de integração das respostas prestadas no Requerimento de Informação (RIC) n.º 213, de 2026.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644546"
-          },
-          {
-            "id": 2644544,
-            "sigla_tipo": "INC",
-            "numero": 1549,
-            "ano": 2026,
-            "ementa": "Requer o envio de Indicação ao Ministério da Saúde, sugerindo que promova a expansão do acesso, no Sistema Único de Saúde (SUS), aos inibidores de CDK4/6 indicados para o tratamento adjuvante de pacientes com câncer de mama precoce RH+/HER2- de alto risco.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644544"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204518"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204518",
-  "generated_at_utc": "2026-09-08T04:43:13.626381+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.338274+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1514,7 +1514,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 813,
+    "quantidade_registros": 814,
     "por_ano": [
       {
         "ano": 2023,
@@ -1530,10 +1530,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 128
+        "quantidade_registros": 129
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2645944,
         "sigla_tipo": "RIC",
@@ -1621,14 +1629,6 @@
         "ano": 2026,
         "ementa": "Requer ao Ministério dos Direitos Humanos e da Cidadania (MDHC) informações atualizadas e complementares acerca da população de rua no País, do Plano Nacional Ruas Visíveis e do Programa Moradia Cidadã, diante da necessidade de integração das respostas prestadas no Requerimento de Informação (RIC) n.º 213, de 2026.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644546"
-      },
-      {
-        "id": 2644544,
-        "sigla_tipo": "INC",
-        "numero": 1549,
-        "ano": 2026,
-        "ementa": "Requer o envio de Indicação ao Ministério da Saúde, sugerindo que promova a expansão do acesso, no Sistema Único de Saúde (SUS), aos inibidores de CDK4/6 indicados para o tratamento adjuvante de pacientes com câncer de mama precoce RH+/HER2- de alto risco.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644544"
       },
       {
         "id": 2598202,

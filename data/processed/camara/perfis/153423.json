@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:59.735860+00:00",
+      "generated_at_utc": "2026-09-10T17:09:11.214354+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/153423/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 18,
+        "quantidade_registros": 20,
         "registros_recentes": [
+          {
+            "id": 2646320,
+            "sigla_tipo": "PL",
+            "numero": 5334,
+            "ano": 2026,
+            "ementa": "Estabelece normas gerais de proteção animal relativas à segurança, à informação e à continuidade do atendimento médico-veterinário de cães e gatos, especialmente nas situações de urgência e emergência.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646320"
+          },
+          {
+            "id": 2646318,
+            "sigla_tipo": "PL",
+            "numero": 5333,
+            "ano": 2026,
+            "ementa": "Institui a Política Nacional de Continuidade da Proteção à Mulher em Situação de Violência Doméstica e Familiar e estabelece diretrizes para a continuidade integrada da proteção e do atendimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646318"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 3815/2025.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607839"
-          },
-          {
-            "id": 2607837,
-            "sigla_tipo": "REQ",
-            "numero": 1363,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 2557/2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607837"
-          },
-          {
-            "id": 2607836,
-            "sigla_tipo": "REQ",
-            "numero": 1362,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 1446/2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607836"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=153423"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "153423",
-  "generated_at_utc": "2026-09-08T04:43:13.658939+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.456171+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 485,
+    "quantidade_registros": 487,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 18
+        "quantidade_registros": 20
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646320,
+        "sigla_tipo": "PL",
+        "numero": 5334,
+        "ano": 2026,
+        "ementa": "Estabelece normas gerais de proteção animal relativas à segurança, à informação e à continuidade do atendimento médico-veterinário de cães e gatos, especialmente nas situações de urgência e emergência.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646320"
+      },
+      {
+        "id": 2646318,
+        "sigla_tipo": "PL",
+        "numero": 5333,
+        "ano": 2026,
+        "ementa": "Institui a Política Nacional de Continuidade da Proteção à Mulher em Situação de Violência Doméstica e Familiar e estabelece diretrizes para a continuidade integrada da proteção e do atendimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646318"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1502,22 +1518,6 @@
         "ano": 2026,
         "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 3815/2025.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607839"
-      },
-      {
-        "id": 2607837,
-        "sigla_tipo": "REQ",
-        "numero": 1363,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 2557/2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607837"
-      },
-      {
-        "id": 2607836,
-        "sigla_tipo": "REQ",
-        "numero": 1362,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 1446/2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607836"
       },
       {
         "id": 2598197,

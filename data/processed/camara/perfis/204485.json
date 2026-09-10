@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:32:37.992274+00:00",
+      "generated_at_utc": "2026-09-10T17:07:27.202570+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204485/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 25,
+        "quantidade_registros": 26,
         "registros_recentes": [
+          {
+            "id": 2646244,
+            "sigla_tipo": "RIC",
+            "numero": 2573,
+            "ano": 2026,
+            "ementa": "Requer informações ao Excelentíssimo Senhor Ministro de Estado da Saúde acerca dos critérios técnicos que fundamentaram a decisão da Agência Nacional de Vigilância Sanitária (Anvisa) para suspender a fabricação de produtos saneantes na unidade da Unilever Brasil Ltda., em Vinhedo/SP, sem determinar o recolhimento (recall) ou a análise laboratorial de lotes já comercializados, diante da constatação de descumprimento das Boas Práticas de Fabricação à luz da proteção de consumidores e resguardo da saúde pública.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646244"
+          },
           {
             "id": 2643502,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Audiência Pública, em caráter emergencial, no âmbito da Comissão de Trabalho (CTRAB), para debater os desdobramentos do caso envolvendo o BNY Mellon e os prejuízos causados ao fundo de pensão dos empregados dos Correios (Postalis), com impactos diretos sobre os trabalhadores da Empresa Brasileira de Correios e Telégrafos (ECT).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2609672"
-          },
-          {
-            "id": 2609243,
-            "sigla_tipo": "REQ",
-            "numero": 1451,
-            "ano": 2026,
-            "ementa": "Requer aprovação de Moção de Pesar pelo falecimento do Professor Paulo Fernando Melo da Costa.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2609243"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204485"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204485",
-  "generated_at_utc": "2026-09-08T04:43:13.713245+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.249394+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 245,
+    "quantidade_registros": 246,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 25
+        "quantidade_registros": 26
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646244,
+        "sigla_tipo": "RIC",
+        "numero": 2573,
+        "ano": 2026,
+        "ementa": "Requer informações ao Excelentíssimo Senhor Ministro de Estado da Saúde acerca dos critérios técnicos que fundamentaram a decisão da Agência Nacional de Vigilância Sanitária (Anvisa) para suspender a fabricação de produtos saneantes na unidade da Unilever Brasil Ltda., em Vinhedo/SP, sem determinar o recolhimento (recall) ou a análise laboratorial de lotes já comercializados, diante da constatação de descumprimento das Boas Práticas de Fabricação à luz da proteção de consumidores e resguardo da saúde pública.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646244"
+      },
       {
         "id": 2643502,
         "sigla_tipo": "PL",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Audiência Pública, em caráter emergencial, no âmbito da Comissão de Trabalho (CTRAB), para debater os desdobramentos do caso envolvendo o BNY Mellon e os prejuízos causados ao fundo de pensão dos empregados dos Correios (Postalis), com impactos diretos sobre os trabalhadores da Empresa Brasileira de Correios e Telégrafos (ECT).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2609672"
-      },
-      {
-        "id": 2609243,
-        "sigla_tipo": "REQ",
-        "numero": 1451,
-        "ano": 2026,
-        "ementa": "Requer aprovação de Moção de Pesar pelo falecimento do Professor Paulo Fernando Melo da Costa.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2609243"
       },
       {
         "id": 2598197,

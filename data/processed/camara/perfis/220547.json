@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:39:54.623749+00:00",
+      "generated_at_utc": "2026-09-10T17:08:19.272907+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220547/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 74,
+        "quantidade_registros": 75,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2643662,
             "sigla_tipo": "REC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a convocação do Excelentíssimo Senhor Ministro de Estado da Justiça e Segurança Pública para prestar esclarecimentos perante a Comissão de Segurança Pública e Combate ao Crime Organizado acerca dos fundamentos jurídicos, técnicos e normativos que ampararam a edição do Ofício Circular nº 3/2026/DARM/CGARM/DPA/PF, bem como sobre a adoção de critérios de compatibilidade econômico-financeira nos processos administrativos relacionados ao controle de armas de fogo.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632335"
-          },
-          {
-            "id": 2632257,
-            "sigla_tipo": "REQ",
-            "numero": 291,
-            "ano": 2026,
-            "ementa": "Requer o envio de convite ao Diretor-Geral da Polícia Federal para comparecer à Comissão de Segurança Pública e Combate ao Crime Organizado, a fim de prestar esclarecimentos acerca dos fundamentos jurídicos, normativos e técnicos que embasaram a edição do Ofício Circular nº 3/2026/DARM/CGARM/DPA/PF, bem como sobre os impactos de sua aplicação aos Colecionadores, Atiradores Desportivos e Caçadores (CACs).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632257"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220547"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220547",
-  "generated_at_utc": "2026-09-08T04:43:13.877723+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.353908+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1197,
+    "quantidade_registros": 1198,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 74
+        "quantidade_registros": 75
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2643662,
         "sigla_tipo": "REC",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Requer a convocação do Excelentíssimo Senhor Ministro de Estado da Justiça e Segurança Pública para prestar esclarecimentos perante a Comissão de Segurança Pública e Combate ao Crime Organizado acerca dos fundamentos jurídicos, técnicos e normativos que ampararam a edição do Ofício Circular nº 3/2026/DARM/CGARM/DPA/PF, bem como sobre a adoção de critérios de compatibilidade econômico-financeira nos processos administrativos relacionados ao controle de armas de fogo.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632335"
-      },
-      {
-        "id": 2632257,
-        "sigla_tipo": "REQ",
-        "numero": 291,
-        "ano": 2026,
-        "ementa": "Requer o envio de convite ao Diretor-Geral da Polícia Federal para comparecer à Comissão de Segurança Pública e Combate ao Crime Organizado, a fim de prestar esclarecimentos acerca dos fundamentos jurídicos, normativos e técnicos que embasaram a edição do Ofício Circular nº 3/2026/DARM/CGARM/DPA/PF, bem como sobre os impactos de sua aplicação aos Colecionadores, Atiradores Desportivos e Caçadores (CACs).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632257"
       },
       {
         "id": 2598875,

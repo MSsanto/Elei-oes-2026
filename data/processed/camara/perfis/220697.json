@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:58.378322+00:00",
+      "generated_at_utc": "2026-09-10T17:05:33.916461+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220697/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 31,
+        "quantidade_registros": 32,
         "registros_recentes": [
+          {
+            "id": 2646330,
+            "sigla_tipo": "PL",
+            "numero": 5338,
+            "ano": 2026,
+            "ementa": "Institui a Lei Sinal de Risco, sobre a comunicação emergencial de situações de risco concreto e grave à vida ou à integridade física identificadas no âmbito de serviços digitais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646330"
+          },
           {
             "id": 2645811,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a participação dos membros desta Comissão no Fórum da Internet no Brasil (FIB), a ser realizado em Belém-Pará, entre os dias 25 e 29 de maio de 2026, sem ônus para a Câmara dos Deputados.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625580"
-          },
-          {
-            "id": 2620023,
-            "sigla_tipo": "RIC",
-            "numero": 1097,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministério do Desenvolvimento, Indústria, Comércio e Serviços, acerca dos impactos econômicos decorrentes da incidência da Contribuição sobre Bens e Serviços (CBS) nas remessas internacionais de baixo valor, no contexto da Lei nº 14.902/2024 e da implementação do sistema Reops.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620023"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220697"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220697",
-  "generated_at_utc": "2026-09-08T04:43:13.658263+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.032209+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 608,
+    "quantidade_registros": 609,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 31
+        "quantidade_registros": 32
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646330,
+        "sigla_tipo": "PL",
+        "numero": 5338,
+        "ano": 2026,
+        "ementa": "Institui a Lei Sinal de Risco, sobre a comunicação emergencial de situações de risco concreto e grave à vida ou à integridade física identificadas no âmbito de serviços digitais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646330"
+      },
       {
         "id": 2645811,
         "sigla_tipo": "EMC",
@@ -1522,14 +1530,6 @@
         "ano": 2026,
         "ementa": "Requer a participação dos membros desta Comissão no Fórum da Internet no Brasil (FIB), a ser realizado em Belém-Pará, entre os dias 25 e 29 de maio de 2026, sem ônus para a Câmara dos Deputados.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625580"
-      },
-      {
-        "id": 2620023,
-        "sigla_tipo": "RIC",
-        "numero": 1097,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministério do Desenvolvimento, Indústria, Comércio e Serviços, acerca dos impactos econômicos decorrentes da incidência da Contribuição sobre Bens e Serviços (CBS) nas remessas internacionais de baixo valor, no contexto da Lei nº 14.902/2024 e da implementação do sistema Reops.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620023"
       },
       {
         "id": 2599001,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:37:09.670683+00:00",
+      "generated_at_utc": "2026-09-10T17:07:29.757558+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220554/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 43,
+        "quantidade_registros": 44,
         "registros_recentes": [
+          {
+            "id": 2646170,
+            "sigla_tipo": "EMC",
+            "numero": 30,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1375/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646170"
+          },
           {
             "id": 2645040,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Audiência Pública para discutir os impactos econômicos, industriais, energéticos e regionais decorrentes do processo de desinvestimentos da Petrobras e seus reflexos sobre a capacidade de coordenação estratégica do Estado brasileiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634457"
-          },
-          {
-            "id": 2632315,
-            "sigla_tipo": "REQ",
-            "numero": 35,
-            "ano": 2026,
-            "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Defesa dos Direitos da Pessoa Idosa – CIDOSO, para debater o Projeto de Lei nº 184/2026, que institui o Marco Nacional de Reconhecimento Jurídico da Pessoa Idosa, estabelece categorias etárias para fins de proteção jurídica progressiva e dá outras providências, com vistas a avaliar seus impactos sobre os direitos das pessoas idosas e sobre as políticas públicas de envelhecimento.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632315"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220554"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220554",
-  "generated_at_utc": "2026-09-08T04:43:13.830348+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.253172+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 553,
+    "quantidade_registros": 554,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 43
+        "quantidade_registros": 44
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646170,
+        "sigla_tipo": "EMC",
+        "numero": 30,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1375/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646170"
+      },
       {
         "id": 2645040,
         "sigla_tipo": "REQ",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Audiência Pública para discutir os impactos econômicos, industriais, energéticos e regionais decorrentes do processo de desinvestimentos da Petrobras e seus reflexos sobre a capacidade de coordenação estratégica do Estado brasileiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634457"
-      },
-      {
-        "id": 2632315,
-        "sigla_tipo": "REQ",
-        "numero": 35,
-        "ano": 2026,
-        "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Defesa dos Direitos da Pessoa Idosa – CIDOSO, para debater o Projeto de Lei nº 184/2026, que institui o Marco Nacional de Reconhecimento Jurídico da Pessoa Idosa, estabelece categorias etárias para fins de proteção jurídica progressiva e dá outras providências, com vistas a avaliar seus impactos sobre os direitos das pessoas idosas e sobre as políticas públicas de envelhecimento.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632315"
       },
       {
         "id": 2598301,

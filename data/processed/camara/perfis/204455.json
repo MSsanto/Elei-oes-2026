@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:33:35.150636+00:00",
+      "generated_at_utc": "2026-09-10T17:08:22.740541+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204455/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 125,
+        "quantidade_registros": 126,
         "registros_recentes": [
+          {
+            "id": 2646323,
+            "sigla_tipo": "PLP",
+            "numero": 251,
+            "ano": 2026,
+            "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir alíquota zero da Contribuição sobre Bens e Serviços (CBS) incidente sobre vendas de baixo valor realizadas no mercado interno a pessoas físicas, condicionada à tributação efetivamente nula das importações de pequeno valor por pessoa física, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646323"
+          },
           {
             "id": 2645720,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações à Ministra de Estado da Casa Civil, Sra. Miriam Belchior, sobre registros administrativos, agenda pública, unidade responsável e eventual interlocução relacionada à reunião de 04/12/2024 envolvendo representantes do Banco Master.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643276"
-          },
-          {
-            "id": 2643275,
-            "sigla_tipo": "RIC",
-            "numero": 2391,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado da Controladoria-Geral da União, Sr. Vinícius Marques de Carvalho, sobre fases processuais, sanções, estimativas de danos, recuperação de valores, fundamento de sigilo e divergências numéricas relativas aos Processos Administrativos de Responsabilização instaurados contra entidades associativas por descontos indevidos em benefícios do INSS.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643275"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204455"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204455",
-  "generated_at_utc": "2026-09-08T04:43:13.733736+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.361330+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1516,7 +1516,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 855,
+    "quantidade_registros": 856,
     "por_ano": [
       {
         "ano": 2023,
@@ -1532,10 +1532,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 125
+        "quantidade_registros": 126
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646323,
+        "sigla_tipo": "PLP",
+        "numero": 251,
+        "ano": 2026,
+        "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir alíquota zero da Contribuição sobre Bens e Serviços (CBS) incidente sobre vendas de baixo valor realizadas no mercado interno a pessoas físicas, condicionada à tributação efetivamente nula das importações de pequeno valor por pessoa física, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646323"
+      },
       {
         "id": 2645720,
         "sigla_tipo": "RIC",
@@ -1623,14 +1631,6 @@
         "ano": 2026,
         "ementa": "Requer informações à Ministra de Estado da Casa Civil, Sra. Miriam Belchior, sobre registros administrativos, agenda pública, unidade responsável e eventual interlocução relacionada à reunião de 04/12/2024 envolvendo representantes do Banco Master.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643276"
-      },
-      {
-        "id": 2643275,
-        "sigla_tipo": "RIC",
-        "numero": 2391,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado da Controladoria-Geral da União, Sr. Vinícius Marques de Carvalho, sobre fases processuais, sanções, estimativas de danos, recuperação de valores, fundamento de sigilo e divergências numéricas relativas aos Processos Administrativos de Responsabilização instaurados contra entidades associativas por descontos indevidos em benefícios do INSS.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643275"
       },
       {
         "id": 2598301,

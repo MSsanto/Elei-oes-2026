@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:35:30.186914+00:00",
+      "generated_at_utc": "2026-09-10T17:08:42.087131+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220534/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 101,
+        "quantidade_registros": 103,
         "registros_recentes": [
+          {
+            "id": 2646224,
+            "sigla_tipo": "PL",
+            "numero": 5314,
+            "ano": 2026,
+            "ementa": "Institui medidas para promoção do acesso e da permanência no emprego em favor dos responsáveis por menores atípicos, cujos filhos foram diagnosticados com deficiência, Transtorno do Espectro Autista (TEA) ou outras condições do desenvolvimento que demandam atenção especializada e contínua; Altera as Leis nº 14.457, de 2022, que regula o Programa Emprega + Mulheres, a Lei nº 12.513, de 2011, que dispõe sobre o Pronatec, e a Lei nº 14.133, de 2021, que dispõe sobre a Lei de Licitações e Contratos Administrativos; a Lei nº 13.667de 2018, que dispões sobre o Sistema Nacional de Emprego (Sine) e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646224"
+          },
+          {
+            "id": 2646187,
+            "sigla_tipo": "REQ",
+            "numero": 4196,
+            "ano": 2026,
+            "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+          },
           {
             "id": 2645943,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 9.991, de 24 de julho de 2000, para incluir a eficiência energética em estabelecimentos públicos de saúde integrantes do Sistema Único de Saúde (SUS) entre as prioridades dos programas de eficiência energética das concessionárias e permissionárias de distribuição de energia elétrica, e dá outras providências",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639263"
-          },
-          {
-            "id": 2638082,
-            "sigla_tipo": "INC",
-            "numero": 1375,
-            "ano": 2026,
-            "ementa": "Requer o envio de Indicação ao Senhor Ministro da Saúde a adoção das providências necessárias para ampliação e fortalecimento, no âmbito do Distrito Federal e RIDE/DF, do Programa Nacional de Controle de Acidentes por Animais Peçonhentos (PNCAAP).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638082"
-          },
-          {
-            "id": 2637844,
-            "sigla_tipo": "REQ",
-            "numero": 3806,
-            "ano": 2026,
-            "ementa": "Requer a MOÇÃO DE PESAR pelo falecimento da jornalista Érika Leal, ocorrido em 7 de julho de 2026, em Brasília/DF",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637844"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220534"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220534",
-  "generated_at_utc": "2026-09-08T04:43:13.773768+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.400267+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 930,
+    "quantidade_registros": 932,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 101
+        "quantidade_registros": 103
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646224,
+        "sigla_tipo": "PL",
+        "numero": 5314,
+        "ano": 2026,
+        "ementa": "Institui medidas para promoção do acesso e da permanência no emprego em favor dos responsáveis por menores atípicos, cujos filhos foram diagnosticados com deficiência, Transtorno do Espectro Autista (TEA) ou outras condições do desenvolvimento que demandam atenção especializada e contínua; Altera as Leis nº 14.457, de 2022, que regula o Programa Emprega + Mulheres, a Lei nº 12.513, de 2011, que dispõe sobre o Pronatec, e a Lei nº 14.133, de 2021, que dispõe sobre a Lei de Licitações e Contratos Administrativos; a Lei nº 13.667de 2018, que dispões sobre o Sistema Nacional de Emprego (Sine) e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646224"
+      },
+      {
+        "id": 2646187,
+        "sigla_tipo": "REQ",
+        "numero": 4196,
+        "ano": 2026,
+        "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+      },
       {
         "id": 2645943,
         "sigla_tipo": "PL",
@@ -1503,22 +1519,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 9.991, de 24 de julho de 2000, para incluir a eficiência energética em estabelecimentos públicos de saúde integrantes do Sistema Único de Saúde (SUS) entre as prioridades dos programas de eficiência energética das concessionárias e permissionárias de distribuição de energia elétrica, e dá outras providências",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639263"
-      },
-      {
-        "id": 2638082,
-        "sigla_tipo": "INC",
-        "numero": 1375,
-        "ano": 2026,
-        "ementa": "Requer o envio de Indicação ao Senhor Ministro da Saúde a adoção das providências necessárias para ampliação e fortalecimento, no âmbito do Distrito Federal e RIDE/DF, do Programa Nacional de Controle de Acidentes por Animais Peçonhentos (PNCAAP).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638082"
-      },
-      {
-        "id": 2637844,
-        "sigla_tipo": "REQ",
-        "numero": 3806,
-        "ano": 2026,
-        "ementa": "Requer a MOÇÃO DE PESAR pelo falecimento da jornalista Érika Leal, ocorrido em 7 de julho de 2026, em Brasília/DF",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637844"
       },
       {
         "id": 2596161,

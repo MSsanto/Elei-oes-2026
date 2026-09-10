@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:39:14.474726+00:00",
+      "generated_at_utc": "2026-09-10T17:06:40.774376+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220546/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 54,
+        "quantidade_registros": 55,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "requer Moção de Aplausos aos policiais militares do Departamento de Operações de Fronteira – DOF, pela atuação firme, técnica e corajosa no enfrentamento à criminalidade na região de fronteira do Estado de Mato Grosso do Sul.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625695"
-          },
-          {
-            "id": 2625579,
-            "sigla_tipo": "REQ",
-            "numero": 249,
-            "ano": 2026,
-            "ementa": "requer Moção de Aplausos aos policiais militares integrantes da equipe de Força Tática do 7º Batalhão da Polícia Militar do Estado de Mato Grosso do Sul, pela atuação firme, técnica e corajosa em ocorrência registrada no município de Anastácio/MS.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625579"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220546"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220546",
-  "generated_at_utc": "2026-09-08T04:43:13.874713+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.160719+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 509,
+    "quantidade_registros": 510,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 54
+        "quantidade_registros": 55
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "requer Moção de Aplausos aos policiais militares do Departamento de Operações de Fronteira – DOF, pela atuação firme, técnica e corajosa no enfrentamento à criminalidade na região de fronteira do Estado de Mato Grosso do Sul.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625695"
-      },
-      {
-        "id": 2625579,
-        "sigla_tipo": "REQ",
-        "numero": 249,
-        "ano": 2026,
-        "ementa": "requer Moção de Aplausos aos policiais militares integrantes da equipe de Força Tática do 7º Batalhão da Polícia Militar do Estado de Mato Grosso do Sul, pela atuação firme, técnica e corajosa em ocorrência registrada no município de Anastácio/MS.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625579"
       },
       {
         "id": 2598906,

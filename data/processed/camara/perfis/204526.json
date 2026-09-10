@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:57.124916+00:00",
+      "generated_at_utc": "2026-09-10T17:08:39.942718+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204526/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 99,
+        "quantidade_registros": 101,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
+          {
+            "id": 2646187,
+            "sigla_tipo": "REQ",
+            "numero": 4196,
+            "ano": 2026,
+            "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+          },
           {
             "id": 2645827,
             "sigla_tipo": "EMC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Presidente do Comitê Gestor do Imposto sobre Bens e Serviços – CGIBS acerca da caracterização de fornecimentos acessórios vinculados a um fornecimento principal como fornecimento único, nos termos da Lei Complementar nº 214/2025, em operações entre partes relacionadas, envolvendo prestação de serviços de disponibilidade operacional e assistência técnica de equipamentos a instituição financeira sujeita ao regime específico dos serviços financeiros; bem como acerca dos procedimentos fiscais aplicáveis ao correto preenchimento dos Documentos Fiscais eletrônicos (DF-e) correspondentes a essas operações.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644780"
-          },
-          {
-            "id": 2644457,
-            "sigla_tipo": "INC",
-            "numero": 1547,
-            "ano": 2026,
-            "ementa": "Sugere ao Ministério da Defesa a adoção de providências para permitir aos caçadores excepcionais a aquisição e o apostilamento de equipamentos de recarga de munição e suas matrizes, nos calibres das armas apostiladas no acervo de caça excepcional.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644457"
-          },
-          {
-            "id": 2642395,
-            "sigla_tipo": "REQ",
-            "numero": 119,
-            "ano": 2026,
-            "ementa": "Solicita ao Sr. Mauro Vieira, Ministro das Relações Exteriores, informações acerca do indeferimento de vistos a autoridades estrangeiras em período eleitoral e sobre o trâmite do pedido de agrément do Chefe de Missão indicado pelos Estados Unidos da América.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642395"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204526"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204526",
-  "generated_at_utc": "2026-09-08T04:43:13.643274+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.395163+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1484,7 +1484,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 942,
+    "quantidade_registros": 944,
     "por_ano": [
       {
         "ano": 2023,
@@ -1500,10 +1500,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 99
+        "quantidade_registros": 101
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
+      {
+        "id": 2646187,
+        "sigla_tipo": "REQ",
+        "numero": 4196,
+        "ano": 2026,
+        "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+      },
       {
         "id": 2645827,
         "sigla_tipo": "EMC",
@@ -1583,22 +1599,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Presidente do Comitê Gestor do Imposto sobre Bens e Serviços – CGIBS acerca da caracterização de fornecimentos acessórios vinculados a um fornecimento principal como fornecimento único, nos termos da Lei Complementar nº 214/2025, em operações entre partes relacionadas, envolvendo prestação de serviços de disponibilidade operacional e assistência técnica de equipamentos a instituição financeira sujeita ao regime específico dos serviços financeiros; bem como acerca dos procedimentos fiscais aplicáveis ao correto preenchimento dos Documentos Fiscais eletrônicos (DF-e) correspondentes a essas operações.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644780"
-      },
-      {
-        "id": 2644457,
-        "sigla_tipo": "INC",
-        "numero": 1547,
-        "ano": 2026,
-        "ementa": "Sugere ao Ministério da Defesa a adoção de providências para permitir aos caçadores excepcionais a aquisição e o apostilamento de equipamentos de recarga de munição e suas matrizes, nos calibres das armas apostiladas no acervo de caça excepcional.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644457"
-      },
-      {
-        "id": 2642395,
-        "sigla_tipo": "REQ",
-        "numero": 119,
-        "ano": 2026,
-        "ementa": "Solicita ao Sr. Mauro Vieira, Ministro das Relações Exteriores, informações acerca do indeferimento de vistos a autoridades estrangeiras em período eleitoral e sobre o trâmite do pedido de agrément do Chefe de Missão indicado pelos Estados Unidos da América.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642395"
       },
       {
         "id": 2598197,

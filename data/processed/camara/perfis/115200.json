@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:40:06.005635+00:00",
+      "generated_at_utc": "2026-09-10T17:08:04.331623+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/115200/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 24,
+        "quantidade_registros": 25,
         "registros_recentes": [
+          {
+            "id": 2646200,
+            "sigla_tipo": "PL",
+            "numero": 5307,
+            "ano": 2026,
+            "ementa": "Denomina “Viaduto Empresário José Carlos da Silva Júnior” o viaduto integrante da obra de implantação e pavimentação do Arco Metropolitano de João Pessoa, PB-016, situado sobre a Rodovia BR-230, no Km 48, no Estado da Paraíba.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646200"
+          },
           {
             "id": 2645071,
             "sigla_tipo": "PL",
@@ -453,14 +461,6 @@
             "ano": 2026,
             "ementa": "Inclusão de novos membros na Frente Parlamentar Mista em Defesa das Universidades Públicas Estaduais e Municipais - Req. 3202/2025",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638794"
-          },
-          {
-            "id": 2638497,
-            "sigla_tipo": "INC",
-            "numero": 1441,
-            "ano": 2026,
-            "ementa": "Sugere ao Ministério da Justiça e Segurança Pública a adoção das providências necessárias para a criação de uma unidade da Polícia Federal no Município de Guarabira, Estado da Paraíba.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638497"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=115200"
@@ -665,7 +665,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "115200",
-  "generated_at_utc": "2026-09-08T04:43:13.896163+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.324743+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -889,7 +889,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 61,
+    "quantidade_registros": 62,
     "por_ano": [
       {
         "ano": 2023,
@@ -905,10 +905,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 24
+        "quantidade_registros": 25
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646200,
+        "sigla_tipo": "PL",
+        "numero": 5307,
+        "ano": 2026,
+        "ementa": "Denomina “Viaduto Empresário José Carlos da Silva Júnior” o viaduto integrante da obra de implantação e pavimentação do Arco Metropolitano de João Pessoa, PB-016, situado sobre a Rodovia BR-230, no Km 48, no Estado da Paraíba.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646200"
+      },
       {
         "id": 2645071,
         "sigla_tipo": "PL",
@@ -996,14 +1004,6 @@
         "ano": 2026,
         "ementa": "Inclusão de novos membros na Frente Parlamentar Mista em Defesa das Universidades Públicas Estaduais e Municipais - Req. 3202/2025",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638794"
-      },
-      {
-        "id": 2638497,
-        "sigla_tipo": "INC",
-        "numero": 1441,
-        "ano": 2026,
-        "ementa": "Sugere ao Ministério da Justiça e Segurança Pública a adoção das providências necessárias para a criação de uma unidade da Polícia Federal no Município de Guarabira, Estado da Paraíba.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638497"
       },
       {
         "id": 2432084,

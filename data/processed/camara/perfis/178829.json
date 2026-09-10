@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:37:21.972839+00:00",
+      "generated_at_utc": "2026-09-10T17:07:50.604234+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178829/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 71,
+        "quantidade_registros": 72,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2644614,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o monitoramento e o rastreamento não consentido de pessoa, por meio de aplicativo, programa ou dispositivo instalado em equipamento de sua titularidade ou uso, como forma de violência doméstica e familiar contra a mulher; para estabelecer obrigações a provedores de aplicação e a prestadoras de serviço de telecomunicações para a prevenção e coibição dessas condutas; e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641733"
-          },
-          {
-            "id": 2641652,
-            "sigla_tipo": "PL",
-            "numero": 4804,
-            "ano": 2026,
-            "ementa": "Institui procedimento administrativo simplificado para o ressarcimento de danos causados a veículos em razão de buracos e outros defeitos de conservação de vias públicas.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641652"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178829"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178829",
-  "generated_at_utc": "2026-09-08T04:43:13.827891+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.295579+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1511,7 +1511,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 536,
+    "quantidade_registros": 537,
     "por_ano": [
       {
         "ano": 2023,
@@ -1527,10 +1527,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 71
+        "quantidade_registros": 72
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2644614,
         "sigla_tipo": "PL",
@@ -1618,14 +1626,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o monitoramento e o rastreamento não consentido de pessoa, por meio de aplicativo, programa ou dispositivo instalado em equipamento de sua titularidade ou uso, como forma de violência doméstica e familiar contra a mulher; para estabelecer obrigações a provedores de aplicação e a prestadoras de serviço de telecomunicações para a prevenção e coibição dessas condutas; e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641733"
-      },
-      {
-        "id": 2641652,
-        "sigla_tipo": "PL",
-        "numero": 4804,
-        "ano": 2026,
-        "ementa": "Institui procedimento administrativo simplificado para o ressarcimento de danos causados a veículos em razão de buracos e outros defeitos de conservação de vias públicas.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641652"
       },
       {
         "id": 2599190,

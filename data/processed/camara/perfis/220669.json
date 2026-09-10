@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:26.618559+00:00",
+      "generated_at_utc": "2026-09-10T17:08:59.022770+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220669/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 57,
+        "quantidade_registros": 60,
         "registros_recentes": [
+          {
+            "id": 2646298,
+            "sigla_tipo": "PL",
+            "numero": 5328,
+            "ano": 2026,
+            "ementa": "Institui o Dia Internacional de Conscientização e Combate ao Câncer Infantojuvenil, a ser celebrado anualmente no dia 22 de setembro, juntamente com a campanha do Setembro Dourado.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646298"
+          },
+          {
+            "id": 2646231,
+            "sigla_tipo": "PL",
+            "numero": 5317,
+            "ano": 2026,
+            "ementa": "Institui a Política Pública do Jogo Responsável, estabelece limites de apostas, disciplina a publicidade de apostas de quota fixa e destina recursos ao tratamento da ludopatia no SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646231"
+          },
+          {
+            "id": 2646230,
+            "sigla_tipo": "PL",
+            "numero": 5316,
+            "ano": 2026,
+            "ementa": "Altera o ECA Digital para proibir que menores de 14 anos criem ou mantenham contas em redes sociais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646230"
+          },
           {
             "id": 2644856,
             "sigla_tipo": "RIC",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Susta os efeitos do ato administrativo da Comissão Nacional de Energia Nuclear – CNEN, que reajustou os preços dos radioisótopos e radiofármacos produzidos pela autarquia.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637122"
-          },
-          {
-            "id": 2635881,
-            "sigla_tipo": "PRC",
-            "numero": 39,
-            "ano": 2026,
-            "ementa": "Concede ao Sr. Carlo Michelangelo Ancelotti o título de cidadão honorário da República Federativa do Brasil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635881"
-          },
-          {
-            "id": 2634754,
-            "sigla_tipo": "PL",
-            "numero": 3263,
-            "ano": 2026,
-            "ementa": "Altera o Marco Legal da Primeira Infância para prever a orientação e a capacitação prática de pais ou responsáveis de recém-nascidos, ainda nas maternidades e demais estabelecimentos de saúde em que se realizem partos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634754"
-          },
-          {
-            "id": 2634678,
-            "sigla_tipo": "REQ",
-            "numero": 3591,
-            "ano": 2026,
-            "ementa": "Requerem a inclusão na pauta da Ordem do Dia do Plenário do PLP 108/2021",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634678"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220669"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220669",
-  "generated_at_utc": "2026-09-08T04:43:13.647063+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.432246+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 267,
+    "quantidade_registros": 270,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 57
+        "quantidade_registros": 60
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646298,
+        "sigla_tipo": "PL",
+        "numero": 5328,
+        "ano": 2026,
+        "ementa": "Institui o Dia Internacional de Conscientização e Combate ao Câncer Infantojuvenil, a ser celebrado anualmente no dia 22 de setembro, juntamente com a campanha do Setembro Dourado.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646298"
+      },
+      {
+        "id": 2646231,
+        "sigla_tipo": "PL",
+        "numero": 5317,
+        "ano": 2026,
+        "ementa": "Institui a Política Pública do Jogo Responsável, estabelece limites de apostas, disciplina a publicidade de apostas de quota fixa e destina recursos ao tratamento da ludopatia no SUS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646231"
+      },
+      {
+        "id": 2646230,
+        "sigla_tipo": "PL",
+        "numero": 5316,
+        "ano": 2026,
+        "ementa": "Altera o ECA Digital para proibir que menores de 14 anos criem ou mantenham contas em redes sociais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646230"
+      },
       {
         "id": 2644856,
         "sigla_tipo": "RIC",
@@ -1490,30 +1514,6 @@
         "ano": 2026,
         "ementa": "Susta os efeitos do ato administrativo da Comissão Nacional de Energia Nuclear – CNEN, que reajustou os preços dos radioisótopos e radiofármacos produzidos pela autarquia.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637122"
-      },
-      {
-        "id": 2635881,
-        "sigla_tipo": "PRC",
-        "numero": 39,
-        "ano": 2026,
-        "ementa": "Concede ao Sr. Carlo Michelangelo Ancelotti o título de cidadão honorário da República Federativa do Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635881"
-      },
-      {
-        "id": 2634754,
-        "sigla_tipo": "PL",
-        "numero": 3263,
-        "ano": 2026,
-        "ementa": "Altera o Marco Legal da Primeira Infância para prever a orientação e a capacitação prática de pais ou responsáveis de recém-nascidos, ainda nas maternidades e demais estabelecimentos de saúde em que se realizem partos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634754"
-      },
-      {
-        "id": 2634678,
-        "sigla_tipo": "REQ",
-        "numero": 3591,
-        "ano": 2026,
-        "ementa": "Requerem a inclusão na pauta da Ordem do Dia do Plenário do PLP 108/2021",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634678"
       },
       {
         "id": 2598301,

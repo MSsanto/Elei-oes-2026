@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:00.151984+00:00",
+      "generated_at_utc": "2026-09-10T17:08:54.522065+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220559/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 161,
+        "quantidade_registros": 162,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2645128,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Susta os efeitos da Resolução BCB n.º 584 de 07 de agosto de 2026, do Banco Central do Brasil, que altera a Resolução BCB nº 142, de 23 de setembro de 2021, para estender às prestadoras de serviços de ativos virtuais os procedimentos de prevenção a fraudes e instituir retenção de ativos virtuais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642311"
-          },
-          {
-            "id": 2642176,
-            "sigla_tipo": "RIC",
-            "numero": 2336,
-            "ano": 2026,
-            "ementa": "Solicitação de informações à Ministra de Estado Chefe da Casa Civil, Sra Miriam Belchior, sobre o conhecimento prévio, o monitoramento e eventuais relatórios de inteligência produzidos pela Agência Brasileira de Inteligência (ABIN) a respeito de possível infraestrutura aeroespacial de rastreamento operada por entidades da República Popular da China em Salvador (BA).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642176"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220559"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220559",
-  "generated_at_utc": "2026-09-08T04:43:13.631237+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.423021+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 783,
+    "quantidade_registros": 784,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 161
+        "quantidade_registros": 162
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2645128,
         "sigla_tipo": "REQ",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Susta os efeitos da Resolução BCB n.º 584 de 07 de agosto de 2026, do Banco Central do Brasil, que altera a Resolução BCB nº 142, de 23 de setembro de 2021, para estender às prestadoras de serviços de ativos virtuais os procedimentos de prevenção a fraudes e instituir retenção de ativos virtuais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642311"
-      },
-      {
-        "id": 2642176,
-        "sigla_tipo": "RIC",
-        "numero": 2336,
-        "ano": 2026,
-        "ementa": "Solicitação de informações à Ministra de Estado Chefe da Casa Civil, Sra Miriam Belchior, sobre o conhecimento prévio, o monitoramento e eventuais relatórios de inteligência produzidos pela Agência Brasileira de Inteligência (ABIN) a respeito de possível infraestrutura aeroespacial de rastreamento operada por entidades da República Popular da China em Salvador (BA).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642176"
       },
       {
         "id": 2598979,

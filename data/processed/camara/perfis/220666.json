@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:43:02.335596+00:00",
+      "generated_at_utc": "2026-09-10T17:06:46.963590+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220666/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 82,
+        "quantidade_registros": 84,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
+          {
+            "id": 2646187,
+            "sigla_tipo": "REQ",
+            "numero": 4196,
+            "ano": 2026,
+            "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+          },
           {
             "id": 2644973,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 233-A da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para reduzir o prazo de habilitação ao voto em trânsito dos integrantes das Forças Armadas, dos agentes de segurança pública de que trata o art. 144 da Constituição Federal e das guardas municipais em serviço no dia da eleição, para impor à Justiça Eleitoral o dever de organizar a votação desses eleitores, para assegurar a dispensa remunerada de até duas horas de serviço para o exercício do voto e para instituir sanção pelo descumprimento.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641424"
-          },
-          {
-            "id": 2640403,
-            "sigla_tipo": "REQ",
-            "numero": 3956,
-            "ano": 2026,
-            "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-          },
-          {
-            "id": 2639521,
-            "sigla_tipo": "PDL",
-            "numero": 849,
-            "ano": 2026,
-            "ementa": "Susta, em sua integralidade, os efeitos da Resolução nº 491, de 4 de maio de 2026, do Conselho Nacional de Seguros Privados - CNSP, que estabelece as normas gerais aplicáveis às operações de proteção patrimonial mutualista.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639521"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220666"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220666",
-  "generated_at_utc": "2026-09-08T04:43:13.958697+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.174462+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 798,
+    "quantidade_registros": 800,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 82
+        "quantidade_registros": 84
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
+      {
+        "id": 2646187,
+        "sigla_tipo": "REQ",
+        "numero": 4196,
+        "ano": 2026,
+        "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+      },
       {
         "id": 2644973,
         "sigla_tipo": "PL",
@@ -1501,22 +1517,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 233-A da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para reduzir o prazo de habilitação ao voto em trânsito dos integrantes das Forças Armadas, dos agentes de segurança pública de que trata o art. 144 da Constituição Federal e das guardas municipais em serviço no dia da eleição, para impor à Justiça Eleitoral o dever de organizar a votação desses eleitores, para assegurar a dispensa remunerada de até duas horas de serviço para o exercício do voto e para instituir sanção pelo descumprimento.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641424"
-      },
-      {
-        "id": 2640403,
-        "sigla_tipo": "REQ",
-        "numero": 3956,
-        "ano": 2026,
-        "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-      },
-      {
-        "id": 2639521,
-        "sigla_tipo": "PDL",
-        "numero": 849,
-        "ano": 2026,
-        "ementa": "Susta, em sua integralidade, os efeitos da Resolução nº 491, de 4 de maio de 2026, do Conselho Nacional de Seguros Privados - CNSP, que estabelece as normas gerais aplicáveis às operações de proteção patrimonial mutualista.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639521"
       },
       {
         "id": 2598197,

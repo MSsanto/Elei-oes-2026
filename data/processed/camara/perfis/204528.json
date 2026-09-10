@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:30:49.062098+00:00",
+      "generated_at_utc": "2026-09-10T17:07:05.900484+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204528/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 292,
+        "quantidade_registros": 294,
         "registros_recentes": [
+          {
+            "id": 2646323,
+            "sigla_tipo": "PLP",
+            "numero": 251,
+            "ano": 2026,
+            "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir alíquota zero da Contribuição sobre Bens e Serviços (CBS) incidente sobre vendas de baixo valor realizadas no mercado interno a pessoas físicas, condicionada à tributação efetivamente nula das importações de pequeno valor por pessoa física, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646323"
+          },
+          {
+            "id": 2646301,
+            "sigla_tipo": "REQ",
+            "numero": 4213,
+            "ano": 2026,
+            "ementa": "Requer a inclusão da Proposta de Emenda à Constituição nº 333 de 2017, na ordem do dia.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646301"
+          },
           {
             "id": 2645752,
             "sigla_tipo": "EMC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 10.741, de 1º de outubro de 2003, para dispor sobre o pleno exercício da capacidade civil pela pessoa idosa.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645155"
-          },
-          {
-            "id": 2644971,
-            "sigla_tipo": "REQ",
-            "numero": 197,
-            "ano": 2026,
-            "ementa": "Requer o aditamento ao Requerimento nº 177, de 2026, para inclusão de convidado em audiência pública destinada a debater a expansão da Telessaúde no Brasil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644971"
-          },
-          {
-            "id": 2644969,
-            "sigla_tipo": "REQ",
-            "numero": 196,
-            "ano": 2026,
-            "ementa": "Requer o aditamento ao Requerimento nº 33, de 2026, da Comissão de Saúde, para incluir representantes do Conselho Nacional de Secretários de Saúde, do Conselho Nacional de Secretarias Municipais de Saúde e da Saúde Digital Brasil na  audiência pública destinada a debater o Substitutivo ao Projeto de Lei nº 5.875, de 2013, e apensados.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644969"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204528"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204528",
-  "generated_at_utc": "2026-09-08T04:43:13.633478+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.207465+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1452,7 +1452,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1949,
+    "quantidade_registros": 1951,
     "por_ano": [
       {
         "ano": 2023,
@@ -1468,10 +1468,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 292
+        "quantidade_registros": 294
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646323,
+        "sigla_tipo": "PLP",
+        "numero": 251,
+        "ano": 2026,
+        "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para instituir alíquota zero da Contribuição sobre Bens e Serviços (CBS) incidente sobre vendas de baixo valor realizadas no mercado interno a pessoas físicas, condicionada à tributação efetivamente nula das importações de pequeno valor por pessoa física, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646323"
+      },
+      {
+        "id": 2646301,
+        "sigla_tipo": "REQ",
+        "numero": 4213,
+        "ano": 2026,
+        "ementa": "Requer a inclusão da Proposta de Emenda à Constituição nº 333 de 2017, na ordem do dia.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646301"
+      },
       {
         "id": 2645752,
         "sigla_tipo": "EMC",
@@ -1551,22 +1567,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 10.741, de 1º de outubro de 2003, para dispor sobre o pleno exercício da capacidade civil pela pessoa idosa.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645155"
-      },
-      {
-        "id": 2644971,
-        "sigla_tipo": "REQ",
-        "numero": 197,
-        "ano": 2026,
-        "ementa": "Requer o aditamento ao Requerimento nº 177, de 2026, para inclusão de convidado em audiência pública destinada a debater a expansão da Telessaúde no Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644971"
-      },
-      {
-        "id": 2644969,
-        "sigla_tipo": "REQ",
-        "numero": 196,
-        "ano": 2026,
-        "ementa": "Requer o aditamento ao Requerimento nº 33, de 2026, da Comissão de Saúde, para incluir representantes do Conselho Nacional de Secretários de Saúde, do Conselho Nacional de Secretarias Municipais de Saúde e da Saúde Digital Brasil na  audiência pública destinada a debater o Substitutivo ao Projeto de Lei nº 5.875, de 2013, e apensados.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644969"
       },
       {
         "id": 2598717,

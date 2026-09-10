@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:39:53.847248+00:00",
+      "generated_at_utc": "2026-09-10T17:09:08.249605+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160561/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 14,
+        "quantidade_registros": 15,
         "registros_recentes": [
+          {
+            "id": 2646136,
+            "sigla_tipo": "PL",
+            "numero": 5302,
+            "ano": 2026,
+            "ementa": "Institui o Programa Nacional de Proteção ao Motofretista, com a finalidade de conceder incentivo financeiro aos Municípios e ao Distrito Federal para o fornecimento de equipamentos de segurança e a oferta de cursos de qualificação e reciclagem profissional a motofretistas e mototaxistas, institui o Selo Parceiro da Segurança do Motofretista, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646136"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -453,14 +461,6 @@
             "ano": 2026,
             "ementa": "Fortalece a proteção previdenciária dos vigilantes e demais trabalhadores expostos a risco permanente, assegurando maior rigor na comprovação da periculosidade no Perfil Profissiográfico Previdenciário (PPP).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604947"
-          },
-          {
-            "id": 2604489,
-            "sigla_tipo": "REQ",
-            "numero": 11,
-            "ano": 2026,
-            "ementa": "Requer seja consignado o repúdio à decisão proferida pela 9ª Câmara Criminal do Tribunal de Justiça de Minas Gerais (TJMG) que absolveu um homem de 35 anos acusado de estupro de vulnerável contra uma criança de 12 anos, sob os argumentos de \"vínculo afetivo consensual\" e \"formação de núcleo familiar\", bem como repúdio às declarações do desembargador relator do caso.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604489"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160561"
@@ -675,7 +675,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160561",
-  "generated_at_utc": "2026-09-08T04:43:13.888367+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.450218+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1107,7 +1107,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 30,
+    "quantidade_registros": 31,
     "por_ano": [
       {
         "ano": 2023,
@@ -1123,10 +1123,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 14
+        "quantidade_registros": 15
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646136,
+        "sigla_tipo": "PL",
+        "numero": 5302,
+        "ano": 2026,
+        "ementa": "Institui o Programa Nacional de Proteção ao Motofretista, com a finalidade de conceder incentivo financeiro aos Municípios e ao Distrito Federal para o fornecimento de equipamentos de segurança e a oferta de cursos de qualificação e reciclagem profissional a motofretistas e mototaxistas, institui o Selo Parceiro da Segurança do Motofretista, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646136"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1214,14 +1222,6 @@
         "ano": 2026,
         "ementa": "Fortalece a proteção previdenciária dos vigilantes e demais trabalhadores expostos a risco permanente, assegurando maior rigor na comprovação da periculosidade no Perfil Profissiográfico Previdenciário (PPP).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604947"
-      },
-      {
-        "id": 2604489,
-        "sigla_tipo": "REQ",
-        "numero": 11,
-        "ano": 2026,
-        "ementa": "Requer seja consignado o repúdio à decisão proferida pela 9ª Câmara Criminal do Tribunal de Justiça de Minas Gerais (TJMG) que absolveu um homem de 35 anos acusado de estupro de vulnerável contra uma criança de 12 anos, sob os argumentos de \"vínculo afetivo consensual\" e \"formação de núcleo familiar\", bem como repúdio às declarações do desembargador relator do caso.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604489"
       },
       {
         "id": 2567230,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:38:05.402466+00:00",
+      "generated_at_utc": "2026-09-10T17:08:19.622001+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204387/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 63,
+        "quantidade_registros": 64,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2644991,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer que a Comissão de Relações Exteriores e de Defesa Nacional oficie a Embaixada dos Estados Unidos da América no Brasil, em Brasília/DF, solicitando o fornecimento de estudos, levantamentos e informações detalhadas sobre o avanço do crime organizado transnacional, com ênfase no narcotráfico, no Brasil e na América Latina, incluindo suas estratégias de influência para o controle territorial e institucional, especialmente por meio do financiamento ilícito de campanhas eleitorais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634923"
-          },
-          {
-            "id": 2632537,
-            "sigla_tipo": "REQ",
-            "numero": 295,
-            "ano": 2026,
-            "ementa": "Requer Moção de Aplauso e Louvor em favor dos integrantes do Grupo de Atuação Especial de Combate ao Crime Organizado (GAECO/PR), da Polícia Militar do Paraná, da Polícia Civil do Paraná, da Polícia Penal do Paraná e da Polícia Científica do Paraná pela deflagração da Operação Panóptico (Convergência Nacional PR-01), com o cumprimento de 559 mandados judiciais contra o crime organizado.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632537"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204387"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204387",
-  "generated_at_utc": "2026-09-08T04:43:13.844146+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.355527+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 598,
+    "quantidade_registros": 599,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 63
+        "quantidade_registros": 64
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2644991,
         "sigla_tipo": "PL",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Requer que a Comissão de Relações Exteriores e de Defesa Nacional oficie a Embaixada dos Estados Unidos da América no Brasil, em Brasília/DF, solicitando o fornecimento de estudos, levantamentos e informações detalhadas sobre o avanço do crime organizado transnacional, com ênfase no narcotráfico, no Brasil e na América Latina, incluindo suas estratégias de influência para o controle territorial e institucional, especialmente por meio do financiamento ilícito de campanhas eleitorais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634923"
-      },
-      {
-        "id": 2632537,
-        "sigla_tipo": "REQ",
-        "numero": 295,
-        "ano": 2026,
-        "ementa": "Requer Moção de Aplauso e Louvor em favor dos integrantes do Grupo de Atuação Especial de Combate ao Crime Organizado (GAECO/PR), da Polícia Militar do Paraná, da Polícia Civil do Paraná, da Polícia Penal do Paraná e da Polícia Científica do Paraná pela deflagração da Operação Panóptico (Convergência Nacional PR-01), com o cumprimento de 559 mandados judiciais contra o crime organizado.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632537"
       },
       {
         "id": 2596370,

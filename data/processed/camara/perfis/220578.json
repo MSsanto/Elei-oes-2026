@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:39:03.845640+00:00",
+      "generated_at_utc": "2026-09-10T17:07:43.976883+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220578/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 23,
+        "quantidade_registros": 24,
         "registros_recentes": [
+          {
+            "id": 2646239,
+            "sigla_tipo": "PL",
+            "numero": 5321,
+            "ano": 2026,
+            "ementa": "Institui o Programa Brasil Pescador de Desenvolvimento, Renda e Valorização da Pesca Artesanal, estabelece a Bolsa Pescador Empreendedor e dispõe sobre medidas de fortalecimento da cadeia produtiva da pesca artesanal.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646239"
+          },
           {
             "id": 2645829,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
-          },
-          {
-            "id": 2616078,
-            "sigla_tipo": "RIC",
-            "numero": 869,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos sobre estimativas do impacto orçamentário e financeiro, acompanhadas da memória e das premissas e metodologia de cálculo utilizadas, do Projeto de Lei nº 1.958/2023, do Substitutivo ao Projeto de Lei nº 1.958/2023 adotado na Comissão de Viação e Transportes e do Projeto de Lei nº 5.788/2023, apensado.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616078"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220578"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220578",
-  "generated_at_utc": "2026-09-08T04:43:13.870171+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.281456+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1401,7 +1401,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 295,
+    "quantidade_registros": 296,
     "por_ano": [
       {
         "ano": 2023,
@@ -1417,10 +1417,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 23
+        "quantidade_registros": 24
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646239,
+        "sigla_tipo": "PL",
+        "numero": 5321,
+        "ano": 2026,
+        "ementa": "Institui o Programa Brasil Pescador de Desenvolvimento, Renda e Valorização da Pesca Artesanal, estabelece a Bolsa Pescador Empreendedor e dispõe sobre medidas de fortalecimento da cadeia produtiva da pesca artesanal.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646239"
+      },
       {
         "id": 2645829,
         "sigla_tipo": "EMC",
@@ -1508,14 +1516,6 @@
         "ano": 2026,
         "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
-      },
-      {
-        "id": 2616078,
-        "sigla_tipo": "RIC",
-        "numero": 869,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos sobre estimativas do impacto orçamentário e financeiro, acompanhadas da memória e das premissas e metodologia de cálculo utilizadas, do Projeto de Lei nº 1.958/2023, do Substitutivo ao Projeto de Lei nº 1.958/2023 adotado na Comissão de Viação e Transportes e do Projeto de Lei nº 5.788/2023, apensado.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616078"
       },
       {
         "id": 2598301,

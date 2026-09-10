@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:32:48.256801+00:00",
+      "generated_at_utc": "2026-09-10T17:07:41.980374+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74041/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 68,
+        "quantidade_registros": 70,
         "registros_recentes": [
+          {
+            "id": 2646178,
+            "sigla_tipo": "EMC",
+            "numero": 38,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1375/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646178"
+          },
+          {
+            "id": 2646177,
+            "sigla_tipo": "EMC",
+            "numero": 37,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1375/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646177"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1348/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636398"
-          },
-          {
-            "id": 2635883,
-            "sigla_tipo": "PL",
-            "numero": 3377,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 14.133, de 1º de abril de 2021, para dispor sobre contratação pública de bens e serviços artesanais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635883"
-          },
-          {
-            "id": 2632315,
-            "sigla_tipo": "REQ",
-            "numero": 35,
-            "ano": 2026,
-            "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Defesa dos Direitos da Pessoa Idosa – CIDOSO, para debater o Projeto de Lei nº 184/2026, que institui o Marco Nacional de Reconhecimento Jurídico da Pessoa Idosa, estabelece categorias etárias para fins de proteção jurídica progressiva e dá outras providências, com vistas a avaliar seus impactos sobre os direitos das pessoas idosas e sobre as políticas públicas de envelhecimento.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632315"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74041"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74041",
-  "generated_at_utc": "2026-09-08T04:43:13.715888+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.277283+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1591,7 +1591,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 687,
+    "quantidade_registros": 689,
     "por_ano": [
       {
         "ano": 2023,
@@ -1607,10 +1607,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 68
+        "quantidade_registros": 70
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646178,
+        "sigla_tipo": "EMC",
+        "numero": 38,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1375/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646178"
+      },
+      {
+        "id": 2646177,
+        "sigla_tipo": "EMC",
+        "numero": 37,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1375/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646177"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1690,22 +1706,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1348/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636398"
-      },
-      {
-        "id": 2635883,
-        "sigla_tipo": "PL",
-        "numero": 3377,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 14.133, de 1º de abril de 2021, para dispor sobre contratação pública de bens e serviços artesanais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635883"
-      },
-      {
-        "id": 2632315,
-        "sigla_tipo": "REQ",
-        "numero": 35,
-        "ano": 2026,
-        "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Defesa dos Direitos da Pessoa Idosa – CIDOSO, para debater o Projeto de Lei nº 184/2026, que institui o Marco Nacional de Reconhecimento Jurídico da Pessoa Idosa, estabelece categorias etárias para fins de proteção jurídica progressiva e dá outras providências, com vistas a avaliar seus impactos sobre os direitos das pessoas idosas e sobre as políticas públicas de envelhecimento.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632315"
       },
       {
         "id": 2598301,

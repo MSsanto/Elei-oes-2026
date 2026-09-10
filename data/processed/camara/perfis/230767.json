@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:25:59.769294+00:00",
+      "generated_at_utc": "2026-09-10T17:07:47.529627+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/230767/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 58,
+        "quantidade_registros": 59,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -453,14 +461,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1343/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633667"
-          },
-          {
-            "id": 2633666,
-            "sigla_tipo": "EMC",
-            "numero": 160,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633666"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=230767"
@@ -675,7 +675,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "230767",
-  "generated_at_utc": "2026-09-08T04:43:13.572293+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.289778+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -835,7 +835,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 166,
+    "quantidade_registros": 167,
     "por_ano": [
       {
         "ano": 2023,
@@ -851,10 +851,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 58
+        "quantidade_registros": 59
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -942,14 +950,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1343/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633667"
-      },
-      {
-        "id": 2633666,
-        "sigla_tipo": "EMC",
-        "numero": 160,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633666"
       },
       {
         "id": 2598197,

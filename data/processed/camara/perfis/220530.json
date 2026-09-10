@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:39:00.203219+00:00",
+      "generated_at_utc": "2026-09-10T17:06:56.424366+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220530/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 206,
+        "quantidade_registros": 208,
         "registros_recentes": [
+          {
+            "id": 2646186,
+            "sigla_tipo": "PLP",
+            "numero": 249,
+            "ano": 2026,
+            "ementa": "Autoriza as Unidades da Federação a legislar sobre a disponibilização em seus territórios de gasolina sem adição de etanol anidro e sobre gasolina com adição de dez porcento de etanol anidro.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646186"
+          },
+          {
+            "id": 2646185,
+            "sigla_tipo": "PL",
+            "numero": 5305,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 10.883, de 16 de junho de 2004, para dispor sobre a caracterização da Carreira de Auditor Fiscal Agropecuário como essencial à promoção da defesa nacional e da segurança pública.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646185"
+          },
           {
             "id": 2645565,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
-          },
-          {
-            "id": 2643409,
-            "sigla_tipo": "RIC",
-            "numero": 2405,
-            "ano": 2026,
-            "ementa": "Requer informações à Advocacia-Geral da União acerca da efetividade e da transparência na recuperação de recursos públicos adiantados para o ressarcimento de segurados do INSS vítimas de fraudes em descontos associativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643409"
-          },
-          {
-            "id": 2643401,
-            "sigla_tipo": "RIC",
-            "numero": 2404,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado da Previdência Social acerca da efetividade e da transparência na recuperação de recursos públicos adiantados para o ressarcimento de segurados do INSS vítimas de fraudes em descontos associativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643401"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220530"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220530",
-  "generated_at_utc": "2026-09-08T04:43:13.868260+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.190288+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1270,
+    "quantidade_registros": 1272,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 206
+        "quantidade_registros": 208
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646186,
+        "sigla_tipo": "PLP",
+        "numero": 249,
+        "ano": 2026,
+        "ementa": "Autoriza as Unidades da Federação a legislar sobre a disponibilização em seus territórios de gasolina sem adição de etanol anidro e sobre gasolina com adição de dez porcento de etanol anidro.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646186"
+      },
+      {
+        "id": 2646185,
+        "sigla_tipo": "PL",
+        "numero": 5305,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 10.883, de 16 de junho de 2004, para dispor sobre a caracterização da Carreira de Auditor Fiscal Agropecuário como essencial à promoção da defesa nacional e da segurança pública.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646185"
+      },
       {
         "id": 2645565,
         "sigla_tipo": "REQ",
@@ -1519,22 +1535,6 @@
         "ano": 2026,
         "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
-      },
-      {
-        "id": 2643409,
-        "sigla_tipo": "RIC",
-        "numero": 2405,
-        "ano": 2026,
-        "ementa": "Requer informações à Advocacia-Geral da União acerca da efetividade e da transparência na recuperação de recursos públicos adiantados para o ressarcimento de segurados do INSS vítimas de fraudes em descontos associativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643409"
-      },
-      {
-        "id": 2643401,
-        "sigla_tipo": "RIC",
-        "numero": 2404,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado da Previdência Social acerca da efetividade e da transparência na recuperação de recursos públicos adiantados para o ressarcimento de segurados do INSS vítimas de fraudes em descontos associativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643401"
       },
       {
         "id": 2598755,

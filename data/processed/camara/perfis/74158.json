@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:42:57.139203+00:00",
+      "generated_at_utc": "2026-09-10T17:08:58.375375+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74158/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 125,
+        "quantidade_registros": 127,
         "registros_recentes": [
+          {
+            "id": 2646235,
+            "sigla_tipo": "PL",
+            "numero": 5319,
+            "ano": 2026,
+            "ementa": "Estabelece obrigatoriedade de implantação de soluções hídricas próprias e vedação de uso de água de reservatório destinada ao consumo humano pelos centros de processamento de dados, com ressalva, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646235"
+          },
+          {
+            "id": 2646234,
+            "sigla_tipo": "PL",
+            "numero": 5318,
+            "ano": 2026,
+            "ementa": "Acresce aos objetivos da Política Nacional de Recursos Hídricos o incentivo e a promoção de soluções hídricas voltadas ao setor produtivo, inclui no exercício da atividade de mineração a implantação de soluções hídricas próprias e estabelece vedação de uso de água de reservatório destinada ao consumo humano pela atividade mineradora, com ressalva, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646234"
+          },
           {
             "id": 2640403,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer regime de urgência na apreciação do Projeto de Lei nº 2.581/2026.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632576"
-          },
-          {
-            "id": 2632482,
-            "sigla_tipo": "REQ",
-            "numero": 3512,
-            "ano": 2026,
-            "ementa": "Requer convocação de Sessão Solene da Câmara dos Deputados em homenagem ao Dia do Nutricionista.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632482"
-          },
-          {
-            "id": 2632454,
-            "sigla_tipo": "REQ",
-            "numero": 3511,
-            "ano": 2026,
-            "ementa": "Requer urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei nº 504/2021, que “Cria a Política Nacional de Residência em Área Profissional da Saúde”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632454"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74158"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74158",
-  "generated_at_utc": "2026-09-08T04:43:13.953927+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.430391+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1863,7 +1863,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 651,
+    "quantidade_registros": 653,
     "por_ano": [
       {
         "ano": 2023,
@@ -1879,10 +1879,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 125
+        "quantidade_registros": 127
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646235,
+        "sigla_tipo": "PL",
+        "numero": 5319,
+        "ano": 2026,
+        "ementa": "Estabelece obrigatoriedade de implantação de soluções hídricas próprias e vedação de uso de água de reservatório destinada ao consumo humano pelos centros de processamento de dados, com ressalva, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646235"
+      },
+      {
+        "id": 2646234,
+        "sigla_tipo": "PL",
+        "numero": 5318,
+        "ano": 2026,
+        "ementa": "Acresce aos objetivos da Política Nacional de Recursos Hídricos o incentivo e a promoção de soluções hídricas voltadas ao setor produtivo, inclui no exercício da atividade de mineração a implantação de soluções hídricas próprias e estabelece vedação de uso de água de reservatório destinada ao consumo humano pela atividade mineradora, com ressalva, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646234"
+      },
       {
         "id": 2640403,
         "sigla_tipo": "REQ",
@@ -1962,22 +1978,6 @@
         "ano": 2026,
         "ementa": "Requer regime de urgência na apreciação do Projeto de Lei nº 2.581/2026.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632576"
-      },
-      {
-        "id": 2632482,
-        "sigla_tipo": "REQ",
-        "numero": 3512,
-        "ano": 2026,
-        "ementa": "Requer convocação de Sessão Solene da Câmara dos Deputados em homenagem ao Dia do Nutricionista.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632482"
-      },
-      {
-        "id": 2632454,
-        "sigla_tipo": "REQ",
-        "numero": 3511,
-        "ano": 2026,
-        "ementa": "Requer urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei nº 504/2021, que “Cria a Política Nacional de Residência em Área Profissional da Saúde”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632454"
       },
       {
         "id": 2599057,

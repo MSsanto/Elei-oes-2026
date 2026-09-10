@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:31:50.696918+00:00",
+      "generated_at_utc": "2026-09-10T17:06:44.336237+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220654/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 52,
+        "quantidade_registros": 54,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
+          {
+            "id": 2646187,
+            "sigla_tipo": "REQ",
+            "numero": 4196,
+            "ano": 2026,
+            "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
-          },
-          {
-            "id": 2623400,
-            "sigla_tipo": "PEC",
-            "numero": 8,
-            "ano": 2026,
-            "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-          },
-          {
-            "id": 2622253,
-            "sigla_tipo": "REQ",
-            "numero": 2678,
-            "ano": 2026,
-            "ementa": "Requer o apensamento dos Projetos de Lei Complementar nº 113/2026 e nº 122/2026 ao Projeto de Lei Complementar nº 12/2024, por tratarem de matérias correlatas.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622253"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220654"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220654",
-  "generated_at_utc": "2026-09-08T04:43:13.688423+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.168609+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1331,
+    "quantidade_registros": 1333,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 52
+        "quantidade_registros": 54
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
+      {
+        "id": 2646187,
+        "sigla_tipo": "REQ",
+        "numero": 4196,
+        "ano": 2026,
+        "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1498,22 +1514,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
-      },
-      {
-        "id": 2623400,
-        "sigla_tipo": "PEC",
-        "numero": 8,
-        "ano": 2026,
-        "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-      },
-      {
-        "id": 2622253,
-        "sigla_tipo": "REQ",
-        "numero": 2678,
-        "ano": 2026,
-        "ementa": "Requer o apensamento dos Projetos de Lei Complementar nº 113/2026 e nº 122/2026 ao Projeto de Lei Complementar nº 12/2024, por tratarem de matérias correlatas.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622253"
       },
       {
         "id": 2598301,

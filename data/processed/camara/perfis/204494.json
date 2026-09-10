@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:38:04.733243+00:00",
+      "generated_at_utc": "2026-09-10T17:07:09.481367+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,40 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204494/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 63,
+        "quantidade_registros": 67,
         "registros_recentes": [
+          {
+            "id": 2646295,
+            "sigla_tipo": "REQ",
+            "numero": 4212,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 5.310, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646295"
+          },
+          {
+            "id": 2646275,
+            "sigla_tipo": "INC",
+            "numero": 1577,
+            "ano": 2026,
+            "ementa": "Sugere a adoção de medidas destinadas a fomentar, regulamentar e ampliar a utilização de tecnologias de sexagem in ovo no Brasil, com vistas à eliminação progressiva do descarte de pintinhos machos recém-eclodidos na avicultura de postura.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646275"
+          },
+          {
+            "id": 2646274,
+            "sigla_tipo": "RIC",
+            "numero": 2582,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministério da Agricultura e Pecuária acerca do descarte de pintinhos machos na avicultura de postura e das medidas em estudo para fomentar e regulamentar a utilização de tecnologias de sexagem in ovo no Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646274"
+          },
+          {
+            "id": 2646202,
+            "sigla_tipo": "PL",
+            "numero": 5310,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a proibição da eliminação de pintinhos machos de linhagens destinadas à produção de ovos exclusivamente em razão do sexo ou da ausência de finalidade econômica, institui mecanismos de incentivo à transição tecnológica da avicultura de postura e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646202"
+          },
           {
             "id": 2644046,
             "sigla_tipo": "REQ",
@@ -1025,38 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública sobre as providências adotadas para prevenir, investigar e reprimir crimes cometidos por meio de redes sociais, aplicativos de interação e comunidades digitais privadas, em especial na plataforma Discord.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627890"
-          },
-          {
-            "id": 2627721,
-            "sigla_tipo": "REQ",
-            "numero": 47,
-            "ano": 2026,
-            "ementa": "Requer a realização de audiência pública para debater o uso de plataformas digitais e redes privadas de conteúdo na prática de crimes e violências contra crianças, adolescentes e animais, com foco em aliciamento, abuso sexual, indução à automutilação, desafios perigosos, racismo, misoginia, extremismo e crueldade animal produzida como conteúdo.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627721"
-          },
-          {
-            "id": 2624846,
-            "sigla_tipo": "DOC",
-            "numero": 777,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624846"
-          },
-          {
-            "id": 2624716,
-            "sigla_tipo": "REQ",
-            "numero": 2858,
-            "ano": 2026,
-            "ementa": "Requer, nos termos regimentais, com anuência do autor, a coautoria ao Projeto de Lei nº 564/2023.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624716"
-          },
-          {
-            "id": 2624713,
-            "sigla_tipo": "REQ",
-            "numero": 2857,
-            "ano": 2026,
-            "ementa": "Requer, nos termos regimentais, com anuência do autor, a coautoria ao Projeto de Lei nº 4.964/2023.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624713"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204494"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204494",
-  "generated_at_utc": "2026-09-08T04:43:13.843470+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.217085+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1531,7 +1531,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 533,
+    "quantidade_registros": 537,
     "por_ano": [
       {
         "ano": 2023,
@@ -1547,10 +1547,42 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 63
+        "quantidade_registros": 67
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646295,
+        "sigla_tipo": "REQ",
+        "numero": 4212,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 5.310, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646295"
+      },
+      {
+        "id": 2646275,
+        "sigla_tipo": "INC",
+        "numero": 1577,
+        "ano": 2026,
+        "ementa": "Sugere a adoção de medidas destinadas a fomentar, regulamentar e ampliar a utilização de tecnologias de sexagem in ovo no Brasil, com vistas à eliminação progressiva do descarte de pintinhos machos recém-eclodidos na avicultura de postura.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646275"
+      },
+      {
+        "id": 2646274,
+        "sigla_tipo": "RIC",
+        "numero": 2582,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministério da Agricultura e Pecuária acerca do descarte de pintinhos machos na avicultura de postura e das medidas em estudo para fomentar e regulamentar a utilização de tecnologias de sexagem in ovo no Brasil.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646274"
+      },
+      {
+        "id": 2646202,
+        "sigla_tipo": "PL",
+        "numero": 5310,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a proibição da eliminação de pintinhos machos de linhagens destinadas à produção de ovos exclusivamente em razão do sexo ou da ausência de finalidade econômica, institui mecanismos de incentivo à transição tecnológica da avicultura de postura e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646202"
+      },
       {
         "id": 2644046,
         "sigla_tipo": "REQ",
@@ -1614,38 +1646,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública sobre as providências adotadas para prevenir, investigar e reprimir crimes cometidos por meio de redes sociais, aplicativos de interação e comunidades digitais privadas, em especial na plataforma Discord.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627890"
-      },
-      {
-        "id": 2627721,
-        "sigla_tipo": "REQ",
-        "numero": 47,
-        "ano": 2026,
-        "ementa": "Requer a realização de audiência pública para debater o uso de plataformas digitais e redes privadas de conteúdo na prática de crimes e violências contra crianças, adolescentes e animais, com foco em aliciamento, abuso sexual, indução à automutilação, desafios perigosos, racismo, misoginia, extremismo e crueldade animal produzida como conteúdo.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627721"
-      },
-      {
-        "id": 2624846,
-        "sigla_tipo": "DOC",
-        "numero": 777,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624846"
-      },
-      {
-        "id": 2624716,
-        "sigla_tipo": "REQ",
-        "numero": 2858,
-        "ano": 2026,
-        "ementa": "Requer, nos termos regimentais, com anuência do autor, a coautoria ao Projeto de Lei nº 564/2023.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624716"
-      },
-      {
-        "id": 2624713,
-        "sigla_tipo": "REQ",
-        "numero": 2857,
-        "ano": 2026,
-        "ementa": "Requer, nos termos regimentais, com anuência do autor, a coautoria ao Projeto de Lei nº 4.964/2023.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624713"
       },
       {
         "id": 2598197,

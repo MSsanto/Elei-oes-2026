@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:34:13.466738+00:00",
+      "generated_at_utc": "2026-09-10T17:07:23.667776+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220621/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 58,
+        "quantidade_registros": 59,
         "registros_recentes": [
+          {
+            "id": 2646187,
+            "sigla_tipo": "REQ",
+            "numero": 4196,
+            "ano": 2026,
+            "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+          },
           {
             "id": 2645060,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a aprovação de Moção de Louvor aos policiais militares do 12º Batalhão da Polícia Militar do Rio Grande do Norte que atuaram na apreensão de armas de fogo, munições e demais materiais ilícitos na região das Malvinas, em Mossoró/RN.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630196"
-          },
-          {
-            "id": 2630195,
-            "sigla_tipo": "REQ",
-            "numero": 279,
-            "ano": 2026,
-            "ementa": "Requer a aprovação de Moção de Louvor à Guarda Municipal de Upanema/RN, em razão da celebração dos seus 22 anos de fundação e atuação institucional, pelos relevantes serviços prestados à segurança da população, à proteção do patrimônio público municipal e à preservação da ordem no Município de Upanema/RN.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630195"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220621"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220621",
-  "generated_at_utc": "2026-09-08T04:43:13.754228+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.242751+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 576,
+    "quantidade_registros": 577,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 58
+        "quantidade_registros": 59
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646187,
+        "sigla_tipo": "REQ",
+        "numero": 4196,
+        "ano": 2026,
+        "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+      },
       {
         "id": 2645060,
         "sigla_tipo": "REQ",
@@ -1510,14 +1518,6 @@
         "ano": 2026,
         "ementa": "Requer a aprovação de Moção de Louvor aos policiais militares do 12º Batalhão da Polícia Militar do Rio Grande do Norte que atuaram na apreensão de armas de fogo, munições e demais materiais ilícitos na região das Malvinas, em Mossoró/RN.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630196"
-      },
-      {
-        "id": 2630195,
-        "sigla_tipo": "REQ",
-        "numero": 279,
-        "ano": 2026,
-        "ementa": "Requer a aprovação de Moção de Louvor à Guarda Municipal de Upanema/RN, em razão da celebração dos seus 22 anos de fundação e atuação institucional, pelos relevantes serviços prestados à segurança da população, à proteção do patrimônio público municipal e à preservação da ordem no Município de Upanema/RN.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630195"
       },
       {
         "id": 2598538,

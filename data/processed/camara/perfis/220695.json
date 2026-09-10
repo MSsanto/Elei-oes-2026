@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:41:09.770183+00:00",
+      "generated_at_utc": "2026-09-10T17:07:17.214544+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220695/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 197,
+        "quantidade_registros": 198,
         "registros_recentes": [
+          {
+            "id": 2646327,
+            "sigla_tipo": "PL",
+            "numero": 5336,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 10.257, de 2001, e a Lei nº 11.445, de 2007, para dispor sobre a promoção da segurança, da acessibilidade e da manutenção adequada dos espaços públicos e dos equipamentos de infraestrutura urbana e de saneamento",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646327"
+          },
           {
             "id": 2645444,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Aplausos e Reconhecimento à Associação aBRAÇO a Microcefalia, em razão de sua relevante atuação no acolhimento, apoio, habilitação, reabilitação e inclusão social de crianças com Síndrome Congênita do Zika Vírus, microcefalia e outras malformações do sistema nervoso central, bem como no apoio e fortalecimento de suas famílias.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644373"
-          },
-          {
-            "id": 2644367,
-            "sigla_tipo": "RIC",
-            "numero": 2486,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro da Saúde acerca da decisão de não incorporação do medicamento nusinersena para o tratamento da Atrofia Muscular Espinhal – AME 5q Tipo III no âmbito do SUS.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644367"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220695"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220695",
-  "generated_at_utc": "2026-09-08T04:43:13.916321+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.229252+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1351,
+    "quantidade_registros": 1352,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 197
+        "quantidade_registros": 198
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646327,
+        "sigla_tipo": "PL",
+        "numero": 5336,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 10.257, de 2001, e a Lei nº 11.445, de 2007, para dispor sobre a promoção da segurança, da acessibilidade e da manutenção adequada dos espaços públicos e dos equipamentos de infraestrutura urbana e de saneamento",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646327"
+      },
       {
         "id": 2645444,
         "sigla_tipo": "EMC",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Aplausos e Reconhecimento à Associação aBRAÇO a Microcefalia, em razão de sua relevante atuação no acolhimento, apoio, habilitação, reabilitação e inclusão social de crianças com Síndrome Congênita do Zika Vírus, microcefalia e outras malformações do sistema nervoso central, bem como no apoio e fortalecimento de suas famílias.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644373"
-      },
-      {
-        "id": 2644367,
-        "sigla_tipo": "RIC",
-        "numero": 2486,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro da Saúde acerca da decisão de não incorporação do medicamento nusinersena para o tratamento da Atrofia Muscular Espinhal – AME 5q Tipo III no âmbito do SUS.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644367"
       },
       {
         "id": 2599333,

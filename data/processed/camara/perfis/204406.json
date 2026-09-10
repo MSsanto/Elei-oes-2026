@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:42.566705+00:00",
+      "generated_at_utc": "2026-09-10T17:08:22.812093+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204406/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 35,
+        "quantidade_registros": 36,
         "registros_recentes": [
+          {
+            "id": 2646302,
+            "sigla_tipo": "REQ",
+            "numero": 4214,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+          },
           {
             "id": 2645783,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Sessão Solene pelos Relevantes Serviços Prestados por Gramado ao Desenvolvimento do Turismo Nacional.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633466"
-          },
-          {
-            "id": 2632881,
-            "sigla_tipo": "INC",
-            "numero": 1027,
-            "ano": 2026,
-            "ementa": "Sugere ao Senhor Ministro da Saúde a expansão do acesso ao tratamento da classe de inibidores de ciclina (CDK 4/6) para pacientes com câncer de mama precoce RH+/HER2- de alto risco no âmbito do Sistema Único de Saúde (SUS).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632881"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204406"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204406",
-  "generated_at_utc": "2026-09-08T04:43:13.654048+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.362194+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1447,7 +1447,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 586,
+    "quantidade_registros": 587,
     "por_ano": [
       {
         "ano": 2023,
@@ -1463,10 +1463,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 35
+        "quantidade_registros": 36
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646302,
+        "sigla_tipo": "REQ",
+        "numero": 4214,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, para comparecer ao Plenário da Câmara dos Deputados, reunido em Comissão Geral, e o convite ao Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, e ao Diretor de Inteligência Policial da Polícia Federal, Sr. Leandro Almada da Costa, a fim de prestarem esclarecimentos acerca da elaboração, autoria, tramitação, difusão e utilização de relatório de inteligência atribuído à Polícia Federal e qualificado como apócrifo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646302"
+      },
       {
         "id": 2645783,
         "sigla_tipo": "EMC",
@@ -1554,14 +1562,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Sessão Solene pelos Relevantes Serviços Prestados por Gramado ao Desenvolvimento do Turismo Nacional.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633466"
-      },
-      {
-        "id": 2632881,
-        "sigla_tipo": "INC",
-        "numero": 1027,
-        "ano": 2026,
-        "ementa": "Sugere ao Senhor Ministro da Saúde a expansão do acesso ao tratamento da classe de inibidores de ciclina (CDK 4/6) para pacientes com câncer de mama precoce RH+/HER2- de alto risco no âmbito do Sistema Único de Saúde (SUS).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632881"
       },
       {
         "id": 2598197,

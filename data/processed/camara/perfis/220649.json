@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:34:04.583196+00:00",
+      "generated_at_utc": "2026-09-10T17:07:19.495968+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220649/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 29,
+        "quantidade_registros": 30,
         "registros_recentes": [
+          {
+            "id": 2646236,
+            "sigla_tipo": "PL",
+            "numero": 5320,
+            "ano": 2026,
+            "ementa": "Altera o art. 157 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para qualificar o roubo praticado mediante destruição ou rompimento de vidro ou de outro componente de veículo automotor ocupado.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646236"
+          },
           {
             "id": 2644463,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-          },
-          {
-            "id": 2622132,
-            "sigla_tipo": "PL",
-            "numero": 2211,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 7.960, de 21 de dezembro de 1989 (Lei da Prisão Temporária), para acrescentar a alínea “q” ao inciso III do seu artigo 1º, a fim de prever o cabimento de prisão temporária para quem pratica qualquer das condutas tipificadas como crime na Lei nº 15.358, de 24 de março de 2026 (Marco Legal do Combate ao Crime Organizado no Brasil – Lei Raul Jungmann).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622132"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220649"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220649",
-  "generated_at_utc": "2026-09-08T04:43:13.747544+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.234945+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 278,
+    "quantidade_registros": 279,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 29
+        "quantidade_registros": 30
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646236,
+        "sigla_tipo": "PL",
+        "numero": 5320,
+        "ano": 2026,
+        "ementa": "Altera o art. 157 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para qualificar o roubo praticado mediante destruição ou rompimento de vidro ou de outro componente de veículo automotor ocupado.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646236"
+      },
       {
         "id": 2644463,
         "sigla_tipo": "REQ",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-      },
-      {
-        "id": 2622132,
-        "sigla_tipo": "PL",
-        "numero": 2211,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 7.960, de 21 de dezembro de 1989 (Lei da Prisão Temporária), para acrescentar a alínea “q” ao inciso III do seu artigo 1º, a fim de prever o cabimento de prisão temporária para quem pratica qualquer das condutas tipificadas como crime na Lei nº 15.358, de 24 de março de 2026 (Marco Legal do Combate ao Crime Organizado no Brasil – Lei Raul Jungmann).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622132"
       },
       {
         "id": 2598301,

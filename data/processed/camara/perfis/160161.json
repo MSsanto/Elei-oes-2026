@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:37:50.304474+00:00",
+      "generated_at_utc": "2026-09-10T17:06:38.140270+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160161/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 43,
+        "quantidade_registros": 45,
         "registros_recentes": [
+          {
+            "id": 2646295,
+            "sigla_tipo": "REQ",
+            "numero": 4212,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 5.310, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646295"
+          },
+          {
+            "id": 2646286,
+            "sigla_tipo": "PL",
+            "numero": 5327,
+            "ano": 2026,
+            "ementa": "Institui o Contrato de Aperfeiçoamento Profissional do Médico-Veterinário e estabelece normas para a formação prática supervisionada de médicos-veterinários em início de carreira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646286"
+          },
           {
             "id": 2644724,
             "sigla_tipo": "PLP",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 177, de 2023.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630023"
-          },
-          {
-            "id": 2630016,
-            "sigla_tipo": "REQ",
-            "numero": 3342,
-            "ano": 2026,
-            "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 2.475, de 2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630016"
-          },
-          {
-            "id": 2630009,
-            "sigla_tipo": "REQ",
-            "numero": 3341,
-            "ano": 2026,
-            "ementa": "Requer a retirada de tramitação do PL 2808/2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630009"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160161"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160161",
-  "generated_at_utc": "2026-09-08T04:43:13.841918+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.155815+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1543,7 +1543,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 587,
+    "quantidade_registros": 589,
     "por_ano": [
       {
         "ano": 2023,
@@ -1559,10 +1559,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 43
+        "quantidade_registros": 45
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646295,
+        "sigla_tipo": "REQ",
+        "numero": 4212,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 5.310, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646295"
+      },
+      {
+        "id": 2646286,
+        "sigla_tipo": "PL",
+        "numero": 5327,
+        "ano": 2026,
+        "ementa": "Institui o Contrato de Aperfeiçoamento Profissional do Médico-Veterinário e estabelece normas para a formação prática supervisionada de médicos-veterinários em início de carreira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646286"
+      },
       {
         "id": 2644724,
         "sigla_tipo": "PLP",
@@ -1642,22 +1658,6 @@
         "ano": 2026,
         "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 177, de 2023.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630023"
-      },
-      {
-        "id": 2630016,
-        "sigla_tipo": "REQ",
-        "numero": 3342,
-        "ano": 2026,
-        "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 2.475, de 2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630016"
-      },
-      {
-        "id": 2630009,
-        "sigla_tipo": "REQ",
-        "numero": 3341,
-        "ano": 2026,
-        "ementa": "Requer a retirada de tramitação do PL 2808/2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630009"
       },
       {
         "id": 2596848,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:42:33.494663+00:00",
+      "generated_at_utc": "2026-09-10T17:07:48.345290+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220701/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 61,
+        "quantidade_registros": 62,
         "registros_recentes": [
+          {
+            "id": 2646295,
+            "sigla_tipo": "REQ",
+            "numero": 4212,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 5.310, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646295"
+          },
           {
             "id": 2641815,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Indicação a Presidência da República para solicitar a alteração do Decreto nº 8.771, de 11 de maio de 2016, a fim de incluir os crimes de maus-tratos a animais no rol de condutas sujeitas à responsabilidade sistêmica dos provedores de aplicações de internet.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630576"
-          },
-          {
-            "id": 2630023,
-            "sigla_tipo": "REQ",
-            "numero": 3343,
-            "ano": 2026,
-            "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 177, de 2023.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630023"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220701"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220701",
-  "generated_at_utc": "2026-09-08T04:43:13.948957+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.291180+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 457,
+    "quantidade_registros": 458,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 61
+        "quantidade_registros": 62
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646295,
+        "sigla_tipo": "REQ",
+        "numero": 4212,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 5.310, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646295"
+      },
       {
         "id": 2641815,
         "sigla_tipo": "REQ",
@@ -1510,14 +1518,6 @@
         "ano": 2026,
         "ementa": "Indicação a Presidência da República para solicitar a alteração do Decreto nº 8.771, de 11 de maio de 2016, a fim de incluir os crimes de maus-tratos a animais no rol de condutas sujeitas à responsabilidade sistêmica dos provedores de aplicações de internet.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630576"
-      },
-      {
-        "id": 2630023,
-        "sigla_tipo": "REQ",
-        "numero": 3343,
-        "ano": 2026,
-        "ementa": "Requer, nos termos regimentais, a coautoria do Projeto de Lei nº 177, de 2023.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630023"
       },
       {
         "id": 2596848,

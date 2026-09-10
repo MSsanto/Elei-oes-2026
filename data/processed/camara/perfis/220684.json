@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:38:07.713038+00:00",
+      "generated_at_utc": "2026-09-10T17:08:55.309564+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220684/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 54,
+        "quantidade_registros": 55,
         "registros_recentes": [
+          {
+            "id": 2646309,
+            "sigla_tipo": "RIC",
+            "numero": 2596,
+            "ano": 2026,
+            "ementa": "Requer informações ao Senhor Ministro de Estado de Minas e Energia acerca da exploração e produção de petróleo e gás natural mediante a utilização da técnica de fraturamento hidráulico (fracking) e da posição técnica da Agência sobre o PL nº 1.935/2019.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646309"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1345/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635808"
-          },
-          {
-            "id": 2635807,
-            "sigla_tipo": "EMC",
-            "numero": 43,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1345/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635807"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220684"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220684",
-  "generated_at_utc": "2026-09-08T04:43:13.846032+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.425038+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 464,
+    "quantidade_registros": 465,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 54
+        "quantidade_registros": 55
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646309,
+        "sigla_tipo": "RIC",
+        "numero": 2596,
+        "ano": 2026,
+        "ementa": "Requer informações ao Senhor Ministro de Estado de Minas e Energia acerca da exploração e produção de petróleo e gás natural mediante a utilização da técnica de fraturamento hidráulico (fracking) e da posição técnica da Agência sobre o PL nº 1.935/2019.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646309"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1345/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635808"
-      },
-      {
-        "id": 2635807,
-        "sigla_tipo": "EMC",
-        "numero": 43,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1345/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635807"
       },
       {
         "id": 2596455,

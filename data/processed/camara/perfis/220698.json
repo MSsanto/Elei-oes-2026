@@ -630,7 +630,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:41:05.052375+00:00",
+      "generated_at_utc": "2026-09-10T17:07:26.484158+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -638,8 +638,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220698/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 31,
+        "quantidade_registros": 32,
         "registros_recentes": [
+          {
+            "id": 2646243,
+            "sigla_tipo": "RIC",
+            "numero": 2572,
+            "ano": 2026,
+            "ementa": "Requer informações do Senhor Ministro de Estado das Comunicações, a serem prestadas pelos Correios, acerca da paralisação das obras do novo Complexo Operacional dos Correios em Londrina, no Estado do Paraná.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646243"
+          },
           {
             "id": 2644841,
             "sigla_tipo": "EMC",
@@ -727,14 +735,6 @@
             "ano": 2026,
             "ementa": "Requer o envio do Projeto de Lei 1066/2023 que \"altera a Lei n° 14.273, de 23 de dezembro de 2021 - Lei das Ferrovias, para estabelecer a obrigatoriedade de instalação de cancelas automáticas e dá outras providências\" à Comissão de Finanças e Tributaçao.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635613"
-          },
-          {
-            "id": 2635558,
-            "sigla_tipo": "PL",
-            "numero": 3339,
-            "ano": 2026,
-            "ementa": "Altera a Lei n° 14.133, de 1° de abril de 2021, para estabelecer regime jurídico especial aplicável às aquisições de medicamentos equipamentos, insumos e demais bens e serviços destinados à assistência à saúde prestados por hospitais filantrópicos e Santas Casas que atuem complementarmente ao Sistema Único de Saúde – SUS.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635558"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220698"
@@ -949,7 +949,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220698",
-  "generated_at_utc": "2026-09-08T04:43:13.909104+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.247849+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1242,7 +1242,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 125,
+    "quantidade_registros": 126,
     "por_ano": [
       {
         "ano": 2023,
@@ -1258,10 +1258,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 31
+        "quantidade_registros": 32
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646243,
+        "sigla_tipo": "RIC",
+        "numero": 2572,
+        "ano": 2026,
+        "ementa": "Requer informações do Senhor Ministro de Estado das Comunicações, a serem prestadas pelos Correios, acerca da paralisação das obras do novo Complexo Operacional dos Correios em Londrina, no Estado do Paraná.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646243"
+      },
       {
         "id": 2644841,
         "sigla_tipo": "EMC",
@@ -1349,14 +1357,6 @@
         "ano": 2026,
         "ementa": "Requer o envio do Projeto de Lei 1066/2023 que \"altera a Lei n° 14.273, de 23 de dezembro de 2021 - Lei das Ferrovias, para estabelecer a obrigatoriedade de instalação de cancelas automáticas e dá outras providências\" à Comissão de Finanças e Tributaçao.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635613"
-      },
-      {
-        "id": 2635558,
-        "sigla_tipo": "PL",
-        "numero": 3339,
-        "ano": 2026,
-        "ementa": "Altera a Lei n° 14.133, de 1° de abril de 2021, para estabelecer regime jurídico especial aplicável às aquisições de medicamentos equipamentos, insumos e demais bens e serviços destinados à assistência à saúde prestados por hospitais filantrópicos e Santas Casas que atuem complementarmente ao Sistema Único de Saúde – SUS.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635558"
       },
       {
         "id": 2475490,

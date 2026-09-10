@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:35:05.806942+00:00",
+      "generated_at_utc": "2026-09-10T17:06:59.080349+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204426/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 677,
+        "quantidade_registros": 679,
         "registros_recentes": [
+          {
+            "id": 2646233,
+            "sigla_tipo": "DOC",
+            "numero": 1497,
+            "ano": 2026,
+            "ementa": "Of. nº 700/2026/PS-GSE, que comunica ao Senado Federal o envio à sanção do PL n. 287/2024.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646233"
+          },
+          {
+            "id": 2646232,
+            "sigla_tipo": "DOC",
+            "numero": 1496,
+            "ano": 2026,
+            "ementa": "Of. nº 699/2026/PS-GSE, que encaminha a Mensagem n. 55/2026 de envio à sanção presidencial do PL n.º287 de 2024 do SF.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646232"
+          },
           {
             "id": 2645637,
             "sigla_tipo": "DOC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Of. nº 636/2026/PS-GSE, que comunica ao Senado Federal o envio à sanção do PL n. 5.961/2025.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643918"
-          },
-          {
-            "id": 2643917,
-            "sigla_tipo": "DOC",
-            "numero": 1392,
-            "ano": 2026,
-            "ementa": "Of. nº 635/2026/PS-GSE, que encaminha a Mensagem n. 51/2026 de envio à sanção presidencial do PL n.º5.961/2025 do SF.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643917"
-          },
-          {
-            "id": 2643776,
-            "sigla_tipo": "PL",
-            "numero": 5076,
-            "ano": 2026,
-            "ementa": "Institui a Lei de Proteção da Soberania Econômica Nacional contra a Aplicação Extraterritorial de Medidas Estrangeiras, dispõe sobre a proteção das pessoas submetidas à jurisdição brasileira contra medidas coercitivas unilaterais incompatíveis com o ordenamento jurídico nacional, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643776"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204426"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204426",
-  "generated_at_utc": "2026-09-08T04:43:13.759390+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.191115+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1452,7 +1452,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1832,
+    "quantidade_registros": 1834,
     "por_ano": [
       {
         "ano": 2023,
@@ -1468,10 +1468,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 677
+        "quantidade_registros": 679
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646233,
+        "sigla_tipo": "DOC",
+        "numero": 1497,
+        "ano": 2026,
+        "ementa": "Of. nº 700/2026/PS-GSE, que comunica ao Senado Federal o envio à sanção do PL n. 287/2024.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646233"
+      },
+      {
+        "id": 2646232,
+        "sigla_tipo": "DOC",
+        "numero": 1496,
+        "ano": 2026,
+        "ementa": "Of. nº 699/2026/PS-GSE, que encaminha a Mensagem n. 55/2026 de envio à sanção presidencial do PL n.º287 de 2024 do SF.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646232"
+      },
       {
         "id": 2645637,
         "sigla_tipo": "DOC",
@@ -1551,22 +1567,6 @@
         "ano": 2026,
         "ementa": "Of. nº 636/2026/PS-GSE, que comunica ao Senado Federal o envio à sanção do PL n. 5.961/2025.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643918"
-      },
-      {
-        "id": 2643917,
-        "sigla_tipo": "DOC",
-        "numero": 1392,
-        "ano": 2026,
-        "ementa": "Of. nº 635/2026/PS-GSE, que encaminha a Mensagem n. 51/2026 de envio à sanção presidencial do PL n.º5.961/2025 do SF.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643917"
-      },
-      {
-        "id": 2643776,
-        "sigla_tipo": "PL",
-        "numero": 5076,
-        "ano": 2026,
-        "ementa": "Institui a Lei de Proteção da Soberania Econômica Nacional contra a Aplicação Extraterritorial de Medidas Estrangeiras, dispõe sobre a proteção das pessoas submetidas à jurisdição brasileira contra medidas coercitivas unilaterais incompatíveis com o ordenamento jurídico nacional, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643776"
       },
       {
         "id": 2598878,

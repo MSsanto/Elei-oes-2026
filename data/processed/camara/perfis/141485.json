@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:04.287499+00:00",
+      "generated_at_utc": "2026-09-10T17:07:42.545164+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141485/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 22,
+        "quantidade_registros": 23,
         "registros_recentes": [
+          {
+            "id": 2646145,
+            "sigla_tipo": "EMC",
+            "numero": 5,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1375/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646145"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1327/2025",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622636"
-          },
-          {
-            "id": 2622635,
-            "sigla_tipo": "EMC",
-            "numero": 108,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1327/2025",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622635"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141485"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141485",
-  "generated_at_utc": "2026-09-08T04:43:13.623613+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.278108+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1676,7 +1676,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 240,
+    "quantidade_registros": 241,
     "por_ano": [
       {
         "ano": 2023,
@@ -1692,10 +1692,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 22
+        "quantidade_registros": 23
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646145,
+        "sigla_tipo": "EMC",
+        "numero": 5,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1375/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646145"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1783,14 +1791,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1327/2025",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622636"
-      },
-      {
-        "id": 2622635,
-        "sigla_tipo": "EMC",
-        "numero": 108,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1327/2025",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622635"
       },
       {
         "id": 2596314,

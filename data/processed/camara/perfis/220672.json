@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:47.689461+00:00",
+      "generated_at_utc": "2026-09-10T17:06:17.496409+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220672/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 26,
+        "quantidade_registros": 28,
         "registros_recentes": [
+          {
+            "id": 2646290,
+            "sigla_tipo": "PDL",
+            "numero": 999,
+            "ano": 2026,
+            "ementa": "Susta, nos termos do art. 49, inciso V, da Constituição Federal, os efeitos da Portaria Interministerial MPA/MMA nº 66, de 27 de julho de 2026, que estabelece regras para o uso sustentável e a recuperação dos estoques da espécie pargo (Lutjanus purpureus).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646290"
+          },
+          {
+            "id": 2646261,
+            "sigla_tipo": "RIC",
+            "numero": 2575,
+            "ano": 2026,
+            "ementa": "Solicita informações ao Ministro do Meio Ambiente e Mudança do Clima - MMA acerca do processo administrativo, dos fundamentos técnicos e da participação institucional que resultaram na edição da Portaria Interministerial MPA/MMA nº 66, de 27 de julho de 2026, que disciplina a pesca do pargo (Lutjanus purpureus).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646261"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1341/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633331"
-          },
-          {
-            "id": 2633329,
-            "sigla_tipo": "EMC",
-            "numero": 13,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1341/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633329"
-          },
-          {
-            "id": 2627583,
-            "sigla_tipo": "REQ",
-            "numero": 3131,
-            "ano": 2026,
-            "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220672"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220672",
-  "generated_at_utc": "2026-09-08T04:43:13.648706+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.115796+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 351,
+    "quantidade_registros": 353,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 26
+        "quantidade_registros": 28
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646290,
+        "sigla_tipo": "PDL",
+        "numero": 999,
+        "ano": 2026,
+        "ementa": "Susta, nos termos do art. 49, inciso V, da Constituição Federal, os efeitos da Portaria Interministerial MPA/MMA nº 66, de 27 de julho de 2026, que estabelece regras para o uso sustentável e a recuperação dos estoques da espécie pargo (Lutjanus purpureus).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646290"
+      },
+      {
+        "id": 2646261,
+        "sigla_tipo": "RIC",
+        "numero": 2575,
+        "ano": 2026,
+        "ementa": "Solicita informações ao Ministro do Meio Ambiente e Mudança do Clima - MMA acerca do processo administrativo, dos fundamentos técnicos e da participação institucional que resultaram na edição da Portaria Interministerial MPA/MMA nº 66, de 27 de julho de 2026, que disciplina a pesca do pargo (Lutjanus purpureus).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646261"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1514,22 +1530,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1341/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633331"
-      },
-      {
-        "id": 2633329,
-        "sigla_tipo": "EMC",
-        "numero": 13,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1341/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633329"
-      },
-      {
-        "id": 2627583,
-        "sigla_tipo": "REQ",
-        "numero": 3131,
-        "ano": 2026,
-        "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
       },
       {
         "id": 2598474,

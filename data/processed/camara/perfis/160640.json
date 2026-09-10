@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:27:31.650878+00:00",
+      "generated_at_utc": "2026-09-10T17:06:50.514656+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160640/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 39,
+        "quantidade_registros": 40,
         "registros_recentes": [
+          {
+            "id": 2646187,
+            "sigla_tipo": "REQ",
+            "numero": 4196,
+            "ano": 2026,
+            "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+          },
           {
             "id": 2645040,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre a obrigatoriedade de identificação visual, registro e rastreabilidade de dispositivos de transporte de mercadorias utilizados por prestadores de serviços de entrega (delivery) em veículos automotores e de propulsão humana ou elétrica, e dá outras providências",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640287"
-          },
-          {
-            "id": 2640286,
-            "sigla_tipo": "PL",
-            "numero": 3774,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a obrigatoriedade de divulgação de informações sobre os riscos e malefícios do uso de drogas em boates, casas noturnas, estabelecimentos de eventos artísticos, esportivos, culturais em âmbito nacional, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640286"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160640"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160640",
-  "generated_at_utc": "2026-09-08T04:43:13.599647+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.181918+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1644,7 +1644,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 458,
+    "quantidade_registros": 459,
     "por_ano": [
       {
         "ano": 2023,
@@ -1660,10 +1660,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 39
+        "quantidade_registros": 40
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646187,
+        "sigla_tipo": "REQ",
+        "numero": 4196,
+        "ano": 2026,
+        "ementa": "Requer a inclusão, como coautores do Projeto de Lei nº 5.281, de 2026, dos Deputados e das Deputadas signatários deste requerimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646187"
+      },
       {
         "id": 2645040,
         "sigla_tipo": "REQ",
@@ -1751,14 +1759,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre a obrigatoriedade de identificação visual, registro e rastreabilidade de dispositivos de transporte de mercadorias utilizados por prestadores de serviços de entrega (delivery) em veículos automotores e de propulsão humana ou elétrica, e dá outras providências",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640287"
-      },
-      {
-        "id": 2640286,
-        "sigla_tipo": "PL",
-        "numero": 3774,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a obrigatoriedade de divulgação de informações sobre os riscos e malefícios do uso de drogas em boates, casas noturnas, estabelecimentos de eventos artísticos, esportivos, culturais em âmbito nacional, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640286"
       },
       {
         "id": 2598197,

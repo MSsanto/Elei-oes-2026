@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:31:30.312091+00:00",
+      "generated_at_utc": "2026-09-10T17:07:14.852264+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220597/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 30,
+        "quantidade_registros": 31,
         "registros_recentes": [
+          {
+            "id": 2646165,
+            "sigla_tipo": "EMC",
+            "numero": 25,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1375/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646165"
+          },
           {
             "id": 2645274,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Estabelece critérios de extrafiscalidade tributária para as alíquotas da Tabela de Incidência do Imposto sobre Produtos Industrializados (TIPI) incidentes sobre produtos alimentícios, visando desincentivar o consumo de gorduras hidrogenadas e açúcares em excesso, fomentar a produção de alimentos saudáveis, os derivados da agricultura familiar, e o desenvolvimento sustentável da cadeia do cacau",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618198"
-          },
-          {
-            "id": 2617460,
-            "sigla_tipo": "PL",
-            "numero": 1906,
-            "ano": 2026,
-            "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para criar causa de aumento de pena para o caso de o crime de feminicídio ter sido cometido nas dependências de instituição de ensino.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617460"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220597"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220597",
-  "generated_at_utc": "2026-09-08T04:43:13.684175+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.226166+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1436,7 +1436,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 272,
+    "quantidade_registros": 273,
     "por_ano": [
       {
         "ano": 2023,
@@ -1452,10 +1452,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 30
+        "quantidade_registros": 31
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646165,
+        "sigla_tipo": "EMC",
+        "numero": 25,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1375/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646165"
+      },
       {
         "id": 2645274,
         "sigla_tipo": "REQ",
@@ -1543,14 +1551,6 @@
         "ano": 2026,
         "ementa": "Estabelece critérios de extrafiscalidade tributária para as alíquotas da Tabela de Incidência do Imposto sobre Produtos Industrializados (TIPI) incidentes sobre produtos alimentícios, visando desincentivar o consumo de gorduras hidrogenadas e açúcares em excesso, fomentar a produção de alimentos saudáveis, os derivados da agricultura familiar, e o desenvolvimento sustentável da cadeia do cacau",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618198"
-      },
-      {
-        "id": 2617460,
-        "sigla_tipo": "PL",
-        "numero": 1906,
-        "ano": 2026,
-        "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para criar causa de aumento de pena para o caso de o crime de feminicídio ter sido cometido nas dependências de instituição de ensino.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617460"
       },
       {
         "id": 2598197,

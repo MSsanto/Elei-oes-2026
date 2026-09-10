@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:28:51.871071+00:00",
+      "generated_at_utc": "2026-09-10T17:06:46.160047+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160641/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 21,
+        "quantidade_registros": 22,
         "registros_recentes": [
+          {
+            "id": 2646176,
+            "sigla_tipo": "EMC",
+            "numero": 36,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1375/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646176"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -453,14 +461,6 @@
             "ano": 2026,
             "ementa": "Institui o Pacto Federativo de Proteção à Pessoa em Situação de Violência Doméstica e Familiar, assegurando em Lei o direito à remoção, redistribuição, movimentação e transferência interestadual de servidoras e empregadas dos setores público e privado, estabelecendo mecanismos de apoio financeiro à servidora e à empregada, incentivos à iniciativa privada, fontes de custeio e cooperação federativa, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2614005"
-          },
-          {
-            "id": 2612420,
-            "sigla_tipo": "PL",
-            "numero": 1444,
-            "ano": 2026,
-            "ementa": "Institui a Política Nacional Integrada de Prevenção e Enfrentamento ao Feminicídio (PNIPEF) e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612420"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160641"
@@ -675,7 +675,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160641",
-  "generated_at_utc": "2026-09-08T04:43:13.627464+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.172974+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -999,7 +999,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 34,
+    "quantidade_registros": 35,
     "por_ano": [
       {
         "ano": 2023,
@@ -1015,10 +1015,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 21
+        "quantidade_registros": 22
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646176,
+        "sigla_tipo": "EMC",
+        "numero": 36,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1375/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646176"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1106,14 +1114,6 @@
         "ano": 2026,
         "ementa": "Institui o Pacto Federativo de Proteção à Pessoa em Situação de Violência Doméstica e Familiar, assegurando em Lei o direito à remoção, redistribuição, movimentação e transferência interestadual de servidoras e empregadas dos setores público e privado, estabelecendo mecanismos de apoio financeiro à servidora e à empregada, incentivos à iniciativa privada, fontes de custeio e cooperação federativa, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2614005"
-      },
-      {
-        "id": 2612420,
-        "sigla_tipo": "PL",
-        "numero": 1444,
-        "ano": 2026,
-        "ementa": "Institui a Política Nacional Integrada de Prevenção e Enfrentamento ao Feminicídio (PNIPEF) e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612420"
       },
       {
         "id": 2595921,

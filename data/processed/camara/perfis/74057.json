@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:29:01.378558+00:00",
+      "generated_at_utc": "2026-09-10T17:05:49.406420+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74057/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 72,
+        "quantidade_registros": 73,
         "registros_recentes": [
+          {
+            "id": 2646229,
+            "sigla_tipo": "PL",
+            "numero": 5315,
+            "ano": 2026,
+            "ementa": "Altera dispositivos da Lei nº 8.159, de 8 de janeiro de 1991, que dispõe sobre a Política Nacional de Arquivos públicos e privados e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646229"
+          },
           {
             "id": 2645168,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Sessão Solene em homenagem aos 100 anos da Associação Brasileira de Enfermagem – ABEn.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639769"
-          },
-          {
-            "id": 2637489,
-            "sigla_tipo": "PL",
-            "numero": 3508,
-            "ano": 2026,
-            "ementa": "Estabelece diretrizes nacionais para a atuação de Coordenador Pedagógico no âmbito da Educação Básica e assegura direitos de valorização profissional.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637489"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74057"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74057",
-  "generated_at_utc": "2026-09-08T04:43:13.620271+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.062610+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1639,7 +1639,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 568,
+    "quantidade_registros": 569,
     "por_ano": [
       {
         "ano": 2023,
@@ -1655,10 +1655,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 72
+        "quantidade_registros": 73
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646229,
+        "sigla_tipo": "PL",
+        "numero": 5315,
+        "ano": 2026,
+        "ementa": "Altera dispositivos da Lei nº 8.159, de 8 de janeiro de 1991, que dispõe sobre a Política Nacional de Arquivos públicos e privados e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646229"
+      },
       {
         "id": 2645168,
         "sigla_tipo": "PL",
@@ -1746,14 +1754,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Sessão Solene em homenagem aos 100 anos da Associação Brasileira de Enfermagem – ABEn.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639769"
-      },
-      {
-        "id": 2637489,
-        "sigla_tipo": "PL",
-        "numero": 3508,
-        "ano": 2026,
-        "ementa": "Estabelece diretrizes nacionais para a atuação de Coordenador Pedagógico no âmbito da Educação Básica e assegura direitos de valorização profissional.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637489"
       },
       {
         "id": 2598953,

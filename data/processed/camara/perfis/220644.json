@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:40:29.043482+00:00",
+      "generated_at_utc": "2026-09-10T17:08:08.063594+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220644/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 53,
+        "quantidade_registros": 54,
         "registros_recentes": [
+          {
+            "id": 2646228,
+            "sigla_tipo": "RIC",
+            "numero": 2571,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministério da Saúde acerca do andamento do processo de habilitação da Fundação Pró-Renal de Curitiba/PR como Serviço de Atenção Especializada em Doenças Raras no âmbito do Sistema Único de Saúde (SUS).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646228"
+          },
           {
             "id": 2644195,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 13.445, de 24 de maio de 2017, para incluir a obrigatoriedade de expulsão de estrangeiros que cometem crimes que configuram violência contra a mulher, estupro, inclusive de vulnerável, tráfico de drogas e homicídio doloso e qualificado.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628399"
-          },
-          {
-            "id": 2627400,
-            "sigla_tipo": "RIC",
-            "numero": 1450,
-            "ano": 2026,
-            "ementa": "Solicita informações ao Senhor Ministro de Estado da Previdência Social acerca da falha de segurança e do vazamento de dados de cerca de 2 milhões de beneficiários da Previdência Social, confirmado em maio de 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627400"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220644"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220644",
-  "generated_at_utc": "2026-09-08T04:43:13.904169+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.332458+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1431,7 +1431,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 665,
+    "quantidade_registros": 666,
     "por_ano": [
       {
         "ano": 2023,
@@ -1447,10 +1447,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 53
+        "quantidade_registros": 54
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646228,
+        "sigla_tipo": "RIC",
+        "numero": 2571,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministério da Saúde acerca do andamento do processo de habilitação da Fundação Pró-Renal de Curitiba/PR como Serviço de Atenção Especializada em Doenças Raras no âmbito do Sistema Único de Saúde (SUS).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646228"
+      },
       {
         "id": 2644195,
         "sigla_tipo": "RIC",
@@ -1538,14 +1546,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 13.445, de 24 de maio de 2017, para incluir a obrigatoriedade de expulsão de estrangeiros que cometem crimes que configuram violência contra a mulher, estupro, inclusive de vulnerável, tráfico de drogas e homicídio doloso e qualificado.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628399"
-      },
-      {
-        "id": 2627400,
-        "sigla_tipo": "RIC",
-        "numero": 1450,
-        "ano": 2026,
-        "ementa": "Solicita informações ao Senhor Ministro de Estado da Previdência Social acerca da falha de segurança e do vazamento de dados de cerca de 2 milhões de beneficiários da Previdência Social, confirmado em maio de 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627400"
       },
       {
         "id": 2595779,

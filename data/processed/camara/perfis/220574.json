@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:27:43.477443+00:00",
+      "generated_at_utc": "2026-09-10T17:08:48.805151+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220574/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 179,
+        "quantidade_registros": 180,
         "registros_recentes": [
+          {
+            "id": 2646288,
+            "sigla_tipo": "REQ",
+            "numero": 348,
+            "ano": 2026,
+            "ementa": "Requeiro, nos termos do art. 58, § 2º, inciso V, da Constituição Federal e das disposições regimentais aplicáveis, o comparecimento do Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, para prestar esclarecimentos acerca dos fatos relacionados ao Banco Master e a Daniel Vorcaro, especialmente quanto às referências feitas ao seu nome em mensagens obtidas pela Polícia Federal, às relações mantidas com o controlador da instituição financeira e às recentes alegações envolvendo tratativas de colaboração premiada.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646288"
+          },
           {
             "id": 2645236,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Solicita à Ministra de Estado da Casa Civil da Presidência da República informações detalhadas acerca dos contratos firmados entre órgãos e entidades da Administração Pública Federal e a empresa 3Structure It Tecnologia da Informação.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641827"
-          },
-          {
-            "id": 2641757,
-            "sigla_tipo": "PL",
-            "numero": 4846,
-            "ano": 2026,
-            "ementa": "Estabelece normas de transparência e integridade para convênios firmados entre empresas estatais federais e instituições de ensino superior para concessão de bolsas, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641757"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220574"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220574",
-  "generated_at_utc": "2026-09-08T04:43:13.608492+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.410988+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1363,
+    "quantidade_registros": 1364,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 179
+        "quantidade_registros": 180
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646288,
+        "sigla_tipo": "REQ",
+        "numero": 348,
+        "ano": 2026,
+        "ementa": "Requeiro, nos termos do art. 58, § 2º, inciso V, da Constituição Federal e das disposições regimentais aplicáveis, o comparecimento do Diretor-Geral da Polícia Federal, Sr. Andrei Augusto Passos Rodrigues, para prestar esclarecimentos acerca dos fatos relacionados ao Banco Master e a Daniel Vorcaro, especialmente quanto às referências feitas ao seu nome em mensagens obtidas pela Polícia Federal, às relações mantidas com o controlador da instituição financeira e às recentes alegações envolvendo tratativas de colaboração premiada.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646288"
+      },
       {
         "id": 2645236,
         "sigla_tipo": "REQ",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Solicita à Ministra de Estado da Casa Civil da Presidência da República informações detalhadas acerca dos contratos firmados entre órgãos e entidades da Administração Pública Federal e a empresa 3Structure It Tecnologia da Informação.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641827"
-      },
-      {
-        "id": 2641757,
-        "sigla_tipo": "PL",
-        "numero": 4846,
-        "ano": 2026,
-        "ementa": "Estabelece normas de transparência e integridade para convênios firmados entre empresas estatais federais e instituições de ensino superior para concessão de bolsas, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641757"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:34:04.565039+00:00",
+      "generated_at_utc": "2026-09-10T17:08:05.365962+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220606/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 78,
+        "quantidade_registros": 79,
         "registros_recentes": [
+          {
+            "id": 2646168,
+            "sigla_tipo": "EMC",
+            "numero": 28,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1375/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646168"
+          },
           {
             "id": 2645040,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Sugere ao Senhor Ministro da Educação a adoção das providências necessárias à implantação de uma unidade do Instituto Federal de Educação, Ciência e Tecnologia no bairro do Caju, na Região Portuária do Município do Rio de Janeiro, mediante a destinação de imóvel de propriedade da União atualmente subutilizado para fins educacionais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642170"
-          },
-          {
-            "id": 2641961,
-            "sigla_tipo": "PL",
-            "numero": 4885,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a regulamentação da atribuição de títulos profissionais, atividades, competências e caracterização do âmbito de atuação dos profissionais de Administração, para fins de identificação do exercício profissional.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641961"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220606"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220606",
-  "generated_at_utc": "2026-09-08T04:43:13.748238+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.326805+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 815,
+    "quantidade_registros": 816,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 78
+        "quantidade_registros": 79
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646168,
+        "sigla_tipo": "EMC",
+        "numero": 28,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1375/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646168"
+      },
       {
         "id": 2645040,
         "sigla_tipo": "REQ",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Sugere ao Senhor Ministro da Educação a adoção das providências necessárias à implantação de uma unidade do Instituto Federal de Educação, Ciência e Tecnologia no bairro do Caju, na Região Portuária do Município do Rio de Janeiro, mediante a destinação de imóvel de propriedade da União atualmente subutilizado para fins educacionais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642170"
-      },
-      {
-        "id": 2641961,
-        "sigla_tipo": "PL",
-        "numero": 4885,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a regulamentação da atribuição de títulos profissionais, atividades, competências e caracterização do âmbito de atuação dos profissionais de Administração, para fins de identificação do exercício profissional.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641961"
       },
       {
         "id": 2598945,

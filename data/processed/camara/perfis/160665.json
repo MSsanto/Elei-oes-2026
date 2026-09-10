@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-08T04:41:12.715560+00:00",
+      "generated_at_utc": "2026-09-10T17:08:02.836294+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160665/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 200,
+        "quantidade_registros": 201,
         "registros_recentes": [
+          {
+            "id": 2646260,
+            "sigla_tipo": "PL",
+            "numero": 5325,
+            "ano": 2026,
+            "ementa": "Altera o art. 149-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tornar crime o aliciamento ou recrutamento de pessoa com a finalidade de combate em conflito armado.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646260"
+          },
           {
             "id": 2645744,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638868"
-          },
-          {
-            "id": 2638112,
-            "sigla_tipo": "DOC",
-            "numero": 900,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638112"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160665"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160665",
-  "generated_at_utc": "2026-09-08T04:43:13.917799+00:00",
+  "generated_at_utc": "2026-09-10T17:09:14.319493+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1660,7 +1660,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 637,
+    "quantidade_registros": 638,
     "por_ano": [
       {
         "ano": 2023,
@@ -1676,10 +1676,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 200
+        "quantidade_registros": 201
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646260,
+        "sigla_tipo": "PL",
+        "numero": 5325,
+        "ano": 2026,
+        "ementa": "Altera o art. 149-A do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tornar crime o aliciamento ou recrutamento de pessoa com a finalidade de combate em conflito armado.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646260"
+      },
       {
         "id": 2645744,
         "sigla_tipo": "EMC",
@@ -1767,14 +1775,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638868"
-      },
-      {
-        "id": 2638112,
-        "sigla_tipo": "DOC",
-        "numero": 900,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638112"
       },
       {
         "id": 2599001,
