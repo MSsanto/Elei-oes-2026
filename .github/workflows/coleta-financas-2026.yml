@@ -41,13 +41,38 @@ jobs:
         with:
           python-version: "3.13"
 
+      - name: Validar coletor financeiro em PR
+        if: github.event_name == 'pull_request'
+        shell: bash
+        run: |
+          python -m py_compile \
+            scripts/fetch_campaign_finance_cloud.py \
+            scripts/build_campaign_finance_2026.py
+
+          python - <<'PY'
+          import importlib.util
+          from pathlib import Path
+
+          path = Path('scripts/fetch_campaign_finance_cloud.py')
+          spec = importlib.util.spec_from_file_location('finance_collector', path)
+          module = importlib.util.module_from_spec(spec)
+          spec.loader.exec_module(module)
+
+          assert module.DEFAULT_SOURCE_URL.startswith('https://cdn.tse.jus.br/')
+          assert 'prestacao_de_contas_eleitorais_candidatos_2026.zip' in module.DEFAULT_SOURCE_URL
+          assert module.DEFAULT_WORKER_URL.startswith('https://')
+          assert module.MIN_ZIP_BYTES >= 10_000
+          print('OK: coletor financeiro compila e possui transportes/guardrails configurados.')
+          PY
+
       - name: Baixar e processar Prestacao de Contas Eleitorais 2026
+        if: github.event_name != 'pull_request'
         id: collect
         continue-on-error: true
         env:
-          # Transporte primario: runner GitHub -> CDN oficial do TSE.
+          # O CDN oficial e tentado diretamente e o Browser Worker cobre o bloqueio
+          # observado nos runners GitHub/Azure (HTTP 403 do CDN do TSE).
           TSE_FINANCE_SOURCE_URL: https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip
-          # Fallback temporario para indisponibilidade/restricao do acesso direto.
           TSE_FINANCE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026
           TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
           TSE_FINANCE_MAX_ATTEMPTS: "3"
@@ -55,7 +80,7 @@ jobs:
         run: python scripts/fetch_campaign_finance_cloud.py
 
       - name: Publicar diagnostico da falha
-        if: steps.collect.outcome != 'success' && github.event_name != 'pull_request'
+        if: github.event_name != 'pull_request' && steps.collect.outcome != 'success'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -71,13 +96,14 @@ jobs:
           fi
 
       - name: Encerrar com falha se a coleta nao concluiu
-        if: steps.collect.outcome != 'success'
+        if: github.event_name != 'pull_request' && steps.collect.outcome != 'success'
         shell: bash
         run: |
           echo "A coleta financeira falhou; o ultimo snapshot valido foi preservado."
           exit 1
 
       - name: Validar carga financeira
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           python - <<'PY'
@@ -111,10 +137,12 @@ jobs:
           PY
 
       - name: Atualizar camada editorial
+        if: github.event_name != 'pull_request'
         shell: bash
         run: node scripts/build_editorial_phase2.mjs --persist
 
       - name: Validar camada editorial
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           node - <<'JS'
