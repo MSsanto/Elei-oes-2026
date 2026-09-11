@@ -10,6 +10,13 @@ on:
       - main
     paths:
       - '.github/finance-trigger.txt'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'scripts/fetch_campaign_finance_cloud.py'
+      - 'scripts/build_campaign_finance_2026.py'
+      - '.github/workflows/coleta-financas-2026.yml'
 
 permissions:
   contents: write
@@ -48,7 +55,7 @@ jobs:
         run: python scripts/fetch_campaign_finance_cloud.py
 
       - name: Publicar diagnostico da falha
-        if: steps.collect.outcome != 'success'
+        if: steps.collect.outcome != 'success' && github.event_name != 'pull_request'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
@@ -123,6 +130,7 @@ jobs:
           JS
 
       - name: Publicar carga processada
+        if: github.event_name != 'pull_request'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
