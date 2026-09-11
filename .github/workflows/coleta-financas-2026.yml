@@ -38,6 +38,9 @@ jobs:
         id: collect
         continue-on-error: true
         env:
+          # Transporte primario: runner GitHub -> CDN oficial do TSE.
+          TSE_FINANCE_SOURCE_URL: https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip
+          # Fallback temporario para indisponibilidade/restricao do acesso direto.
           TSE_FINANCE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026
           TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
           TSE_FINANCE_MAX_ATTEMPTS: "3"
