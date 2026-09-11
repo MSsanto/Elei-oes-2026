@@ -1,7 +1,7 @@
 import puppeteer from '@cloudflare/puppeteer';
 import probeWorker from './index.js';
 
-const PRODUCTION_REVISION = 'dataset-router-v5-candidate-statuses';
+const PRODUCTION_REVISION = 'dataset-router-v6-streaming-zip';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36';
 const DIVULGACAND_URL = 'https://divulgacandcontas.tse.jus.br/divulga/#/';
 const DIVULGACAND_API_BASE = '/divulga/rest/v1';
@@ -96,6 +96,43 @@ function toHex(buffer) {
   return [...new Uint8Array(buffer)].map((value) => value.toString(16).padStart(2, '0')).join('');
 }
 
+function concatenateChunks(chunks, totalBytes) {
+  const bytes = new Uint8Array(totalBytes);
+  let offset = 0;
+  for (const chunk of chunks) {
+    bytes.set(chunk, offset);
+    offset += chunk.byteLength;
+  }
+  return bytes;
+}
+
+async function readCdpStream(cdp, streamHandle) {
+  const chunks = [];
+  let totalBytes = 0;
+
+  try {
+    while (true) {
+      const part = await cdp.send('IO.read', {
+        handle: streamHandle,
+        size: 1024 * 1024,
+      });
+      const chunk = part.base64Encoded
+        ? base64ToBytes(part.data || '')
+        : new TextEncoder().encode(part.data || '');
+
+      if (chunk.byteLength > 0) {
+        chunks.push(chunk);
+        totalBytes += chunk.byteLength;
+      }
+      if (part.eof) break;
+    }
+  } finally {
+    await cdp.send('IO.close', { handle: streamHandle }).catch(() => undefined);
+  }
+
+  return concatenateChunks(chunks, totalBytes);
+}
+
 async function captureOfficialZip(env, dataset) {
   let browser;
 
@@ -141,13 +178,21 @@ async function captureOfficialZip(env, dataset) {
       let bodyError = null;
 
       try {
-        const body = await cdp.send('Fetch.getResponseBody', { requestId: event.requestId });
-        bytes = body.base64Encoded ? base64ToBytes(body.body) : new TextEncoder().encode(body.body);
+        const bodyStream = await cdp.send('Fetch.takeResponseBodyAsStream', {
+          requestId: event.requestId,
+        });
+        bytes = await readCdpStream(cdp, bodyStream.stream);
       } catch (error) {
         bodyError = safeError(error);
+      } finally {
+        // Depois de takeResponseBodyAsStream a requisicao nao pode ser continuada
+        // normalmente. Abortar libera a navegacao depois que o corpo ja foi lido.
+        await cdp.send('Fetch.failRequest', {
+          requestId: event.requestId,
+          errorReason: 'Aborted',
+        }).catch(() => undefined);
       }
 
-      await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
       resolveCapture({
         url: requestUrl,
         status: event.responseStatusCode ?? null,
@@ -160,14 +205,15 @@ async function captureOfficialZip(env, dataset) {
     cdp.on('Fetch.requestPaused', onPaused);
 
     try {
-      await page.goto(zipUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await page.goto(zipUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
     } catch {
-      // ZIPs podem encerrar a navegacao do Chromium com ERR_ABORTED.
+      // ZIPs e a interrupcao deliberada apos leitura do stream podem encerrar
+      // a navegacao com ERR_ABORTED. O resultado valido vem de capturePromise.
     }
 
     const captured = await Promise.race([
       capturePromise,
-      sleep(25000).then(() => null),
+      sleep(60000).then(() => null),
     ]);
 
     cdp.off('Fetch.requestPaused', onPaused);
@@ -177,7 +223,7 @@ async function captureOfficialZip(env, dataset) {
       throw new Error('A resposta do ZIP nao foi interceptada pelo CDP.');
     }
     if (!captured.bytes) {
-      throw new Error(`O corpo do ZIP nao pode ser lido: ${captured.bodyError || 'erro desconhecido'}`);
+      throw new Error(`O corpo do ZIP nao pode ser lido por stream: ${captured.bodyError || 'erro desconhecido'}`);
     }
 
     const signature = Array.from(captured.bytes.slice(0, 4));
