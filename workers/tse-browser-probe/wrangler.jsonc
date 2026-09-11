@@ -1,8 +1,9 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "eleicoes-2026-tse-browser-probe",
-  "main": "src/production.js",
-  "compatibility_date": "2026-09-03",
+  "main": "src/runtime.js",
+  "compatibility_date": "2026-09-11",
+  "compatibility_flags": ["nodejs_compat"],
   "browser": {
     "binding": "BROWSER"
   },
