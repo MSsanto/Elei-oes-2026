@@ -1,14 +1,29 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-11T10:47:20.056792Z",
+  "generated_at": "2026-09-11T10:55:07.977332Z",
   "component": "financas_2026",
-  "status": "error",
+  "status": "ok",
   "source": "TSE - Prestacao de Contas Eleitorais 2026",
   "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
   "collector": "resilient_http_collector",
-  "attempts": 3,
+  "attempts": 1,
   "worker_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
-  "origin": "collection_infrastructure",
-  "message": "A ultima carga financeira valida foi preservada; uma nova coleta nao foi publicada.",
-  "last_error": "Coleta falhou apos 3 tentativas: Transportes indisponiveis nesta tentativa. Direto: HTTP direto do TSE retornou HTTP 403: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;cdn&#46;tse&#46;jus&#46;br&#47;estatistica&#47;sead&#47;odsele&#47;prestacao&#95;contas&#47;prestacao&#95;de&#95;contas&#95;eleitorais&#95;candidatos&#95;2026&#46;zip\" on this server.<P>\nReference&#32;&#35;18&#46;cf4e4317&#46;1789123639&#46;1e67c\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;cf4e4317&#46;1789123639&#46;1e67c</P>\n</BODY>\n</HTML>\n. Worker: Browser Worker retornou HTTP 502: {\n  \"error\": \"Unable to create new browser: code: 429: message: Rate limit exceeded\",\n  \"source\": \"https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip\",\n  \"dataset\": \"prestacaoCandidatos2026\",\n  \"production_revision\": \"dataset-router-v6-streaming-zip\"\n}"
+  "origin": "none",
+  "message": "Coleta financeira concluida e validada pelo coletor.",
+  "last_error": null,
+  "transport": {
+    "transport": "cloudflare_browser_worker",
+    "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
+    "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
+    "downloaded_bytes": 37654628,
+    "sha256": "3f70d44316f21d43ba2eeab2e1a7879260a3630141ccf7ffe3d7c1c93ec0c6bd",
+    "content_type": "application/zip",
+    "worker_revision": "dataset-router-v7-session-reuse",
+    "archive_entries": 112
+  },
+  "snapshot": {
+    "generated_at": null,
+    "candidates": 13377,
+    "shard_count": 256
+  }
 }
