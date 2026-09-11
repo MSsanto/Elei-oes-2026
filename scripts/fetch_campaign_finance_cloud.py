@@ -310,11 +310,13 @@ def download_with_retry(
 
     for attempt in range(1, max_attempts + 1):
         log(f"Tentativa {attempt}/{max_attempts} da coleta financeira.")
+        direct_error_message = "nao tentado"
 
         try:
             return download_direct(source_url, destination), attempt
-        except Exception as direct_error:
-            log(f"HTTP direto do TSE falhou: {direct_error}")
+        except Exception as error:
+            direct_error_message = str(error)
+            log(f"HTTP direto do TSE falhou: {direct_error_message}")
 
         try:
             return (
@@ -324,7 +326,7 @@ def download_with_retry(
         except Exception as worker_error:
             last_error = RuntimeError(
                 "Transportes indisponiveis nesta tentativa. "
-                f"Direto: {direct_error}. Worker: {worker_error}"
+                f"Direto: {direct_error_message}. Worker: {worker_error}"
             )
             log(str(last_error))
 
