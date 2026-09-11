@@ -8,12 +8,18 @@ on:
     paths:
       - 'workers/tse-browser-probe/**'
       - '.github/workflows/deploy-tse-browser-probe.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'workers/tse-browser-probe/**'
+      - '.github/workflows/deploy-tse-browser-probe.yml'
 
 permissions:
   contents: read
 
 jobs:
-  deploy:
+  validate-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     env:
@@ -24,7 +30,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Instalar dependencias do Worker
+        working-directory: workers/tse-browser-probe
+        run: npm install
+
+      - name: Validar build do Worker
+        working-directory: workers/tse-browser-probe
+        run: npm run check
+
       - name: Verificar credenciais do deploy alternativo
+        if: github.event_name != 'pull_request'
         id: credentials
         shell: bash
         run: |
@@ -37,16 +52,15 @@ jobs:
             echo "Credenciais opcionais configuradas; executando deploy via Wrangler."
           fi
 
-      - name: Instalar dependencias do Worker
-        if: steps.credentials.outputs.configured == 'true'
-        working-directory: workers/tse-browser-probe
-        run: npm install
-
       - name: Deploy do probe no Cloudflare Workers
-        if: steps.credentials.outputs.configured == 'true'
+        if: github.event_name != 'pull_request' && steps.credentials.outputs.configured == 'true'
         working-directory: workers/tse-browser-probe
         run: npx wrangler deploy
 
       - name: Confirmar rota de deploy utilizada
-        if: steps.credentials.outputs.configured != 'true'
+        if: github.event_name != 'pull_request' && steps.credentials.outputs.configured != 'true'
         run: echo "Workflow concluido sem erro; deploy automatico delegado a integracao Git do Cloudflare."
+
+      - name: Confirmar homologacao sem deploy
+        if: github.event_name == 'pull_request'
+        run: echo "Build do Worker validado em PR; nenhum deploy de producao foi executado."
