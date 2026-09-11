@@ -15,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: coleta-financas-eleicoes-2026
+  group: coleta-financas-eleicoes-2026-${{ github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -59,8 +59,8 @@ jobs:
             echo "Nenhum diagnostico novo para publicar."
           else
             git commit -m "status: registrar falha da coleta financeira"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
       - name: Encerrar com falha se a coleta nao concluiu
@@ -135,5 +135,5 @@ jobs:
           fi
 
           git commit -m "data: atualizar prestacao de contas e camada editorial"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
