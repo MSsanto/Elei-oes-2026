@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:09:01.254026+00:00",
+      "generated_at_utc": "2026-09-12T14:20:06.796999+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220590/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 23,
+        "quantidade_registros": 24,
         "registros_recentes": [
+          {
+            "id": 2646373,
+            "sigla_tipo": "REQ",
+            "numero": 4218,
+            "ano": 2026,
+            "ementa": "Requer a inclusão na Ordem do Dia do Plenário para votação imediata do PLP 42/2023, que regulamenta o art. 201, § 1º, inciso II, da Constituição Federal, para dispor sobre os requisitos e critérios  diferenciados a concessão de aposentadoria aos beneficiários do regime geral de previdência social, nos casos de atividades exercidas sob condições especiais que prejudiquem a saúde, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646373"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a coautoria do PL 539/2024.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617922"
-          },
-          {
-            "id": 2616755,
-            "sigla_tipo": "REQ",
-            "numero": 24,
-            "ano": 2026,
-            "ementa": "Requer que esta Comissão aprove Moção de Louvor ao Excelentíssimo Ministro de Estado do Esporte, Sr. Paulo Henrique Cordeiro, pelos relevantes serviços prestados ao desporto nacional e pela excelência com o compromisso com o fortalecimento de politicas de políticas públicas voltadas à inclusão social por meio do esporte.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616755"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220590"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220590",
-  "generated_at_utc": "2026-09-10T17:09:14.435439+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.352252+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 513,
+    "quantidade_registros": 514,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 23
+        "quantidade_registros": 24
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646373,
+        "sigla_tipo": "REQ",
+        "numero": 4218,
+        "ano": 2026,
+        "ementa": "Requer a inclusão na Ordem do Dia do Plenário para votação imediata do PLP 42/2023, que regulamenta o art. 201, § 1º, inciso II, da Constituição Federal, para dispor sobre os requisitos e critérios  diferenciados a concessão de aposentadoria aos beneficiários do regime geral de previdência social, nos casos de atividades exercidas sob condições especiais que prejudiquem a saúde, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646373"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Requer a coautoria do PL 539/2024.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617922"
-      },
-      {
-        "id": 2616755,
-        "sigla_tipo": "REQ",
-        "numero": 24,
-        "ano": 2026,
-        "ementa": "Requer que esta Comissão aprove Moção de Louvor ao Excelentíssimo Ministro de Estado do Esporte, Sr. Paulo Henrique Cordeiro, pelos relevantes serviços prestados ao desporto nacional e pela excelência com o compromisso com o fortalecimento de politicas de políticas públicas voltadas à inclusão social por meio do esporte.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616755"
       },
       {
         "id": 2598197,

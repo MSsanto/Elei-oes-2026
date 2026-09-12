@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:08:06.739950+00:00",
+      "generated_at_utc": "2026-09-12T14:17:26.977047+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220570/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 27,
+        "quantidade_registros": 28,
         "registros_recentes": [
+          {
+            "id": 2646354,
+            "sigla_tipo": "PLP",
+            "numero": 253,
+            "ano": 2026,
+            "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para resguardar o direito fundamental à Saúde.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646354"
+          },
           {
             "id": 2644668,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer, nos termos regimentais, com anuência do autor, a coautoria ao Projeto de Lei nº 2.475, de 2025.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632720"
-          },
-          {
-            "id": 2630720,
-            "sigla_tipo": "REQ",
-            "numero": 3413,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 618/2022, que “Dispõe sobre o exercício da profissão de Podólogo e dá outras providências”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630720"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220570"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220570",
-  "generated_at_utc": "2026-09-10T17:09:14.330893+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.073197+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1419,7 +1419,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 231,
+    "quantidade_registros": 232,
     "por_ano": [
       {
         "ano": 2023,
@@ -1435,10 +1435,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 27
+        "quantidade_registros": 28
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646354,
+        "sigla_tipo": "PLP",
+        "numero": 253,
+        "ano": 2026,
+        "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para resguardar o direito fundamental à Saúde.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646354"
+      },
       {
         "id": 2644668,
         "sigla_tipo": "PL",
@@ -1526,14 +1534,6 @@
         "ano": 2026,
         "ementa": "Requer, nos termos regimentais, com anuência do autor, a coautoria ao Projeto de Lei nº 2.475, de 2025.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632720"
-      },
-      {
-        "id": 2630720,
-        "sigla_tipo": "REQ",
-        "numero": 3413,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 618/2022, que “Dispõe sobre o exercício da profissão de Podólogo e dá outras providências”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630720"
       },
       {
         "id": 2599001,

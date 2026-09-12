@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:08:36.559692+00:00",
+      "generated_at_utc": "2026-09-12T14:20:44.412877+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178887/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 142,
+        "quantidade_registros": 143,
         "registros_recentes": [
+          {
+            "id": 2646359,
+            "sigla_tipo": "PLP",
+            "numero": 254,
+            "ano": 2026,
+            "ementa": "Veda a utilização direta ou indireta de ativos, reservas, participações e receitas vinculadas aos Regimes Próprios de Previdência Social (RPPS) e fundos previdenciários para integralização de capital, reestruturação financeira ou cobertura de perdas de instituições financeiras públicas ou sociedades de economia mista, salvo autorização do Congresso Nacional; exige estudos prévios (laudo atuarial e estudo de impacto financeiro independentes), assegura direito de preferência e mecanismos de proteção contra diluição, disciplina a vinculação de receitas de securitização, impõe comunicação prévia e autorização do Tribunal de Contas e do Ministério Público, estabelece regras de transparência, responsabilização administrativa, civil e penal para gestores e administradores, e dispõe sobre aplicação, competência fiscalizadora e disposições transitórias",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646359"
+          },
           {
             "id": 2646139,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre medidas de verificação e proteção da livre manifestação de vontade em atos processuais e notariais que envolvam indícios de violência doméstica, familiar ou patrimonial; estabelece preferência por atos presenciais, procedimento reservado e documentado de verificação prévia quando realizados virtualmente, protocolo de sinalização discreta para acionamento da rede de proteção, obrigação de orientação sobre canais de apoio, capacitação periódica de operadores e sanções administrativas para o descumprimento; altera normas correlatas e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636061"
-          },
-          {
-            "id": 2636060,
-            "sigla_tipo": "PL",
-            "numero": 3390,
-            "ano": 2026,
-            "ementa": "Veda a inscrição de débitos juridicamente prescritos em cadastros de proteção ao crédito ou, subsidiariamente, autoriza inscrição somente mediante consentimento expresso e informado do consumidor; exige identificação clara da condição \"DÍVIDA PRESCRITA – NÃO PASSÍVEL DE COBRANÇA JUDICIAL\" nos casos consensuais, veda qualquer impacto negativo no score ou em condições contratuais, determina remoção imediata das inscrições indevidas mediante comprovação da prescrição, estabelece prazo máximo de 5 (cinco) dias úteis para correção pelas plataformas, institui regime sancionador administrativo e indenização automática por dano moral presumido em casos de inscrição irregular, disciplina comunicações de cobrança e medidas de proteção de dados, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636060"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178887"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178887",
-  "generated_at_utc": "2026-09-10T17:09:14.387480+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.411768+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1644,7 +1644,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 540,
+    "quantidade_registros": 541,
     "por_ano": [
       {
         "ano": 2023,
@@ -1660,10 +1660,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 142
+        "quantidade_registros": 143
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646359,
+        "sigla_tipo": "PLP",
+        "numero": 254,
+        "ano": 2026,
+        "ementa": "Veda a utilização direta ou indireta de ativos, reservas, participações e receitas vinculadas aos Regimes Próprios de Previdência Social (RPPS) e fundos previdenciários para integralização de capital, reestruturação financeira ou cobertura de perdas de instituições financeiras públicas ou sociedades de economia mista, salvo autorização do Congresso Nacional; exige estudos prévios (laudo atuarial e estudo de impacto financeiro independentes), assegura direito de preferência e mecanismos de proteção contra diluição, disciplina a vinculação de receitas de securitização, impõe comunicação prévia e autorização do Tribunal de Contas e do Ministério Público, estabelece regras de transparência, responsabilização administrativa, civil e penal para gestores e administradores, e dispõe sobre aplicação, competência fiscalizadora e disposições transitórias",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646359"
+      },
       {
         "id": 2646139,
         "sigla_tipo": "PL",
@@ -1751,14 +1759,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre medidas de verificação e proteção da livre manifestação de vontade em atos processuais e notariais que envolvam indícios de violência doméstica, familiar ou patrimonial; estabelece preferência por atos presenciais, procedimento reservado e documentado de verificação prévia quando realizados virtualmente, protocolo de sinalização discreta para acionamento da rede de proteção, obrigação de orientação sobre canais de apoio, capacitação periódica de operadores e sanções administrativas para o descumprimento; altera normas correlatas e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636061"
-      },
-      {
-        "id": 2636060,
-        "sigla_tipo": "PL",
-        "numero": 3390,
-        "ano": 2026,
-        "ementa": "Veda a inscrição de débitos juridicamente prescritos em cadastros de proteção ao crédito ou, subsidiariamente, autoriza inscrição somente mediante consentimento expresso e informado do consumidor; exige identificação clara da condição \"DÍVIDA PRESCRITA – NÃO PASSÍVEL DE COBRANÇA JUDICIAL\" nos casos consensuais, veda qualquer impacto negativo no score ou em condições contratuais, determina remoção imediata das inscrições indevidas mediante comprovação da prescrição, estabelece prazo máximo de 5 (cinco) dias úteis para correção pelas plataformas, institui regime sancionador administrativo e indenização automática por dano moral presumido em casos de inscrição irregular, disciplina comunicações de cobrança e medidas de proteção de dados, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636060"
       },
       {
         "id": 2598301,

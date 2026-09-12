@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:09:14.024895+00:00",
+      "generated_at_utc": "2026-09-12T14:19:03.404801+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204436/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 139,
+        "quantidade_registros": 140,
         "registros_recentes": [
+          {
+            "id": 2646351,
+            "sigla_tipo": "DOC",
+            "numero": 966,
+            "ano": 2026,
+            "ementa": "",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646351"
+          },
           {
             "id": 2645564,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634575"
-          },
-          {
-            "id": 2633488,
-            "sigla_tipo": "PEC",
-            "numero": 15,
-            "ano": 2026,
-            "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204436"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204436",
-  "generated_at_utc": "2026-09-10T17:09:14.308980+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.246507+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1451,7 +1451,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 693,
+    "quantidade_registros": 694,
     "por_ano": [
       {
         "ano": 2023,
@@ -1467,10 +1467,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 139
+        "quantidade_registros": 140
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646351,
+        "sigla_tipo": "DOC",
+        "numero": 966,
+        "ano": 2026,
+        "ementa": "",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646351"
+      },
       {
         "id": 2645564,
         "sigla_tipo": "DOC",
@@ -1558,14 +1566,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634575"
-      },
-      {
-        "id": 2633488,
-        "sigla_tipo": "PEC",
-        "numero": 15,
-        "ano": 2026,
-        "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
       },
       {
         "id": 2596496,

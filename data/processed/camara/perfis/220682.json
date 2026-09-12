@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:06:30.504444+00:00",
+      "generated_at_utc": "2026-09-12T14:17:58.146039+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220682/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 42,
+        "quantidade_registros": 43,
         "registros_recentes": [
+          {
+            "id": 2646360,
+            "sigla_tipo": "PLP",
+            "numero": 255,
+            "ano": 2026,
+            "ementa": "Estabelece normas gerais de proteção e incentivo à poupança previdenciária complementar e ao investimento de longo prazo, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646360"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1348/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636403"
-          },
-          {
-            "id": 2636401,
-            "sigla_tipo": "EMC",
-            "numero": 103,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1348/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636401"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220682"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220682",
-  "generated_at_utc": "2026-09-10T17:09:14.142338+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.130406+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 611,
+    "quantidade_registros": 612,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 42
+        "quantidade_registros": 43
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646360,
+        "sigla_tipo": "PLP",
+        "numero": 255,
+        "ano": 2026,
+        "ementa": "Estabelece normas gerais de proteção e incentivo à poupança previdenciária complementar e ao investimento de longo prazo, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646360"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1348/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636403"
-      },
-      {
-        "id": 2636401,
-        "sigla_tipo": "EMC",
-        "numero": 103,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1348/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636401"
       },
       {
         "id": 2598320,

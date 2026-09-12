@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:05:52.852915+00:00",
+      "generated_at_utc": "2026-09-12T14:19:11.950159+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160599/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 7,
+        "quantidade_registros": 9,
         "registros_recentes": [
+          {
+            "id": 2646361,
+            "sigla_tipo": "PL",
+            "numero": 5348,
+            "ano": 2026,
+            "ementa": "Inscreve o nome de Francisco de Paula Victor – Padre Victor no Livro dos Heróis e Heroínas da Pátria.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646361"
+          },
+          {
+            "id": 2646358,
+            "sigla_tipo": "PL",
+            "numero": 5347,
+            "ano": 2026,
+            "ementa": "institui o nome de Francisca de Paula de Jesus - Nhá Chica, como Patrona da Fé Espiritualidade",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646358"
+          },
           {
             "id": 2633488,
             "sigla_tipo": "PEC",
@@ -1231,7 +1247,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160599",
-  "generated_at_utc": "2026-09-10T17:09:14.069311+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.260252+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1519,7 +1535,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 96,
+    "quantidade_registros": 98,
     "por_ano": [
       {
         "ano": 2023,
@@ -1535,10 +1551,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 7
+        "quantidade_registros": 9
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646361,
+        "sigla_tipo": "PL",
+        "numero": 5348,
+        "ano": 2026,
+        "ementa": "Inscreve o nome de Francisco de Paula Victor – Padre Victor no Livro dos Heróis e Heroínas da Pátria.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646361"
+      },
+      {
+        "id": 2646358,
+        "sigla_tipo": "PL",
+        "numero": 5347,
+        "ano": 2026,
+        "ementa": "institui o nome de Francisca de Paula de Jesus - Nhá Chica, como Patrona da Fé Espiritualidade",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646358"
+      },
       {
         "id": 2633488,
         "sigla_tipo": "PEC",
@@ -1714,22 +1746,6 @@
         "ano": 2024,
         "ementa": "Requerimento de Criação da “Frente Parlamentar de Combate à Ludopatia e de Proteção de Crianças e Adolescentes contra os Riscos das Apostas e Jogos de Azar”",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2476228"
-      },
-      {
-        "id": 2469405,
-        "sigla_tipo": "REQ",
-        "numero": 4489,
-        "ano": 2024,
-        "ementa": "Requer o registro da Frente Parlamentar pela Eliminação da Malária na Amazônia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2469405"
-      },
-      {
-        "id": 2467670,
-        "sigla_tipo": "PEC",
-        "numero": 42,
-        "ano": 2024,
-        "ementa": "Acrescenta o inciso VI ao art. 51 da Constituição Federal, para estabelecer competência privativa à Câmara dos Deputados relativa à fiscalização das atividades das agências reguladoras.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2467670"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160599",

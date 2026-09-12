@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:07:50.604234+00:00",
+      "generated_at_utc": "2026-09-12T14:18:51.719354+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178829/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 72,
+        "quantidade_registros": 73,
         "registros_recentes": [
+          {
+            "id": 2646368,
+            "sigla_tipo": "PL",
+            "numero": 5352,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.036, de 11 de maio de 1990, para estabelecer critérios de territorialização e retorno local dos recursos do Fundo de Garantia do Tempo de Serviço – FGTS destinados a investimentos.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646368"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Benefício Emergencial de Amparo à Mulher em Situação de Violência Doméstica e Familiar (BEAV), destinado a custear, com recursos públicos, o afastamento do trabalho da mulher para comparecimento a atos processuais, exames periciais e mudança de residência decorrentes de situação de violência doméstica, sem ônus ao empregador, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641734"
-          },
-          {
-            "id": 2641733,
-            "sigla_tipo": "PL",
-            "numero": 4831,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o monitoramento e o rastreamento não consentido de pessoa, por meio de aplicativo, programa ou dispositivo instalado em equipamento de sua titularidade ou uso, como forma de violência doméstica e familiar contra a mulher; para estabelecer obrigações a provedores de aplicação e a prestadoras de serviço de telecomunicações para a prevenção e coibição dessas condutas; e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641733"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178829"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178829",
-  "generated_at_utc": "2026-09-10T17:09:14.295579+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.228905+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1511,7 +1511,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 537,
+    "quantidade_registros": 538,
     "por_ano": [
       {
         "ano": 2023,
@@ -1527,10 +1527,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 72
+        "quantidade_registros": 73
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646368,
+        "sigla_tipo": "PL",
+        "numero": 5352,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.036, de 11 de maio de 1990, para estabelecer critérios de territorialização e retorno local dos recursos do Fundo de Garantia do Tempo de Serviço – FGTS destinados a investimentos.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646368"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1618,14 +1626,6 @@
         "ano": 2026,
         "ementa": "Institui o Benefício Emergencial de Amparo à Mulher em Situação de Violência Doméstica e Familiar (BEAV), destinado a custear, com recursos públicos, o afastamento do trabalho da mulher para comparecimento a atos processuais, exames periciais e mudança de residência decorrentes de situação de violência doméstica, sem ônus ao empregador, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641734"
-      },
-      {
-        "id": 2641733,
-        "sigla_tipo": "PL",
-        "numero": 4831,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o monitoramento e o rastreamento não consentido de pessoa, por meio de aplicativo, programa ou dispositivo instalado em equipamento de sua titularidade ou uso, como forma de violência doméstica e familiar contra a mulher; para estabelecer obrigações a provedores de aplicação e a prestadoras de serviço de telecomunicações para a prevenção e coibição dessas condutas; e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641733"
       },
       {
         "id": 2599190,

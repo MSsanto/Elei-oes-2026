@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:06:53.851406+00:00",
+      "generated_at_utc": "2026-09-12T14:18:54.443097+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220598/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 127,
+        "quantidade_registros": 128,
         "registros_recentes": [
+          {
+            "id": 2646369,
+            "sigla_tipo": "REQ",
+            "numero": 88,
+            "ano": 2026,
+            "ementa": "Requer a realização de audiência pública para debater a preservação da memória de pioneiras do futebol feminino no Brasil, o reconhecimento de sua contribuição histórica e as políticas públicas destinadas às mulheres no futebol.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646369"
+          },
           {
             "id": 2645576,
             "sigla_tipo": "OF",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requerimento de Emenda de Plenário ao PL 896/2023, que altera a Lei nº 7.716, de 5 de janeiro de 1989, e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre crimes praticados em razão de misoginia.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642525"
-          },
-          {
-            "id": 2641955,
-            "sigla_tipo": "REQ",
-            "numero": 3989,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene no Plenário Ulysses Guimarães desta Casa para entrega do Diploma Mulher-Cidadã Carlota Pereira de Queirós, edição 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641955"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220598"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220598",
-  "generated_at_utc": "2026-09-10T17:09:14.187077+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.232325+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1296,
+    "quantidade_registros": 1297,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 127
+        "quantidade_registros": 128
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646369,
+        "sigla_tipo": "REQ",
+        "numero": 88,
+        "ano": 2026,
+        "ementa": "Requer a realização de audiência pública para debater a preservação da memória de pioneiras do futebol feminino no Brasil, o reconhecimento de sua contribuição histórica e as políticas públicas destinadas às mulheres no futebol.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646369"
+      },
       {
         "id": 2645576,
         "sigla_tipo": "OF",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Requerimento de Emenda de Plenário ao PL 896/2023, que altera a Lei nº 7.716, de 5 de janeiro de 1989, e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre crimes praticados em razão de misoginia.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642525"
-      },
-      {
-        "id": 2641955,
-        "sigla_tipo": "REQ",
-        "numero": 3989,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene no Plenário Ulysses Guimarães desta Casa para entrega do Diploma Mulher-Cidadã Carlota Pereira de Queirós, edição 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641955"
       },
       {
         "id": 2598519,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:07:39.100896+00:00",
+      "generated_at_utc": "2026-09-12T14:19:32.031182+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160559/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 58,
+        "quantidade_registros": 59,
         "registros_recentes": [
+          {
+            "id": 2646353,
+            "sigla_tipo": "RIC",
+            "numero": 2598,
+            "ano": 2026,
+            "ementa": "Solicita informações ao Senhor Ministro de Estado da Fazenda a respeito da Reforma Tributária do Consumo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646353"
+          },
           {
             "id": 2646326,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer aditamento ao Requerimento nº 51/2026 - CME, que \"Requer a realização de audiência pública para debater a qualidade e a rastreabilidade do diesel e do biodiesel comercializados no Brasil\", para a inclusão de novos convidados e correção de dados de convidado já listado.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635384"
-          },
-          {
-            "id": 2633852,
-            "sigla_tipo": "EMC",
-            "numero": 339,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633852"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160559"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160559",
-  "generated_at_utc": "2026-09-10T17:09:14.268516+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.293385+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1561,7 +1561,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 505,
+    "quantidade_registros": 506,
     "por_ano": [
       {
         "ano": 2023,
@@ -1577,10 +1577,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 58
+        "quantidade_registros": 59
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646353,
+        "sigla_tipo": "RIC",
+        "numero": 2598,
+        "ano": 2026,
+        "ementa": "Solicita informações ao Senhor Ministro de Estado da Fazenda a respeito da Reforma Tributária do Consumo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646353"
+      },
       {
         "id": 2646326,
         "sigla_tipo": "PL",
@@ -1668,14 +1676,6 @@
         "ano": 2026,
         "ementa": "Requer aditamento ao Requerimento nº 51/2026 - CME, que \"Requer a realização de audiência pública para debater a qualidade e a rastreabilidade do diesel e do biodiesel comercializados no Brasil\", para a inclusão de novos convidados e correção de dados de convidado já listado.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635384"
-      },
-      {
-        "id": 2633852,
-        "sigla_tipo": "EMC",
-        "numero": 339,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633852"
       },
       {
         "id": 2598492,

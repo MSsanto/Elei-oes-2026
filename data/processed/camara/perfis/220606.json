@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:08:05.365962+00:00",
+      "generated_at_utc": "2026-09-12T14:17:36.884543+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220606/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 79,
+        "quantidade_registros": 80,
         "registros_recentes": [
+          {
+            "id": 2646348,
+            "sigla_tipo": "PL",
+            "numero": 5345,
+            "ano": 2026,
+            "ementa": "Altera o art. 110 da Lei nº 8.213, de 24 de julho de 1991, que dispõe sobre os Planos de Benefícios da Previdência Social, e o art. 21 da Lei nº 8.742, de 7 de dezembro de 1993, que dispõe sobre a organização da Assistência Social e dá outras providências, para dispor sobre a proibição da suspensão do pagamento de benefícios devidos à pessoa considerada civilmente incapaz que atingir a maioridade, sem a prévia notificação do seu representante legal.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646348"
+          },
           {
             "id": 2646168,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 20 da Lei nº 8.742, de 7 de dezembro de 1993, e o art. 34 da Lei nº 10.741, de 1º de outubro de 2003, para estabelecer idade mínima de 62 (sessenta e dois) anos para a concessão do benefício de prestação continuada à mulher.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642172"
-          },
-          {
-            "id": 2642170,
-            "sigla_tipo": "INC",
-            "numero": 1509,
-            "ano": 2026,
-            "ementa": "Sugere ao Senhor Ministro da Educação a adoção das providências necessárias à implantação de uma unidade do Instituto Federal de Educação, Ciência e Tecnologia no bairro do Caju, na Região Portuária do Município do Rio de Janeiro, mediante a destinação de imóvel de propriedade da União atualmente subutilizado para fins educacionais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642170"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220606"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220606",
-  "generated_at_utc": "2026-09-10T17:09:14.326805+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.090243+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 816,
+    "quantidade_registros": 817,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 79
+        "quantidade_registros": 80
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646348,
+        "sigla_tipo": "PL",
+        "numero": 5345,
+        "ano": 2026,
+        "ementa": "Altera o art. 110 da Lei nº 8.213, de 24 de julho de 1991, que dispõe sobre os Planos de Benefícios da Previdência Social, e o art. 21 da Lei nº 8.742, de 7 de dezembro de 1993, que dispõe sobre a organização da Assistência Social e dá outras providências, para dispor sobre a proibição da suspensão do pagamento de benefícios devidos à pessoa considerada civilmente incapaz que atingir a maioridade, sem a prévia notificação do seu representante legal.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646348"
+      },
       {
         "id": 2646168,
         "sigla_tipo": "EMC",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 20 da Lei nº 8.742, de 7 de dezembro de 1993, e o art. 34 da Lei nº 10.741, de 1º de outubro de 2003, para estabelecer idade mínima de 62 (sessenta e dois) anos para a concessão do benefício de prestação continuada à mulher.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642172"
-      },
-      {
-        "id": 2642170,
-        "sigla_tipo": "INC",
-        "numero": 1509,
-        "ano": 2026,
-        "ementa": "Sugere ao Senhor Ministro da Educação a adoção das providências necessárias à implantação de uma unidade do Instituto Federal de Educação, Ciência e Tecnologia no bairro do Caju, na Região Portuária do Município do Rio de Janeiro, mediante a destinação de imóvel de propriedade da União atualmente subutilizado para fins educacionais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642170"
       },
       {
         "id": 2598945,

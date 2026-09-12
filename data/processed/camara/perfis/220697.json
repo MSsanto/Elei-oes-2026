@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:05:33.916461+00:00",
+      "generated_at_utc": "2026-09-12T14:21:10.857248+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220697/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 32,
+        "quantidade_registros": 33,
         "registros_recentes": [
+          {
+            "id": 2646331,
+            "sigla_tipo": "REQ",
+            "numero": 40,
+            "ano": 2026,
+            "ementa": "Requer inclusão de convidado em audiência pública no âmbito da Comissão de Desenvolvimento do Req. 38/2026 CDE, para aprofundar o debate do Projeto de Lei nº 5.960/2025 que “Institui o Marco de Fomento à Economia Digital no Brasil”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646331"
+          },
           {
             "id": 2646330,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer realização de Audiência Pública para debater os impactos econômicos da nova geração de modelos de Inteligência Artificial de fronteira sobre a competitividade da economia brasileira, a estabilidade do setor financeiro, a segurança digital do setor produtivo e a proteção das infraestruturas críticas nacionais, bem como sua relação com o marco regulatório brasileiro de IA.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627104"
-          },
-          {
-            "id": 2625580,
-            "sigla_tipo": "REQ",
-            "numero": 22,
-            "ano": 2026,
-            "ementa": "Requer a participação dos membros desta Comissão no Fórum da Internet no Brasil (FIB), a ser realizado em Belém-Pará, entre os dias 25 e 29 de maio de 2026, sem ônus para a Câmara dos Deputados.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625580"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220697"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220697",
-  "generated_at_utc": "2026-09-10T17:09:14.032209+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.460099+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 609,
+    "quantidade_registros": 610,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 32
+        "quantidade_registros": 33
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646331,
+        "sigla_tipo": "REQ",
+        "numero": 40,
+        "ano": 2026,
+        "ementa": "Requer inclusão de convidado em audiência pública no âmbito da Comissão de Desenvolvimento do Req. 38/2026 CDE, para aprofundar o debate do Projeto de Lei nº 5.960/2025 que “Institui o Marco de Fomento à Economia Digital no Brasil”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646331"
+      },
       {
         "id": 2646330,
         "sigla_tipo": "PL",
@@ -1522,14 +1530,6 @@
         "ano": 2026,
         "ementa": "Requer realização de Audiência Pública para debater os impactos econômicos da nova geração de modelos de Inteligência Artificial de fronteira sobre a competitividade da economia brasileira, a estabilidade do setor financeiro, a segurança digital do setor produtivo e a proteção das infraestruturas críticas nacionais, bem como sua relação com o marco regulatório brasileiro de IA.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627104"
-      },
-      {
-        "id": 2625580,
-        "sigla_tipo": "REQ",
-        "numero": 22,
-        "ano": 2026,
-        "ementa": "Requer a participação dos membros desta Comissão no Fórum da Internet no Brasil (FIB), a ser realizado em Belém-Pará, entre os dias 25 e 29 de maio de 2026, sem ônus para a Câmara dos Deputados.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625580"
       },
       {
         "id": 2599001,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-10T17:06:02.277073+00:00",
+      "generated_at_utc": "2026-09-12T14:17:24.473519+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178933/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 39,
+        "quantidade_registros": 40,
         "registros_recentes": [
+          {
+            "id": 2646366,
+            "sigla_tipo": "EMC",
+            "numero": 2,
+            "ano": 2026,
+            "ementa": "Inclui os membros da Defensoria Pública da União, dos Estados e do Distrito Federal",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646366"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Solicita informações ao Senhor MINISTRO DO TRABALHO E EMPREGO sobre a participação de trabalhadores estrangeiros no Brasil, com enfoque no setor agropecuário.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634558"
-          },
-          {
-            "id": 2633534,
-            "sigla_tipo": "EMC",
-            "numero": 36,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633534"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178933"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178933",
-  "generated_at_utc": "2026-09-10T17:09:14.085354+00:00",
+  "generated_at_utc": "2026-09-12T14:21:18.067095+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1516,7 +1516,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 213,
+    "quantidade_registros": 214,
     "por_ano": [
       {
         "ano": 2023,
@@ -1532,10 +1532,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 39
+        "quantidade_registros": 40
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646366,
+        "sigla_tipo": "EMC",
+        "numero": 2,
+        "ano": 2026,
+        "ementa": "Inclui os membros da Defensoria Pública da União, dos Estados e do Distrito Federal",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646366"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1623,14 +1631,6 @@
         "ano": 2026,
         "ementa": "Solicita informações ao Senhor MINISTRO DO TRABALHO E EMPREGO sobre a participação de trabalhadores estrangeiros no Brasil, com enfoque no setor agropecuário.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634558"
-      },
-      {
-        "id": 2633534,
-        "sigla_tipo": "EMC",
-        "numero": 36,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633534"
       },
       {
         "id": 2597283,
