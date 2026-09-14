@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-13T14:43:51.522649+00:00",
+      "generated_at_utc": "2026-09-14T15:58:32.869082+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220559/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 163,
+        "quantidade_registros": 164,
         "registros_recentes": [
+          {
+            "id": 2646388,
+            "sigla_tipo": "PDL",
+            "numero": 1001,
+            "ano": 2026,
+            "ementa": "Susta, nos termos do art. 49, inciso V, da Constituição Federal, a aplicação do art. 30 da Instrução Normativa ICMBio nº 9, de 23 de agosto de 2023, por exorbitar dos limites do poder regulamentar.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646388"
+          },
           {
             "id": 2646367,
             "sigla_tipo": "PDL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Proíbe a execução de atividades e de experimentos de campo de modificação da radiação solar no território nacional e nos demais espaços sujeitos à jurisdição brasileira, nos limites do direito internacional, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644551"
-          },
-          {
-            "id": 2643662,
-            "sigla_tipo": "REC",
-            "numero": 18,
-            "ano": 2026,
-            "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220559"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220559",
-  "generated_at_utc": "2026-09-13T14:45:32.229525+00:00",
+  "generated_at_utc": "2026-09-14T16:00:56.055838+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 785,
+    "quantidade_registros": 786,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 163
+        "quantidade_registros": 164
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646388,
+        "sigla_tipo": "PDL",
+        "numero": 1001,
+        "ano": 2026,
+        "ementa": "Susta, nos termos do art. 49, inciso V, da Constituição Federal, a aplicação do art. 30 da Instrução Normativa ICMBio nº 9, de 23 de agosto de 2023, por exorbitar dos limites do poder regulamentar.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646388"
+      },
       {
         "id": 2646367,
         "sigla_tipo": "PDL",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Proíbe a execução de atividades e de experimentos de campo de modificação da radiação solar no território nacional e nos demais espaços sujeitos à jurisdição brasileira, nos limites do direito internacional, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644551"
-      },
-      {
-        "id": 2643662,
-        "sigla_tipo": "REC",
-        "numero": 18,
-        "ano": 2026,
-        "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
       },
       {
         "id": 2598979,

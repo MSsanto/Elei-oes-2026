@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-13T14:44:11.763803+00:00",
+      "generated_at_utc": "2026-09-14T15:58:05.915358+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178829/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 73,
+        "quantidade_registros": 74,
         "registros_recentes": [
+          {
+            "id": 2646390,
+            "sigla_tipo": "PL",
+            "numero": 5359,
+            "ano": 2026,
+            "ementa": "Institui o Programa Nacional de Proteção e Resiliência da Atividade Circense – Programa Circo Seguro, destinado à prevenção de danos, proteção securitária, recuperação e continuidade das atividades circenses atingidas por eventos climáticos extremos e desastres.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646390"
+          },
           {
             "id": 2646368,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Cria o Fundo de Autonomia Financeira Emergencial para Mulheres em Situação de Violência Doméstica e Familiar (FAFE), destinado a custear mudança de residência, aluguel e despesas de subsistência nos primeiros meses de rompimento com o agressor, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641737"
-          },
-          {
-            "id": 2641734,
-            "sigla_tipo": "PL",
-            "numero": 4832,
-            "ano": 2026,
-            "ementa": "Institui o Benefício Emergencial de Amparo à Mulher em Situação de Violência Doméstica e Familiar (BEAV), destinado a custear, com recursos públicos, o afastamento do trabalho da mulher para comparecimento a atos processuais, exames periciais e mudança de residência decorrentes de situação de violência doméstica, sem ônus ao empregador, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641734"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178829"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178829",
-  "generated_at_utc": "2026-09-13T14:45:32.262750+00:00",
+  "generated_at_utc": "2026-09-14T16:00:56.019419+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1511,7 +1511,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 538,
+    "quantidade_registros": 539,
     "por_ano": [
       {
         "ano": 2023,
@@ -1527,10 +1527,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 73
+        "quantidade_registros": 74
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646390,
+        "sigla_tipo": "PL",
+        "numero": 5359,
+        "ano": 2026,
+        "ementa": "Institui o Programa Nacional de Proteção e Resiliência da Atividade Circense – Programa Circo Seguro, destinado à prevenção de danos, proteção securitária, recuperação e continuidade das atividades circenses atingidas por eventos climáticos extremos e desastres.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646390"
+      },
       {
         "id": 2646368,
         "sigla_tipo": "PL",
@@ -1618,14 +1626,6 @@
         "ano": 2026,
         "ementa": "Cria o Fundo de Autonomia Financeira Emergencial para Mulheres em Situação de Violência Doméstica e Familiar (FAFE), destinado a custear mudança de residência, aluguel e despesas de subsistência nos primeiros meses de rompimento com o agressor, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641737"
-      },
-      {
-        "id": 2641734,
-        "sigla_tipo": "PL",
-        "numero": 4832,
-        "ano": 2026,
-        "ementa": "Institui o Benefício Emergencial de Amparo à Mulher em Situação de Violência Doméstica e Familiar (BEAV), destinado a custear, com recursos públicos, o afastamento do trabalho da mulher para comparecimento a atos processuais, exames periciais e mudança de residência decorrentes de situação de violência doméstica, sem ônus ao empregador, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641734"
       },
       {
         "id": 2599190,

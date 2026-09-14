@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-13T14:43:44.665602+00:00",
+      "generated_at_utc": "2026-09-14T16:00:37.049733+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220617/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 35,
+        "quantidade_registros": 36,
         "registros_recentes": [
+          {
+            "id": 2646391,
+            "sigla_tipo": "REQ",
+            "numero": 4221,
+            "ano": 2026,
+            "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos aos integrantes da Polícia Rodoviária Federal que participaram da operação realizada na BR-116, em Seropédica, no Estado do Rio de Janeiro, que resultou na apreensão de 11 fuzis, uma submetralhadora, carregadores e outros equipamentos.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646391"
+          },
           {
             "id": 2646199,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à “TURMA SENSAÇÃO”,   ATRAVÉS  DO PONTO DE CULTURA DE ITAGUAÍ/RJ.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644254"
-          },
-          {
-            "id": 2642528,
-            "sigla_tipo": "REQ",
-            "numero": 4010,
-            "ano": 2026,
-            "ementa": "Requer, nos termos do art. 155 do Regimento Interno, a inclusão na pauta de deliberação do PL   nº6.231/2019, que  Altera a Lei nº 12.715, de 17 de setembro de 2012, para tornar permanentes o Programa Nacional de Apoio à Atenção Oncológica - PRONON e o Programa Nacional de Apoio à Atenção da Saúde da Pessoa com Deficiência - PRONAS/PCD.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642528"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220617"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220617",
-  "generated_at_utc": "2026-09-13T14:45:32.220746+00:00",
+  "generated_at_utc": "2026-09-14T16:00:56.238892+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1435,7 +1435,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 399,
+    "quantidade_registros": 400,
     "por_ano": [
       {
         "ano": 2023,
@@ -1451,10 +1451,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 35
+        "quantidade_registros": 36
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646391,
+        "sigla_tipo": "REQ",
+        "numero": 4221,
+        "ano": 2026,
+        "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos aos integrantes da Polícia Rodoviária Federal que participaram da operação realizada na BR-116, em Seropédica, no Estado do Rio de Janeiro, que resultou na apreensão de 11 fuzis, uma submetralhadora, carregadores e outros equipamentos.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646391"
+      },
       {
         "id": 2646199,
         "sigla_tipo": "REQ",
@@ -1542,14 +1550,6 @@
         "ano": 2026,
         "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à “TURMA SENSAÇÃO”,   ATRAVÉS  DO PONTO DE CULTURA DE ITAGUAÍ/RJ.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644254"
-      },
-      {
-        "id": 2642528,
-        "sigla_tipo": "REQ",
-        "numero": 4010,
-        "ano": 2026,
-        "ementa": "Requer, nos termos do art. 155 do Regimento Interno, a inclusão na pauta de deliberação do PL   nº6.231/2019, que  Altera a Lei nº 12.715, de 17 de setembro de 2012, para tornar permanentes o Programa Nacional de Apoio à Atenção Oncológica - PRONON e o Programa Nacional de Apoio à Atenção da Saúde da Pessoa com Deficiência - PRONAS/PCD.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642528"
       },
       {
         "id": 2598197,

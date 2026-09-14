@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-13T14:41:19.243185+00:00",
+      "generated_at_utc": "2026-09-14T15:59:50.400695+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220563/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 16,
+        "quantidade_registros": 17,
         "registros_recentes": [
+          {
+            "id": 2646396,
+            "sigla_tipo": "INC",
+            "numero": 1584,
+            "ano": 2026,
+            "ementa": "Sugere à Excelentíssima Diretoria da Agência Nacional de Águas e Saneamento Básico (ANA) que, no âmbito de suas competências legais e regulatórias, analise os aspectos do contrato de concessão da prestação regionalizada dos serviços públicos de abastecimento de água e esgotamento sanitário da Microrregião de Água e Esgoto de Sergipe - MAES, celebrado entre o Estado de Sergipe e a empresa Iguá Sergipe S.A, adotando, se cabível, as providências pertinentes e encaminhando as informações ao Poder Legislativo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646396"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a inclusão na Ordem do Dia do Plenário para votação imediata do Projeto de Lei Complementar nº 185/2024.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618019"
-          },
-          {
-            "id": 2612338,
-            "sigla_tipo": "RIC",
-            "numero": 673,
-            "ano": 2026,
-            "ementa": "Requer informações ao Senhor Ministro de Estado da Educação relativas à contratação da Universidade Federal de Goiás – UFG, por intermédio do denominado “Instituto Verbena”, para a realização de concursos públicos e processos seletivos por diversos órgãos da administração pública.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612338"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220563"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220563",
-  "generated_at_utc": "2026-09-13T14:45:31.994390+00:00",
+  "generated_at_utc": "2026-09-14T16:00:56.173708+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1450,7 +1450,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 505,
+    "quantidade_registros": 506,
     "por_ano": [
       {
         "ano": 2023,
@@ -1466,10 +1466,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 16
+        "quantidade_registros": 17
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646396,
+        "sigla_tipo": "INC",
+        "numero": 1584,
+        "ano": 2026,
+        "ementa": "Sugere à Excelentíssima Diretoria da Agência Nacional de Águas e Saneamento Básico (ANA) que, no âmbito de suas competências legais e regulatórias, analise os aspectos do contrato de concessão da prestação regionalizada dos serviços públicos de abastecimento de água e esgotamento sanitário da Microrregião de Água e Esgoto de Sergipe - MAES, celebrado entre o Estado de Sergipe e a empresa Iguá Sergipe S.A, adotando, se cabível, as providências pertinentes e encaminhando as informações ao Poder Legislativo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646396"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1557,14 +1565,6 @@
         "ano": 2026,
         "ementa": "Requer a inclusão na Ordem do Dia do Plenário para votação imediata do Projeto de Lei Complementar nº 185/2024.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618019"
-      },
-      {
-        "id": 2612338,
-        "sigla_tipo": "RIC",
-        "numero": 673,
-        "ano": 2026,
-        "ementa": "Requer informações ao Senhor Ministro de Estado da Educação relativas à contratação da Universidade Federal de Goiás – UFG, por intermédio do denominado “Instituto Verbena”, para a realização de concursos públicos e processos seletivos por diversos órgãos da administração pública.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612338"
       },
       {
         "id": 2598197,

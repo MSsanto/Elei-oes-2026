@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-13T14:41:27.201178+00:00",
+      "generated_at_utc": "2026-09-14T15:58:15.398070+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204512/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 21,
+        "quantidade_registros": 22,
         "registros_recentes": [
+          {
+            "id": 2646389,
+            "sigla_tipo": "REQ",
+            "numero": 4220,
+            "ano": 2026,
+            "ementa": "Requer a inclusão na ordem do dia do Plenário o Projeto de Lei Complementar nº 42 de 2023 que “Regulamenta o art. 201, § 1º, inciso II, da Constituição Federal, para dispor sobre os requisitos e\ncritérios diferenciados para a concessão de aposentadoria aos beneficiários do regime geral de previdência social, nos casos de atividades exercidas sob condições especiais que prejudiquem a\nsaúde, e dá outras providências.”",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646389"
+          },
           {
             "id": 2644760,
             "sigla_tipo": "PDL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre a transação de dívidas do Fies para beneficiários adimplentes e inadimplentes até 180 dias.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617115"
-          },
-          {
-            "id": 2613821,
-            "sigla_tipo": "PL",
-            "numero": 1640,
-            "ano": 2026,
-            "ementa": "Altera o art. 33, §4º, da Lei nº 11.343, de 23 de agosto de 2006, para prever pequena quantidade de droga como uma das condições para a redução de pena.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613821"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204512"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204512",
-  "generated_at_utc": "2026-09-13T14:45:32.008422+00:00",
+  "generated_at_utc": "2026-09-14T16:00:56.031856+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 344,
+    "quantidade_registros": 345,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 21
+        "quantidade_registros": 22
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646389,
+        "sigla_tipo": "REQ",
+        "numero": 4220,
+        "ano": 2026,
+        "ementa": "Requer a inclusão na ordem do dia do Plenário o Projeto de Lei Complementar nº 42 de 2023 que “Regulamenta o art. 201, § 1º, inciso II, da Constituição Federal, para dispor sobre os requisitos e\ncritérios diferenciados para a concessão de aposentadoria aos beneficiários do regime geral de previdência social, nos casos de atividades exercidas sob condições especiais que prejudiquem a\nsaúde, e dá outras providências.”",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646389"
+      },
       {
         "id": 2644760,
         "sigla_tipo": "PDL",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre a transação de dívidas do Fies para beneficiários adimplentes e inadimplentes até 180 dias.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617115"
-      },
-      {
-        "id": 2613821,
-        "sigla_tipo": "PL",
-        "numero": 1640,
-        "ano": 2026,
-        "ementa": "Altera o art. 33, §4º, da Lei nº 11.343, de 23 de agosto de 2006, para prever pequena quantidade de droga como uma das condições para a redução de pena.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613821"
       },
       {
         "id": 2598918,

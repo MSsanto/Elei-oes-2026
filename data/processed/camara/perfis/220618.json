@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-13T14:44:32.227148+00:00",
+      "generated_at_utc": "2026-09-14T15:59:36.973170+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220618/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 1981,
+        "quantidade_registros": 1983,
         "registros_recentes": [
+          {
+            "id": 2646393,
+            "sigla_tipo": "INC",
+            "numero": 1583,
+            "ano": 2026,
+            "ementa": "Sugere conforme a criação do Cadastro Nacional de Coretos e a adoção de medidas de fomento à preservação, recuperação e utilização cultural desses espaços.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646393"
+          },
+          {
+            "id": 2646392,
+            "sigla_tipo": "PL",
+            "numero": 5360,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.313, de 23 de dezembro de 1991, para incluir a preservação, a recuperação, a restauração e a utilização cultural de Coretos entre os objetivos dos projetos culturais apoiados pelo Programa Nacional de Apoio à Cultura (Pronac).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646392"
+          },
           {
             "id": 2646215,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 1º SGT PM  Samuel Santos de Almeida pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645577"
-          },
-          {
-            "id": 2645532,
-            "sigla_tipo": "REQ",
-            "numero": 4173,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo à Sra. Soldado PM  Danielle Da Conceição Paz Lemos pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645532"
-          },
-          {
-            "id": 2645531,
-            "sigla_tipo": "REQ",
-            "numero": 4172,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Subtenente PM  Romário Ferreira Rodrigues pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645531"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220618"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220618",
-  "generated_at_utc": "2026-09-13T14:45:32.269217+00:00",
+  "generated_at_utc": "2026-09-14T16:00:56.136643+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 6952,
+    "quantidade_registros": 6954,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 1981
+        "quantidade_registros": 1983
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646393,
+        "sigla_tipo": "INC",
+        "numero": 1583,
+        "ano": 2026,
+        "ementa": "Sugere conforme a criação do Cadastro Nacional de Coretos e a adoção de medidas de fomento à preservação, recuperação e utilização cultural desses espaços.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646393"
+      },
+      {
+        "id": 2646392,
+        "sigla_tipo": "PL",
+        "numero": 5360,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.313, de 23 de dezembro de 1991, para incluir a preservação, a recuperação, a restauração e a utilização cultural de Coretos entre os objetivos dos projetos culturais apoiados pelo Programa Nacional de Apoio à Cultura (Pronac).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646392"
+      },
       {
         "id": 2646215,
         "sigla_tipo": "REQ",
@@ -1501,22 +1517,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 1º SGT PM  Samuel Santos de Almeida pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645577"
-      },
-      {
-        "id": 2645532,
-        "sigla_tipo": "REQ",
-        "numero": 4173,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo à Sra. Soldado PM  Danielle Da Conceição Paz Lemos pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645532"
-      },
-      {
-        "id": 2645531,
-        "sigla_tipo": "REQ",
-        "numero": 4172,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Subtenente PM  Romário Ferreira Rodrigues pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645531"
       },
       {
         "id": 2598197,

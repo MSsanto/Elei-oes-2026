@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-13T14:42:15.475499+00:00",
+      "generated_at_utc": "2026-09-14T15:58:07.810492+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220611/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 65,
+        "quantidade_registros": 66,
         "registros_recentes": [
+          {
+            "id": 2646387,
+            "sigla_tipo": "PL",
+            "numero": 5356,
+            "ano": 2026,
+            "ementa": "Altera a redação do caput e dos parágrafos 1º. e 2º.e acrescenta os incisos I, II e III ao artigo 359-I do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646387"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer inclusão das assinaturas de adesão dos Parlamentares ao Requerimento nº 2282/2023.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635587"
-          },
-          {
-            "id": 2633488,
-            "sigla_tipo": "PEC",
-            "numero": 15,
-            "ano": 2026,
-            "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220611"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220611",
-  "generated_at_utc": "2026-09-13T14:45:32.081796+00:00",
+  "generated_at_utc": "2026-09-14T16:00:56.021552+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 497,
+    "quantidade_registros": 498,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 65
+        "quantidade_registros": 66
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646387,
+        "sigla_tipo": "PL",
+        "numero": 5356,
+        "ano": 2026,
+        "ementa": "Altera a redação do caput e dos parágrafos 1º. e 2º.e acrescenta os incisos I, II e III ao artigo 359-I do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646387"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Requer inclusão das assinaturas de adesão dos Parlamentares ao Requerimento nº 2282/2023.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635587"
-      },
-      {
-        "id": 2633488,
-        "sigla_tipo": "PEC",
-        "numero": 15,
-        "ano": 2026,
-        "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
       },
       {
         "id": 2598197,
