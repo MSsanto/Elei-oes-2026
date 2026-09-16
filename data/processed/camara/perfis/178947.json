@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:51.927944+00:00",
+      "generated_at_utc": "2026-09-16T02:37:30.384428+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178947/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 326,
+        "quantidade_registros": 327,
         "registros_recentes": [
+          {
+            "id": 2646433,
+            "sigla_tipo": "REQ",
+            "numero": 4223,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor à Sra. Jandyra Ouvidia de Souza Tayt-Shon, em reconhecimento aos seus 102 anos de vida e à sua trajetória de trabalho, fé, coragem e dedicação à família e à comunidade.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646433"
+          },
           {
             "id": 2645617,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Aplauso à Convenção Fraternal das Assembleias de Deus no Estado do Rio de Janeiro – CONFRADERJ, pela comemoração de seus 45 anos de fundação.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644363"
-          },
-          {
-            "id": 2644027,
-            "sigla_tipo": "DOC",
-            "numero": 939,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644027"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178947"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178947",
-  "generated_at_utc": "2026-09-14T16:00:55.998007+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.306938+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1548,7 +1548,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1849,
+    "quantidade_registros": 1850,
     "por_ano": [
       {
         "ano": 2023,
@@ -1564,10 +1564,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 326
+        "quantidade_registros": 327
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646433,
+        "sigla_tipo": "REQ",
+        "numero": 4223,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor à Sra. Jandyra Ouvidia de Souza Tayt-Shon, em reconhecimento aos seus 102 anos de vida e à sua trajetória de trabalho, fé, coragem e dedicação à família e à comunidade.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646433"
+      },
       {
         "id": 2645617,
         "sigla_tipo": "DOC",
@@ -1655,14 +1663,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Aplauso à Convenção Fraternal das Assembleias de Deus no Estado do Rio de Janeiro – CONFRADERJ, pela comemoração de seus 45 anos de fundação.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644363"
-      },
-      {
-        "id": 2644027,
-        "sigla_tipo": "DOC",
-        "numero": 939,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644027"
       },
       {
         "id": 2599057,

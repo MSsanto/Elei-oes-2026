@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T16:00:44.704750+00:00",
+      "generated_at_utc": "2026-09-16T02:38:22.095349+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220530/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 208,
+        "quantidade_registros": 210,
         "registros_recentes": [
+          {
+            "id": 2646405,
+            "sigla_tipo": "PL",
+            "numero": 5365,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a emissão de credenciais multilíngues para pessoas com deficiência e autoriza o Poder Executivo a celebrar instrumentos de cooperação internacional para reconhecimento recíproco de documentos brasileiros de acessibilidade.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646405"
+          },
+          {
+            "id": 2646404,
+            "sigla_tipo": "PL",
+            "numero": 5364,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, para dispor sobre a assistência prestada pelas Caixas de Assistência dos Advogados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646404"
+          },
           {
             "id": 2646186,
             "sigla_tipo": "PLP",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Sugere ao Ministério da Saúde a adoção das providências necessárias para dar celeridade à incorporação da Profilaxia Pré-Exposição (PrEP) injetável de longa duração (cabotegravir)  ao Sistema Único de Saúde (SUS) para prevenção ao HIV.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643726"
-          },
-          {
-            "id": 2643681,
-            "sigla_tipo": "REQ",
-            "numero": 4051,
-            "ano": 2026,
-            "ementa": "Requer a inclusão na Ordem do Dia do Plenário para votação imediata do PLP 42/2023, que regulamenta o art. 201, § 1º, inciso II, da Constituição Federal, para dispor sobre os requisitos e critérios diferenciados para a concessão de aposentadoria aos beneficiários do regime geral de previdência social, nos casos de atividades exercidas sob condições especiais que prejudiquem a saúde, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643681"
-          },
-          {
-            "id": 2643662,
-            "sigla_tipo": "REC",
-            "numero": 18,
-            "ano": 2026,
-            "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220530"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220530",
-  "generated_at_utc": "2026-09-14T16:00:56.246539+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.396023+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1272,
+    "quantidade_registros": 1274,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 208
+        "quantidade_registros": 210
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646405,
+        "sigla_tipo": "PL",
+        "numero": 5365,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a emissão de credenciais multilíngues para pessoas com deficiência e autoriza o Poder Executivo a celebrar instrumentos de cooperação internacional para reconhecimento recíproco de documentos brasileiros de acessibilidade.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646405"
+      },
+      {
+        "id": 2646404,
+        "sigla_tipo": "PL",
+        "numero": 5364,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, para dispor sobre a assistência prestada pelas Caixas de Assistência dos Advogados.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646404"
+      },
       {
         "id": 2646186,
         "sigla_tipo": "PLP",
@@ -1519,22 +1535,6 @@
         "ano": 2026,
         "ementa": "Sugere ao Ministério da Saúde a adoção das providências necessárias para dar celeridade à incorporação da Profilaxia Pré-Exposição (PrEP) injetável de longa duração (cabotegravir)  ao Sistema Único de Saúde (SUS) para prevenção ao HIV.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643726"
-      },
-      {
-        "id": 2643681,
-        "sigla_tipo": "REQ",
-        "numero": 4051,
-        "ano": 2026,
-        "ementa": "Requer a inclusão na Ordem do Dia do Plenário para votação imediata do PLP 42/2023, que regulamenta o art. 201, § 1º, inciso II, da Constituição Federal, para dispor sobre os requisitos e critérios diferenciados para a concessão de aposentadoria aos beneficiários do regime geral de previdência social, nos casos de atividades exercidas sob condições especiais que prejudiquem a saúde, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643681"
-      },
-      {
-        "id": 2643662,
-        "sigla_tipo": "REC",
-        "numero": 18,
-        "ano": 2026,
-        "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
       },
       {
         "id": 2598755,

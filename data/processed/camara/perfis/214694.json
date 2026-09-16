@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T16:00:22.533584+00:00",
+      "generated_at_utc": "2026-09-16T02:38:17.531938+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/214694/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 38,
+        "quantidade_registros": 41,
         "registros_recentes": [
+          {
+            "id": 2646462,
+            "sigla_tipo": "INC",
+            "numero": 1588,
+            "ano": 2026,
+            "ementa": "Sugere ao Ministério da Saúde a avaliação da incorporação e da disponibilização do escore de cálcio coronariano no Sistema Único de Saúde – SUS para estratificação do risco cardiovascular.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646462"
+          },
+          {
+            "id": 2646461,
+            "sigla_tipo": "REQ",
+            "numero": 31,
+            "ano": 2026,
+            "ementa": "Requer a realização de Audiência Pública para debater a instituição do Dia Nacional do Ciclo Turismo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646461"
+          },
+          {
+            "id": 2646459,
+            "sigla_tipo": "PL",
+            "numero": 5377,
+            "ano": 2026,
+            "ementa": "Institui o Dia Nacional do Cicloturismo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646459"
+          },
           {
             "id": 2645040,
             "sigla_tipo": "REQ",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Requerimento de Urgência - PL nº 957, de 2024.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629926"
-          },
-          {
-            "id": 2629584,
-            "sigla_tipo": "DOC",
-            "numero": 652,
-            "ano": 2026,
-            "ementa": "Registro de novas adesões à Frente Parlamentar Mista das Micro e Pequenas Empresas.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629584"
-          },
-          {
-            "id": 2628890,
-            "sigla_tipo": "EMC",
-            "numero": 1,
-            "ano": 2026,
-            "ementa": "Acrescentem-se os §§ 3, 4º e 5º ao art. 4º do Substitutivo adotado pela Comissão de Educação ao Projeto de Lei nº 4.077, de 2025, com a seguinte redação:",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628890"
-          },
-          {
-            "id": 2625618,
-            "sigla_tipo": "INC",
-            "numero": 800,
-            "ano": 2026,
-            "ementa": "Sugere ao Ministério da Saúde a liberação, incorporação e disponibilização no Sistema Único de Saúde - SUS do medicamento Duvyzat (Givinostat), para pacientes com Distrofia Muscular de Duchenne (DMD).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625618"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=214694"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "214694",
-  "generated_at_utc": "2026-09-14T16:00:56.219464+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.390132+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1547,7 +1547,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 513,
+    "quantidade_registros": 516,
     "por_ano": [
       {
         "ano": 2023,
@@ -1563,10 +1563,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 38
+        "quantidade_registros": 41
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646462,
+        "sigla_tipo": "INC",
+        "numero": 1588,
+        "ano": 2026,
+        "ementa": "Sugere ao Ministério da Saúde a avaliação da incorporação e da disponibilização do escore de cálcio coronariano no Sistema Único de Saúde – SUS para estratificação do risco cardiovascular.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646462"
+      },
+      {
+        "id": 2646461,
+        "sigla_tipo": "REQ",
+        "numero": 31,
+        "ano": 2026,
+        "ementa": "Requer a realização de Audiência Pública para debater a instituição do Dia Nacional do Ciclo Turismo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646461"
+      },
+      {
+        "id": 2646459,
+        "sigla_tipo": "PL",
+        "numero": 5377,
+        "ano": 2026,
+        "ementa": "Institui o Dia Nacional do Cicloturismo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646459"
+      },
       {
         "id": 2645040,
         "sigla_tipo": "REQ",
@@ -1638,30 +1662,6 @@
         "ano": 2026,
         "ementa": "Requerimento de Urgência - PL nº 957, de 2024.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629926"
-      },
-      {
-        "id": 2629584,
-        "sigla_tipo": "DOC",
-        "numero": 652,
-        "ano": 2026,
-        "ementa": "Registro de novas adesões à Frente Parlamentar Mista das Micro e Pequenas Empresas.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629584"
-      },
-      {
-        "id": 2628890,
-        "sigla_tipo": "EMC",
-        "numero": 1,
-        "ano": 2026,
-        "ementa": "Acrescentem-se os §§ 3, 4º e 5º ao art. 4º do Substitutivo adotado pela Comissão de Educação ao Projeto de Lei nº 4.077, de 2025, com a seguinte redação:",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628890"
-      },
-      {
-        "id": 2625618,
-        "sigla_tipo": "INC",
-        "numero": 800,
-        "ano": 2026,
-        "ementa": "Sugere ao Ministério da Saúde a liberação, incorporação e disponibilização no Sistema Único de Saúde - SUS do medicamento Duvyzat (Givinostat), para pacientes com Distrofia Muscular de Duchenne (DMD).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625618"
       },
       {
         "id": 2599001,

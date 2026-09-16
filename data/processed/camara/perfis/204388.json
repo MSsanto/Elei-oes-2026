@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:55.892465+00:00",
+      "generated_at_utc": "2026-09-16T02:39:05.282490+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204388/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 61,
+        "quantidade_registros": 62,
         "registros_recentes": [
+          {
+            "id": 2646416,
+            "sigla_tipo": "RIC",
+            "numero": 2600,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Padilha, sobre o regime jurídico aplicável à participação complementar de instituições privadas no Sistema Único de Saúde (SUS), em especial quanto à vigência e à atualização do art. 130 da Portaria de Consolidação GM/MS nº 1, de 2017, e quanto aos requisitos exigidos das entidades filantrópicas e sem fins lucrativos após a revogação do § 5º daquele artigo pela Portaria GM/MS nº 8.293, de 2025.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646416"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-          },
-          {
-            "id": 2643945,
-            "sigla_tipo": "PL",
-            "numero": 5102,
-            "ano": 2026,
-            "ementa": "Confere ao Município de Santo Antônio da Patrulha, no Estado do Rio Grande do Sul, o título de Capital Nacional do Sonho.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643945"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204388"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204388",
-  "generated_at_utc": "2026-09-14T16:00:56.004371+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.474003+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1479,7 +1479,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 727,
+    "quantidade_registros": 728,
     "por_ano": [
       {
         "ano": 2023,
@@ -1495,10 +1495,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 61
+        "quantidade_registros": 62
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646416,
+        "sigla_tipo": "RIC",
+        "numero": 2600,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Padilha, sobre o regime jurídico aplicável à participação complementar de instituições privadas no Sistema Único de Saúde (SUS), em especial quanto à vigência e à atualização do art. 130 da Portaria de Consolidação GM/MS nº 1, de 2017, e quanto aos requisitos exigidos das entidades filantrópicas e sem fins lucrativos após a revogação do § 5º daquele artigo pela Portaria GM/MS nº 8.293, de 2025.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646416"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1586,14 +1594,6 @@
         "ano": 2026,
         "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-      },
-      {
-        "id": 2643945,
-        "sigla_tipo": "PL",
-        "numero": 5102,
-        "ano": 2026,
-        "ementa": "Confere ao Município de Santo Antônio da Patrulha, no Estado do Rio Grande do Sul, o título de Capital Nacional do Sonho.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643945"
       },
       {
         "id": 2598301,

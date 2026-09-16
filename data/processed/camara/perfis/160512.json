@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:38.218921+00:00",
+      "generated_at_utc": "2026-09-16T02:36:40.914670+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160512/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 89,
+        "quantidade_registros": 90,
         "registros_recentes": [
+          {
+            "id": 2646403,
+            "sigla_tipo": "PL",
+            "numero": 5363,
+            "ano": 2026,
+            "ementa": "Torna o evento \"Louvorzão 93\" como Patrimônio Cultural e Social de Natureza Imaterial do Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646403"
+          },
           {
             "id": 2645733,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), para assegurar transparência e informação prévia individualizada quanto às tarifas cobradas em serviços bancários, financeiros e de pagamento, vedar a cobrança por serviço não contratado e garantir ao consumidor o direito de encerrar ou migrar o serviço, sem ônus, em caso de majoração.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643710"
-          },
-          {
-            "id": 2642761,
-            "sigla_tipo": "REQ",
-            "numero": 4021,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em comemoração aos 70 anos do legado educacional do brasileiro Amador Aguiar, por seu ideal visionário de promover a transformação social por meio do oferecimento de educação gratuita e de alta qualidade, especialmente em comunidades de vulnerabilidade socioeconômica, por meio das 40 escolas da Fundação por ele criada, presentes em todo os estados país.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642761"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160512"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160512",
-  "generated_at_utc": "2026-09-14T16:00:55.950509+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.234229+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1612,7 +1612,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1073,
+    "quantidade_registros": 1074,
     "por_ano": [
       {
         "ano": 2023,
@@ -1628,10 +1628,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 89
+        "quantidade_registros": 90
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646403,
+        "sigla_tipo": "PL",
+        "numero": 5363,
+        "ano": 2026,
+        "ementa": "Torna o evento \"Louvorzão 93\" como Patrimônio Cultural e Social de Natureza Imaterial do Brasil.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646403"
+      },
       {
         "id": 2645733,
         "sigla_tipo": "EMC",
@@ -1719,14 +1727,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), para assegurar transparência e informação prévia individualizada quanto às tarifas cobradas em serviços bancários, financeiros e de pagamento, vedar a cobrança por serviço não contratado e garantir ao consumidor o direito de encerrar ou migrar o serviço, sem ônus, em caso de majoração.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643710"
-      },
-      {
-        "id": 2642761,
-        "sigla_tipo": "REQ",
-        "numero": 4021,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em comemoração aos 70 anos do legado educacional do brasileiro Amador Aguiar, por seu ideal visionário de promover a transformação social por meio do oferecimento de educação gratuita e de alta qualidade, especialmente em comunidades de vulnerabilidade socioeconômica, por meio das 40 escolas da Fundação por ele criada, presentes em todo os estados país.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642761"
       },
       {
         "id": 2598424,

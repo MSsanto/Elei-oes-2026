@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:59:53.895377+00:00",
+      "generated_at_utc": "2026-09-16T02:39:30.321150+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220635/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 59,
+        "quantidade_registros": 60,
         "registros_recentes": [
+          {
+            "id": 2646413,
+            "sigla_tipo": "PL",
+            "numero": 5366,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e a Lei nº 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), para explicitar que a natureza integralmente sintética do material de violência sexual contra criança ou adolescente, gerado por inteligência artificial, não afasta a tipicidade penal, para tipificar a criação de representações integralmente sintéticas e para incluir o crime de simulação entre os crimes hediondos.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646413"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre o direito de ingresso e permanência de pessoa com deficiência ou condição de saúde grave, acompanhada de cão e/ou gato de suporte emocional, em meios de transporte e em ambientes de uso coletivo, públicos ou privados, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636479"
-          },
-          {
-            "id": 2636478,
-            "sigla_tipo": "PL",
-            "numero": 3421,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a suficiência probatória da Carteira de Identidade Nacional (CIN) com a simbologia de Pessoa com Deficiência (PCD) para o exercício de direitos legalmente assegurados à pessoa com deficiência.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636478"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220635"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220635",
-  "generated_at_utc": "2026-09-14T16:00:56.179504+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.517789+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 392,
+    "quantidade_registros": 393,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 59
+        "quantidade_registros": 60
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646413,
+        "sigla_tipo": "PL",
+        "numero": 5366,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e a Lei nº 8.072, de 25 de julho de 1990 (Lei dos Crimes Hediondos), para explicitar que a natureza integralmente sintética do material de violência sexual contra criança ou adolescente, gerado por inteligência artificial, não afasta a tipicidade penal, para tipificar a criação de representações integralmente sintéticas e para incluir o crime de simulação entre os crimes hediondos.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646413"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1509,14 +1517,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre o direito de ingresso e permanência de pessoa com deficiência ou condição de saúde grave, acompanhada de cão e/ou gato de suporte emocional, em meios de transporte e em ambientes de uso coletivo, públicos ou privados, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636479"
-      },
-      {
-        "id": 2636478,
-        "sigla_tipo": "PL",
-        "numero": 3421,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a suficiência probatória da Carteira de Identidade Nacional (CIN) com a simbologia de Pessoa com Deficiência (PCD) para o exercício de direitos legalmente assegurados à pessoa com deficiência.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636478"
       },
       {
         "id": 2598301,

@@ -1,14 +1,14 @@
 {
   "version": 3,
-  "generated_at_utc": "2026-09-15T08:48:12.663320+00:00",
+  "generated_at_utc": "2026-09-16T02:23:23.017345+00:00",
   "source": "Tribunal Superior Eleitoral (TSE)",
   "cargos": {
     "presidente": {
-      "total": 13,
+      "total": 14,
       "manifest": "presidente/manifest.json"
     },
     "governador": {
-      "total": 200,
+      "total": 201,
       "manifest": "governador/manifest.json"
     },
     "senador": {
@@ -21,7 +21,7 @@
       "arquivo": "../deputados_federais.json"
     },
     "deputado-estadual": {
-      "total": 11718,
+      "total": 11724,
       "manifest": "deputado-estadual/manifest.json",
       "carregamento": "uf_obrigatoria_paginas_e_indice_sob_demanda"
     }

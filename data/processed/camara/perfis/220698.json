@@ -630,7 +630,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T16:00:31.320314+00:00",
+      "generated_at_utc": "2026-09-16T02:37:04.005816+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -638,8 +638,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220698/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 32,
+        "quantidade_registros": 33,
         "registros_recentes": [
+          {
+            "id": 2646450,
+            "sigla_tipo": "RIC",
+            "numero": 2615,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministério de Estado dos Transportes acerca das condições de conservação, fiscalização, cumprimento das obrigações contratuais e arrecadação das concessionárias responsáveis pelas rodovias concedidas no Estado do Paraná, especialmente CCR/Motiva e EPR Paraná.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646450"
+          },
           {
             "id": 2646243,
             "sigla_tipo": "RIC",
@@ -727,14 +735,6 @@
             "ano": 2026,
             "ementa": "Requer a criação de Comissão Especial para debater o Projeto de Lei 3917/2024 que “altera a Lei n° 14.790, de 29 de Dezembro de 2023, determinando a proibição de patrocínio, publicidade e da propaganda das lotéricas denominadas apostas de quota fixa (BETS) em clubes e esportes de alto rendimento”.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636533"
-          },
-          {
-            "id": 2635613,
-            "sigla_tipo": "REQ",
-            "numero": 3664,
-            "ano": 2026,
-            "ementa": "Requer o envio do Projeto de Lei 1066/2023 que \"altera a Lei n° 14.273, de 23 de dezembro de 2021 - Lei das Ferrovias, para estabelecer a obrigatoriedade de instalação de cancelas automáticas e dá outras providências\" à Comissão de Finanças e Tributaçao.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635613"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220698"
@@ -949,7 +949,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220698",
-  "generated_at_utc": "2026-09-14T16:00:56.230284+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.268899+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1242,7 +1242,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 126,
+    "quantidade_registros": 127,
     "por_ano": [
       {
         "ano": 2023,
@@ -1258,10 +1258,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 32
+        "quantidade_registros": 33
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646450,
+        "sigla_tipo": "RIC",
+        "numero": 2615,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministério de Estado dos Transportes acerca das condições de conservação, fiscalização, cumprimento das obrigações contratuais e arrecadação das concessionárias responsáveis pelas rodovias concedidas no Estado do Paraná, especialmente CCR/Motiva e EPR Paraná.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646450"
+      },
       {
         "id": 2646243,
         "sigla_tipo": "RIC",
@@ -1349,14 +1357,6 @@
         "ano": 2026,
         "ementa": "Requer a criação de Comissão Especial para debater o Projeto de Lei 3917/2024 que “altera a Lei n° 14.790, de 29 de Dezembro de 2023, determinando a proibição de patrocínio, publicidade e da propaganda das lotéricas denominadas apostas de quota fixa (BETS) em clubes e esportes de alto rendimento”.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636533"
-      },
-      {
-        "id": 2635613,
-        "sigla_tipo": "REQ",
-        "numero": 3664,
-        "ano": 2026,
-        "ementa": "Requer o envio do Projeto de Lei 1066/2023 que \"altera a Lei n° 14.273, de 23 de dezembro de 2021 - Lei das Ferrovias, para estabelecer a obrigatoriedade de instalação de cancelas automáticas e dá outras providências\" à Comissão de Finanças e Tributaçao.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635613"
       },
       {
         "id": 2475490,

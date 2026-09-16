@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:27.582617+00:00",
+      "generated_at_utc": "2026-09-16T02:37:38.701366+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204526/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 101,
+        "quantidade_registros": 103,
         "registros_recentes": [
+          {
+            "id": 2646422,
+            "sigla_tipo": "RIC",
+            "numero": 2603,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro dos Povos Indígenas, ouvida a Fundação Nacional dos Povos Indígenas – Funai, acerca da emissão de Registros Administrativos de Nascimento de Indígena – RANI e de eventuais inconsistências documentais envolvendo indígenas em região de fronteira nos municípios de Guaíra e Terra Roxa, no Paraná.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646422"
+          },
+          {
+            "id": 2646421,
+            "sigla_tipo": "RIC",
+            "numero": 2602,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro do Desenvolvimento e Assistência Social, Família e Combate à Fome acerca de possíveis inconsistências cadastrais e pagamento de benefícios sociais a pessoas com documentação brasileira e paraguaia divergente nos municípios de Guaíra e Terra Roxa, no Paraná.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646421"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-          },
-          {
-            "id": 2644781,
-            "sigla_tipo": "RIC",
-            "numero": 2523,
-            "ano": 2026,
-            "ementa": "Requer informações ao Presidente do Comitê Gestor do Imposto sobre Bens e Serviços – CGIBS acerca da incidência do IBS e da CBS sobre as operações de compra e venda internacional triangular, usualmente denominadas back-to-back, nas quais um bem material é adquirido de fornecedor situado no exterior e revendido a adquirente também situado no exterior, sem qualquer ingresso do bem no território nacional, à luz da Lei Complementar nº 214/2025 e do art. 156-A, § 1º, incisos III e VII, da Constituição Federal; bem como acerca do tratamento dos créditos e das obrigações acessórias correspondentes.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644781"
-          },
-          {
-            "id": 2644780,
-            "sigla_tipo": "RIC",
-            "numero": 2522,
-            "ano": 2026,
-            "ementa": "Requer informações ao Presidente do Comitê Gestor do Imposto sobre Bens e Serviços – CGIBS acerca da caracterização de fornecimentos acessórios vinculados a um fornecimento principal como fornecimento único, nos termos da Lei Complementar nº 214/2025, em operações entre partes relacionadas, envolvendo prestação de serviços de disponibilidade operacional e assistência técnica de equipamentos a instituição financeira sujeita ao regime específico dos serviços financeiros; bem como acerca dos procedimentos fiscais aplicáveis ao correto preenchimento dos Documentos Fiscais eletrônicos (DF-e) correspondentes a essas operações.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644780"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204526"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204526",
-  "generated_at_utc": "2026-09-14T16:00:55.934256+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.322377+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1484,7 +1484,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 944,
+    "quantidade_registros": 946,
     "por_ano": [
       {
         "ano": 2023,
@@ -1500,10 +1500,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 101
+        "quantidade_registros": 103
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646422,
+        "sigla_tipo": "RIC",
+        "numero": 2603,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro dos Povos Indígenas, ouvida a Fundação Nacional dos Povos Indígenas – Funai, acerca da emissão de Registros Administrativos de Nascimento de Indígena – RANI e de eventuais inconsistências documentais envolvendo indígenas em região de fronteira nos municípios de Guaíra e Terra Roxa, no Paraná.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646422"
+      },
+      {
+        "id": 2646421,
+        "sigla_tipo": "RIC",
+        "numero": 2602,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro do Desenvolvimento e Assistência Social, Família e Combate à Fome acerca de possíveis inconsistências cadastrais e pagamento de benefícios sociais a pessoas com documentação brasileira e paraguaia divergente nos municípios de Guaíra e Terra Roxa, no Paraná.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646421"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1583,22 +1599,6 @@
         "ano": 2026,
         "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-      },
-      {
-        "id": 2644781,
-        "sigla_tipo": "RIC",
-        "numero": 2523,
-        "ano": 2026,
-        "ementa": "Requer informações ao Presidente do Comitê Gestor do Imposto sobre Bens e Serviços – CGIBS acerca da incidência do IBS e da CBS sobre as operações de compra e venda internacional triangular, usualmente denominadas back-to-back, nas quais um bem material é adquirido de fornecedor situado no exterior e revendido a adquirente também situado no exterior, sem qualquer ingresso do bem no território nacional, à luz da Lei Complementar nº 214/2025 e do art. 156-A, § 1º, incisos III e VII, da Constituição Federal; bem como acerca do tratamento dos créditos e das obrigações acessórias correspondentes.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644781"
-      },
-      {
-        "id": 2644780,
-        "sigla_tipo": "RIC",
-        "numero": 2522,
-        "ano": 2026,
-        "ementa": "Requer informações ao Presidente do Comitê Gestor do Imposto sobre Bens e Serviços – CGIBS acerca da caracterização de fornecimentos acessórios vinculados a um fornecimento principal como fornecimento único, nos termos da Lei Complementar nº 214/2025, em operações entre partes relacionadas, envolvendo prestação de serviços de disponibilidade operacional e assistência técnica de equipamentos a instituição financeira sujeita ao regime específico dos serviços financeiros; bem como acerca dos procedimentos fiscais aplicáveis ao correto preenchimento dos Documentos Fiscais eletrônicos (DF-e) correspondentes a essas operações.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644780"
       },
       {
         "id": 2598197,

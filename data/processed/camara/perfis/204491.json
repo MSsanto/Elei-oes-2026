@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:59.213115+00:00",
+      "generated_at_utc": "2026-09-16T02:38:07.074792+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204491/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 51,
+        "quantidade_registros": 52,
         "registros_recentes": [
+          {
+            "id": 2646451,
+            "sigla_tipo": "PL",
+            "numero": 5375,
+            "ano": 2026,
+            "ementa": "Dispõe sobre o incentivo à garimpagem artesanal e de pequena escala no Médio Jequitinhonha e estabelece preferência a superficiários e cooperativas locais na obtenção de áreas para Permissão de Lavra Garimpeira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646451"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministério da Fazenda acerca da contratação de escritório de advocacia pela Casa da Moeda do Brasil para atuação em demandas envolvendo advogados da própria estatal.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627723"
-          },
-          {
-            "id": 2627583,
-            "sigla_tipo": "REQ",
-            "numero": 3131,
-            "ano": 2026,
-            "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204491"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204491",
-  "generated_at_utc": "2026-09-14T16:00:56.010509+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.372956+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1467,7 +1467,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1081,
+    "quantidade_registros": 1082,
     "por_ano": [
       {
         "ano": 2023,
@@ -1483,10 +1483,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 51
+        "quantidade_registros": 52
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646451,
+        "sigla_tipo": "PL",
+        "numero": 5375,
+        "ano": 2026,
+        "ementa": "Dispõe sobre o incentivo à garimpagem artesanal e de pequena escala no Médio Jequitinhonha e estabelece preferência a superficiários e cooperativas locais na obtenção de áreas para Permissão de Lavra Garimpeira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646451"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1574,14 +1582,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministério da Fazenda acerca da contratação de escritório de advocacia pela Casa da Moeda do Brasil para atuação em demandas envolvendo advogados da própria estatal.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627723"
-      },
-      {
-        "id": 2627583,
-        "sigla_tipo": "REQ",
-        "numero": 3131,
-        "ano": 2026,
-        "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
       },
       {
         "id": 2598589,

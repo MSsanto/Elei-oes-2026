@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:58:30.455950+00:00",
+      "generated_at_utc": "2026-09-16T02:38:09.760557+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,40 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204528/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 294,
+        "quantidade_registros": 298,
         "registros_recentes": [
+          {
+            "id": 2646427,
+            "sigla_tipo": "RIC",
+            "numero": 2606,
+            "ano": 2026,
+            "ementa": "Requer informações complementares ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em razão da insuficiência da resposta ao Requerimento de Informação nº 1307/2026, sobre a transferência do delegado responsável pela condução de investigações relacionadas a descontos indevidos em benefícios do INSS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646427"
+          },
+          {
+            "id": 2646426,
+            "sigla_tipo": "RIC",
+            "numero": 2605,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em complemento aos Requerimentos de Informação nº 565, de 2026, e nº 2.393, de 2026, sobre o conhecimento prévio do Ministério e da Polícia Federal quanto ao organizador, ao patrocinador e ao custeador de evento realizado em Londres em abril de 2024, sobre a cadeia de tratativas que levou o convite ao Diretor-Geral da Polícia Federal, sobre a oferta de custeio integral de despesas de agentes públicos por particular, sobre eventuais convites e eventos posteriores da mesma origem e sobre as providências de integridade e apuração adotadas em 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646426"
+          },
+          {
+            "id": 2646424,
+            "sigla_tipo": "RIC",
+            "numero": 2604,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em complemento ao RIC nº 1630/2026, sobre os fundamentos legais, administrativos e técnicos da restrição de acesso aos registros de visitação de Daniel Vorcaro no período em que esteve sob custódia da Superintendência da Polícia Federal em Brasília.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646424"
+          },
+          {
+            "id": 2646417,
+            "sigla_tipo": "RIC",
+            "numero": 2601,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, sobre os estudos técnicos preliminares, a pactuação interfederativa, a análise de riscos e o modelo de operação da migração da infraestrutura tecnológica do Cadastro Nacional de Usuários do SUS (CadSUS) e da Rede Nacional de Dados em Saúde (RNDS) para ambiente operado pelo Serviço Federal de Processamento de Dados (Serpro).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646417"
+          },
           {
             "id": 2646323,
             "sigla_tipo": "PLP",
@@ -1025,38 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações à Ministra de Estado da Cultura, Sra. Margareth Menezes, acerca do Contrato Administrativo nº 1/2024, celebrado com a empresa M/CHECON DESIGN E CENOGRAFIA LTDA., decorrente da Ata de Registro de Preços nº 1/2024 e do Pregão Eletrônico nº 15/2023.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645720"
-          },
-          {
-            "id": 2645719,
-            "sigla_tipo": "RIC",
-            "numero": 2559,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado do Desenvolvimento e Assistência Social, Família e Combate à Fome, Sr. Wellington Dias, acerca do Contrato Administrativo nº 66/2023, celebrado com a empresa 3STRUCTURE IT LTDA., decorrente do Pregão Eletrônico nº 23/2023, cujo objeto é a solução para sustentação do ambiente analítico de dados do Ministério.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645719"
-          },
-          {
-            "id": 2645541,
-            "sigla_tipo": "PL",
-            "numero": 5274,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 15.040, de 9 de dezembro de 2024, para assegurar a inventariantes, meeiros, herdeiros, beneficiários e demais sucessores legitimados o acesso a informações sobre produto de seguro celebrado por pessoa falecida.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645541"
-          },
-          {
-            "id": 2645526,
-            "sigla_tipo": "REQ",
-            "numero": 4169,
-            "ano": 2026,
-            "ementa": "Requer a inclusão da Proposta de Emenda à Constituição nº 333 de 2017, na ordem do dia.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645526"
-          },
-          {
-            "id": 2645155,
-            "sigla_tipo": "PL",
-            "numero": 5250,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 10.741, de 1º de outubro de 2003, para dispor sobre o pleno exercício da capacidade civil pela pessoa idosa.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645155"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204528"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204528",
-  "generated_at_utc": "2026-09-14T16:00:56.051278+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.374501+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1452,7 +1452,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1951,
+    "quantidade_registros": 1955,
     "por_ano": [
       {
         "ano": 2023,
@@ -1468,10 +1468,42 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 294
+        "quantidade_registros": 298
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646427,
+        "sigla_tipo": "RIC",
+        "numero": 2606,
+        "ano": 2026,
+        "ementa": "Requer informações complementares ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em razão da insuficiência da resposta ao Requerimento de Informação nº 1307/2026, sobre a transferência do delegado responsável pela condução de investigações relacionadas a descontos indevidos em benefícios do INSS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646427"
+      },
+      {
+        "id": 2646426,
+        "sigla_tipo": "RIC",
+        "numero": 2605,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em complemento aos Requerimentos de Informação nº 565, de 2026, e nº 2.393, de 2026, sobre o conhecimento prévio do Ministério e da Polícia Federal quanto ao organizador, ao patrocinador e ao custeador de evento realizado em Londres em abril de 2024, sobre a cadeia de tratativas que levou o convite ao Diretor-Geral da Polícia Federal, sobre a oferta de custeio integral de despesas de agentes públicos por particular, sobre eventuais convites e eventos posteriores da mesma origem e sobre as providências de integridade e apuração adotadas em 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646426"
+      },
+      {
+        "id": 2646424,
+        "sigla_tipo": "RIC",
+        "numero": 2604,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em complemento ao RIC nº 1630/2026, sobre os fundamentos legais, administrativos e técnicos da restrição de acesso aos registros de visitação de Daniel Vorcaro no período em que esteve sob custódia da Superintendência da Polícia Federal em Brasília.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646424"
+      },
+      {
+        "id": 2646417,
+        "sigla_tipo": "RIC",
+        "numero": 2601,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, sobre os estudos técnicos preliminares, a pactuação interfederativa, a análise de riscos e o modelo de operação da migração da infraestrutura tecnológica do Cadastro Nacional de Usuários do SUS (CadSUS) e da Rede Nacional de Dados em Saúde (RNDS) para ambiente operado pelo Serviço Federal de Processamento de Dados (Serpro).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646417"
+      },
       {
         "id": 2646323,
         "sigla_tipo": "PLP",
@@ -1535,38 +1567,6 @@
         "ano": 2026,
         "ementa": "Requer informações à Ministra de Estado da Cultura, Sra. Margareth Menezes, acerca do Contrato Administrativo nº 1/2024, celebrado com a empresa M/CHECON DESIGN E CENOGRAFIA LTDA., decorrente da Ata de Registro de Preços nº 1/2024 e do Pregão Eletrônico nº 15/2023.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645720"
-      },
-      {
-        "id": 2645719,
-        "sigla_tipo": "RIC",
-        "numero": 2559,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado do Desenvolvimento e Assistência Social, Família e Combate à Fome, Sr. Wellington Dias, acerca do Contrato Administrativo nº 66/2023, celebrado com a empresa 3STRUCTURE IT LTDA., decorrente do Pregão Eletrônico nº 23/2023, cujo objeto é a solução para sustentação do ambiente analítico de dados do Ministério.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645719"
-      },
-      {
-        "id": 2645541,
-        "sigla_tipo": "PL",
-        "numero": 5274,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 15.040, de 9 de dezembro de 2024, para assegurar a inventariantes, meeiros, herdeiros, beneficiários e demais sucessores legitimados o acesso a informações sobre produto de seguro celebrado por pessoa falecida.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645541"
-      },
-      {
-        "id": 2645526,
-        "sigla_tipo": "REQ",
-        "numero": 4169,
-        "ano": 2026,
-        "ementa": "Requer a inclusão da Proposta de Emenda à Constituição nº 333 de 2017, na ordem do dia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645526"
-      },
-      {
-        "id": 2645155,
-        "sigla_tipo": "PL",
-        "numero": 5250,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 10.741, de 1º de outubro de 2003, para dispor sobre o pleno exercício da capacidade civil pela pessoa idosa.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645155"
       },
       {
         "id": 2598717,

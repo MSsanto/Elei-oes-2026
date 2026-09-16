@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:40.555560+00:00",
+      "generated_at_utc": "2026-09-16T02:38:44.936518+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204492/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 38,
+        "quantidade_registros": 39,
         "registros_recentes": [
+          {
+            "id": 2646449,
+            "sigla_tipo": "PL",
+            "numero": 5374,
+            "ano": 2026,
+            "ementa": "Estabelece regras para a utilização de perfis, páginas, canais e contas de grande alcance nas redes sociais por pré-candidatos e candidatos durante o período eleitoral, e altera a Lei nº 9.504, de 30 de setembro de 1997 – Lei das Eleições.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646449"
+          },
           {
             "id": 2645040,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Audiência Pública para debater a regulamentação dos táxis intermunicipais e transportadores alternativos, bem como os critérios utilizados pelo DER-MG para aplicação de multas e apreensões de veículos",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632342"
-          },
-          {
-            "id": 2631190,
-            "sigla_tipo": "PEC",
-            "numero": 13,
-            "ano": 2026,
-            "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204492"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204492",
-  "generated_at_utc": "2026-09-14T16:00:55.954288+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.441706+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1447,7 +1447,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 325,
+    "quantidade_registros": 326,
     "por_ano": [
       {
         "ano": 2023,
@@ -1463,10 +1463,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 38
+        "quantidade_registros": 39
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646449,
+        "sigla_tipo": "PL",
+        "numero": 5374,
+        "ano": 2026,
+        "ementa": "Estabelece regras para a utilização de perfis, páginas, canais e contas de grande alcance nas redes sociais por pré-candidatos e candidatos durante o período eleitoral, e altera a Lei nº 9.504, de 30 de setembro de 1997 – Lei das Eleições.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646449"
+      },
       {
         "id": 2645040,
         "sigla_tipo": "REQ",
@@ -1554,14 +1562,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Audiência Pública para debater a regulamentação dos táxis intermunicipais e transportadores alternativos, bem como os critérios utilizados pelo DER-MG para aplicação de multas e apreensões de veículos",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632342"
-      },
-      {
-        "id": 2631190,
-        "sigla_tipo": "PEC",
-        "numero": 13,
-        "ano": 2026,
-        "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
       },
       {
         "id": 2596918,

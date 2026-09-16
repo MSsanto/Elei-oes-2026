@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:31.135696+00:00",
+      "generated_at_utc": "2026-09-16T02:38:36.392849+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/98148/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 47,
+        "quantidade_registros": 48,
         "registros_recentes": [
+          {
+            "id": 2646460,
+            "sigla_tipo": "REQ",
+            "numero": 59,
+            "ano": 2026,
+            "ementa": "Requer a realização de explanação técnico-científica, no âmbito da Comissão de Meio Ambiente e Desenvolvimento Sustentável, sobre o fenômeno El Niño e suas possíveis repercussões ambientais e socioeconômicas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646460"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
-          },
-          {
-            "id": 2627349,
-            "sigla_tipo": "REQ",
-            "numero": 3081,
-            "ano": 2026,
-            "ementa": "Requer a inclusão de item na Ordem do Dia.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627349"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=98148"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "98148",
-  "generated_at_utc": "2026-09-14T16:00:55.939401+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.423833+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 616,
+    "quantidade_registros": 617,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 47
+        "quantidade_registros": 48
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646460,
+        "sigla_tipo": "REQ",
+        "numero": 59,
+        "ano": 2026,
+        "ementa": "Requer a realização de explanação técnico-científica, no âmbito da Comissão de Meio Ambiente e Desenvolvimento Sustentável, sobre o fenômeno El Niño e suas possíveis repercussões ambientais e socioeconômicas.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646460"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
-      },
-      {
-        "id": 2627349,
-        "sigla_tipo": "REQ",
-        "numero": 3081,
-        "ano": 2026,
-        "ementa": "Requer a inclusão de item na Ordem do Dia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627349"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:58:32.212614+00:00",
+      "generated_at_utc": "2026-09-16T02:39:23.985472+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178929/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 92,
+        "quantidade_registros": 93,
         "registros_recentes": [
+          {
+            "id": 2646426,
+            "sigla_tipo": "RIC",
+            "numero": 2605,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em complemento aos Requerimentos de Informação nº 565, de 2026, e nº 2.393, de 2026, sobre o conhecimento prévio do Ministério e da Polícia Federal quanto ao organizador, ao patrocinador e ao custeador de evento realizado em Londres em abril de 2024, sobre a cadeia de tratativas que levou o convite ao Diretor-Geral da Polícia Federal, sobre a oferta de custeio integral de despesas de agentes públicos por particular, sobre eventuais convites e eventos posteriores da mesma origem e sobre as providências de integridade e apuração adotadas em 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646426"
+          },
           {
             "id": 2645803,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, sobre o novo complexo da Polícia Federal no Porto de Santos, incluindo cronograma, custo, fonte de recursos, responsabilidades e resultados esperados para prevenção e enfrentamento ao tráfico transnacional de drogas.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643274"
-          },
-          {
-            "id": 2643271,
-            "sigla_tipo": "RIC",
-            "numero": 2389,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos, Sr. Tomé Monteiro da Franca, sobre tratativas com autoridades dos Estados Unidos, não conformidades, auditorias, falhas diagnosticadas e medidas corretivas relacionadas à segurança portuária e ao enfrentamento do tráfico transnacional de drogas no Porto de Santos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643271"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178929"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178929",
-  "generated_at_utc": "2026-09-14T16:00:56.056715+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.506248+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1564,7 +1564,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 883,
+    "quantidade_registros": 884,
     "por_ano": [
       {
         "ano": 2023,
@@ -1580,10 +1580,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 92
+        "quantidade_registros": 93
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646426,
+        "sigla_tipo": "RIC",
+        "numero": 2605,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, em complemento aos Requerimentos de Informação nº 565, de 2026, e nº 2.393, de 2026, sobre o conhecimento prévio do Ministério e da Polícia Federal quanto ao organizador, ao patrocinador e ao custeador de evento realizado em Londres em abril de 2024, sobre a cadeia de tratativas que levou o convite ao Diretor-Geral da Polícia Federal, sobre a oferta de custeio integral de despesas de agentes públicos por particular, sobre eventuais convites e eventos posteriores da mesma origem e sobre as providências de integridade e apuração adotadas em 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646426"
+      },
       {
         "id": 2645803,
         "sigla_tipo": "EMC",
@@ -1671,14 +1679,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, sobre o novo complexo da Polícia Federal no Porto de Santos, incluindo cronograma, custo, fonte de recursos, responsabilidades e resultados esperados para prevenção e enfrentamento ao tráfico transnacional de drogas.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643274"
-      },
-      {
-        "id": 2643271,
-        "sigla_tipo": "RIC",
-        "numero": 2389,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos, Sr. Tomé Monteiro da Franca, sobre tratativas com autoridades dos Estados Unidos, não conformidades, auditorias, falhas diagnosticadas e medidas corretivas relacionadas à segurança portuária e ao enfrentamento do tráfico transnacional de drogas no Porto de Santos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643271"
       },
       {
         "id": 2599001,

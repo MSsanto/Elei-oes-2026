@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-14T15:57:31.687397+00:00",
+      "generated_at_utc": "2026-09-16T02:39:08.488242+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220648/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 90,
+        "quantidade_registros": 91,
         "registros_recentes": [
+          {
+            "id": 2646420,
+            "sigla_tipo": "REQ",
+            "numero": 4222,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a revisão do despacho ao Projeto de Lei nº 19/2026, que “Estabelece condições, deveres e restrições ao uso de óculos inteligentes com recursos de inteligência artificial, altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro) e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e dá outras providências”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646420"
+          },
           {
             "id": 2645839,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1343/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633875"
-          },
-          {
-            "id": 2633874,
-            "sigla_tipo": "EMC",
-            "numero": 359,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633874"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220648"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220648",
-  "generated_at_utc": "2026-09-14T16:00:55.941378+00:00",
+  "generated_at_utc": "2026-09-16T02:39:59.479696+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1824,
+    "quantidade_registros": 1825,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 90
+        "quantidade_registros": 91
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646420,
+        "sigla_tipo": "REQ",
+        "numero": 4222,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a revisão do despacho ao Projeto de Lei nº 19/2026, que “Estabelece condições, deveres e restrições ao uso de óculos inteligentes com recursos de inteligência artificial, altera a Lei nº 9.503, de 23 de setembro de 1997 (Código de Trânsito Brasileiro) e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e dá outras providências”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646420"
+      },
       {
         "id": 2645839,
         "sigla_tipo": "EMC",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1343/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633875"
-      },
-      {
-        "id": 2633874,
-        "sigla_tipo": "EMC",
-        "numero": 359,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633874"
       },
       {
         "id": 2599001,
