@@ -1,29 +1,14 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-14T15:59:47.330415Z",
+  "generated_at": "2026-09-16T14:22:49.281751Z",
   "component": "financas_2026",
-  "status": "ok",
+  "status": "error",
   "source": "TSE - Prestacao de Contas Eleitorais 2026",
   "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
   "collector": "resilient_http_collector",
-  "attempts": 1,
+  "attempts": 3,
   "worker_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
-  "origin": "none",
-  "message": "Coleta financeira concluida e validada pelo coletor.",
-  "last_error": null,
-  "transport": {
-    "transport": "cloudflare_browser_worker",
-    "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
-    "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
-    "downloaded_bytes": 108011998,
-    "sha256": "f7393fa29092bd9c312dae83f76afaab42f56260b739574756bf935886f3ae79",
-    "content_type": "application/zip",
-    "worker_revision": "dataset-router-v7-session-reuse",
-    "archive_entries": 112
-  },
-  "snapshot": {
-    "generated_at": null,
-    "candidates": 15077,
-    "shard_count": 256
-  }
+  "origin": "collection_infrastructure",
+  "message": "A ultima carga financeira valida foi preservada; uma nova coleta nao foi publicada.",
+  "last_error": "Coleta falhou apos 3 tentativas: Transportes indisponiveis nesta tentativa. Direto: HTTP direto do TSE retornou HTTP 403: <HTML><HEAD>\n<TITLE>Access Denied</TITLE>\n</HEAD><BODY>\n<H1>Access Denied</H1>\n \nYou don't have permission to access \"http&#58;&#47;&#47;cdn&#46;tse&#46;jus&#46;br&#47;estatistica&#47;sead&#47;odsele&#47;prestacao&#95;contas&#47;prestacao&#95;de&#95;contas&#95;eleitorais&#95;candidatos&#95;2026&#46;zip\" on this server.<P>\nReference&#32;&#35;18&#46;b622c17&#46;1789568545&#46;630d49de\n<P>https&#58;&#47;&#47;errors&#46;edgesuite&#46;net&#47;18&#46;b622c17&#46;1789568545&#46;630d49de</P>\n</BODY>\n</HTML>\n. Worker: Browser Worker retornou HTTP 503: <!DOCTYPE html>\n<!--[if lt IE 7]> <html class=\"no-js ie6 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 7]>    <html class=\"no-js ie7 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if IE 8]>    <html class=\"no-js ie8 oldie\" lang=\"en-US\"> <![endif]-->\n<!--[if gt IE 8]><!--> <html class=\"no-js\" lang=\"en-US\"> <!--<![endif]-->\n<head>\n<title>Worker exceeded resource limits | eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev | Cloudflare</title>\n<meta charset=\"UTF-8\" />\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\" />\n<meta name=\"robots\" content=\"noindex, nofollow\" />\n<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n<link rel=\"stylesheet\" id=\"cf_styles-css\" href=\"/cdn-cgi/styles/cf.errors.css\" />\n<!--[if lt IE 9]><link rel=\"stylesheet\" id='cf_styles-ie-css' href=\"/cdn-cgi/styles/cf.errors.ie.css\" /><![endif]-->\n<style>body{margin:0;padding:0}</style>\n\n\n<!--[if gte IE 10]><!-->\n<script>\n  if (!nav"
 }
