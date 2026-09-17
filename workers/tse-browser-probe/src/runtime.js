@@ -1,7 +1,7 @@
 import puppeteer from '@cloudflare/puppeteer';
 import productionWorker from './production.js';
 
-const RUNTIME_REVISION = 'dataset-router-v7-session-reuse';
+const RUNTIME_REVISION = 'dataset-router-v8-zero-copy-finance-stream';
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36';
 const FINANCE_DATASET_KEY = 'prestacaoCandidatos2026';
 const FINANCE_DATASET = {
@@ -40,22 +40,8 @@ function base64ToBytes(base64) {
   return bytes;
 }
 
-function concatenateChunks(chunks, totalBytes) {
-  const bytes = new Uint8Array(totalBytes);
-  let offset = 0;
-  for (const chunk of chunks) {
-    bytes.set(chunk, offset);
-    offset += chunk.byteLength;
-  }
-  return bytes;
-}
-
 function headersToObject(headers = []) {
   return Object.fromEntries(headers.map((header) => [String(header.name).toLowerCase(), header.value]));
-}
-
-function toHex(buffer) {
-  return [...new Uint8Array(buffer)].map((value) => value.toString(16).padStart(2, '0')).join('');
 }
 
 function authorize(request, env) {
@@ -69,44 +55,6 @@ function authorize(request, env) {
     return json({ error: 'Unauthorized' }, 401);
   }
   return null;
-}
-
-async function readCdpStream(cdp, streamHandle) {
-  const chunks = [];
-  let totalBytes = 0;
-
-  try {
-    while (true) {
-      const part = await cdp.send('IO.read', {
-        handle: streamHandle,
-        size: 1024 * 1024,
-      });
-      const chunk = part.base64Encoded
-        ? base64ToBytes(part.data || '')
-        : new TextEncoder().encode(part.data || '');
-
-      if (chunk.byteLength > 0) {
-        chunks.push(chunk);
-        totalBytes += chunk.byteLength;
-      }
-      if (part.eof) break;
-    }
-  } finally {
-    await cdp.send('IO.close', { handle: streamHandle }).catch(() => undefined);
-  }
-
-  return concatenateChunks(chunks, totalBytes);
-}
-
-async function validateBytes(bytes, minBytes) {
-  if (!bytes || bytes.byteLength <= minBytes) {
-    throw new Error(`ZIP recebido e pequeno demais: ${bytes?.byteLength || 0} bytes`);
-  }
-  if (bytes[0] !== 0x50 || bytes[1] !== 0x4b) {
-    throw new Error('Resposta recebida nao possui assinatura ZIP.');
-  }
-  const digest = await crypto.subtle.digest('SHA-256', bytes);
-  return toHex(digest);
 }
 
 async function browserLimits(endpoint) {
@@ -125,8 +73,6 @@ async function browserLimits(endpoint) {
 
 function acquisitionWaitMs(limits, fallbackMs = 20_500) {
   let raw = Number(limits?.timeUntilNextAllowedBrowserAcquisition || 0);
-  // A API historicamente expõe o intervalo em ms. Este ramo também tolera
-  // implementações que o exponham em segundos.
   if (raw > 0 && raw < 1000) raw *= 1000;
   if (raw <= 0) raw = fallbackMs;
   return Math.max(1_500, Math.min(raw + 500, 22_000));
@@ -220,135 +166,170 @@ async function captureViaEdgeFetch(dataset) {
     },
   });
 
-  if (response.status !== 200) {
+  if (response.status !== 200 || !response.body) {
     const detail = (await response.text().catch(() => '')).slice(0, 500);
     throw new Error(`Cloudflare edge fetch retornou HTTP ${response.status}: ${detail}`);
   }
 
-  const bytes = new Uint8Array(await response.arrayBuffer());
-  const sha256 = await validateBytes(bytes, dataset.minBytes);
   return {
-    bytes,
-    sha256,
+    body: response.body,
     sourceUrl: response.url || dataset.url,
     contentType: response.headers.get('content-type') || 'application/zip',
-    transport: 'cloudflare_edge_fetch',
+    contentLength: response.headers.get('content-length') || '',
+    transport: 'cloudflare_edge_fetch_stream',
     session: null,
   };
 }
 
-async function captureViaBrowser(env, dataset) {
-  let browser;
-  let page;
-  let acquisition = null;
+async function captureViaBrowser(env, dataset, ctx) {
+  const acquisition = await acquireBrowser(env.BROWSER);
+  const browser = acquisition.browser;
+  const page = await browser.newPage();
+  await page.setUserAgent(USER_AGENT);
 
-  try {
-    acquisition = await acquireBrowser(env.BROWSER);
-    browser = acquisition.browser;
-    page = await browser.newPage();
-    await page.setUserAgent(USER_AGENT);
+  const portalResponse = await page.goto(dataset.portal, {
+    waitUntil: 'domcontentloaded',
+    timeout: 30000,
+  });
+  const portalStatus = portalResponse?.status() ?? null;
+  if (portalStatus === null || portalStatus >= 400) {
+    await page.close().catch(() => undefined);
+    browser.disconnect();
+    throw new Error(`Portal do TSE retornou status ${portalStatus}`);
+  }
 
-    const portalResponse = await page.goto(dataset.portal, {
-      waitUntil: 'domcontentloaded',
-      timeout: 30000,
-    });
-    const portalStatus = portalResponse?.status() ?? null;
-    if (portalStatus === null || portalStatus >= 400) {
-      throw new Error(`Portal do TSE retornou status ${portalStatus}`);
+  const discoveredZip = await page
+    .$$eval(`a[href*="${dataset.filename}"]`, (links) => links.map((link) => link.href).find(Boolean) || null)
+    .catch(() => null);
+  const zipUrl = discoveredZip || dataset.url;
+
+  const cdp = await page.createCDPSession();
+  await cdp.send('Fetch.enable', {
+    patterns: [{ urlPattern: dataset.pattern, requestStage: 'Response' }],
+  });
+
+  let resolveCapture;
+  let rejectCapture;
+  const capturePromise = new Promise((resolve, reject) => {
+    resolveCapture = resolve;
+    rejectCapture = reject;
+  });
+
+  const cleanup = async () => {
+    cdp.off('Fetch.requestPaused', onPaused);
+    await cdp.send('Fetch.disable').catch(() => undefined);
+    await page.close().catch(() => undefined);
+    browser.disconnect();
+  };
+
+  const onPaused = async (event) => {
+    const requestUrl = event?.request?.url || '';
+    if (!requestUrl.includes(dataset.filename)) {
+      await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
+      return;
     }
 
-    const discoveredZip = await page
-      .$$eval(`a[href*="${dataset.filename}"]`, (links) => links.map((link) => link.href).find(Boolean) || null)
-      .catch(() => null);
-    const zipUrl = discoveredZip || dataset.url;
+    const responseHeaders = headersToObject(event.responseHeaders || []);
+    const status = event.responseStatusCode ?? null;
+    if (status !== 200) {
+      await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
+      await cleanup();
+      rejectCapture(new Error(`TSE retornou HTTP ${status} no navegador.`));
+      return;
+    }
 
-    const cdp = await page.createCDPSession();
-    await cdp.send('Fetch.enable', {
-      patterns: [{ urlPattern: dataset.pattern, requestStage: 'Response' }],
-    });
+    let streamHandle;
+    try {
+      const bodyStream = await cdp.send('Fetch.takeResponseBodyAsStream', {
+        requestId: event.requestId,
+      });
+      streamHandle = bodyStream.stream;
+    } catch (error) {
+      await cleanup();
+      rejectCapture(new Error(`Nao foi possivel abrir o stream do ZIP: ${safeError(error)}`));
+      return;
+    }
 
-    let resolveCapture;
-    const capturePromise = new Promise((resolve) => {
-      resolveCapture = resolve;
-    });
+    const { readable, writable } = new TransformStream();
+    const writer = writable.getWriter();
 
-    const onPaused = async (event) => {
-      const requestUrl = event?.request?.url || '';
-      if (!requestUrl.includes(dataset.filename)) {
-        await cdp.send('Fetch.continueRequest', { requestId: event.requestId }).catch(() => undefined);
-        return;
-      }
-
-      let bytes = null;
-      let bodyError = null;
-      const responseHeaders = headersToObject(event.responseHeaders || []);
+    const pump = async () => {
+      let totalBytes = 0;
+      let signatureChecked = false;
       try {
-        const bodyStream = await cdp.send('Fetch.takeResponseBodyAsStream', {
-          requestId: event.requestId,
-        });
-        bytes = await readCdpStream(cdp, bodyStream.stream);
+        while (true) {
+          const part = await cdp.send('IO.read', {
+            handle: streamHandle,
+            size: 512 * 1024,
+          });
+          const chunk = part.base64Encoded
+            ? base64ToBytes(part.data || '')
+            : new TextEncoder().encode(part.data || '');
+
+          if (chunk.byteLength > 0) {
+            if (!signatureChecked) {
+              if (chunk.byteLength < 2 || chunk[0] !== 0x50 || chunk[1] !== 0x4b) {
+                throw new Error('Resposta recebida nao possui assinatura ZIP.');
+              }
+              signatureChecked = true;
+            }
+            totalBytes += chunk.byteLength;
+            await writer.write(chunk);
+          }
+
+          if (part.eof) break;
+        }
+
+        if (!signatureChecked || totalBytes <= dataset.minBytes) {
+          throw new Error(`ZIP recebido e pequeno demais: ${totalBytes} bytes`);
+        }
+        await writer.close();
       } catch (error) {
-        bodyError = safeError(error);
+        await writer.abort(error).catch(() => undefined);
       } finally {
+        await cdp.send('IO.close', { handle: streamHandle }).catch(() => undefined);
         await cdp.send('Fetch.failRequest', {
           requestId: event.requestId,
           errorReason: 'Aborted',
         }).catch(() => undefined);
+        await cleanup();
       }
-
-      resolveCapture({
-        url: requestUrl,
-        status: event.responseStatusCode ?? null,
-        headers: responseHeaders,
-        bytes,
-        bodyError,
-      });
     };
 
-    cdp.on('Fetch.requestPaused', onPaused);
-    try {
-      await page.goto(zipUrl, { waitUntil: 'domcontentloaded', timeout: 60000 });
-    } catch {
-      // O download e o failRequest deliberado podem terminar a navegacao com ERR_ABORTED.
-    }
+    const streamTask = pump();
+    if (ctx?.waitUntil) ctx.waitUntil(streamTask);
 
-    const captured = await Promise.race([
-      capturePromise,
-      sleep(60000).then(() => null),
-    ]);
-
-    cdp.off('Fetch.requestPaused', onPaused);
-    await cdp.send('Fetch.disable').catch(() => undefined);
-
-    if (!captured) throw new Error('A resposta do ZIP nao foi interceptada pelo CDP.');
-    if (!captured.bytes) {
-      throw new Error(`O corpo do ZIP nao pode ser lido por stream: ${captured.bodyError || 'erro desconhecido'}`);
-    }
-    if (captured.status !== 200) {
-      throw new Error(`TSE retornou HTTP ${captured.status} no navegador.`);
-    }
-
-    const sha256 = await validateBytes(captured.bytes, dataset.minBytes);
-    return {
-      bytes: captured.bytes,
-      sha256,
-      sourceUrl: captured.url,
-      contentType: captured.headers?.['content-type'] || 'application/zip',
-      transport: acquisition.reused ? 'cloudflare_browser_reused_session' : 'cloudflare_browser_new_session',
+    resolveCapture({
+      body: readable,
+      sourceUrl: requestUrl,
+      contentType: responseHeaders['content-type'] || 'application/zip',
+      contentLength: responseHeaders['content-length'] || '',
+      transport: acquisition.reused ? 'cloudflare_browser_reused_session_stream' : 'cloudflare_browser_new_session_stream',
       session: {
         id: acquisition.sessionId,
         reused: acquisition.reused,
         acquisition_attempt: acquisition.acquisitionAttempt,
       },
-    };
-  } finally {
-    if (page) await page.close().catch(() => undefined);
-    // disconnect() libera a conexao, mas preserva a sessao para reutilizacao.
-    if (browser) browser.disconnect();
+    });
+  };
+
+  cdp.on('Fetch.requestPaused', onPaused);
+
+  page.goto(zipUrl, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch(() => undefined);
+
+  const captured = await Promise.race([
+    capturePromise,
+    sleep(60000).then(() => null),
+  ]);
+
+  if (!captured) {
+    await cleanup();
+    throw new Error('A resposta do ZIP nao foi interceptada pelo CDP.');
   }
+  return captured;
 }
 
-async function downloadFinance(request, env) {
+async function downloadFinance(request, env, ctx) {
   const authorizationError = authorize(request, env);
   if (authorizationError) return authorizationError;
 
@@ -359,7 +340,7 @@ async function downloadFinance(request, env) {
   } catch (error) {
     edgeError = safeError(error);
     try {
-      captured = await captureViaBrowser(env, FINANCE_DATASET);
+      captured = await captureViaBrowser(env, FINANCE_DATASET, ctx);
     } catch (browserError) {
       const limits = await browserLimits(env.BROWSER);
       return json({
@@ -373,22 +354,23 @@ async function downloadFinance(request, env) {
     }
   }
 
-  return new Response(captured.bytes, {
+  const headers = {
+    'content-type': captured.contentType,
+    'content-disposition': `attachment; filename="${FINANCE_DATASET.filename}"`,
+    'cache-control': 'no-store',
+    'x-tse-source': captured.sourceUrl,
+    'x-tse-dataset': FINANCE_DATASET_KEY,
+    'x-tse-transport': captured.transport,
+    'x-production-revision': RUNTIME_REVISION,
+    ...(captured.session?.reused !== undefined
+      ? { 'x-browser-session-reused': String(captured.session.reused) }
+      : {}),
+  };
+  if (captured.contentLength) headers['content-length'] = captured.contentLength;
+
+  return new Response(captured.body, {
     status: 200,
-    headers: {
-      'content-type': captured.contentType,
-      'content-disposition': `attachment; filename="${FINANCE_DATASET.filename}"`,
-      'content-length': String(captured.bytes.byteLength),
-      'cache-control': 'no-store',
-      'x-tse-source': captured.sourceUrl,
-      'x-tse-sha256': captured.sha256,
-      'x-tse-dataset': FINANCE_DATASET_KEY,
-      'x-tse-transport': captured.transport,
-      'x-production-revision': RUNTIME_REVISION,
-      ...(captured.session?.reused !== undefined
-        ? { 'x-browser-session-reused': String(captured.session.reused) }
-        : {}),
-    },
+    headers,
   });
 }
 
@@ -396,7 +378,7 @@ export default {
   async fetch(request, env, ctx) {
     const url = new URL(request.url);
     if (url.pathname === '/download' && url.searchParams.get('dataset') === FINANCE_DATASET_KEY) {
-      return downloadFinance(request, env);
+      return downloadFinance(request, env, ctx);
     }
 
     const response = await productionWorker.fetch(request, env, ctx);
@@ -404,7 +386,8 @@ export default {
       try {
         const payload = await response.clone().json();
         payload.runtime_revision = RUNTIME_REVISION;
-        payload.finance_transport = 'edge-fetch -> reusable Browser Run session';
+        payload.finance_transport = 'edge streaming -> reusable Browser Run streaming session';
+        payload.finance_validation = 'assinatura/tamanho no Worker; SHA-256 e integridade ZIP no coletor Python';
         return json(payload, response.status);
       } catch {
         return response;
