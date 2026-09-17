@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:39:53.925394+00:00",
+      "generated_at_utc": "2026-09-17T09:01:20.405207+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220534/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 103,
+        "quantidade_registros": 104,
         "registros_recentes": [
+          {
+            "id": 2646506,
+            "sigla_tipo": "INC",
+            "numero": 1592,
+            "ano": 2026,
+            "ementa": "Sugere ao Poder Executivo a adoção de providências para instituir política de prevenção do adoecimento psíquico ocupacional e reparação individualizada por doença mental relacionada ao serviço, em favor dos profissionais de segurança pública e dos militares",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646506"
+          },
           {
             "id": 2646224,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado da Saúde ampliação da oferta dos serviços de saúde no Distrito Federal.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640327"
-          },
-          {
-            "id": 2639263,
-            "sigla_tipo": "PL",
-            "numero": 3660,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 9.991, de 24 de julho de 2000, para incluir a eficiência energética em estabelecimentos públicos de saúde integrantes do Sistema Único de Saúde (SUS) entre as prioridades dos programas de eficiência energética das concessionárias e permissionárias de distribuição de energia elétrica, e dá outras providências",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639263"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220534"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220534",
-  "generated_at_utc": "2026-09-16T02:39:59.553927+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.425244+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 932,
+    "quantidade_registros": 933,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 103
+        "quantidade_registros": 104
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646506,
+        "sigla_tipo": "INC",
+        "numero": 1592,
+        "ano": 2026,
+        "ementa": "Sugere ao Poder Executivo a adoção de providências para instituir política de prevenção do adoecimento psíquico ocupacional e reparação individualizada por doença mental relacionada ao serviço, em favor dos profissionais de segurança pública e dos militares",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646506"
+      },
       {
         "id": 2646224,
         "sigla_tipo": "PL",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado da Saúde ampliação da oferta dos serviços de saúde no Distrito Federal.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640327"
-      },
-      {
-        "id": 2639263,
-        "sigla_tipo": "PL",
-        "numero": 3660,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 9.991, de 24 de julho de 2000, para incluir a eficiência energética em estabelecimentos públicos de saúde integrantes do Sistema Único de Saúde (SUS) entre as prioridades dos programas de eficiência energética das concessionárias e permissionárias de distribuição de energia elétrica, e dá outras providências",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639263"
       },
       {
         "id": 2596161,

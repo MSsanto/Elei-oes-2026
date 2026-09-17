@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:39:56.917627+00:00",
+      "generated_at_utc": "2026-09-17T09:00:15.081922+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204473/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 48,
+        "quantidade_registros": 50,
         "registros_recentes": [
+          {
+            "id": 2646504,
+            "sigla_tipo": "PDL",
+            "numero": 1003,
+            "ano": 2026,
+            "ementa": "Susta a Resolução ANP nº 1.005, de 1º de julho de 2026, que estabelece os critérios para a caracterização da elevação abusiva dos preços de combustíveis por parte de revendedores varejistas de combustíveis líquidos e de gás liquefeito de petróleo (GLP).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646504"
+          },
+          {
+            "id": 2646503,
+            "sigla_tipo": "PDL",
+            "numero": 1002,
+            "ano": 2026,
+            "ementa": "Susta a Resolução ANP nº 1.004, de 1º de julho de 2026, que estabelece os critérios para a caracterização da elevação abusiva dos preços de combustíveis por parte de distribuidores de combustíveis líquidos e de gás liquefeito de petróleo (GLP).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646503"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-          },
-          {
-            "id": 2620890,
-            "sigla_tipo": "PL",
-            "numero": 2149,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 1.001, de 21 de outubro de 1969 (Código Penal Militar), para estabelecer salvaguardas de proteção funcional ao militar de carreira no exercício de funções institucionais, dispor sobre causa especial de diminuição de pena e fixar critérios para caracterização, no âmbito penal militar, de imputações relacionadas a crimes contra o Estado Democrático de Direito previstos na legislação penal comum.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620890"
-          },
-          {
-            "id": 2620866,
-            "sigla_tipo": "REQ",
-            "numero": 2587,
-            "ano": 2026,
-            "ementa": "Requer uma convocação de Sessão Solene da Câmara dos Deputados em alusão ao  Dia Livre de Imposto (DLI).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620866"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204473"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204473",
-  "generated_at_utc": "2026-09-16T02:39:59.560103+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.327378+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1479,7 +1479,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 616,
+    "quantidade_registros": 618,
     "por_ano": [
       {
         "ano": 2023,
@@ -1495,10 +1495,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 48
+        "quantidade_registros": 50
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646504,
+        "sigla_tipo": "PDL",
+        "numero": 1003,
+        "ano": 2026,
+        "ementa": "Susta a Resolução ANP nº 1.005, de 1º de julho de 2026, que estabelece os critérios para a caracterização da elevação abusiva dos preços de combustíveis por parte de revendedores varejistas de combustíveis líquidos e de gás liquefeito de petróleo (GLP).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646504"
+      },
+      {
+        "id": 2646503,
+        "sigla_tipo": "PDL",
+        "numero": 1002,
+        "ano": 2026,
+        "ementa": "Susta a Resolução ANP nº 1.004, de 1º de julho de 2026, que estabelece os critérios para a caracterização da elevação abusiva dos preços de combustíveis por parte de distribuidores de combustíveis líquidos e de gás liquefeito de petróleo (GLP).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646503"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1578,22 +1594,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-      },
-      {
-        "id": 2620890,
-        "sigla_tipo": "PL",
-        "numero": 2149,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 1.001, de 21 de outubro de 1969 (Código Penal Militar), para estabelecer salvaguardas de proteção funcional ao militar de carreira no exercício de funções institucionais, dispor sobre causa especial de diminuição de pena e fixar critérios para caracterização, no âmbito penal militar, de imputações relacionadas a crimes contra o Estado Democrático de Direito previstos na legislação penal comum.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620890"
-      },
-      {
-        "id": 2620866,
-        "sigla_tipo": "REQ",
-        "numero": 2587,
-        "ano": 2026,
-        "ementa": "Requer uma convocação de Sessão Solene da Câmara dos Deputados em alusão ao  Dia Livre de Imposto (DLI).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620866"
       },
       {
         "id": 2598197,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:38:41.348892+00:00",
+      "generated_at_utc": "2026-09-17T09:03:26.620649+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204560/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 125,
+        "quantidade_registros": 126,
         "registros_recentes": [
+          {
+            "id": 2646486,
+            "sigla_tipo": "DOC",
+            "numero": 967,
+            "ano": 2026,
+            "ementa": "",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646486"
+          },
           {
             "id": 2645042,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628201"
-          },
-          {
-            "id": 2624646,
-            "sigla_tipo": "REQ",
-            "numero": 2851,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 3220/2019, que dispõe sobre o compartilhamento de infraestrutura física aérea de titularidade de prestadoras de serviços de distribuição de energia elétrica com prestadoras de serviços de telecomunicações, altera a Lei nº 9.427, de 26 de dezembro de 1996, a Lei nº 9.472, de 16 de julho de 1997, e a Lei nº 14.947, de 2 de agosto de 2024, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624646"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204560"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204560",
-  "generated_at_utc": "2026-09-16T02:39:59.433490+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.635696+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1447,7 +1447,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 615,
+    "quantidade_registros": 616,
     "por_ano": [
       {
         "ano": 2023,
@@ -1463,10 +1463,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 125
+        "quantidade_registros": 126
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646486,
+        "sigla_tipo": "DOC",
+        "numero": 967,
+        "ano": 2026,
+        "ementa": "",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646486"
+      },
       {
         "id": 2645042,
         "sigla_tipo": "PL",
@@ -1554,14 +1562,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628201"
-      },
-      {
-        "id": 2624646,
-        "sigla_tipo": "REQ",
-        "numero": 2851,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 3220/2019, que dispõe sobre o compartilhamento de infraestrutura física aérea de titularidade de prestadoras de serviços de distribuição de energia elétrica com prestadoras de serviços de telecomunicações, altera a Lei nº 9.427, de 26 de dezembro de 1996, a Lei nº 9.472, de 16 de julho de 1997, e a Lei nº 14.947, de 2 de agosto de 2024, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624646"
       },
       {
         "id": 2599001,

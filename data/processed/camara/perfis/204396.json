@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:39:25.015522+00:00",
+      "generated_at_utc": "2026-09-17T09:04:25.826871+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204396/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 23,
+        "quantidade_registros": 25,
         "registros_recentes": [
+          {
+            "id": 2646520,
+            "sigla_tipo": "REQ",
+            "numero": 4234,
+            "ano": 2026,
+            "ementa": "Requer voto de louvor aos Centros de Tradições Gaúchas (CTGs) do Paraná e à Semana Farroupilha, que é comemorada anualmente entre os dias 14 e 20 de setembro no âmbito do Estado do Paraná.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646520"
+          },
+          {
+            "id": 2646497,
+            "sigla_tipo": "PL",
+            "numero": 5383,
+            "ano": 2026,
+            "ementa": "Inclui no Calendário Turístico Oficial do País o Prêmio Mulher Mais Gloriosa da América, no Município de Foz do Iguaçu, Estado do Paraná.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646497"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-          },
-          {
-            "id": 2620584,
-            "sigla_tipo": "PL",
-            "numero": 2130,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 9.504, de 23 de setembro de 1997, que “Estabelece normas para as eleições”, a fim de permitir doações de mercadorias apreendidas ou abandonadas quando destinadas às entidades sem fins lucrativos em ano eleitoral.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620584"
-          },
-          {
-            "id": 2619266,
-            "sigla_tipo": "PL",
-            "numero": 2053,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, que “dispõe sobre o Estatuto da Advocacia e a Ordem dos Advogados do Brasil (OAB)”, para converter hipótese de incompatibilidade em impedimento ao exercício da advocacia para ocupantes de cargos do Fisco.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2619266"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204396"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204396",
-  "generated_at_utc": "2026-09-16T02:39:59.508142+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.739338+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1515,7 +1515,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 312,
+    "quantidade_registros": 314,
     "por_ano": [
       {
         "ano": 2023,
@@ -1531,10 +1531,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 23
+        "quantidade_registros": 25
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646520,
+        "sigla_tipo": "REQ",
+        "numero": 4234,
+        "ano": 2026,
+        "ementa": "Requer voto de louvor aos Centros de Tradições Gaúchas (CTGs) do Paraná e à Semana Farroupilha, que é comemorada anualmente entre os dias 14 e 20 de setembro no âmbito do Estado do Paraná.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646520"
+      },
+      {
+        "id": 2646497,
+        "sigla_tipo": "PL",
+        "numero": 5383,
+        "ano": 2026,
+        "ementa": "Inclui no Calendário Turístico Oficial do País o Prêmio Mulher Mais Gloriosa da América, no Município de Foz do Iguaçu, Estado do Paraná.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646497"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1614,22 +1630,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-      },
-      {
-        "id": 2620584,
-        "sigla_tipo": "PL",
-        "numero": 2130,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 9.504, de 23 de setembro de 1997, que “Estabelece normas para as eleições”, a fim de permitir doações de mercadorias apreendidas ou abandonadas quando destinadas às entidades sem fins lucrativos em ano eleitoral.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620584"
-      },
-      {
-        "id": 2619266,
-        "sigla_tipo": "PL",
-        "numero": 2053,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, que “dispõe sobre o Estatuto da Advocacia e a Ordem dos Advogados do Brasil (OAB)”, para converter hipótese de incompatibilidade em impedimento ao exercício da advocacia para ocupantes de cargos do Fisco.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2619266"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:39:21.547849+00:00",
+      "generated_at_utc": "2026-09-17T09:03:26.434540+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220617/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 36,
+        "quantidade_registros": 37,
         "registros_recentes": [
+          {
+            "id": 2646509,
+            "sigla_tipo": "REQ",
+            "numero": 4233,
+            "ano": 2026,
+            "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Delegada Polícia Civil Daniela Campos Rodriguez Terra, matrícula nº 946.501-4, em exercício na 15ª Delegacia de Polícia – Gávea, em reconhecimento à sua atuação profissional e aos relevantes serviços prestados à segurança pública e à população do Estado do Rio de Janeiro. Requeiro, ainda, que cópia desta Moção seja encaminhada à 15ª Delegacia de Polícia – Gávea, para ciência da homenageada.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646509"
+          },
           {
             "id": 2646391,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-          },
-          {
-            "id": 2644254,
-            "sigla_tipo": "REQ",
-            "numero": 4080,
-            "ano": 2026,
-            "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à “TURMA SENSAÇÃO”,   ATRAVÉS  DO PONTO DE CULTURA DE ITAGUAÍ/RJ.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644254"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220617"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220617",
-  "generated_at_utc": "2026-09-16T02:39:59.501731+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.637252+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1435,7 +1435,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 400,
+    "quantidade_registros": 401,
     "por_ano": [
       {
         "ano": 2023,
@@ -1451,10 +1451,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 36
+        "quantidade_registros": 37
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646509,
+        "sigla_tipo": "REQ",
+        "numero": 4233,
+        "ano": 2026,
+        "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Delegada Polícia Civil Daniela Campos Rodriguez Terra, matrícula nº 946.501-4, em exercício na 15ª Delegacia de Polícia – Gávea, em reconhecimento à sua atuação profissional e aos relevantes serviços prestados à segurança pública e à população do Estado do Rio de Janeiro. Requeiro, ainda, que cópia desta Moção seja encaminhada à 15ª Delegacia de Polícia – Gávea, para ciência da homenageada.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646509"
+      },
       {
         "id": 2646391,
         "sigla_tipo": "REQ",
@@ -1542,14 +1550,6 @@
         "ano": 2026,
         "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-      },
-      {
-        "id": 2644254,
-        "sigla_tipo": "REQ",
-        "numero": 4080,
-        "ano": 2026,
-        "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à “TURMA SENSAÇÃO”,   ATRAVÉS  DO PONTO DE CULTURA DE ITAGUAÍ/RJ.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644254"
       },
       {
         "id": 2598197,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:37:36.900172+00:00",
+      "generated_at_utc": "2026-09-17T09:02:32.791903+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204525/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 47,
+        "quantidade_registros": 48,
         "registros_recentes": [
+          {
+            "id": 2646469,
+            "sigla_tipo": "INC",
+            "numero": 1589,
+            "ano": 2026,
+            "ementa": "Sugere ao Ministério do Trabalho e Emprego – MTE, a revisão da Norma Regulamentadora nº 15 – Atividades e Operações Insalubres, com vistas ao enquadramento expresso das atividades exercidas por profissionais farmacêuticos que impliquem exposição ocupacional a agentes biológicos ou químicos nocivos à saúde.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646469"
+          },
           {
             "id": 2644861,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Manifesta repúdio ao episódio de assédio e violência verbal de cunho sexual praticado contra a Vereadora Eduarda Campopiano, do Município de Praia Grande/SP, durante participação em debate público.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627664"
-          },
-          {
-            "id": 2625293,
-            "sigla_tipo": "REQ",
-            "numero": 56,
-            "ano": 2026,
-            "ementa": "Requer a realização de Audiência Pública para discutir as contribuições do setor de remessas expressas nas últimas cinco décadas no Brasil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625293"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204525"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204525",
-  "generated_at_utc": "2026-09-16T02:39:59.320713+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.541073+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 432,
+    "quantidade_registros": 433,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 47
+        "quantidade_registros": 48
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646469,
+        "sigla_tipo": "INC",
+        "numero": 1589,
+        "ano": 2026,
+        "ementa": "Sugere ao Ministério do Trabalho e Emprego – MTE, a revisão da Norma Regulamentadora nº 15 – Atividades e Operações Insalubres, com vistas ao enquadramento expresso das atividades exercidas por profissionais farmacêuticos que impliquem exposição ocupacional a agentes biológicos ou químicos nocivos à saúde.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646469"
+      },
       {
         "id": 2644861,
         "sigla_tipo": "REQ",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Manifesta repúdio ao episódio de assédio e violência verbal de cunho sexual praticado contra a Vereadora Eduarda Campopiano, do Município de Praia Grande/SP, durante participação em debate público.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627664"
-      },
-      {
-        "id": 2625293,
-        "sigla_tipo": "REQ",
-        "numero": 56,
-        "ano": 2026,
-        "ementa": "Requer a realização de Audiência Pública para discutir as contribuições do setor de remessas expressas nas últimas cinco décadas no Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625293"
       },
       {
         "id": 2596460,

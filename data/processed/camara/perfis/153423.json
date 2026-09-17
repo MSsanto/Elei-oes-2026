@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:37:43.346566+00:00",
+      "generated_at_utc": "2026-09-17T09:03:00.088233+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/153423/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 20,
+        "quantidade_registros": 21,
         "registros_recentes": [
+          {
+            "id": 2646484,
+            "sigla_tipo": "PL",
+            "numero": 5382,
+            "ano": 2026,
+            "ementa": "Institui o Defeso do Açaí, cria o Seguro-Defeso do Trabalhador Extrativista do Açaí, estabelece medidas de proteção social, valorização profissional e sustentabilidade da atividade extrativista e produtiva do açaí e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646484"
+          },
           {
             "id": 2646320,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 5295/2025.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607840"
-          },
-          {
-            "id": 2607839,
-            "sigla_tipo": "REQ",
-            "numero": 1364,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 3815/2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607839"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=153423"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "153423",
-  "generated_at_utc": "2026-09-16T02:39:59.331665+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.586465+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 487,
+    "quantidade_registros": 488,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 20
+        "quantidade_registros": 21
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646484,
+        "sigla_tipo": "PL",
+        "numero": 5382,
+        "ano": 2026,
+        "ementa": "Institui o Defeso do Açaí, cria o Seguro-Defeso do Trabalhador Extrativista do Açaí, estabelece medidas de proteção social, valorização profissional e sustentabilidade da atividade extrativista e produtiva do açaí e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646484"
+      },
       {
         "id": 2646320,
         "sigla_tipo": "PL",
@@ -1510,14 +1518,6 @@
         "ano": 2026,
         "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 5295/2025.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607840"
-      },
-      {
-        "id": 2607839,
-        "sigla_tipo": "REQ",
-        "numero": 1364,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do Projeto de Lei 3815/2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607839"
       },
       {
         "id": 2598197,

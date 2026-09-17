@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-16T02:36:59.236384+00:00",
+      "generated_at_utc": "2026-09-17T09:03:49.447692+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178972/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 30,
+        "quantidade_registros": 31,
         "registros_recentes": [
+          {
+            "id": 2646499,
+            "sigla_tipo": "RIC",
+            "numero": 2627,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministério da Educação sobre as ações para a implementação e a efetivação da Política Nacional de Cuidados e do Plano Nacional de Cuidados, nos termos da Lei nº 15.069, de 23 de dezembro de 2024, em especial as voltadas para as mães de filhos portadores de deficiência.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646499"
+          },
           {
             "id": 2645780,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Urgência na apreciação do Projeto de Lei nº 2.143/2025, que altera a Lei nº 9.456, de 25 de abril de 1997 (Lei de Proteção de Cultivares), para aumentar o prazo de vigência do direito de proteção de novas cultivares, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625333"
-          },
-          {
-            "id": 2623840,
-            "sigla_tipo": "REQ",
-            "numero": 2774,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene do Congresso Nacional para celebrar os 30 (trinta) anos de criação da Agência Nacional de Energia Elétrica – ANEEL.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623840"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178972"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178972",
-  "generated_at_utc": "2026-09-16T02:39:59.264364+00:00",
+  "generated_at_utc": "2026-09-17T09:04:35.677944+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1516,7 +1516,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 278,
+    "quantidade_registros": 279,
     "por_ano": [
       {
         "ano": 2023,
@@ -1532,10 +1532,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 30
+        "quantidade_registros": 31
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646499,
+        "sigla_tipo": "RIC",
+        "numero": 2627,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministério da Educação sobre as ações para a implementação e a efetivação da Política Nacional de Cuidados e do Plano Nacional de Cuidados, nos termos da Lei nº 15.069, de 23 de dezembro de 2024, em especial as voltadas para as mães de filhos portadores de deficiência.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646499"
+      },
       {
         "id": 2645780,
         "sigla_tipo": "EMC",
@@ -1623,14 +1631,6 @@
         "ano": 2026,
         "ementa": "Requer Urgência na apreciação do Projeto de Lei nº 2.143/2025, que altera a Lei nº 9.456, de 25 de abril de 1997 (Lei de Proteção de Cultivares), para aumentar o prazo de vigência do direito de proteção de novas cultivares, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625333"
-      },
-      {
-        "id": 2623840,
-        "sigla_tipo": "REQ",
-        "numero": 2774,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene do Congresso Nacional para celebrar os 30 (trinta) anos de criação da Agência Nacional de Energia Elétrica – ANEEL.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623840"
       },
       {
         "id": 2596314,
