@@ -2,8 +2,8 @@
   "schema_version": 2,
   "source": "TSE — Prestação de Contas Eleitorais 2026",
   "source_url": "https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026",
-  "generated_at_utc": "2026-09-14T15:59:37.501089+00:00",
-  "candidates": 15077,
+  "generated_at_utc": "2026-09-17T12:44:58.777615+00:00",
+  "candidates": 16166,
   "revenue_files": [
     "receitas_candidatos_2026_BRASIL.csv"
   ],
@@ -19,16 +19,16 @@
   "shard_strategy": "SQ_CANDIDATO modulo 256 em hexadecimal",
   "shard_count": 256,
   "shard_slots": 256,
-  "supplier_count": 239044,
+  "supplier_count": 423447,
   "supplier_scope": "todos os registros processados de despesas contratadas",
   "transport": {
     "transport": "cloudflare_browser_worker",
     "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
     "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
-    "downloaded_bytes": 108011998,
-    "sha256": "f7393fa29092bd9c312dae83f76afaab42f56260b739574756bf935886f3ae79",
+    "downloaded_bytes": 173191244,
+    "sha256": "d756d7053acd1a07a75fdd737b84d8a73e45e58d26dbda91fe0efbace142cc13",
     "content_type": "application/zip",
-    "worker_revision": "dataset-router-v7-session-reuse",
+    "worker_revision": "dataset-router-v8-zero-copy-finance-stream",
     "archive_entries": 112
   }
 }
