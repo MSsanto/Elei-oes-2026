@@ -224,7 +224,7 @@ function diffRadar(previous, current, candidateMap) {
         before: number(before[field]),
         after: number(after[field]),
         delta: moneyChange(before[field], after[field]),
-        detail: 'Diferença detectada entre duas cargas processadas da fonte oficial.',
+        detail: 'Diferença detectada entre duas cargas processadas consecutivas da fonte oficial.',
       });
     }
   }
@@ -284,12 +284,15 @@ function fallbackSuppliers(store, candidateMap) {
 
 async function writeSuppliers(suppliers) {
   const base = path.join(OUTPUT, 'fornecedores');
+  // Este índice pode conter centenas de milhares de fornecedores. Mantemos o
+  // contrato JSON atual, mas sem indentação, para evitar crescimento artificial
+  // além do limite de 100 MB por arquivo do GitHub.
   await writeJson(path.join(base, 'index.json'), {
     schema_version: 1,
     coverage: suppliers.coverage,
     note: suppliers.note,
     records: suppliers.index,
-  });
+  }, true);
   const shards = new Map();
   for (const [id, record] of suppliers.records.entries()) {
     const key = id.slice(0, 2);
