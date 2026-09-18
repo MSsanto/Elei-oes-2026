@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:02:50.433554+00:00",
+      "generated_at_utc": "2026-09-18T13:58:41.845880+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160598/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 77,
+        "quantidade_registros": 78,
         "registros_recentes": [
+          {
+            "id": 2646661,
+            "sigla_tipo": "PL",
+            "numero": 5398,
+            "ano": 2026,
+            "ementa": "Estabelece o Piso Salarial do Administrador e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646661"
+          },
           {
             "id": 2645996,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre deveres de transparência e responsabilidade na divulgação remunerada de apostas por influenciadores digitais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640016"
-          },
-          {
-            "id": 2640015,
-            "sigla_tipo": "PL",
-            "numero": 3750,
-            "ano": 2026,
-            "ementa": "Estabelece deveres de transparência e informação em publicidade de apostas de quota fixa e conteúdos promocionais relacionados a apostas online.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640015"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160598"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160598",
-  "generated_at_utc": "2026-09-17T09:04:35.568320+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.768517+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1562,7 +1562,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1212,
+    "quantidade_registros": 1213,
     "por_ano": [
       {
         "ano": 2023,
@@ -1578,10 +1578,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 77
+        "quantidade_registros": 78
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646661,
+        "sigla_tipo": "PL",
+        "numero": 5398,
+        "ano": 2026,
+        "ementa": "Estabelece o Piso Salarial do Administrador e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646661"
+      },
       {
         "id": 2645996,
         "sigla_tipo": "REQ",
@@ -1669,14 +1677,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre deveres de transparência e responsabilidade na divulgação remunerada de apostas por influenciadores digitais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640016"
-      },
-      {
-        "id": 2640015,
-        "sigla_tipo": "PL",
-        "numero": 3750,
-        "ano": 2026,
-        "ementa": "Estabelece deveres de transparência e informação em publicidade de apostas de quota fixa e conteúdos promocionais relacionados a apostas online.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640015"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:01:55.238899+00:00",
+      "generated_at_utc": "2026-09-18T13:59:01.877667+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220543/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 115,
+        "quantidade_registros": 116,
         "registros_recentes": [
+          {
+            "id": 2646662,
+            "sigla_tipo": "PL",
+            "numero": 5399,
+            "ano": 2026,
+            "ementa": "Altera a Lei n° 8.069, de 13 de julho de 1990, para incentivar o estabelecimento de diretrizes de segurança na assistência ao trabalho de parto, promovendo a identificação precoce de sinais de distocias e de comprometimento materno ou fetal durante o trabalho de parto.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646662"
+          },
           {
             "id": 2646511,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer ao Ministro de Estado da Saúde informações acerca da oferta, organização e acesso, no âmbito do Sistema Único de Saúde (SUS), à avaliação de risco hereditário oncológico, ao aconselhamento genético e aos exames destinados à identificação de variantes genéticas associadas à predisposição hereditária ao câncer.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645053"
-          },
-          {
-            "id": 2645040,
-            "sigla_tipo": "REQ",
-            "numero": 4152,
-            "ano": 2026,
-            "ementa": "Requer a inclusão de coautoria ao Projeto de Lei nº 2.478, de 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645040"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220543"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220543",
-  "generated_at_utc": "2026-09-17T09:04:35.479199+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.802701+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 997,
+    "quantidade_registros": 998,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 115
+        "quantidade_registros": 116
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646662,
+        "sigla_tipo": "PL",
+        "numero": 5399,
+        "ano": 2026,
+        "ementa": "Altera a Lei n° 8.069, de 13 de julho de 1990, para incentivar o estabelecimento de diretrizes de segurança na assistência ao trabalho de parto, promovendo a identificação precoce de sinais de distocias e de comprometimento materno ou fetal durante o trabalho de parto.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646662"
+      },
       {
         "id": 2646511,
         "sigla_tipo": "PL",
@@ -1510,14 +1518,6 @@
         "ano": 2026,
         "ementa": "Requer ao Ministro de Estado da Saúde informações acerca da oferta, organização e acesso, no âmbito do Sistema Único de Saúde (SUS), à avaliação de risco hereditário oncológico, ao aconselhamento genético e aos exames destinados à identificação de variantes genéticas associadas à predisposição hereditária ao câncer.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645053"
-      },
-      {
-        "id": 2645040,
-        "sigla_tipo": "REQ",
-        "numero": 4152,
-        "ano": 2026,
-        "ementa": "Requer a inclusão de coautoria ao Projeto de Lei nº 2.478, de 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645040"
       },
       {
         "id": 2599001,

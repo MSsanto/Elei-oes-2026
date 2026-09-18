@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:01:42.048725+00:00",
+      "generated_at_utc": "2026-09-18T13:59:57.984075+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220540/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 535,
+        "quantidade_registros": 537,
         "registros_recentes": [
+          {
+            "id": 2646622,
+            "sigla_tipo": "PL",
+            "numero": 5395,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.457, de 21 de setembro de 2022, para assegurar valor diferenciado do reembolso-creche quando destinado a filho, enteado ou criança sob guarda judicial com deficiência.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646622"
+          },
+          {
+            "id": 2646602,
+            "sigla_tipo": "PL",
+            "numero": 5394,
+            "ano": 2026,
+            "ementa": "Institui normas nacionais de prevenção do acesso indevido a torres e outras infraestruturas de energia elétrica, estabelece proteção prioritária em áreas habitadas e territórios socialmente vulneráveis e altera a Lei nº 8.987, de 13 de fevereiro de 1995.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646602"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre o direito do cidadão a prazo de adaptação sem aplicação de penalidades quando houver mudança de procedimentos, exigências ou rotinas na prestação de serviços públicos e de serviços públicos delegados.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641410"
-          },
-          {
-            "id": 2641409,
-            "sigla_tipo": "PL",
-            "numero": 4714,
-            "ano": 2026,
-            "ementa": "Garante ao cidadão mecanismo rápido de mediação administrativa para solução de conflitos com o poder público.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641409"
-          },
-          {
-            "id": 2641408,
-            "sigla_tipo": "PL",
-            "numero": 4713,
-            "ano": 2026,
-            "ementa": "Dispõe sobre o direito do cidadão à informação e à escolha do procedimento mais simples, sempre que houver mais de uma forma válida de prestação de serviços públicos ou de serviços públicos delegados.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641408"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220540"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220540",
-  "generated_at_utc": "2026-09-17T09:04:35.452737+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.895080+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1435,7 +1435,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1760,
+    "quantidade_registros": 1762,
     "por_ano": [
       {
         "ano": 2023,
@@ -1451,10 +1451,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 535
+        "quantidade_registros": 537
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646622,
+        "sigla_tipo": "PL",
+        "numero": 5395,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.457, de 21 de setembro de 2022, para assegurar valor diferenciado do reembolso-creche quando destinado a filho, enteado ou criança sob guarda judicial com deficiência.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646622"
+      },
+      {
+        "id": 2646602,
+        "sigla_tipo": "PL",
+        "numero": 5394,
+        "ano": 2026,
+        "ementa": "Institui normas nacionais de prevenção do acesso indevido a torres e outras infraestruturas de energia elétrica, estabelece proteção prioritária em áreas habitadas e territórios socialmente vulneráveis e altera a Lei nº 8.987, de 13 de fevereiro de 1995.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646602"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1534,22 +1550,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre o direito do cidadão a prazo de adaptação sem aplicação de penalidades quando houver mudança de procedimentos, exigências ou rotinas na prestação de serviços públicos e de serviços públicos delegados.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641410"
-      },
-      {
-        "id": 2641409,
-        "sigla_tipo": "PL",
-        "numero": 4714,
-        "ano": 2026,
-        "ementa": "Garante ao cidadão mecanismo rápido de mediação administrativa para solução de conflitos com o poder público.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641409"
-      },
-      {
-        "id": 2641408,
-        "sigla_tipo": "PL",
-        "numero": 4713,
-        "ano": 2026,
-        "ementa": "Dispõe sobre o direito do cidadão à informação e à escolha do procedimento mais simples, sempre que houver mais de uma forma válida de prestação de serviços públicos ou de serviços públicos delegados.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641408"
       },
       {
         "id": 2599824,

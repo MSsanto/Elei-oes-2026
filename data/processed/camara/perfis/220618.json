@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:01:02.941731+00:00",
+      "generated_at_utc": "2026-09-18T13:59:29.989398+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220618/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 1983,
+        "quantidade_registros": 1985,
         "registros_recentes": [
+          {
+            "id": 2646571,
+            "sigla_tipo": "REQ",
+            "numero": 4237,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 3º SGT PM Benedi Lopes da Silva, pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646571"
+          },
+          {
+            "id": 2646570,
+            "sigla_tipo": "REQ",
+            "numero": 4236,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Rafael Duarte de Oliveira em reconhecimento ao ato de solidariedade e auxílio prestado a policiais que se encontravam com uma viatura em razão de pane elétrica.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646570"
+          },
           {
             "id": 2646393,
             "sigla_tipo": "INC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 3º SGT PM  Jhonanthan Braz Vessados pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645709"
-          },
-          {
-            "id": 2645708,
-            "sigla_tipo": "REQ",
-            "numero": 4187,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 2º SGT PM  Elimar das Chagas da Silva pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645708"
-          },
-          {
-            "id": 2645577,
-            "sigla_tipo": "REQ",
-            "numero": 4175,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 1º SGT PM  Samuel Santos de Almeida pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645577"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220618"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220618",
-  "generated_at_utc": "2026-09-17T09:04:35.365069+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.826755+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 6954,
+    "quantidade_registros": 6956,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 1983
+        "quantidade_registros": 1985
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646571,
+        "sigla_tipo": "REQ",
+        "numero": 4237,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 3º SGT PM Benedi Lopes da Silva, pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646571"
+      },
+      {
+        "id": 2646570,
+        "sigla_tipo": "REQ",
+        "numero": 4236,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Rafael Duarte de Oliveira em reconhecimento ao ato de solidariedade e auxílio prestado a policiais que se encontravam com uma viatura em razão de pane elétrica.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646570"
+      },
       {
         "id": 2646393,
         "sigla_tipo": "INC",
@@ -1501,22 +1517,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 3º SGT PM  Jhonanthan Braz Vessados pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645709"
-      },
-      {
-        "id": 2645708,
-        "sigla_tipo": "REQ",
-        "numero": 4187,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 2º SGT PM  Elimar das Chagas da Silva pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645708"
-      },
-      {
-        "id": 2645577,
-        "sigla_tipo": "REQ",
-        "numero": 4175,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. 1º SGT PM  Samuel Santos de Almeida pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645577"
       },
       {
         "id": 2598197,

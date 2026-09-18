@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:02:39.916408+00:00",
+      "generated_at_utc": "2026-09-18T13:58:13.785781+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,40 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74856/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 532,
+        "quantidade_registros": 536,
         "registros_recentes": [
+          {
+            "id": 2646647,
+            "sigla_tipo": "REQ",
+            "numero": 4240,
+            "ano": 2026,
+            "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
+          },
+          {
+            "id": 2646538,
+            "sigla_tipo": "PL",
+            "numero": 5390,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 15.224, de 30 de setembro de 2025, para instituir a Rede Brasileira de Bancos de Alimentos, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646538"
+          },
+          {
+            "id": 2646537,
+            "sigla_tipo": "REQ",
+            "numero": 4235,
+            "ano": 2026,
+            "ementa": "Requer a desapensação do Projeto de Lei nº 2.875, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.280, de 2025.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646537"
+          },
+          {
+            "id": 2646536,
+            "sigla_tipo": "INC",
+            "numero": 1594,
+            "ano": 2026,
+            "ementa": "Sugere registro do Carnaval Carioca, no Rio de Janeiro, como Patrimônio Cultural Imaterial do Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646536"
+          },
           {
             "id": 2646423,
             "sigla_tipo": "PL",
@@ -1025,38 +1057,6 @@
             "ano": 2026,
             "ementa": "Reconhece a cultura gospel como manifestação da cultura nacional.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645559"
-          },
-          {
-            "id": 2645040,
-            "sigla_tipo": "REQ",
-            "numero": 4152,
-            "ano": 2026,
-            "ementa": "Requer a inclusão de coautoria ao Projeto de Lei nº 2.478, de 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645040"
-          },
-          {
-            "id": 2644800,
-            "sigla_tipo": "PEC",
-            "numero": 16,
-            "ano": 2026,
-            "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-          },
-          {
-            "id": 2644748,
-            "sigla_tipo": "PL",
-            "numero": 5205,
-            "ano": 2026,
-            "ementa": "Institui o Plano Nacional dos Direitos da Pessoa com Deficiência – Novo Viver sem Limite.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644748"
-          },
-          {
-            "id": 2644747,
-            "sigla_tipo": "REQ",
-            "numero": 4129,
-            "ano": 2026,
-            "ementa": "Requer a desapensação do Projeto de Lei nº 3.731, de 2023, do Projeto de Lei nº 3.614, de 2015.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644747"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74856"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74856",
-  "generated_at_utc": "2026-09-17T09:04:35.544878+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.718901+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2359,7 +2359,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2359,
+    "quantidade_registros": 2363,
     "por_ano": [
       {
         "ano": 2023,
@@ -2375,10 +2375,42 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 532
+        "quantidade_registros": 536
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646647,
+        "sigla_tipo": "REQ",
+        "numero": 4240,
+        "ano": 2026,
+        "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
+      },
+      {
+        "id": 2646538,
+        "sigla_tipo": "PL",
+        "numero": 5390,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 15.224, de 30 de setembro de 2025, para instituir a Rede Brasileira de Bancos de Alimentos, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646538"
+      },
+      {
+        "id": 2646537,
+        "sigla_tipo": "REQ",
+        "numero": 4235,
+        "ano": 2026,
+        "ementa": "Requer a desapensação do Projeto de Lei nº 2.875, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.280, de 2025.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646537"
+      },
+      {
+        "id": 2646536,
+        "sigla_tipo": "INC",
+        "numero": 1594,
+        "ano": 2026,
+        "ementa": "Sugere registro do Carnaval Carioca, no Rio de Janeiro, como Patrimônio Cultural Imaterial do Brasil.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646536"
+      },
       {
         "id": 2646423,
         "sigla_tipo": "PL",
@@ -2442,38 +2474,6 @@
         "ano": 2026,
         "ementa": "Reconhece a cultura gospel como manifestação da cultura nacional.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645559"
-      },
-      {
-        "id": 2645040,
-        "sigla_tipo": "REQ",
-        "numero": 4152,
-        "ano": 2026,
-        "ementa": "Requer a inclusão de coautoria ao Projeto de Lei nº 2.478, de 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645040"
-      },
-      {
-        "id": 2644800,
-        "sigla_tipo": "PEC",
-        "numero": 16,
-        "ano": 2026,
-        "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-      },
-      {
-        "id": 2644748,
-        "sigla_tipo": "PL",
-        "numero": 5205,
-        "ano": 2026,
-        "ementa": "Institui o Plano Nacional dos Direitos da Pessoa com Deficiência – Novo Viver sem Limite.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644748"
-      },
-      {
-        "id": 2644747,
-        "sigla_tipo": "REQ",
-        "numero": 4129,
-        "ano": 2026,
-        "ementa": "Requer a desapensação do Projeto de Lei nº 3.731, de 2023, do Projeto de Lei nº 3.614, de 2015.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644747"
       },
       {
         "id": 2599057,

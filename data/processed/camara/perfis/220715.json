@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:03:45.847826+00:00",
+      "generated_at_utc": "2026-09-18T13:57:45.377174+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220715/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 757,
+        "quantidade_registros": 758,
         "registros_recentes": [
+          {
+            "id": 2646651,
+            "sigla_tipo": "RIC",
+            "numero": 2643,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome – MDS acerca dos mecanismos de controle, fiscalização e auditoria do Cadastro Único para Programas Sociais do Governo Federal – CadÚnico, especialmente no Município de Manaus/AM.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646651"
+          },
           {
             "id": 2646489,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Sugere ao Excelentíssimo Senhor Ministro de Estado dos Povos Indígenas a adoção de medidas de proteção etnoambiental, segurança alimentar emergencial, monitoramento territorial e assistência às lideranças ameaçadas na Terra Indígena Alto Rio Negro (AM), em face das graves violações decorrentes da presença de grupos armados irregulares.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645250"
-          },
-          {
-            "id": 2645249,
-            "sigla_tipo": "INC",
-            "numero": 1563,
-            "ano": 2026,
-            "ementa": "Sugere ao Excelentíssimo Senhor Ministro de Estado da Justiça e Segurança Pública a adoção urgente de medidas operacionais e ostensivas de segurança pública, reforço do patrulhamento fluvial, fiscalização e combate ao crime organizado na Terra Indígena Alto Rio Negro (AM), diante de graves relatos de invasão por estrangeiros armados e violação de direitos humanos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645249"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220715"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220715",
-  "generated_at_utc": "2026-09-17T09:04:35.660568+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.663372+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 5322,
+    "quantidade_registros": 5323,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 757
+        "quantidade_registros": 758
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646651,
+        "sigla_tipo": "RIC",
+        "numero": 2643,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome – MDS acerca dos mecanismos de controle, fiscalização e auditoria do Cadastro Único para Programas Sociais do Governo Federal – CadÚnico, especialmente no Município de Manaus/AM.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646651"
+      },
       {
         "id": 2646489,
         "sigla_tipo": "RIC",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Sugere ao Excelentíssimo Senhor Ministro de Estado dos Povos Indígenas a adoção de medidas de proteção etnoambiental, segurança alimentar emergencial, monitoramento territorial e assistência às lideranças ameaçadas na Terra Indígena Alto Rio Negro (AM), em face das graves violações decorrentes da presença de grupos armados irregulares.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645250"
-      },
-      {
-        "id": 2645249,
-        "sigla_tipo": "INC",
-        "numero": 1563,
-        "ano": 2026,
-        "ementa": "Sugere ao Excelentíssimo Senhor Ministro de Estado da Justiça e Segurança Pública a adoção urgente de medidas operacionais e ostensivas de segurança pública, reforço do patrulhamento fluvial, fiscalização e combate ao crime organizado na Terra Indígena Alto Rio Negro (AM), diante de graves relatos de invasão por estrangeiros armados e violação de direitos humanos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645249"
       },
       {
         "id": 2599845,

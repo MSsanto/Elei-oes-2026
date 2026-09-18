@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:01:45.433880+00:00",
+      "generated_at_utc": "2026-09-18T13:59:24.571403+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204388/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 62,
+        "quantidade_registros": 63,
         "registros_recentes": [
+          {
+            "id": 2646563,
+            "sigla_tipo": "PL",
+            "numero": 5393,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997, para vedar a utilização de wind banners e de peças autônomas móveis assemelhadas em vias públicas e nos demais espaços públicos urbanos e disciplinar a veiculação de propaganda eleitoral mediante painéis de publicidade exterior licenciados pelo poder público municipal ou distrital.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646563"
+          },
           {
             "id": 2646416,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-          },
-          {
-            "id": 2644734,
-            "sigla_tipo": "REQ",
-            "numero": 4125,
-            "ano": 2026,
-            "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204388"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204388",
-  "generated_at_utc": "2026-09-17T09:04:35.465314+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.840892+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1479,7 +1479,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 728,
+    "quantidade_registros": 729,
     "por_ano": [
       {
         "ano": 2023,
@@ -1495,10 +1495,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 62
+        "quantidade_registros": 63
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646563,
+        "sigla_tipo": "PL",
+        "numero": 5393,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997, para vedar a utilização de wind banners e de peças autônomas móveis assemelhadas em vias públicas e nos demais espaços públicos urbanos e disciplinar a veiculação de propaganda eleitoral mediante painéis de publicidade exterior licenciados pelo poder público municipal ou distrital.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646563"
+      },
       {
         "id": 2646416,
         "sigla_tipo": "RIC",
@@ -1586,14 +1594,6 @@
         "ano": 2026,
         "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
-      },
-      {
-        "id": 2644734,
-        "sigla_tipo": "REQ",
-        "numero": 4125,
-        "ano": 2026,
-        "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:03:25.848804+00:00",
+      "generated_at_utc": "2026-09-18T13:58:52.199608+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204457/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 13,
+        "quantidade_registros": 14,
         "registros_recentes": [
+          {
+            "id": 2646555,
+            "sigla_tipo": "PL",
+            "numero": 5392,
+            "ano": 2026,
+            "ementa": "Declara a cidade do Rio de Janeiro/RJ como a “Capital Nacional da Economia Solidária”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646555"
+          },
           {
             "id": 2645996,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco das condições estruturais, de sinalização, segurança viária e demais aspectos relacionados à conservação e recuperação necessárias na Rodovia do Aço (BR-393/RJ).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607380"
-          },
-          {
-            "id": 2607379,
-            "sigla_tipo": "REQ",
-            "numero": 27,
-            "ano": 2026,
-            "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco da evolução das obras, bem como da sinalização, segurança viária e demais aspectos relacionados à duplicação necessária na pista do trecho Serra das Araras - BR-116 (Via Dutra).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607379"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204457"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204457",
-  "generated_at_utc": "2026-09-17T09:04:35.636462+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.787471+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1546,7 +1546,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 388,
+    "quantidade_registros": 389,
     "por_ano": [
       {
         "ano": 2023,
@@ -1562,10 +1562,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 13
+        "quantidade_registros": 14
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646555,
+        "sigla_tipo": "PL",
+        "numero": 5392,
+        "ano": 2026,
+        "ementa": "Declara a cidade do Rio de Janeiro/RJ como a “Capital Nacional da Economia Solidária”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646555"
+      },
       {
         "id": 2645996,
         "sigla_tipo": "REQ",
@@ -1653,14 +1661,6 @@
         "ano": 2026,
         "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco das condições estruturais, de sinalização, segurança viária e demais aspectos relacionados à conservação e recuperação necessárias na Rodovia do Aço (BR-393/RJ).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607380"
-      },
-      {
-        "id": 2607379,
-        "sigla_tipo": "REQ",
-        "numero": 27,
-        "ano": 2026,
-        "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco da evolução das obras, bem como da sinalização, segurança viária e demais aspectos relacionados à duplicação necessária na pista do trecho Serra das Araras - BR-116 (Via Dutra).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607379"
       },
       {
         "id": 2598301,

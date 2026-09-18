@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-17T09:01:16.294493+00:00",
+      "generated_at_utc": "2026-09-18T14:00:29.560922+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178947/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 327,
+        "quantidade_registros": 328,
         "registros_recentes": [
+          {
+            "id": 2646647,
+            "sigla_tipo": "REQ",
+            "numero": 4240,
+            "ano": 2026,
+            "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
+          },
           {
             "id": 2646433,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Sugerindo a alteração da Lei nº 11.901, de 12 de janeiro de 2009, para criar o Conselho Federal dos Bombeiros Civis - CFBC e os Conselhos Regionais - CRBCs, como instância permanente de coordenação estratégica das políticas públicas voltadas ao fortalecimento e harmonização da categoria profissional deBombeiro Civil.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644387"
-          },
-          {
-            "id": 2644363,
-            "sigla_tipo": "REQ",
-            "numero": 4107,
-            "ano": 2026,
-            "ementa": "Requer Moção de Aplauso à Convenção Fraternal das Assembleias de Deus no Estado do Rio de Janeiro – CONFRADERJ, pela comemoração de seus 45 anos de fundação.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644363"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178947"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178947",
-  "generated_at_utc": "2026-09-17T09:04:35.417308+00:00",
+  "generated_at_utc": "2026-09-18T14:00:34.951953+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1548,7 +1548,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1850,
+    "quantidade_registros": 1851,
     "por_ano": [
       {
         "ano": 2023,
@@ -1564,10 +1564,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 327
+        "quantidade_registros": 328
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646647,
+        "sigla_tipo": "REQ",
+        "numero": 4240,
+        "ano": 2026,
+        "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
+      },
       {
         "id": 2646433,
         "sigla_tipo": "REQ",
@@ -1655,14 +1663,6 @@
         "ano": 2026,
         "ementa": "Sugerindo a alteração da Lei nº 11.901, de 12 de janeiro de 2009, para criar o Conselho Federal dos Bombeiros Civis - CFBC e os Conselhos Regionais - CRBCs, como instância permanente de coordenação estratégica das políticas públicas voltadas ao fortalecimento e harmonização da categoria profissional deBombeiro Civil.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644387"
-      },
-      {
-        "id": 2644363,
-        "sigla_tipo": "REQ",
-        "numero": 4107,
-        "ano": 2026,
-        "ementa": "Requer Moção de Aplauso à Convenção Fraternal das Assembleias de Deus no Estado do Rio de Janeiro – CONFRADERJ, pela comemoração de seus 45 anos de fundação.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644363"
       },
       {
         "id": 2599057,
