@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-18T13:56:52.431416+00:00",
+      "generated_at_utc": "2026-09-19T18:09:57.649969+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160665/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 202,
+        "quantidade_registros": 203,
         "registros_recentes": [
+          {
+            "id": 2646823,
+            "sigla_tipo": "REQ",
+            "numero": 4241,
+            "ano": 2026,
+            "ementa": "Solicita urgência urgentíssima (art. 155 do Regimento Interno da Câmara dos Deputados) para apreciação do Projeto de Lei nº 5.289, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646823"
+          },
           {
             "id": 2646341,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em comemoração aos 70 anos do legado educacional do brasileiro Amador Aguiar, por seu ideal visionário de promover a transformação social por meio do oferecimento de educação gratuita e de alta qualidade, especialmente em comunidades de vulnerabilidade socioeconômica, por meio das 40 escolas da Fundação por ele criada, presentes em todo os estados país.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642761"
-          },
-          {
-            "id": 2641538,
-            "sigla_tipo": "REQ",
-            "numero": 3959,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em homenagem aos 70 (setenta) anos da Fundação Bradesco, por sua trajetória de relevantes contribuições à educação e ao desenvolvimento social brasileiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641538"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160665"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160665",
-  "generated_at_utc": "2026-09-18T14:00:34.576806+00:00",
+  "generated_at_utc": "2026-09-19T18:11:33.443837+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1660,7 +1660,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 639,
+    "quantidade_registros": 640,
     "por_ano": [
       {
         "ano": 2023,
@@ -1676,10 +1676,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 202
+        "quantidade_registros": 203
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646823,
+        "sigla_tipo": "REQ",
+        "numero": 4241,
+        "ano": 2026,
+        "ementa": "Solicita urgência urgentíssima (art. 155 do Regimento Interno da Câmara dos Deputados) para apreciação do Projeto de Lei nº 5.289, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646823"
+      },
       {
         "id": 2646341,
         "sigla_tipo": "DOC",
@@ -1767,14 +1775,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em comemoração aos 70 anos do legado educacional do brasileiro Amador Aguiar, por seu ideal visionário de promover a transformação social por meio do oferecimento de educação gratuita e de alta qualidade, especialmente em comunidades de vulnerabilidade socioeconômica, por meio das 40 escolas da Fundação por ele criada, presentes em todo os estados país.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642761"
-      },
-      {
-        "id": 2641538,
-        "sigla_tipo": "REQ",
-        "numero": 3959,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene, no Plenário Ulysses Guimarães, em homenagem aos 70 (setenta) anos da Fundação Bradesco, por sua trajetória de relevantes contribuições à educação e ao desenvolvimento social brasileiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641538"
       },
       {
         "id": 2599001,

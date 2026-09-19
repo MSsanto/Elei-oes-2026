@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-18T13:57:24.605492+00:00",
+      "generated_at_utc": "2026-09-19T18:08:02.217679+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220606/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 80,
+        "quantidade_registros": 81,
         "registros_recentes": [
+          {
+            "id": 2646825,
+            "sigla_tipo": "PL",
+            "numero": 5403,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para estender a aplicação das medidas protetivas de urgência a toda forma de violência contra a mulher baseada no gênero e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646825"
+          },
           {
             "id": 2646348,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Direitos Humanos, Minorias e Igualdade Racial – CDHMIR, para debater o fortalecimento do Instituto Nacional do Seguro Social (INSS), a necessidade de nomeação dos aprovados no cadastro de reserva do Concurso Público Nacional Unificado (CPNU2) para o cargo de Analista do Seguro Social e os impactos da insuficiência de servidores na garantia dos direitos sociais e humanos da população brasileira.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642489"
-          },
-          {
-            "id": 2642172,
-            "sigla_tipo": "PL",
-            "numero": 4923,
-            "ano": 2026,
-            "ementa": "Altera o art. 20 da Lei nº 8.742, de 7 de dezembro de 1993, e o art. 34 da Lei nº 10.741, de 1º de outubro de 2003, para estabelecer idade mínima de 62 (sessenta e dois) anos para a concessão do benefício de prestação continuada à mulher.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642172"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220606"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220606",
-  "generated_at_utc": "2026-09-18T14:00:34.641071+00:00",
+  "generated_at_utc": "2026-09-19T18:11:33.223643+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 817,
+    "quantidade_registros": 818,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 80
+        "quantidade_registros": 81
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646825,
+        "sigla_tipo": "PL",
+        "numero": 5403,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para estender a aplicação das medidas protetivas de urgência a toda forma de violência contra a mulher baseada no gênero e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646825"
+      },
       {
         "id": 2646348,
         "sigla_tipo": "PL",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Direitos Humanos, Minorias e Igualdade Racial – CDHMIR, para debater o fortalecimento do Instituto Nacional do Seguro Social (INSS), a necessidade de nomeação dos aprovados no cadastro de reserva do Concurso Público Nacional Unificado (CPNU2) para o cargo de Analista do Seguro Social e os impactos da insuficiência de servidores na garantia dos direitos sociais e humanos da população brasileira.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642489"
-      },
-      {
-        "id": 2642172,
-        "sigla_tipo": "PL",
-        "numero": 4923,
-        "ano": 2026,
-        "ementa": "Altera o art. 20 da Lei nº 8.742, de 7 de dezembro de 1993, e o art. 34 da Lei nº 10.741, de 1º de outubro de 2003, para estabelecer idade mínima de 62 (sessenta e dois) anos para a concessão do benefício de prestação continuada à mulher.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642172"
       },
       {
         "id": 2598945,

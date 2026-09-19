@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-18T13:57:53.749354+00:00",
+      "generated_at_utc": "2026-09-19T18:08:18.679492+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74171/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 44,
+        "quantidade_registros": 45,
         "registros_recentes": [
+          {
+            "id": 2646821,
+            "sigla_tipo": "PL",
+            "numero": 5401,
+            "ano": 2026,
+            "ementa": "Proíbe, em todo o território nacional, a exploração de jogos de cassino on-line, na modalidade de apostas de quota fixa ou similares,com objetivo central de proteção da família, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646821"
+          },
           {
             "id": 2645870,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 14.790, de 29 de dezembro de 2023, para dispor sobre a proteção da saúde mental, do consumidor e da economia familiar no ambiente de apostas de quota fixa e jogos online, com ênfase na prevenção e redução de danos, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625893"
-          },
-          {
-            "id": 2621632,
-            "sigla_tipo": "PL",
-            "numero": 2192,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a garantia de Passe Livre para portadores de deficiência e de doenças crônicas em todos os tipos de transportes.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2621632"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74171"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74171",
-  "generated_at_utc": "2026-09-18T14:00:34.690170+00:00",
+  "generated_at_utc": "2026-09-19T18:11:33.255754+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1611,7 +1611,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 490,
+    "quantidade_registros": 491,
     "por_ano": [
       {
         "ano": 2023,
@@ -1627,10 +1627,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 44
+        "quantidade_registros": 45
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646821,
+        "sigla_tipo": "PL",
+        "numero": 5401,
+        "ano": 2026,
+        "ementa": "Proíbe, em todo o território nacional, a exploração de jogos de cassino on-line, na modalidade de apostas de quota fixa ou similares,com objetivo central de proteção da família, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646821"
+      },
       {
         "id": 2645870,
         "sigla_tipo": "RIC",
@@ -1718,14 +1726,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 14.790, de 29 de dezembro de 2023, para dispor sobre a proteção da saúde mental, do consumidor e da economia familiar no ambiente de apostas de quota fixa e jogos online, com ênfase na prevenção e redução de danos, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625893"
-      },
-      {
-        "id": 2621632,
-        "sigla_tipo": "PL",
-        "numero": 2192,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a garantia de Passe Livre para portadores de deficiência e de doenças crônicas em todos os tipos de transportes.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2621632"
       },
       {
         "id": 2598519,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-18T13:59:07.496312+00:00",
+      "generated_at_utc": "2026-09-19T18:08:16.246671+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220532/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 49,
+        "quantidade_registros": 50,
         "registros_recentes": [
+          {
+            "id": 2646823,
+            "sigla_tipo": "REQ",
+            "numero": 4241,
+            "ano": 2026,
+            "ementa": "Solicita urgência urgentíssima (art. 155 do Regimento Interno da Câmara dos Deputados) para apreciação do Projeto de Lei nº 5.289, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646823"
+          },
           {
             "id": 2646240,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1348/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636350"
-          },
-          {
-            "id": 2633488,
-            "sigla_tipo": "PEC",
-            "numero": 15,
-            "ano": 2026,
-            "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220532"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220532",
-  "generated_at_utc": "2026-09-18T14:00:34.814862+00:00",
+  "generated_at_utc": "2026-09-19T18:11:33.250739+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 232,
+    "quantidade_registros": 233,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 49
+        "quantidade_registros": 50
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646823,
+        "sigla_tipo": "REQ",
+        "numero": 4241,
+        "ano": 2026,
+        "ementa": "Solicita urgência urgentíssima (art. 155 do Regimento Interno da Câmara dos Deputados) para apreciação do Projeto de Lei nº 5.289, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646823"
+      },
       {
         "id": 2646240,
         "sigla_tipo": "PL",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1348/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636350"
-      },
-      {
-        "id": 2633488,
-        "sigla_tipo": "PEC",
-        "numero": 15,
-        "ano": 2026,
-        "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
       },
       {
         "id": 2598197,
