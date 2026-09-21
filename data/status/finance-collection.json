@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-20T23:30:23.852775Z",
+  "generated_at": "2026-09-21T16:04:42.957959Z",
   "component": "financas_2026",
   "status": "ok",
   "source": "TSE - Prestacao de Contas Eleitorais 2026",
   "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
   "collector": "resilient_http_collector",
-  "attempts": 1,
+  "attempts": 3,
   "worker_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
   "origin": "none",
   "message": "Coleta financeira concluida e validada pelo coletor.",
@@ -15,15 +15,15 @@
     "transport": "cloudflare_browser_worker",
     "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
     "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
-    "downloaded_bytes": 134701695,
-    "sha256": "9664a0e5fa8ae45671ebe3b76d21070ee100fc8d14ee1c955305ce55dbbe1a14",
+    "downloaded_bytes": 135713584,
+    "sha256": "db40be0efc810482162e12d573b09b3da87c4d553372051e60369a912c841731",
     "content_type": "application/zip",
     "worker_revision": "dataset-router-v8-zero-copy-finance-stream",
     "archive_entries": 112
   },
   "snapshot": {
     "generated_at": null,
-    "candidates": 16380,
+    "candidates": 16396,
     "shard_count": 256
   }
 }
