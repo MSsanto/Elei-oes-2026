@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:15:40.926022+00:00",
+      "generated_at_utc": "2026-09-22T00:28:05.684505+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220606/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 81,
+        "quantidade_registros": 82,
         "registros_recentes": [
+          {
+            "id": 2646882,
+            "sigla_tipo": "PL",
+            "numero": 5430,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para dispor sobre a obrigatoriedade de instituição de centros temporários de acolhimento para crianças e adolescentes que sejam filhos de trabalhadores formais, informais, ambulantes, catadores de materiais recicláveis e demais pessoas que desempenhem atividades laborais vinculadas à realização de eventos de grande porte ou festividades populares.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646882"
+          },
           {
             "id": 2646825,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requerimento de Emenda de Plenário ao PL 896/2023, que altera a Lei nº 7.716, de 5 de janeiro de 1989, e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre crimes praticados em razão de misoginia.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642525"
-          },
-          {
-            "id": 2642489,
-            "sigla_tipo": "REQ",
-            "numero": 80,
-            "ano": 2026,
-            "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Direitos Humanos, Minorias e Igualdade Racial – CDHMIR, para debater o fortalecimento do Instituto Nacional do Seguro Social (INSS), a necessidade de nomeação dos aprovados no cadastro de reserva do Concurso Público Nacional Unificado (CPNU2) para o cargo de Analista do Seguro Social e os impactos da insuficiência de servidores na garantia dos direitos sociais e humanos da população brasileira.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642489"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220606"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220606",
-  "generated_at_utc": "2026-09-20T18:18:53.876312+00:00",
+  "generated_at_utc": "2026-09-22T00:28:15.194971+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 818,
+    "quantidade_registros": 819,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 81
+        "quantidade_registros": 82
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646882,
+        "sigla_tipo": "PL",
+        "numero": 5430,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para dispor sobre a obrigatoriedade de instituição de centros temporários de acolhimento para crianças e adolescentes que sejam filhos de trabalhadores formais, informais, ambulantes, catadores de materiais recicláveis e demais pessoas que desempenhem atividades laborais vinculadas à realização de eventos de grande porte ou festividades populares.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646882"
+      },
       {
         "id": 2646825,
         "sigla_tipo": "PL",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Requerimento de Emenda de Plenário ao PL 896/2023, que altera a Lei nº 7.716, de 5 de janeiro de 1989, e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre crimes praticados em razão de misoginia.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642525"
-      },
-      {
-        "id": 2642489,
-        "sigla_tipo": "REQ",
-        "numero": 80,
-        "ano": 2026,
-        "ementa": "Requer a realização de Audiência Pública, no âmbito da Comissão de Direitos Humanos, Minorias e Igualdade Racial – CDHMIR, para debater o fortalecimento do Instituto Nacional do Seguro Social (INSS), a necessidade de nomeação dos aprovados no cadastro de reserva do Concurso Público Nacional Unificado (CPNU2) para o cargo de Analista do Seguro Social e os impactos da insuficiência de servidores na garantia dos direitos sociais e humanos da população brasileira.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642489"
       },
       {
         "id": 2598945,

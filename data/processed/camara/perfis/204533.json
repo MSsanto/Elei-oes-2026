@@ -654,7 +654,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:16:40.699418+00:00",
+      "generated_at_utc": "2026-09-22T00:25:42.322607+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -662,8 +662,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204533/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 10,
+        "quantidade_registros": 11,
         "registros_recentes": [
+          {
+            "id": 2646878,
+            "sigla_tipo": "PL",
+            "numero": 5428,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.818, de 16 de janeiro de 2024, para universalizar o acesso ao incentivo financeiro-educacional do Programa Pé-de-Meia aos estudantes do ensino médio público e estabelecer regras de atualização periódica dos valores dos incentivos.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646878"
+          },
           {
             "id": 2642865,
             "sigla_tipo": "PL",
@@ -957,7 +965,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204533",
-  "generated_at_utc": "2026-09-20T18:18:53.959669+00:00",
+  "generated_at_utc": "2026-09-22T00:28:14.868095+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1185,7 +1193,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 207,
+    "quantidade_registros": 208,
     "por_ano": [
       {
         "ano": 2023,
@@ -1201,10 +1209,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 10
+        "quantidade_registros": 11
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646878,
+        "sigla_tipo": "PL",
+        "numero": 5428,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.818, de 16 de janeiro de 2024, para universalizar o acesso ao incentivo financeiro-educacional do Programa Pé-de-Meia aos estudantes do ensino médio público e estabelecer regras de atualização periódica dos valores dos incentivos.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646878"
+      },
       {
         "id": 2642865,
         "sigla_tipo": "PL",
@@ -1388,14 +1404,6 @@
         "ano": 2023,
         "ementa": "Requer, nos termos regimentais, seja APENSADO o Projeto de Lei nº 54, de 2021, ao Projeto de Lei nº 5.949, de 2019, nos termos que especifica.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2412545"
-      },
-      {
-        "id": 2408832,
-        "sigla_tipo": "REQ",
-        "numero": 257,
-        "ano": 2023,
-        "ementa": "Requer a realização de seminário, pela Comissão de Educação, no estado do Rio Grande do Sul, para debater a oferta de cursos de graduação na modalidade EAD (Educação a Distância), especialmente os da área da saúde.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2408832"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204533",

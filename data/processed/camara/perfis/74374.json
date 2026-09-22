@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:16:51.633546+00:00",
+      "generated_at_utc": "2026-09-22T00:26:52.629102+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74374/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 71,
+        "quantidade_registros": 72,
         "registros_recentes": [
+          {
+            "id": 2646840,
+            "sigla_tipo": "PL",
+            "numero": 5415,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.790, de 29 de dezembro de 2023, para estabelecer limites prudenciais obrigatórios para as apostas realizadas nas plataformas de apostas de quota fixa (bets) e restringir o uso de sistemas de jogos que possam estimular comportamentos de risco.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646840"
+          },
           {
             "id": 2645729,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 13.146, de 6 de julho de 2015 (Estatuto da Pessoa com Deficiência) para instituir a Carteira Nacional de Identificação da Mãe Atípica – CIMA.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641478"
-          },
-          {
-            "id": 2637055,
-            "sigla_tipo": "REQ",
-            "numero": 174,
-            "ano": 2026,
-            "ementa": "Requer a realização de Audiência Pública para debater as ações preparativas realizadas pelo Ministério da Saúde necessárias à execução do “2º Plano de Expansão da Radioterapia no Sistema Único de Saúde – PERSUS II”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637055"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74374"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74374",
-  "generated_at_utc": "2026-09-20T18:18:53.973183+00:00",
+  "generated_at_utc": "2026-09-22T00:28:15.028196+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1996,7 +1996,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 607,
+    "quantidade_registros": 608,
     "por_ano": [
       {
         "ano": 2023,
@@ -2012,10 +2012,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 71
+        "quantidade_registros": 72
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646840,
+        "sigla_tipo": "PL",
+        "numero": 5415,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.790, de 29 de dezembro de 2023, para estabelecer limites prudenciais obrigatórios para as apostas realizadas nas plataformas de apostas de quota fixa (bets) e restringir o uso de sistemas de jogos que possam estimular comportamentos de risco.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646840"
+      },
       {
         "id": 2645729,
         "sigla_tipo": "RIC",
@@ -2103,14 +2111,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 13.146, de 6 de julho de 2015 (Estatuto da Pessoa com Deficiência) para instituir a Carteira Nacional de Identificação da Mãe Atípica – CIMA.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641478"
-      },
-      {
-        "id": 2637055,
-        "sigla_tipo": "REQ",
-        "numero": 174,
-        "ano": 2026,
-        "ementa": "Requer a realização de Audiência Pública para debater as ações preparativas realizadas pelo Ministério da Saúde necessárias à execução do “2º Plano de Expansão da Radioterapia no Sistema Único de Saúde – PERSUS II”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637055"
       },
       {
         "id": 2598301,

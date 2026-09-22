@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:17:49.364049+00:00",
+      "generated_at_utc": "2026-09-22T00:27:42.134464+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204494/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 67,
+        "quantidade_registros": 68,
         "registros_recentes": [
+          {
+            "id": 2646874,
+            "sigla_tipo": "PL",
+            "numero": 5423,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 15.432, de 13 de junho de 2026, para disciplinar a cessão dos direitos e obrigações decorrentes da delegação de serviços complementares de transporte público coletivo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646874"
+          },
           {
             "id": 2646295,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630123"
-          },
-          {
-            "id": 2627890,
-            "sigla_tipo": "RIC",
-            "numero": 1471,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública sobre as providências adotadas para prevenir, investigar e reprimir crimes cometidos por meio de redes sociais, aplicativos de interação e comunidades digitais privadas, em especial na plataforma Discord.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627890"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204494"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204494",
-  "generated_at_utc": "2026-09-20T18:18:54.056764+00:00",
+  "generated_at_utc": "2026-09-22T00:28:15.131012+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1531,7 +1531,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 537,
+    "quantidade_registros": 538,
     "por_ano": [
       {
         "ano": 2023,
@@ -1547,10 +1547,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 67
+        "quantidade_registros": 68
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646874,
+        "sigla_tipo": "PL",
+        "numero": 5423,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 15.432, de 13 de junho de 2026, para disciplinar a cessão dos direitos e obrigações decorrentes da delegação de serviços complementares de transporte público coletivo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646874"
+      },
       {
         "id": 2646295,
         "sigla_tipo": "REQ",
@@ -1638,14 +1646,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630123"
-      },
-      {
-        "id": 2627890,
-        "sigla_tipo": "RIC",
-        "numero": 1471,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública sobre as providências adotadas para prevenir, investigar e reprimir crimes cometidos por meio de redes sociais, aplicativos de interação e comunidades digitais privadas, em especial na plataforma Discord.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627890"
       },
       {
         "id": 2598197,

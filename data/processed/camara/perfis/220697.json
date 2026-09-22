@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:16:27.621312+00:00",
+      "generated_at_utc": "2026-09-22T00:24:58.400132+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220697/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 33,
+        "quantidade_registros": 36,
         "registros_recentes": [
+          {
+            "id": 2646881,
+            "sigla_tipo": "REQ",
+            "numero": 4257,
+            "ano": 2026,
+            "ementa": "Requer o apensamento do Projeto de Lei nº 2.643/2026 ao Projeto de Lei nº 2.651/2026 por tratarem de matéria correlata.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646881"
+          },
+          {
+            "id": 2646880,
+            "sigla_tipo": "REQ",
+            "numero": 4256,
+            "ano": 2026,
+            "ementa": "Requer o apensamento do Projeto de Lei nº 2.652/2026 ao Projeto de Lei nº 2.651/2026 por tratarem de matéria correlata.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646880"
+          },
+          {
+            "id": 2646879,
+            "sigla_tipo": "PL",
+            "numero": 5429,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.294, de 15 de julho de 1996, para disciplinar a comunicação mercadológica dos produtos que especifica, inclusive em meios digitais, estabelecer deveres de prevenção e de conservação de registros e aperfeiçoar sua fiscalização.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646879"
+          },
           {
             "id": 2646331,
             "sigla_tipo": "REQ",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer realização de Audiência Pública para debater o Projeto de Lei nº 4.308/2024, que disciplina as stablecoins.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632928"
-          },
-          {
-            "id": 2632459,
-            "sigla_tipo": "REQ",
-            "numero": 31,
-            "ano": 2026,
-            "ementa": "Requer a realização de audiência pública, no âmbito da Comissão de Desenvolvimento Econômico, para debater o PL 5.960, de 2025, que Institui o Marco de Fomento à Economia Digital no Brasil, em tramitação nesta comissão.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632459"
-          },
-          {
-            "id": 2631190,
-            "sigla_tipo": "PEC",
-            "numero": 13,
-            "ano": 2026,
-            "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
-          },
-          {
-            "id": 2627104,
-            "sigla_tipo": "REQ",
-            "numero": 24,
-            "ano": 2026,
-            "ementa": "Requer realização de Audiência Pública para debater os impactos econômicos da nova geração de modelos de Inteligência Artificial de fronteira sobre a competitividade da economia brasileira, a estabilidade do setor financeiro, a segurança digital do setor produtivo e a proteção das infraestruturas críticas nacionais, bem como sua relação com o marco regulatório brasileiro de IA.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627104"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220697"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220697",
-  "generated_at_utc": "2026-09-20T18:18:53.943627+00:00",
+  "generated_at_utc": "2026-09-22T00:28:14.780879+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 610,
+    "quantidade_registros": 613,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 33
+        "quantidade_registros": 36
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646881,
+        "sigla_tipo": "REQ",
+        "numero": 4257,
+        "ano": 2026,
+        "ementa": "Requer o apensamento do Projeto de Lei nº 2.643/2026 ao Projeto de Lei nº 2.651/2026 por tratarem de matéria correlata.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646881"
+      },
+      {
+        "id": 2646880,
+        "sigla_tipo": "REQ",
+        "numero": 4256,
+        "ano": 2026,
+        "ementa": "Requer o apensamento do Projeto de Lei nº 2.652/2026 ao Projeto de Lei nº 2.651/2026 por tratarem de matéria correlata.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646880"
+      },
+      {
+        "id": 2646879,
+        "sigla_tipo": "PL",
+        "numero": 5429,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.294, de 15 de julho de 1996, para disciplinar a comunicação mercadológica dos produtos que especifica, inclusive em meios digitais, estabelecer deveres de prevenção e de conservação de registros e aperfeiçoar sua fiscalização.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646879"
+      },
       {
         "id": 2646331,
         "sigla_tipo": "REQ",
@@ -1506,30 +1530,6 @@
         "ano": 2026,
         "ementa": "Requer realização de Audiência Pública para debater o Projeto de Lei nº 4.308/2024, que disciplina as stablecoins.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632928"
-      },
-      {
-        "id": 2632459,
-        "sigla_tipo": "REQ",
-        "numero": 31,
-        "ano": 2026,
-        "ementa": "Requer a realização de audiência pública, no âmbito da Comissão de Desenvolvimento Econômico, para debater o PL 5.960, de 2025, que Institui o Marco de Fomento à Economia Digital no Brasil, em tramitação nesta comissão.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632459"
-      },
-      {
-        "id": 2631190,
-        "sigla_tipo": "PEC",
-        "numero": 13,
-        "ano": 2026,
-        "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
-      },
-      {
-        "id": 2627104,
-        "sigla_tipo": "REQ",
-        "numero": 24,
-        "ano": 2026,
-        "ementa": "Requer realização de Audiência Pública para debater os impactos econômicos da nova geração de modelos de Inteligência Artificial de fronteira sobre a competitividade da economia brasileira, a estabilidade do setor financeiro, a segurança digital do setor produtivo e a proteção das infraestruturas críticas nacionais, bem como sua relação com o marco regulatório brasileiro de IA.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627104"
       },
       {
         "id": 2599001,

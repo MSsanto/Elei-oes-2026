@@ -1,9 +1,9 @@
 {
-  "generated_at_utc": "2026-09-21T15:57:57.609226+00:00",
+  "generated_at_utc": "2026-09-22T00:12:03.198827+00:00",
   "method": "confirma somente nome civil normalizado + data de nascimento exatos e únicos",
   "counts": {
-    "nao_encontrada": 7105,
-    "confirmada": 692,
+    "nao_encontrada": 7104,
+    "confirmada": 693,
     "revisao_manual": 4
   },
   "records": [
@@ -29452,14 +29452,25 @@
       "tse_sq_candidato": [
         "100002537305"
       ],
-      "camara_id_deputado": [],
-      "nome_civil": "FABIO HERNIQUE DIAS DE MACEDO",
+      "camara_id_deputado": [
+        220681
+      ],
+      "nome_civil": "FABIO HENRIQUE DIAS DE MACEDO",
       "data_nascimento": "18/09/1981",
       "uf_candidatura_2026": "MA",
-      "correspondencia_status": "nao_encontrada",
-      "evidencias_correspondencia": [],
-      "historico_camara_localizado": false,
-      "camara": null
+      "correspondencia_status": "confirmada",
+      "evidencias_correspondencia": [
+        "nome_civil_normalizado",
+        "data_nascimento"
+      ],
+      "historico_camara_localizado": true,
+      "camara": {
+        "nome_parlamentar": "Fábio Macedo",
+        "nome_civil": "FÁBIO HENRIQUE DIAS DE  MACEDO",
+        "primeira_legislatura": 57,
+        "ultima_legislatura": 57,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220681"
+      }
     },
     {
       "politico_id": "tse-100002535242",
@@ -101476,20 +101487,6 @@
       "camara": null
     },
     {
-      "politico_id": "tse-250002551649",
-      "tse_sq_candidato": [
-        "250002551649"
-      ],
-      "camara_id_deputado": [],
-      "nome_civil": "ELENCASTON CANDIDO DA SILVA",
-      "data_nascimento": "18/06/1966",
-      "uf_candidatura_2026": "SP",
-      "correspondencia_status": "nao_encontrada",
-      "evidencias_correspondencia": [],
-      "historico_camara_localizado": false,
-      "camara": null
-    },
-    {
       "politico_id": "tse-250002546655",
       "tse_sq_candidato": [
         "250002546655"
@@ -104002,6 +103999,20 @@
       "camara": null
     },
     {
+      "politico_id": "tse-250002551649",
+      "tse_sq_candidato": [
+        "250002551649"
+      ],
+      "camara_id_deputado": [],
+      "nome_civil": "ELENCASTON CANDIDO DA SILVA",
+      "data_nascimento": "18/06/1966",
+      "uf_candidatura_2026": "SP",
+      "correspondencia_status": "nao_encontrada",
+      "evidencias_correspondencia": [],
+      "historico_camara_localizado": false,
+      "camara": null
+    },
+    {
       "politico_id": "tse-250002541143",
       "tse_sq_candidato": [
         "250002541143"
@@ -106158,7 +106169,7 @@
         "250002550407"
       ],
       "camara_id_deputado": [],
-      "nome_civil": "JANAINA DE CASTRO SANTOS",
+      "nome_civil": "JANAINA DE CASTRO SANTOS PEREIRA",
       "data_nascimento": "02/05/1982",
       "uf_candidatura_2026": "SP",
       "correspondencia_status": "nao_encontrada",
@@ -111838,7 +111849,7 @@
         "250002550410"
       ],
       "camara_id_deputado": [],
-      "nome_civil": "RENATA RODRIGUES DE OLIVEIRA",
+      "nome_civil": "RENATA RODRIGUES DUARTE",
       "data_nascimento": "21/09/1977",
       "uf_candidatura_2026": "SP",
       "correspondencia_status": "nao_encontrada",
@@ -112020,7 +112031,7 @@
         "250002550406"
       ],
       "camara_id_deputado": [],
-      "nome_civil": "RAQUEL SILVA ANDRADE",
+      "nome_civil": "RAQUEL SILVA ANDRADE TORRES",
       "data_nascimento": "30/04/1981",
       "uf_candidatura_2026": "SP",
       "correspondencia_status": "nao_encontrada",

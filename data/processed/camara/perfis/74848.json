@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:17:36.289561+00:00",
+      "generated_at_utc": "2026-09-22T00:25:45.482771+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74848/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 47,
+        "quantidade_registros": 48,
         "registros_recentes": [
+          {
+            "id": 2646837,
+            "sigla_tipo": "PL",
+            "numero": 5411,
+            "ano": 2026,
+            "ementa": "Dispõe sobre as empresas de contratação e colocação de gente do mar, sobre o emprego da gente do mar brasileira em embarcações de bandeira estrangeira autorizadas a operar em águas jurisdicionais brasileiras, sobre o direito ao desembarque ou à repatriação e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646837"
+          },
           {
             "id": 2646556,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Estabelece o marco legal do Registro Nacional de Beneficiários Finais, dispõe sobre a integração, atualização, verificação, interoperabilidade e acesso às informações relativas aos beneficiários finais de pessoas jurídicas e estruturas legais, e fortalece os mecanismos de prevenção à lavagem de dinheiro, corrupção, evasão fiscal, ocultação patrimonial e infiltração da criminaliza organizada na economia formal.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637237"
-          },
-          {
-            "id": 2635640,
-            "sigla_tipo": "REQ",
-            "numero": 171,
-            "ano": 2026,
-            "ementa": "Requer Aditamento ao Requerimento n° 33/2026, para inclusão de palestrantes em audiência pública na Comissão de Saúde.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635640"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74848"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74848",
-  "generated_at_utc": "2026-09-20T18:18:54.040308+00:00",
+  "generated_at_utc": "2026-09-22T00:28:14.875415+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1639,7 +1639,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 372,
+    "quantidade_registros": 373,
     "por_ano": [
       {
         "ano": 2023,
@@ -1655,10 +1655,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 47
+        "quantidade_registros": 48
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646837,
+        "sigla_tipo": "PL",
+        "numero": 5411,
+        "ano": 2026,
+        "ementa": "Dispõe sobre as empresas de contratação e colocação de gente do mar, sobre o emprego da gente do mar brasileira em embarcações de bandeira estrangeira autorizadas a operar em águas jurisdicionais brasileiras, sobre o direito ao desembarque ou à repatriação e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646837"
+      },
       {
         "id": 2646556,
         "sigla_tipo": "REQ",
@@ -1746,14 +1754,6 @@
         "ano": 2026,
         "ementa": "Estabelece o marco legal do Registro Nacional de Beneficiários Finais, dispõe sobre a integração, atualização, verificação, interoperabilidade e acesso às informações relativas aos beneficiários finais de pessoas jurídicas e estruturas legais, e fortalece os mecanismos de prevenção à lavagem de dinheiro, corrupção, evasão fiscal, ocultação patrimonial e infiltração da criminaliza organizada na economia formal.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637237"
-      },
-      {
-        "id": 2635640,
-        "sigla_tipo": "REQ",
-        "numero": 171,
-        "ano": 2026,
-        "ementa": "Requer Aditamento ao Requerimento n° 33/2026, para inclusão de palestrantes em audiência pública na Comissão de Saúde.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635640"
       },
       {
         "id": 2598301,

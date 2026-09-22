@@ -654,7 +654,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:16:59.758857+00:00",
+      "generated_at_utc": "2026-09-22T00:27:00.209096+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -662,8 +662,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/221329/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 30,
+        "quantidade_registros": 33,
         "registros_recentes": [
+          {
+            "id": 2646870,
+            "sigla_tipo": "PL",
+            "numero": 5421,
+            "ano": 2026,
+            "ementa": "Institui a Lei de Acesso Seguro ao Canabidiol no SUS e altera a Lei nº 8.080, de 19 de setembro de 1990, para estabelecer critérios de acesso, incorporação, dispensação e monitoramento de medicamentos e produtos de Cannabis para uso medicinal humano à base de canabidiol no Sistema Único de Saúde (SUS), com prioridade de avaliação para condições clínicas graves, degenerativas, neurológicas, raras ou refratárias e proteção especial a crianças e adolescentes.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646870"
+          },
+          {
+            "id": 2646869,
+            "sigla_tipo": "PL",
+            "numero": 5420,
+            "ano": 2026,
+            "ementa": "Confere ao Município de Cabo Frio, no Estado do Rio de Janeiro, o título de Capital Nacional da Canoa Havaiana.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646869"
+          },
+          {
+            "id": 2646868,
+            "sigla_tipo": "PL",
+            "numero": 5419,
+            "ano": 2026,
+            "ementa": "Institui a Lei Voo Íntegro, que estabelece mecanismos de autenticação reforçada, segurança, rastreabilidade e restauração de bilhetes e reservas de transporte aéreo; disciplina a compensação financeira automática e o ressarcimento de despesas nos casos de cancelamento ou alteração não autorizada da reserva e de cancelamento de voo imputável ao transportador; assegura proteção aos passageiros em voos domésticos e internacionais; e altera a Lei nº 7.565, de 19 de dezembro de 1986.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646868"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -735,30 +759,6 @@
             "ano": 2026,
             "ementa": "Institui o Programa Nacional \"Espaço Laços\", estabelecendo diretrizes para o Centro de Atendimento Integral à Neurodiversidade e a criação do Parque Multissensorial Municipal, pautado na Reabilitação Ecológica e na Terapia Assistida por Animais (TAA) no âmbito do Sistema Único de Saúde (SUS).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628467"
-          },
-          {
-            "id": 2624071,
-            "sigla_tipo": "REQ",
-            "numero": 32,
-            "ano": 2026,
-            "ementa": "Requer a realização de uma audiência pública para debater a estrutura, a evolução e os impactos das taxas de juros do cartão de crédito no Brasil, especialmente na modalidade rotativo, com foco na avaliação da eficácia das medidas regulatórias vigentes, na análise do spread bancário, do nível de concorrência no sistema financeiro e na proteção do consumidor.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624071"
-          },
-          {
-            "id": 2623880,
-            "sigla_tipo": "REQ",
-            "numero": 12,
-            "ano": 2026,
-            "ementa": "Requer a realização de uma audiência pública com a finalidade de discutir o conteúdo da Indicação nº 395/2026, que sugere ao Poder Executivo Federal a adoção de medidas administrativas voltadas à instituição de regime jurídico de uso que reconheça o caráter religioso, cultural, histórico e turístico do Santuário Cristo Redentor, situado no Alto Corcovado, no interior do Parque Nacional da Tijuca, mediante instrumento jurídico adequado de cessão de direito real de uso.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623880"
-          },
-          {
-            "id": 2617256,
-            "sigla_tipo": "INC",
-            "numero": 603,
-            "ano": 2026,
-            "ementa": "Solicito ao Exmo. Sr. Ministro de Estado dos Transportes junto a Agência Nacional de Transportes Terrestres, a adoção de providências junto à concessionária MRS Logística S.A. para a execução de fechamento com muro no perímetro da ferrovia no trecho situado entre a Avenida Goiânia e a Estrada do Iguaçu, no bairro Nova América, município de Nova Iguaçu, bem como sugere ao Poder Executivo municipal a construção de passeio público no trecho entre a Avenida Goiânia e a Estrada Luiz de Lemos, visando à segurança viária e à proteção de pedestres.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617256"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=221329"
@@ -973,7 +973,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "221329",
-  "generated_at_utc": "2026-09-20T18:18:53.984826+00:00",
+  "generated_at_utc": "2026-09-22T00:28:15.046786+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1329,7 +1329,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 178,
+    "quantidade_registros": 181,
     "por_ano": [
       {
         "ano": 2023,
@@ -1345,10 +1345,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 30
+        "quantidade_registros": 33
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646870,
+        "sigla_tipo": "PL",
+        "numero": 5421,
+        "ano": 2026,
+        "ementa": "Institui a Lei de Acesso Seguro ao Canabidiol no SUS e altera a Lei nº 8.080, de 19 de setembro de 1990, para estabelecer critérios de acesso, incorporação, dispensação e monitoramento de medicamentos e produtos de Cannabis para uso medicinal humano à base de canabidiol no Sistema Único de Saúde (SUS), com prioridade de avaliação para condições clínicas graves, degenerativas, neurológicas, raras ou refratárias e proteção especial a crianças e adolescentes.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646870"
+      },
+      {
+        "id": 2646869,
+        "sigla_tipo": "PL",
+        "numero": 5420,
+        "ano": 2026,
+        "ementa": "Confere ao Município de Cabo Frio, no Estado do Rio de Janeiro, o título de Capital Nacional da Canoa Havaiana.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646869"
+      },
+      {
+        "id": 2646868,
+        "sigla_tipo": "PL",
+        "numero": 5419,
+        "ano": 2026,
+        "ementa": "Institui a Lei Voo Íntegro, que estabelece mecanismos de autenticação reforçada, segurança, rastreabilidade e restauração de bilhetes e reservas de transporte aéreo; disciplina a compensação financeira automática e o ressarcimento de despesas nos casos de cancelamento ou alteração não autorizada da reserva e de cancelamento de voo imputável ao transportador; assegura proteção aos passageiros em voos domésticos e internacionais; e altera a Lei nº 7.565, de 19 de dezembro de 1986.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646868"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1420,30 +1444,6 @@
         "ano": 2026,
         "ementa": "Institui o Programa Nacional \"Espaço Laços\", estabelecendo diretrizes para o Centro de Atendimento Integral à Neurodiversidade e a criação do Parque Multissensorial Municipal, pautado na Reabilitação Ecológica e na Terapia Assistida por Animais (TAA) no âmbito do Sistema Único de Saúde (SUS).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628467"
-      },
-      {
-        "id": 2624071,
-        "sigla_tipo": "REQ",
-        "numero": 32,
-        "ano": 2026,
-        "ementa": "Requer a realização de uma audiência pública para debater a estrutura, a evolução e os impactos das taxas de juros do cartão de crédito no Brasil, especialmente na modalidade rotativo, com foco na avaliação da eficácia das medidas regulatórias vigentes, na análise do spread bancário, do nível de concorrência no sistema financeiro e na proteção do consumidor.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624071"
-      },
-      {
-        "id": 2623880,
-        "sigla_tipo": "REQ",
-        "numero": 12,
-        "ano": 2026,
-        "ementa": "Requer a realização de uma audiência pública com a finalidade de discutir o conteúdo da Indicação nº 395/2026, que sugere ao Poder Executivo Federal a adoção de medidas administrativas voltadas à instituição de regime jurídico de uso que reconheça o caráter religioso, cultural, histórico e turístico do Santuário Cristo Redentor, situado no Alto Corcovado, no interior do Parque Nacional da Tijuca, mediante instrumento jurídico adequado de cessão de direito real de uso.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623880"
-      },
-      {
-        "id": 2617256,
-        "sigla_tipo": "INC",
-        "numero": 603,
-        "ano": 2026,
-        "ementa": "Solicito ao Exmo. Sr. Ministro de Estado dos Transportes junto a Agência Nacional de Transportes Terrestres, a adoção de providências junto à concessionária MRS Logística S.A. para a execução de fechamento com muro no perímetro da ferrovia no trecho situado entre a Avenida Goiânia e a Estrada do Iguaçu, no bairro Nova América, município de Nova Iguaçu, bem como sugere ao Poder Executivo municipal a construção de passeio público no trecho entre a Avenida Goiânia e a Estrada Luiz de Lemos, visando à segurança viária e à proteção de pedestres.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617256"
       },
       {
         "id": 2598197,

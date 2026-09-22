@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-20T18:16:31.821410+00:00",
+      "generated_at_utc": "2026-09-22T00:27:50.397923+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204353/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 18,
+        "quantidade_registros": 21,
         "registros_recentes": [
+          {
+            "id": 2646839,
+            "sigla_tipo": "PL",
+            "numero": 5413,
+            "ano": 2026,
+            "ementa": "Institui o Programa Auxílio-Creche Primeira Infância, destinado a assegurar apoio temporário às famílias de baixa renda que não tenham acesso a vaga na rede pública de educação infantil, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646839"
+          },
+          {
+            "id": 2646838,
+            "sigla_tipo": "PL",
+            "numero": 5412,
+            "ano": 2026,
+            "ementa": "Institui o Programa Reconstruir Lar, destinado a apoiar famílias de baixa renda em situação de vulnerabilidade habitacional na realização de reformas, melhorias e adaptações essenciais em suas moradias.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646838"
+          },
+          {
+            "id": 2646836,
+            "sigla_tipo": "PL",
+            "numero": 5410,
+            "ano": 2026,
+            "ementa": "Institui o Programa Mandioca Viva, destinado ao apoio emergencial, à proteção de renda e à recuperação produtiva de agricultores e comunidades atingidos por emergência fitossanitária da cultura da mandioca.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646836"
+          },
           {
             "id": 2645411,
             "sigla_tipo": "REQ",
@@ -437,30 +461,6 @@
             "ano": 2026,
             "ementa": "Requer inclusao Ordem do Dia do PLP 185 2024",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618388"
-          },
-          {
-            "id": 2617166,
-            "sigla_tipo": "RCP",
-            "numero": 2,
-            "ano": 2026,
-            "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
-          },
-          {
-            "id": 2617110,
-            "sigla_tipo": "REQ",
-            "numero": 2136,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 1.361, de 2025, que altera a Lei nº 14.260, de 8 de dezembro de 2021, para tornar permanentes os incentivos à indústria da reciclagem.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617110"
-          },
-          {
-            "id": 2616726,
-            "sigla_tipo": "REQ",
-            "numero": 2109,
-            "ano": 2026,
-            "ementa": "Requer, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, tramitação sob regime de urgência do Projeto de Lei 192/2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616726"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204353"
@@ -675,7 +675,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204353",
-  "generated_at_utc": "2026-09-20T18:18:53.948288+00:00",
+  "generated_at_utc": "2026-09-22T00:28:15.153814+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -952,7 +952,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 69,
+    "quantidade_registros": 72,
     "por_ano": [
       {
         "ano": 2023,
@@ -968,10 +968,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 18
+        "quantidade_registros": 21
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646839,
+        "sigla_tipo": "PL",
+        "numero": 5413,
+        "ano": 2026,
+        "ementa": "Institui o Programa Auxílio-Creche Primeira Infância, destinado a assegurar apoio temporário às famílias de baixa renda que não tenham acesso a vaga na rede pública de educação infantil, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646839"
+      },
+      {
+        "id": 2646838,
+        "sigla_tipo": "PL",
+        "numero": 5412,
+        "ano": 2026,
+        "ementa": "Institui o Programa Reconstruir Lar, destinado a apoiar famílias de baixa renda em situação de vulnerabilidade habitacional na realização de reformas, melhorias e adaptações essenciais em suas moradias.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646838"
+      },
+      {
+        "id": 2646836,
+        "sigla_tipo": "PL",
+        "numero": 5410,
+        "ano": 2026,
+        "ementa": "Institui o Programa Mandioca Viva, destinado ao apoio emergencial, à proteção de renda e à recuperação produtiva de agricultores e comunidades atingidos por emergência fitossanitária da cultura da mandioca.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646836"
+      },
       {
         "id": 2645411,
         "sigla_tipo": "REQ",
@@ -1043,30 +1067,6 @@
         "ano": 2026,
         "ementa": "Requer inclusao Ordem do Dia do PLP 185 2024",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618388"
-      },
-      {
-        "id": 2617166,
-        "sigla_tipo": "RCP",
-        "numero": 2,
-        "ano": 2026,
-        "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
-      },
-      {
-        "id": 2617110,
-        "sigla_tipo": "REQ",
-        "numero": 2136,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 1.361, de 2025, que altera a Lei nº 14.260, de 8 de dezembro de 2021, para tornar permanentes os incentivos à indústria da reciclagem.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617110"
-      },
-      {
-        "id": 2616726,
-        "sigla_tipo": "REQ",
-        "numero": 2109,
-        "ano": 2026,
-        "ementa": "Requer, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, tramitação sob regime de urgência do Projeto de Lei 192/2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616726"
       },
       {
         "id": 2569681,
