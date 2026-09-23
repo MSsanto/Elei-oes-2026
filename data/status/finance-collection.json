@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-23T14:26:02.202792Z",
+  "generated_at": "2026-09-23T23:57:20.938269Z",
   "component": "financas_2026",
   "status": "ok",
   "source": "TSE - Prestacao de Contas Eleitorais 2026",
@@ -15,15 +15,15 @@
     "transport": "cloudflare_browser_worker",
     "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026",
     "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip",
-    "downloaded_bytes": 142588111,
-    "sha256": "0a5338886069732d98821411adcd76fc284b9e87722d856b6287fd2155687a16",
+    "downloaded_bytes": 129044094,
+    "sha256": "142c0aae2b49edda10244fd1dd320560e8c588bd11b8567535f8c94318a6c55f",
     "content_type": "application/zip",
     "worker_revision": "dataset-router-v8-zero-copy-finance-stream",
     "archive_entries": 112
   },
   "snapshot": {
     "generated_at": null,
-    "candidates": 16431,
+    "candidates": 16463,
     "shard_count": 256
   }
 }
