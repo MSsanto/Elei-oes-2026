@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:26:30.944092+00:00",
+      "generated_at_utc": "2026-09-23T08:58:43.450606+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/122974/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 230,
+        "quantidade_registros": 231,
         "registros_recentes": [
+          {
+            "id": 2646884,
+            "sigla_tipo": "DOC",
+            "numero": 968,
+            "ano": 2026,
+            "ementa": "",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646884"
+          },
           {
             "id": 2645679,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, requeremos regime de urgência na apreciação do Projeto de Lei Nº 3507/2026, que “Reconhece o artesanato tradicional do Estado do Maranhão como manifestação da cultura nacional.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637487"
-          },
-          {
-            "id": 2637478,
-            "sigla_tipo": "PL",
-            "numero": 3507,
-            "ano": 2026,
-            "ementa": "Reconhece o artesanato tradicional do Estado do Maranhão como manifestação da cultura nacional.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637478"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=122974"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "122974",
-  "generated_at_utc": "2026-09-22T00:28:14.972737+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.141257+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1463,7 +1463,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 948,
+    "quantidade_registros": 949,
     "por_ano": [
       {
         "ano": 2023,
@@ -1479,10 +1479,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 230
+        "quantidade_registros": 231
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646884,
+        "sigla_tipo": "DOC",
+        "numero": 968,
+        "ano": 2026,
+        "ementa": "",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646884"
+      },
       {
         "id": 2645679,
         "sigla_tipo": "DOC",
@@ -1570,14 +1578,6 @@
         "ano": 2026,
         "ementa": "Nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, requeremos regime de urgência na apreciação do Projeto de Lei Nº 3507/2026, que “Reconhece o artesanato tradicional do Estado do Maranhão como manifestação da cultura nacional.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637487"
-      },
-      {
-        "id": 2637478,
-        "sigla_tipo": "PL",
-        "numero": 3507,
-        "ano": 2026,
-        "ementa": "Reconhece o artesanato tradicional do Estado do Maranhão como manifestação da cultura nacional.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637478"
       },
       {
         "id": 2598301,

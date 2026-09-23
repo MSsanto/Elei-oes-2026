@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:26:53.168708+00:00",
+      "generated_at_utc": "2026-09-23T08:58:04.060592+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204536/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 119,
+        "quantidade_registros": 120,
         "registros_recentes": [
+          {
+            "id": 2646929,
+            "sigla_tipo": "PL",
+            "numero": 5442,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997 (Lei das Eleições) para proibir a restrição do alcance das redes sociais dos candidatos aos cargos eletivos, conhecido como “shadowban”, durante o período eleitoral.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646929"
+          },
           {
             "id": 2645741,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para autorizar a seleção aleatória ou por amostragem das pessoas a serem submetidas à abordagem e à busca pessoal em via pública.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643954"
-          },
-          {
-            "id": 2643803,
-            "sigla_tipo": "PL",
-            "numero": 5080,
-            "ano": 2026,
-            "ementa": "Altera o Decreto-Lei n. 2.848, de 7 de dezembro de 1940 (Código Penal), para estabelecer tratamento penal mais gravoso aos crimes de furto e roubo que tenham por objeto equipamento, ferramenta, uniforme, veículo ou utensílio utilizado para o trabalho ou a subsistência da vítima.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643803"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204536"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204536",
-  "generated_at_utc": "2026-09-22T00:28:15.029210+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.078996+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1484,7 +1484,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1237,
+    "quantidade_registros": 1238,
     "por_ano": [
       {
         "ano": 2023,
@@ -1500,10 +1500,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 119
+        "quantidade_registros": 120
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646929,
+        "sigla_tipo": "PL",
+        "numero": 5442,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997 (Lei das Eleições) para proibir a restrição do alcance das redes sociais dos candidatos aos cargos eletivos, conhecido como “shadowban”, durante o período eleitoral.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646929"
+      },
       {
         "id": 2645741,
         "sigla_tipo": "EMC",
@@ -1591,14 +1599,6 @@
         "ano": 2026,
         "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para autorizar a seleção aleatória ou por amostragem das pessoas a serem submetidas à abordagem e à busca pessoal em via pública.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643954"
-      },
-      {
-        "id": 2643803,
-        "sigla_tipo": "PL",
-        "numero": 5080,
-        "ano": 2026,
-        "ementa": "Altera o Decreto-Lei n. 2.848, de 7 de dezembro de 1940 (Código Penal), para estabelecer tratamento penal mais gravoso aos crimes de furto e roubo que tenham por objeto equipamento, ferramenta, uniforme, veículo ou utensílio utilizado para o trabalho ou a subsistência da vítima.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643803"
       },
       {
         "id": 2598301,

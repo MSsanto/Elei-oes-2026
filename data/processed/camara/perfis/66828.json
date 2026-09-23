@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:27:46.639282+00:00",
+      "generated_at_utc": "2026-09-23T09:00:40.933665+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/66828/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 71,
+        "quantidade_registros": 72,
         "registros_recentes": [
+          {
+            "id": 2646928,
+            "sigla_tipo": "RIC",
+            "numero": 2675,
+            "ano": 2026,
+            "ementa": "Requer informações ao Senhor Ministro de Estado da Saúde acerca da implementação do Piso Nacional da Enfermagem, da assistência financeira complementar da União e da efetiva aplicação dos recursos destinados ao seu cumprimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646928"
+          },
           {
             "id": 2646131,
             "sigla_tipo": "INC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639830"
-          },
-          {
-            "id": 2639160,
-            "sigla_tipo": "REQ",
-            "numero": 187,
-            "ano": 2026,
-            "ementa": "Requer a realização de missão oficial da Comissão de Saúde e da Comissão de Ciência, Tecnologia e Inovação à República do Paraguai, com a finalidade de promover intercâmbio institucional e realizar visitas técnicas a órgãos reguladores, instituições de pesquisa, laboratórios oficiais e estabelecimentos farmacêuticos produtores de medicamentos à base de tirzepatida.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639160"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=66828"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "66828",
-  "generated_at_utc": "2026-09-22T00:28:15.144110+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.348650+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1543,7 +1543,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 594,
+    "quantidade_registros": 595,
     "por_ano": [
       {
         "ano": 2023,
@@ -1559,10 +1559,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 71
+        "quantidade_registros": 72
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646928,
+        "sigla_tipo": "RIC",
+        "numero": 2675,
+        "ano": 2026,
+        "ementa": "Requer informações ao Senhor Ministro de Estado da Saúde acerca da implementação do Piso Nacional da Enfermagem, da assistência financeira complementar da União e da efetiva aplicação dos recursos destinados ao seu cumprimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646928"
+      },
       {
         "id": 2646131,
         "sigla_tipo": "INC",
@@ -1650,14 +1658,6 @@
         "ano": 2026,
         "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639830"
-      },
-      {
-        "id": 2639160,
-        "sigla_tipo": "REQ",
-        "numero": 187,
-        "ano": 2026,
-        "ementa": "Requer a realização de missão oficial da Comissão de Saúde e da Comissão de Ciência, Tecnologia e Inovação à República do Paraguai, com a finalidade de promover intercâmbio institucional e realizar visitas técnicas a órgãos reguladores, instituições de pesquisa, laboratórios oficiais e estabelecimentos farmacêuticos produtores de medicamentos à base de tirzepatida.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639160"
       },
       {
         "id": 2599001,

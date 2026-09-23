@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:25:36.925587+00:00",
+      "generated_at_utc": "2026-09-23T09:00:00.922446+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204426/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 679,
+        "quantidade_registros": 680,
         "registros_recentes": [
+          {
+            "id": 2646910,
+            "sigla_tipo": "DOC",
+            "numero": 1574,
+            "ano": 2026,
+            "ementa": "Of. nº 736/2026/PS-GSE, que comunica ao Senado Federal a restituição do PL nº. PL 1799/2023, sancionado.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646910"
+          },
           {
             "id": 2646233,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Of. nº 637/2026/PS-GSE, que encaminha a Mensagem n. 52/2026 de envio à sanção presidencial do PL n.º 1.799/2023 do SF.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643919"
-          },
-          {
-            "id": 2643918,
-            "sigla_tipo": "DOC",
-            "numero": 1393,
-            "ano": 2026,
-            "ementa": "Of. nº 636/2026/PS-GSE, que comunica ao Senado Federal o envio à sanção do PL n. 5.961/2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643918"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204426"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204426",
-  "generated_at_utc": "2026-09-22T00:28:14.852812+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.271734+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1452,7 +1452,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1834,
+    "quantidade_registros": 1835,
     "por_ano": [
       {
         "ano": 2023,
@@ -1468,10 +1468,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 679
+        "quantidade_registros": 680
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646910,
+        "sigla_tipo": "DOC",
+        "numero": 1574,
+        "ano": 2026,
+        "ementa": "Of. nº 736/2026/PS-GSE, que comunica ao Senado Federal a restituição do PL nº. PL 1799/2023, sancionado.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646910"
+      },
       {
         "id": 2646233,
         "sigla_tipo": "DOC",
@@ -1559,14 +1567,6 @@
         "ano": 2026,
         "ementa": "Of. nº 637/2026/PS-GSE, que encaminha a Mensagem n. 52/2026 de envio à sanção presidencial do PL n.º 1.799/2023 do SF.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643919"
-      },
-      {
-        "id": 2643918,
-        "sigla_tipo": "DOC",
-        "numero": 1393,
-        "ano": 2026,
-        "ementa": "Of. nº 636/2026/PS-GSE, que comunica ao Senado Federal o envio à sanção do PL n. 5.961/2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643918"
       },
       {
         "id": 2598878,

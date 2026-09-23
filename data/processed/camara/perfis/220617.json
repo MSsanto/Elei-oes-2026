@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:27:40.550711+00:00",
+      "generated_at_utc": "2026-09-23T08:59:40.176485+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220617/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 37,
+        "quantidade_registros": 38,
         "registros_recentes": [
+          {
+            "id": 2646900,
+            "sigla_tipo": "PL",
+            "numero": 5433,
+            "ano": 2026,
+            "ementa": "Altera as Leis nº 12.009, de 29 de julho de 2009, e nº 8.212, de 24 de julho de 1991, para assegurar seguro contra acidentes, contribuição previdenciária simplificada, crédito favorecido e transparência aos profissionais de entrega e de motofrete.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646900"
+          },
           {
             "id": 2646509,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Delegada Polícia Civil Daniela Campos Rodrigues Terra.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646188"
-          },
-          {
-            "id": 2644800,
-            "sigla_tipo": "PEC",
-            "numero": 16,
-            "ano": 2026,
-            "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220617"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220617",
-  "generated_at_utc": "2026-09-22T00:28:15.126718+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.238973+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1435,7 +1435,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 401,
+    "quantidade_registros": 402,
     "por_ano": [
       {
         "ano": 2023,
@@ -1451,10 +1451,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 37
+        "quantidade_registros": 38
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646900,
+        "sigla_tipo": "PL",
+        "numero": 5433,
+        "ano": 2026,
+        "ementa": "Altera as Leis nº 12.009, de 29 de julho de 2009, e nº 8.212, de 24 de julho de 1991, para assegurar seguro contra acidentes, contribuição previdenciária simplificada, crédito favorecido e transparência aos profissionais de entrega e de motofrete.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646900"
+      },
       {
         "id": 2646509,
         "sigla_tipo": "REQ",
@@ -1542,14 +1550,6 @@
         "ano": 2026,
         "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Delegada Polícia Civil Daniela Campos Rodrigues Terra.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646188"
-      },
-      {
-        "id": 2644800,
-        "sigla_tipo": "PEC",
-        "numero": 16,
-        "ano": 2026,
-        "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
       },
       {
         "id": 2598197,

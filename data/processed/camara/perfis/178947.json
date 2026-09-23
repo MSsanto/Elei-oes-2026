@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:28:08.800479+00:00",
+      "generated_at_utc": "2026-09-23T08:58:12.886792+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178947/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 328,
+        "quantidade_registros": 329,
         "registros_recentes": [
+          {
+            "id": 2646921,
+            "sigla_tipo": "PL",
+            "numero": 5440,
+            "ano": 2026,
+            "ementa": "Acrescenta artigo à Lei nº 7.565, de 19 de dezembro de 1986, que dispõe sobre o Código Brasileiro de Aeronáutica, para exigir a instalação de Gravador de Voz da Cabine (Cockpit Voice Recorder - CVR) e Gravador de Dados de Voo (Flight Data Recorder - FDR), equipamento de comunicação por Datalink com o controle de tráfego aéreo, quando a aeronave tiver sofrido grandes modificações aviônicas, e gerador de impulsos acústicos acionado automaticamente em contato com a água para localização subaquática (Underwater Locator Beacon - ULB).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646921"
+          },
           {
             "id": 2646647,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644535"
-          },
-          {
-            "id": 2644387,
-            "sigla_tipo": "INC",
-            "numero": 1546,
-            "ano": 2026,
-            "ementa": "Sugerindo a alteração da Lei nº 11.901, de 12 de janeiro de 2009, para criar o Conselho Federal dos Bombeiros Civis - CFBC e os Conselhos Regionais - CRBCs, como instância permanente de coordenação estratégica das políticas públicas voltadas ao fortalecimento e harmonização da categoria profissional deBombeiro Civil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644387"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178947"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178947",
-  "generated_at_utc": "2026-09-22T00:28:15.197458+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.092204+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1548,7 +1548,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1851,
+    "quantidade_registros": 1852,
     "por_ano": [
       {
         "ano": 2023,
@@ -1564,10 +1564,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 328
+        "quantidade_registros": 329
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646921,
+        "sigla_tipo": "PL",
+        "numero": 5440,
+        "ano": 2026,
+        "ementa": "Acrescenta artigo à Lei nº 7.565, de 19 de dezembro de 1986, que dispõe sobre o Código Brasileiro de Aeronáutica, para exigir a instalação de Gravador de Voz da Cabine (Cockpit Voice Recorder - CVR) e Gravador de Dados de Voo (Flight Data Recorder - FDR), equipamento de comunicação por Datalink com o controle de tráfego aéreo, quando a aeronave tiver sofrido grandes modificações aviônicas, e gerador de impulsos acústicos acionado automaticamente em contato com a água para localização subaquática (Underwater Locator Beacon - ULB).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646921"
+      },
       {
         "id": 2646647,
         "sigla_tipo": "REQ",
@@ -1655,14 +1663,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644535"
-      },
-      {
-        "id": 2644387,
-        "sigla_tipo": "INC",
-        "numero": 1546,
-        "ano": 2026,
-        "ementa": "Sugerindo a alteração da Lei nº 11.901, de 12 de janeiro de 2009, para criar o Conselho Federal dos Bombeiros Civis - CFBC e os Conselhos Regionais - CRBCs, como instância permanente de coordenação estratégica das políticas públicas voltadas ao fortalecimento e harmonização da categoria profissional deBombeiro Civil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644387"
       },
       {
         "id": 2599057,

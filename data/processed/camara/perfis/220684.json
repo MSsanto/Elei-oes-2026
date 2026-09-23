@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:26:09.019838+00:00",
+      "generated_at_utc": "2026-09-23T09:00:35.131485+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220684/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 55,
+        "quantidade_registros": 58,
         "registros_recentes": [
+          {
+            "id": 2646898,
+            "sigla_tipo": "RIC",
+            "numero": 2668,
+            "ano": 2026,
+            "ementa": "Requer informações ao Senhor Ministro de Estado da Agricultura e Pecuária acerca do posicionamento daquele Ministério sobre os possíveis impactos da utilização da técnica de fraturamento hidráulico (fracking) sobre as atividades agrícolas e pecuárias no Brasil, tendo em vista o Projeto de Lei nº 1.935, de 2019.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646898"
+          },
+          {
+            "id": 2646888,
+            "sigla_tipo": "RIC",
+            "numero": 2661,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro das Minas e ENergia, no âmbito da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis – ANP acerca das operações de fraturamento hidráulico realizadas no Brasil, do potencial de produção de petróleo e gás em reservatórios não convencionais, das empresas e investimentos envolvidos, dos resultados obtidos e da posição técnica da Agência sobre o PL nº 1.935/2019.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646888"
+          },
+          {
+            "id": 2646887,
+            "sigla_tipo": "RIC",
+            "numero": 2660,
+            "ano": 2026,
+            "ementa": "Requer informações ao Senhor Ministro de Estado do Meio Ambiente e Mudança do Clima acerca da exploração e produção de petróleo e gás natural mediante a utilização da técnica de fraturamento hidráulico (fracking) e da posição técnica da Agência sobre o PL nº 1.935/2019.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646887"
+          },
           {
             "id": 2646309,
             "sigla_tipo": "RIC",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1345/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635811"
-          },
-          {
-            "id": 2635810,
-            "sigla_tipo": "EMC",
-            "numero": 46,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1345/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635810"
-          },
-          {
-            "id": 2635809,
-            "sigla_tipo": "EMC",
-            "numero": 45,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1345/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635809"
-          },
-          {
-            "id": 2635808,
-            "sigla_tipo": "EMC",
-            "numero": 44,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1345/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635808"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220684"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220684",
-  "generated_at_utc": "2026-09-22T00:28:14.924992+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.338583+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 465,
+    "quantidade_registros": 468,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 55
+        "quantidade_registros": 58
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646898,
+        "sigla_tipo": "RIC",
+        "numero": 2668,
+        "ano": 2026,
+        "ementa": "Requer informações ao Senhor Ministro de Estado da Agricultura e Pecuária acerca do posicionamento daquele Ministério sobre os possíveis impactos da utilização da técnica de fraturamento hidráulico (fracking) sobre as atividades agrícolas e pecuárias no Brasil, tendo em vista o Projeto de Lei nº 1.935, de 2019.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646898"
+      },
+      {
+        "id": 2646888,
+        "sigla_tipo": "RIC",
+        "numero": 2661,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro das Minas e ENergia, no âmbito da Agência Nacional do Petróleo, Gás Natural e Biocombustíveis – ANP acerca das operações de fraturamento hidráulico realizadas no Brasil, do potencial de produção de petróleo e gás em reservatórios não convencionais, das empresas e investimentos envolvidos, dos resultados obtidos e da posição técnica da Agência sobre o PL nº 1.935/2019.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646888"
+      },
+      {
+        "id": 2646887,
+        "sigla_tipo": "RIC",
+        "numero": 2660,
+        "ano": 2026,
+        "ementa": "Requer informações ao Senhor Ministro de Estado do Meio Ambiente e Mudança do Clima acerca da exploração e produção de petróleo e gás natural mediante a utilização da técnica de fraturamento hidráulico (fracking) e da posição técnica da Agência sobre o PL nº 1.935/2019.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646887"
+      },
       {
         "id": 2646309,
         "sigla_tipo": "RIC",
@@ -1490,30 +1514,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1345/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635811"
-      },
-      {
-        "id": 2635810,
-        "sigla_tipo": "EMC",
-        "numero": 46,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1345/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635810"
-      },
-      {
-        "id": 2635809,
-        "sigla_tipo": "EMC",
-        "numero": 45,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1345/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635809"
-      },
-      {
-        "id": 2635808,
-        "sigla_tipo": "EMC",
-        "numero": 44,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1345/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635808"
       },
       {
         "id": 2596455,

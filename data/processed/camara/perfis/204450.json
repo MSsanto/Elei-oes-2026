@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:24:48.516850+00:00",
+      "generated_at_utc": "2026-09-23T08:56:58.621892+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204450/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 136,
+        "quantidade_registros": 137,
         "registros_recentes": [
+          {
+            "id": 2646889,
+            "sigla_tipo": "PL",
+            "numero": 5431,
+            "ano": 2026,
+            "ementa": "Regulamenta a profissão de Cuidador de Pessoa Idosa.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646889"
+          },
           {
             "id": 2644631,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei Complementar 120/2024, que institui o Pacto Nacional pela Restauração da Natureza e dos Biomas do Brasil, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642747"
-          },
-          {
-            "id": 2642677,
-            "sigla_tipo": "REQ",
-            "numero": 4011,
-            "ano": 2026,
-            "ementa": "Requer urgência para apreciação do Projeto de Lei nº 4159/2025, que “inscreve o nome de Padre Inácio de Sousa Rolim no Livro dos Heróis e Heroínas da Pátria”",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642677"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204450"
@@ -1201,7 +1201,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204450",
-  "generated_at_utc": "2026-09-22T00:28:14.756562+00:00",
+  "generated_at_utc": "2026-09-23T09:01:06.950335+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1429,7 +1429,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 963,
+    "quantidade_registros": 964,
     "por_ano": [
       {
         "ano": 2023,
@@ -1445,10 +1445,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 136
+        "quantidade_registros": 137
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646889,
+        "sigla_tipo": "PL",
+        "numero": 5431,
+        "ano": 2026,
+        "ementa": "Regulamenta a profissão de Cuidador de Pessoa Idosa.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646889"
+      },
       {
         "id": 2644631,
         "sigla_tipo": "DOC",
@@ -1536,14 +1544,6 @@
         "ano": 2026,
         "ementa": "Requer a urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei Complementar 120/2024, que institui o Pacto Nacional pela Restauração da Natureza e dos Biomas do Brasil, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642747"
-      },
-      {
-        "id": 2642677,
-        "sigla_tipo": "REQ",
-        "numero": 4011,
-        "ano": 2026,
-        "ementa": "Requer urgência para apreciação do Projeto de Lei nº 4159/2025, que “inscreve o nome de Padre Inácio de Sousa Rolim no Livro dos Heróis e Heroínas da Pátria”",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642677"
       },
       {
         "id": 2598424,

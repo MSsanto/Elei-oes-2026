@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:26:41.031590+00:00",
+      "generated_at_utc": "2026-09-23T08:59:01.752983+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220543/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 116,
+        "quantidade_registros": 117,
         "registros_recentes": [
+          {
+            "id": 2646903,
+            "sigla_tipo": "PL",
+            "numero": 5435,
+            "ano": 2026,
+            "ementa": "Altera as Leis nº 8.906, de 4 de julho de 1994, e nº 8.935, de 18 de novembro de 1994, para dispor sobre o exercício da advocacia por escreventes de serviços notariais e de registro.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646903"
+          },
           {
             "id": 2646662,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.203, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645686"
-          },
-          {
-            "id": 2645053,
-            "sigla_tipo": "RIC",
-            "numero": 2541,
-            "ano": 2026,
-            "ementa": "Requer ao Ministro de Estado da Saúde informações acerca da oferta, organização e acesso, no âmbito do Sistema Único de Saúde (SUS), à avaliação de risco hereditário oncológico, ao aconselhamento genético e aos exames destinados à identificação de variantes genéticas associadas à predisposição hereditária ao câncer.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645053"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220543"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220543",
-  "generated_at_utc": "2026-09-22T00:28:15.000165+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.171696+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 998,
+    "quantidade_registros": 999,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 116
+        "quantidade_registros": 117
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646903,
+        "sigla_tipo": "PL",
+        "numero": 5435,
+        "ano": 2026,
+        "ementa": "Altera as Leis nº 8.906, de 4 de julho de 1994, e nº 8.935, de 18 de novembro de 1994, para dispor sobre o exercício da advocacia por escreventes de serviços notariais e de registro.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646903"
+      },
       {
         "id": 2646662,
         "sigla_tipo": "PL",
@@ -1510,14 +1518,6 @@
         "ano": 2026,
         "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.203, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645686"
-      },
-      {
-        "id": 2645053,
-        "sigla_tipo": "RIC",
-        "numero": 2541,
-        "ano": 2026,
-        "ementa": "Requer ao Ministro de Estado da Saúde informações acerca da oferta, organização e acesso, no âmbito do Sistema Único de Saúde (SUS), à avaliação de risco hereditário oncológico, ao aconselhamento genético e aos exames destinados à identificação de variantes genéticas associadas à predisposição hereditária ao câncer.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645053"
       },
       {
         "id": 2599001,

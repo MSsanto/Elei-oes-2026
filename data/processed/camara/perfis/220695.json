@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:27:28.940686+00:00",
+      "generated_at_utc": "2026-09-23T09:00:37.837526+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220695/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 199,
+        "quantidade_registros": 200,
         "registros_recentes": [
+          {
+            "id": 2646920,
+            "sigla_tipo": "PL",
+            "numero": 5439,
+            "ano": 2026,
+            "ementa": "Institui o Dia Nacional de Enfrentamento à Violência Sexual contra Crianças e Adolescentes no Ambiente Digital.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646920"
+          },
           {
             "id": 2646823,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado do Desenvolvimento e Assistência Social, Família e Combate à Fome acerca da execução, abrangência, recursos aplicados e resultados das políticas e programas federais destinados à população em situação de rua, especialmente quanto à inclusão produtiva, empregabilidade, tratamento relacionado ao uso de álcool e outras drogas, acolhimento e superação da situação de rua.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644612"
-          },
-          {
-            "id": 2644610,
-            "sigla_tipo": "INC",
-            "numero": 1551,
-            "ano": 2026,
-            "ementa": "Sugere ao Ministério dos Direitos Humanos e da Cidadania a adoção de medidas destinadas ao fortalecimento da integração, monitoramento, transparência e avaliação das políticas públicas voltadas à população em situação de rua, com especial atenção às interfaces com saúde mental, dependência química, assistência social e segurança pública.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644610"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220695"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220695",
-  "generated_at_utc": "2026-09-22T00:28:15.101325+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.340357+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1353,
+    "quantidade_registros": 1354,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 199
+        "quantidade_registros": 200
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646920,
+        "sigla_tipo": "PL",
+        "numero": 5439,
+        "ano": 2026,
+        "ementa": "Institui o Dia Nacional de Enfrentamento à Violência Sexual contra Crianças e Adolescentes no Ambiente Digital.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646920"
+      },
       {
         "id": 2646823,
         "sigla_tipo": "REQ",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado do Desenvolvimento e Assistência Social, Família e Combate à Fome acerca da execução, abrangência, recursos aplicados e resultados das políticas e programas federais destinados à população em situação de rua, especialmente quanto à inclusão produtiva, empregabilidade, tratamento relacionado ao uso de álcool e outras drogas, acolhimento e superação da situação de rua.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644612"
-      },
-      {
-        "id": 2644610,
-        "sigla_tipo": "INC",
-        "numero": 1551,
-        "ano": 2026,
-        "ementa": "Sugere ao Ministério dos Direitos Humanos e da Cidadania a adoção de medidas destinadas ao fortalecimento da integração, monitoramento, transparência e avaliação das políticas públicas voltadas à população em situação de rua, com especial atenção às interfaces com saúde mental, dependência química, assistência social e segurança pública.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644610"
       },
       {
         "id": 2599333,

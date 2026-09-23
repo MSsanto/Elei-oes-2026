@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:24:48.205208+00:00",
+      "generated_at_utc": "2026-09-23T08:58:34.758775+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220666/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 84,
+        "quantidade_registros": 86,
         "registros_recentes": [
+          {
+            "id": 2646922,
+            "sigla_tipo": "PL",
+            "numero": 5441,
+            "ano": 2026,
+            "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor que a pena do crime de denunciação caluniosa será a mesma cominada ao crime imputado",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646922"
+          },
+          {
+            "id": 2646899,
+            "sigla_tipo": "PL",
+            "numero": 5432,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.171, de 17 de janeiro de 1991, para estabelecer diretrizes de tratamento diferenciado na cobrança pela emissão da Guia de Trânsito Animal para aves das ordens Passeriformes e Psittaciformes.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646899"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer autorização para impressão do Relatório de Atividades da Comissão de Segurança Pública e Combate ao Crime Organizado de 2026.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642336"
-          },
-          {
-            "id": 2641972,
-            "sigla_tipo": "PLP",
-            "numero": 230,
-            "ano": 2026,
-            "ementa": "Altera a Lei Complementar nº 213, de 15 de janeiro de 2025, e o Decreto-Lei nº 73, de 21 de novembro de 1966, a Lei nº 10.190, de 14 de fevereiro de 2001, a Lei Complementar nº 126, de 15 de janeiro de 2007, e a Lei nº 12.249, de 11 de junho de 2010, para instituir regime jurídico próprio, proporcional e autogerido para as associações de proteção patrimonial mutualista, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641972"
-          },
-          {
-            "id": 2641424,
-            "sigla_tipo": "PL",
-            "numero": 4729,
-            "ano": 2026,
-            "ementa": "Altera o art. 233-A da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para reduzir o prazo de habilitação ao voto em trânsito dos integrantes das Forças Armadas, dos agentes de segurança pública de que trata o art. 144 da Constituição Federal e das guardas municipais em serviço no dia da eleição, para impor à Justiça Eleitoral o dever de organizar a votação desses eleitores, para assegurar a dispensa remunerada de até duas horas de serviço para o exercício do voto e para instituir sanção pelo descumprimento.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641424"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220666"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220666",
-  "generated_at_utc": "2026-09-22T00:28:14.758337+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.130162+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 800,
+    "quantidade_registros": 802,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 84
+        "quantidade_registros": 86
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646922,
+        "sigla_tipo": "PL",
+        "numero": 5441,
+        "ano": 2026,
+        "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor que a pena do crime de denunciação caluniosa será a mesma cominada ao crime imputado",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646922"
+      },
+      {
+        "id": 2646899,
+        "sigla_tipo": "PL",
+        "numero": 5432,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.171, de 17 de janeiro de 1991, para estabelecer diretrizes de tratamento diferenciado na cobrança pela emissão da Guia de Trânsito Animal para aves das ordens Passeriformes e Psittaciformes.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646899"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1501,22 +1517,6 @@
         "ano": 2026,
         "ementa": "Requer autorização para impressão do Relatório de Atividades da Comissão de Segurança Pública e Combate ao Crime Organizado de 2026.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642336"
-      },
-      {
-        "id": 2641972,
-        "sigla_tipo": "PLP",
-        "numero": 230,
-        "ano": 2026,
-        "ementa": "Altera a Lei Complementar nº 213, de 15 de janeiro de 2025, e o Decreto-Lei nº 73, de 21 de novembro de 1966, a Lei nº 10.190, de 14 de fevereiro de 2001, a Lei Complementar nº 126, de 15 de janeiro de 2007, e a Lei nº 12.249, de 11 de junho de 2010, para instituir regime jurídico próprio, proporcional e autogerido para as associações de proteção patrimonial mutualista, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641972"
-      },
-      {
-        "id": 2641424,
-        "sigla_tipo": "PL",
-        "numero": 4729,
-        "ano": 2026,
-        "ementa": "Altera o art. 233-A da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para reduzir o prazo de habilitação ao voto em trânsito dos integrantes das Forças Armadas, dos agentes de segurança pública de que trata o art. 144 da Constituição Federal e das guardas municipais em serviço no dia da eleição, para impor à Justiça Eleitoral o dever de organizar a votação desses eleitores, para assegurar a dispensa remunerada de até duas horas de serviço para o exercício do voto e para instituir sanção pelo descumprimento.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641424"
       },
       {
         "id": 2598197,

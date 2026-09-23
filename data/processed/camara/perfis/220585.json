@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-22T00:25:27.874097+00:00",
+      "generated_at_utc": "2026-09-23T08:57:23.301291+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220585/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 9,
+        "quantidade_registros": 10,
         "registros_recentes": [
+          {
+            "id": 2646901,
+            "sigla_tipo": "PL",
+            "numero": 5434,
+            "ano": 2026,
+            "ementa": "Reconhece a profissão de bugueiro turístico, dispõe sobre as condições de seu exercício e sobre as relações de trabalho dela decorrentes, e altera a Lei nº 11.771, de 17 de setembro de 2008, para incluir o bugueiro turístico entre os profissionais de turismo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646901"
+          },
           {
             "id": 2633488,
             "sigla_tipo": "PEC",
@@ -1247,7 +1255,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220585",
-  "generated_at_utc": "2026-09-22T00:28:14.840360+00:00",
+  "generated_at_utc": "2026-09-23T09:01:07.003986+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1423,7 +1431,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 214,
+    "quantidade_registros": 215,
     "por_ano": [
       {
         "ano": 2023,
@@ -1439,10 +1447,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 9
+        "quantidade_registros": 10
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646901,
+        "sigla_tipo": "PL",
+        "numero": 5434,
+        "ano": 2026,
+        "ementa": "Reconhece a profissão de bugueiro turístico, dispõe sobre as condições de seu exercício e sobre as relações de trabalho dela decorrentes, e altera a Lei nº 11.771, de 17 de setembro de 2008, para incluir o bugueiro turístico entre os profissionais de turismo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646901"
+      },
       {
         "id": 2633488,
         "sigla_tipo": "PEC",
@@ -1626,14 +1642,6 @@
         "ano": 2024,
         "ementa": "Altera o art. 53 da Constituição Federal para deixar explícito que a imunidade material de Deputados e Senadores se aplica independentemente do local em que forem proferidas opiniões, palavras e votos, e para determinar ao Ministro do Supremo Tribunal Federal que, no exercício de suas funções, contrariar esta disposição, a pena de perda do cargo, sem vencimentos e com inabilitação, por até cinco anos, para o exercício de qualquer função pública.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2478427"
-      },
-      {
-        "id": 2474848,
-        "sigla_tipo": "PFC",
-        "numero": 47,
-        "ano": 2024,
-        "ementa": "Requer que a Comissão de Cultura realize, com o auxílio do Tribunal de Contas da União, ato de fiscalização e controle, a fim de apurar o valor efetivo das renúncias de receita tributária decorrentes da aplicação do benefício fiscal previsto no art. 4º da Lei nº 14.148, de 3 de maio de 2021, que instituiu o Programa Emergencial de Retomada do Setor de Eventos – PERSE, discriminando-se os valores em que os beneficiários obtiveram acesso ao incentivo fiscal através da via judiciária.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2474848"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220585",
