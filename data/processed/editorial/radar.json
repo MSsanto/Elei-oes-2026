@@ -1,11 +1,37 @@
 {
   "schema_version": 1,
   "mode": "changes",
-  "generated_at_utc": "2026-09-22T23:48:26.500171+00:00",
+  "generated_at_utc": "2026-09-23T14:25:47.296121+00:00",
   "source": "TSE — dados eleitorais e Prestação de Contas Eleitorais 2026",
   "source_url": "https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026",
   "methodology": "Eventos são gerados somente quando um campo acompanhado difere entre duas cargas processadas consecutivas.",
   "events": [
+    {
+      "timestamp": "2026-09-23T14:25:47.296121+00:00",
+      "candidate_id": "100002545711",
+      "candidate_name": "CABO VIEIRA",
+      "cargo": "",
+      "partido": "NOVO",
+      "uf": "MA",
+      "href": "/candidato/100002545711",
+      "id": "2026-09-23T14:25:47.296121+00:00:100002545711:status",
+      "type": "cadastro",
+      "title": "Situação da candidatura atualizada",
+      "detail": "Pendente de julgamento → Deferido"
+    },
+    {
+      "timestamp": "2026-09-23T14:25:47.296121+00:00",
+      "candidate_id": "70002540521",
+      "candidate_name": "ROSI COSTA",
+      "cargo": "Deputado Distrital",
+      "partido": "PT",
+      "uf": "DF",
+      "href": "/candidato/70002540521",
+      "id": "2026-09-23T14:25:47.296121+00:00:70002540521:status",
+      "type": "cadastro",
+      "title": "Situação da candidatura atualizada",
+      "detail": "Deferido com recurso → Deferido"
+    },
     {
       "timestamp": "2026-09-22T23:48:26.500171+00:00",
       "candidate_id": "100002552700",
@@ -7816,38 +7842,6 @@
       "before": 11912.82,
       "after": 16143.94,
       "delta": 4231.12,
-      "detail": "Diferença detectada entre duas cargas processadas consecutivas da fonte oficial."
-    },
-    {
-      "timestamp": "2026-09-22T14:10:57.919147+00:00",
-      "candidate_id": "160002551176",
-      "candidate_name": "ALESSANDRA LIMA",
-      "cargo": "Deputado Estadual",
-      "partido": "MISSÃO",
-      "uf": "PR",
-      "href": "/candidato/160002551176",
-      "id": "2026-09-22T14:10:57.919147+00:00:160002551176:total_despesas_contratadas",
-      "type": "financas",
-      "title": "Total de despesas contratadas atualizado",
-      "before": 1144.7,
-      "after": 1494.7,
-      "delta": 350,
-      "detail": "Diferença detectada entre duas cargas processadas consecutivas da fonte oficial."
-    },
-    {
-      "timestamp": "2026-09-22T14:10:57.919147+00:00",
-      "candidate_id": "160002551183",
-      "candidate_name": "NATALIE FACCO",
-      "cargo": "Deputado Estadual",
-      "partido": "MISSÃO",
-      "uf": "PR",
-      "href": "/candidato/160002551183",
-      "id": "2026-09-22T14:10:57.919147+00:00:160002551183:total_despesas_contratadas",
-      "type": "financas",
-      "title": "Total de despesas contratadas atualizado",
-      "before": 1651,
-      "after": 1652,
-      "delta": 1,
       "detail": "Diferença detectada entre duas cargas processadas consecutivas da fonte oficial."
     }
   ]
