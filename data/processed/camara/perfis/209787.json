@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:59:37.654124+00:00",
+      "generated_at_utc": "2026-09-24T14:32:15.017732+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/209787/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 97,
+        "quantidade_registros": 98,
         "registros_recentes": [
+          {
+            "id": 2646944,
+            "sigla_tipo": "RIC",
+            "numero": 2680,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Secretaria de Comunicação Social da Presidência da República acerca da estimativa de público divulgada para o Desfile Cívico-Militar de 7 de Setembro de 2026, em Brasília.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646944"
+          },
           {
             "id": 2645846,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Solicita ao Ministro de Estado do Planejamento e Orçamento informações sobre as medidas anunciadas pelo Poder Executivo relativas à ampliação do programa Minha Casa Minha Vida e à reformulação do programa Reforma Casa Brasil, especialmente no que diz respeito à sua compatibilidade com o ordenamento orçamentário e fiscal vigente.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641451"
-          },
-          {
-            "id": 2639348,
-            "sigla_tipo": "PL",
-            "numero": 3675,
-            "ano": 2026,
-            "ementa": "Altera as Leis nº 13.726, de 8 de outubro de 2018, e nº 14.129, de 29 de março de 2021, para vedar a exigência de reapresentação de informações ou documentos já apresentados pelo interessado ou disponíveis em base de dados oficial acessível ao Poder Público.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639348"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=209787"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "209787",
-  "generated_at_utc": "2026-09-23T09:01:07.234563+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.714690+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1136,
+    "quantidade_registros": 1137,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 97
+        "quantidade_registros": 98
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646944,
+        "sigla_tipo": "RIC",
+        "numero": 2680,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Secretaria de Comunicação Social da Presidência da República acerca da estimativa de público divulgada para o Desfile Cívico-Militar de 7 de Setembro de 2026, em Brasília.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646944"
+      },
       {
         "id": 2645846,
         "sigla_tipo": "EMC",
@@ -1510,14 +1518,6 @@
         "ano": 2026,
         "ementa": "Solicita ao Ministro de Estado do Planejamento e Orçamento informações sobre as medidas anunciadas pelo Poder Executivo relativas à ampliação do programa Minha Casa Minha Vida e à reformulação do programa Reforma Casa Brasil, especialmente no que diz respeito à sua compatibilidade com o ordenamento orçamentário e fiscal vigente.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641451"
-      },
-      {
-        "id": 2639348,
-        "sigla_tipo": "PL",
-        "numero": 3675,
-        "ano": 2026,
-        "ementa": "Altera as Leis nº 13.726, de 8 de outubro de 2018, e nº 14.129, de 29 de março de 2021, para vedar a exigência de reapresentação de informações ou documentos já apresentados pelo interessado ou disponíveis em base de dados oficial acessível ao Poder Público.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639348"
       },
       {
         "id": 2598197,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:57:56.610259+00:00",
+      "generated_at_utc": "2026-09-24T14:34:57.826067+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220559/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 164,
+        "quantidade_registros": 165,
         "registros_recentes": [
+          {
+            "id": 2646937,
+            "sigla_tipo": "PL",
+            "numero": 5444,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 11.033, de 21 de dezembro de 2004, para atualizar e indexar o limite mensal de isenção do imposto sobre a renda incidente sobre os ganhos líquidos auferidos por pessoa física em bolsa de valores ou em mercado de balcão organizado, estendê-lo a outros ativos financeiros e às operações de day trade, instituir isenção para os ganhos auferidos por pessoa física em investimentos de longo prazo em títulos e valores mobiliários de financiamento da atividade produtiva, e para fixar limites às despesas do Poder Executivo federal com publicidade institucional, diárias, passagens e eventos, como medida de compensação da renúncia de receita.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646937"
+          },
           {
             "id": 2646388,
             "sigla_tipo": "PDL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre a atualização monetária do custo de aquisição de bens e direitos na apuração do ganho de capital das pessoas físicas e das pessoas jurídicas não tributadas com base no lucro real; institui regime opcional de atualização de bens a valor de mercado, com incidência do imposto sobre a renda e da Contribuição Social sobre o Lucro Líquido; e altera as Leis nºs 7.713, de 22 de dezembro de 1988, 9.249, de 26 de dezembro de 1995, 9.430, de 27 de dezembro de 1996, e 13.259, de 16 de março de 2016.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644883"
-          },
-          {
-            "id": 2644551,
-            "sigla_tipo": "PL",
-            "numero": 5174,
-            "ano": 2026,
-            "ementa": "Proíbe a execução de atividades e de experimentos de campo de modificação da radiação solar no território nacional e nos demais espaços sujeitos à jurisdição brasileira, nos limites do direito internacional, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644551"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220559"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220559",
-  "generated_at_utc": "2026-09-23T09:01:07.065586+00:00",
+  "generated_at_utc": "2026-09-24T14:35:48.050322+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 786,
+    "quantidade_registros": 787,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 164
+        "quantidade_registros": 165
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646937,
+        "sigla_tipo": "PL",
+        "numero": 5444,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 11.033, de 21 de dezembro de 2004, para atualizar e indexar o limite mensal de isenção do imposto sobre a renda incidente sobre os ganhos líquidos auferidos por pessoa física em bolsa de valores ou em mercado de balcão organizado, estendê-lo a outros ativos financeiros e às operações de day trade, instituir isenção para os ganhos auferidos por pessoa física em investimentos de longo prazo em títulos e valores mobiliários de financiamento da atividade produtiva, e para fixar limites às despesas do Poder Executivo federal com publicidade institucional, diárias, passagens e eventos, como medida de compensação da renúncia de receita.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646937"
+      },
       {
         "id": 2646388,
         "sigla_tipo": "PDL",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre a atualização monetária do custo de aquisição de bens e direitos na apuração do ganho de capital das pessoas físicas e das pessoas jurídicas não tributadas com base no lucro real; institui regime opcional de atualização de bens a valor de mercado, com incidência do imposto sobre a renda e da Contribuição Social sobre o Lucro Líquido; e altera as Leis nºs 7.713, de 22 de dezembro de 1988, 9.249, de 26 de dezembro de 1995, 9.430, de 27 de dezembro de 1996, e 13.259, de 16 de março de 2016.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644883"
-      },
-      {
-        "id": 2644551,
-        "sigla_tipo": "PL",
-        "numero": 5174,
-        "ano": 2026,
-        "ementa": "Proíbe a execução de atividades e de experimentos de campo de modificação da radiação solar no território nacional e nos demais espaços sujeitos à jurisdição brasileira, nos limites do direito internacional, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644551"
       },
       {
         "id": 2598979,

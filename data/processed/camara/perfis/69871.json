@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:58:21.328209+00:00",
+      "generated_at_utc": "2026-09-24T14:32:56.185895+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/69871/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 38,
+        "quantidade_registros": 39,
         "registros_recentes": [
+          {
+            "id": 2646969,
+            "sigla_tipo": "PL",
+            "numero": 5455,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 13.675, de 11 de junho de 2018, que institui o Sistema Único de Segurança Pública (Susp), para dispor sobre a integração dos dados de mortalidade por causas externas ao Sinesp e sobre a redução das mortes violentas por causa indeterminada.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646969"
+          },
           {
             "id": 2646365,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre a criação e o funcionamento de Cooperativas Solidárias, visando a promoção social da cidadania, da organização coletiva mutualista e dos direitos fundamentais de vida digna, conforme especifica.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641582"
-          },
-          {
-            "id": 2641415,
-            "sigla_tipo": "PL",
-            "numero": 4720,
-            "ano": 2026,
-            "ementa": "Acrescenta dispositivo à Lei nº 14.113, de 2020, que regulamenta o Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação – Fundeb, para dispor sobre auditorias anuais voltadas para a utilização de seus recursos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641415"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=69871"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "69871",
-  "generated_at_utc": "2026-09-23T09:01:07.108668+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.808012+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1531,7 +1531,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 510,
+    "quantidade_registros": 511,
     "por_ano": [
       {
         "ano": 2023,
@@ -1547,10 +1547,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 38
+        "quantidade_registros": 39
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646969,
+        "sigla_tipo": "PL",
+        "numero": 5455,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 13.675, de 11 de junho de 2018, que institui o Sistema Único de Segurança Pública (Susp), para dispor sobre a integração dos dados de mortalidade por causas externas ao Sinesp e sobre a redução das mortes violentas por causa indeterminada.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646969"
+      },
       {
         "id": 2646365,
         "sigla_tipo": "PL",
@@ -1638,14 +1646,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre a criação e o funcionamento de Cooperativas Solidárias, visando a promoção social da cidadania, da organização coletiva mutualista e dos direitos fundamentais de vida digna, conforme especifica.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641582"
-      },
-      {
-        "id": 2641415,
-        "sigla_tipo": "PL",
-        "numero": 4720,
-        "ano": 2026,
-        "ementa": "Acrescenta dispositivo à Lei nº 14.113, de 2020, que regulamenta o Fundo de Manutenção e Desenvolvimento da Educação Básica e de Valorização dos Profissionais da Educação – Fundeb, para dispor sobre auditorias anuais voltadas para a utilização de seus recursos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641415"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:58:24.230448+00:00",
+      "generated_at_utc": "2026-09-24T14:32:13.402877+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141450/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 77,
+        "quantidade_registros": 78,
         "registros_recentes": [
+          {
+            "id": 2646931,
+            "sigla_tipo": "REQ",
+            "numero": 4260,
+            "ano": 2026,
+            "ementa": "Requer revisão de despacho de distribuição do Projeto de Lei  nº 1642, de 2026, de autoria do Dep. Ricardo Ayres (Republicanos/TO), a fim de que a Comissão de Viação e Transportes (CVT) também analise o mérito da matéria.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646931"
+          },
           {
             "id": 2646831,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-          },
-          {
-            "id": 2638466,
-            "sigla_tipo": "REQ",
-            "numero": 3824,
-            "ano": 2026,
-            "ementa": "Requer Voto de Louvor ao Sr. José Eloy da Silva Junior, pelos brilhantes serviços prestados em prol da população do Estado do Rio de Janeiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638466"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141450"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141450",
-  "generated_at_utc": "2026-09-23T09:01:07.112843+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.712342+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1818,7 +1818,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 443,
+    "quantidade_registros": 444,
     "por_ano": [
       {
         "ano": 2023,
@@ -1834,10 +1834,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 77
+        "quantidade_registros": 78
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646931,
+        "sigla_tipo": "REQ",
+        "numero": 4260,
+        "ano": 2026,
+        "ementa": "Requer revisão de despacho de distribuição do Projeto de Lei  nº 1642, de 2026, de autoria do Dep. Ricardo Ayres (Republicanos/TO), a fim de que a Comissão de Viação e Transportes (CVT) também analise o mérito da matéria.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646931"
+      },
       {
         "id": 2646831,
         "sigla_tipo": "REQ",
@@ -1925,14 +1933,6 @@
         "ano": 2026,
         "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-      },
-      {
-        "id": 2638466,
-        "sigla_tipo": "REQ",
-        "numero": 3824,
-        "ano": 2026,
-        "ementa": "Requer Voto de Louvor ao Sr. José Eloy da Silva Junior, pelos brilhantes serviços prestados em prol da população do Estado do Rio de Janeiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638466"
       },
       {
         "id": 2599001,

@@ -58,7 +58,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:58:47.037472+00:00",
+      "generated_at_utc": "2026-09-24T14:33:44.716282+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -66,8 +66,64 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236423/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 3,
+        "quantidade_registros": 10,
         "registros_recentes": [
+          {
+            "id": 2646984,
+            "sigla_tipo": "PL",
+            "numero": 5464,
+            "ano": 2026,
+            "ementa": "Institui a Rede Nacional de Reaproveitamento de Materiais Esportivos e estabelece diretrizes para doação, recuperação e destinação social de equipamentos em condições de uso.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646984"
+          },
+          {
+            "id": 2646981,
+            "sigla_tipo": "PL",
+            "numero": 5462,
+            "ano": 2026,
+            "ementa": "Estabelece diretrizes nacionais para a proteção da comunidade escolar e a continuidade das atividades educacionais durante eventos climáticos extremos.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646981"
+          },
+          {
+            "id": 2646979,
+            "sigla_tipo": "PL",
+            "numero": 5461,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a comunicação ativa de resultados críticos de exames e procedimentos diagnósticos e estabelece garantias de informação e segurança ao paciente.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646979"
+          },
+          {
+            "id": 2646978,
+            "sigla_tipo": "PL",
+            "numero": 5460,
+            "ano": 2026,
+            "ementa": "Dispõe sobre o direito do paciente a plano de alta hospitalar segura, compreensível e acessível.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646978"
+          },
+          {
+            "id": 2646976,
+            "sigla_tipo": "PL",
+            "numero": 5459,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.597, de 14 de junho de 2023, para estabelecer medidas de proteção de crianças e adolescentes em casos de suspeita de concussão relacionada à prática esportiva.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646976"
+          },
+          {
+            "id": 2646975,
+            "sigla_tipo": "PL",
+            "numero": 5458,
+            "ano": 2026,
+            "ementa": "Institui o Passaporte Educacional de Emergência e estabelece medidas para assegurar matrícula, documentação e continuidade da aprendizagem de estudantes atingidos por emergência ou calamidade pública.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646975"
+          },
+          {
+            "id": 2646974,
+            "sigla_tipo": "PL",
+            "numero": 5457,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.790, de 29 de dezembro de 2023, para assegurar informação sobre cuidado em saúde, confirmação da autoexclusão centralizada e proteção dos dados das pessoas que solicitam a interrupção do acesso a apostas de quota fixa.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646974"
+          },
           {
             "id": 2642514,
             "sigla_tipo": "REQ",
@@ -265,7 +321,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "236423",
-  "generated_at_utc": "2026-09-23T09:01:07.150096+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.905629+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -425,7 +481,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 3,
+    "quantidade_registros": 10,
     "por_ano": [
       {
         "ano": 2023,
@@ -441,10 +497,66 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 3
+        "quantidade_registros": 10
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646984,
+        "sigla_tipo": "PL",
+        "numero": 5464,
+        "ano": 2026,
+        "ementa": "Institui a Rede Nacional de Reaproveitamento de Materiais Esportivos e estabelece diretrizes para doação, recuperação e destinação social de equipamentos em condições de uso.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646984"
+      },
+      {
+        "id": 2646981,
+        "sigla_tipo": "PL",
+        "numero": 5462,
+        "ano": 2026,
+        "ementa": "Estabelece diretrizes nacionais para a proteção da comunidade escolar e a continuidade das atividades educacionais durante eventos climáticos extremos.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646981"
+      },
+      {
+        "id": 2646979,
+        "sigla_tipo": "PL",
+        "numero": 5461,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a comunicação ativa de resultados críticos de exames e procedimentos diagnósticos e estabelece garantias de informação e segurança ao paciente.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646979"
+      },
+      {
+        "id": 2646978,
+        "sigla_tipo": "PL",
+        "numero": 5460,
+        "ano": 2026,
+        "ementa": "Dispõe sobre o direito do paciente a plano de alta hospitalar segura, compreensível e acessível.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646978"
+      },
+      {
+        "id": 2646976,
+        "sigla_tipo": "PL",
+        "numero": 5459,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.597, de 14 de junho de 2023, para estabelecer medidas de proteção de crianças e adolescentes em casos de suspeita de concussão relacionada à prática esportiva.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646976"
+      },
+      {
+        "id": 2646975,
+        "sigla_tipo": "PL",
+        "numero": 5458,
+        "ano": 2026,
+        "ementa": "Institui o Passaporte Educacional de Emergência e estabelece medidas para assegurar matrícula, documentação e continuidade da aprendizagem de estudantes atingidos por emergência ou calamidade pública.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646975"
+      },
+      {
+        "id": 2646974,
+        "sigla_tipo": "PL",
+        "numero": 5457,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.790, de 29 de dezembro de 2023, para assegurar informação sobre cuidado em saúde, confirmação da autoexclusão centralizada e proteção dos dados das pessoas que solicitam a interrupção do acesso a apostas de quota fixa.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646974"
+      },
       {
         "id": 2642514,
         "sigla_tipo": "REQ",

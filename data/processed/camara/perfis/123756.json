@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:57:42.264118+00:00",
+      "generated_at_utc": "2026-09-24T14:33:01.888825+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/123756/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 7,
+        "quantidade_registros": 8,
         "registros_recentes": [
+          {
+            "id": 2646955,
+            "sigla_tipo": "PL",
+            "numero": 5449,
+            "ano": 2026,
+            "ementa": "Dispõe que o equipamento de monitoração eletrônica usado por agressor em cumprimento de medida protetiva de urgência possa ser dotado de mecanismo interno de condução de energia do tipo eletrochoque (taser) destinado à sua incapacitação física temporária na hipótese de rompimento do perímetro de exclusão fixado judicialmente.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646955"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1231,7 +1239,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "123756",
-  "generated_at_utc": "2026-09-23T09:01:07.037580+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.820366+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1535,7 +1543,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 685,
+    "quantidade_registros": 686,
     "por_ano": [
       {
         "ano": 2023,
@@ -1551,10 +1559,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 7
+        "quantidade_registros": 8
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646955,
+        "sigla_tipo": "PL",
+        "numero": 5449,
+        "ano": 2026,
+        "ementa": "Dispõe que o equipamento de monitoração eletrônica usado por agressor em cumprimento de medida protetiva de urgência possa ser dotado de mecanismo interno de condução de energia do tipo eletrochoque (taser) destinado à sua incapacitação física temporária na hipótese de rompimento do perímetro de exclusão fixado judicialmente.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646955"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1738,14 +1754,6 @@
         "ano": 2024,
         "ementa": "Requer, nos termos do § 3° do art. 58 da Constituição Federal, combinado com o art. 35 do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito destinada a investigar fatos relativos à demarcação, uso e gestão de terras indígenas nos termos que especifica.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2479457"
-      },
-      {
-        "id": 2476028,
-        "sigla_tipo": "REQ",
-        "numero": 4754,
-        "ano": 2024,
-        "ementa": "Requer o Registro da Frente Parlamentar em defesa das Locadoras de Veiculos do Brasil na 57ª legislatura.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2476028"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=123756",

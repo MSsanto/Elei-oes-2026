@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T09:00:15.250508+00:00",
+      "generated_at_utc": "2026-09-24T14:34:45.118076+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220548/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 62,
+        "quantidade_registros": 63,
         "registros_recentes": [
+          {
+            "id": 2646953,
+            "sigla_tipo": "INC",
+            "numero": 1602,
+            "ano": 2026,
+            "ementa": "Requer o envio de Indicação à Autoridade Nacional de Proteção de Dados (ANPD), por intermédio do Ministério da Justiça e Segurança Pública, sugerindo que adote as providências cabíveis para solicitar à empresa Meta Platforms, Inc. informações circunstanciadas acerca da remoção temporária do perfil oficial da série de reportagens “Revelando” na plataforma Instagram, bem como dos critérios, procedimentos e mecanismos de moderação empregados no caso.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646953"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
-          },
-          {
-            "id": 2629634,
-            "sigla_tipo": "REQ",
-            "numero": 3272,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene em homenagem aos 15 anos de efetiva implementação da Superintendência do Desenvolvimento do Centro-Oeste – SUDECO.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629634"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220548"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220548",
-  "generated_at_utc": "2026-09-23T09:01:07.301987+00:00",
+  "generated_at_utc": "2026-09-24T14:35:48.029440+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 661,
+    "quantidade_registros": 662,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 62
+        "quantidade_registros": 63
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646953,
+        "sigla_tipo": "INC",
+        "numero": 1602,
+        "ano": 2026,
+        "ementa": "Requer o envio de Indicação à Autoridade Nacional de Proteção de Dados (ANPD), por intermédio do Ministério da Justiça e Segurança Pública, sugerindo que adote as providências cabíveis para solicitar à empresa Meta Platforms, Inc. informações circunstanciadas acerca da remoção temporária do perfil oficial da série de reportagens “Revelando” na plataforma Instagram, bem como dos critérios, procedimentos e mecanismos de moderação empregados no caso.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646953"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1510,14 +1518,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
-      },
-      {
-        "id": 2629634,
-        "sigla_tipo": "REQ",
-        "numero": 3272,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene em homenagem aos 15 anos de efetiva implementação da Superintendência do Desenvolvimento do Centro-Oeste – SUDECO.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629634"
       },
       {
         "id": 2599135,

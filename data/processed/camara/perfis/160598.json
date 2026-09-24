@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:58:02.591344+00:00",
+      "generated_at_utc": "2026-09-24T14:32:18.035299+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160598/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 78,
+        "quantidade_registros": 79,
         "registros_recentes": [
+          {
+            "id": 2646943,
+            "sigla_tipo": "REQ",
+            "numero": 4262,
+            "ano": 2026,
+            "ementa": "Requer urgência para a apreciação do Projeto de Lei nº 6.685, de 2009.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646943"
+          },
           {
             "id": 2646661,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Mês Nacional de Conscientização das Doenças da Tireoide — Maio Azul.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641571"
-          },
-          {
-            "id": 2640016,
-            "sigla_tipo": "PL",
-            "numero": 3751,
-            "ano": 2026,
-            "ementa": "Dispõe sobre deveres de transparência e responsabilidade na divulgação remunerada de apostas por influenciadores digitais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640016"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160598"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160598",
-  "generated_at_utc": "2026-09-23T09:01:07.077326+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.722386+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1562,7 +1562,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1213,
+    "quantidade_registros": 1214,
     "por_ano": [
       {
         "ano": 2023,
@@ -1578,10 +1578,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 78
+        "quantidade_registros": 79
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646943,
+        "sigla_tipo": "REQ",
+        "numero": 4262,
+        "ano": 2026,
+        "ementa": "Requer urgência para a apreciação do Projeto de Lei nº 6.685, de 2009.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646943"
+      },
       {
         "id": 2646661,
         "sigla_tipo": "PL",
@@ -1669,14 +1677,6 @@
         "ano": 2026,
         "ementa": "Institui o Mês Nacional de Conscientização das Doenças da Tireoide — Maio Azul.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641571"
-      },
-      {
-        "id": 2640016,
-        "sigla_tipo": "PL",
-        "numero": 3751,
-        "ano": 2026,
-        "ementa": "Dispõe sobre deveres de transparência e responsabilidade na divulgação remunerada de apostas por influenciadores digitais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640016"
       },
       {
         "id": 2598301,

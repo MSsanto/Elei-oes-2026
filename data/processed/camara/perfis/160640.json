@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T09:00:34.682585+00:00",
+      "generated_at_utc": "2026-09-24T14:35:26.946281+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160640/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 40,
+        "quantidade_registros": 42,
         "registros_recentes": [
+          {
+            "id": 2646941,
+            "sigla_tipo": "PL",
+            "numero": 5446,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a vedação da concessão de incentivos fiscais, subvenções, auxílios e recursos orçamentários federais a projetos, eventos e iniciativas que configurem, em concreto, apologia ao consumo de substâncias ilícitas, ao crime organizado, ou vilipêndio a objeto de culto religioso, nos termos da legislação penal vigente, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646941"
+          },
+          {
+            "id": 2646940,
+            "sigla_tipo": "PL",
+            "numero": 5445,
+            "ano": 2026,
+            "ementa": "Cria o Fundo Nacional de Amparo às Famílias de Agentes de Segurança Pública Vitimados em Serviço (FAFAM-SEG), estabelece diretrizes gerais para a instituição de benefício assistencial prioritário a seus dependentes no âmbito dos entes federativos que a ele aderirem, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646940"
+          },
           {
             "id": 2646187,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e a Lei nº 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), para tipificar o crime de domínio de cidades (\"novo cangaço\") e estabelecer causas de aumento de pena e regimes restritivos severos.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640289"
-          },
-          {
-            "id": 2640288,
-            "sigla_tipo": "PL",
-            "numero": 3776,
-            "ano": 2026,
-            "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de monitoramento, vigilância e espionagem ilegal contra servidores das forças de segurança pública, membros do Poder Judiciário e do Ministério Público, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640288"
-          },
-          {
-            "id": 2640287,
-            "sigla_tipo": "PL",
-            "numero": 3775,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a obrigatoriedade de identificação visual, registro e rastreabilidade de dispositivos de transporte de mercadorias utilizados por prestadores de serviços de entrega (delivery) em veículos automotores e de propulsão humana ou elétrica, e dá outras providências",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640287"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160640"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160640",
-  "generated_at_utc": "2026-09-23T09:01:07.337725+00:00",
+  "generated_at_utc": "2026-09-24T14:35:48.118986+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1644,7 +1644,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 459,
+    "quantidade_registros": 461,
     "por_ano": [
       {
         "ano": 2023,
@@ -1660,10 +1660,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 40
+        "quantidade_registros": 42
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646941,
+        "sigla_tipo": "PL",
+        "numero": 5446,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a vedação da concessão de incentivos fiscais, subvenções, auxílios e recursos orçamentários federais a projetos, eventos e iniciativas que configurem, em concreto, apologia ao consumo de substâncias ilícitas, ao crime organizado, ou vilipêndio a objeto de culto religioso, nos termos da legislação penal vigente, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646941"
+      },
+      {
+        "id": 2646940,
+        "sigla_tipo": "PL",
+        "numero": 5445,
+        "ano": 2026,
+        "ementa": "Cria o Fundo Nacional de Amparo às Famílias de Agentes de Segurança Pública Vitimados em Serviço (FAFAM-SEG), estabelece diretrizes gerais para a instituição de benefício assistencial prioritário a seus dependentes no âmbito dos entes federativos que a ele aderirem, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646940"
+      },
       {
         "id": 2646187,
         "sigla_tipo": "REQ",
@@ -1743,22 +1759,6 @@
         "ano": 2026,
         "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), e a Lei nº 8.072, de 25 de julho de 1990 (Lei de Crimes Hediondos), para tipificar o crime de domínio de cidades (\"novo cangaço\") e estabelecer causas de aumento de pena e regimes restritivos severos.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640289"
-      },
-      {
-        "id": 2640288,
-        "sigla_tipo": "PL",
-        "numero": 3776,
-        "ano": 2026,
-        "ementa": "Altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de monitoramento, vigilância e espionagem ilegal contra servidores das forças de segurança pública, membros do Poder Judiciário e do Ministério Público, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640288"
-      },
-      {
-        "id": 2640287,
-        "sigla_tipo": "PL",
-        "numero": 3775,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a obrigatoriedade de identificação visual, registro e rastreabilidade de dispositivos de transporte de mercadorias utilizados por prestadores de serviços de entrega (delivery) em veículos automotores e de propulsão humana ou elétrica, e dá outras providências",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640287"
       },
       {
         "id": 2598197,

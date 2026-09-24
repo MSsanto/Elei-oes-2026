@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T09:00:02.645304+00:00",
+      "generated_at_utc": "2026-09-24T14:32:04.505932+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160665/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 204,
+        "quantidade_registros": 205,
         "registros_recentes": [
+          {
+            "id": 2646943,
+            "sigla_tipo": "REQ",
+            "numero": 4262,
+            "ano": 2026,
+            "ementa": "Requer urgência para a apreciação do Projeto de Lei nº 6.685, de 2009.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646943"
+          },
           {
             "id": 2646848,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643121"
-          },
-          {
-            "id": 2642939,
-            "sigla_tipo": "DOC",
-            "numero": 928,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642939"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160665"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160665",
-  "generated_at_utc": "2026-09-23T09:01:07.278514+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.690612+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1660,7 +1660,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 641,
+    "quantidade_registros": 642,
     "por_ano": [
       {
         "ano": 2023,
@@ -1676,10 +1676,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 204
+        "quantidade_registros": 205
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646943,
+        "sigla_tipo": "REQ",
+        "numero": 4262,
+        "ano": 2026,
+        "ementa": "Requer urgência para a apreciação do Projeto de Lei nº 6.685, de 2009.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646943"
+      },
       {
         "id": 2646848,
         "sigla_tipo": "REQ",
@@ -1767,14 +1775,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643121"
-      },
-      {
-        "id": 2642939,
-        "sigla_tipo": "DOC",
-        "numero": 928,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642939"
       },
       {
         "id": 2599001,

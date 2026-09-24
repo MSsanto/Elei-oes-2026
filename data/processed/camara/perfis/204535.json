@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:59:39.016344+00:00",
+      "generated_at_utc": "2026-09-24T14:32:20.472332+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204535/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 94,
+        "quantidade_registros": 95,
         "registros_recentes": [
+          {
+            "id": 2646930,
+            "sigla_tipo": "REQ",
+            "numero": 61,
+            "ano": 2026,
+            "ementa": "Requer aprovação de Moção de Aplauso e Louvor à Maria Amélia de Almeida \"Amelinha\", escritora, militante feminista e ativista pelos direitos humanos, em razão dos relevantes feitos de trajetória de décadas dedicadas à luta pela vida das mulheres no Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646930"
+          },
           {
             "id": 2646406,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 14.192, de 4 de agosto de 2021, e a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aperfeiçoar a prevenção e a repressão à violência política contra a mulher praticada por meios digitais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633648"
-          },
-          {
-            "id": 2632576,
-            "sigla_tipo": "REQ",
-            "numero": 3515,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência na apreciação do Projeto de Lei nº 2.581/2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632576"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204535"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204535",
-  "generated_at_utc": "2026-09-23T09:01:07.237087+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.728393+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1452,7 +1452,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1248,
+    "quantidade_registros": 1249,
     "por_ano": [
       {
         "ano": 2023,
@@ -1468,10 +1468,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 94
+        "quantidade_registros": 95
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646930,
+        "sigla_tipo": "REQ",
+        "numero": 61,
+        "ano": 2026,
+        "ementa": "Requer aprovação de Moção de Aplauso e Louvor à Maria Amélia de Almeida \"Amelinha\", escritora, militante feminista e ativista pelos direitos humanos, em razão dos relevantes feitos de trajetória de décadas dedicadas à luta pela vida das mulheres no Brasil.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646930"
+      },
       {
         "id": 2646406,
         "sigla_tipo": "REQ",
@@ -1559,14 +1567,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 14.192, de 4 de agosto de 2021, e a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aperfeiçoar a prevenção e a repressão à violência política contra a mulher praticada por meios digitais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633648"
-      },
-      {
-        "id": 2632576,
-        "sigla_tipo": "REQ",
-        "numero": 3515,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência na apreciação do Projeto de Lei nº 2.581/2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632576"
       },
       {
         "id": 2598528,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T08:58:55.725583+00:00",
+      "generated_at_utc": "2026-09-24T14:34:04.408463+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204495/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 49,
+        "quantidade_registros": 50,
         "registros_recentes": [
+          {
+            "id": 2646935,
+            "sigla_tipo": "PL",
+            "numero": 5443,
+            "ano": 2026,
+            "ementa": "Estabelece diretrizes para ações de promoção da saúde visual e de ampliação do acesso à correção óptica no âmbito do Sistema Único de Saúde (SUS).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646935"
+          },
           {
             "id": 2645040,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Denomina \"Ponte Avelino Ganzer\" a ponte sobre o Rio Xingu, localizada na rodovia BR-230 entre os Municípios de Anapu e Vitória do Xingu, no Estado do Pará.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638225"
-          },
-          {
-            "id": 2637237,
-            "sigla_tipo": "PL",
-            "numero": 3479,
-            "ano": 2026,
-            "ementa": "Estabelece o marco legal do Registro Nacional de Beneficiários Finais, dispõe sobre a integração, atualização, verificação, interoperabilidade e acesso às informações relativas aos beneficiários finais de pessoas jurídicas e estruturas legais, e fortalece os mecanismos de prevenção à lavagem de dinheiro, corrupção, evasão fiscal, ocultação patrimonial e infiltração da criminaliza organizada na economia formal.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637237"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204495"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204495",
-  "generated_at_utc": "2026-09-23T09:01:07.165324+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.944060+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1463,7 +1463,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 501,
+    "quantidade_registros": 502,
     "por_ano": [
       {
         "ano": 2023,
@@ -1479,10 +1479,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 49
+        "quantidade_registros": 50
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646935,
+        "sigla_tipo": "PL",
+        "numero": 5443,
+        "ano": 2026,
+        "ementa": "Estabelece diretrizes para ações de promoção da saúde visual e de ampliação do acesso à correção óptica no âmbito do Sistema Único de Saúde (SUS).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646935"
+      },
       {
         "id": 2645040,
         "sigla_tipo": "REQ",
@@ -1570,14 +1578,6 @@
         "ano": 2026,
         "ementa": "Denomina \"Ponte Avelino Ganzer\" a ponte sobre o Rio Xingu, localizada na rodovia BR-230 entre os Municípios de Anapu e Vitória do Xingu, no Estado do Pará.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2638225"
-      },
-      {
-        "id": 2637237,
-        "sigla_tipo": "PL",
-        "numero": 3479,
-        "ano": 2026,
-        "ementa": "Estabelece o marco legal do Registro Nacional de Beneficiários Finais, dispõe sobre a integração, atualização, verificação, interoperabilidade e acesso às informações relativas aos beneficiários finais de pessoas jurídicas e estruturas legais, e fortalece os mecanismos de prevenção à lavagem de dinheiro, corrupção, evasão fiscal, ocultação patrimonial e infiltração da criminaliza organizada na economia formal.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637237"
       },
       {
         "id": 2598301,

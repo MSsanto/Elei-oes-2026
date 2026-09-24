@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-23T09:00:37.631931+00:00",
+      "generated_at_utc": "2026-09-24T14:32:52.128078+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204567/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 11,
+        "quantidade_registros": 12,
         "registros_recentes": [
+          {
+            "id": 2646968,
+            "sigla_tipo": "PL",
+            "numero": 5454,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 10.779, de 25 de novembro de 2003, para dispor sobre o prazo de requerimento do seguro-desemprego do pescador profissional artesanal.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646968"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1263,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204567",
-  "generated_at_utc": "2026-09-23T09:01:07.343893+00:00",
+  "generated_at_utc": "2026-09-24T14:35:47.798555+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1506,7 +1514,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 299,
+    "quantidade_registros": 300,
     "por_ano": [
       {
         "ano": 2023,
@@ -1522,10 +1530,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 11
+        "quantidade_registros": 12
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646968,
+        "sigla_tipo": "PL",
+        "numero": 5454,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 10.779, de 25 de novembro de 2003, para dispor sobre o prazo de requerimento do seguro-desemprego do pescador profissional artesanal.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646968"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1709,14 +1725,6 @@
         "ano": 2025,
         "ementa": "Requer o registro da Frente Parlamentar Mista pela Integração Sul-Americana.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2570607"
-      },
-      {
-        "id": 2481769,
-        "sigla_tipo": "REQ",
-        "numero": 5058,
-        "ano": 2024,
-        "ementa": "Requer o registro da Frente Parlamentar para a Promoção de Políticas Públicas, Prevenção e Enfrentamento aos Desastres Naturais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2481769"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204567",
