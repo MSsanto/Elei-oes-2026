@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-24T14:32:35.347442+00:00",
+      "generated_at_utc": "2026-09-25T14:43:20.009366+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/115200/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 26,
+        "quantidade_registros": 27,
         "registros_recentes": [
+          {
+            "id": 2647060,
+            "sigla_tipo": "PLP",
+            "numero": 262,
+            "ano": 2026,
+            "ementa": "Altera a Lei Complementar nº 214, de 2025, para incluir expressamente pessoas com Síndrome de Down entre os beneficiários da redução a zero das alíquotas do Imposto sobre Bens e Serviços – IBS e da Contribuição sobre Bens e Serviços – CBS na aquisição de automóveis de passageiros.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647060"
+          },
           {
             "id": 2646394,
             "sigla_tipo": "PL",
@@ -453,14 +461,6 @@
             "ano": 2026,
             "ementa": "Sugere ao Exmo. Ministro de Trabalho e Emprego, Luiz Marinho, a implantação de uma unidade física no município de Guarabira, Estado da Paraíba.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639347"
-          },
-          {
-            "id": 2639119,
-            "sigla_tipo": "PL",
-            "numero": 3649,
-            "ano": 2026,
-            "ementa": "Reconhece como Patrimônio Cultural Imaterial do Brasil a Festa da Luz, realizada anualmente no Município de Guarabira, Estado da Paraíba.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639119"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=115200"
@@ -665,7 +665,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "115200",
-  "generated_at_utc": "2026-09-24T14:35:47.762866+00:00",
+  "generated_at_utc": "2026-09-25T14:44:58.091140+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -889,7 +889,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 63,
+    "quantidade_registros": 64,
     "por_ano": [
       {
         "ano": 2023,
@@ -905,10 +905,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 26
+        "quantidade_registros": 27
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647060,
+        "sigla_tipo": "PLP",
+        "numero": 262,
+        "ano": 2026,
+        "ementa": "Altera a Lei Complementar nº 214, de 2025, para incluir expressamente pessoas com Síndrome de Down entre os beneficiários da redução a zero das alíquotas do Imposto sobre Bens e Serviços – IBS e da Contribuição sobre Bens e Serviços – CBS na aquisição de automóveis de passageiros.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647060"
+      },
       {
         "id": 2646394,
         "sigla_tipo": "PL",
@@ -996,14 +1004,6 @@
         "ano": 2026,
         "ementa": "Sugere ao Exmo. Ministro de Trabalho e Emprego, Luiz Marinho, a implantação de uma unidade física no município de Guarabira, Estado da Paraíba.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639347"
-      },
-      {
-        "id": 2639119,
-        "sigla_tipo": "PL",
-        "numero": 3649,
-        "ano": 2026,
-        "ementa": "Reconhece como Patrimônio Cultural Imaterial do Brasil a Festa da Luz, realizada anualmente no Município de Guarabira, Estado da Paraíba.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639119"
       },
       {
         "id": 2432084,

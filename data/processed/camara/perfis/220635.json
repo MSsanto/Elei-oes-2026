@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-24T14:32:33.783913+00:00",
+      "generated_at_utc": "2026-09-25T14:41:02.964115+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220635/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 60,
+        "quantidade_registros": 61,
         "registros_recentes": [
+          {
+            "id": 2646983,
+            "sigla_tipo": "PL",
+            "numero": 5463,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações), para determinar que, para fins de chamadas de emergência, todas as antenas e demais infraestruturas de telecomunicações, de todas as operadoras, fiquem disponíveis para o compartilhamento de um código de acesso telefônico único, gratuito e nacional, para a comunicação a todos os serviços públicos de emergência.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646983"
+          },
           {
             "id": 2646413,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Documento Nacional de Identificação do Cuidador Atípico (DNICA) e estabelece medidas para o reconhecimento, a proteção e o apoio a cuidadores principais de pessoas com deficiência, transtornos do neurodesenvolvimento ou doenças raras, em âmbito nacional.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636480"
-          },
-          {
-            "id": 2636479,
-            "sigla_tipo": "PL",
-            "numero": 3422,
-            "ano": 2026,
-            "ementa": "Dispõe sobre o direito de ingresso e permanência de pessoa com deficiência ou condição de saúde grave, acompanhada de cão e/ou gato de suporte emocional, em meios de transporte e em ambientes de uso coletivo, públicos ou privados, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636479"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220635"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220635",
-  "generated_at_utc": "2026-09-24T14:35:47.756412+00:00",
+  "generated_at_utc": "2026-09-25T14:44:57.827516+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 393,
+    "quantidade_registros": 394,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 60
+        "quantidade_registros": 61
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646983,
+        "sigla_tipo": "PL",
+        "numero": 5463,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.472, de 16 de julho de 1997 (Lei Geral de Telecomunicações), para determinar que, para fins de chamadas de emergência, todas as antenas e demais infraestruturas de telecomunicações, de todas as operadoras, fiquem disponíveis para o compartilhamento de um código de acesso telefônico único, gratuito e nacional, para a comunicação a todos os serviços públicos de emergência.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646983"
+      },
       {
         "id": 2646413,
         "sigla_tipo": "PL",
@@ -1509,14 +1517,6 @@
         "ano": 2026,
         "ementa": "Institui o Documento Nacional de Identificação do Cuidador Atípico (DNICA) e estabelece medidas para o reconhecimento, a proteção e o apoio a cuidadores principais de pessoas com deficiência, transtornos do neurodesenvolvimento ou doenças raras, em âmbito nacional.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636480"
-      },
-      {
-        "id": 2636479,
-        "sigla_tipo": "PL",
-        "numero": 3422,
-        "ano": 2026,
-        "ementa": "Dispõe sobre o direito de ingresso e permanência de pessoa com deficiência ou condição de saúde grave, acompanhada de cão e/ou gato de suporte emocional, em meios de transporte e em ambientes de uso coletivo, públicos ou privados, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636479"
       },
       {
         "id": 2598301,

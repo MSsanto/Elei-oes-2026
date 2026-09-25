@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-24T14:34:24.091935+00:00",
+      "generated_at_utc": "2026-09-25T14:42:52.654283+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220695/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 204,
+        "quantidade_registros": 205,
         "registros_recentes": [
+          {
+            "id": 2646987,
+            "sigla_tipo": "PL",
+            "numero": 5467,
+            "ano": 2026,
+            "ementa": "Institui o Programa de Acesso Orientado à Atividade Física para pessoas de baixa renda e estabelece diretrizes para sua implementação",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646987"
+          },
           {
             "id": 2646980,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Emenda substitutiva ao PL nº 657/2026 - Altera a Lei nº 9.615, de 24 de março de 1998 (Lei Pelé), para instituir capítulo permanente de garantias ao futebol feminino em grandes eventos.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645433"
-          },
-          {
-            "id": 2644993,
-            "sigla_tipo": "RIC",
-            "numero": 2537,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública sobre as providências adotadas para a implementação do Cadastro Nacional de Pessoas Condenadas por Crime de Estupro e do Cadastro Nacional de Pedófilos e Predadores Sexuais, previstos nas Leis nº 14.069, de 1º de outubro de 2020, e nº 15.035, de 27 de novembro de 2024.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644993"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220695"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220695",
-  "generated_at_utc": "2026-09-24T14:35:47.978457+00:00",
+  "generated_at_utc": "2026-09-25T14:44:58.040555+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1358,
+    "quantidade_registros": 1359,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 204
+        "quantidade_registros": 205
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646987,
+        "sigla_tipo": "PL",
+        "numero": 5467,
+        "ano": 2026,
+        "ementa": "Institui o Programa de Acesso Orientado à Atividade Física para pessoas de baixa renda e estabelece diretrizes para sua implementação",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646987"
+      },
       {
         "id": 2646980,
         "sigla_tipo": "RIC",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Emenda substitutiva ao PL nº 657/2026 - Altera a Lei nº 9.615, de 24 de março de 1998 (Lei Pelé), para instituir capítulo permanente de garantias ao futebol feminino em grandes eventos.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645433"
-      },
-      {
-        "id": 2644993,
-        "sigla_tipo": "RIC",
-        "numero": 2537,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública sobre as providências adotadas para a implementação do Cadastro Nacional de Pessoas Condenadas por Crime de Estupro e do Cadastro Nacional de Pedófilos e Predadores Sexuais, previstos nas Leis nº 14.069, de 1º de outubro de 2020, e nº 15.035, de 27 de novembro de 2024.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644993"
       },
       {
         "id": 2599333,

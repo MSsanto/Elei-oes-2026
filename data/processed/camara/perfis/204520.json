@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-24T14:34:51.649687+00:00",
+      "generated_at_utc": "2026-09-25T14:43:50.100949+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204520/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 64,
+        "quantidade_registros": 65,
         "registros_recentes": [
+          {
+            "id": 2646988,
+            "sigla_tipo": "RIC",
+            "numero": 2687,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministério da Defesa sobre o transporte indevido de pessoas em voos que transportem autoridades em aeronaves do Comando da Aeronáutica no âmbito da Força Aérea Brasileira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646988"
+          },
           {
             "id": 2645798,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado dos Transportes sobre as balanças de pesagem dinâmica de veículos em velocidade da via (HS-WIM).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634639"
-          },
-          {
-            "id": 2634632,
-            "sigla_tipo": "RIC",
-            "numero": 1887,
-            "ano": 2026,
-            "ementa": "Requer informações ao Excelentíssimo Senhor Ministro de Estado do Desenvolvimento, Indústria, Comércio e Serviços acerca da habilitação de plataformas digitais no âmbito da Medida Provisória nº 1.359/2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634632"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204520"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204520",
-  "generated_at_utc": "2026-09-24T14:35:48.040981+00:00",
+  "generated_at_utc": "2026-09-25T14:44:58.143284+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1531,7 +1531,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 795,
+    "quantidade_registros": 796,
     "por_ano": [
       {
         "ano": 2023,
@@ -1547,10 +1547,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 64
+        "quantidade_registros": 65
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2646988,
+        "sigla_tipo": "RIC",
+        "numero": 2687,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministério da Defesa sobre o transporte indevido de pessoas em voos que transportem autoridades em aeronaves do Comando da Aeronáutica no âmbito da Força Aérea Brasileira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646988"
+      },
       {
         "id": 2645798,
         "sigla_tipo": "EMC",
@@ -1638,14 +1646,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado dos Transportes sobre as balanças de pesagem dinâmica de veículos em velocidade da via (HS-WIM).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634639"
-      },
-      {
-        "id": 2634632,
-        "sigla_tipo": "RIC",
-        "numero": 1887,
-        "ano": 2026,
-        "ementa": "Requer informações ao Excelentíssimo Senhor Ministro de Estado do Desenvolvimento, Indústria, Comércio e Serviços acerca da habilitação de plataformas digitais no âmbito da Medida Provisória nº 1.359/2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634632"
       },
       {
         "id": 2598197,
