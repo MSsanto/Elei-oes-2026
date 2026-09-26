@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-25T14:40:55.013894+00:00",
+      "generated_at_utc": "2026-09-26T15:01:19.608375+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74856/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 541,
+        "quantidade_registros": 542,
         "registros_recentes": [
+          {
+            "id": 2647150,
+            "sigla_tipo": "REQ",
+            "numero": 4265,
+            "ano": 2026,
+            "ementa": "Requer a desapensação do Projeto de Lei nº 1.698, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.323, de 2024.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647150"
+          },
           {
             "id": 2646943,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a desapensação do PL n° 2.773/2026, que tramita conjuntamente com o PL n° 6.234/2025.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646386"
-          },
-          {
-            "id": 2646376,
-            "sigla_tipo": "PL",
-            "numero": 5355,
-            "ano": 2026,
-            "ementa": "Altera as Leis nºs 13.426, de 30 de março de 2017, e 15.046, de 17 de dezembro de 2024, para ampliar as prioridades na esterilização de cães e gatos e assegurar a gratuidade das operações do Cadastro Nacional de Animais Domésticos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646376"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74856"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74856",
-  "generated_at_utc": "2026-09-25T14:44:57.799658+00:00",
+  "generated_at_utc": "2026-09-26T15:02:55.357836+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2359,7 +2359,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2368,
+    "quantidade_registros": 2369,
     "por_ano": [
       {
         "ano": 2023,
@@ -2375,10 +2375,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 541
+        "quantidade_registros": 542
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647150,
+        "sigla_tipo": "REQ",
+        "numero": 4265,
+        "ano": 2026,
+        "ementa": "Requer a desapensação do Projeto de Lei nº 1.698, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.323, de 2024.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647150"
+      },
       {
         "id": 2646943,
         "sigla_tipo": "REQ",
@@ -2466,14 +2474,6 @@
         "ano": 2026,
         "ementa": "Requer a desapensação do PL n° 2.773/2026, que tramita conjuntamente com o PL n° 6.234/2025.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646386"
-      },
-      {
-        "id": 2646376,
-        "sigla_tipo": "PL",
-        "numero": 5355,
-        "ano": 2026,
-        "ementa": "Altera as Leis nºs 13.426, de 30 de março de 2017, e 15.046, de 17 de dezembro de 2024, para ampliar as prioridades na esterilização de cães e gatos e assegurar a gratuidade das operações do Cadastro Nacional de Animais Domésticos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646376"
       },
       {
         "id": 2599057,

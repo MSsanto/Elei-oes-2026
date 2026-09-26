@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-25T14:44:39.645600+00:00",
+      "generated_at_utc": "2026-09-26T14:59:09.047025+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220650/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 14,
+        "quantidade_registros": 15,
         "registros_recentes": [
+          {
+            "id": 2647144,
+            "sigla_tipo": "REQ",
+            "numero": 43,
+            "ano": 2026,
+            "ementa": "Solicitação de informações ao Senhor Ministro de Estado da Saúde acerca da decisão de não incorporação da vosoritida ao Sistema Único de Saúde – SUS para o tratamento da acondroplasia bem como dos fundamentos que levaram ao indeferimento do pedido de reconsideração e ao não provimento do recurso administrativo interposto contra a decisão.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647144"
+          },
           {
             "id": 2643256,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requerimento de  inclusão na Ordem do Dia da PEC nº 383/17, que Altera a Constituição Federal para garantir recursos mínimos para o financiamento do Sistema Único de Assistência Social (SUAS).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613338"
-          },
-          {
-            "id": 2611612,
-            "sigla_tipo": "REQ",
-            "numero": 41,
-            "ano": 2026,
-            "ementa": "Requerimento de aditamento - inclusão de convidado.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2611612"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220650"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220650",
-  "generated_at_utc": "2026-09-25T14:44:58.263321+00:00",
+  "generated_at_utc": "2026-09-26T15:02:55.171122+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1419,7 +1419,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 489,
+    "quantidade_registros": 490,
     "por_ano": [
       {
         "ano": 2023,
@@ -1435,10 +1435,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 14
+        "quantidade_registros": 15
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647144,
+        "sigla_tipo": "REQ",
+        "numero": 43,
+        "ano": 2026,
+        "ementa": "Solicitação de informações ao Senhor Ministro de Estado da Saúde acerca da decisão de não incorporação da vosoritida ao Sistema Único de Saúde – SUS para o tratamento da acondroplasia bem como dos fundamentos que levaram ao indeferimento do pedido de reconsideração e ao não provimento do recurso administrativo interposto contra a decisão.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647144"
+      },
       {
         "id": 2643256,
         "sigla_tipo": "DOC",
@@ -1526,14 +1534,6 @@
         "ano": 2026,
         "ementa": "Requerimento de  inclusão na Ordem do Dia da PEC nº 383/17, que Altera a Constituição Federal para garantir recursos mínimos para o financiamento do Sistema Único de Assistência Social (SUAS).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2613338"
-      },
-      {
-        "id": 2611612,
-        "sigla_tipo": "REQ",
-        "numero": 41,
-        "ano": 2026,
-        "ementa": "Requerimento de aditamento - inclusão de convidado.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2611612"
       },
       {
         "id": 2593789,

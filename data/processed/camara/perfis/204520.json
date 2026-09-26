@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-25T14:43:50.100949+00:00",
+      "generated_at_utc": "2026-09-26T15:02:07.905835+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204520/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 65,
+        "quantidade_registros": 66,
         "registros_recentes": [
+          {
+            "id": 2647143,
+            "sigla_tipo": "RIC",
+            "numero": 2688,
+            "ano": 2026,
+            "ementa": "Requer, ao Senhor Ministro de Estado dos Transportes, através da Agência Nacional de Transportes Terrestres – ANTT, informações acerca das providências adotadas para a retomada da Janela Extraordinária nº 1/2024, destinada à ampliação da abertura do transporte rodoviário interestadual de passageiros, especialmente quanto à comunicação às empresas participantes e à previsão de publicação dos atos de autorização.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647143"
+          },
           {
             "id": 2646988,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministério dos Transportes acerca da contratação pela Agência Nacional de Transportes Terrestres (ANTT) de empresa terceirizada investigada pela Polícia Federal e das alterações contratuais subsequentes.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634777"
-          },
-          {
-            "id": 2634639,
-            "sigla_tipo": "RIC",
-            "numero": 1888,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado dos Transportes sobre as balanças de pesagem dinâmica de veículos em velocidade da via (HS-WIM).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634639"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204520"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204520",
-  "generated_at_utc": "2026-09-25T14:44:58.143284+00:00",
+  "generated_at_utc": "2026-09-26T15:02:55.426222+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1531,7 +1531,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 796,
+    "quantidade_registros": 797,
     "por_ano": [
       {
         "ano": 2023,
@@ -1547,10 +1547,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 65
+        "quantidade_registros": 66
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647143,
+        "sigla_tipo": "RIC",
+        "numero": 2688,
+        "ano": 2026,
+        "ementa": "Requer, ao Senhor Ministro de Estado dos Transportes, através da Agência Nacional de Transportes Terrestres – ANTT, informações acerca das providências adotadas para a retomada da Janela Extraordinária nº 1/2024, destinada à ampliação da abertura do transporte rodoviário interestadual de passageiros, especialmente quanto à comunicação às empresas participantes e à previsão de publicação dos atos de autorização.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647143"
+      },
       {
         "id": 2646988,
         "sigla_tipo": "RIC",
@@ -1638,14 +1646,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministério dos Transportes acerca da contratação pela Agência Nacional de Transportes Terrestres (ANTT) de empresa terceirizada investigada pela Polícia Federal e das alterações contratuais subsequentes.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634777"
-      },
-      {
-        "id": 2634639,
-        "sigla_tipo": "RIC",
-        "numero": 1888,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado dos Transportes sobre as balanças de pesagem dinâmica de veículos em velocidade da via (HS-WIM).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634639"
       },
       {
         "id": 2598197,
