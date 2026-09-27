@@ -1,11 +1,37 @@
 {
   "schema_version": 1,
   "mode": "changes",
-  "generated_at_utc": "2026-09-27T14:50:29.825518+00:00",
+  "generated_at_utc": "2026-09-27T23:57:13.459028+00:00",
   "source": "TSE — dados eleitorais e Prestação de Contas Eleitorais 2026",
   "source_url": "https://dadosabertos.tse.jus.br/pt_BR/dataset/prestacao-de-contas-eleitorais-2026",
   "methodology": "Eventos são gerados somente quando um campo acompanhado difere entre duas cargas processadas consecutivas.",
   "events": [
+    {
+      "timestamp": "2026-09-27T23:57:13.459028+00:00",
+      "candidate_id": "130002539921",
+      "candidate_name": "DRYKA CRUZ",
+      "cargo": "Deputado Estadual",
+      "partido": "PSDB",
+      "uf": "MG",
+      "href": "/candidato/130002539921",
+      "id": "2026-09-27T23:57:13.459028+00:00:130002539921:status",
+      "type": "cadastro",
+      "title": "Situação da candidatura atualizada",
+      "detail": "Deferido → Renúncia"
+    },
+    {
+      "timestamp": "2026-09-27T23:57:13.459028+00:00",
+      "candidate_id": "130002542813",
+      "candidate_name": "LUIZA DO HOSPITAL",
+      "cargo": "Deputado Estadual",
+      "partido": "PP",
+      "uf": "MG",
+      "href": "/candidato/130002542813",
+      "id": "2026-09-27T23:57:13.459028+00:00:130002542813:status",
+      "type": "cadastro",
+      "title": "Situação da candidatura atualizada",
+      "detail": "Deferido → Renúncia"
+    },
     {
       "timestamp": "2026-09-27T14:50:29.825518+00:00",
       "candidate_id": "100002535479",
@@ -7972,38 +7998,6 @@
       "before": 3052700,
       "after": 3102700,
       "delta": 50000,
-      "detail": "Diferença detectada entre duas cargas processadas consecutivas da fonte oficial."
-    },
-    {
-      "timestamp": "2026-09-27T14:50:29.825518+00:00",
-      "candidate_id": "240002543400",
-      "candidate_name": "GEAN LOUREIRO",
-      "cargo": "Deputado Estadual",
-      "partido": "UNIÃO",
-      "uf": "SC",
-      "href": "/candidato/240002543400",
-      "id": "2026-09-27T14:50:29.825518+00:00:240002543400:total_receitas",
-      "type": "financas",
-      "title": "Total de receitas atualizado",
-      "before": 966000,
-      "after": 1066000,
-      "delta": 100000,
-      "detail": "Diferença detectada entre duas cargas processadas consecutivas da fonte oficial."
-    },
-    {
-      "timestamp": "2026-09-27T14:50:29.825518+00:00",
-      "candidate_id": "240002548534",
-      "candidate_name": "SILVIO ALEXANDRE ZANCANARO",
-      "cargo": "",
-      "partido": "PSD",
-      "uf": "SC",
-      "href": "/candidato/240002548534",
-      "id": "2026-09-27T14:50:29.825518+00:00:240002548534:total_receitas",
-      "type": "financas",
-      "title": "Total de receitas atualizado",
-      "before": 160000,
-      "after": 176500,
-      "delta": 16500,
       "detail": "Diferença detectada entre duas cargas processadas consecutivas da fonte oficial."
     }
   ]
