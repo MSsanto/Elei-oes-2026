@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-28T00:06:45.915170+00:00",
+      "generated_at_utc": "2026-09-29T01:08:08.864119+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74856/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 542,
+        "quantidade_registros": 543,
         "registros_recentes": [
+          {
+            "id": 2647183,
+            "sigla_tipo": "REQ",
+            "numero": 4269,
+            "ano": 2026,
+            "ementa": "Requer a desapensação dos Projetos de Lei nº 3.213/2026 e nº 2.297/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647183"
+          },
           {
             "id": 2647150,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre os requisitos técnicos mínimos do equipamento e do sistema de monitoração eletrônica.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646423"
-          },
-          {
-            "id": 2646386,
-            "sigla_tipo": "REQ",
-            "numero": 4219,
-            "ano": 2026,
-            "ementa": "Requer a desapensação do PL n° 2.773/2026, que tramita conjuntamente com o PL n° 6.234/2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646386"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74856"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74856",
-  "generated_at_utc": "2026-09-28T00:07:37.024796+00:00",
+  "generated_at_utc": "2026-09-29T01:08:17.325935+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2359,7 +2359,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2369,
+    "quantidade_registros": 2370,
     "por_ano": [
       {
         "ano": 2023,
@@ -2375,10 +2375,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 542
+        "quantidade_registros": 543
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647183,
+        "sigla_tipo": "REQ",
+        "numero": 4269,
+        "ano": 2026,
+        "ementa": "Requer a desapensação dos Projetos de Lei nº 3.213/2026 e nº 2.297/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647183"
+      },
       {
         "id": 2647150,
         "sigla_tipo": "REQ",
@@ -2466,14 +2474,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre os requisitos técnicos mínimos do equipamento e do sistema de monitoração eletrônica.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646423"
-      },
-      {
-        "id": 2646386,
-        "sigla_tipo": "REQ",
-        "numero": 4219,
-        "ano": 2026,
-        "ementa": "Requer a desapensação do PL n° 2.773/2026, que tramita conjuntamente com o PL n° 6.234/2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646386"
       },
       {
         "id": 2599057,

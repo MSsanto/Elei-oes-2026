@@ -58,7 +58,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-28T00:05:57.844357+00:00",
+      "generated_at_utc": "2026-09-29T01:06:10.386885+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -321,7 +321,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "236423",
-  "generated_at_utc": "2026-09-28T00:07:36.917309+00:00",
+  "generated_at_utc": "2026-09-29T01:08:17.088897+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -347,7 +347,7 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/236423.jpg",
         "email": null,
-        "data": "2026-06-10",
+        "data": "2026-09-27",
         "nomeEleitoral": "Valdir Trindade",
         "gabinete": {
           "nome": "534",
@@ -355,9 +355,9 @@
           "sala": "534",
           "andar": "5",
           "telefone": "3215-5534",
-          "email": "dep.valdirtrindade@camara.leg.br"
+          "email": null
         },
-        "situacao": "Exercício",
+        "situacao": "Suplência",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": null
       },
@@ -435,6 +435,22 @@
         "situacao": "Exercício",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": "Entrada - Posse de Suplente - Posse como Suplente"
+      },
+      {
+        "id": 236423,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/236423",
+        "nome": "Valdir Trindade",
+        "nomeEleitoral": "VALDIR TRINDADE",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "PB",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/236423.jpg",
+        "dataHora": "2026-09-27T00:00",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236423/historico"

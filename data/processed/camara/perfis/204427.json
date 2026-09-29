@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-28T00:04:35.989617+00:00",
+      "generated_at_utc": "2026-09-29T01:07:28.117909+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204427/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 22,
+        "quantidade_registros": 23,
         "registros_recentes": [
+          {
+            "id": 2647191,
+            "sigla_tipo": "PL",
+            "numero": 5484,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.429, de 2 de junho de 1992, para tipificar como ato de improbidade administrativa a conduta dolosa do agente público que, sem justificativa legal, descumprir regras essenciais previstas no edital de concurso público relativas à homologação, ao prazo de validade, à convocação ou à nomeação de candidatos aprovados, quando a conduta causar lesividade relevante aos direitos dos candidatos ou à regularidade do concurso.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647191"
+          },
           {
             "id": 2646463,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
-          },
-          {
-            "id": 2616936,
-            "sigla_tipo": "REQ",
-            "numero": 2112,
-            "ano": 2026,
-            "ementa": "Solicita urgência urgentíssima (art. 155 do Regimento Interno da Câmara dos Deputados) para apreciação do Projeto de Lei nº 6399 de 2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616936"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204427"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204427",
-  "generated_at_utc": "2026-09-28T00:07:36.727516+00:00",
+  "generated_at_utc": "2026-09-29T01:08:17.247581+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1498,7 +1498,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 376,
+    "quantidade_registros": 377,
     "por_ano": [
       {
         "ano": 2023,
@@ -1514,10 +1514,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 22
+        "quantidade_registros": 23
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647191,
+        "sigla_tipo": "PL",
+        "numero": 5484,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.429, de 2 de junho de 1992, para tipificar como ato de improbidade administrativa a conduta dolosa do agente público que, sem justificativa legal, descumprir regras essenciais previstas no edital de concurso público relativas à homologação, ao prazo de validade, à convocação ou à nomeação de candidatos aprovados, quando a conduta causar lesividade relevante aos direitos dos candidatos ou à regularidade do concurso.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647191"
+      },
       {
         "id": 2646463,
         "sigla_tipo": "PL",
@@ -1605,14 +1613,6 @@
         "ano": 2026,
         "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
-      },
-      {
-        "id": 2616936,
-        "sigla_tipo": "REQ",
-        "numero": 2112,
-        "ano": 2026,
-        "ementa": "Solicita urgência urgentíssima (art. 155 do Regimento Interno da Câmara dos Deputados) para apreciação do Projeto de Lei nº 6399 de 2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616936"
       },
       {
         "id": 2598197,

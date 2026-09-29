@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-28T00:05:37.754064+00:00",
+      "generated_at_utc": "2026-09-29T01:05:16.064459+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220604/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 116,
+        "quantidade_registros": 118,
         "registros_recentes": [
+          {
+            "id": 2647168,
+            "sigla_tipo": "PL",
+            "numero": 5480,
+            "ano": 2026,
+            "ementa": "Estabelece normas gerais para assegurar, no âmbito do Sistema Único de Saúde (SUS), o acesso oportuno da pessoa com suspeita clínica fundamentada de doença rara à primeira avaliação especializada, com prioridade nas situações de maior risco ou de janela diagnóstica ou terapêutica crítica, e dispõe sobre a continuidade do fluxo assistencial, a regulação do acesso, a navegação do cuidado e o monitoramento dos tempos de espera.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647168"
+          },
+          {
+            "id": 2647164,
+            "sigla_tipo": "PL",
+            "numero": 5479,
+            "ano": 2026,
+            "ementa": "Institui a Lei Nacional de Valorização das Guardas Municipais e do Piso Nacional da Segurança Municipal, estabelece o Piso Nacional de Referência dos profissionais das Guardas Municipais no valor de R$ 7.000,00, dispõe sobre mecanismos de cofinanciamento federal, valorização profissional, estruturação de carreiras, formação e proteção institucional, disciplina o emprego complementar da denominação funcional Polícia Municipal e altera a Lei nº 13.022, de 8 de agosto de 2014, e a Lei nº 13.675, de 11 de junho de 2018.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647164"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Programa Passaporte Esportivo Jovem, destinado a ampliar o acesso de crianças, adolescentes e jovens a competições esportivas, mediante apoio às despesas de inscrição, transporte, alimentação, hospedagem, acessibilidade, equipamentos essenciais e outras medidas de permanência e proteção esportiva.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639823"
-          },
-          {
-            "id": 2639540,
-            "sigla_tipo": "PL",
-            "numero": 3700,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a garantia do livre acesso a praias, ilhas, rios, cachoeiras e demais bens naturais públicos de uso comum do povo e veda à cobrança de taxa, tarifa, pedágio, ingresso ou qualquer outra contraprestação financeira para seu acesso, circulação ou permanência.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639540"
-          },
-          {
-            "id": 2639320,
-            "sigla_tipo": "PL",
-            "numero": 3667,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 14.965, de 9 de setembro de 2024, para instituir a Lei Cadastro de Reserva com Transparência e Direito à Nomeação, disciplinar a formação do direito subjetivo à nomeação de candidatos aprovados em concurso público, inclusive daqueles inicialmente classificados em cadastro de reserva que passem a integrar o número de vagas previsto no edital em razão de desistência, eliminação, impedimento, inaptidão, não posse ou vacância de candidatos melhor classificados, estabelecer deveres de transparência ativa sobre a movimentação do certame e dar outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639320"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220604"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220604",
-  "generated_at_utc": "2026-09-28T00:07:36.873151+00:00",
+  "generated_at_utc": "2026-09-29T01:08:16.972001+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2576,
+    "quantidade_registros": 2578,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 116
+        "quantidade_registros": 118
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647168,
+        "sigla_tipo": "PL",
+        "numero": 5480,
+        "ano": 2026,
+        "ementa": "Estabelece normas gerais para assegurar, no âmbito do Sistema Único de Saúde (SUS), o acesso oportuno da pessoa com suspeita clínica fundamentada de doença rara à primeira avaliação especializada, com prioridade nas situações de maior risco ou de janela diagnóstica ou terapêutica crítica, e dispõe sobre a continuidade do fluxo assistencial, a regulação do acesso, a navegação do cuidado e o monitoramento dos tempos de espera.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647168"
+      },
+      {
+        "id": 2647164,
+        "sigla_tipo": "PL",
+        "numero": 5479,
+        "ano": 2026,
+        "ementa": "Institui a Lei Nacional de Valorização das Guardas Municipais e do Piso Nacional da Segurança Municipal, estabelece o Piso Nacional de Referência dos profissionais das Guardas Municipais no valor de R$ 7.000,00, dispõe sobre mecanismos de cofinanciamento federal, valorização profissional, estruturação de carreiras, formação e proteção institucional, disciplina o emprego complementar da denominação funcional Polícia Municipal e altera a Lei nº 13.022, de 8 de agosto de 2014, e a Lei nº 13.675, de 11 de junho de 2018.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647164"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1501,22 +1517,6 @@
         "ano": 2026,
         "ementa": "Institui o Programa Passaporte Esportivo Jovem, destinado a ampliar o acesso de crianças, adolescentes e jovens a competições esportivas, mediante apoio às despesas de inscrição, transporte, alimentação, hospedagem, acessibilidade, equipamentos essenciais e outras medidas de permanência e proteção esportiva.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639823"
-      },
-      {
-        "id": 2639540,
-        "sigla_tipo": "PL",
-        "numero": 3700,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a garantia do livre acesso a praias, ilhas, rios, cachoeiras e demais bens naturais públicos de uso comum do povo e veda à cobrança de taxa, tarifa, pedágio, ingresso ou qualquer outra contraprestação financeira para seu acesso, circulação ou permanência.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639540"
-      },
-      {
-        "id": 2639320,
-        "sigla_tipo": "PL",
-        "numero": 3667,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 14.965, de 9 de setembro de 2024, para instituir a Lei Cadastro de Reserva com Transparência e Direito à Nomeação, disciplinar a formação do direito subjetivo à nomeação de candidatos aprovados em concurso público, inclusive daqueles inicialmente classificados em cadastro de reserva que passem a integrar o número de vagas previsto no edital em razão de desistência, eliminação, impedimento, inaptidão, não posse ou vacância de candidatos melhor classificados, estabelecer deveres de transparência ativa sobre a movimentação do certame e dar outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639320"
       },
       {
         "id": 2599171,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-28T00:06:48.880860+00:00",
+      "generated_at_utc": "2026-09-29T01:06:37.999635+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220617/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 38,
+        "quantidade_registros": 39,
         "registros_recentes": [
+          {
+            "id": 2647169,
+            "sigla_tipo": "REQ",
+            "numero": 4268,
+            "ano": 2026,
+            "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, Moção de Regozijo e Louvor pelos 25 anos de pastorado do Pastor Samuel Alves,  da Igreja Assembleia de Deus em Itaguai/RJ  – Ministério Madureira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647169"
+          },
           {
             "id": 2646900,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Comissária de Polícia Civil Márcia Luiza S. Neves da Cunha.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646189"
-          },
-          {
-            "id": 2646188,
-            "sigla_tipo": "REQ",
-            "numero": 4197,
-            "ano": 2026,
-            "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Delegada Polícia Civil Daniela Campos Rodrigues Terra.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646188"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220617"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220617",
-  "generated_at_utc": "2026-09-28T00:07:37.038929+00:00",
+  "generated_at_utc": "2026-09-29T01:08:17.137484+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1435,7 +1435,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 402,
+    "quantidade_registros": 403,
     "por_ano": [
       {
         "ano": 2023,
@@ -1451,10 +1451,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 38
+        "quantidade_registros": 39
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647169,
+        "sigla_tipo": "REQ",
+        "numero": 4268,
+        "ano": 2026,
+        "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, Moção de Regozijo e Louvor pelos 25 anos de pastorado do Pastor Samuel Alves,  da Igreja Assembleia de Deus em Itaguai/RJ  – Ministério Madureira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647169"
+      },
       {
         "id": 2646900,
         "sigla_tipo": "PL",
@@ -1542,14 +1550,6 @@
         "ano": 2026,
         "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Comissária de Polícia Civil Márcia Luiza S. Neves da Cunha.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646189"
-      },
-      {
-        "id": 2646188,
-        "sigla_tipo": "REQ",
-        "numero": 4197,
-        "ano": 2026,
-        "ementa": "Senhor Presidente, Requeiro nos termos do art. 117, inciso XIX, do Regimento Interno, que seja registrado nos anais desta Casa, moção de aplausos à Delegada Polícia Civil Daniela Campos Rodrigues Terra.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646188"
       },
       {
         "id": 2598197,

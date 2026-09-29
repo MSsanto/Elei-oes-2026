@@ -468,7 +468,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-28T00:04:48.978579+00:00",
+      "generated_at_utc": "2026-09-29T01:06:44.746913+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -476,8 +476,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178962/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 5,
+        "quantidade_registros": 6,
         "registros_recentes": [
+          {
+            "id": 2647189,
+            "sigla_tipo": "PLP",
+            "numero": 264,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a securitização de créditos em face da União Federal relativos à CBS, à Contribuição para o Pis/Pasep, à Cofins e ao IPI.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647189"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -731,7 +739,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178962",
-  "generated_at_utc": "2026-09-28T00:07:36.760910+00:00",
+  "generated_at_utc": "2026-09-29T01:08:17.151982+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1135,7 +1143,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 250,
+    "quantidade_registros": 251,
     "por_ano": [
       {
         "ano": 2023,
@@ -1151,10 +1159,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 5
+        "quantidade_registros": 6
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647189,
+        "sigla_tipo": "PLP",
+        "numero": 264,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a securitização de créditos em face da União Federal relativos à CBS, à Contribuição para o Pis/Pasep, à Cofins e ao IPI.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647189"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
