@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-29T01:06:16.432454+00:00",
+      "generated_at_utc": "2026-09-30T09:55:21.676404+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220618/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 1997,
+        "quantidade_registros": 1998,
         "registros_recentes": [
+          {
+            "id": 2647205,
+            "sigla_tipo": "PL",
+            "numero": 5491,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 6.681, de 16 de agosto de 1979, para assegurar aos profissionais de enfermagem em serviço ativo nas Forças Armadas, nas Polícias Militares e nos Corpos de Bombeiros Militares, quando exercerem a profissão exclusivamente em decorrência de suas funções militares, isenção do pagamento de anuidades aos Conselhos Regionais de Enfermagem.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647205"
+          },
           {
             "id": 2646876,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Marcel Gusmão Delfino, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646845"
-          },
-          {
-            "id": 2646844,
-            "sigla_tipo": "REQ",
-            "numero": 4244,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo à Sra. Delegada de Polícia Daniella Campos Rodriguez Terra, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646844"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220618"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220618",
-  "generated_at_utc": "2026-09-29T01:08:17.071255+00:00",
+  "generated_at_utc": "2026-09-30T09:55:46.699188+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 6968,
+    "quantidade_registros": 6969,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 1997
+        "quantidade_registros": 1998
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647205,
+        "sigla_tipo": "PL",
+        "numero": 5491,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 6.681, de 16 de agosto de 1979, para assegurar aos profissionais de enfermagem em serviço ativo nas Forças Armadas, nas Polícias Militares e nos Corpos de Bombeiros Militares, quando exercerem a profissão exclusivamente em decorrência de suas funções militares, isenção do pagamento de anuidades aos Conselhos Regionais de Enfermagem.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647205"
+      },
       {
         "id": 2646876,
         "sigla_tipo": "PL",
@@ -1509,14 +1517,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Marcel Gusmão Delfino, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646845"
-      },
-      {
-        "id": 2646844,
-        "sigla_tipo": "REQ",
-        "numero": 4244,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo à Sra. Delegada de Polícia Daniella Campos Rodriguez Terra, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646844"
       },
       {
         "id": 2598197,

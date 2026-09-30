@@ -58,7 +58,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-29T01:08:15.571187+00:00",
+      "generated_at_utc": "2026-09-30T09:55:37.215891+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -66,8 +66,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 13,
+        "quantidade_registros": 14,
         "registros_recentes": [
+          {
+            "id": 2647198,
+            "sigla_tipo": "PL",
+            "numero": 5489,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.383, de 30 de dezembro de 1991, a Lei nº 8.989, de 24 de fevereiro de 1995, e a Lei nº 14.947, de 2 de agosto de 2024, para estender aos veículos adquiridos por autoescolas regularmente credenciadas pelo órgão executivo de trânsito dos Estados e do Distrito Federal os incentivos fiscais referentes ao Imposto sobre Operações de Crédito, Câmbio e Seguro, ou relativas a Títulos ou Valores Mobiliários (IOF) e ao Imposto sobre Produtos Industrializados (IPI), e incluí-las entre as atividades passíveis de financiamento reembolsável no âmbito do Fundo de Investimento em Infraestrutura Social (FIIS).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647198"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -155,14 +163,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 9.503, de 1997 (Código de Trânsito Brasileiro), para incluir os veículos oficiais de saúde empregados em serviços de urgência, emergência ou atendimento sanitário no rol daqueles em relação aos quais não se aplicam infrações por circulação, parada ou estacionamento em desacordo com a legislação.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635206"
-          },
-          {
-            "id": 2633415,
-            "sigla_tipo": "DOC",
-            "numero": 906,
-            "ano": 2026,
-            "ementa": "Inclusão de Parlamentar no Grupo Parlamentar Brasil Portugal.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633415"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=236518"
@@ -237,7 +237,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "236518",
-  "generated_at_utc": "2026-09-29T01:08:17.347111+00:00",
+  "generated_at_utc": "2026-09-30T09:55:46.759239+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -399,7 +399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 13,
+    "quantidade_registros": 14,
     "por_ano": [
       {
         "ano": 2023,
@@ -415,10 +415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 13
+        "quantidade_registros": 14
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647198,
+        "sigla_tipo": "PL",
+        "numero": 5489,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.383, de 30 de dezembro de 1991, a Lei nº 8.989, de 24 de fevereiro de 1995, e a Lei nº 14.947, de 2 de agosto de 2024, para estender aos veículos adquiridos por autoescolas regularmente credenciadas pelo órgão executivo de trânsito dos Estados e do Distrito Federal os incentivos fiscais referentes ao Imposto sobre Operações de Crédito, Câmbio e Seguro, ou relativas a Títulos ou Valores Mobiliários (IOF) e ao Imposto sobre Produtos Industrializados (IPI), e incluí-las entre as atividades passíveis de financiamento reembolsável no âmbito do Fundo de Investimento em Infraestrutura Social (FIIS).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647198"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -506,14 +514,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 9.503, de 1997 (Código de Trânsito Brasileiro), para incluir os veículos oficiais de saúde empregados em serviços de urgência, emergência ou atendimento sanitário no rol daqueles em relação aos quais não se aplicam infrações por circulação, parada ou estacionamento em desacordo com a legislação.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635206"
-      },
-      {
-        "id": 2633415,
-        "sigla_tipo": "DOC",
-        "numero": 906,
-        "ano": 2026,
-        "ementa": "Inclusão de Parlamentar no Grupo Parlamentar Brasil Portugal.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633415"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=236518",

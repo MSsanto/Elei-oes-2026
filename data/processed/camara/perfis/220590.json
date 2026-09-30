@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-29T01:07:50.740283+00:00",
+      "generated_at_utc": "2026-09-30T09:52:42.005375+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220590/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 24,
+        "quantidade_registros": 26,
         "registros_recentes": [
+          {
+            "id": 2647211,
+            "sigla_tipo": "REQ",
+            "numero": 4272,
+            "ano": 2026,
+            "ementa": "Requer a aprovação de Moção de Repúdio à conduta do Presidente da República, Luiz Inácio Lula da Silva, por comentar, mesmo após ser alertado de sua possível falsidade, a controvérsia envolvendo alegação que associava o Senador Flávio Bolsonaro à retirada do título de Padroeira do Brasil de Nossa Senhora Aparecida, em contradição com os registros oficiais da Câmara dos Deputados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647211"
+          },
+          {
+            "id": 2647210,
+            "sigla_tipo": "REQ",
+            "numero": 4271,
+            "ano": 2026,
+            "ementa": "Requer a aprovação de Moção de Repúdio à declaração do Presidente da República, Luiz Inácio Lula da Silva, de que mulheres “aprendem a tomar toque desde pequenas”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647210"
+          },
           {
             "id": 2646373,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-          },
-          {
-            "id": 2622295,
-            "sigla_tipo": "REQ",
-            "numero": 223,
-            "ano": 2026,
-            "ementa": "Requer que esta Comissão aprove Moção de aplausos e Homenagem Póstuma às inspetoras de alunos RAQUEL SALES FEITOSA e ALZENIR PEREIRA DA SILVA, pelo ato de bravura, heroísmo e abnegação demonstrados em defesa da vida de estudantes durante o ataque ocorrido no Instituto São José, em Rio Branco, Estado do Acre.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622295"
-          },
-          {
-            "id": 2617922,
-            "sigla_tipo": "REQ",
-            "numero": 2232,
-            "ano": 2026,
-            "ementa": "Requer a coautoria do PL 539/2024.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617922"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220590"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220590",
-  "generated_at_utc": "2026-09-29T01:08:17.294126+00:00",
+  "generated_at_utc": "2026-09-30T09:55:46.412336+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 514,
+    "quantidade_registros": 516,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 24
+        "quantidade_registros": 26
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647211,
+        "sigla_tipo": "REQ",
+        "numero": 4272,
+        "ano": 2026,
+        "ementa": "Requer a aprovação de Moção de Repúdio à conduta do Presidente da República, Luiz Inácio Lula da Silva, por comentar, mesmo após ser alertado de sua possível falsidade, a controvérsia envolvendo alegação que associava o Senador Flávio Bolsonaro à retirada do título de Padroeira do Brasil de Nossa Senhora Aparecida, em contradição com os registros oficiais da Câmara dos Deputados.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647211"
+      },
+      {
+        "id": 2647210,
+        "sigla_tipo": "REQ",
+        "numero": 4271,
+        "ano": 2026,
+        "ementa": "Requer a aprovação de Moção de Repúdio à declaração do Presidente da República, Luiz Inácio Lula da Silva, de que mulheres “aprendem a tomar toque desde pequenas”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647210"
+      },
       {
         "id": 2646373,
         "sigla_tipo": "REQ",
@@ -1503,22 +1519,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-      },
-      {
-        "id": 2622295,
-        "sigla_tipo": "REQ",
-        "numero": 223,
-        "ano": 2026,
-        "ementa": "Requer que esta Comissão aprove Moção de aplausos e Homenagem Póstuma às inspetoras de alunos RAQUEL SALES FEITOSA e ALZENIR PEREIRA DA SILVA, pelo ato de bravura, heroísmo e abnegação demonstrados em defesa da vida de estudantes durante o ataque ocorrido no Instituto São José, em Rio Branco, Estado do Acre.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622295"
-      },
-      {
-        "id": 2617922,
-        "sigla_tipo": "REQ",
-        "numero": 2232,
-        "ano": 2026,
-        "ementa": "Requer a coautoria do PL 539/2024.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617922"
       },
       {
         "id": 2598197,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-29T01:04:56.826016+00:00",
+      "generated_at_utc": "2026-09-30T09:53:14.302438+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220543/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 117,
+        "quantidade_registros": 119,
         "registros_recentes": [
+          {
+            "id": 2647199,
+            "sigla_tipo": "PL",
+            "numero": 5490,
+            "ano": 2026,
+            "ementa": "Dispõe sobre o incentivo ao aprimoramento contínuo no processo de comunicação entre os profissionais de saúde e as pessoas surdas, no âmbito do Sistema Único de Saúde, por meio de soluções tecnológicas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647199"
+          },
+          {
+            "id": 2647192,
+            "sigla_tipo": "PL",
+            "numero": 5486,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para estabelecer mecanismos de identificação, comunicação e avaliação preventiva de situações de ameaça ou violação de direitos de crianças e adolescentes em razão de violência envolvendo pais ou responsáveis.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647192"
+          },
           {
             "id": 2646903,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.221, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645688"
-          },
-          {
-            "id": 2645687,
-            "sigla_tipo": "REQ",
-            "numero": 4180,
-            "ano": 2026,
-            "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.237, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645687"
-          },
-          {
-            "id": 2645686,
-            "sigla_tipo": "REQ",
-            "numero": 4179,
-            "ano": 2026,
-            "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.203, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645686"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220543"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220543",
-  "generated_at_utc": "2026-09-29T01:08:16.928773+00:00",
+  "generated_at_utc": "2026-09-30T09:55:46.478221+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 999,
+    "quantidade_registros": 1001,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 117
+        "quantidade_registros": 119
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647199,
+        "sigla_tipo": "PL",
+        "numero": 5490,
+        "ano": 2026,
+        "ementa": "Dispõe sobre o incentivo ao aprimoramento contínuo no processo de comunicação entre os profissionais de saúde e as pessoas surdas, no âmbito do Sistema Único de Saúde, por meio de soluções tecnológicas.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647199"
+      },
+      {
+        "id": 2647192,
+        "sigla_tipo": "PL",
+        "numero": 5486,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), para estabelecer mecanismos de identificação, comunicação e avaliação preventiva de situações de ameaça ou violação de direitos de crianças e adolescentes em razão de violência envolvendo pais ou responsáveis.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647192"
+      },
       {
         "id": 2646903,
         "sigla_tipo": "PL",
@@ -1502,22 +1518,6 @@
         "ano": 2026,
         "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.221, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645688"
-      },
-      {
-        "id": 2645687,
-        "sigla_tipo": "REQ",
-        "numero": 4180,
-        "ano": 2026,
-        "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.237, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645687"
-      },
-      {
-        "id": 2645686,
-        "sigla_tipo": "REQ",
-        "numero": 4179,
-        "ano": 2026,
-        "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.203, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645686"
       },
       {
         "id": 2599001,
