@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-30T09:52:20.969691+00:00",
+      "generated_at_utc": "2026-10-01T10:35:36.063887+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1231,7 +1231,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74044",
-  "generated_at_utc": "2026-09-30T09:55:46.359515+00:00",
+  "generated_at_utc": "2026-10-01T10:36:48.925084+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1257,17 +1257,17 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74044.jpg",
         "email": null,
-        "data": "2026-06-01",
+        "data": "2026-09-30",
         "nomeEleitoral": "Wilson Santiago",
         "gabinete": {
-          "nome": null,
-          "predio": null,
-          "sala": null,
-          "andar": null,
-          "telefone": null,
-          "email": null
+          "nome": "534",
+          "predio": "4",
+          "sala": "534",
+          "andar": "5",
+          "telefone": "3215-5534",
+          "email": "dep.wilsonsantiago@camara.leg.br"
         },
-        "situacao": "Licença",
+        "situacao": "Exercício",
         "condicaoEleitoral": "Titular",
         "descricaoStatus": ""
       },
@@ -1365,6 +1365,22 @@
         "situacao": "Licença",
         "condicaoEleitoral": "Titular",
         "descricaoStatus": "Saída - Afastamento com prazo determinado - Afastamento Conjunto Consecutivo"
+      },
+      {
+        "id": 74044,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/74044",
+        "nome": "Wilson Santiago",
+        "nomeEleitoral": "WILSON SANTIAGO",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "PB",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/74044.jpg",
+        "dataHora": "2026-09-30T00:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Reassunção"
       },
       {
         "id": 74044,

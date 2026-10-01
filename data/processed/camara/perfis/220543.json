@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-30T09:53:14.302438+00:00",
+      "generated_at_utc": "2026-10-01T10:35:28.200251+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220543/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 119,
+        "quantidade_registros": 121,
         "registros_recentes": [
+          {
+            "id": 2647256,
+            "sigla_tipo": "INC",
+            "numero": 1612,
+            "ano": 2026,
+            "ementa": "Sugere ao Ministério da Saúde a adoção de medidas destinadas à proteção da continuidade terapêutica dos pacientes afetados pela descontinuação do medicamento Depakote Sprinkle 125 mg (divalproato de sódio), bem como o aperfeiçoamento dos mecanismos de monitoramento, comunicação e resposta à descontinuação de medicamentos de uso contínuo ou de difícil substituição terapêutica.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647256"
+          },
+          {
+            "id": 2647255,
+            "sigla_tipo": "RIC",
+            "numero": 2707,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Saúde acerca da descontinuação da comercialização do medicamento Depakote Sprinkle 125 mg (divalproato de sódio) e das medidas destinadas à proteção da continuidade terapêutica dos pacientes.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647255"
+          },
           {
             "id": 2647199,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.219, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645690"
-          },
-          {
-            "id": 2645689,
-            "sigla_tipo": "REQ",
-            "numero": 4182,
-            "ano": 2026,
-            "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.220, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645689"
-          },
-          {
-            "id": 2645688,
-            "sigla_tipo": "REQ",
-            "numero": 4181,
-            "ano": 2026,
-            "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.221, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645688"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220543"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220543",
-  "generated_at_utc": "2026-09-30T09:55:46.478221+00:00",
+  "generated_at_utc": "2026-10-01T10:36:48.917064+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1403,7 +1403,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1001,
+    "quantidade_registros": 1003,
     "por_ano": [
       {
         "ano": 2023,
@@ -1419,10 +1419,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 119
+        "quantidade_registros": 121
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647256,
+        "sigla_tipo": "INC",
+        "numero": 1612,
+        "ano": 2026,
+        "ementa": "Sugere ao Ministério da Saúde a adoção de medidas destinadas à proteção da continuidade terapêutica dos pacientes afetados pela descontinuação do medicamento Depakote Sprinkle 125 mg (divalproato de sódio), bem como o aperfeiçoamento dos mecanismos de monitoramento, comunicação e resposta à descontinuação de medicamentos de uso contínuo ou de difícil substituição terapêutica.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647256"
+      },
+      {
+        "id": 2647255,
+        "sigla_tipo": "RIC",
+        "numero": 2707,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Saúde acerca da descontinuação da comercialização do medicamento Depakote Sprinkle 125 mg (divalproato de sódio) e das medidas destinadas à proteção da continuidade terapêutica dos pacientes.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647255"
+      },
       {
         "id": 2647199,
         "sigla_tipo": "PL",
@@ -1502,22 +1518,6 @@
         "ano": 2026,
         "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.219, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645690"
-      },
-      {
-        "id": 2645689,
-        "sigla_tipo": "REQ",
-        "numero": 4182,
-        "ano": 2026,
-        "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.220, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645689"
-      },
-      {
-        "id": 2645688,
-        "sigla_tipo": "REQ",
-        "numero": 4181,
-        "ano": 2026,
-        "ementa": "Requeiro, nos termos do art. 104 do Regimento Interno, a retirada do Projeto de Lei nº 5.221, de 2026, de minha autoria, tendo em vista a necessidade de aperfeiçoamento da matéria objeto da proposição.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645688"
       },
       {
         "id": 2599001,

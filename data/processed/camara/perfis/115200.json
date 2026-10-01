@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-30T09:53:48.946982+00:00",
+      "generated_at_utc": "2026-10-01T10:35:30.672739+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -665,7 +665,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "115200",
-  "generated_at_utc": "2026-09-30T09:55:46.547069+00:00",
+  "generated_at_utc": "2026-10-01T10:36:48.920867+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -691,17 +691,17 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/115200.jpg",
         "email": null,
-        "data": "2026-05-28",
+        "data": "2026-09-30",
         "nomeEleitoral": "Raniery Paulino",
         "gabinete": {
-          "nome": "815",
-          "predio": "4",
-          "sala": "815",
-          "andar": "8",
-          "telefone": "3215-5815",
-          "email": "dep.ranierypaulino@camara.leg.br"
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
         },
-        "situacao": "Exercício",
+        "situacao": "Suplência",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": null
       },
@@ -843,6 +843,22 @@
         "situacao": "Exercício",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": "Entrada - Reassunção"
+      },
+      {
+        "id": 115200,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/115200",
+        "nome": "Raniery Paulino",
+        "nomeEleitoral": "RANIERY PAULINO",
+        "siglaPartido": "REPUBLICANOS",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37908",
+        "siglaUf": "PB",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/115200.jpg",
+        "dataHora": "2026-09-30T00:00",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/115200/historico"

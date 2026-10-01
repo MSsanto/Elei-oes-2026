@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-30T09:55:03.014419+00:00",
+      "generated_at_utc": "2026-10-01T10:34:11.534255+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,40 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74856/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 543,
+        "quantidade_registros": 547,
         "registros_recentes": [
+          {
+            "id": 2647250,
+            "sigla_tipo": "RIC",
+            "numero": 2706,
+            "ano": 2026,
+            "ementa": "Requer informações ao Sr. Ministro do Meio Ambiente e Mudança do Clima sobre a adoção de medidas relacionadas à sugestão veiculada na Indicação nº 395, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647250"
+          },
+          {
+            "id": 2647249,
+            "sigla_tipo": "RIC",
+            "numero": 2705,
+            "ano": 2026,
+            "ementa": "Requer informações ao Sr. Ministro da Secretaria de Relações Institucionais da Presidência da República sobre a adoção de medidas relacionadas à sugestão veiculada na Indicação nº 395, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647249"
+          },
+          {
+            "id": 2647248,
+            "sigla_tipo": "RIC",
+            "numero": 2704,
+            "ano": 2026,
+            "ementa": "Requer informações à Sra. Ministra da Gestão e da Inovação em Serviços Públicos a respeito da adoção de medidas relacionadas à sugestão veiculada na Indicação nº 395, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647248"
+          },
+          {
+            "id": 2647242,
+            "sigla_tipo": "REQ",
+            "numero": 4277,
+            "ano": 2026,
+            "ementa": "Requer a realização de Sessão Solene em homenagem aos 15 anos da Gerando Falcões.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647242"
+          },
           {
             "id": 2647183,
             "sigla_tipo": "REQ",
@@ -1025,38 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
-          },
-          {
-            "id": 2646538,
-            "sigla_tipo": "PL",
-            "numero": 5390,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 15.224, de 30 de setembro de 2025, para instituir a Rede Brasileira de Bancos de Alimentos, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646538"
-          },
-          {
-            "id": 2646537,
-            "sigla_tipo": "REQ",
-            "numero": 4235,
-            "ano": 2026,
-            "ementa": "Requer a desapensação do Projeto de Lei nº 2.875, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.280, de 2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646537"
-          },
-          {
-            "id": 2646536,
-            "sigla_tipo": "INC",
-            "numero": 1594,
-            "ano": 2026,
-            "ementa": "Sugere registro do Carnaval Carioca, no Rio de Janeiro, como Patrimônio Cultural Imaterial do Brasil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646536"
-          },
-          {
-            "id": 2646423,
-            "sigla_tipo": "PL",
-            "numero": 5369,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre os requisitos técnicos mínimos do equipamento e do sistema de monitoração eletrônica.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646423"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74856"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74856",
-  "generated_at_utc": "2026-09-30T09:55:46.682011+00:00",
+  "generated_at_utc": "2026-10-01T10:36:48.788669+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2359,7 +2359,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2370,
+    "quantidade_registros": 2374,
     "por_ano": [
       {
         "ano": 2023,
@@ -2375,10 +2375,42 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 543
+        "quantidade_registros": 547
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647250,
+        "sigla_tipo": "RIC",
+        "numero": 2706,
+        "ano": 2026,
+        "ementa": "Requer informações ao Sr. Ministro do Meio Ambiente e Mudança do Clima sobre a adoção de medidas relacionadas à sugestão veiculada na Indicação nº 395, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647250"
+      },
+      {
+        "id": 2647249,
+        "sigla_tipo": "RIC",
+        "numero": 2705,
+        "ano": 2026,
+        "ementa": "Requer informações ao Sr. Ministro da Secretaria de Relações Institucionais da Presidência da República sobre a adoção de medidas relacionadas à sugestão veiculada na Indicação nº 395, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647249"
+      },
+      {
+        "id": 2647248,
+        "sigla_tipo": "RIC",
+        "numero": 2704,
+        "ano": 2026,
+        "ementa": "Requer informações à Sra. Ministra da Gestão e da Inovação em Serviços Públicos a respeito da adoção de medidas relacionadas à sugestão veiculada na Indicação nº 395, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647248"
+      },
+      {
+        "id": 2647242,
+        "sigla_tipo": "REQ",
+        "numero": 4277,
+        "ano": 2026,
+        "ementa": "Requer a realização de Sessão Solene em homenagem aos 15 anos da Gerando Falcões.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647242"
+      },
       {
         "id": 2647183,
         "sigla_tipo": "REQ",
@@ -2442,38 +2474,6 @@
         "ano": 2026,
         "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
-      },
-      {
-        "id": 2646538,
-        "sigla_tipo": "PL",
-        "numero": 5390,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 15.224, de 30 de setembro de 2025, para instituir a Rede Brasileira de Bancos de Alimentos, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646538"
-      },
-      {
-        "id": 2646537,
-        "sigla_tipo": "REQ",
-        "numero": 4235,
-        "ano": 2026,
-        "ementa": "Requer a desapensação do Projeto de Lei nº 2.875, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.280, de 2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646537"
-      },
-      {
-        "id": 2646536,
-        "sigla_tipo": "INC",
-        "numero": 1594,
-        "ano": 2026,
-        "ementa": "Sugere registro do Carnaval Carioca, no Rio de Janeiro, como Patrimônio Cultural Imaterial do Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646536"
-      },
-      {
-        "id": 2646423,
-        "sigla_tipo": "PL",
-        "numero": 5369,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 7.210, de 11 de julho de 1984 (Lei de Execução Penal), para dispor sobre os requisitos técnicos mínimos do equipamento e do sistema de monitoração eletrônica.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646423"
       },
       {
         "id": 2599057,

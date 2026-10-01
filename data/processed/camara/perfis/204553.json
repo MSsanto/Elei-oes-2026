@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-30T09:52:20.136056+00:00",
+      "generated_at_utc": "2026-10-01T10:32:59.697551+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204553/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 44,
+        "quantidade_registros": 45,
         "registros_recentes": [
+          {
+            "id": 2647219,
+            "sigla_tipo": "REQ",
+            "numero": 4273,
+            "ano": 2026,
+            "ementa": "Requer voto de regozijo e louvor ao Município baiano de Camaçari e seu povo, pela passagem dos 268 anos de fundação, ato celebrado no dia 28 de setembro.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647219"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Sugere à Mesa Diretora da Câmara dos Deputados a adoção de medidas destinadas à implementação de metas progressivas de inclusão de pessoas com deficiência nos cargos de assessoramento parlamentar e na\nestrutura administrativa da Câmara dos Deputados.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632458"
-          },
-          {
-            "id": 2632434,
-            "sigla_tipo": "PL",
-            "numero": 3113,
-            "ano": 2026,
-            "ementa": "Institui o Programa Nacional Parlamento Inclusivo, destinado à promoção da participação de pessoas com deficiência nas estruturas legislativas da União, dos Estados, do Distrito Federal e dos Municípios, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632434"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204553"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204553",
-  "generated_at_utc": "2026-09-30T09:55:46.357344+00:00",
+  "generated_at_utc": "2026-10-01T10:36:48.701611+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1450,7 +1450,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 253,
+    "quantidade_registros": 254,
     "por_ano": [
       {
         "ano": 2023,
@@ -1466,10 +1466,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 44
+        "quantidade_registros": 45
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647219,
+        "sigla_tipo": "REQ",
+        "numero": 4273,
+        "ano": 2026,
+        "ementa": "Requer voto de regozijo e louvor ao Município baiano de Camaçari e seu povo, pela passagem dos 268 anos de fundação, ato celebrado no dia 28 de setembro.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647219"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1557,14 +1565,6 @@
         "ano": 2026,
         "ementa": "Sugere à Mesa Diretora da Câmara dos Deputados a adoção de medidas destinadas à implementação de metas progressivas de inclusão de pessoas com deficiência nos cargos de assessoramento parlamentar e na\nestrutura administrativa da Câmara dos Deputados.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632458"
-      },
-      {
-        "id": 2632434,
-        "sigla_tipo": "PL",
-        "numero": 3113,
-        "ano": 2026,
-        "ementa": "Institui o Programa Nacional Parlamento Inclusivo, destinado à promoção da participação de pessoas com deficiência nas estruturas legislativas da União, dos Estados, do Distrito Federal e dos Municípios, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632434"
       },
       {
         "id": 2598424,

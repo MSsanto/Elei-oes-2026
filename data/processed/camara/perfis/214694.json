@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-30T09:52:49.516811+00:00",
+      "generated_at_utc": "2026-10-01T10:34:42.341207+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/214694/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 41,
+        "quantidade_registros": 42,
         "registros_recentes": [
+          {
+            "id": 2647221,
+            "sigla_tipo": "REQ",
+            "numero": 4274,
+            "ano": 2026,
+            "ementa": "Requer moção de aplauso aos policiais militares Acauã Vitória Takac e Gabriela Maria Probst.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647221"
+          },
           {
             "id": 2646462,
             "sigla_tipo": "INC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
-          },
-          {
-            "id": 2629926,
-            "sigla_tipo": "REQ",
-            "numero": 3332,
-            "ano": 2026,
-            "ementa": "Requerimento de Urgência - PL nº 957, de 2024.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629926"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=214694"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "214694",
-  "generated_at_utc": "2026-09-30T09:55:46.428283+00:00",
+  "generated_at_utc": "2026-10-01T10:36:48.845198+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1547,7 +1547,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 516,
+    "quantidade_registros": 517,
     "por_ano": [
       {
         "ano": 2023,
@@ -1563,10 +1563,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 41
+        "quantidade_registros": 42
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647221,
+        "sigla_tipo": "REQ",
+        "numero": 4274,
+        "ano": 2026,
+        "ementa": "Requer moção de aplauso aos policiais militares Acauã Vitória Takac e Gabriela Maria Probst.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647221"
+      },
       {
         "id": 2646462,
         "sigla_tipo": "INC",
@@ -1654,14 +1662,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 9º da Emenda Constitucional nº 132, de 20 de dezembro de 2023, para permitir a concessão de créditos do Imposto sobre Bens e Serviços através de fomento indireto a doadores e patrocinadores de projetos culturais e esportivos.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2631190"
-      },
-      {
-        "id": 2629926,
-        "sigla_tipo": "REQ",
-        "numero": 3332,
-        "ano": 2026,
-        "ementa": "Requerimento de Urgência - PL nº 957, de 2024.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629926"
       },
       {
         "id": 2599001,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-09-30T09:53:24.454238+00:00",
+      "generated_at_utc": "2026-10-01T10:32:47.466407+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220534/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 104,
+        "quantidade_registros": 105,
         "registros_recentes": [
+          {
+            "id": 2647257,
+            "sigla_tipo": "PL",
+            "numero": 5501,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.852, de 3 de maio de 2024, para estabelecer incentivos fiscais à formação de recursos humanos para a Indústria de Jogos Eletrônicos",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647257"
+          },
           {
             "id": 2646506,
             "sigla_tipo": "INC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-          },
-          {
-            "id": 2640327,
-            "sigla_tipo": "RIC",
-            "numero": 2228,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado da Saúde ampliação da oferta dos serviços de saúde no Distrito Federal.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640327"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220534"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220534",
-  "generated_at_utc": "2026-09-30T09:55:46.495317+00:00",
+  "generated_at_utc": "2026-10-01T10:36:48.681372+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 933,
+    "quantidade_registros": 934,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 104
+        "quantidade_registros": 105
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647257,
+        "sigla_tipo": "PL",
+        "numero": 5501,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.852, de 3 de maio de 2024, para estabelecer incentivos fiscais à formação de recursos humanos para a Indústria de Jogos Eletrônicos",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647257"
+      },
       {
         "id": 2646506,
         "sigla_tipo": "INC",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-      },
-      {
-        "id": 2640327,
-        "sigla_tipo": "RIC",
-        "numero": 2228,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado da Saúde ampliação da oferta dos serviços de saúde no Distrito Federal.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640327"
       },
       {
         "id": 2596161,
