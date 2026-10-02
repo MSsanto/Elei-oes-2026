@@ -654,7 +654,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:34:44.667903+00:00",
+      "generated_at_utc": "2026-10-02T20:18:16.729038+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -662,8 +662,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/221329/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 33,
+        "quantidade_registros": 34,
         "registros_recentes": [
+          {
+            "id": 2647274,
+            "sigla_tipo": "PL",
+            "numero": 5502,
+            "ano": 2026,
+            "ementa": "Institui a Lei de Restituição Integral e Reparação ao Apostador, para disciplinar o direito à devolução e ao ressarcimento de valores e perdas decorrentes de operações de apostas de quota fixa (popularmente conhecidas como 'bets') realizadas no território nacional, estabelece regras de apuração da perda líquida, deveres de informação, transparência e rastreabilidade pelas operadoras, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647274"
+          },
           {
             "id": 2646870,
             "sigla_tipo": "PL",
@@ -751,14 +759,6 @@
             "ano": 2026,
             "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
-          },
-          {
-            "id": 2628467,
-            "sigla_tipo": "PL",
-            "numero": 2669,
-            "ano": 2026,
-            "ementa": "Institui o Programa Nacional \"Espaço Laços\", estabelecendo diretrizes para o Centro de Atendimento Integral à Neurodiversidade e a criação do Parque Multissensorial Municipal, pautado na Reabilitação Ecológica e na Terapia Assistida por Animais (TAA) no âmbito do Sistema Único de Saúde (SUS).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628467"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=221329"
@@ -973,7 +973,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "221329",
-  "generated_at_utc": "2026-10-01T10:36:48.848827+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.394432+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1329,7 +1329,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 181,
+    "quantidade_registros": 182,
     "por_ano": [
       {
         "ano": 2023,
@@ -1345,10 +1345,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 33
+        "quantidade_registros": 34
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647274,
+        "sigla_tipo": "PL",
+        "numero": 5502,
+        "ano": 2026,
+        "ementa": "Institui a Lei de Restituição Integral e Reparação ao Apostador, para disciplinar o direito à devolução e ao ressarcimento de valores e perdas decorrentes de operações de apostas de quota fixa (popularmente conhecidas como 'bets') realizadas no território nacional, estabelece regras de apuração da perda líquida, deveres de informação, transparência e rastreabilidade pelas operadoras, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647274"
+      },
       {
         "id": 2646870,
         "sigla_tipo": "PL",
@@ -1436,14 +1444,6 @@
         "ano": 2026,
         "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
-      },
-      {
-        "id": 2628467,
-        "sigla_tipo": "PL",
-        "numero": 2669,
-        "ano": 2026,
-        "ementa": "Institui o Programa Nacional \"Espaço Laços\", estabelecendo diretrizes para o Centro de Atendimento Integral à Neurodiversidade e a criação do Parque Multissensorial Municipal, pautado na Reabilitação Ecológica e na Terapia Assistida por Animais (TAA) no âmbito do Sistema Único de Saúde (SUS).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628467"
       },
       {
         "id": 2598197,

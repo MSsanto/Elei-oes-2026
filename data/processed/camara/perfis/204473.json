@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:36:18.625955+00:00",
+      "generated_at_utc": "2026-10-02T20:18:41.461945+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204473/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 51,
+        "quantidade_registros": 52,
         "registros_recentes": [
+          {
+            "id": 2647284,
+            "sigla_tipo": "PDL",
+            "numero": 1007,
+            "ano": 2026,
+            "ementa": "Disciplina, nos termos do art. 62, § 3º, da Constituição Federal, as relações jurídicas decorrentes de atos praticados, no período de vigência da Medida Provisória nº 1.349, de 7 de abril de 2026, relativos à subvenção econômica à importação de Gás Liquefeito de Petróleo (GLP) e à apuração de elevação abusiva de preços por distribuidores de GLP.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647284"
+          },
           {
             "id": 2646822,
             "sigla_tipo": "PDL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a aprovação de Moção de Repúdio à inscrição de sigla associada a facção criminosa no Morro do Careca, em Natal/RN, principal cartão-postal do Rio Grande do Norte, e à escalada da ousadia do crime organizado no Estado.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626789"
-          },
-          {
-            "id": 2623604,
-            "sigla_tipo": "PEC",
-            "numero": 9,
-            "ano": 2026,
-            "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204473"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204473",
-  "generated_at_utc": "2026-10-01T10:36:48.988246+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.437954+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1479,7 +1479,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 619,
+    "quantidade_registros": 620,
     "por_ano": [
       {
         "ano": 2023,
@@ -1495,10 +1495,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 51
+        "quantidade_registros": 52
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647284,
+        "sigla_tipo": "PDL",
+        "numero": 1007,
+        "ano": 2026,
+        "ementa": "Disciplina, nos termos do art. 62, § 3º, da Constituição Federal, as relações jurídicas decorrentes de atos praticados, no período de vigência da Medida Provisória nº 1.349, de 7 de abril de 2026, relativos à subvenção econômica à importação de Gás Liquefeito de Petróleo (GLP) e à apuração de elevação abusiva de preços por distribuidores de GLP.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647284"
+      },
       {
         "id": 2646822,
         "sigla_tipo": "PDL",
@@ -1586,14 +1594,6 @@
         "ano": 2026,
         "ementa": "Requer a aprovação de Moção de Repúdio à inscrição de sigla associada a facção criminosa no Morro do Careca, em Natal/RN, principal cartão-postal do Rio Grande do Norte, e à escalada da ousadia do crime organizado no Estado.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626789"
-      },
-      {
-        "id": 2623604,
-        "sigla_tipo": "PEC",
-        "numero": 9,
-        "ano": 2026,
-        "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
       },
       {
         "id": 2598197,

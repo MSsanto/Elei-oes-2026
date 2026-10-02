@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:34:12.445450+00:00",
+      "generated_at_utc": "2026-10-02T20:19:01.291891+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204526/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 104,
+        "quantidade_registros": 106,
         "registros_recentes": [
+          {
+            "id": 2647283,
+            "sigla_tipo": "REQ",
+            "numero": 126,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado das Relações Exteriores sobre a atuação do ex-Embaixador do Brasil na Espanha no processo de mudança do Senhor Fábio Luís Lula da Silva para Madri, quando era investigado pelo escândalo do INSS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647283"
+          },
+          {
+            "id": 2647282,
+            "sigla_tipo": "REQ",
+            "numero": 125,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado das Relações Exteriores para que preste esclarecimentos acerca do apoio prestado pela Embaixada do Brasil na Espanha à mudança do Senhor Fábio Luís Lula da Silva para Madri, quando era investigado pela CPMI do INSS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647282"
+          },
           {
             "id": 2647153,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre a autorização para uso compassivo de medicamentos ainda não registrados no país e estabelece prazo para decisão da Agência Nacional de Vigilância Sanitária – Anvisa.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645610"
-          },
-          {
-            "id": 2645225,
-            "sigla_tipo": "REQ",
-            "numero": 123,
-            "ano": 2026,
-            "ementa": "Requer ao Senhor Ministro de Estado da Defesa informações detalhadas sobre a presença, movimentação, infiltração e eventual estabelecimento de estruturas de grupos guerrilheiros, organizações armadas estrangeiras e organizações criminosas transnacionais na Amazônia brasileira, bem como sobre as medidas adotadas para impedir ameaças à segurança nacional, à integridade territorial e à soberania do Brasil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645225"
-          },
-          {
-            "id": 2644975,
-            "sigla_tipo": "PL",
-            "numero": 5233,
-            "ano": 2026,
-            "ementa": "Dispõe sobre o cancelamento de tombamento de bens integrantes do patrimônio cultural brasileiro no âmbito federal, estabelece requisitos para a transferência definitiva de bens culturais da União ao exterior e revoga o Decreto-Lei nº 3.866, de 29 de novembro de 1941.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644975"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204526"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204526",
-  "generated_at_utc": "2026-10-01T10:36:48.795065+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.476884+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1484,7 +1484,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 947,
+    "quantidade_registros": 949,
     "por_ano": [
       {
         "ano": 2023,
@@ -1500,10 +1500,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 104
+        "quantidade_registros": 106
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647283,
+        "sigla_tipo": "REQ",
+        "numero": 126,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado das Relações Exteriores sobre a atuação do ex-Embaixador do Brasil na Espanha no processo de mudança do Senhor Fábio Luís Lula da Silva para Madri, quando era investigado pelo escândalo do INSS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647283"
+      },
+      {
+        "id": 2647282,
+        "sigla_tipo": "REQ",
+        "numero": 125,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado das Relações Exteriores para que preste esclarecimentos acerca do apoio prestado pela Embaixada do Brasil na Espanha à mudança do Senhor Fábio Luís Lula da Silva para Madri, quando era investigado pela CPMI do INSS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647282"
+      },
       {
         "id": 2647153,
         "sigla_tipo": "PL",
@@ -1583,22 +1599,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre a autorização para uso compassivo de medicamentos ainda não registrados no país e estabelece prazo para decisão da Agência Nacional de Vigilância Sanitária – Anvisa.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645610"
-      },
-      {
-        "id": 2645225,
-        "sigla_tipo": "REQ",
-        "numero": 123,
-        "ano": 2026,
-        "ementa": "Requer ao Senhor Ministro de Estado da Defesa informações detalhadas sobre a presença, movimentação, infiltração e eventual estabelecimento de estruturas de grupos guerrilheiros, organizações armadas estrangeiras e organizações criminosas transnacionais na Amazônia brasileira, bem como sobre as medidas adotadas para impedir ameaças à segurança nacional, à integridade territorial e à soberania do Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645225"
-      },
-      {
-        "id": 2644975,
-        "sigla_tipo": "PL",
-        "numero": 5233,
-        "ano": 2026,
-        "ementa": "Dispõe sobre o cancelamento de tombamento de bens integrantes do patrimônio cultural brasileiro no âmbito federal, estabelece requisitos para a transferência definitiva de bens culturais da União ao exterior e revoga o Decreto-Lei nº 3.866, de 29 de novembro de 1941.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644975"
       },
       {
         "id": 2598197,

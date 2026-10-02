@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:32:47.466407+00:00",
+      "generated_at_utc": "2026-10-02T20:20:02.503772+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220534/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 105,
+        "quantidade_registros": 106,
         "registros_recentes": [
+          {
+            "id": 2647298,
+            "sigla_tipo": "PL",
+            "numero": 5520,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 13.303, de 30 de junho de 2016, e a Lei nº 14.597, de 14 de junho de 2023, para destinar parcela do montante aprovado para ações de patrocínio realizadas por empresas públicas, sociedades de economia mista e subsidiárias controladas pela União ao Fundo Nacional do Esporte – Fundesporte, para apoio à participação de atletas em competições esportivas oficiais, e dá outras providências",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647298"
+          },
           {
             "id": 2647257,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 13.311, de 11 de julho de 2016, para estabelecer diretrizes gerais para utilização de área urbana por comércio ambulante motorizado sem ponto fixo e para a instalação e o funcionamento de feiras itinerantes",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644044"
-          },
-          {
-            "id": 2640403,
-            "sigla_tipo": "REQ",
-            "numero": 3956,
-            "ano": 2026,
-            "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220534"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220534",
-  "generated_at_utc": "2026-10-01T10:36:48.681372+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.596860+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1404,7 +1404,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 934,
+    "quantidade_registros": 935,
     "por_ano": [
       {
         "ano": 2023,
@@ -1420,10 +1420,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 105
+        "quantidade_registros": 106
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647298,
+        "sigla_tipo": "PL",
+        "numero": 5520,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 13.303, de 30 de junho de 2016, e a Lei nº 14.597, de 14 de junho de 2023, para destinar parcela do montante aprovado para ações de patrocínio realizadas por empresas públicas, sociedades de economia mista e subsidiárias controladas pela União ao Fundo Nacional do Esporte – Fundesporte, para apoio à participação de atletas em competições esportivas oficiais, e dá outras providências",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647298"
+      },
       {
         "id": 2647257,
         "sigla_tipo": "PL",
@@ -1511,14 +1519,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 13.311, de 11 de julho de 2016, para estabelecer diretrizes gerais para utilização de área urbana por comércio ambulante motorizado sem ponto fixo e para a instalação e o funcionamento de feiras itinerantes",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644044"
-      },
-      {
-        "id": 2640403,
-        "sigla_tipo": "REQ",
-        "numero": 3956,
-        "ano": 2026,
-        "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
       },
       {
         "id": 2596161,

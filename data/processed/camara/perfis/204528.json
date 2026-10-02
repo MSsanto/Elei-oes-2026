@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:32:48.270930+00:00",
+      "generated_at_utc": "2026-10-02T20:17:41.296686+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204528/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 318,
+        "quantidade_registros": 319,
         "registros_recentes": [
+          {
+            "id": 2647265,
+            "sigla_tipo": "RIC",
+            "numero": 2712,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado das Relações Exteriores sobre o apoio prestado pela Embaixada do Brasil em Madri à mudança de particulares para a Espanha em 2025, incluindo servidores mobilizados, eventual uso de veículo oficial e normas que regem o atendimento a pessoas sem vínculo com o serviço público.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647265"
+          },
           {
             "id": 2647226,
             "sigla_tipo": "INC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, sobre a execução, mediante descentralização orçamentária, de campanha publicitária no valor de R$ 80 milhões relativa ao fim da escala 6x1, objeto do Requerimento de Informação nº 1689/2026 dirigido à Secretaria de Comunicação Social da Presidência da República (SECOM).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646843"
-          },
-          {
-            "id": 2646842,
-            "sigla_tipo": "RIC",
-            "numero": 2650,
-            "ano": 2026,
-            "ementa": "Requer informações à Ministra de Estado da Cultura, Sra. Margareth Menezes, em complemento ao RIC nº 1690/2026, sobre a existência de comitê de curadoria da Plataforma Tela Brasil, a realização de avaliação de risco eleitoral para a definição da data de lançamento, documentos internos pendentes e a atualização dos custos anuais previstos de operação.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646842"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204528"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204528",
-  "generated_at_utc": "2026-10-01T10:36:48.680681+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.322612+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1452,7 +1452,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1975,
+    "quantidade_registros": 1976,
     "por_ano": [
       {
         "ano": 2023,
@@ -1468,10 +1468,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 318
+        "quantidade_registros": 319
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647265,
+        "sigla_tipo": "RIC",
+        "numero": 2712,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado das Relações Exteriores sobre o apoio prestado pela Embaixada do Brasil em Madri à mudança de particulares para a Espanha em 2025, incluindo servidores mobilizados, eventual uso de veículo oficial e normas que regem o atendimento a pessoas sem vínculo com o serviço público.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647265"
+      },
       {
         "id": 2647226,
         "sigla_tipo": "INC",
@@ -1559,14 +1567,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, sobre a execução, mediante descentralização orçamentária, de campanha publicitária no valor de R$ 80 milhões relativa ao fim da escala 6x1, objeto do Requerimento de Informação nº 1689/2026 dirigido à Secretaria de Comunicação Social da Presidência da República (SECOM).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646843"
-      },
-      {
-        "id": 2646842,
-        "sigla_tipo": "RIC",
-        "numero": 2650,
-        "ano": 2026,
-        "ementa": "Requer informações à Ministra de Estado da Cultura, Sra. Margareth Menezes, em complemento ao RIC nº 1690/2026, sobre a existência de comitê de curadoria da Plataforma Tela Brasil, a realização de avaliação de risco eleitoral para a definição da data de lançamento, documentos internos pendentes e a atualização dos custos anuais previstos de operação.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646842"
       },
       {
         "id": 2598717,

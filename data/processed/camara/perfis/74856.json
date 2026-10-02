@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:34:11.534255+00:00",
+      "generated_at_utc": "2026-10-02T20:19:40.945361+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74856/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 547,
+        "quantidade_registros": 549,
         "registros_recentes": [
+          {
+            "id": 2647295,
+            "sigla_tipo": "PL",
+            "numero": 5517,
+            "ano": 2026,
+            "ementa": "Estabelece medidas destinadas a garantir o acesso à água potável e a proteção da saúde dos consumidores em eventos abertos ao público.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647295"
+          },
+          {
+            "id": 2647293,
+            "sigla_tipo": "PL",
+            "numero": 5516,
+            "ano": 2026,
+            "ementa": "Institui a Política Marítima Nacional (PMN), estabelece seus princípios, objetivos, diretrizes e parâmetros de implementação, e dá outras providências",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647293"
+          },
           {
             "id": 2647250,
             "sigla_tipo": "RIC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Solicita ao Ministro de Estado da Previdência Social a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646864"
-          },
-          {
-            "id": 2646848,
-            "sigla_tipo": "REQ",
-            "numero": 4248,
-            "ano": 2026,
-            "ementa": "Requeiro nos termos do art. 155, do Regimento Interno da Câmara dos Deputados, Regime de Urgência para a apreciação do Projeto de Lei nº 1.735 de 2019 de autoria do Deputado Mauro Nazif que \"Dispõe sobre a regulamentação do exercício da profissão de Pedagogo”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646848"
-          },
-          {
-            "id": 2646647,
-            "sigla_tipo": "REQ",
-            "numero": 4240,
-            "ano": 2026,
-            "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74856"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74856",
-  "generated_at_utc": "2026-10-01T10:36:48.788669+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.546743+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2359,7 +2359,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2374,
+    "quantidade_registros": 2376,
     "por_ano": [
       {
         "ano": 2023,
@@ -2375,10 +2375,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 547
+        "quantidade_registros": 549
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647295,
+        "sigla_tipo": "PL",
+        "numero": 5517,
+        "ano": 2026,
+        "ementa": "Estabelece medidas destinadas a garantir o acesso à água potável e a proteção da saúde dos consumidores em eventos abertos ao público.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647295"
+      },
+      {
+        "id": 2647293,
+        "sigla_tipo": "PL",
+        "numero": 5516,
+        "ano": 2026,
+        "ementa": "Institui a Política Marítima Nacional (PMN), estabelece seus princípios, objetivos, diretrizes e parâmetros de implementação, e dá outras providências",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647293"
+      },
       {
         "id": 2647250,
         "sigla_tipo": "RIC",
@@ -2458,22 +2474,6 @@
         "ano": 2026,
         "ementa": "Solicita ao Ministro de Estado da Previdência Social a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646864"
-      },
-      {
-        "id": 2646848,
-        "sigla_tipo": "REQ",
-        "numero": 4248,
-        "ano": 2026,
-        "ementa": "Requeiro nos termos do art. 155, do Regimento Interno da Câmara dos Deputados, Regime de Urgência para a apreciação do Projeto de Lei nº 1.735 de 2019 de autoria do Deputado Mauro Nazif que \"Dispõe sobre a regulamentação do exercício da profissão de Pedagogo”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646848"
-      },
-      {
-        "id": 2646647,
-        "sigla_tipo": "REQ",
-        "numero": 4240,
-        "ano": 2026,
-        "ementa": "Requer a convocação de Sessão Solene em celebração aos 40 anos da Confederação Brasileira das Cooperativas de Crédito – CONFEBRAS.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646647"
       },
       {
         "id": 2599057,

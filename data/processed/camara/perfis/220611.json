@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:34:53.765659+00:00",
+      "generated_at_utc": "2026-10-02T20:18:12.359470+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220611/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 68,
+        "quantidade_registros": 69,
         "registros_recentes": [
+          {
+            "id": 2647266,
+            "sigla_tipo": "RIC",
+            "numero": 2713,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Pesca e Aquicultura acerca dos procedimentos de recebimento, registro, tramitação, preservação e localização de documentos administrativos no âmbito do Ministério da Pesca e Aquicultura e dos órgãos que o antecederam.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647266"
+          },
           {
             "id": 2647208,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-          },
-          {
-            "id": 2640306,
-            "sigla_tipo": "RIC",
-            "numero": 2227,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado da Pesca e Aquicultura acerca dos procedimentos de recebimento, registro, tramitação, preservação e localização de documentos administrativos no âmbito do Ministério da Pesca e Aquicultura e dos órgãos que o antecederam.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640306"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220611"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220611",
-  "generated_at_utc": "2026-10-01T10:36:48.863117+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.387503+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 500,
+    "quantidade_registros": 501,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 68
+        "quantidade_registros": 69
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647266,
+        "sigla_tipo": "RIC",
+        "numero": 2713,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Pesca e Aquicultura acerca dos procedimentos de recebimento, registro, tramitação, preservação e localização de documentos administrativos no âmbito do Ministério da Pesca e Aquicultura e dos órgãos que o antecederam.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647266"
+      },
       {
         "id": 2647208,
         "sigla_tipo": "PL",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa do Programa Espacial Brasileiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640403"
-      },
-      {
-        "id": 2640306,
-        "sigla_tipo": "RIC",
-        "numero": 2227,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado da Pesca e Aquicultura acerca dos procedimentos de recebimento, registro, tramitação, preservação e localização de documentos administrativos no âmbito do Ministério da Pesca e Aquicultura e dos órgãos que o antecederam.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2640306"
       },
       {
         "id": 2598197,

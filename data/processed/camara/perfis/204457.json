@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-01T10:33:29.410881+00:00",
+      "generated_at_utc": "2026-10-02T20:21:05.345606+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204457/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 14,
+        "quantidade_registros": 16,
         "registros_recentes": [
+          {
+            "id": 2647297,
+            "sigla_tipo": "PL",
+            "numero": 5519,
+            "ano": 2026,
+            "ementa": "Dispõe sobre mecanismos de verificação de identidade e prevenção à utilização fraudulenta de fotografias de terceiros em perfis de aplicativos de mensagens instantâneas, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647297"
+          },
+          {
+            "id": 2647296,
+            "sigla_tipo": "PL",
+            "numero": 5518,
+            "ano": 2026,
+            "ementa": "Institui a Certidão Nacional de Antecedentes Criminais por Violência contra a Mulher (CNVM).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647296"
+          },
           {
             "id": 2646555,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco da evolução das obras, bem como da sinalização, segurança viária e demais aspectos relacionados à recuperação necessária na pista do trecho da Baixada Fluminense - BR-116 (Via Dutra).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607382"
-          },
-          {
-            "id": 2607381,
-            "sigla_tipo": "REQ",
-            "numero": 29,
-            "ano": 2026,
-            "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco das condições estruturais, de sinalização, segurança viária e demais aspectos relacionados à conservação e recuperação necessárias na Antiga Estrada Rio-São Paulo (BR-465) na altura do KM32 (Nova Iguaçu/RJ).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607381"
-          },
-          {
-            "id": 2607380,
-            "sigla_tipo": "REQ",
-            "numero": 28,
-            "ano": 2026,
-            "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco das condições estruturais, de sinalização, segurança viária e demais aspectos relacionados à conservação e recuperação necessárias na Rodovia do Aço (BR-393/RJ).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607380"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204457"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204457",
-  "generated_at_utc": "2026-10-01T10:36:48.744216+00:00",
+  "generated_at_utc": "2026-10-02T20:21:10.720241+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1546,7 +1546,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 389,
+    "quantidade_registros": 391,
     "por_ano": [
       {
         "ano": 2023,
@@ -1562,10 +1562,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 14
+        "quantidade_registros": 16
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647297,
+        "sigla_tipo": "PL",
+        "numero": 5519,
+        "ano": 2026,
+        "ementa": "Dispõe sobre mecanismos de verificação de identidade e prevenção à utilização fraudulenta de fotografias de terceiros em perfis de aplicativos de mensagens instantâneas, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647297"
+      },
+      {
+        "id": 2647296,
+        "sigla_tipo": "PL",
+        "numero": 5518,
+        "ano": 2026,
+        "ementa": "Institui a Certidão Nacional de Antecedentes Criminais por Violência contra a Mulher (CNVM).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647296"
+      },
       {
         "id": 2646555,
         "sigla_tipo": "PL",
@@ -1645,22 +1661,6 @@
         "ano": 2026,
         "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco da evolução das obras, bem como da sinalização, segurança viária e demais aspectos relacionados à recuperação necessária na pista do trecho da Baixada Fluminense - BR-116 (Via Dutra).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607382"
-      },
-      {
-        "id": 2607381,
-        "sigla_tipo": "REQ",
-        "numero": 29,
-        "ano": 2026,
-        "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco das condições estruturais, de sinalização, segurança viária e demais aspectos relacionados à conservação e recuperação necessárias na Antiga Estrada Rio-São Paulo (BR-465) na altura do KM32 (Nova Iguaçu/RJ).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607381"
-      },
-      {
-        "id": 2607380,
-        "sigla_tipo": "REQ",
-        "numero": 28,
-        "ano": 2026,
-        "ementa": "Requer visita técnica dessa Comissão de Viação e Transportes, destinada a fazer observação in loco das condições estruturais, de sinalização, segurança viária e demais aspectos relacionados à conservação e recuperação necessárias na Rodovia do Aço (BR-393/RJ).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607380"
       },
       {
         "id": 2598301,
