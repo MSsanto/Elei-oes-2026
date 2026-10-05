@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-04T00:10:12.277011+00:00",
+      "generated_at_utc": "2026-10-05T10:57:50.715040+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1247,7 +1247,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220703",
-  "generated_at_utc": "2026-10-04T19:13:45.878647+00:00",
+  "generated_at_utc": "2026-10-05T11:00:18.684921+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1302,6 +1302,22 @@
       "escolaridade": "Superior"
     },
     "historico": [
+      {
+        "id": 220703,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220703",
+        "nome": "Neto Carletto",
+        "nomeEleitoral": "NETO CARLETTO",
+        "siglaPartido": "AVANTE",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36898",
+        "siglaUf": "BA",
+        "idLegislatura": 58,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220703.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
       {
         "id": 220703,
         "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220703",
