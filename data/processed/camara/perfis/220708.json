@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-05T10:57:58.425535+00:00",
+      "generated_at_utc": "2026-10-06T20:28:33.189575+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1191,7 +1191,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220708",
-  "generated_at_utc": "2026-10-05T11:00:18.697393+00:00",
+  "generated_at_utc": "2026-10-06T20:29:09.962361+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1242,6 +1242,22 @@
       "escolaridade": "Pós-Graduação"
     },
     "historico": [
+      {
+        "id": 220708,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220708",
+        "nome": "Gabriel Nunes",
+        "nomeEleitoral": "GABRIEL NUNES",
+        "siglaPartido": "PSD",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36834",
+        "siglaUf": "BA",
+        "idLegislatura": 58,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220708.jpg",
+        "dataHora": "2023-02-01T00:00",
+        "situacao": null,
+        "condicaoEleitoral": null,
+        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
+      },
       {
         "id": 220708,
         "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220708",

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-05T10:58:57.605152+00:00",
+      "generated_at_utc": "2026-10-06T20:28:10.999186+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220658/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 55,
+        "quantidade_registros": 56,
         "registros_recentes": [
+          {
+            "id": 2647302,
+            "sigla_tipo": "REQ",
+            "numero": 4281,
+            "ano": 2026,
+            "ementa": "Requer regime de urgência para a apreciação do Projeto de Lei nº 5.127, de 2026, que “Reconhece como manifestação da cultura nacional a Romaria do Divino Pai Eterno, realizada no Município de Trindade, no Estado de Goiás”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647302"
+          },
           {
             "id": 2646130,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Estabelece critérios transitórios para a apuração de receitas patrimoniais retroativas e disciplina os efeitos administrativos das multas relacionadas à ocupação e ao uso de áreas federais por barracas de praia na Praia do Futuro, no Município de Fortaleza, Estado do Ceará.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642678"
-          },
-          {
-            "id": 2642571,
-            "sigla_tipo": "DOC",
-            "numero": 1335,
-            "ano": 2026,
-            "ementa": "solicito a V. Exa. sejam registradas novas adesões da Frente Parlamentar Católica Apostólica Romana, a todos que assinarem esse documento",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642571"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220658"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220658",
-  "generated_at_utc": "2026-10-05T11:00:18.797247+00:00",
+  "generated_at_utc": "2026-10-06T20:29:09.911220+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 329,
+    "quantidade_registros": 330,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 55
+        "quantidade_registros": 56
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647302,
+        "sigla_tipo": "REQ",
+        "numero": 4281,
+        "ano": 2026,
+        "ementa": "Requer regime de urgência para a apreciação do Projeto de Lei nº 5.127, de 2026, que “Reconhece como manifestação da cultura nacional a Romaria do Divino Pai Eterno, realizada no Município de Trindade, no Estado de Goiás”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647302"
+      },
       {
         "id": 2646130,
         "sigla_tipo": "REQ",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Estabelece critérios transitórios para a apuração de receitas patrimoniais retroativas e disciplina os efeitos administrativos das multas relacionadas à ocupação e ao uso de áreas federais por barracas de praia na Praia do Futuro, no Município de Fortaleza, Estado do Ceará.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642678"
-      },
-      {
-        "id": 2642571,
-        "sigla_tipo": "DOC",
-        "numero": 1335,
-        "ano": 2026,
-        "ementa": "solicito a V. Exa. sejam registradas novas adesões da Frente Parlamentar Católica Apostólica Romana, a todos que assinarem esse documento",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642571"
       },
       {
         "id": 2617503,

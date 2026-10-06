@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-05T10:57:15.820630+00:00",
+      "generated_at_utc": "2026-10-06T20:28:45.844634+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74856/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 549,
+        "quantidade_registros": 550,
         "registros_recentes": [
+          {
+            "id": 2647302,
+            "sigla_tipo": "REQ",
+            "numero": 4281,
+            "ano": 2026,
+            "ementa": "Requer regime de urgência para a apreciação do Projeto de Lei nº 5.127, de 2026, que “Reconhece como manifestação da cultura nacional a Romaria do Divino Pai Eterno, realizada no Município de Trindade, no Estado de Goiás”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647302"
+          },
           {
             "id": 2647295,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Solicita ao Ministro de Estado da Fazenda a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646866"
-          },
-          {
-            "id": 2646864,
-            "sigla_tipo": "RIC",
-            "numero": 2657,
-            "ano": 2026,
-            "ementa": "Solicita ao Ministro de Estado da Previdência Social a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646864"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74856"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74856",
-  "generated_at_utc": "2026-10-05T11:00:18.620605+00:00",
+  "generated_at_utc": "2026-10-06T20:29:09.979177+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2359,7 +2359,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2376,
+    "quantidade_registros": 2377,
     "por_ano": [
       {
         "ano": 2023,
@@ -2375,10 +2375,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 549
+        "quantidade_registros": 550
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647302,
+        "sigla_tipo": "REQ",
+        "numero": 4281,
+        "ano": 2026,
+        "ementa": "Requer regime de urgência para a apreciação do Projeto de Lei nº 5.127, de 2026, que “Reconhece como manifestação da cultura nacional a Romaria do Divino Pai Eterno, realizada no Município de Trindade, no Estado de Goiás”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647302"
+      },
       {
         "id": 2647295,
         "sigla_tipo": "PL",
@@ -2466,14 +2474,6 @@
         "ano": 2026,
         "ementa": "Solicita ao Ministro de Estado da Fazenda a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646866"
-      },
-      {
-        "id": 2646864,
-        "sigla_tipo": "RIC",
-        "numero": 2657,
-        "ano": 2026,
-        "ementa": "Solicita ao Ministro de Estado da Previdência Social a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646864"
       },
       {
         "id": 2599057,
