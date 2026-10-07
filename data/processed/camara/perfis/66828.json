@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-06T20:27:02.250235+00:00",
+      "generated_at_utc": "2026-10-07T20:59:03.394697+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/66828/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 72,
+        "quantidade_registros": 73,
         "registros_recentes": [
+          {
+            "id": 2647361,
+            "sigla_tipo": "REQ",
+            "numero": 42,
+            "ano": 2026,
+            "ementa": "Requer a realização de Seminário Regional no Estado de São Paulo para debater a Proposta de Emenda à Constituição nº 32, de 2015, e as proposições a ela apensadas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647361"
+          },
           {
             "id": 2646928,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639831"
-          },
-          {
-            "id": 2639830,
-            "sigla_tipo": "DOC",
-            "numero": 1188,
-            "ano": 2026,
-            "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639830"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=66828"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "66828",
-  "generated_at_utc": "2026-10-06T20:29:09.744290+00:00",
+  "generated_at_utc": "2026-10-07T20:59:48.242908+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1543,7 +1543,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 595,
+    "quantidade_registros": 596,
     "por_ano": [
       {
         "ano": 2023,
@@ -1559,10 +1559,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 72
+        "quantidade_registros": 73
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647361,
+        "sigla_tipo": "REQ",
+        "numero": 42,
+        "ano": 2026,
+        "ementa": "Requer a realização de Seminário Regional no Estado de São Paulo para debater a Proposta de Emenda à Constituição nº 32, de 2015, e as proposições a ela apensadas.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647361"
+      },
       {
         "id": 2646928,
         "sigla_tipo": "RIC",
@@ -1650,14 +1658,6 @@
         "ano": 2026,
         "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639831"
-      },
-      {
-        "id": 2639830,
-        "sigla_tipo": "DOC",
-        "numero": 1188,
-        "ano": 2026,
-        "ementa": "Solicitação de inclusão de membro em Frente Parlamentar.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639830"
       },
       {
         "id": 2599001,

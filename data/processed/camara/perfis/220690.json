@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-06T20:27:47.664977+00:00",
+      "generated_at_utc": "2026-10-07T20:58:33.161448+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220690/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 283,
+        "quantidade_registros": 284,
         "registros_recentes": [
+          {
+            "id": 2647315,
+            "sigla_tipo": "INC",
+            "numero": 1613,
+            "ano": 2026,
+            "ementa": "Sugere que o Comitê Gestor do Fundo Clima amplie a elegibilidade de investimentos no âmbito do Fundo Nacional sobre Mudança do Clima (Fundo Clima), de modo a admitir expressamente o gás natural (GNC, GNL e biometano) associado a atributo ambiental, comprovado por Certificado de Garantia de Origem de Biometano (CGOB), como combustível elegível na Finalidade 3 – Logística de Transporte, Transporte Coletivo e Mobilidade Verdes do Plano Anual de Aplicação de Recursos (PAAR).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647315"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-          },
-          {
-            "id": 2644722,
-            "sigla_tipo": "RIC",
-            "numero": 2517,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública acerca dos critérios utilizados pela Polícia Federal para aferição do requisito de idoneidade nos procedimentos de autorização para aquisição de arma de fogo, especialmente quanto à consideração de registros policiais e procedimentos judiciais arquivados sem condenação criminal.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644722"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220690"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220690",
-  "generated_at_utc": "2026-10-06T20:29:09.857724+00:00",
+  "generated_at_utc": "2026-10-07T20:59:48.177613+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1418,7 +1418,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1014,
+    "quantidade_registros": 1015,
     "por_ano": [
       {
         "ano": 2023,
@@ -1434,10 +1434,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 283
+        "quantidade_registros": 284
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647315,
+        "sigla_tipo": "INC",
+        "numero": 1613,
+        "ano": 2026,
+        "ementa": "Sugere que o Comitê Gestor do Fundo Clima amplie a elegibilidade de investimentos no âmbito do Fundo Nacional sobre Mudança do Clima (Fundo Clima), de modo a admitir expressamente o gás natural (GNC, GNL e biometano) associado a atributo ambiental, comprovado por Certificado de Garantia de Origem de Biometano (CGOB), como combustível elegível na Finalidade 3 – Logística de Transporte, Transporte Coletivo e Mobilidade Verdes do Plano Anual de Aplicação de Recursos (PAAR).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647315"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1525,14 +1533,6 @@
         "ano": 2026,
         "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-      },
-      {
-        "id": 2644722,
-        "sigla_tipo": "RIC",
-        "numero": 2517,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública acerca dos critérios utilizados pela Polícia Federal para aferição do requisito de idoneidade nos procedimentos de autorização para aquisição de arma de fogo, especialmente quanto à consideração de registros policiais e procedimentos judiciais arquivados sem condenação criminal.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644722"
       },
       {
         "id": 2598450,

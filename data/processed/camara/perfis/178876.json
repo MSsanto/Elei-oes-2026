@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-06T20:28:40.158818+00:00",
+      "generated_at_utc": "2026-10-07T20:58:47.540171+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178876/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 13,
+        "quantidade_registros": 14,
         "registros_recentes": [
+          {
+            "id": 2647345,
+            "sigla_tipo": "PL",
+            "numero": 5536,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 4.769, de 9 de setembro de 1965, para instituir o Exame Nacional de Suficiência Profissional em Administração como requisito para a obtenção do primeiro registro profissional na categoria de Administrador.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647345"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 14.601, de 19 de junho de 2 023, para garantir a manutenção dos benefícios financeiros do Programa Bolsa Família, pelo prazo de 24 (vinte e quatro) meses, à família beneficiária que venha a superar o limite de renda familiar mensal per capita estabelecido como critério de elegibilidade ao Programa.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607730"
-          },
-          {
-            "id": 2604173,
-            "sigla_tipo": "PEC",
-            "numero": 3,
-            "ano": 2026,
-            "ementa": "Altera o art. 155 da Constituição Federal para estabelecer alíquota máxima e base de cálculo exclusiva do Imposto sobre a Propriedade de Veículos Automotores – IPVA, e acrescenta dispositivos ao Ato das Disposições Constitucionais Transitórias para limitar despesas com publicidade institucional e com o Poder Legislativo.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604173"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178876"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178876",
-  "generated_at_utc": "2026-10-06T20:29:09.975833+00:00",
+  "generated_at_utc": "2026-10-07T20:59:48.203751+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1562,7 +1562,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 454,
+    "quantidade_registros": 455,
     "por_ano": [
       {
         "ano": 2023,
@@ -1578,10 +1578,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 13
+        "quantidade_registros": 14
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647345,
+        "sigla_tipo": "PL",
+        "numero": 5536,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 4.769, de 9 de setembro de 1965, para instituir o Exame Nacional de Suficiência Profissional em Administração como requisito para a obtenção do primeiro registro profissional na categoria de Administrador.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647345"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1669,14 +1677,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 14.601, de 19 de junho de 2 023, para garantir a manutenção dos benefícios financeiros do Programa Bolsa Família, pelo prazo de 24 (vinte e quatro) meses, à família beneficiária que venha a superar o limite de renda familiar mensal per capita estabelecido como critério de elegibilidade ao Programa.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607730"
-      },
-      {
-        "id": 2604173,
-        "sigla_tipo": "PEC",
-        "numero": 3,
-        "ano": 2026,
-        "ementa": "Altera o art. 155 da Constituição Federal para estabelecer alíquota máxima e base de cálculo exclusiva do Imposto sobre a Propriedade de Veículos Automotores – IPVA, e acrescenta dispositivos ao Ato das Disposições Constitucionais Transitórias para limitar despesas com publicidade institucional e com o Poder Legislativo.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604173"
       },
       {
         "id": 2599001,
