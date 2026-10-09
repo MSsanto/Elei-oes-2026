@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-07T20:56:45.184542+00:00",
+      "generated_at_utc": "2026-10-09T01:34:17.678976+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204436/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 141,
+        "quantidade_registros": 142,
         "registros_recentes": [
+          {
+            "id": 2647364,
+            "sigla_tipo": "REQ",
+            "numero": 4282,
+            "ano": 2026,
+            "ementa": "Requer, nos termos do artigo 155 do Regimento Interno, tramitação sob o regime urgência do Projeto de Lei nº 79/2020.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647364"
+          },
           {
             "id": 2646943,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1345/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635765"
-          },
-          {
-            "id": 2634769,
-            "sigla_tipo": "DOC",
-            "numero": 881,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634769"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204436"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204436",
-  "generated_at_utc": "2026-10-07T20:59:47.967120+00:00",
+  "generated_at_utc": "2026-10-09T01:35:49.039588+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1467,7 +1467,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 695,
+    "quantidade_registros": 696,
     "por_ano": [
       {
         "ano": 2023,
@@ -1483,10 +1483,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 141
+        "quantidade_registros": 142
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647364,
+        "sigla_tipo": "REQ",
+        "numero": 4282,
+        "ano": 2026,
+        "ementa": "Requer, nos termos do artigo 155 do Regimento Interno, tramitação sob o regime urgência do Projeto de Lei nº 79/2020.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647364"
+      },
       {
         "id": 2646943,
         "sigla_tipo": "REQ",
@@ -1574,14 +1582,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1345/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635765"
-      },
-      {
-        "id": 2634769,
-        "sigla_tipo": "DOC",
-        "numero": 881,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634769"
       },
       {
         "id": 2596496,

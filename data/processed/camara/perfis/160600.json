@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-07T20:58:18.628784+00:00",
+      "generated_at_utc": "2026-10-09T01:34:07.694538+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160600/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 13,
+        "quantidade_registros": 14,
         "registros_recentes": [
+          {
+            "id": 2647364,
+            "sigla_tipo": "REQ",
+            "numero": 4282,
+            "ano": 2026,
+            "ementa": "Requer, nos termos do artigo 155 do Regimento Interno, tramitação sob o regime urgência do Projeto de Lei nº 79/2020.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647364"
+          },
           {
             "id": 2640403,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Sessão Solene, no Plenário desta Casa, em homenagem aos avanços obtidos pela pesquisa sobre a polilaminina, conduzida por grupo de cientistas liderado pela Dra. Tatiana Lobo Coelho de Sampaio.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2603944"
-          },
-          {
-            "id": 2603931,
-            "sigla_tipo": "REQ",
-            "numero": 1046,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene, no Plenário desta Casa, em homenagem à Dra. Tatiana Lobo Coelho de Sampaio, por sua pesquisa sobre a polilaminina.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2603931"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160600"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160600",
-  "generated_at_utc": "2026-10-07T20:59:48.155147+00:00",
+  "generated_at_utc": "2026-10-09T01:35:49.026439+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1627,7 +1627,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 298,
+    "quantidade_registros": 299,
     "por_ano": [
       {
         "ano": 2023,
@@ -1643,10 +1643,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 13
+        "quantidade_registros": 14
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647364,
+        "sigla_tipo": "REQ",
+        "numero": 4282,
+        "ano": 2026,
+        "ementa": "Requer, nos termos do artigo 155 do Regimento Interno, tramitação sob o regime urgência do Projeto de Lei nº 79/2020.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647364"
+      },
       {
         "id": 2640403,
         "sigla_tipo": "REQ",
@@ -1734,14 +1742,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Sessão Solene, no Plenário desta Casa, em homenagem aos avanços obtidos pela pesquisa sobre a polilaminina, conduzida por grupo de cientistas liderado pela Dra. Tatiana Lobo Coelho de Sampaio.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2603944"
-      },
-      {
-        "id": 2603931,
-        "sigla_tipo": "REQ",
-        "numero": 1046,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene, no Plenário desta Casa, em homenagem à Dra. Tatiana Lobo Coelho de Sampaio, por sua pesquisa sobre a polilaminina.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2603931"
       },
       {
         "id": 2598197,

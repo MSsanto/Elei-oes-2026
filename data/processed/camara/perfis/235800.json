@@ -58,7 +58,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-07T20:57:04.536911+00:00",
+      "generated_at_utc": "2026-10-09T01:34:39.546473+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -66,8 +66,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/235800/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 30,
+        "quantidade_registros": 31,
         "registros_recentes": [
+          {
+            "id": 2647375,
+            "sigla_tipo": "RIC",
+            "numero": 2722,
+            "ano": 2026,
+            "ementa": "Requer o encaminhamento de pedido escrito de informações ao Ministro de Estado da Saúde acerca dos parâmetros, diretrizes e prazos nacionais aplicáveis ao tempo de espera para regulação de leitos hospitalares e realização de exames no âmbito do Sistema Único de Saúde (SUS), bem como sobre o acompanhamento federal da situação no Estado da Bahia.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647375"
+          },
           {
             "id": 2646865,
             "sigla_tipo": "PL",
@@ -155,14 +163,6 @@
             "ano": 2026,
             "ementa": "Sugere ao Governador do Estado da Bahia a adoção de providências para solicitar ao Ministério da Justiça e Segurança Pública o emprego da Força Nacional de Segurança Pública no território baiano, com vistas ao enfrentamento da criminalidade violenta.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642377"
-          },
-          {
-            "id": 2642370,
-            "sigla_tipo": "RIC",
-            "numero": 2351,
-            "ano": 2026,
-            "ementa": "Requer ao Ministro de Estado dos Transportes informações sobre o cronograma de recuperação emergencial da BR-324 e o plano de manutenção da malha rodoviária federal no Estado da Bahia.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642370"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=235800"
@@ -377,7 +377,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "235800",
-  "generated_at_utc": "2026-10-07T20:59:48.017894+00:00",
+  "generated_at_utc": "2026-10-09T01:35:49.065138+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -537,7 +537,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 30,
+    "quantidade_registros": 31,
     "por_ano": [
       {
         "ano": 2023,
@@ -553,10 +553,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 30
+        "quantidade_registros": 31
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647375,
+        "sigla_tipo": "RIC",
+        "numero": 2722,
+        "ano": 2026,
+        "ementa": "Requer o encaminhamento de pedido escrito de informações ao Ministro de Estado da Saúde acerca dos parâmetros, diretrizes e prazos nacionais aplicáveis ao tempo de espera para regulação de leitos hospitalares e realização de exames no âmbito do Sistema Único de Saúde (SUS), bem como sobre o acompanhamento federal da situação no Estado da Bahia.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647375"
+      },
       {
         "id": 2646865,
         "sigla_tipo": "PL",
@@ -644,14 +652,6 @@
         "ano": 2026,
         "ementa": "Sugere ao Governador do Estado da Bahia a adoção de providências para solicitar ao Ministério da Justiça e Segurança Pública o emprego da Força Nacional de Segurança Pública no território baiano, com vistas ao enfrentamento da criminalidade violenta.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642377"
-      },
-      {
-        "id": 2642370,
-        "sigla_tipo": "RIC",
-        "numero": 2351,
-        "ano": 2026,
-        "ementa": "Requer ao Ministro de Estado dos Transportes informações sobre o cronograma de recuperação emergencial da BR-324 e o plano de manutenção da malha rodoviária federal no Estado da Bahia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642370"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=235800",

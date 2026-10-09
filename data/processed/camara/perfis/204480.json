@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-07T20:58:27.610598+00:00",
+      "generated_at_utc": "2026-10-09T01:35:41.793496+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204480/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 59,
+        "quantidade_registros": 60,
         "registros_recentes": [
+          {
+            "id": 2647384,
+            "sigla_tipo": "PL",
+            "numero": 5537,
+            "ano": 2026,
+            "ementa": "Altera o §1° do art. 2° da Lei n° 11.738, de 16 de julho de 2008, para reduzir para trinta horas semanais a jornada máxima de trabalho dos profissionais do magistério público da educação básica, revoga o art. 6° da referida Lei e altera a Lei n° 8.429, de 2 de junho de 1992, para estabelecer hipótese de ato de improbidade administrativa.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647384"
+          },
           {
             "id": 2647188,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Estabelece o marco legal do Registro Nacional de Beneficiários Finais, dispõe sobre a integração, atualização, verificação, interoperabilidade e acesso às informações relativas aos beneficiários finais de pessoas jurídicas e estruturas legais, e fortalece os mecanismos de prevenção à lavagem de dinheiro, corrupção, evasão fiscal, ocultação patrimonial e infiltração da criminaliza organizada na economia formal.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637237"
-          },
-          {
-            "id": 2635684,
-            "sigla_tipo": "PL",
-            "numero": 3362,
-            "ano": 2026,
-            "ementa": "Acrescenta o artigo 359-K-A ao Decreto Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tipificar o crime de Traição à Pátria.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635684"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204480"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204480",
-  "generated_at_utc": "2026-10-07T20:59:48.169362+00:00",
+  "generated_at_utc": "2026-10-09T01:35:49.153666+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 851,
+    "quantidade_registros": 852,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 59
+        "quantidade_registros": 60
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647384,
+        "sigla_tipo": "PL",
+        "numero": 5537,
+        "ano": 2026,
+        "ementa": "Altera o §1° do art. 2° da Lei n° 11.738, de 16 de julho de 2008, para reduzir para trinta horas semanais a jornada máxima de trabalho dos profissionais do magistério público da educação básica, revoga o art. 6° da referida Lei e altera a Lei n° 8.429, de 2 de junho de 1992, para estabelecer hipótese de ato de improbidade administrativa.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647384"
+      },
       {
         "id": 2647188,
         "sigla_tipo": "PL",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Estabelece o marco legal do Registro Nacional de Beneficiários Finais, dispõe sobre a integração, atualização, verificação, interoperabilidade e acesso às informações relativas aos beneficiários finais de pessoas jurídicas e estruturas legais, e fortalece os mecanismos de prevenção à lavagem de dinheiro, corrupção, evasão fiscal, ocultação patrimonial e infiltração da criminaliza organizada na economia formal.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637237"
-      },
-      {
-        "id": 2635684,
-        "sigla_tipo": "PL",
-        "numero": 3362,
-        "ano": 2026,
-        "ementa": "Acrescenta o artigo 359-K-A ao Decreto Lei nº 2.848, de 7 de dezembro de 1940 – Código Penal, para tipificar o crime de Traição à Pátria.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635684"
       },
       {
         "id": 2598301,

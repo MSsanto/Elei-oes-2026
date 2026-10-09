@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-07T20:57:13.905541+00:00",
+      "generated_at_utc": "2026-10-09T01:32:28.656740+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/88256/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 22,
+        "quantidade_registros": 23,
         "registros_recentes": [
+          {
+            "id": 2647385,
+            "sigla_tipo": "INC",
+            "numero": 1617,
+            "ano": 2026,
+            "ementa": "Sugere que o Comitê Gestor do Fundo Clima amplie a elegibilidade de investimentos no âmbito do Fundo Nacional sobre Mudança do Clima (Fundo Clima), de modo a admitir expressamente o gás natural (GNC, GNL e biometano) associado a atributo ambiental, comprovado por Certificado de Garantia de Origem de Biometano (CGOB), como combustível elegível na Finalidade 3 – Logística de Transporte, Transporte Coletivo e Mobilidade Verdes do Plano Anual de Aplicação de Recursos (PAAR).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647385"
+          },
           {
             "id": 2645965,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o Artigo 222 da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para individualizar os efeitos da anulação da votação por fraude à cota de gênero e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623914"
-          },
-          {
-            "id": 2623612,
-            "sigla_tipo": "REQ",
-            "numero": 26,
-            "ano": 2026,
-            "ementa": "Requer o aditamento do Requerimento nº 19/2026 – CDC, para inclusão de convidado em Seminário conjunto com a Comissão de Defesa do Consumidor, Comissão da Amazônia e dos Povos Originários e Tradicionais e Comissão de Meio Ambiente e Desenvolvimento Sustentável, para discutir o custo de vida e dependência dos Combustíveis Fósseis: caminhos para reduzir a vulnerabilidade econômica.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623612"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=88256"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "88256",
-  "generated_at_utc": "2026-10-07T20:59:48.037670+00:00",
+  "generated_at_utc": "2026-10-09T01:35:48.855232+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1419,7 +1419,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 347,
+    "quantidade_registros": 348,
     "por_ano": [
       {
         "ano": 2023,
@@ -1435,10 +1435,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 22
+        "quantidade_registros": 23
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647385,
+        "sigla_tipo": "INC",
+        "numero": 1617,
+        "ano": 2026,
+        "ementa": "Sugere que o Comitê Gestor do Fundo Clima amplie a elegibilidade de investimentos no âmbito do Fundo Nacional sobre Mudança do Clima (Fundo Clima), de modo a admitir expressamente o gás natural (GNC, GNL e biometano) associado a atributo ambiental, comprovado por Certificado de Garantia de Origem de Biometano (CGOB), como combustível elegível na Finalidade 3 – Logística de Transporte, Transporte Coletivo e Mobilidade Verdes do Plano Anual de Aplicação de Recursos (PAAR).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647385"
+      },
       {
         "id": 2645965,
         "sigla_tipo": "PL",
@@ -1526,14 +1534,6 @@
         "ano": 2026,
         "ementa": "Altera o Artigo 222 da Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para individualizar os efeitos da anulação da votação por fraude à cota de gênero e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623914"
-      },
-      {
-        "id": 2623612,
-        "sigla_tipo": "REQ",
-        "numero": 26,
-        "ano": 2026,
-        "ementa": "Requer o aditamento do Requerimento nº 19/2026 – CDC, para inclusão de convidado em Seminário conjunto com a Comissão de Defesa do Consumidor, Comissão da Amazônia e dos Povos Originários e Tradicionais e Comissão de Meio Ambiente e Desenvolvimento Sustentável, para discutir o custo de vida e dependência dos Combustíveis Fósseis: caminhos para reduzir a vulnerabilidade econômica.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623612"
       },
       {
         "id": 2598413,
