@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-09T01:31:44.957438+00:00",
+      "generated_at_utc": "2026-10-10T10:16:17.784010+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220569/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 40,
+        "quantidade_registros": 41,
         "registros_recentes": [
+          {
+            "id": 2647402,
+            "sigla_tipo": "PL",
+            "numero": 5539,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 11.771, de 17 de setembro de 2008 (Lei Geral do Turismo), para estabelecer regras de acesso e permanência de cães e gatos em estabelecimentos prestadores de serviços turísticos e incentivar o turismo pet friendly no Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647402"
+          },
           {
             "id": 2645140,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
-          },
-          {
-            "id": 2623400,
-            "sigla_tipo": "PEC",
-            "numero": 8,
-            "ano": 2026,
-            "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220569"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220569",
-  "generated_at_utc": "2026-10-09T01:35:48.797429+00:00",
+  "generated_at_utc": "2026-10-10T10:17:21.058592+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1419,7 +1419,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 679,
+    "quantidade_registros": 680,
     "por_ano": [
       {
         "ano": 2023,
@@ -1435,10 +1435,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 40
+        "quantidade_registros": 41
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647402,
+        "sigla_tipo": "PL",
+        "numero": 5539,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 11.771, de 17 de setembro de 2008 (Lei Geral do Turismo), para estabelecer regras de acesso e permanência de cães e gatos em estabelecimentos prestadores de serviços turísticos e incentivar o turismo pet friendly no Brasil.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647402"
+      },
       {
         "id": 2645140,
         "sigla_tipo": "PL",
@@ -1526,14 +1534,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
-      },
-      {
-        "id": 2623400,
-        "sigla_tipo": "PEC",
-        "numero": 8,
-        "ano": 2026,
-        "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
       },
       {
         "id": 2598301,

@@ -58,7 +58,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-09T01:35:23.234814+00:00",
+      "generated_at_utc": "2026-10-10T10:16:13.161085+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -175,7 +175,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "194260",
-  "generated_at_utc": "2026-10-09T01:35:49.132502+00:00",
+  "generated_at_utc": "2026-10-10T10:17:21.047946+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -201,7 +201,7 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/194260.jpg",
         "email": null,
-        "data": "2026-07-09",
+        "data": "2026-10-09",
         "nomeEleitoral": "Nivaldo Albuquerque",
         "gabinete": {
           "nome": "671",
@@ -209,11 +209,11 @@
           "sala": "671",
           "andar": null,
           "telefone": "3215-5671",
-          "email": "dep.nivaldoalbuquerque@camara.leg.br"
+          "email": null
         },
-        "situacao": "Exercício",
-        "condicaoEleitoral": "Titular",
-        "descricaoStatus": null
+        "situacao": "Vacância",
+        "condicaoEleitoral": "Não Eleito",
+        "descricaoStatus": "Lançamento de decisão Judicial"
       },
       "cpf": "06923503493",
       "sexo": "M",
@@ -309,6 +309,22 @@
         "situacao": "Exercício",
         "condicaoEleitoral": "Titular",
         "descricaoStatus": "Alteração de partido"
+      },
+      {
+        "id": 194260,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/194260",
+        "nome": "Nivaldo Albuquerque",
+        "nomeEleitoral": "NIVALDO ALBUQUERQUE",
+        "siglaPartido": "UNIÃO",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/38009",
+        "siglaUf": "AL",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/194260.jpg",
+        "dataHora": "2026-10-09T17:23",
+        "situacao": "VACANCIA",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Saída - Afastamento definitivo - Perda de Mandato por Ato da Mesa"
       },
       {
         "id": 194260,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-09T01:32:49.464007+00:00",
+      "generated_at_utc": "2026-10-10T10:16:46.806863+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220574/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 181,
+        "quantidade_registros": 182,
         "registros_recentes": [
+          {
+            "id": 2647393,
+            "sigla_tipo": "RIC",
+            "numero": 2724,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Padilha, acerca de eventuais reuniões, tratativas institucionais, contratos e possíveis relações de influência envolvendo Luiz Cláudio Lula da Silva, conhecido como “Lulinha”.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647393"
+          },
           {
             "id": 2647312,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a convocação do Ministro de Estado das Relações Exteriores, Sr. Mauro Vieira, com o objetivo de prestar esclarecimentos acerca dos critérios que orientaram a reação do Governo brasileiro às declarações do Presidente argentino Javier Milei, notadamente a decisão de manter no Brasil o Embaixador Júlio Bitelli, que dirige a Embaixada brasileira na Argentina, por tempo indeterminado, à luz da postura adotada pelo Itamaraty em outros episódios recentes da política externa brasileira.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641957"
-          },
-          {
-            "id": 2641891,
-            "sigla_tipo": "REQ",
-            "numero": 68,
-            "ano": 2026,
-            "ementa": "Requer a convocação do Ministro de Estado de Portos e Aeroportos, para prestar esclarecimentos acerca do convênio de R$ 35 milhões firmado entre a estatal PortosRio e a Universidade Federal do Rio de Janeiro (UFRJ) para pagamento de bolsistas com vínculos político-partidários.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641891"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220574"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220574",
-  "generated_at_utc": "2026-10-09T01:35:48.884581+00:00",
+  "generated_at_utc": "2026-10-10T10:17:21.124121+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1365,
+    "quantidade_registros": 1366,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 181
+        "quantidade_registros": 182
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647393,
+        "sigla_tipo": "RIC",
+        "numero": 2724,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Padilha, acerca de eventuais reuniões, tratativas institucionais, contratos e possíveis relações de influência envolvendo Luiz Cláudio Lula da Silva, conhecido como “Lulinha”.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647393"
+      },
       {
         "id": 2647312,
         "sigla_tipo": "RIC",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Requer a convocação do Ministro de Estado das Relações Exteriores, Sr. Mauro Vieira, com o objetivo de prestar esclarecimentos acerca dos critérios que orientaram a reação do Governo brasileiro às declarações do Presidente argentino Javier Milei, notadamente a decisão de manter no Brasil o Embaixador Júlio Bitelli, que dirige a Embaixada brasileira na Argentina, por tempo indeterminado, à luz da postura adotada pelo Itamaraty em outros episódios recentes da política externa brasileira.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641957"
-      },
-      {
-        "id": 2641891,
-        "sigla_tipo": "REQ",
-        "numero": 68,
-        "ano": 2026,
-        "ementa": "Requer a convocação do Ministro de Estado de Portos e Aeroportos, para prestar esclarecimentos acerca do convênio de R$ 35 milhões firmado entre a estatal PortosRio e a Universidade Federal do Rio de Janeiro (UFRJ) para pagamento de bolsistas com vínculos político-partidários.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641891"
       },
       {
         "id": 2598301,

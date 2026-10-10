@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-09T01:32:27.489268+00:00",
+      "generated_at_utc": "2026-10-10T10:13:44.485454+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "171617",
-  "generated_at_utc": "2026-10-09T01:35:48.852919+00:00",
+  "generated_at_utc": "2026-10-10T10:17:20.726718+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1297,7 +1297,7 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171617.jpg",
         "email": null,
-        "data": "2026-07-09",
+        "data": "2026-10-09",
         "nomeEleitoral": "Paulão",
         "gabinete": {
           "nome": null,
@@ -1305,11 +1305,11 @@
           "sala": null,
           "andar": null,
           "telefone": null,
-          "email": null
+          "email": "dep.paulao@camara.leg.br"
         },
-        "situacao": "Suplência",
-        "condicaoEleitoral": "Suplente",
-        "descricaoStatus": "Lançamento de decisão Judicial"
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": null
       },
       "cpf": "14433290459",
       "sexo": "M",
@@ -1369,6 +1369,54 @@
         "situacao": "SUPLENCIA",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": "DIVERSO - Decisão da Mesa - Torna-se suplente por retotalização"
+      },
+      {
+        "id": 171617,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/171617",
+        "nome": "Paulão",
+        "nomeEleitoral": "PAULÃO",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "AL",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171617.jpg",
+        "dataHora": "2026-10-09T17:23",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente - Aguardando Convocação de Suplente"
+      },
+      {
+        "id": 171617,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/171617",
+        "nome": "Paulão",
+        "nomeEleitoral": "PAULÃO",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "AL",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171617.jpg",
+        "dataHora": "2026-10-09T17:23",
+        "situacao": "CONVOCADO",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "DIVERSO - Convocação Eleito ou Suplente"
+      },
+      {
+        "id": 171617,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/171617",
+        "nome": "Paulão",
+        "nomeEleitoral": "PAULÃO",
+        "siglaPartido": "PT",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36844",
+        "siglaUf": "AL",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/171617.jpg",
+        "dataHora": "2026-10-09T17:23",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "DIVERSO - Decisão da Mesa - Restabelecimento ao mandato na condição de titular"
       },
       {
         "id": 171617,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-09T01:34:23.248676+00:00",
+      "generated_at_utc": "2026-10-10T10:14:45.745745+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "98615",
-  "generated_at_utc": "2026-10-09T01:35:49.046571+00:00",
+  "generated_at_utc": "2026-10-10T10:17:20.856031+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1325,56 +1325,7 @@
       "municipioNascimento": "Blumenau",
       "escolaridade": "Superior"
     },
-    "historico": [
-      {
-        "id": 98615,
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/98615",
-        "nome": "Ismael",
-        "nomeEleitoral": "ISMAEL",
-        "siglaPartido": "PSD",
-        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36834",
-        "siglaUf": "SC",
-        "idLegislatura": 57,
-        "email": null,
-        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98615.jpg",
-        "dataHora": "2023-02-01T00:00",
-        "situacao": null,
-        "condicaoEleitoral": null,
-        "descricaoStatus": "Nome no início da legislatura / Partido no início da legislatura"
-      },
-      {
-        "id": 98615,
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/98615",
-        "nome": "Ismael",
-        "nomeEleitoral": "ISMAEL",
-        "siglaPartido": "PSD",
-        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36834",
-        "siglaUf": "SC",
-        "idLegislatura": 57,
-        "email": null,
-        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98615.jpg",
-        "dataHora": "2023-02-01T12:05",
-        "situacao": "Exercício",
-        "condicaoEleitoral": "Titular",
-        "descricaoStatus": "Entrada - Posse de Eleito Titular - Posse na Sessão Preparatória"
-      },
-      {
-        "id": 98615,
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/98615",
-        "nome": "Ismael",
-        "nomeEleitoral": "ISMAEL",
-        "siglaPartido": "PL",
-        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37906",
-        "siglaUf": "SC",
-        "idLegislatura": 57,
-        "email": null,
-        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/98615.jpg",
-        "dataHora": "2026-04-07T11:45",
-        "situacao": "Exercício",
-        "condicaoEleitoral": "Titular",
-        "descricaoStatus": "Alteração de partido"
-      }
-    ],
+    "historico": [],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/98615/historico"
   },
   "despesas": {

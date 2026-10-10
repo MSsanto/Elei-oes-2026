@@ -58,7 +58,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-09T01:32:01.306229+00:00",
+      "generated_at_utc": "2026-10-10T10:17:13.902040+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -237,7 +237,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "236518",
-  "generated_at_utc": "2026-10-09T01:35:48.816838+00:00",
+  "generated_at_utc": "2026-10-10T10:17:21.188487+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -263,17 +263,17 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/236518.jpg",
         "email": null,
-        "data": "2026-06-10",
+        "data": "2026-10-09",
         "nomeEleitoral": "Santin Roveda",
         "gabinete": {
-          "nome": "923",
-          "predio": "4",
-          "sala": "923",
-          "andar": "9",
-          "telefone": "3215-5923",
-          "email": "dep.santinroveda@camara.leg.br"
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
         },
-        "situacao": "Exercício",
+        "situacao": "Suplência",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": null
       },
@@ -353,6 +353,22 @@
         "situacao": "Exercício",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": "Entrada - Posse de Suplente - Posse como Suplente"
+      },
+      {
+        "id": 236518,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518",
+        "nome": "Santin Roveda",
+        "nomeEleitoral": "SANTIN ROVEDA",
+        "siglaPartido": "UNIÃO",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/38009",
+        "siglaUf": "PR",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/236518.jpg",
+        "dataHora": "2026-10-09T00:00",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/236518/historico"
