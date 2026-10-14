@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:36:37.855700+00:00",
+      "generated_at_utc": "2026-10-14T00:37:36.034976+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178947/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 330,
+        "quantidade_registros": 331,
         "registros_recentes": [
+          {
+            "id": 2647475,
+            "sigla_tipo": "REQ",
+            "numero": 4289,
+            "ano": 2026,
+            "ementa": "Requer urgência do art. 155 para apreciação imediata do PL 5.538/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647475"
+          },
           {
             "id": 2647252,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui a obrigatoriedade da implantação da Sala Sensorial de Acolhimento, nas dependências da Câmara dos Deputados, destinada ao atendimento de pessoas com deficiência, que demandem a necessidade de um ambiente de regulação sensorial, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644628"
-          },
-          {
-            "id": 2644545,
-            "sigla_tipo": "PL",
-            "numero": 5169,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a proibição de comercialização da Carteira de Identificação da Pessoa com Transtorno do Espectro Autista (CIPTEA).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644545"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178947"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178947",
-  "generated_at_utc": "2026-10-12T22:37:12.766279+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.020594+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1564,7 +1564,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1853,
+    "quantidade_registros": 1854,
     "por_ano": [
       {
         "ano": 2023,
@@ -1580,10 +1580,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 330
+        "quantidade_registros": 331
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647475,
+        "sigla_tipo": "REQ",
+        "numero": 4289,
+        "ano": 2026,
+        "ementa": "Requer urgência do art. 155 para apreciação imediata do PL 5.538/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647475"
+      },
       {
         "id": 2647252,
         "sigla_tipo": "REQ",
@@ -1671,14 +1679,6 @@
         "ano": 2026,
         "ementa": "Institui a obrigatoriedade da implantação da Sala Sensorial de Acolhimento, nas dependências da Câmara dos Deputados, destinada ao atendimento de pessoas com deficiência, que demandem a necessidade de um ambiente de regulação sensorial, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644628"
-      },
-      {
-        "id": 2644545,
-        "sigla_tipo": "PL",
-        "numero": 5169,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a proibição de comercialização da Carteira de Identificação da Pessoa com Transtorno do Espectro Autista (CIPTEA).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644545"
       },
       {
         "id": 2599057,

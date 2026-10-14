@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:34:12.636053+00:00",
+      "generated_at_utc": "2026-10-14T00:37:25.882725+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160518/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 40,
+        "quantidade_registros": 41,
         "registros_recentes": [
+          {
+            "id": 2647526,
+            "sigla_tipo": "PL",
+            "numero": 5554,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997, que “Estabelece normas para as eleições”, para proibir o uso de bandeiras, banners e windbanners ao longo das vias públicas em campanhas eleitorais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647526"
+          },
           {
             "id": 2645600,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requeiro a inclusão na Ordem do Dia do Plenário  do Projeto de Lei Complementar nº 185/2024, que regulamenta a aposentadoria especial dos agentes comunitários de saúde e dos agentes de combate às endemias, para votação imediata.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2619032"
-          },
-          {
-            "id": 2618756,
-            "sigla_tipo": "REQ",
-            "numero": 28,
-            "ano": 2026,
-            "ementa": "Requer a realização de audiência pública com o tema “Junho Violeta - Estratégias de enfrentamento à violência contra a pessoa idosa”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618756"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160518"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160518",
-  "generated_at_utc": "2026-10-12T22:37:12.428201+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.006444+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1625,7 +1625,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 352,
+    "quantidade_registros": 353,
     "por_ano": [
       {
         "ano": 2023,
@@ -1641,10 +1641,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 40
+        "quantidade_registros": 41
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647526,
+        "sigla_tipo": "PL",
+        "numero": 5554,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997, que “Estabelece normas para as eleições”, para proibir o uso de bandeiras, banners e windbanners ao longo das vias públicas em campanhas eleitorais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647526"
+      },
       {
         "id": 2645600,
         "sigla_tipo": "PL",
@@ -1732,14 +1740,6 @@
         "ano": 2026,
         "ementa": "Requeiro a inclusão na Ordem do Dia do Plenário  do Projeto de Lei Complementar nº 185/2024, que regulamenta a aposentadoria especial dos agentes comunitários de saúde e dos agentes de combate às endemias, para votação imediata.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2619032"
-      },
-      {
-        "id": 2618756,
-        "sigla_tipo": "REQ",
-        "numero": 28,
-        "ano": 2026,
-        "ementa": "Requer a realização de audiência pública com o tema “Junho Violeta - Estratégias de enfrentamento à violência contra a pessoa idosa”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618756"
       },
       {
         "id": 2597573,

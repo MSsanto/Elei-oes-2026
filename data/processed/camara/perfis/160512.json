@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:33:49.779069+00:00",
+      "generated_at_utc": "2026-10-14T00:38:49.342498+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160512/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 92,
+        "quantidade_registros": 93,
         "registros_recentes": [
+          {
+            "id": 2647475,
+            "sigla_tipo": "REQ",
+            "numero": 4289,
+            "ano": 2026,
+            "ementa": "Requer urgência do art. 155 para apreciação imediata do PL 5.538/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647475"
+          },
           {
             "id": 2647400,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), para instituir o Rótulo Digital Acessível e assegurar o acesso simplificado às informações de produtos por meio de tecnologia de código de resposta rápida, o QRCode.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643714"
-          },
-          {
-            "id": 2643713,
-            "sigla_tipo": "PL",
-            "numero": 5065,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 9.250, de 26 de dezembro de 1995, para permitir a dedução, da base de cálculo do Imposto sobre a Renda da Pessoa Física, de despesas destinadas à promoção da capacidade funcional, da autonomia e da qualidade de vida da pessoa idosa.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643713"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160512"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160512",
-  "generated_at_utc": "2026-10-12T22:37:12.376841+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.149010+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1628,7 +1628,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1076,
+    "quantidade_registros": 1077,
     "por_ano": [
       {
         "ano": 2023,
@@ -1644,10 +1644,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 92
+        "quantidade_registros": 93
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647475,
+        "sigla_tipo": "REQ",
+        "numero": 4289,
+        "ano": 2026,
+        "ementa": "Requer urgência do art. 155 para apreciação imediata do PL 5.538/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647475"
+      },
       {
         "id": 2647400,
         "sigla_tipo": "PL",
@@ -1735,14 +1743,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), para instituir o Rótulo Digital Acessível e assegurar o acesso simplificado às informações de produtos por meio de tecnologia de código de resposta rápida, o QRCode.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643714"
-      },
-      {
-        "id": 2643713,
-        "sigla_tipo": "PL",
-        "numero": 5065,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 9.250, de 26 de dezembro de 1995, para permitir a dedução, da base de cálculo do Imposto sobre a Renda da Pessoa Física, de despesas destinadas à promoção da capacidade funcional, da autonomia e da qualidade de vida da pessoa idosa.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643713"
       },
       {
         "id": 2598424,

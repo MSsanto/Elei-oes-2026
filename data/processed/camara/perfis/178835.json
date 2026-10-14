@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:36:12.270249+00:00",
+      "generated_at_utc": "2026-10-14T00:37:27.033163+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178835/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 8,
+        "quantidade_registros": 10,
         "registros_recentes": [
+          {
+            "id": 2647513,
+            "sigla_tipo": "RIC",
+            "numero": 2729,
+            "ano": 2026,
+            "ementa": "Solicita informações ao Senhor Ministro de Estado do Desenvolvimento, Indústria, Comércio e Serviços acerca da regulamentação e da implementação do Programa Especial de Sustentabilidade da Indústria Química (PRESIQ).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647513"
+          },
+          {
+            "id": 2647408,
+            "sigla_tipo": "PL",
+            "numero": 5541,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a prevenção e a repressão ao assédio telefônico nas relações de consumo, estabelece limites para chamadas de telemarketing e cobrança e assegura direitos de identificação, oposição e rastreabilidade.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647408"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1239,7 +1255,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178835",
-  "generated_at_utc": "2026-10-12T22:37:12.720865+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.008973+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1543,7 +1559,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 414,
+    "quantidade_registros": 416,
     "por_ano": [
       {
         "ano": 2023,
@@ -1559,10 +1575,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 8
+        "quantidade_registros": 10
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647513,
+        "sigla_tipo": "RIC",
+        "numero": 2729,
+        "ano": 2026,
+        "ementa": "Solicita informações ao Senhor Ministro de Estado do Desenvolvimento, Indústria, Comércio e Serviços acerca da regulamentação e da implementação do Programa Especial de Sustentabilidade da Indústria Química (PRESIQ).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647513"
+      },
+      {
+        "id": 2647408,
+        "sigla_tipo": "PL",
+        "numero": 5541,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a prevenção e a repressão ao assédio telefônico nas relações de consumo, estabelece limites para chamadas de telemarketing e cobrança e assegura direitos de identificação, oposição e rastreabilidade.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647408"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1738,22 +1770,6 @@
         "ano": 2024,
         "ementa": "Requer o registro da Frente Parlamentar Mista da Cadeia Produtiva da Cerveja",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2481405"
-      },
-      {
-        "id": 2481085,
-        "sigla_tipo": "DOC",
-        "numero": 993,
-        "ano": 2024,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2481085"
-      },
-      {
-        "id": 2480701,
-        "sigla_tipo": "REQ",
-        "numero": 4958,
-        "ano": 2024,
-        "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa da Pessoa com Epilepsia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2480701"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178835",

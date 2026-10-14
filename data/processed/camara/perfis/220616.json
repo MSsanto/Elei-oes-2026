@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:33:33.796808+00:00",
+      "generated_at_utc": "2026-10-14T00:40:07.424791+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220616",
-  "generated_at_utc": "2026-10-12T22:37:12.336535+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.293294+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1297,17 +1297,17 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220616.jpg",
         "email": null,
-        "data": "2026-05-28",
+        "data": "2026-10-10",
         "nomeEleitoral": "Luciano Vieira",
         "gabinete": {
-          "nome": null,
-          "predio": null,
-          "sala": null,
-          "andar": null,
-          "telefone": null,
-          "email": null
+          "nome": "329",
+          "predio": "4",
+          "sala": "329",
+          "andar": "3",
+          "telefone": "3215-5329",
+          "email": "dep.lucianovieira@camara.leg.br"
         },
-        "situacao": "Licença",
+        "situacao": "Exercício",
         "condicaoEleitoral": "Titular",
         "descricaoStatus": ""
       },
@@ -1421,6 +1421,22 @@
         "situacao": "Licença",
         "condicaoEleitoral": "Titular",
         "descricaoStatus": "Saída - Afastamento com prazo determinado - Afastamento Conjunto Consecutivo"
+      },
+      {
+        "id": 220616,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/220616",
+        "nome": "Luciano Vieira",
+        "nomeEleitoral": "LUCIANO VIEIRA",
+        "siglaPartido": "PSDB",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36835",
+        "siglaUf": "RJ",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/220616.jpg",
+        "dataHora": "2026-10-10T00:00",
+        "situacao": "Exercício",
+        "condicaoEleitoral": "Titular",
+        "descricaoStatus": "Entrada - Reassunção"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220616/historico"

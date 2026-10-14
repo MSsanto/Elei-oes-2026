@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:34:46.410420+00:00",
+      "generated_at_utc": "2026-10-14T00:36:54.559034+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/62881/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 21,
+        "quantidade_registros": 22,
         "registros_recentes": [
+          {
+            "id": 2647426,
+            "sigla_tipo": "REQ",
+            "numero": 4288,
+            "ano": 2026,
+            "ementa": "Requer\tregime\tde\turgência para apreciação do PL nº 3.716/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647426"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Dia Nacional do Corredor de Rua.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616664"
-          },
-          {
-            "id": 2614375,
-            "sigla_tipo": "REQ",
-            "numero": 23,
-            "ano": 2026,
-            "ementa": "Requer, nos termos regimentais, a retirada de tramitação, nesta Comissão, e o arquivamento do Requerimento nº 20/2026, de minha autoria.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2614375"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=62881"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "62881",
-  "generated_at_utc": "2026-10-12T22:37:12.508391+00:00",
+  "generated_at_utc": "2026-10-14T00:40:14.949500+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1771,7 +1771,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 432,
+    "quantidade_registros": 433,
     "por_ano": [
       {
         "ano": 2023,
@@ -1787,10 +1787,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 21
+        "quantidade_registros": 22
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647426,
+        "sigla_tipo": "REQ",
+        "numero": 4288,
+        "ano": 2026,
+        "ementa": "Requer\tregime\tde\turgência para apreciação do PL nº 3.716/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647426"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1878,14 +1886,6 @@
         "ano": 2026,
         "ementa": "Institui o Dia Nacional do Corredor de Rua.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2616664"
-      },
-      {
-        "id": 2614375,
-        "sigla_tipo": "REQ",
-        "numero": 23,
-        "ano": 2026,
-        "ementa": "Requer, nos termos regimentais, a retirada de tramitação, nesta Comissão, e o arquivamento do Requerimento nº 20/2026, de minha autoria.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2614375"
       },
       {
         "id": 2598301,

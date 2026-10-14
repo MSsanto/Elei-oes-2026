@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:36:27.531225+00:00",
+      "generated_at_utc": "2026-10-14T00:39:07.461137+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74856/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 550,
+        "quantidade_registros": 553,
         "registros_recentes": [
+          {
+            "id": 2647480,
+            "sigla_tipo": "RIC",
+            "numero": 2728,
+            "ano": 2026,
+            "ementa": "Requer informações sobre inclusão de informação sobre tipo sanguíneo na Carteira Nacional de Habilitação (CNH).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647480"
+          },
+          {
+            "id": 2647478,
+            "sigla_tipo": "RIC",
+            "numero": 2727,
+            "ano": 2026,
+            "ementa": "Requer ao Senhor Ministro de Estado Chefe da Secretaria de Relações Institucionais da Presidência da República informações acerca do encaminhamento e do acompanhamento da Indicação nº 834, de 2026, que sugere ao Ministério da Saúde a expansão do acesso aos inibidores de CDK 4/6 para pacientes com câncer de mama precoce RH+/HER2- de alto risco no âmbito do Sistema Único de Saúde – SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647478"
+          },
+          {
+            "id": 2647477,
+            "sigla_tipo": "RIC",
+            "numero": 2726,
+            "ano": 2026,
+            "ementa": "Requer ao Senhor Ministro de Estado da Saúde informações acerca das providências adotadas em relação à Indicação nº 834, de 2026, que sugere a expansão do acesso aos inibidores de CDK 4/6 para pacientes com câncer de mama precoce RH+/HER2- de alto risco no âmbito do Sistema Único de Saúde – SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647477"
+          },
           {
             "id": 2647302,
             "sigla_tipo": "REQ",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a desapensação do Projeto de Lei nº 1.698, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.323, de 2024.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647150"
-          },
-          {
-            "id": 2646943,
-            "sigla_tipo": "REQ",
-            "numero": 4262,
-            "ano": 2026,
-            "ementa": "Requer urgência para a apreciação do Projeto de Lei nº 6.685, de 2009.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646943"
-          },
-          {
-            "id": 2646867,
-            "sigla_tipo": "RIC",
-            "numero": 2659,
-            "ano": 2026,
-            "ementa": "Solicita ao Ministro de Estado da Saúde a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646867"
-          },
-          {
-            "id": 2646866,
-            "sigla_tipo": "RIC",
-            "numero": 2658,
-            "ano": 2026,
-            "ementa": "Solicita ao Ministro de Estado da Fazenda a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646866"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74856"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74856",
-  "generated_at_utc": "2026-10-12T22:37:12.744130+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.174653+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2359,7 +2359,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2377,
+    "quantidade_registros": 2380,
     "por_ano": [
       {
         "ano": 2023,
@@ -2375,10 +2375,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 550
+        "quantidade_registros": 553
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647480,
+        "sigla_tipo": "RIC",
+        "numero": 2728,
+        "ano": 2026,
+        "ementa": "Requer informações sobre inclusão de informação sobre tipo sanguíneo na Carteira Nacional de Habilitação (CNH).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647480"
+      },
+      {
+        "id": 2647478,
+        "sigla_tipo": "RIC",
+        "numero": 2727,
+        "ano": 2026,
+        "ementa": "Requer ao Senhor Ministro de Estado Chefe da Secretaria de Relações Institucionais da Presidência da República informações acerca do encaminhamento e do acompanhamento da Indicação nº 834, de 2026, que sugere ao Ministério da Saúde a expansão do acesso aos inibidores de CDK 4/6 para pacientes com câncer de mama precoce RH+/HER2- de alto risco no âmbito do Sistema Único de Saúde – SUS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647478"
+      },
+      {
+        "id": 2647477,
+        "sigla_tipo": "RIC",
+        "numero": 2726,
+        "ano": 2026,
+        "ementa": "Requer ao Senhor Ministro de Estado da Saúde informações acerca das providências adotadas em relação à Indicação nº 834, de 2026, que sugere a expansão do acesso aos inibidores de CDK 4/6 para pacientes com câncer de mama precoce RH+/HER2- de alto risco no âmbito do Sistema Único de Saúde – SUS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647477"
+      },
       {
         "id": 2647302,
         "sigla_tipo": "REQ",
@@ -2450,30 +2474,6 @@
         "ano": 2026,
         "ementa": "Requer a desapensação do Projeto de Lei nº 1.698, de 2026, que tramita conjuntamente ao Projeto de Lei nº 3.323, de 2024.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647150"
-      },
-      {
-        "id": 2646943,
-        "sigla_tipo": "REQ",
-        "numero": 4262,
-        "ano": 2026,
-        "ementa": "Requer urgência para a apreciação do Projeto de Lei nº 6.685, de 2009.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646943"
-      },
-      {
-        "id": 2646867,
-        "sigla_tipo": "RIC",
-        "numero": 2659,
-        "ano": 2026,
-        "ementa": "Solicita ao Ministro de Estado da Saúde a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646867"
-      },
-      {
-        "id": 2646866,
-        "sigla_tipo": "RIC",
-        "numero": 2658,
-        "ano": 2026,
-        "ementa": "Solicita ao Ministro de Estado da Fazenda a estimativa de impacto orçamentário e financeiro do Projeto de Lei 1.124/2026, que altera a Lei nº 8.686, de 20 de julho de 1993, para estabelecer novo valor para a pensão especial indenizatória devida à pessoa com deficiência física conhecida como Síndrome da Talidomida, instituída pela Lei nº 7.070, de 20 de dezembro de 1982.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646866"
       },
       {
         "id": 2599057,

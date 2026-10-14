@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:35:27.553760+00:00",
+      "generated_at_utc": "2026-10-14T00:38:32.906994+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204506/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 9,
+        "quantidade_registros": 10,
         "registros_recentes": [
+          {
+            "id": 2647472,
+            "sigla_tipo": "PL",
+            "numero": 5548,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 12.485, de 12 de setembro de 2011, para estabelecer regras de transparência na composição dos pacotes de canais do serviço de acesso condicionado e para assegurar a comunicação prévia e individualizada aos consumidores acerca da retirada, substituição ou descontinuidade de canais integrantes dos pacotes contratados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647472"
+          },
           {
             "id": 2645786,
             "sigla_tipo": "EMC",
@@ -1247,7 +1255,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204506",
-  "generated_at_utc": "2026-10-12T22:37:12.612565+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.120949+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1460,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 136,
+    "quantidade_registros": 137,
     "por_ano": [
       {
         "ano": 2023,
@@ -1476,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 9
+        "quantidade_registros": 10
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647472,
+        "sigla_tipo": "PL",
+        "numero": 5548,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 12.485, de 12 de setembro de 2011, para estabelecer regras de transparência na composição dos pacotes de canais do serviço de acesso condicionado e para assegurar a comunicação prévia e individualizada aos consumidores acerca da retirada, substituição ou descontinuidade de canais integrantes dos pacotes contratados.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647472"
+      },
       {
         "id": 2645786,
         "sigla_tipo": "EMC",
@@ -1663,14 +1679,6 @@
         "ano": 2024,
         "ementa": "Requer dispensa do interstício regimental entre o primeiro e o segundo turno de deliberação da Proposta de Emenda à Constituição nº 5, de 2023.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2469430"
-      },
-      {
-        "id": 2469429,
-        "sigla_tipo": "REQ",
-        "numero": 4490,
-        "ano": 2024,
-        "ementa": "Requeremos a Vossa Excelência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, URGÊNCIA para apreciação do PL 3.467/2024, QUE “Dispõe sobre a transformação de cargos vagos no quadro permanente do Tribunal Regional do Trabalho da 15 Região, sem aumento de despesas.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2469429"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204506",

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:35:59.778835+00:00",
+      "generated_at_utc": "2026-10-14T00:39:56.195172+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204450/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 137,
+        "quantidade_registros": 138,
         "registros_recentes": [
+          {
+            "id": 2647404,
+            "sigla_tipo": "REQ",
+            "numero": 4284,
+            "ano": 2026,
+            "ementa": "Requer a realização de Sessão Solene em homenagem aos 80 anos de Relações Diplomáticas entre o Brasil e o Líbano.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647404"
+          },
           {
             "id": 2646889,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer regime de urgência na tramitação do Projeto de Lei nº 1800, de 2023, que “Autoriza o Poder Executivo a criar a Universidade Federal do Nordeste da Bahia”.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642749"
-          },
-          {
-            "id": 2642747,
-            "sigla_tipo": "REQ",
-            "numero": 4018,
-            "ano": 2026,
-            "ementa": "Requer a urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei Complementar 120/2024, que institui o Pacto Nacional pela Restauração da Natureza e dos Biomas do Brasil, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642747"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204450"
@@ -1201,7 +1201,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204450",
-  "generated_at_utc": "2026-10-12T22:37:12.693206+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.279824+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1445,7 +1445,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 964,
+    "quantidade_registros": 965,
     "por_ano": [
       {
         "ano": 2023,
@@ -1461,10 +1461,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 137
+        "quantidade_registros": 138
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647404,
+        "sigla_tipo": "REQ",
+        "numero": 4284,
+        "ano": 2026,
+        "ementa": "Requer a realização de Sessão Solene em homenagem aos 80 anos de Relações Diplomáticas entre o Brasil e o Líbano.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647404"
+      },
       {
         "id": 2646889,
         "sigla_tipo": "PL",
@@ -1552,14 +1560,6 @@
         "ano": 2026,
         "ementa": "Requer regime de urgência na tramitação do Projeto de Lei nº 1800, de 2023, que “Autoriza o Poder Executivo a criar a Universidade Federal do Nordeste da Bahia”.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642749"
-      },
-      {
-        "id": 2642747,
-        "sigla_tipo": "REQ",
-        "numero": 4018,
-        "ano": 2026,
-        "ementa": "Requer a urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei Complementar 120/2024, que institui o Pacto Nacional pela Restauração da Natureza e dos Biomas do Brasil, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642747"
       },
       {
         "id": 2598424,

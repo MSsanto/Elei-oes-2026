@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:33:52.964964+00:00",
+      "generated_at_utc": "2026-10-14T00:39:37.791572+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160665/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 206,
+        "quantidade_registros": 207,
         "registros_recentes": [
+          {
+            "id": 2647502,
+            "sigla_tipo": "REQ",
+            "numero": 4291,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a realização de Sessão Solene em Comemoração ao Dia Mundial de Conscientização do Autismo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647502"
+          },
           {
             "id": 2647302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
-          },
-          {
-            "id": 2643379,
-            "sigla_tipo": "DOC",
-            "numero": 934,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643379"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160665"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160665",
-  "generated_at_utc": "2026-10-12T22:37:12.382829+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.246668+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1676,7 +1676,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 643,
+    "quantidade_registros": 644,
     "por_ano": [
       {
         "ano": 2023,
@@ -1692,10 +1692,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 206
+        "quantidade_registros": 207
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647502,
+        "sigla_tipo": "REQ",
+        "numero": 4291,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a realização de Sessão Solene em Comemoração ao Dia Mundial de Conscientização do Autismo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647502"
+      },
       {
         "id": 2647302,
         "sigla_tipo": "REQ",
@@ -1783,14 +1791,6 @@
         "ano": 2026,
         "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
-      },
-      {
-        "id": 2643379,
-        "sigla_tipo": "DOC",
-        "numero": 934,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643379"
       },
       {
         "id": 2599001,

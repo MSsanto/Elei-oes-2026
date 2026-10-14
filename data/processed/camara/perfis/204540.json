@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:35:25.525435+00:00",
+      "generated_at_utc": "2026-10-14T00:38:36.617634+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204540/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 40,
+        "quantidade_registros": 41,
         "registros_recentes": [
+          {
+            "id": 2647502,
+            "sigla_tipo": "REQ",
+            "numero": 4291,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a realização de Sessão Solene em Comemoração ao Dia Mundial de Conscientização do Autismo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647502"
+          },
           {
             "id": 2637458,
             "sigla_tipo": "ESB",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Audiência Pública para debater o tema: “Sustentabilidade da Conectividade nas Escolas”.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623629"
-          },
-          {
-            "id": 2622881,
-            "sigla_tipo": "REQ",
-            "numero": 2708,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para apreciação do Projeto de Lei Complementar nº 230/2025, que altera a Lei Complementar nº 101, de 4 de maio de 2000, e a Lei nº 9.998, de 17 de agosto de 2000, para os fins que especifica.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622881"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204540"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204540",
-  "generated_at_utc": "2026-10-12T22:37:12.608271+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.128486+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1516,7 +1516,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 390,
+    "quantidade_registros": 391,
     "por_ano": [
       {
         "ano": 2023,
@@ -1532,10 +1532,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 40
+        "quantidade_registros": 41
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647502,
+        "sigla_tipo": "REQ",
+        "numero": 4291,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a realização de Sessão Solene em Comemoração ao Dia Mundial de Conscientização do Autismo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647502"
+      },
       {
         "id": 2637458,
         "sigla_tipo": "ESB",
@@ -1623,14 +1631,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Audiência Pública para debater o tema: “Sustentabilidade da Conectividade nas Escolas”.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623629"
-      },
-      {
-        "id": 2622881,
-        "sigla_tipo": "REQ",
-        "numero": 2708,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para apreciação do Projeto de Lei Complementar nº 230/2025, que altera a Lei Complementar nº 101, de 4 de maio de 2000, e a Lei nº 9.998, de 17 de agosto de 2000, para os fins que especifica.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622881"
       },
       {
         "id": 2596314,

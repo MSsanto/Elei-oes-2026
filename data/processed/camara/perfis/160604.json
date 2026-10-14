@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:36:04.316505+00:00",
+      "generated_at_utc": "2026-10-14T00:38:02.074900+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160604/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 241,
+        "quantidade_registros": 242,
         "registros_recentes": [
+          {
+            "id": 2647461,
+            "sigla_tipo": "DOC",
+            "numero": 969,
+            "ano": 2026,
+            "ementa": "",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647461"
+          },
           {
             "id": 2645533,
             "sigla_tipo": "DOC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643017"
-          },
-          {
-            "id": 2642747,
-            "sigla_tipo": "REQ",
-            "numero": 4018,
-            "ano": 2026,
-            "ementa": "Requer a urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei Complementar 120/2024, que institui o Pacto Nacional pela Restauração da Natureza e dos Biomas do Brasil, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642747"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160604"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160604",
-  "generated_at_utc": "2026-10-12T22:37:12.701570+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.066609+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1623,7 +1623,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1478,
+    "quantidade_registros": 1479,
     "por_ano": [
       {
         "ano": 2023,
@@ -1639,10 +1639,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 241
+        "quantidade_registros": 242
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647461,
+        "sigla_tipo": "DOC",
+        "numero": 969,
+        "ano": 2026,
+        "ementa": "",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647461"
+      },
       {
         "id": 2645533,
         "sigla_tipo": "DOC",
@@ -1730,14 +1738,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643017"
-      },
-      {
-        "id": 2642747,
-        "sigla_tipo": "REQ",
-        "numero": 4018,
-        "ano": 2026,
-        "ementa": "Requer a urgência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, para apreciação do Projeto de Lei Complementar 120/2024, que institui o Pacto Nacional pela Restauração da Natureza e dos Biomas do Brasil, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642747"
       },
       {
         "id": 2598941,

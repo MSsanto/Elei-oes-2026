@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:36:57.166172+00:00",
+      "generated_at_utc": "2026-10-14T00:37:27.784450+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220647/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 16,
+        "quantidade_registros": 17,
         "registros_recentes": [
+          {
+            "id": 2647404,
+            "sigla_tipo": "REQ",
+            "numero": 4284,
+            "ano": 2026,
+            "ementa": "Requer a realização de Sessão Solene em homenagem aos 80 anos de Relações Diplomáticas entre o Brasil e o Líbano.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647404"
+          },
           {
             "id": 2643902,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 155 da Constituição Federal para estabelecer alíquota máxima e base de cálculo exclusiva do Imposto sobre a Propriedade de Veículos Automotores – IPVA, e acrescenta dispositivos ao Ato das Disposições Constitucionais Transitórias para limitar despesas com publicidade institucional e com o Poder Legislativo.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604173"
-          },
-          {
-            "id": 2603131,
-            "sigla_tipo": "PL",
-            "numero": 572,
-            "ano": 2026,
-            "ementa": "Reconhece a crianças e adolescentes com Transtorno do Espectro Autista (TEA) o direito a protetores auriculares no âmbito da rede pública de ensino.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2603131"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220647"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220647",
-  "generated_at_utc": "2026-10-12T22:37:12.822389+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.010446+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 370,
+    "quantidade_registros": 371,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 16
+        "quantidade_registros": 17
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647404,
+        "sigla_tipo": "REQ",
+        "numero": 4284,
+        "ano": 2026,
+        "ementa": "Requer a realização de Sessão Solene em homenagem aos 80 anos de Relações Diplomáticas entre o Brasil e o Líbano.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647404"
+      },
       {
         "id": 2643902,
         "sigla_tipo": "PL",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 155 da Constituição Federal para estabelecer alíquota máxima e base de cálculo exclusiva do Imposto sobre a Propriedade de Veículos Automotores – IPVA, e acrescenta dispositivos ao Ato das Disposições Constitucionais Transitórias para limitar despesas com publicidade institucional e com o Poder Legislativo.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604173"
-      },
-      {
-        "id": 2603131,
-        "sigla_tipo": "PL",
-        "numero": 572,
-        "ano": 2026,
-        "ementa": "Reconhece a crianças e adolescentes com Transtorno do Espectro Autista (TEA) o direito a protetores auriculares no âmbito da rede pública de ensino.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2603131"
       },
       {
         "id": 2596329,

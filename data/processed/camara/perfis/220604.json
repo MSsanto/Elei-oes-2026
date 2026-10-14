@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:34:21.070343+00:00",
+      "generated_at_utc": "2026-10-14T00:37:05.068226+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220604/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 126,
+        "quantidade_registros": 128,
         "registros_recentes": [
+          {
+            "id": 2647445,
+            "sigla_tipo": "PL",
+            "numero": 5545,
+            "ano": 2026,
+            "ementa": "Institui a Política Nacional de Responsabilização Administrativa pelo Consumo de Drogas Ilícitas em Espaços Públicos, estabelece multa administrativa para a prática de consumo ostensivo de substâncias ilícitas em locais de uso comum do povo, disciplina a destinação vinculada dos valores arrecadados para ações de prevenção ao uso de drogas nas escolas, segurança pública e saúde, e altera a Lei nº 11.343, de 23 de agosto de 2006, para fortalecer medidas educativas, preventivas e de proteção à coletividade.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647445"
+          },
+          {
+            "id": 2647443,
+            "sigla_tipo": "PL",
+            "numero": 5544,
+            "ano": 2026,
+            "ementa": "Institui a Lei Insalubridade Justa dos Agentes de Saúde, altera a Lei nº 11.350, de 5 de outubro de 2006, para assegurar a correta base de cálculo do adicional de insalubridade devido aos Agentes Comunitários de Saúde e aos Agentes de Combate às Endemias, vedar sua apuração sobre o salário mínimo quando houver vencimento ou salário-base próprio, disciplinar a revisão administrativa de pagamentos realizados a menor, estabelecer deveres de transparência e controle, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647443"
+          },
           {
             "id": 2647322,
             "sigla_tipo": "PLP",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui a Lei Nacional de Valorização das Guardas Municipais e do Piso Nacional da Segurança Municipal, estabelece o Piso Nacional de Referência dos profissionais das Guardas Municipais no valor de R$ 7.000,00, dispõe sobre mecanismos de cofinanciamento federal, valorização profissional, estruturação de carreiras, formação e proteção institucional, disciplina o emprego complementar da denominação funcional Polícia Municipal e altera a Lei nº 13.022, de 8 de agosto de 2014, e a Lei nº 13.675, de 11 de junho de 2018.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647164"
-          },
-          {
-            "id": 2644734,
-            "sigla_tipo": "REQ",
-            "numero": 4125,
-            "ano": 2026,
-            "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-          },
-          {
-            "id": 2642096,
-            "sigla_tipo": "PL",
-            "numero": 4910,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a proteção do ponto de trabalho do vendedor ambulante tradicional e estabelece garantias para sua remoção ou realocação em razão de interesse público.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642096"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220604"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220604",
-  "generated_at_utc": "2026-10-12T22:37:12.443571+00:00",
+  "generated_at_utc": "2026-10-14T00:40:14.965267+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1418,7 +1418,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 2586,
+    "quantidade_registros": 2588,
     "por_ano": [
       {
         "ano": 2023,
@@ -1434,10 +1434,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 126
+        "quantidade_registros": 128
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647445,
+        "sigla_tipo": "PL",
+        "numero": 5545,
+        "ano": 2026,
+        "ementa": "Institui a Política Nacional de Responsabilização Administrativa pelo Consumo de Drogas Ilícitas em Espaços Públicos, estabelece multa administrativa para a prática de consumo ostensivo de substâncias ilícitas em locais de uso comum do povo, disciplina a destinação vinculada dos valores arrecadados para ações de prevenção ao uso de drogas nas escolas, segurança pública e saúde, e altera a Lei nº 11.343, de 23 de agosto de 2006, para fortalecer medidas educativas, preventivas e de proteção à coletividade.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647445"
+      },
+      {
+        "id": 2647443,
+        "sigla_tipo": "PL",
+        "numero": 5544,
+        "ano": 2026,
+        "ementa": "Institui a Lei Insalubridade Justa dos Agentes de Saúde, altera a Lei nº 11.350, de 5 de outubro de 2006, para assegurar a correta base de cálculo do adicional de insalubridade devido aos Agentes Comunitários de Saúde e aos Agentes de Combate às Endemias, vedar sua apuração sobre o salário mínimo quando houver vencimento ou salário-base próprio, disciplinar a revisão administrativa de pagamentos realizados a menor, estabelecer deveres de transparência e controle, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647443"
+      },
       {
         "id": 2647322,
         "sigla_tipo": "PLP",
@@ -1517,22 +1533,6 @@
         "ano": 2026,
         "ementa": "Institui a Lei Nacional de Valorização das Guardas Municipais e do Piso Nacional da Segurança Municipal, estabelece o Piso Nacional de Referência dos profissionais das Guardas Municipais no valor de R$ 7.000,00, dispõe sobre mecanismos de cofinanciamento federal, valorização profissional, estruturação de carreiras, formação e proteção institucional, disciplina o emprego complementar da denominação funcional Polícia Municipal e altera a Lei nº 13.022, de 8 de agosto de 2014, e a Lei nº 13.675, de 11 de junho de 2018.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647164"
-      },
-      {
-        "id": 2644734,
-        "sigla_tipo": "REQ",
-        "numero": 4125,
-        "ano": 2026,
-        "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-      },
-      {
-        "id": 2642096,
-        "sigla_tipo": "PL",
-        "numero": 4910,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a proteção do ponto de trabalho do vendedor ambulante tradicional e estabelece garantias para sua remoção ou realocação em razão de interesse público.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642096"
       },
       {
         "id": 2599171,

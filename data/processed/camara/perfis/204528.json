@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:35:22.937314+00:00",
+      "generated_at_utc": "2026-10-14T00:39:09.951734+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204528/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 319,
+        "quantidade_registros": 320,
         "registros_recentes": [
+          {
+            "id": 2647405,
+            "sigla_tipo": "REQ",
+            "numero": 4285,
+            "ano": 2026,
+            "ementa": "Requer a inclusão da Proposta de Emenda à Constituição nº 333 de 2017, na ordem do dia.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647405"
+          },
           {
             "id": 2647265,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos, Sr. Tomé Monteiro da Franca, sobre a harmonização entre o Regulamento Brasileiro da Aviação Civil nº 100, aprovado pela Agência Nacional de Aviação Civil, e a Instrução do Comando da Aeronáutica (ICA) 100-40, e sobre os efeitos práticos da adoção de critérios regulatórios distintos para aeronaves não tripuladas de uso recreativo com peso inferior a 250 gramas.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646857"
-          },
-          {
-            "id": 2646843,
-            "sigla_tipo": "RIC",
-            "numero": 2651,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, sobre a execução, mediante descentralização orçamentária, de campanha publicitária no valor de R$ 80 milhões relativa ao fim da escala 6x1, objeto do Requerimento de Informação nº 1689/2026 dirigido à Secretaria de Comunicação Social da Presidência da República (SECOM).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646843"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204528"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204528",
-  "generated_at_utc": "2026-10-12T22:37:12.595394+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.191287+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1976,
+    "quantidade_registros": 1977,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 319
+        "quantidade_registros": 320
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647405,
+        "sigla_tipo": "REQ",
+        "numero": 4285,
+        "ano": 2026,
+        "ementa": "Requer a inclusão da Proposta de Emenda à Constituição nº 333 de 2017, na ordem do dia.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647405"
+      },
       {
         "id": 2647265,
         "sigla_tipo": "RIC",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos, Sr. Tomé Monteiro da Franca, sobre a harmonização entre o Regulamento Brasileiro da Aviação Civil nº 100, aprovado pela Agência Nacional de Aviação Civil, e a Instrução do Comando da Aeronáutica (ICA) 100-40, e sobre os efeitos práticos da adoção de critérios regulatórios distintos para aeronaves não tripuladas de uso recreativo com peso inferior a 250 gramas.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646857"
-      },
-      {
-        "id": 2646843,
-        "sigla_tipo": "RIC",
-        "numero": 2651,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, sobre a execução, mediante descentralização orçamentária, de campanha publicitária no valor de R$ 80 milhões relativa ao fim da escala 6x1, objeto do Requerimento de Informação nº 1689/2026 dirigido à Secretaria de Comunicação Social da Presidência da República (SECOM).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646843"
       },
       {
         "id": 2598717,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:35:16.263798+00:00",
+      "generated_at_utc": "2026-10-14T00:40:04.652662+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220703/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 9,
+        "quantidade_registros": 10,
         "registros_recentes": [
+          {
+            "id": 2647523,
+            "sigla_tipo": "PL",
+            "numero": 5552,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 5.768, de 20 de dezembro de 1971, para proibir a utilização de animais vivos como prêmio em rifas, sorteios, concursos, promoções e operações assemelhadas, inclusive em ambientes digitais, e estabelece medidas de fiscalização e sanções.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647523"
+          },
           {
             "id": 2620141,
             "sigla_tipo": "REQ",
@@ -1247,7 +1255,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220703",
-  "generated_at_utc": "2026-10-12T22:37:12.583618+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.290685+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1411,7 +1419,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 314,
+    "quantidade_registros": 315,
     "por_ano": [
       {
         "ano": 2023,
@@ -1427,10 +1435,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 9
+        "quantidade_registros": 10
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647523,
+        "sigla_tipo": "PL",
+        "numero": 5552,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 5.768, de 20 de dezembro de 1971, para proibir a utilização de animais vivos como prêmio em rifas, sorteios, concursos, promoções e operações assemelhadas, inclusive em ambientes digitais, e estabelece medidas de fiscalização e sanções.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647523"
+      },
       {
         "id": 2620141,
         "sigla_tipo": "REQ",
@@ -1614,14 +1630,6 @@
         "ano": 2024,
         "ementa": "Sugere a adoção de providências para melhorar a segurança viária na travessia urbana do Município de Eunápolis/BA, na BR-101/BA.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2467711"
-      },
-      {
-        "id": 2467707,
-        "sigla_tipo": "REQ",
-        "numero": 93,
-        "ano": 2024,
-        "ementa": "Requer a realização de audiência pública para discutir questões relativas à duplicação e outras benfeitorias da rodovia BR-101 no Estado da Bahia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2467707"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220703",

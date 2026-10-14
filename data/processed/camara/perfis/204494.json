@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:36:14.883959+00:00",
+      "generated_at_utc": "2026-10-14T00:39:02.096864+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204494/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 68,
+        "quantidade_registros": 70,
         "registros_recentes": [
+          {
+            "id": 2647430,
+            "sigla_tipo": "REQ",
+            "numero": 75,
+            "ano": 2026,
+            "ementa": "Requer a aprovação de Moção de Aplauso aos policiais militares do Pelotão TM/36ª Cia PM/3º BPM/14ª RPM, em Diamantina, Minas Gerais, em reconhecimento à excelência dos serviços prestados à segurança pública do Município.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647430"
+          },
+          {
+            "id": 2647428,
+            "sigla_tipo": "REQ",
+            "numero": 74,
+            "ano": 2026,
+            "ementa": "Requer a aprovação de Moção de Aplauso ao médico-veterinário Bruno Lisboa, pelo trabalho desenvolvido em favor do bem-estar animal e pela utilização de técnicas de manejo destinadas a reduzir o estresse de cães durante o atendimento veterinário.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647428"
+          },
           {
             "id": 2646874,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Aplauso ao GRAD Brasil – Grupo de Resposta a Animais em Desastres, pela atuação na missão humanitária brasileira destinada ao apoio à República Bolivariana da Venezuela, em razão dos graves terremotos que atingiram o país.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639349"
-          },
-          {
-            "id": 2633488,
-            "sigla_tipo": "PEC",
-            "numero": 15,
-            "ano": 2026,
-            "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
-          },
-          {
-            "id": 2630123,
-            "sigla_tipo": "DOC",
-            "numero": 832,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630123"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204494"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204494",
-  "generated_at_utc": "2026-10-12T22:37:12.727152+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.172191+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1547,7 +1547,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 538,
+    "quantidade_registros": 540,
     "por_ano": [
       {
         "ano": 2023,
@@ -1563,10 +1563,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 68
+        "quantidade_registros": 70
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647430,
+        "sigla_tipo": "REQ",
+        "numero": 75,
+        "ano": 2026,
+        "ementa": "Requer a aprovação de Moção de Aplauso aos policiais militares do Pelotão TM/36ª Cia PM/3º BPM/14ª RPM, em Diamantina, Minas Gerais, em reconhecimento à excelência dos serviços prestados à segurança pública do Município.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647430"
+      },
+      {
+        "id": 2647428,
+        "sigla_tipo": "REQ",
+        "numero": 74,
+        "ano": 2026,
+        "ementa": "Requer a aprovação de Moção de Aplauso ao médico-veterinário Bruno Lisboa, pelo trabalho desenvolvido em favor do bem-estar animal e pela utilização de técnicas de manejo destinadas a reduzir o estresse de cães durante o atendimento veterinário.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647428"
+      },
       {
         "id": 2646874,
         "sigla_tipo": "PL",
@@ -1646,22 +1662,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Aplauso ao GRAD Brasil – Grupo de Resposta a Animais em Desastres, pela atuação na missão humanitária brasileira destinada ao apoio à República Bolivariana da Venezuela, em razão dos graves terremotos que atingiram o país.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639349"
-      },
-      {
-        "id": 2633488,
-        "sigla_tipo": "PEC",
-        "numero": 15,
-        "ano": 2026,
-        "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
-      },
-      {
-        "id": 2630123,
-        "sigla_tipo": "DOC",
-        "numero": 832,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2630123"
       },
       {
         "id": 2598197,

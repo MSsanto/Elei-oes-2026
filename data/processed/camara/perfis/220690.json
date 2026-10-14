@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:33:30.772087+00:00",
+      "generated_at_utc": "2026-10-14T00:36:44.677869+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220690/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 285,
+        "quantidade_registros": 286,
         "registros_recentes": [
+          {
+            "id": 2647471,
+            "sigla_tipo": "PL",
+            "numero": 5547,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 15.127, de 28 de abril de 2025, para disciplinar a doação, a coleta, o processamento, a confecção e a dispensação de próteses capilares a pacientes em tratamento oncológico no âmbito do Sistema Único de Saúde (SUS).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647471"
+          },
           {
             "id": 2647363,
             "sigla_tipo": "INC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública acerca das condições de custódia de Daniel Vorcaro no 19º Batalhão da Polícia Militar do Distrito Federal (PMDF), especialmente quanto a eventual tratamento diferenciado, utilização de academia de uso restrito aos policiais e entrada de alimentos e produtos externos na unidade.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644863"
-          },
-          {
-            "id": 2644800,
-            "sigla_tipo": "PEC",
-            "numero": 16,
-            "ano": 2026,
-            "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220690"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220690",
-  "generated_at_utc": "2026-10-12T22:37:12.329155+00:00",
+  "generated_at_utc": "2026-10-14T00:40:14.933303+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1418,7 +1418,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1016,
+    "quantidade_registros": 1017,
     "por_ano": [
       {
         "ano": 2023,
@@ -1434,10 +1434,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 285
+        "quantidade_registros": 286
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647471,
+        "sigla_tipo": "PL",
+        "numero": 5547,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 15.127, de 28 de abril de 2025, para disciplinar a doação, a coleta, o processamento, a confecção e a dispensação de próteses capilares a pacientes em tratamento oncológico no âmbito do Sistema Único de Saúde (SUS).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647471"
+      },
       {
         "id": 2647363,
         "sigla_tipo": "INC",
@@ -1525,14 +1533,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministério da Justiça e Segurança Pública acerca das condições de custódia de Daniel Vorcaro no 19º Batalhão da Polícia Militar do Distrito Federal (PMDF), especialmente quanto a eventual tratamento diferenciado, utilização de academia de uso restrito aos policiais e entrada de alimentos e produtos externos na unidade.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644863"
-      },
-      {
-        "id": 2644800,
-        "sigla_tipo": "PEC",
-        "numero": 16,
-        "ano": 2026,
-        "ementa": "Acrescenta os art. 68-A no Ato das Disposições Constitucionais Transitórias para ratificar os registros de imóveis rurais em faixa de fronteira concedidos pelos estados antes da promulgação desta Constituição Federal e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644800"
       },
       {
         "id": 2598450,

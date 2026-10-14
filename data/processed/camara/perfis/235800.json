@@ -58,7 +58,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:33:30.036028+00:00",
+      "generated_at_utc": "2026-10-14T00:38:51.569483+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -377,7 +377,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "235800",
-  "generated_at_utc": "2026-10-12T22:37:12.332028+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.152343+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -403,17 +403,17 @@
         "idLegislatura": 57,
         "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/235800.jpg",
         "email": null,
-        "data": "2026-04-08",
+        "data": "2026-10-13",
         "nomeEleitoral": "Jorge Araújo",
         "gabinete": {
-          "nome": "320",
-          "predio": "4",
-          "sala": "320",
-          "andar": "3",
-          "telefone": "3215-5320",
-          "email": "dep.jorgearaujo@camara.leg.br"
+          "nome": null,
+          "predio": null,
+          "sala": null,
+          "andar": null,
+          "telefone": null,
+          "email": null
         },
-        "situacao": "Exercício",
+        "situacao": "Suplência",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": null
       },
@@ -491,6 +491,22 @@
         "situacao": "Exercício",
         "condicaoEleitoral": "Suplente",
         "descricaoStatus": "Entrada - Posse de Suplente - Posse como Suplente"
+      },
+      {
+        "id": 235800,
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/235800",
+        "nome": "Jorge Araújo",
+        "nomeEleitoral": "JORGE ARAÚJO",
+        "siglaPartido": "PP",
+        "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/37903",
+        "siglaUf": "BA",
+        "idLegislatura": 57,
+        "email": null,
+        "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/235800.jpg",
+        "dataHora": "2026-10-13T11:36",
+        "situacao": "SUPLENCIA",
+        "condicaoEleitoral": "Suplente",
+        "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/235800/historico"

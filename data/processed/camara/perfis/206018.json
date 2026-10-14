@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:34:23.849067+00:00",
+      "generated_at_utc": "2026-10-14T00:36:47.284909+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/206018/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 125,
+        "quantidade_registros": 126,
         "registros_recentes": [
+          {
+            "id": 2647525,
+            "sigla_tipo": "PL",
+            "numero": 5553,
+            "ano": 2026,
+            "ementa": "Institui diretrizes nacionais para a prevenção e a gestão de riscos psicossociais no trabalho dos profissionais do Sistema Único de Assistência Social – SUAS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647525"
+          },
           {
             "id": 2646284,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Seminário em Belo Horizonte (MG) para debater os desafios da educação pública em Minas Gerais, incluindo a valorização dos profissionais da educação estadual e municipais, as condições de trabalho dos servidores, a transparência na gestão dos recursos públicos e os impactos das políticas de terceirização e militarização das escolas.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642474"
-          },
-          {
-            "id": 2642472,
-            "sigla_tipo": "REQ",
-            "numero": 76,
-            "ano": 2026,
-            "ementa": "Requer, nos termos regimentais, a realização de visita técnica da Comissão de Direitos Humanos, Minorias e Igualdade Racial à Penitenciária Professor Jason Soares Albergaria, em Belo Horizonte/MG, para acompanhar as condições de garantia dos direitos da população LGBTQIA+ privada de liberdade.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642472"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=206018"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "206018",
-  "generated_at_utc": "2026-10-12T22:37:12.447488+00:00",
+  "generated_at_utc": "2026-10-14T00:40:14.937989+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 874,
+    "quantidade_registros": 875,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 125
+        "quantidade_registros": 126
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647525,
+        "sigla_tipo": "PL",
+        "numero": 5553,
+        "ano": 2026,
+        "ementa": "Institui diretrizes nacionais para a prevenção e a gestão de riscos psicossociais no trabalho dos profissionais do Sistema Único de Assistência Social – SUAS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647525"
+      },
       {
         "id": 2646284,
         "sigla_tipo": "PL",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Seminário em Belo Horizonte (MG) para debater os desafios da educação pública em Minas Gerais, incluindo a valorização dos profissionais da educação estadual e municipais, as condições de trabalho dos servidores, a transparência na gestão dos recursos públicos e os impactos das políticas de terceirização e militarização das escolas.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642474"
-      },
-      {
-        "id": 2642472,
-        "sigla_tipo": "REQ",
-        "numero": 76,
-        "ano": 2026,
-        "ementa": "Requer, nos termos regimentais, a realização de visita técnica da Comissão de Direitos Humanos, Minorias e Igualdade Racial à Penitenciária Professor Jason Soares Albergaria, em Belo Horizonte/MG, para acompanhar as condições de garantia dos direitos da população LGBTQIA+ privada de liberdade.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642472"
       },
       {
         "id": 2598961,

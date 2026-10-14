@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-12T22:35:06.751785+00:00",
+      "generated_at_utc": "2026-10-14T00:39:19.692987+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220669/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 60,
+        "quantidade_registros": 61,
         "registros_recentes": [
+          {
+            "id": 2647470,
+            "sigla_tipo": "PL",
+            "numero": 5546,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a incorporação de protocolos clínicos e de diretrizes terapêuticas no Sistema Único de Saúde para tratamento da ataxia de Friedreich.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647470"
+          },
           {
             "id": 2646298,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre o Subsistema de Inteligência de Segurança Pública, no âmbito do Sistema Brasileiro de Inteligência e do Sistema Único de Segurança Pública.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637297"
-          },
-          {
-            "id": 2637122,
-            "sigla_tipo": "PDL",
-            "numero": 765,
-            "ano": 2026,
-            "ementa": "Susta os efeitos do ato administrativo da Comissão Nacional de Energia Nuclear – CNEN, que reajustou os preços dos radioisótopos e radiofármacos produzidos pela autarquia.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637122"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220669"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220669",
-  "generated_at_utc": "2026-10-12T22:37:12.561274+00:00",
+  "generated_at_utc": "2026-10-14T00:40:15.215928+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 270,
+    "quantidade_registros": 271,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 60
+        "quantidade_registros": 61
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647470,
+        "sigla_tipo": "PL",
+        "numero": 5546,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a incorporação de protocolos clínicos e de diretrizes terapêuticas no Sistema Único de Saúde para tratamento da ataxia de Friedreich.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647470"
+      },
       {
         "id": 2646298,
         "sigla_tipo": "PL",
@@ -1522,14 +1530,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre o Subsistema de Inteligência de Segurança Pública, no âmbito do Sistema Brasileiro de Inteligência e do Sistema Único de Segurança Pública.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637297"
-      },
-      {
-        "id": 2637122,
-        "sigla_tipo": "PDL",
-        "numero": 765,
-        "ano": 2026,
-        "ementa": "Susta os efeitos do ato administrativo da Comissão Nacional de Energia Nuclear – CNEN, que reajustou os preços dos radioisótopos e radiofármacos produzidos pela autarquia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637122"
       },
       {
         "id": 2598301,
