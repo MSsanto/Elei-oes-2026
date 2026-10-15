@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:38:48.549106+00:00",
+      "generated_at_utc": "2026-10-15T08:44:42.743038+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204526/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 106,
+        "quantidade_registros": 107,
         "registros_recentes": [
+          {
+            "id": 2647610,
+            "sigla_tipo": "RIC",
+            "numero": 2737,
+            "ano": 2026,
+            "ementa": "Solicita ao Ministério da Previdência Social informações acerca das providências adotadas pela Pasta e pelo INSS para assegurar a proteção dos beneficiários da diante da entrada em vigor das novas regras de portabilidade bancária, movimentação de recursos entre instituições financeiras e autorização de débitos automáticos.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647610"
+          },
           {
             "id": 2647283,
             "sigla_tipo": "REQ",
@@ -1049,21 +1057,23 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1357/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645735"
-          },
-          {
-            "id": 2645610,
-            "sigla_tipo": "PL",
-            "numero": 5281,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a autorização para uso compassivo de medicamentos ainda não registrados no país e estabelece prazo para decisão da Agência Nacional de Vigilância Sanitária – Anvisa.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645610"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204526"
       },
       "votacoes": {
-        "quantidade_registros": 94,
+        "quantidade_registros": 95,
         "registros_recentes": [
+          {
+            "id_votacao": "2236186-60",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T20:33:13",
+            "data": "2026-10-14",
+            "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Não",
@@ -1253,16 +1263,6 @@
             "aprovacao": null,
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-112"
-          },
-          {
-            "id_votacao": "2351506-108",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-28T15:22:42",
-            "data": "2026-05-28",
-            "descricao": "Mantido o texto. Sim: 340; Não: 110; Abstenção: 7; Total: 457.",
-            "aprovacao": null,
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-108"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204526",
-  "generated_at_utc": "2026-10-14T00:40:15.147101+00:00",
+  "generated_at_utc": "2026-10-15T08:48:59.884704+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1500,7 +1500,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 949,
+    "quantidade_registros": 950,
     "por_ano": [
       {
         "ano": 2023,
@@ -1516,10 +1516,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 106
+        "quantidade_registros": 107
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647610,
+        "sigla_tipo": "RIC",
+        "numero": 2737,
+        "ano": 2026,
+        "ementa": "Solicita ao Ministério da Previdência Social informações acerca das providências adotadas pela Pasta e pelo INSS para assegurar a proteção dos beneficiários da diante da entrada em vigor das novas regras de portabilidade bancária, movimentação de recursos entre instituições financeiras e autorização de débitos automáticos.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647610"
+      },
       {
         "id": 2647283,
         "sigla_tipo": "REQ",
@@ -1607,14 +1615,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1357/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645735"
-      },
-      {
-        "id": 2645610,
-        "sigla_tipo": "PL",
-        "numero": 5281,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a autorização para uso compassivo de medicamentos ainda não registrados no país e estabelece prazo para decisão da Agência Nacional de Vigilância Sanitária – Anvisa.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645610"
       },
       {
         "id": 2598197,
@@ -1721,7 +1721,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 979,
+    "quantidade_registros": 980,
     "por_ano": [
       {
         "ano": 2023,
@@ -1737,10 +1737,20 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 94
+        "quantidade_registros": 95
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2236186-60",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T20:33:13",
+        "data": "2026-10-14",
+        "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Não",
@@ -1930,16 +1940,6 @@
         "aprovacao": null,
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-112"
-      },
-      {
-        "id_votacao": "2351506-108",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-28T15:22:42",
-        "data": "2026-05-28",
-        "descricao": "Mantido o texto. Sim: 340; Não: 110; Abstenção: 7; Total: 457.",
-        "aprovacao": null,
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-108"
       },
       {
         "id_votacao": "2520670-66",

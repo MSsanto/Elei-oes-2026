@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:36:54.149514+00:00",
+      "generated_at_utc": "2026-10-15T08:46:49.028863+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,18 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220570"
       },
       "votacoes": {
-        "quantidade_registros": 89,
+        "quantidade_registros": 90,
         "registros_recentes": [
+          {
+            "id_votacao": "2635476-23",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T17:13:01",
+            "data": "2026-10-14",
+            "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Sim",
@@ -1253,16 +1263,6 @@
             "aprovacao": "0",
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2433663-44"
-          },
-          {
-            "id_votacao": "2233802-438",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-27T23:25:53",
-            "data": "2026-05-27",
-            "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 221, de 2019. . Sim: 461; Não: 19; Total: 480.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-438"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220570",
-  "generated_at_utc": "2026-10-14T00:40:14.948806+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.133495+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1640,7 +1640,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 819,
+    "quantidade_registros": 820,
     "por_ano": [
       {
         "ano": 2023,
@@ -1656,10 +1656,20 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 89
+        "quantidade_registros": 90
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2635476-23",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T17:13:01",
+        "data": "2026-10-14",
+        "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Sim",
@@ -1849,16 +1859,6 @@
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2433663-44"
-      },
-      {
-        "id_votacao": "2233802-438",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-27T23:25:53",
-        "data": "2026-05-27",
-        "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 221, de 2019. . Sim: 461; Não: 19; Total: 480.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-438"
       },
       {
         "id_votacao": "2520670-66",

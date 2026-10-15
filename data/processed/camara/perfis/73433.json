@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:39:00.047975+00:00",
+      "generated_at_utc": "2026-10-15T08:47:14.824984+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,28 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=73433"
       },
       "votacoes": {
-        "quantidade_registros": 107,
+        "quantidade_registros": 109,
         "registros_recentes": [
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:19:47",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
+          {
+            "id_votacao": "2635476-23",
+            "voto": "Não",
+            "data_hora_voto": "2026-10-14T17:12:30",
+            "data": "2026-10-14",
+            "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Sim",
@@ -1243,26 +1263,6 @@
             "aprovacao": null,
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-112"
-          },
-          {
-            "id_votacao": "2351506-104",
-            "voto": "Não",
-            "data_hora_voto": "2026-05-28T14:40:27",
-            "data": "2026-05-28",
-            "descricao": "Aprovada, em primeiro turno, a Proposta de Emenda à Constituição nº 5, de 2023, na forma da Emenda Aglutinativa Substitutiva nº 3. Sim: 385; Não: 93; Abstenção: 7; Total: 485.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-104"
-          },
-          {
-            "id_votacao": "2351506-102",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-28T14:00:27",
-            "data": "2026-05-28",
-            "descricao": "Aprovada a preferência. Sim: 467; Não: 4; Abstenção: 1; Total: 472.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-102"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "73433",
-  "generated_at_utc": "2026-10-14T00:40:15.164371+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.180179+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1912,7 +1912,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 995,
+    "quantidade_registros": 997,
     "por_ano": [
       {
         "ano": 2023,
@@ -1928,10 +1928,30 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 107
+        "quantidade_registros": 109
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:19:47",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
+      {
+        "id_votacao": "2635476-23",
+        "voto": "Não",
+        "data_hora_voto": "2026-10-14T17:12:30",
+        "data": "2026-10-14",
+        "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Sim",
@@ -2111,26 +2131,6 @@
         "aprovacao": null,
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-112"
-      },
-      {
-        "id_votacao": "2351506-104",
-        "voto": "Não",
-        "data_hora_voto": "2026-05-28T14:40:27",
-        "data": "2026-05-28",
-        "descricao": "Aprovada, em primeiro turno, a Proposta de Emenda à Constituição nº 5, de 2023, na forma da Emenda Aglutinativa Substitutiva nº 3. Sim: 385; Não: 93; Abstenção: 7; Total: 485.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-104"
-      },
-      {
-        "id_votacao": "2351506-102",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-28T14:00:27",
-        "data": "2026-05-28",
-        "descricao": "Aprovada a preferência. Sim: 467; Não: 4; Abstenção: 1; Total: 472.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-102"
       },
       {
         "id_votacao": "2520670-66",

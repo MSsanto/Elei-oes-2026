@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:37:23.787270+00:00",
+      "generated_at_utc": "2026-10-15T08:46:56.011404+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,18 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204524"
       },
       "votacoes": {
-        "quantidade_registros": 19,
+        "quantidade_registros": 20,
         "registros_recentes": [
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:35:32",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
           {
             "id_votacao": "2351506-122",
             "voto": "Sim",
@@ -1261,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204524",
-  "generated_at_utc": "2026-10-14T00:40:15.003324+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.145181+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1679,7 +1689,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 427,
+    "quantidade_registros": 428,
     "por_ano": [
       {
         "ano": 2023,
@@ -1695,10 +1705,20 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 19
+        "quantidade_registros": 20
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:35:32",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
       {
         "id_votacao": "2351506-122",
         "voto": "Sim",
@@ -2088,16 +2108,6 @@
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2164336-110"
-      },
-      {
-        "id_votacao": "2460010-43",
-        "voto": "Sim",
-        "data_hora_voto": "2024-12-19T21:26:11",
-        "data": "2024-12-19",
-        "descricao": "Aprovado o Projeto de Lei nº 3.802, de 2024. Sim: 340; Não: 117; Abstenção: 1; Total: 458.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2460010-43"
       }
     ],
     "fonte_urls": [

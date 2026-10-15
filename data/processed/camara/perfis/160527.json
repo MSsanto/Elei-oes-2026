@@ -888,7 +888,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:39:08.416989+00:00",
+      "generated_at_utc": "2026-10-15T08:48:15.778427+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -950,8 +950,28 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160527"
       },
       "votacoes": {
-        "quantidade_registros": 66,
+        "quantidade_registros": 68,
         "registros_recentes": [
+          {
+            "id_votacao": "2236186-60",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T20:52:35",
+            "data": "2026-10-14",
+            "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+          },
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:21:59",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Sim",
@@ -1131,26 +1151,6 @@
             "aprovacao": "1",
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2613731-65"
-          },
-          {
-            "id_votacao": "2625979-8",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-20T16:52:37",
-            "data": "2026-05-20",
-            "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 269; Não: 125; Abstenção: 2; Total: 396.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2625979-8"
-          },
-          {
-            "id_votacao": "2447983-57",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-19T20:30:23",
-            "data": "2026-05-19",
-            "descricao": "Aprovado o Projeto de Lei Complementar nº 262, de 2019. Sim: 442; Não: 2; Total: 444.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2447983-57"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1159,7 +1159,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160527",
-  "generated_at_utc": "2026-10-14T00:40:15.193043+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.302529+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1752,7 +1752,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 643,
+    "quantidade_registros": 645,
     "por_ano": [
       {
         "ano": 2023,
@@ -1768,10 +1768,30 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 66
+        "quantidade_registros": 68
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2236186-60",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T20:52:35",
+        "data": "2026-10-14",
+        "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+      },
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:21:59",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Sim",
@@ -1951,26 +1971,6 @@
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2613731-65"
-      },
-      {
-        "id_votacao": "2625979-8",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-20T16:52:37",
-        "data": "2026-05-20",
-        "descricao": "Aprovado o Requerimento de Urgência (Art. 155 do RICD). Sim: 269; Não: 125; Abstenção: 2; Total: 396.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2625979-8"
-      },
-      {
-        "id_votacao": "2447983-57",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-19T20:30:23",
-        "data": "2026-05-19",
-        "descricao": "Aprovado o Projeto de Lei Complementar nº 262, de 2019. Sim: 442; Não: 2; Total: 444.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2447983-57"
       },
       {
         "id_votacao": "2520670-66",

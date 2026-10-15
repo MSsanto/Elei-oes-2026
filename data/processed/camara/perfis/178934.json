@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:38:56.554827+00:00",
+      "generated_at_utc": "2026-10-15T08:45:45.809826+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,38 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178934"
       },
       "votacoes": {
-        "quantidade_registros": 124,
+        "quantidade_registros": 127,
         "registros_recentes": [
+          {
+            "id_votacao": "2236186-60",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T20:33:49",
+            "data": "2026-10-14",
+            "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+          },
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:18:39",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
+          {
+            "id_votacao": "2635476-23",
+            "voto": "Não",
+            "data_hora_voto": "2026-10-14T17:16:42",
+            "data": "2026-10-14",
+            "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Sim",
@@ -1233,36 +1263,6 @@
             "aprovacao": "1",
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2633410-8"
-          },
-          {
-            "id_votacao": "2610975-23",
-            "voto": "Não",
-            "data_hora_voto": "2026-06-17T19:19:56",
-            "data": "2026-06-17",
-            "descricao": "Rejeitada a Emenda n° 102. Sim: 22; Não: 378; Abstenção: 1; Total: 401.",
-            "aprovacao": "0",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2610975-23"
-          },
-          {
-            "id_votacao": "2382675-97",
-            "voto": "Sim",
-            "data_hora_voto": "2026-06-17T18:41:16",
-            "data": "2026-06-17",
-            "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 4.133, de 2023, adotado pelo relator da Comissão de Ciência, Tecnologia e Inovação. Sim: 308; Não: 129; Abstenção: 1; Total: 438.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2382675-97"
-          },
-          {
-            "id_votacao": "947810-85",
-            "voto": "Sim",
-            "data_hora_voto": "2026-06-17T17:14:00",
-            "data": "2026-06-17",
-            "descricao": "Mantido o texto. Sim: 285; Não: 106; Abstenção: 1; Total: 392.",
-            "aprovacao": null,
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/947810-85"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178934",
-  "generated_at_utc": "2026-10-14T00:40:15.159796+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.008717+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1796,7 +1796,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1065,
+    "quantidade_registros": 1068,
     "por_ano": [
       {
         "ano": 2023,
@@ -1812,10 +1812,40 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 124
+        "quantidade_registros": 127
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2236186-60",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T20:33:49",
+        "data": "2026-10-14",
+        "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+      },
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:18:39",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
+      {
+        "id_votacao": "2635476-23",
+        "voto": "Não",
+        "data_hora_voto": "2026-10-14T17:16:42",
+        "data": "2026-10-14",
+        "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Sim",
@@ -1985,36 +2015,6 @@
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2633410-8"
-      },
-      {
-        "id_votacao": "2610975-23",
-        "voto": "Não",
-        "data_hora_voto": "2026-06-17T19:19:56",
-        "data": "2026-06-17",
-        "descricao": "Rejeitada a Emenda n° 102. Sim: 22; Não: 378; Abstenção: 1; Total: 401.",
-        "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2610975-23"
-      },
-      {
-        "id_votacao": "2382675-97",
-        "voto": "Sim",
-        "data_hora_voto": "2026-06-17T18:41:16",
-        "data": "2026-06-17",
-        "descricao": "Aprovado o Substitutivo ao Projeto de Lei nº 4.133, de 2023, adotado pelo relator da Comissão de Ciência, Tecnologia e Inovação. Sim: 308; Não: 129; Abstenção: 1; Total: 438.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2382675-97"
-      },
-      {
-        "id_votacao": "947810-85",
-        "voto": "Sim",
-        "data_hora_voto": "2026-06-17T17:14:00",
-        "data": "2026-06-17",
-        "descricao": "Mantido o texto. Sim: 285; Não: 106; Abstenção: 1; Total: 392.",
-        "aprovacao": null,
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/947810-85"
       },
       {
         "id_votacao": "1302214-131",

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:38:16.691388+00:00",
+      "generated_at_utc": "2026-10-15T08:46:50.632831+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,18 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178975"
       },
       "votacoes": {
-        "quantidade_registros": 54,
+        "quantidade_registros": 55,
         "registros_recentes": [
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:23:54",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
           {
             "id_votacao": "2645346-18",
             "voto": null,
@@ -1253,16 +1263,6 @@
             "aprovacao": "1",
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-424"
-          },
-          {
-            "id_votacao": "2233802-416",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-27T20:41:23",
-            "data": "2026-05-27",
-            "descricao": "Aprovado o Requerimento. Sim: 372; Não: 101; Total: 473.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-416"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178975",
-  "generated_at_utc": "2026-10-14T00:40:15.092565+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.135586+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1750,7 +1750,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 652,
+    "quantidade_registros": 653,
     "por_ano": [
       {
         "ano": 2023,
@@ -1766,10 +1766,20 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 54
+        "quantidade_registros": 55
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:23:54",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
       {
         "id_votacao": "2645346-18",
         "voto": null,
@@ -1959,16 +1969,6 @@
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-424"
-      },
-      {
-        "id_votacao": "2233802-416",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-27T20:41:23",
-        "data": "2026-05-27",
-        "descricao": "Aprovado o Requerimento. Sim: 372; Não: 101; Total: 473.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-416"
       },
       {
         "id_votacao": "2520670-52",

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:36:49.582498+00:00",
+      "generated_at_utc": "2026-10-15T08:47:13.347407+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178964/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 37,
+        "quantidade_registros": 38,
         "registros_recentes": [
+          {
+            "id": 2647658,
+            "sigla_tipo": "PL",
+            "numero": 5567,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.967 (Estatuto da Segurança Privada), para dispor sobre a progressividade de etapas nos cursos de atualização, garantir o direito à recuperação em exames periódicos e vedar a suspensão automática do exercício profissional de vigilantes.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647658"
+          },
           {
             "id": 2645068,
             "sigla_tipo": "PLP",
@@ -1049,21 +1057,33 @@
             "ano": 2026,
             "ementa": "Requer a realização de Sessão Solene em homenagem aos 20 anos da Lei da Agricultura Familiar.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624059"
-          },
-          {
-            "id": 2622760,
-            "sigla_tipo": "PL",
-            "numero": 2250,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 9.279, de 14 de maio de 1996, que regula direitos e obrigações relativos à propriedade industrial, para dispor sobre a patente em biotecnologia de caráter autorreplicável em sistemas produtivos agrícolas, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622760"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178964"
       },
       "votacoes": {
-        "quantidade_registros": 71,
+        "quantidade_registros": 73,
         "registros_recentes": [
+          {
+            "id_votacao": "2236186-60",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T20:49:57",
+            "data": "2026-10-14",
+            "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+          },
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:19:22",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
           {
             "id_votacao": "2645346-18",
             "voto": null,
@@ -1243,26 +1263,6 @@
             "aprovacao": "1",
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-104"
-          },
-          {
-            "id_votacao": "2351506-102",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-28T14:24:23",
-            "data": "2026-05-28",
-            "descricao": "Aprovada a preferência. Sim: 467; Não: 4; Abstenção: 1; Total: 472.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-102"
-          },
-          {
-            "id_votacao": "2233802-438",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-27T23:22:18",
-            "data": "2026-05-27",
-            "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 221, de 2019. . Sim: 461; Não: 19; Total: 480.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-438"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178964",
-  "generated_at_utc": "2026-10-14T00:40:14.941104+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.176938+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1515,7 +1515,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 431,
+    "quantidade_registros": 432,
     "por_ano": [
       {
         "ano": 2023,
@@ -1531,10 +1531,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 37
+        "quantidade_registros": 38
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647658,
+        "sigla_tipo": "PL",
+        "numero": 5567,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.967 (Estatuto da Segurança Privada), para dispor sobre a progressividade de etapas nos cursos de atualização, garantir o direito à recuperação em exames periódicos e vedar a suspensão automática do exercício profissional de vigilantes.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647658"
+      },
       {
         "id": 2645068,
         "sigla_tipo": "PLP",
@@ -1622,14 +1630,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Sessão Solene em homenagem aos 20 anos da Lei da Agricultura Familiar.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2624059"
-      },
-      {
-        "id": 2622760,
-        "sigla_tipo": "PL",
-        "numero": 2250,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 9.279, de 14 de maio de 1996, que regula direitos e obrigações relativos à propriedade industrial, para dispor sobre a patente em biotecnologia de caráter autorreplicável em sistemas produtivos agrícolas, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622760"
       },
       {
         "id": 2598197,
@@ -1736,7 +1736,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 661,
+    "quantidade_registros": 663,
     "por_ano": [
       {
         "ano": 2023,
@@ -1752,10 +1752,30 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 71
+        "quantidade_registros": 73
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2236186-60",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T20:49:57",
+        "data": "2026-10-14",
+        "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+      },
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:19:22",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
       {
         "id_votacao": "2645346-18",
         "voto": null,
@@ -1935,26 +1955,6 @@
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-104"
-      },
-      {
-        "id_votacao": "2351506-102",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-28T14:24:23",
-        "data": "2026-05-28",
-        "descricao": "Aprovada a preferência. Sim: 467; Não: 4; Abstenção: 1; Total: 472.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-102"
-      },
-      {
-        "id_votacao": "2233802-438",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-27T23:22:18",
-        "data": "2026-05-27",
-        "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 221, de 2019. . Sim: 461; Não: 19; Total: 480.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-438"
       },
       {
         "id_votacao": "2525122-81",

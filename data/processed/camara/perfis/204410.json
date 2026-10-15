@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:36:58.568917+00:00",
+      "generated_at_utc": "2026-10-15T08:46:59.611489+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,28 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204410"
       },
       "votacoes": {
-        "quantidade_registros": 71,
+        "quantidade_registros": 73,
         "registros_recentes": [
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:19:23",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
+          {
+            "id_votacao": "2635476-23",
+            "voto": "Não",
+            "data_hora_voto": "2026-10-14T17:15:39",
+            "data": "2026-10-14",
+            "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Sim",
@@ -1243,26 +1263,6 @@
             "aprovacao": "0",
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-95"
-          },
-          {
-            "id_votacao": "2433663-44",
-            "voto": "Não",
-            "data_hora_voto": "2026-05-28T10:10:11",
-            "data": "2026-05-28",
-            "descricao": "Rejeitado o Requerimento. Sim: 99; Não: 277; Total: 376.",
-            "aprovacao": "0",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2433663-44"
-          },
-          {
-            "id_votacao": "2233802-438",
-            "voto": "Sim",
-            "data_hora_voto": "2026-05-27T23:19:12",
-            "data": "2026-05-27",
-            "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 221, de 2019. . Sim: 461; Não: 19; Total: 480.",
-            "aprovacao": "1",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-438"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204410",
-  "generated_at_utc": "2026-10-14T00:40:14.956718+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.152344+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1700,7 +1700,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 645,
+    "quantidade_registros": 647,
     "por_ano": [
       {
         "ano": 2023,
@@ -1716,10 +1716,30 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 71
+        "quantidade_registros": 73
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:19:23",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
+      {
+        "id_votacao": "2635476-23",
+        "voto": "Não",
+        "data_hora_voto": "2026-10-14T17:15:39",
+        "data": "2026-10-14",
+        "descricao": "Rejeitado o Requerimento. Sim: 11; Não: 387; Total: 398.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-23"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Sim",
@@ -1899,26 +1919,6 @@
         "aprovacao": "0",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-95"
-      },
-      {
-        "id_votacao": "2433663-44",
-        "voto": "Não",
-        "data_hora_voto": "2026-05-28T10:10:11",
-        "data": "2026-05-28",
-        "descricao": "Rejeitado o Requerimento. Sim: 99; Não: 277; Total: 376.",
-        "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2433663-44"
-      },
-      {
-        "id_votacao": "2233802-438",
-        "voto": "Sim",
-        "data_hora_voto": "2026-05-27T23:19:12",
-        "data": "2026-05-27",
-        "descricao": "Aprovada, em segundo turno, a Proposta de Emenda à Constituição n° 221, de 2019. . Sim: 461; Não: 19; Total: 480.",
-        "aprovacao": "1",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2233802-438"
       },
       {
         "id_votacao": "2520670-66",

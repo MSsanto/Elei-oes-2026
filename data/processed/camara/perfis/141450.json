@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:38:18.531981+00:00",
+      "generated_at_utc": "2026-10-15T08:48:24.803980+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,18 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141450"
       },
       "votacoes": {
-        "quantidade_registros": 96,
+        "quantidade_registros": 97,
         "registros_recentes": [
+          {
+            "id_votacao": "2236186-60",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T20:30:16",
+            "data": "2026-10-14",
+            "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+            "aprovacao": "0",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Sim",
@@ -1253,16 +1263,6 @@
             "aprovacao": "1",
             "sigla_orgao": "PLEN",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-102"
-          },
-          {
-            "id_votacao": "2351506-95",
-            "voto": "Não",
-            "data_hora_voto": "2026-05-28T11:52:40",
-            "data": "2026-05-28",
-            "descricao": "Rejeitado o Requerimento. Sim: 102; Não: 322; Abstenção: 1; Total: 425.",
-            "aprovacao": "0",
-            "sigla_orgao": "PLEN",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-95"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141450",
-  "generated_at_utc": "2026-10-14T00:40:15.096365+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.320813+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -2039,7 +2039,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 741,
+    "quantidade_registros": 742,
     "por_ano": [
       {
         "ano": 2023,
@@ -2055,10 +2055,20 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 96
+        "quantidade_registros": 97
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2236186-60",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T20:30:16",
+        "data": "2026-10-14",
+        "descricao": "Rejeitada a Subemenda Substitutiva ao Projeto de Lei Complementar nº 281, de 2019, adotada pelo relator da Comissão Especial. Sim: 252; Não: 176; Total: 428.",
+        "aprovacao": "0",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2236186-60"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Sim",
@@ -2248,16 +2258,6 @@
         "aprovacao": "1",
         "sigla_orgao": "PLEN",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-102"
-      },
-      {
-        "id_votacao": "2351506-95",
-        "voto": "Não",
-        "data_hora_voto": "2026-05-28T11:52:40",
-        "data": "2026-05-28",
-        "descricao": "Rejeitado o Requerimento. Sim: 102; Não: 322; Abstenção: 1; Total: 425.",
-        "aprovacao": "0",
-        "sigla_orgao": "PLEN",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2351506-95"
       },
       {
         "id_votacao": "2520670-66",

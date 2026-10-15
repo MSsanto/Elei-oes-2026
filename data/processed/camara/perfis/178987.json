@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-14T00:39:02.374355+00:00",
+      "generated_at_utc": "2026-10-15T08:47:44.040700+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -1062,8 +1062,18 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178987"
       },
       "votacoes": {
-        "quantidade_registros": 109,
+        "quantidade_registros": 110,
         "registros_recentes": [
+          {
+            "id_votacao": "2635476-36",
+            "voto": "Sim",
+            "data_hora_voto": "2026-10-14T19:19:16",
+            "data": "2026-10-14",
+            "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+            "aprovacao": "1",
+            "sigla_orgao": "PLEN",
+            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+          },
           {
             "id_votacao": "2611313-31",
             "voto": "Sim",
@@ -1253,16 +1263,6 @@
             "aprovacao": "0",
             "sigla_orgao": "CCJC",
             "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2471352-47"
-          },
-          {
-            "id_votacao": "2085970-131",
-            "voto": "Não",
-            "data_hora_voto": "2026-06-16T15:55:22",
-            "data": "2026-06-16",
-            "descricao": "Rejeitado o Requerimento de Adiamento de Votação. Resultado:  24 votos \"Sim\"\", 26 votos \"\"Não\"\". Quórum de votação: 50 votos.\"",
-            "aprovacao": "0",
-            "sigla_orgao": "CCJC",
-            "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2085970-131"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/arquivos/votacoesVotos/csv/votacoesVotos-2026.csv"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178987",
-  "generated_at_utc": "2026-10-14T00:40:15.173209+00:00",
+  "generated_at_utc": "2026-10-15T08:49:00.236082+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1816,7 +1816,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 965,
+    "quantidade_registros": 966,
     "por_ano": [
       {
         "ano": 2023,
@@ -1832,10 +1832,20 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 109
+        "quantidade_registros": 110
       }
     ],
     "registros_recentes": [
+      {
+        "id_votacao": "2635476-36",
+        "voto": "Sim",
+        "data_hora_voto": "2026-10-14T19:19:16",
+        "data": "2026-10-14",
+        "descricao": "Aprovada a Subemenda Substitutiva Global ao Projeto de Lei Complementar nº 186, de 2026, adotada pelo relator da Comissão de Indústria, Comércio e Serviços, ressalvados os destaques. Sim: 461; Não: 4; Total: 465.",
+        "aprovacao": "1",
+        "sigla_orgao": "PLEN",
+        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2635476-36"
+      },
       {
         "id_votacao": "2611313-31",
         "voto": "Sim",
@@ -2025,16 +2035,6 @@
         "aprovacao": "0",
         "sigla_orgao": "CCJC",
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2471352-47"
-      },
-      {
-        "id_votacao": "2085970-131",
-        "voto": "Não",
-        "data_hora_voto": "2026-06-16T15:55:22",
-        "data": "2026-06-16",
-        "descricao": "Rejeitado o Requerimento de Adiamento de Votação. Resultado:  24 votos \"Sim\"\", 26 votos \"\"Não\"\". Quórum de votação: 50 votos.\"",
-        "aprovacao": "0",
-        "sigla_orgao": "CCJC",
-        "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/votacoes/2085970-131"
       },
       {
         "id_votacao": "2520670-66",
