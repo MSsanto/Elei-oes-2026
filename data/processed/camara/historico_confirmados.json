@@ -1,6 +1,6 @@
 {
   "source": "Câmara dos Deputados — Dados Abertos",
-  "generated_at_utc": "2026-10-15T08:44:06.470754+00:00",
+  "generated_at_utc": "2026-10-15T23:59:26.306390+00:00",
   "records": 693,
   "errors": [],
   "deputados": {
@@ -20010,17 +20010,17 @@
           "idLegislatura": 57,
           "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/154700.jpg",
           "email": null,
-          "data": "2026-06-16",
+          "data": "2026-10-15",
           "nomeEleitoral": "Paulo Soares",
           "gabinete": {
-            "nome": "717",
-            "predio": "4",
-            "sala": "717",
-            "andar": "7",
-            "telefone": "3215-5717",
-            "email": "dep.paulosoares@camara.leg.br"
+            "nome": null,
+            "predio": null,
+            "sala": null,
+            "andar": null,
+            "telefone": null,
+            "email": null
           },
-          "situacao": "Exercício",
+          "situacao": "Suplência",
           "condicaoEleitoral": "Suplente",
           "descricaoStatus": null
         },
@@ -20114,6 +20114,22 @@
           "situacao": "Exercício",
           "condicaoEleitoral": "Suplente",
           "descricaoStatus": ""
+        },
+        {
+          "id": 154700,
+          "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/154700",
+          "nome": "Paulo Soares ",
+          "nomeEleitoral": "PAULO SOARES ",
+          "siglaPartido": "PODE",
+          "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36896",
+          "siglaUf": "SP",
+          "idLegislatura": 57,
+          "email": null,
+          "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/154700.jpg",
+          "dataHora": "2026-10-15T00:00",
+          "situacao": "SUPLENCIA",
+          "condicaoEleitoral": "Suplente",
+          "descricaoStatus": "Saída - Afastamento sem prazo determinado - Afastamento de Suplente (automático)"
         }
       ],
       "fonte_detalhe": "https://dadosabertos.camara.leg.br/api/v2/deputados/154700",
@@ -53440,17 +53456,17 @@
           "idLegislatura": 57,
           "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178989.jpg",
           "email": null,
-          "data": "2026-06-16",
+          "data": "2026-10-15",
           "nomeEleitoral": "Renata Abreu",
           "gabinete": {
-            "nome": null,
-            "predio": null,
-            "sala": null,
-            "andar": null,
-            "telefone": null,
-            "email": null
+            "nome": "717",
+            "predio": "4",
+            "sala": "717",
+            "andar": "7",
+            "telefone": "3215-5717",
+            "email": "dep.renataabreu@camara.leg.br"
           },
-          "situacao": "Licença",
+          "situacao": "Exercício",
           "condicaoEleitoral": "Titular",
           "descricaoStatus": ""
         },
@@ -53560,6 +53576,22 @@
           "situacao": "Licença",
           "condicaoEleitoral": "Titular",
           "descricaoStatus": "Saída - Afastamento com prazo determinado - Afastamento Conjunto Consecutivo"
+        },
+        {
+          "id": 178989,
+          "uri": "https://dadosabertos.camara.leg.br/api/v2/deputados/178989",
+          "nome": "Renata Abreu",
+          "nomeEleitoral": "RENATA ABREU",
+          "siglaPartido": "PODE",
+          "uriPartido": "https://dadosabertos.camara.leg.br/api/v2/partidos/36896",
+          "siglaUf": "SP",
+          "idLegislatura": 57,
+          "email": null,
+          "urlFoto": "https://www.camara.leg.br/internet/deputado/bandep/178989.jpg",
+          "dataHora": "2026-10-15T00:00",
+          "situacao": "Exercício",
+          "condicaoEleitoral": "Titular",
+          "descricaoStatus": "Entrada - Reassunção"
         },
         {
           "id": 178989,
@@ -136741,7 +136773,10 @@
         "cpf": "44272600630",
         "sexo": "M",
         "urlWebsite": null,
-        "redeSocial": [],
+        "redeSocial": [
+          "https://www.facebook.com/gilmarmachadodep",
+          "https://www.instagram.com/gilmarmachadodep"
+        ],
         "dataNascimento": "1961-11-06",
         "dataFalecimento": null,
         "ufNascimento": "MG",
