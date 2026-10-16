@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:48:24.803980+00:00",
+      "generated_at_utc": "2026-10-16T14:22:28.268415+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141450/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 81,
+        "quantidade_registros": 82,
         "registros_recentes": [
+          {
+            "id": 2648220,
+            "sigla_tipo": "EMC",
+            "numero": 429,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648220"
+          },
           {
             "id": 2647162,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Denomina “Ponte Philippe Guédon” a estrutura rodoviária localizada no Km 58 da BR 040, com saída para o Km 34,4 da BR 495/RJ, no Distrito de Itaipava, Município de Petrópolis, Estado do Rio de Janeiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644514"
-          },
-          {
-            "id": 2644271,
-            "sigla_tipo": "PL",
-            "numero": 5134,
-            "ano": 2026,
-            "ementa": "Dispõe sobre os requisitos para implantação, operação e fiscalização dos sistemas de estacionamento rotativo pago e altera a Lei nº 9.503, de 23 de setembro de 1997 - Código de Trânsito Brasileiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644271"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141450"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141450",
-  "generated_at_utc": "2026-10-15T08:49:00.320813+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.940179+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1818,7 +1818,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 447,
+    "quantidade_registros": 448,
     "por_ano": [
       {
         "ano": 2023,
@@ -1834,10 +1834,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 81
+        "quantidade_registros": 82
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648220,
+        "sigla_tipo": "EMC",
+        "numero": 429,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648220"
+      },
       {
         "id": 2647162,
         "sigla_tipo": "PL",
@@ -1925,14 +1933,6 @@
         "ano": 2026,
         "ementa": "Denomina “Ponte Philippe Guédon” a estrutura rodoviária localizada no Km 58 da BR 040, com saída para o Km 34,4 da BR 495/RJ, no Distrito de Itaipava, Município de Petrópolis, Estado do Rio de Janeiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644514"
-      },
-      {
-        "id": 2644271,
-        "sigla_tipo": "PL",
-        "numero": 5134,
-        "ano": 2026,
-        "ementa": "Dispõe sobre os requisitos para implantação, operação e fiscalização dos sistemas de estacionamento rotativo pago e altera a Lei nº 9.503, de 23 de setembro de 1997 - Código de Trânsito Brasileiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644271"
       },
       {
         "id": 2599001,

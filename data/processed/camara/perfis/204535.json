@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:46:22.971840+00:00",
+      "generated_at_utc": "2026-10-16T14:21:14.677623+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204535/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 95,
+        "quantidade_registros": 96,
         "registros_recentes": [
+          {
+            "id": 2648289,
+            "sigla_tipo": "RIC",
+            "numero": 2755,
+            "ano": 2026,
+            "ementa": "Solicita ao Ministro de Estado da Saúde informações sobre saúde digital brasileira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648289"
+          },
           {
             "id": 2646930,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer ao Senhor Ministro de Estado das Relações Exteriores informações sobre a atuação do Governo brasileiro em relação à crise política, social e humanitária na Bolívia.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633957"
-          },
-          {
-            "id": 2633648,
-            "sigla_tipo": "PL",
-            "numero": 3191,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 14.192, de 4 de agosto de 2021, e a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aperfeiçoar a prevenção e a repressão à violência política contra a mulher praticada por meios digitais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633648"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204535"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204535",
-  "generated_at_utc": "2026-10-15T08:49:00.081713+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.804815+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1249,
+    "quantidade_registros": 1250,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 95
+        "quantidade_registros": 96
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648289,
+        "sigla_tipo": "RIC",
+        "numero": 2755,
+        "ano": 2026,
+        "ementa": "Solicita ao Ministro de Estado da Saúde informações sobre saúde digital brasileira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648289"
+      },
       {
         "id": 2646930,
         "sigla_tipo": "REQ",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Requer ao Senhor Ministro de Estado das Relações Exteriores informações sobre a atuação do Governo brasileiro em relação à crise política, social e humanitária na Bolívia.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633957"
-      },
-      {
-        "id": 2633648,
-        "sigla_tipo": "PL",
-        "numero": 3191,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 14.192, de 4 de agosto de 2021, e a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para aperfeiçoar a prevenção e a repressão à violência política contra a mulher praticada por meios digitais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633648"
       },
       {
         "id": 2598528,

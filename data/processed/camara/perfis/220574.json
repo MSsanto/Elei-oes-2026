@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:46:34.654410+00:00",
+      "generated_at_utc": "2026-10-16T14:21:20.428200+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220574/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 183,
+        "quantidade_registros": 184,
         "registros_recentes": [
+          {
+            "id": 2647781,
+            "sigla_tipo": "PDL",
+            "numero": 1009,
+            "ano": 2026,
+            "ementa": "Susta, nos termos do art. 49, inciso V, da Constituição Federal, o Decreto nº 13.135, de 9 de outubro de 2026, que \"Regulamenta a Lei nº 8.078, de 11 de setembro de 1990 – Código de Defesa do Consumidor, para estabelecer diretrizes e normas sobre o Serviço de Atendimento ao Consumidor\".",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647781"
+          },
           {
             "id": 2647567,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Manifesta repúdio à condução da política externa brasileira pelo Ministro de Estado das Relações Exteriores, Mauro Vieira, em razão de sua alegada ineficiência na defesa dos interesses nacionais, do enfraquecimento das relações diplomáticas com parceiros estratégicos e dos prejuízos, na avaliação desta Comissão, à imagem internacional do Brasil.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642242"
-          },
-          {
-            "id": 2642241,
-            "sigla_tipo": "REQ",
-            "numero": 114,
-            "ano": 2026,
-            "ementa": "Requer a convocação do Ministro de Estado das Relações Exteriores, Sr. Mauro Vieira, para prestar esclarecimentos perante a Comissão de Relações Exteriores e de Defesa Nacional acerca da má condução da política externa brasileira.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642241"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220574"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220574",
-  "generated_at_utc": "2026-10-15T08:49:00.104991+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.815513+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1367,
+    "quantidade_registros": 1368,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 183
+        "quantidade_registros": 184
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647781,
+        "sigla_tipo": "PDL",
+        "numero": 1009,
+        "ano": 2026,
+        "ementa": "Susta, nos termos do art. 49, inciso V, da Constituição Federal, o Decreto nº 13.135, de 9 de outubro de 2026, que \"Regulamenta a Lei nº 8.078, de 11 de setembro de 1990 – Código de Defesa do Consumidor, para estabelecer diretrizes e normas sobre o Serviço de Atendimento ao Consumidor\".",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647781"
+      },
       {
         "id": 2647567,
         "sigla_tipo": "RIC",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Manifesta repúdio à condução da política externa brasileira pelo Ministro de Estado das Relações Exteriores, Mauro Vieira, em razão de sua alegada ineficiência na defesa dos interesses nacionais, do enfraquecimento das relações diplomáticas com parceiros estratégicos e dos prejuízos, na avaliação desta Comissão, à imagem internacional do Brasil.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642242"
-      },
-      {
-        "id": 2642241,
-        "sigla_tipo": "REQ",
-        "numero": 114,
-        "ano": 2026,
-        "ementa": "Requer a convocação do Ministro de Estado das Relações Exteriores, Sr. Mauro Vieira, para prestar esclarecimentos perante a Comissão de Relações Exteriores e de Defesa Nacional acerca da má condução da política externa brasileira.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642241"
       },
       {
         "id": 2598301,

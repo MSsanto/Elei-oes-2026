@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:47:50.491436+00:00",
+      "generated_at_utc": "2026-10-16T14:20:15.621934+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/209787/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 98,
+        "quantidade_registros": 99,
         "registros_recentes": [
+          {
+            "id": 2647760,
+            "sigla_tipo": "INC",
+            "numero": 1625,
+            "ano": 2026,
+            "ementa": "Sugere ao Ministério da Educação providências para a divulgação dos indicadores e das projeções do Plano Nacional de Educação.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647760"
+          },
           {
             "id": 2646944,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Susta, nos termos do art. 49, V, da Constituição Federal, os efeitos da Resolução nº 9, de 14 de julho de 2026, do Conselho Nacional de Política Energética, que eleva o percentual de adição de etanol anidro combustível à gasolina.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641803"
-          },
-          {
-            "id": 2641451,
-            "sigla_tipo": "RIC",
-            "numero": 2231,
-            "ano": 2026,
-            "ementa": "Solicita ao Ministro de Estado do Planejamento e Orçamento informações sobre as medidas anunciadas pelo Poder Executivo relativas à ampliação do programa Minha Casa Minha Vida e à reformulação do programa Reforma Casa Brasil, especialmente no que diz respeito à sua compatibilidade com o ordenamento orçamentário e fiscal vigente.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641451"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=209787"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "209787",
-  "generated_at_utc": "2026-10-15T08:49:00.247241+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.693685+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1419,7 +1419,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1137,
+    "quantidade_registros": 1138,
     "por_ano": [
       {
         "ano": 2023,
@@ -1435,10 +1435,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 98
+        "quantidade_registros": 99
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647760,
+        "sigla_tipo": "INC",
+        "numero": 1625,
+        "ano": 2026,
+        "ementa": "Sugere ao Ministério da Educação providências para a divulgação dos indicadores e das projeções do Plano Nacional de Educação.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647760"
+      },
       {
         "id": 2646944,
         "sigla_tipo": "RIC",
@@ -1526,14 +1534,6 @@
         "ano": 2026,
         "ementa": "Susta, nos termos do art. 49, V, da Constituição Federal, os efeitos da Resolução nº 9, de 14 de julho de 2026, do Conselho Nacional de Política Energética, que eleva o percentual de adição de etanol anidro combustível à gasolina.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641803"
-      },
-      {
-        "id": 2641451,
-        "sigla_tipo": "RIC",
-        "numero": 2231,
-        "ano": 2026,
-        "ementa": "Solicita ao Ministro de Estado do Planejamento e Orçamento informações sobre as medidas anunciadas pelo Poder Executivo relativas à ampliação do programa Minha Casa Minha Vida e à reformulação do programa Reforma Casa Brasil, especialmente no que diz respeito à sua compatibilidade com o ordenamento orçamentário e fiscal vigente.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641451"
       },
       {
         "id": 2598197,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:44:31.011512+00:00",
+      "generated_at_utc": "2026-10-16T14:22:48.200787+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220625/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 45,
+        "quantidade_registros": 48,
         "registros_recentes": [
+          {
+            "id": 2648276,
+            "sigla_tipo": "REQ",
+            "numero": 45,
+            "ano": 2026,
+            "ementa": "Requer a realização de audiência pública para debater o recrutamento e a utilização de adolescentes por organizações criminosas e os efeitos da redução da maioridade penal sobre essa dinâmica. Convidados: representante da Polícia Civil do Estado de Minas Gerais, preferencialmente com atuação em investigação de homicídios ou organizações criminosas; 2. representante do Ministério Público do Estado de Minas Gerais, preferencialmente do Centro de Apoio Operacional das Promotorias de Justiça de Combate ao Crime Organizado e de Investigação Criminal; 3. representante da Secretaria de Estado de Justiça e Segurança Pública de Minas Gerais, da área de inteligência ou enfrentamento ao crime organizado; 4. representante da Diretoria de Investigação e Combate ao Crime Organizado e à Corrupção da Polícia Federal; 5. representante da Secretaria Nacional de Políticas Penais; 6. pesquisador de universidade pública de Minas Gerais com produção acadêmica sobre facções, criminalidade juvenil ou recrutamento de adolescentes.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648276"
+          },
+          {
+            "id": 2648275,
+            "sigla_tipo": "REQ",
+            "numero": 44,
+            "ano": 2026,
+            "ementa": "Requer a realização de audiência pública para debater a responsabilização por crimes hediondos e outros delitos violentos praticados por adolescentes, sob a perspectiva das vítimas e de seus familiares. Convidados: 1. representante de entidade mineira de apoio a vítimas de crimes violentos e seus familiares; 2. familiar de vítima de crime hediondo praticado por adolescente, preferencialmente de Minas Gerais, mediante prévia concordância e preservação de sua dignidade e segurança; 3. representante do Ministério Público do Estado de Minas Gerais com atuação criminal ou na defesa das vítimas; 4. delegado da Polícia Civil do Estado de Minas Gerais com experiência na investigação de homicídios, latrocínios ou crimes sexuais; 5. representante do Conselho Nacional do Ministério Público com atuação na Política Institucional de Proteção Integral e de Promoção de Direitos e Apoio às Vítimas; 6. especialista em vitimologia, tutela judicial da vítima ou justiça restaurativa, preferencialmente vinculado a instituição de ensino de Minas Gerais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648275"
+          },
+          {
+            "id": 2648274,
+            "sigla_tipo": "REQ",
+            "numero": 43,
+            "ano": 2026,
+            "ementa": "Requer a realização de audiência pública para discutir os efeitos da redução da maioridade penal sobre o sistema prisional, com ênfase na separação, custódia, segurança e reintegração de jovens de 16 e 17 anos. Convidados: 1. representante do Departamento Penitenciário de Minas Gerais; 2. representante da Polícia Penal do Estado de Minas Gerais; 3. representante de entidade sindical dos policiais penais de Minas Gerais; 4. representante da Secretaria Nacional de Políticas Penais; 5. representante do Conselho Nacional de Política Criminal e Penitenciária; 6. especialista de instituição de ensino de Minas Gerais em execução penal, arquitetura prisional ou gestão penitenciária.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648274"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a inclusão do PL 5868 de 2025 na Ordem do Dia do Plenário da Câmara dos Deputados.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626364"
-          },
-          {
-            "id": 2625975,
-            "sigla_tipo": "REQ",
-            "numero": 2974,
-            "ano": 2026,
-            "ementa": "Requer a constituição de Comissão Especial Temporária para proferir parecer à PEC 23/2023.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625975"
-          },
-          {
-            "id": 2623836,
-            "sigla_tipo": "REQ",
-            "numero": 232,
-            "ano": 2026,
-            "ementa": "Requer a realização de audiência pública para debater a Carta de Prerrogativas das Vítimas do INTERVID e o fortalecimento da Lei Mariana Ferrer (Lei nº 14.245/2021).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623836"
-          },
-          {
-            "id": 2623604,
-            "sigla_tipo": "PEC",
-            "numero": 9,
-            "ano": 2026,
-            "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220625"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220625",
-  "generated_at_utc": "2026-10-15T08:48:59.863972+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.974519+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1431,7 +1431,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 581,
+    "quantidade_registros": 584,
     "por_ano": [
       {
         "ano": 2023,
@@ -1447,10 +1447,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 45
+        "quantidade_registros": 48
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648276,
+        "sigla_tipo": "REQ",
+        "numero": 45,
+        "ano": 2026,
+        "ementa": "Requer a realização de audiência pública para debater o recrutamento e a utilização de adolescentes por organizações criminosas e os efeitos da redução da maioridade penal sobre essa dinâmica. Convidados: representante da Polícia Civil do Estado de Minas Gerais, preferencialmente com atuação em investigação de homicídios ou organizações criminosas; 2. representante do Ministério Público do Estado de Minas Gerais, preferencialmente do Centro de Apoio Operacional das Promotorias de Justiça de Combate ao Crime Organizado e de Investigação Criminal; 3. representante da Secretaria de Estado de Justiça e Segurança Pública de Minas Gerais, da área de inteligência ou enfrentamento ao crime organizado; 4. representante da Diretoria de Investigação e Combate ao Crime Organizado e à Corrupção da Polícia Federal; 5. representante da Secretaria Nacional de Políticas Penais; 6. pesquisador de universidade pública de Minas Gerais com produção acadêmica sobre facções, criminalidade juvenil ou recrutamento de adolescentes.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648276"
+      },
+      {
+        "id": 2648275,
+        "sigla_tipo": "REQ",
+        "numero": 44,
+        "ano": 2026,
+        "ementa": "Requer a realização de audiência pública para debater a responsabilização por crimes hediondos e outros delitos violentos praticados por adolescentes, sob a perspectiva das vítimas e de seus familiares. Convidados: 1. representante de entidade mineira de apoio a vítimas de crimes violentos e seus familiares; 2. familiar de vítima de crime hediondo praticado por adolescente, preferencialmente de Minas Gerais, mediante prévia concordância e preservação de sua dignidade e segurança; 3. representante do Ministério Público do Estado de Minas Gerais com atuação criminal ou na defesa das vítimas; 4. delegado da Polícia Civil do Estado de Minas Gerais com experiência na investigação de homicídios, latrocínios ou crimes sexuais; 5. representante do Conselho Nacional do Ministério Público com atuação na Política Institucional de Proteção Integral e de Promoção de Direitos e Apoio às Vítimas; 6. especialista em vitimologia, tutela judicial da vítima ou justiça restaurativa, preferencialmente vinculado a instituição de ensino de Minas Gerais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648275"
+      },
+      {
+        "id": 2648274,
+        "sigla_tipo": "REQ",
+        "numero": 43,
+        "ano": 2026,
+        "ementa": "Requer a realização de audiência pública para discutir os efeitos da redução da maioridade penal sobre o sistema prisional, com ênfase na separação, custódia, segurança e reintegração de jovens de 16 e 17 anos. Convidados: 1. representante do Departamento Penitenciário de Minas Gerais; 2. representante da Polícia Penal do Estado de Minas Gerais; 3. representante de entidade sindical dos policiais penais de Minas Gerais; 4. representante da Secretaria Nacional de Políticas Penais; 5. representante do Conselho Nacional de Política Criminal e Penitenciária; 6. especialista de instituição de ensino de Minas Gerais em execução penal, arquitetura prisional ou gestão penitenciária.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648274"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1522,30 +1546,6 @@
         "ano": 2026,
         "ementa": "Requer a inclusão do PL 5868 de 2025 na Ordem do Dia do Plenário da Câmara dos Deputados.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626364"
-      },
-      {
-        "id": 2625975,
-        "sigla_tipo": "REQ",
-        "numero": 2974,
-        "ano": 2026,
-        "ementa": "Requer a constituição de Comissão Especial Temporária para proferir parecer à PEC 23/2023.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625975"
-      },
-      {
-        "id": 2623836,
-        "sigla_tipo": "REQ",
-        "numero": 232,
-        "ano": 2026,
-        "ementa": "Requer a realização de audiência pública para debater a Carta de Prerrogativas das Vítimas do INTERVID e o fortalecimento da Lei Mariana Ferrer (Lei nº 14.245/2021).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623836"
-      },
-      {
-        "id": 2623604,
-        "sigla_tipo": "PEC",
-        "numero": 9,
-        "ano": 2026,
-        "ementa": "Altera o art. 228 da Constituição Federal, para reduzir a idade mínima de imputabilidade penal, nas condições que estabelece.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623604"
       },
       {
         "id": 2598301,

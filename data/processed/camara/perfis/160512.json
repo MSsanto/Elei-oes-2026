@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:45:17.850320+00:00",
+      "generated_at_utc": "2026-10-16T14:23:48.584254+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160512/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 93,
+        "quantidade_registros": 94,
         "registros_recentes": [
+          {
+            "id": 2647790,
+            "sigla_tipo": "EMC",
+            "numero": 1,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647790"
+          },
           {
             "id": 2647475,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Exmo. Sr. José Múcio Monteiro Filho, Ministro de Estado da Defesa, acerca do contido no Ofício n° 10038/2026/CH GAB MD-MD, de 16/04/2026, que tratou da resposta à Indicação nº 3.087/2025, de minha autoria, onde sugeri o acesso às graduações superiores de militares oriundos do Quadro Especial de Sargentos da Aeronáutica.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643904"
-          },
-          {
-            "id": 2643714,
-            "sigla_tipo": "PL",
-            "numero": 5066,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), para instituir o Rótulo Digital Acessível e assegurar o acesso simplificado às informações de produtos por meio de tecnologia de código de resposta rápida, o QRCode.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643714"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160512"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160512",
-  "generated_at_utc": "2026-10-15T08:48:59.952092+00:00",
+  "generated_at_utc": "2026-10-16T14:24:11.090898+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1628,7 +1628,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1077,
+    "quantidade_registros": 1078,
     "por_ano": [
       {
         "ano": 2023,
@@ -1644,10 +1644,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 93
+        "quantidade_registros": 94
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647790,
+        "sigla_tipo": "EMC",
+        "numero": 1,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647790"
+      },
       {
         "id": 2647475,
         "sigla_tipo": "REQ",
@@ -1735,14 +1743,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Exmo. Sr. José Múcio Monteiro Filho, Ministro de Estado da Defesa, acerca do contido no Ofício n° 10038/2026/CH GAB MD-MD, de 16/04/2026, que tratou da resposta à Indicação nº 3.087/2025, de minha autoria, onde sugeri o acesso às graduações superiores de militares oriundos do Quadro Especial de Sargentos da Aeronáutica.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643904"
-      },
-      {
-        "id": 2643714,
-        "sigla_tipo": "PL",
-        "numero": 5066,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 8.078, de 11 de setembro de 1990 (Código de Defesa do Consumidor), para instituir o Rótulo Digital Acessível e assegurar o acesso simplificado às informações de produtos por meio de tecnologia de código de resposta rápida, o QRCode.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643714"
       },
       {
         "id": 2598424,

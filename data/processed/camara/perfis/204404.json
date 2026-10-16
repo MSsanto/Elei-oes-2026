@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:48:08.511116+00:00",
+      "generated_at_utc": "2026-10-16T14:20:43.434732+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204404/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 19,
+        "quantidade_registros": 21,
         "registros_recentes": [
+          {
+            "id": 2648297,
+            "sigla_tipo": "PL",
+            "numero": 5586,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 12.527, de 18 de novembro de 2011, para estabelecer critérios de fundamentação, proporcionalidade, acesso parcial e revisão das restrições de acesso a informações pessoais, assegurando a proteção do interesse público e geral preponderante.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648297"
+          },
+          {
+            "id": 2648296,
+            "sigla_tipo": "RIC",
+            "numero": 2756,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Defesa acerca da negativa de acesso a registros de planos de voo da aeronave de prefixo PS-FST, relacionados ao empresário Daniel Vorcaro, com fundamento no artigo 31 da Lei nº 12.527, de 18 de novembro de 2011.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648296"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Confere ao Município de Novo Hamburgo, no Estado do Rio Grande do Sul, o título de Capital Nacional do Punhobol.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618861"
-          },
-          {
-            "id": 2617290,
-            "sigla_tipo": "RIC",
-            "numero": 950,
-            "ano": 2026,
-            "ementa": "Solicita ao Ministro de Estado da Saúde, Alexandre Padilha, informações detalhadas acerca do processo de avaliação da tecnologia vosoritida para tratamento da acondroplasia no âmbito do SUS, bem como sobre os impactos assistenciais, orçamentários e jurídicos decorrentes da atual situação regulatória.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617290"
-          },
-          {
-            "id": 2612333,
-            "sigla_tipo": "PL",
-            "numero": 1424,
-            "ano": 2026,
-            "ementa": "Define antissemitismo com a finalidade de instruir as políticas públicas nacionais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612333"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204404"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204404",
-  "generated_at_utc": "2026-10-15T08:49:00.284406+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.743655+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1484,7 +1484,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 400,
+    "quantidade_registros": 402,
     "por_ano": [
       {
         "ano": 2023,
@@ -1500,10 +1500,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 19
+        "quantidade_registros": 21
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648297,
+        "sigla_tipo": "PL",
+        "numero": 5586,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 12.527, de 18 de novembro de 2011, para estabelecer critérios de fundamentação, proporcionalidade, acesso parcial e revisão das restrições de acesso a informações pessoais, assegurando a proteção do interesse público e geral preponderante.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648297"
+      },
+      {
+        "id": 2648296,
+        "sigla_tipo": "RIC",
+        "numero": 2756,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Defesa acerca da negativa de acesso a registros de planos de voo da aeronave de prefixo PS-FST, relacionados ao empresário Daniel Vorcaro, com fundamento no artigo 31 da Lei nº 12.527, de 18 de novembro de 2011.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648296"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1583,22 +1599,6 @@
         "ano": 2026,
         "ementa": "Confere ao Município de Novo Hamburgo, no Estado do Rio Grande do Sul, o título de Capital Nacional do Punhobol.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618861"
-      },
-      {
-        "id": 2617290,
-        "sigla_tipo": "RIC",
-        "numero": 950,
-        "ano": 2026,
-        "ementa": "Solicita ao Ministro de Estado da Saúde, Alexandre Padilha, informações detalhadas acerca do processo de avaliação da tecnologia vosoritida para tratamento da acondroplasia no âmbito do SUS, bem como sobre os impactos assistenciais, orçamentários e jurídicos decorrentes da atual situação regulatória.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617290"
-      },
-      {
-        "id": 2612333,
-        "sigla_tipo": "PL",
-        "numero": 1424,
-        "ano": 2026,
-        "ementa": "Define antissemitismo com a finalidade de instruir as políticas públicas nacionais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2612333"
       },
       {
         "id": 2598197,

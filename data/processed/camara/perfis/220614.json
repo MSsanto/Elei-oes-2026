@@ -820,7 +820,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:46:12.393841+00:00",
+      "generated_at_utc": "2026-10-16T14:23:45.058458+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -828,8 +828,40 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220614/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 30,
+        "quantidade_registros": 34,
         "registros_recentes": [
+          {
+            "id": 2647926,
+            "sigla_tipo": "EMC",
+            "numero": 137,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647926"
+          },
+          {
+            "id": 2647901,
+            "sigla_tipo": "EMC",
+            "numero": 112,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647901"
+          },
+          {
+            "id": 2647900,
+            "sigla_tipo": "EMC",
+            "numero": 111,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647900"
+          },
+          {
+            "id": 2647899,
+            "sigla_tipo": "EMC",
+            "numero": 110,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647899"
+          },
           {
             "id": 2646124,
             "sigla_tipo": "REL",
@@ -893,38 +925,6 @@
             "ano": 2026,
             "ementa": "Institui a Política Nacional de Reutilização de Tecnologias Assistivas (PNRTA).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628779"
-          },
-          {
-            "id": 2628774,
-            "sigla_tipo": "PL",
-            "numero": 2699,
-            "ano": 2026,
-            "ementa": "Institui o Certificado Nacional de Paciente Crônico Neurodivergente e estabelece medidas de desburocratização para a dispensação contínua de medicamentos sujeitos a controle especial no âmbito do Sistema Único de Saúde – SUS",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628774"
-          },
-          {
-            "id": 2628773,
-            "sigla_tipo": "PL",
-            "numero": 2698,
-            "ano": 2026,
-            "ementa": "Dispõe sobre o Sistema de Informação Comparativa eXpressa para o Cidadão (Sicx Cidadão).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628773"
-          },
-          {
-            "id": 2628771,
-            "sigla_tipo": "PL",
-            "numero": 2696,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a regulamentação do exercício profissional do Instrumentador Cirúrgico.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628771"
-          },
-          {
-            "id": 2628768,
-            "sigla_tipo": "PL",
-            "numero": 2694,
-            "ano": 2026,
-            "ementa": "Institui a Política de Prevenção da Síndrome de Burnout e de Proteção à Saúde Mental dos profissionais de saúde mental no âmbito do Sistema Único de Saúde (SUS).",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628768"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220614"
@@ -1139,7 +1139,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220614",
-  "generated_at_utc": "2026-10-15T08:49:00.060576+00:00",
+  "generated_at_utc": "2026-10-16T14:24:11.082487+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1750,7 +1750,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 231,
+    "quantidade_registros": 235,
     "por_ano": [
       {
         "ano": 2023,
@@ -1766,10 +1766,42 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 30
+        "quantidade_registros": 34
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647926,
+        "sigla_tipo": "EMC",
+        "numero": 137,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647926"
+      },
+      {
+        "id": 2647901,
+        "sigla_tipo": "EMC",
+        "numero": 112,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647901"
+      },
+      {
+        "id": 2647900,
+        "sigla_tipo": "EMC",
+        "numero": 111,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647900"
+      },
+      {
+        "id": 2647899,
+        "sigla_tipo": "EMC",
+        "numero": 110,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647899"
+      },
       {
         "id": 2646124,
         "sigla_tipo": "REL",
@@ -1833,38 +1865,6 @@
         "ano": 2026,
         "ementa": "Institui a Política Nacional de Reutilização de Tecnologias Assistivas (PNRTA).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628779"
-      },
-      {
-        "id": 2628774,
-        "sigla_tipo": "PL",
-        "numero": 2699,
-        "ano": 2026,
-        "ementa": "Institui o Certificado Nacional de Paciente Crônico Neurodivergente e estabelece medidas de desburocratização para a dispensação contínua de medicamentos sujeitos a controle especial no âmbito do Sistema Único de Saúde – SUS",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628774"
-      },
-      {
-        "id": 2628773,
-        "sigla_tipo": "PL",
-        "numero": 2698,
-        "ano": 2026,
-        "ementa": "Dispõe sobre o Sistema de Informação Comparativa eXpressa para o Cidadão (Sicx Cidadão).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628773"
-      },
-      {
-        "id": 2628771,
-        "sigla_tipo": "PL",
-        "numero": 2696,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a regulamentação do exercício profissional do Instrumentador Cirúrgico.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628771"
-      },
-      {
-        "id": 2628768,
-        "sigla_tipo": "PL",
-        "numero": 2694,
-        "ano": 2026,
-        "ementa": "Institui a Política de Prevenção da Síndrome de Burnout e de Proteção à Saúde Mental dos profissionais de saúde mental no âmbito do Sistema Único de Saúde (SUS).",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2628768"
       },
       {
         "id": 2599009,

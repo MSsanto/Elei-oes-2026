@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:46:43.772399+00:00",
+      "generated_at_utc": "2026-10-16T14:21:42.613728+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220685/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 13,
+        "quantidade_registros": 14,
         "registros_recentes": [
+          {
+            "id": 2648112,
+            "sigla_tipo": "RIC",
+            "numero": 2754,
+            "ano": 2026,
+            "ementa": "Requer informações ao Senhor Ministro de Minas e Energia, acerca das recorrentes interrupções e oscilações no fornecimento de energia elétrica pela Companhia Paranaense - Copel, bem como das ações de fiscalização realizadas pela Agência  Nacional de Energia Elétrica - ANEEL no Estado do Paraná.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648112"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a Criação da \"Frente Parlamentar em Defesa do Mutualismo\".",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2601407"
-          },
-          {
-            "id": 2601003,
-            "sigla_tipo": "REQ",
-            "numero": 224,
-            "ano": 2026,
-            "ementa": "Requer a inclusão de assinatura de apoiamento junto ao RCP nº 1/2026, que visa “a criação de Comissão Parlamentar de Inquérito para investigar as fraudes financeiras ocorridas na relação entre Banco Master e o Banco Regional de Brasília – BRB”",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2601003"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220685"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220685",
-  "generated_at_utc": "2026-10-15T08:49:00.125138+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.855866+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1431,7 +1431,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 198,
+    "quantidade_registros": 199,
     "por_ano": [
       {
         "ano": 2023,
@@ -1447,10 +1447,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 13
+        "quantidade_registros": 14
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648112,
+        "sigla_tipo": "RIC",
+        "numero": 2754,
+        "ano": 2026,
+        "ementa": "Requer informações ao Senhor Ministro de Minas e Energia, acerca das recorrentes interrupções e oscilações no fornecimento de energia elétrica pela Companhia Paranaense - Copel, bem como das ações de fiscalização realizadas pela Agência  Nacional de Energia Elétrica - ANEEL no Estado do Paraná.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648112"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1538,14 +1546,6 @@
         "ano": 2026,
         "ementa": "Requer a Criação da \"Frente Parlamentar em Defesa do Mutualismo\".",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2601407"
-      },
-      {
-        "id": 2601003,
-        "sigla_tipo": "REQ",
-        "numero": 224,
-        "ano": 2026,
-        "ementa": "Requer a inclusão de assinatura de apoiamento junto ao RCP nº 1/2026, que visa “a criação de Comissão Parlamentar de Inquérito para investigar as fraudes financeiras ocorridas na relação entre Banco Master e o Banco Regional de Brasília – BRB”",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2601003"
       },
       {
         "id": 2595818,

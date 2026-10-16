@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:44:48.969521+00:00",
+      "generated_at_utc": "2026-10-16T14:20:16.294745+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74158/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 127,
+        "quantidade_registros": 129,
         "registros_recentes": [
+          {
+            "id": 2647815,
+            "sigla_tipo": "EMC",
+            "numero": 26,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647815"
+          },
+          {
+            "id": 2647809,
+            "sigla_tipo": "EMC",
+            "numero": 20,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647809"
+          },
           {
             "id": 2646235,
             "sigla_tipo": "PL",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Sessão Solene em homenagem ao centenário de nascimento de Roberto Santos, Waldir Pires, Milton Santos e Luís Henrique Dias Tavares.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632959"
-          },
-          {
-            "id": 2632811,
-            "sigla_tipo": "REQ",
-            "numero": 3540,
-            "ano": 2026,
-            "ementa": "Requeremos a Vossa Excelência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, a urgência “urgentíssima” na apreciação do Projeto de Lei nº PL 5239/2025, de minha autoria .",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632811"
-          },
-          {
-            "id": 2632576,
-            "sigla_tipo": "REQ",
-            "numero": 3515,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência na apreciação do Projeto de Lei nº 2.581/2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632576"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74158"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74158",
-  "generated_at_utc": "2026-10-15T08:48:59.897985+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.694617+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1863,7 +1863,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 653,
+    "quantidade_registros": 655,
     "por_ano": [
       {
         "ano": 2023,
@@ -1879,10 +1879,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 127
+        "quantidade_registros": 129
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647815,
+        "sigla_tipo": "EMC",
+        "numero": 26,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647815"
+      },
+      {
+        "id": 2647809,
+        "sigla_tipo": "EMC",
+        "numero": 20,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647809"
+      },
       {
         "id": 2646235,
         "sigla_tipo": "PL",
@@ -1962,22 +1978,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Sessão Solene em homenagem ao centenário de nascimento de Roberto Santos, Waldir Pires, Milton Santos e Luís Henrique Dias Tavares.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632959"
-      },
-      {
-        "id": 2632811,
-        "sigla_tipo": "REQ",
-        "numero": 3540,
-        "ano": 2026,
-        "ementa": "Requeremos a Vossa Excelência, nos termos do art. 155 do Regimento Interno da Câmara dos Deputados, a urgência “urgentíssima” na apreciação do Projeto de Lei nº PL 5239/2025, de minha autoria .",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632811"
-      },
-      {
-        "id": 2632576,
-        "sigla_tipo": "REQ",
-        "numero": 3515,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência na apreciação do Projeto de Lei nº 2.581/2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2632576"
       },
       {
         "id": 2599057,

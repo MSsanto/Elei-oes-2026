@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:45:24.737574+00:00",
+      "generated_at_utc": "2026-10-16T14:22:45.473743+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74161/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 22,
+        "quantidade_registros": 23,
         "registros_recentes": [
+          {
+            "id": 2648312,
+            "sigla_tipo": "PLP",
+            "numero": 269,
+            "ano": 2026,
+            "ementa": "Institui o Programa de Regularização Tributária para Micro, Pequenas e Médias Empresas, dispõe sobre a exclusão de juros, multas tributárias e encargos legais de créditos tributários federais administrados pela Secretaria Especial da Receita Federal do Brasil ou inscritos em dívida ativa da União e administrados pela Procuradoria-Geral da Fazenda Nacional e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648312"
+          },
           {
             "id": 2647435,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Audiência Pública para debater os Aspectos sociais e a importância do Diálogo Social para a redução da jornada de trabalho no Brasil, com os seguintes convidados:\n1. Adriana Marcolino - Representante do Departamento Intersindical, de Estatística e Estudos Socioeconômicos – DIEESE;\n2. Representante do Movimento Vida Além do Trabalho (VAT);\n3.  Representante do Sindicato Nacional dos Auditores Fiscais do Trabalho (SINAIT);\n4. Representante da entidade 4Day Week no Brasil.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620738"
-          },
-          {
-            "id": 2615935,
-            "sigla_tipo": "PL",
-            "numero": 1808,
-            "ano": 2026,
-            "ementa": "Proíbe a exploração, a oferta, a promoção e a facilitação de apostas de quota fixa em todo o território nacional, revoga dispositivos das Leis nº 13.756, de 12 de dezembro de 2018, e nº 14.790, de 29 de dezembro de 2023, estabelece medidas de bloqueio de acesso, remoção de aplicações, interrupção de fluxos financeiros, responsabilização de intermediários e proteção de conteúdos de interesse público, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2615935"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74161"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74161",
-  "generated_at_utc": "2026-10-15T08:48:59.966134+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.970373+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1659,7 +1659,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 246,
+    "quantidade_registros": 247,
     "por_ano": [
       {
         "ano": 2023,
@@ -1675,10 +1675,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 22
+        "quantidade_registros": 23
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648312,
+        "sigla_tipo": "PLP",
+        "numero": 269,
+        "ano": 2026,
+        "ementa": "Institui o Programa de Regularização Tributária para Micro, Pequenas e Médias Empresas, dispõe sobre a exclusão de juros, multas tributárias e encargos legais de créditos tributários federais administrados pela Secretaria Especial da Receita Federal do Brasil ou inscritos em dívida ativa da União e administrados pela Procuradoria-Geral da Fazenda Nacional e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648312"
+      },
       {
         "id": 2647435,
         "sigla_tipo": "PL",
@@ -1766,14 +1774,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Audiência Pública para debater os Aspectos sociais e a importância do Diálogo Social para a redução da jornada de trabalho no Brasil, com os seguintes convidados:\n1. Adriana Marcolino - Representante do Departamento Intersindical, de Estatística e Estudos Socioeconômicos – DIEESE;\n2. Representante do Movimento Vida Além do Trabalho (VAT);\n3.  Representante do Sindicato Nacional dos Auditores Fiscais do Trabalho (SINAIT);\n4. Representante da entidade 4Day Week no Brasil.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620738"
-      },
-      {
-        "id": 2615935,
-        "sigla_tipo": "PL",
-        "numero": 1808,
-        "ano": 2026,
-        "ementa": "Proíbe a exploração, a oferta, a promoção e a facilitação de apostas de quota fixa em todo o território nacional, revoga dispositivos das Leis nº 13.756, de 12 de dezembro de 2018, e nº 14.790, de 29 de dezembro de 2023, estabelece medidas de bloqueio de acesso, remoção de aplicações, interrupção de fluxos financeiros, responsabilização de intermediários e proteção de conteúdos de interesse público, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2615935"
       },
       {
         "id": 2596372,

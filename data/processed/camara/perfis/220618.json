@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:48:59.847738+00:00",
+      "generated_at_utc": "2026-10-16T14:19:49.869821+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220618/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 1998,
+        "quantidade_registros": 2001,
         "registros_recentes": [
+          {
+            "id": 2647788,
+            "sigla_tipo": "REQ",
+            "numero": 4304,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Mario Luis Milessi de Azevedo, Professor de Capoeira, pelos relevantes serviços prestados à valorização da cultura brasileira, à promoção do esporte e à inclusão social por meio da capoeira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647788"
+          },
+          {
+            "id": 2647785,
+            "sigla_tipo": "REQ",
+            "numero": 4303,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Paulo José Vieira Barbosa da Silva, Instrutor de Capoeira, pelos relevantes serviços prestados à valorização da cultura brasileira, à promoção do esporte e à inclusão social por meio da capoeira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647785"
+          },
+          {
+            "id": 2647784,
+            "sigla_tipo": "REQ",
+            "numero": 4302,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Wallace Alexandre Mello de Souza, Instrutor de Capoeira, pelos relevantes serviços prestados à valorização da cultura brasileira, à promoção do esporte e à inclusão social por meio da capoeira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647784"
+          },
           {
             "id": 2647205,
             "sigla_tipo": "PL",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Louvor e Regozijo à Sra. Márcia Luiza S. Neves da Cunha, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646849"
-          },
-          {
-            "id": 2646847,
-            "sigla_tipo": "REQ",
-            "numero": 4247,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Diego Figueiredo da Fonseca Leal, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646847"
-          },
-          {
-            "id": 2646846,
-            "sigla_tipo": "REQ",
-            "numero": 4246,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Andrei Rodrigues da Silva, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646846"
-          },
-          {
-            "id": 2646845,
-            "sigla_tipo": "REQ",
-            "numero": 4245,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Marcel Gusmão Delfino, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646845"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220618"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220618",
-  "generated_at_utc": "2026-10-15T08:49:00.348955+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.611918+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 6969,
+    "quantidade_registros": 6972,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 1998
+        "quantidade_registros": 2001
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647788,
+        "sigla_tipo": "REQ",
+        "numero": 4304,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Mario Luis Milessi de Azevedo, Professor de Capoeira, pelos relevantes serviços prestados à valorização da cultura brasileira, à promoção do esporte e à inclusão social por meio da capoeira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647788"
+      },
+      {
+        "id": 2647785,
+        "sigla_tipo": "REQ",
+        "numero": 4303,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Paulo José Vieira Barbosa da Silva, Instrutor de Capoeira, pelos relevantes serviços prestados à valorização da cultura brasileira, à promoção do esporte e à inclusão social por meio da capoeira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647785"
+      },
+      {
+        "id": 2647784,
+        "sigla_tipo": "REQ",
+        "numero": 4302,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Wallace Alexandre Mello de Souza, Instrutor de Capoeira, pelos relevantes serviços prestados à valorização da cultura brasileira, à promoção do esporte e à inclusão social por meio da capoeira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647784"
+      },
       {
         "id": 2647205,
         "sigla_tipo": "PL",
@@ -1493,30 +1517,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Louvor e Regozijo à Sra. Márcia Luiza S. Neves da Cunha, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646849"
-      },
-      {
-        "id": 2646847,
-        "sigla_tipo": "REQ",
-        "numero": 4247,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Diego Figueiredo da Fonseca Leal, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646847"
-      },
-      {
-        "id": 2646846,
-        "sigla_tipo": "REQ",
-        "numero": 4246,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Andrei Rodrigues da Silva, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646846"
-      },
-      {
-        "id": 2646845,
-        "sigla_tipo": "REQ",
-        "numero": 4245,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Marcel Gusmão Delfino, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646845"
       },
       {
         "id": 2598197,

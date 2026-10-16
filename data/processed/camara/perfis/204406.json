@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:45:47.311284+00:00",
+      "generated_at_utc": "2026-10-16T14:21:29.879655+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204406/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 36,
+        "quantidade_registros": 38,
         "registros_recentes": [
+          {
+            "id": 2647792,
+            "sigla_tipo": "EMC",
+            "numero": 3,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647792"
+          },
+          {
+            "id": 2647791,
+            "sigla_tipo": "EMC",
+            "numero": 2,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647791"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer inclusão das assinaturas de adesão dos Parlamentares ao Requerimento nº 2282/2023.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635587"
-          },
-          {
-            "id": 2633488,
-            "sigla_tipo": "PEC",
-            "numero": 15,
-            "ano": 2026,
-            "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
-          },
-          {
-            "id": 2633466,
-            "sigla_tipo": "REQ",
-            "numero": 3560,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene pelos Relevantes Serviços Prestados por Gramado ao Desenvolvimento do Turismo Nacional.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633466"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204406"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204406",
-  "generated_at_utc": "2026-10-15T08:49:00.011743+00:00",
+  "generated_at_utc": "2026-10-16T14:24:11.128817+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1463,7 +1463,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 587,
+    "quantidade_registros": 589,
     "por_ano": [
       {
         "ano": 2023,
@@ -1479,10 +1479,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 36
+        "quantidade_registros": 38
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647792,
+        "sigla_tipo": "EMC",
+        "numero": 3,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647792"
+      },
+      {
+        "id": 2647791,
+        "sigla_tipo": "EMC",
+        "numero": 2,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647791"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1562,22 +1578,6 @@
         "ano": 2026,
         "ementa": "Requer inclusão das assinaturas de adesão dos Parlamentares ao Requerimento nº 2282/2023.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635587"
-      },
-      {
-        "id": 2633488,
-        "sigla_tipo": "PEC",
-        "numero": 15,
-        "ano": 2026,
-        "ementa": "Altera os art. 150 Constituição Federal para incluir as entidades esportivas sem fins lucrativos.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633488"
-      },
-      {
-        "id": 2633466,
-        "sigla_tipo": "REQ",
-        "numero": 3560,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene pelos Relevantes Serviços Prestados por Gramado ao Desenvolvimento do Turismo Nacional.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633466"
       },
       {
         "id": 2598197,

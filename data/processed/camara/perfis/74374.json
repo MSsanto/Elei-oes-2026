@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:46:33.629277+00:00",
+      "generated_at_utc": "2026-10-16T14:20:02.869573+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74374/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 73,
+        "quantidade_registros": 74,
         "registros_recentes": [
+          {
+            "id": 2647927,
+            "sigla_tipo": "EMC",
+            "numero": 138,
+            "ano": 2026,
+            "ementa": "Dá nova redação à MPV 1370/2026",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647927"
+          },
           {
             "id": 2647289,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 8.742, de 7 de dezembro de 1993, para instituir o Auxílio Transitório ao Cuidador, destinado ao cuidador principal não remunerado de pessoa idosa ou com deficiência titular do Benefício de Prestação Continuada, em razão do falecimento da pessoa cuidada.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641832"
-          },
-          {
-            "id": 2641607,
-            "sigla_tipo": "PL",
-            "numero": 4794,
-            "ano": 2026,
-            "ementa": "Institui a Lei Khetilly Nicole, que altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para instituir causa geral de aumento de pena para os crimes dolosos praticados mediante violência ou grave ameaça contra pessoa com Transtorno do Espectro Autista.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641607"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74374"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74374",
-  "generated_at_utc": "2026-10-15T08:49:00.103955+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.669735+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1996,7 +1996,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 609,
+    "quantidade_registros": 610,
     "por_ano": [
       {
         "ano": 2023,
@@ -2012,10 +2012,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 73
+        "quantidade_registros": 74
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647927,
+        "sigla_tipo": "EMC",
+        "numero": 138,
+        "ano": 2026,
+        "ementa": "Dá nova redação à MPV 1370/2026",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647927"
+      },
       {
         "id": 2647289,
         "sigla_tipo": "PL",
@@ -2103,14 +2111,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 8.742, de 7 de dezembro de 1993, para instituir o Auxílio Transitório ao Cuidador, destinado ao cuidador principal não remunerado de pessoa idosa ou com deficiência titular do Benefício de Prestação Continuada, em razão do falecimento da pessoa cuidada.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641832"
-      },
-      {
-        "id": 2641607,
-        "sigla_tipo": "PL",
-        "numero": 4794,
-        "ano": 2026,
-        "ementa": "Institui a Lei Khetilly Nicole, que altera o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para instituir causa geral de aumento de pena para os crimes dolosos praticados mediante violência ou grave ameaça contra pessoa com Transtorno do Espectro Autista.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2641607"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:48:15.937804+00:00",
+      "generated_at_utc": "2026-10-16T14:24:04.825137+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204460/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 48,
+        "quantidade_registros": 49,
         "registros_recentes": [
+          {
+            "id": 2647765,
+            "sigla_tipo": "REQ",
+            "numero": 4301,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, para prestar esclarecimentos perante o Plenário da Câmara dos Deputados acerca das notícias que apontam suposta participação em articulações destinadas à captação de recursos de fundos de pensão vinculados a empresas estatais federais em favor do Banco Master, bem como sobre eventuais conflitos de interesses e utilização da estrutura do Poder Executivo federal para atendimento de interesses financeiros privados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647765"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Susta os efeitos da Resolução GECEX nº 938, de 9 de julho de 2026, que “Estabelece a alíquota do imposto sobre a exportação de óleos brutos de petróleo ou de minerais betuminosos.”",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639284"
-          },
-          {
-            "id": 2637721,
-            "sigla_tipo": "REQ",
-            "numero": 3797,
-            "ano": 2026,
-            "ementa": "Requer regime de urgência para a apreciação do Projeto de Decreto Legislativo nº 171/2026, que “Susta os efeitos do Decreto nº 12.887, de 23 de março de 2026, que Amplia a Estação Ecológica de Taiamã, localizada nos Municípios de Cáceres e Poconé, Estado de Mato Grosso”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637721"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204460"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204460",
-  "generated_at_utc": "2026-10-15T08:49:00.301616+00:00",
+  "generated_at_utc": "2026-10-16T14:24:11.118045+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1516,7 +1516,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 646,
+    "quantidade_registros": 647,
     "por_ano": [
       {
         "ano": 2023,
@@ -1532,10 +1532,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 48
+        "quantidade_registros": 49
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2647765,
+        "sigla_tipo": "REQ",
+        "numero": 4301,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Ministro de Estado da Saúde, Sr. Alexandre Rocha Santos Padilha, para prestar esclarecimentos perante o Plenário da Câmara dos Deputados acerca das notícias que apontam suposta participação em articulações destinadas à captação de recursos de fundos de pensão vinculados a empresas estatais federais em favor do Banco Master, bem como sobre eventuais conflitos de interesses e utilização da estrutura do Poder Executivo federal para atendimento de interesses financeiros privados.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2647765"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1623,14 +1631,6 @@
         "ano": 2026,
         "ementa": "Susta os efeitos da Resolução GECEX nº 938, de 9 de julho de 2026, que “Estabelece a alíquota do imposto sobre a exportação de óleos brutos de petróleo ou de minerais betuminosos.”",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639284"
-      },
-      {
-        "id": 2637721,
-        "sigla_tipo": "REQ",
-        "numero": 3797,
-        "ano": 2026,
-        "ementa": "Requer regime de urgência para a apreciação do Projeto de Decreto Legislativo nº 171/2026, que “Susta os efeitos do Decreto nº 12.887, de 23 de março de 2026, que Amplia a Estação Ecológica de Taiamã, localizada nos Municípios de Cáceres e Poconé, Estado de Mato Grosso”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2637721"
       },
       {
         "id": 2595990,

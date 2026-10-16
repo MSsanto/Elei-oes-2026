@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:46:53.739366+00:00",
+      "generated_at_utc": "2026-10-16T14:20:55.525212+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204536/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 120,
+        "quantidade_registros": 121,
         "registros_recentes": [
+          {
+            "id": 2648314,
+            "sigla_tipo": "RIC",
+            "numero": 2757,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Fazenda sobre o relatório final, seus anexos, documentos de suporte e deliberações referentes ao Grupo de Trabalho do Banco Master, REAG e Entidades Conexas, instituído na Comissão de Valores Mobiliários (CVM).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648314"
+          },
           {
             "id": 2646929,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre a obrigatoriedade de participação dos candidatos à eleição majoritária, com representação no congresso nacional, em debates eleitorais transmitidos por emissoras de rádio e televisão e altera a Lei nº 9.504, de 30 de setembro de 1997 (Lei das Eleições).",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644358"
-          },
-          {
-            "id": 2643954,
-            "sigla_tipo": "PL",
-            "numero": 5108,
-            "ano": 2026,
-            "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para autorizar a seleção aleatória ou por amostragem das pessoas a serem submetidas à abordagem e à busca pessoal em via pública.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643954"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204536"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204536",
-  "generated_at_utc": "2026-10-15T08:49:00.140455+00:00",
+  "generated_at_utc": "2026-10-16T14:24:10.768511+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1500,7 +1500,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1238,
+    "quantidade_registros": 1239,
     "por_ano": [
       {
         "ano": 2023,
@@ -1516,10 +1516,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 120
+        "quantidade_registros": 121
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648314,
+        "sigla_tipo": "RIC",
+        "numero": 2757,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Fazenda sobre o relatório final, seus anexos, documentos de suporte e deliberações referentes ao Grupo de Trabalho do Banco Master, REAG e Entidades Conexas, instituído na Comissão de Valores Mobiliários (CVM).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648314"
+      },
       {
         "id": 2646929,
         "sigla_tipo": "PL",
@@ -1607,14 +1615,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre a obrigatoriedade de participação dos candidatos à eleição majoritária, com representação no congresso nacional, em debates eleitorais transmitidos por emissoras de rádio e televisão e altera a Lei nº 9.504, de 30 de setembro de 1997 (Lei das Eleições).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644358"
-      },
-      {
-        "id": 2643954,
-        "sigla_tipo": "PL",
-        "numero": 5108,
-        "ano": 2026,
-        "ementa": "Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para autorizar a seleção aleatória ou por amostragem das pessoas a serem submetidas à abordagem e à busca pessoal em via pública.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643954"
       },
       {
         "id": 2598301,

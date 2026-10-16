@@ -840,7 +840,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-15T08:45:24.148997+00:00",
+      "generated_at_utc": "2026-10-16T14:23:37.580347+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -848,8 +848,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220681/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 3,
+        "quantidade_registros": 4,
         "registros_recentes": [
+          {
+            "id": 2648319,
+            "sigla_tipo": "PL",
+            "numero": 5589,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a regulamentação da profissão de Consultor de Imagem.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648319"
+          },
           {
             "id": 2627892,
             "sigla_tipo": "REQ",
@@ -1087,7 +1095,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220681",
-  "generated_at_utc": "2026-10-15T08:48:59.963806+00:00",
+  "generated_at_utc": "2026-10-16T14:24:11.070077+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1247,7 +1255,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 145,
+    "quantidade_registros": 146,
     "por_ano": [
       {
         "ano": 2023,
@@ -1263,10 +1271,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 3
+        "quantidade_registros": 4
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648319,
+        "sigla_tipo": "PL",
+        "numero": 5589,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a regulamentação da profissão de Consultor de Imagem.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648319"
+      },
       {
         "id": 2627892,
         "sigla_tipo": "REQ",
@@ -1450,14 +1466,6 @@
         "ano": 2023,
         "ementa": "Requeiro, nos termos do Art. 155 do Regimento Interno da Câmara dos Deputados, urgência para apreciação do Projeto de Lei nº 1373/2023, de autoria do Deputado Lázaro Botelho.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2389501"
-      },
-      {
-        "id": 2388325,
-        "sigla_tipo": "REQ",
-        "numero": 3097,
-        "ano": 2023,
-        "ementa": "Requerimento de Urgência Art. 155 PL 952/2019 que “Determina o regramento quanto ao limite imposto ao importador brasileiro de leite em pó sobre o prazo de validade mínimo do produto.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2388325"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220681",
