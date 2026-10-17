@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-16T14:23:22.502625+00:00",
+      "generated_at_utc": "2026-10-17T17:57:25.868674+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178947/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 331,
+        "quantidade_registros": 332,
         "registros_recentes": [
+          {
+            "id": 2648326,
+            "sigla_tipo": "REQ",
+            "numero": 4306,
+            "ano": 2026,
+            "ementa": "Requer urgência urgentíssima para a apreciação do Projeto de Lei 5543/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648326"
+          },
           {
             "id": 2647475,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644699"
-          },
-          {
-            "id": 2644628,
-            "sigla_tipo": "PRC",
-            "numero": 43,
-            "ano": 2026,
-            "ementa": "Institui a obrigatoriedade da implantação da Sala Sensorial de Acolhimento, nas dependências da Câmara dos Deputados, destinada ao atendimento de pessoas com deficiência, que demandem a necessidade de um ambiente de regulação sensorial, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644628"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178947"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178947",
-  "generated_at_utc": "2026-10-16T14:24:11.042317+00:00",
+  "generated_at_utc": "2026-10-17T17:58:41.967017+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1564,7 +1564,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1854,
+    "quantidade_registros": 1855,
     "por_ano": [
       {
         "ano": 2023,
@@ -1580,10 +1580,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 331
+        "quantidade_registros": 332
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648326,
+        "sigla_tipo": "REQ",
+        "numero": 4306,
+        "ano": 2026,
+        "ementa": "Requer urgência urgentíssima para a apreciação do Projeto de Lei 5543/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648326"
+      },
       {
         "id": 2647475,
         "sigla_tipo": "REQ",
@@ -1671,14 +1679,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644699"
-      },
-      {
-        "id": 2644628,
-        "sigla_tipo": "PRC",
-        "numero": 43,
-        "ano": 2026,
-        "ementa": "Institui a obrigatoriedade da implantação da Sala Sensorial de Acolhimento, nas dependências da Câmara dos Deputados, destinada ao atendimento de pessoas com deficiência, que demandem a necessidade de um ambiente de regulação sensorial, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644628"
       },
       {
         "id": 2599057,

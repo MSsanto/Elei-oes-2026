@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-16T14:20:03.304899+00:00",
+      "generated_at_utc": "2026-10-17T17:56:03.619475+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141458/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 18,
+        "quantidade_registros": 19,
         "registros_recentes": [
+          {
+            "id": 2648326,
+            "sigla_tipo": "REQ",
+            "numero": 4306,
+            "ano": 2026,
+            "ementa": "Requer urgência urgentíssima para a apreciação do Projeto de Lei 5543/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648326"
+          },
           {
             "id": 2645154,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a retirada de assinatura da Emenda nº 1 apresentada à PEC 221/2019",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626882"
-          },
-          {
-            "id": 2626594,
-            "sigla_tipo": "REQ",
-            "numero": 3042,
-            "ano": 2026,
-            "ementa": "Requer a retirada de assinatura da Emenda nº 2 apresentada à PEC 221/2019",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626594"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141458"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141458",
-  "generated_at_utc": "2026-10-16T14:24:10.672126+00:00",
+  "generated_at_utc": "2026-10-17T17:58:41.810583+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1673,7 +1673,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 378,
+    "quantidade_registros": 379,
     "por_ano": [
       {
         "ano": 2023,
@@ -1689,10 +1689,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 18
+        "quantidade_registros": 19
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648326,
+        "sigla_tipo": "REQ",
+        "numero": 4306,
+        "ano": 2026,
+        "ementa": "Requer urgência urgentíssima para a apreciação do Projeto de Lei 5543/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648326"
+      },
       {
         "id": 2645154,
         "sigla_tipo": "EMC",
@@ -1780,14 +1788,6 @@
         "ano": 2026,
         "ementa": "Requer a retirada de assinatura da Emenda nº 1 apresentada à PEC 221/2019",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626882"
-      },
-      {
-        "id": 2626594,
-        "sigla_tipo": "REQ",
-        "numero": 3042,
-        "ano": 2026,
-        "ementa": "Requer a retirada de assinatura da Emenda nº 2 apresentada à PEC 221/2019",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626594"
       },
       {
         "id": 2598301,

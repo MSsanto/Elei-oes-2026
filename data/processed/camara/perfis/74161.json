@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-16T14:22:45.473743+00:00",
+      "generated_at_utc": "2026-10-17T17:57:19.674179+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/74161/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 23,
+        "quantidade_registros": 24,
         "registros_recentes": [
+          {
+            "id": 2648326,
+            "sigla_tipo": "REQ",
+            "numero": 4306,
+            "ano": 2026,
+            "ementa": "Requer urgência urgentíssima para a apreciação do Projeto de Lei 5543/2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648326"
+          },
           {
             "id": 2648312,
             "sigla_tipo": "PLP",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de seminário, na ALMG, da Comissão Especial sobre a Redução da Jornada de Trabalho (PEC 221/2019), destinada a discutir os impactos da extinção da escala de trabalho 6x1 e redução da jornada semanal de trabalho.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622968"
-          },
-          {
-            "id": 2620738,
-            "sigla_tipo": "REQ",
-            "numero": 20,
-            "ano": 2026,
-            "ementa": "Requer a realização de Audiência Pública para debater os Aspectos sociais e a importância do Diálogo Social para a redução da jornada de trabalho no Brasil, com os seguintes convidados:\n1. Adriana Marcolino - Representante do Departamento Intersindical, de Estatística e Estudos Socioeconômicos – DIEESE;\n2. Representante do Movimento Vida Além do Trabalho (VAT);\n3.  Representante do Sindicato Nacional dos Auditores Fiscais do Trabalho (SINAIT);\n4. Representante da entidade 4Day Week no Brasil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620738"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=74161"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "74161",
-  "generated_at_utc": "2026-10-16T14:24:10.970373+00:00",
+  "generated_at_utc": "2026-10-17T17:58:41.958415+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1659,7 +1659,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 247,
+    "quantidade_registros": 248,
     "por_ano": [
       {
         "ano": 2023,
@@ -1675,10 +1675,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 23
+        "quantidade_registros": 24
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648326,
+        "sigla_tipo": "REQ",
+        "numero": 4306,
+        "ano": 2026,
+        "ementa": "Requer urgência urgentíssima para a apreciação do Projeto de Lei 5543/2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648326"
+      },
       {
         "id": 2648312,
         "sigla_tipo": "PLP",
@@ -1766,14 +1774,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de seminário, na ALMG, da Comissão Especial sobre a Redução da Jornada de Trabalho (PEC 221/2019), destinada a discutir os impactos da extinção da escala de trabalho 6x1 e redução da jornada semanal de trabalho.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622968"
-      },
-      {
-        "id": 2620738,
-        "sigla_tipo": "REQ",
-        "numero": 20,
-        "ano": 2026,
-        "ementa": "Requer a realização de Audiência Pública para debater os Aspectos sociais e a importância do Diálogo Social para a redução da jornada de trabalho no Brasil, com os seguintes convidados:\n1. Adriana Marcolino - Representante do Departamento Intersindical, de Estatística e Estudos Socioeconômicos – DIEESE;\n2. Representante do Movimento Vida Além do Trabalho (VAT);\n3.  Representante do Sindicato Nacional dos Auditores Fiscais do Trabalho (SINAIT);\n4. Representante da entidade 4Day Week no Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2620738"
       },
       {
         "id": 2596372,

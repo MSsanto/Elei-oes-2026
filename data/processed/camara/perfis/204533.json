@@ -654,7 +654,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-16T14:19:21.534100+00:00",
+      "generated_at_utc": "2026-10-17T17:56:09.550823+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -662,8 +662,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204533/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 11,
+        "quantidade_registros": 12,
         "registros_recentes": [
+          {
+            "id": 2648323,
+            "sigla_tipo": "REQ",
+            "numero": 4305,
+            "ano": 2026,
+            "ementa": "Nos termos do Regimento Interno da Câmara dos Deputados, requeiro a Vossa Excelência que seja submetida ao Plenário a presente MOÇÃO DE APLAUSO a ser conferida à CASA MILITAR DO GOVERNO DO ESTADO DO CEARÁ, em razão da celebração do seu centenário a ser comemorada no dia 16 de outubro de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648323"
+          },
           {
             "id": 2646878,
             "sigla_tipo": "PL",
@@ -965,7 +973,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204533",
-  "generated_at_utc": "2026-10-16T14:24:10.607884+00:00",
+  "generated_at_utc": "2026-10-17T17:58:41.822340+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1209,7 +1217,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 208,
+    "quantidade_registros": 209,
     "por_ano": [
       {
         "ano": 2023,
@@ -1225,10 +1233,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 11
+        "quantidade_registros": 12
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648323,
+        "sigla_tipo": "REQ",
+        "numero": 4305,
+        "ano": 2026,
+        "ementa": "Nos termos do Regimento Interno da Câmara dos Deputados, requeiro a Vossa Excelência que seja submetida ao Plenário a presente MOÇÃO DE APLAUSO a ser conferida à CASA MILITAR DO GOVERNO DO ESTADO DO CEARÁ, em razão da celebração do seu centenário a ser comemorada no dia 16 de outubro de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648323"
+      },
       {
         "id": 2646878,
         "sigla_tipo": "PL",
@@ -1412,14 +1428,6 @@
         "ano": 2024,
         "ementa": "Requer nos termos regimentais a criação da Frente Parlamentar ESG na Prática do Congresso Nacional (FPESG).",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2448433"
-      },
-      {
-        "id": 2412545,
-        "sigla_tipo": "REQ",
-        "numero": 4266,
-        "ano": 2023,
-        "ementa": "Requer, nos termos regimentais, seja APENSADO o Projeto de Lei nº 54, de 2021, ao Projeto de Lei nº 5.949, de 2019, nos termos que especifica.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2412545"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204533",

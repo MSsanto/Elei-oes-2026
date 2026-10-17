@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-16T14:22:16.127539+00:00",
+      "generated_at_utc": "2026-10-17T17:54:44.450596+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204353/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 21,
+        "quantidade_registros": 22,
         "registros_recentes": [
+          {
+            "id": 2648324,
+            "sigla_tipo": "PL",
+            "numero": 5591,
+            "ano": 2026,
+            "ementa": "Institui a Lei Amapá Tucujú, estabelece diretrizes para a prioridade de investimentos em infraestrutura petrolífera no Estado do Amapá e dispõe sobre o desenvolvimento econômico e social associado às atividades de petróleo e gás natural da Margem Equatorial Brasileira.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648324"
+          },
           {
             "id": 2646839,
             "sigla_tipo": "PL",
@@ -453,14 +461,6 @@
             "ano": 2026,
             "ementa": "Requerimento de retirada de assinatura em apoio à EMENDA N.° 01 à PEC 221 de 2019.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625839"
-          },
-          {
-            "id": 2618388,
-            "sigla_tipo": "REQ",
-            "numero": 2343,
-            "ano": 2026,
-            "ementa": "Requer inclusao Ordem do Dia do PLP 185 2024",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618388"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204353"
@@ -675,7 +675,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204353",
-  "generated_at_utc": "2026-10-16T14:24:10.918051+00:00",
+  "generated_at_utc": "2026-10-17T17:58:41.679365+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -968,7 +968,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 72,
+    "quantidade_registros": 73,
     "por_ano": [
       {
         "ano": 2023,
@@ -984,10 +984,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 21
+        "quantidade_registros": 22
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648324,
+        "sigla_tipo": "PL",
+        "numero": 5591,
+        "ano": 2026,
+        "ementa": "Institui a Lei Amapá Tucujú, estabelece diretrizes para a prioridade de investimentos em infraestrutura petrolífera no Estado do Amapá e dispõe sobre o desenvolvimento econômico e social associado às atividades de petróleo e gás natural da Margem Equatorial Brasileira.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648324"
+      },
       {
         "id": 2646839,
         "sigla_tipo": "PL",
@@ -1075,14 +1083,6 @@
         "ano": 2026,
         "ementa": "Requerimento de retirada de assinatura em apoio à EMENDA N.° 01 à PEC 221 de 2019.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625839"
-      },
-      {
-        "id": 2618388,
-        "sigla_tipo": "REQ",
-        "numero": 2343,
-        "ano": 2026,
-        "ementa": "Requer inclusao Ordem do Dia do PLP 185 2024",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2618388"
       },
       {
         "id": 2569681,

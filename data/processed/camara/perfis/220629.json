@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-16T14:20:41.621624+00:00",
+      "generated_at_utc": "2026-10-17T17:55:15.939092+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220629/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 72,
+        "quantidade_registros": 73,
         "registros_recentes": [
+          {
+            "id": 2648322,
+            "sigla_tipo": "PL",
+            "numero": 5590,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.597, de 14 de junho de 2023 Lei Geral do Esporte, para incluir o fomento do esporte universitário entre os objetivos do Fundo Nacional do Esporte.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648322"
+          },
           {
             "id": 2648317,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Protocolo Unificado de Atendimento à População LGBTQIA+ no âmbito do Sistema Único de Saúde, com diretrizes para o atendimento humanizado, seguro e padronizado de pessoas trans e demais pessoas LGBTQIA+.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635551"
-          },
-          {
-            "id": 2634447,
-            "sigla_tipo": "REQ",
-            "numero": 65,
-            "ano": 2026,
-            "ementa": "Requer a apresentação de MOÇÃO DE PESAR pelo falecimento do pesquisador, intelectual e ativista indígena Mairu Hakuwi Kuady Karajá, ocorrido em 14/06/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634447"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220629"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220629",
-  "generated_at_utc": "2026-10-16T14:24:10.739933+00:00",
+  "generated_at_utc": "2026-10-17T17:58:41.730990+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1418,7 +1418,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 505,
+    "quantidade_registros": 506,
     "por_ano": [
       {
         "ano": 2023,
@@ -1434,10 +1434,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 72
+        "quantidade_registros": 73
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648322,
+        "sigla_tipo": "PL",
+        "numero": 5590,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.597, de 14 de junho de 2023 Lei Geral do Esporte, para incluir o fomento do esporte universitário entre os objetivos do Fundo Nacional do Esporte.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648322"
+      },
       {
         "id": 2648317,
         "sigla_tipo": "PL",
@@ -1525,14 +1533,6 @@
         "ano": 2026,
         "ementa": "Institui o Protocolo Unificado de Atendimento à População LGBTQIA+ no âmbito do Sistema Único de Saúde, com diretrizes para o atendimento humanizado, seguro e padronizado de pessoas trans e demais pessoas LGBTQIA+.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635551"
-      },
-      {
-        "id": 2634447,
-        "sigla_tipo": "REQ",
-        "numero": 65,
-        "ano": 2026,
-        "ementa": "Requer a apresentação de MOÇÃO DE PESAR pelo falecimento do pesquisador, intelectual e ativista indígena Mairu Hakuwi Kuady Karajá, ocorrido em 14/06/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634447"
       },
       {
         "id": 2599001,
