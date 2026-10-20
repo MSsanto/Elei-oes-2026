@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:18:32.406625+00:00",
+      "generated_at_utc": "2026-10-20T00:45:14.052417+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204536/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 123,
+        "quantidade_registros": 124,
         "registros_recentes": [
+          {
+            "id": 2648397,
+            "sigla_tipo": "PL",
+            "numero": 5608,
+            "ano": 2026,
+            "ementa": "Dispõe sobre a dispensa de inscrição suplementar para advogados que atuem em processos fora da jurisdição do Conselho Seccional ao qual estão regularmente inscritos, e altera a Lei nº 8.906, de 4 de julho de 1994 – Estatuto da Advocacia e a Ordem dos Advogados do Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648397"
+          },
           {
             "id": 2648328,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei n° 13.105, de 16 de março de 2015 (Código de Processo Civil), e o Decreto-Lei n° 2.848, de 7 de dezembro de 1940 (Código Penal), para facilitar a expedição de medidas cautelares de manutenção e reintegração de posse;para aumentar as penas cominadas aos delitos de esbulho possessório e de alteração de limites de linha divisória de propriedade.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644797"
-          },
-          {
-            "id": 2644796,
-            "sigla_tipo": "PL",
-            "numero": 5213,
-            "ano": 2026,
-            "ementa": "Altera o Decreto-Lei 972, de 17 de outubro de 1969, para estabelecer que o exercício da profissão de jornalista  independe de diploma ou formação acadêmica específica.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644796"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204536"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204536",
-  "generated_at_utc": "2026-10-18T18:18:34.574531+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.350295+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1500,7 +1500,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1241,
+    "quantidade_registros": 1242,
     "por_ano": [
       {
         "ano": 2023,
@@ -1516,10 +1516,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 123
+        "quantidade_registros": 124
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648397,
+        "sigla_tipo": "PL",
+        "numero": 5608,
+        "ano": 2026,
+        "ementa": "Dispõe sobre a dispensa de inscrição suplementar para advogados que atuem em processos fora da jurisdição do Conselho Seccional ao qual estão regularmente inscritos, e altera a Lei nº 8.906, de 4 de julho de 1994 – Estatuto da Advocacia e a Ordem dos Advogados do Brasil.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648397"
+      },
       {
         "id": 2648328,
         "sigla_tipo": "RIC",
@@ -1607,14 +1615,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei n° 13.105, de 16 de março de 2015 (Código de Processo Civil), e o Decreto-Lei n° 2.848, de 7 de dezembro de 1940 (Código Penal), para facilitar a expedição de medidas cautelares de manutenção e reintegração de posse;para aumentar as penas cominadas aos delitos de esbulho possessório e de alteração de limites de linha divisória de propriedade.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644797"
-      },
-      {
-        "id": 2644796,
-        "sigla_tipo": "PL",
-        "numero": 5213,
-        "ano": 2026,
-        "ementa": "Altera o Decreto-Lei 972, de 17 de outubro de 1969, para estabelecer que o exercício da profissão de jornalista  independe de diploma ou formação acadêmica específica.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644796"
       },
       {
         "id": 2598301,

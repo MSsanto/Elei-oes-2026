@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:16:44.257237+00:00",
+      "generated_at_utc": "2026-10-20T00:47:44.469650+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,32 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220559/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 165,
+        "quantidade_registros": 168,
         "registros_recentes": [
+          {
+            "id": 2648368,
+            "sigla_tipo": "RIC",
+            "numero": 2768,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado Chefe do Gabinete de Segurança Institucional da Presidência da República acerca dos registros de acesso de Amauri Rodrigues Pinha e de representantes da Empresa Construtora Brasil (ECB/Mota-Engil) ao Palácio do Planalto, seus anexos e demais instalações da Presidência, bem como das autorizações, agendas e eventuais restrições de sigilo a eles relacionadas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648368"
+          },
+          {
+            "id": 2648367,
+            "sigla_tipo": "RIC",
+            "numero": 2767,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado de Minas e Energia acerca do acesso de Amauri Rodrigues Pinha e de representantes da Empresa Construtora Brasil (ECB/Mota-Engil) à sede do Ministério e à Petrobras, bem como do detalhamento dos contratos firmados pela Petrobras com a ECB/Mota-Engil, com consórcios de que faz parte e com Camargo Corrêa, Galvão Engenharia e Andrade Gutierrez.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648367"
+          },
+          {
+            "id": 2648366,
+            "sigla_tipo": "RIC",
+            "numero": 2766,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado dos Transportes acerca do acesso de Amauri Rodrigues Pinha e de representantes da Empresa Construtora Brasil (ECB/Mota-Engil) às sedes do Ministério dos Transportes e do DNIT, inclusive superintendências regionais, bem como do detalhamento dos contratos firmados pela ECB, por consórcios de que faz parte e pelas empresas Camargo Corrêa, Galvão Engenharia e Andrade Gutierrez.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648366"
+          },
           {
             "id": 2646937,
             "sigla_tipo": "PL",
@@ -1033,30 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Audiência Públicas obre os dados oficiais de participação de adolescentes em crimes violentos e em organizações criminosas, bem como sobre as ações do Governo Federal voltadas ao enfrentamento desse fenômeno, com a participação dos seguintes convidados:  1. Ministro Wellington César Lima e Silva, Ministro da Justiça e\nSegurança Pública; 2. Secretário(a) Nacional de Segurança Pública (SENASP), do Ministério da Justiça e Segurança Pública; e 3. Diretor(a)-Geral da Polícia Federal.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645113"
-          },
-          {
-            "id": 2645111,
-            "sigla_tipo": "REQ",
-            "numero": 36,
-            "ano": 2026,
-            "ementa": "Requer a realização de Audiência Pública com a Ministra dos Direitos Humanos e Cidadania para apresentar os resultados do Sistema Nacional de Atendimento Socioeducativo (SINASE), e sobre a política federal de proteção e responsabilização de adolescentes em conflito com a lei, com a participação do Secretário(a) Nacional dos Direitos da Criança e do Adolescente, do Ministério dos Direitos Humanos e Cidadania.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645111"
-          },
-          {
-            "id": 2645051,
-            "sigla_tipo": "RIC",
-            "numero": 2540,
-            "ano": 2026,
-            "ementa": "Requer informações ao Excelentíssimo Senhor Ministro de Estado da Saúde acerca do Programa de Uso Compassivo do medicamento polilaminina e da articulação do Ministério com a Agência Nacional de Vigilância Sanitária (Anvisa) sobre a matéria.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645051"
-          },
-          {
-            "id": 2644883,
-            "sigla_tipo": "PL",
-            "numero": 5227,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a atualização monetária do custo de aquisição de bens e direitos na apuração do ganho de capital das pessoas físicas e das pessoas jurídicas não tributadas com base no lucro real; institui regime opcional de atualização de bens a valor de mercado, com incidência do imposto sobre a renda e da Contribuição Social sobre o Lucro Líquido; e altera as Leis nºs 7.713, de 22 de dezembro de 1988, 9.249, de 26 de dezembro de 1995, 9.430, de 27 de dezembro de 1996, e 13.259, de 16 de março de 2016.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644883"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220559"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220559",
-  "generated_at_utc": "2026-10-18T18:18:34.366156+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.621589+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 787,
+    "quantidade_registros": 790,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,34 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 165
+        "quantidade_registros": 168
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648368,
+        "sigla_tipo": "RIC",
+        "numero": 2768,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado Chefe do Gabinete de Segurança Institucional da Presidência da República acerca dos registros de acesso de Amauri Rodrigues Pinha e de representantes da Empresa Construtora Brasil (ECB/Mota-Engil) ao Palácio do Planalto, seus anexos e demais instalações da Presidência, bem como das autorizações, agendas e eventuais restrições de sigilo a eles relacionadas.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648368"
+      },
+      {
+        "id": 2648367,
+        "sigla_tipo": "RIC",
+        "numero": 2767,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado de Minas e Energia acerca do acesso de Amauri Rodrigues Pinha e de representantes da Empresa Construtora Brasil (ECB/Mota-Engil) à sede do Ministério e à Petrobras, bem como do detalhamento dos contratos firmados pela Petrobras com a ECB/Mota-Engil, com consórcios de que faz parte e com Camargo Corrêa, Galvão Engenharia e Andrade Gutierrez.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648367"
+      },
+      {
+        "id": 2648366,
+        "sigla_tipo": "RIC",
+        "numero": 2766,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado dos Transportes acerca do acesso de Amauri Rodrigues Pinha e de representantes da Empresa Construtora Brasil (ECB/Mota-Engil) às sedes do Ministério dos Transportes e do DNIT, inclusive superintendências regionais, bem como do detalhamento dos contratos firmados pela ECB, por consórcios de que faz parte e pelas empresas Camargo Corrêa, Galvão Engenharia e Andrade Gutierrez.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648366"
+      },
       {
         "id": 2646937,
         "sigla_tipo": "PL",
@@ -1511,30 +1535,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Audiência Públicas obre os dados oficiais de participação de adolescentes em crimes violentos e em organizações criminosas, bem como sobre as ações do Governo Federal voltadas ao enfrentamento desse fenômeno, com a participação dos seguintes convidados:  1. Ministro Wellington César Lima e Silva, Ministro da Justiça e\nSegurança Pública; 2. Secretário(a) Nacional de Segurança Pública (SENASP), do Ministério da Justiça e Segurança Pública; e 3. Diretor(a)-Geral da Polícia Federal.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645113"
-      },
-      {
-        "id": 2645111,
-        "sigla_tipo": "REQ",
-        "numero": 36,
-        "ano": 2026,
-        "ementa": "Requer a realização de Audiência Pública com a Ministra dos Direitos Humanos e Cidadania para apresentar os resultados do Sistema Nacional de Atendimento Socioeducativo (SINASE), e sobre a política federal de proteção e responsabilização de adolescentes em conflito com a lei, com a participação do Secretário(a) Nacional dos Direitos da Criança e do Adolescente, do Ministério dos Direitos Humanos e Cidadania.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645111"
-      },
-      {
-        "id": 2645051,
-        "sigla_tipo": "RIC",
-        "numero": 2540,
-        "ano": 2026,
-        "ementa": "Requer informações ao Excelentíssimo Senhor Ministro de Estado da Saúde acerca do Programa de Uso Compassivo do medicamento polilaminina e da articulação do Ministério com a Agência Nacional de Vigilância Sanitária (Anvisa) sobre a matéria.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645051"
-      },
-      {
-        "id": 2644883,
-        "sigla_tipo": "PL",
-        "numero": 5227,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a atualização monetária do custo de aquisição de bens e direitos na apuração do ganho de capital das pessoas físicas e das pessoas jurídicas não tributadas com base no lucro real; institui regime opcional de atualização de bens a valor de mercado, com incidência do imposto sobre a renda e da Contribuição Social sobre o Lucro Líquido; e altera as Leis nºs 7.713, de 22 de dezembro de 1988, 9.249, de 26 de dezembro de 1995, 9.430, de 27 de dezembro de 1996, e 13.259, de 16 de março de 2016.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644883"
       },
       {
         "id": 2598979,

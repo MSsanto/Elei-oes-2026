@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:15:27.666754+00:00",
+      "generated_at_utc": "2026-10-20T00:46:31.732122+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220652/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 30,
+        "quantidade_registros": 31,
         "registros_recentes": [
+          {
+            "id": 2648348,
+            "sigla_tipo": "PL",
+            "numero": 5595,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, para extinguir a obrigatoriedade de inscrição suplementar na Ordem dos Advogados do Brasil (OAB), assegurar o exercício da advocacia em todo o território nacional mediante inscrição única.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648348"
+          },
           {
             "id": 2642054,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a coautoria do Projeto de Lei nº 1.060, de 2026, que “Altera a Lei nº 10.826, de 22 de dezembro de 2003, para autorizar a posse e o porte de arma de fogo para mulheres vítimas de violência doméstica e familiar amparadas pela Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha)”.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623291"
-          },
-          {
-            "id": 2623203,
-            "sigla_tipo": "REQ",
-            "numero": 2728,
-            "ano": 2026,
-            "ementa": "Requer a coautoria do Projeto de Lei nº 723, de 2026, que “Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para estabelecer prioridade e medidas de celeridade na tramitação dos processos relativos ao crime de feminicídio no âmbito do Tribunal do Júri”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623203"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220652"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220652",
-  "generated_at_utc": "2026-10-18T18:18:34.223254+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.495326+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1434,7 +1434,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 294,
+    "quantidade_registros": 295,
     "por_ano": [
       {
         "ano": 2023,
@@ -1450,10 +1450,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 30
+        "quantidade_registros": 31
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648348,
+        "sigla_tipo": "PL",
+        "numero": 5595,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.906, de 4 de julho de 1994, para extinguir a obrigatoriedade de inscrição suplementar na Ordem dos Advogados do Brasil (OAB), assegurar o exercício da advocacia em todo o território nacional mediante inscrição única.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648348"
+      },
       {
         "id": 2642054,
         "sigla_tipo": "PL",
@@ -1541,14 +1549,6 @@
         "ano": 2026,
         "ementa": "Requer a coautoria do Projeto de Lei nº 1.060, de 2026, que “Altera a Lei nº 10.826, de 22 de dezembro de 2003, para autorizar a posse e o porte de arma de fogo para mulheres vítimas de violência doméstica e familiar amparadas pela Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha)”.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623291"
-      },
-      {
-        "id": 2623203,
-        "sigla_tipo": "REQ",
-        "numero": 2728,
-        "ano": 2026,
-        "ementa": "Requer a coautoria do Projeto de Lei nº 723, de 2026, que “Altera o Decreto-Lei nº 3.689, de 3 de outubro de 1941 (Código de Processo Penal), para estabelecer prioridade e medidas de celeridade na tramitação dos processos relativos ao crime de feminicídio no âmbito do Tribunal do Júri”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623203"
       },
       {
         "id": 2598197,

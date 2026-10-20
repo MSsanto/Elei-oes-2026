@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:17:53.402468+00:00",
+      "generated_at_utc": "2026-10-20T00:44:43.305477+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220618/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 2001,
+        "quantidade_registros": 2003,
         "registros_recentes": [
+          {
+            "id": 2648371,
+            "sigla_tipo": "REQ",
+            "numero": 4311,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. SGT PM Fábio Duarte Dias, pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648371"
+          },
+          {
+            "id": 2648369,
+            "sigla_tipo": "REQ",
+            "numero": 4310,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor e Regozijo ao Advogado Dr. Diego Lucio Guimarães Loyo pelos excelentes serviços prestados como advogado ao Estado do Rio de Janeiro.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648369"
+          },
           {
             "id": 2647788,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Raphael da Silva Loureiro, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646851"
-          },
-          {
-            "id": 2646850,
-            "sigla_tipo": "REQ",
-            "numero": 4250,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Rômulo de Sousa Colônia, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646850"
-          },
-          {
-            "id": 2646849,
-            "sigla_tipo": "REQ",
-            "numero": 4249,
-            "ano": 2026,
-            "ementa": "Requer Moção de Louvor e Regozijo à Sra. Márcia Luiza S. Neves da Cunha, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646849"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220618"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220618",
-  "generated_at_utc": "2026-10-18T18:18:34.472742+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.276109+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1402,7 +1402,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 6972,
+    "quantidade_registros": 6974,
     "por_ano": [
       {
         "ano": 2023,
@@ -1418,10 +1418,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 2001
+        "quantidade_registros": 2003
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648371,
+        "sigla_tipo": "REQ",
+        "numero": 4311,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. SGT PM Fábio Duarte Dias, pelos excelentes serviços prestados ao Estado do Rio de Janeiro.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648371"
+      },
+      {
+        "id": 2648369,
+        "sigla_tipo": "REQ",
+        "numero": 4310,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor e Regozijo ao Advogado Dr. Diego Lucio Guimarães Loyo pelos excelentes serviços prestados como advogado ao Estado do Rio de Janeiro.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648369"
+      },
       {
         "id": 2647788,
         "sigla_tipo": "REQ",
@@ -1501,22 +1517,6 @@
         "ano": 2026,
         "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Raphael da Silva Loureiro, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646851"
-      },
-      {
-        "id": 2646850,
-        "sigla_tipo": "REQ",
-        "numero": 4250,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo ao Sr. Rômulo de Sousa Colônia, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646850"
-      },
-      {
-        "id": 2646849,
-        "sigla_tipo": "REQ",
-        "numero": 4249,
-        "ano": 2026,
-        "ementa": "Requer Moção de Louvor e Regozijo à Sra. Márcia Luiza S. Neves da Cunha, Oficial de Polícia Civil, pelos relevantes serviços prestados à segurança pública e à proteção da ordem social.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646849"
       },
       {
         "id": 2598197,

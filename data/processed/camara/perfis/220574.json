@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:17:25.170706+00:00",
+      "generated_at_utc": "2026-10-20T00:46:41.409908+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220574/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 184,
+        "quantidade_registros": 185,
         "registros_recentes": [
+          {
+            "id": 2648345,
+            "sigla_tipo": "RIC",
+            "numero": 2765,
+            "ano": 2026,
+            "ementa": "Requer informações ao Senhor Ministro de Estado da Justiça e Segurança Pública sobre as providências adotadas para a proteção da vida e da integridade física da Sra. Roberta Luchsinger e de suas filhas, diante de ameaças de morte relatadas publicamente, bem como sobre o funcionamento do Programa Federal de Assistência a Vítimas e a Testemunhas Ameaçadas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648345"
+          },
           {
             "id": 2647781,
             "sigla_tipo": "PDL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer, nos termos do art. 50 da Constituição Federal e das disposições regimentais aplicáveis, a convocação do Ministro de Estado da Defesa, Sr. José Múcio Monteiro Filho, para comparecer a esta Comissão de Relações Exteriores e de Defesa Nacional a fim de prestar esclarecimentos acerca das providências adotadas após o episódio envolvendo o General de Brigada Emílio Vanderlei Ribeiro e o Deputado Federal Marcel van Hattem, ocorrido nas dependências da Câmara dos Deputados, bem como acerca da posterior designação do referido oficial-general para o Comando da 2ª Região Militar.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642400"
-          },
-          {
-            "id": 2642242,
-            "sigla_tipo": "REQ",
-            "numero": 115,
-            "ano": 2026,
-            "ementa": "Manifesta repúdio à condução da política externa brasileira pelo Ministro de Estado das Relações Exteriores, Mauro Vieira, em razão de sua alegada ineficiência na defesa dos interesses nacionais, do enfraquecimento das relações diplomáticas com parceiros estratégicos e dos prejuízos, na avaliação desta Comissão, à imagem internacional do Brasil.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642242"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220574"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220574",
-  "generated_at_utc": "2026-10-18T18:18:34.449656+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.510859+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1368,
+    "quantidade_registros": 1369,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 184
+        "quantidade_registros": 185
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648345,
+        "sigla_tipo": "RIC",
+        "numero": 2765,
+        "ano": 2026,
+        "ementa": "Requer informações ao Senhor Ministro de Estado da Justiça e Segurança Pública sobre as providências adotadas para a proteção da vida e da integridade física da Sra. Roberta Luchsinger e de suas filhas, diante de ameaças de morte relatadas publicamente, bem como sobre o funcionamento do Programa Federal de Assistência a Vítimas e a Testemunhas Ameaçadas.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648345"
+      },
       {
         "id": 2647781,
         "sigla_tipo": "PDL",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Requer, nos termos do art. 50 da Constituição Federal e das disposições regimentais aplicáveis, a convocação do Ministro de Estado da Defesa, Sr. José Múcio Monteiro Filho, para comparecer a esta Comissão de Relações Exteriores e de Defesa Nacional a fim de prestar esclarecimentos acerca das providências adotadas após o episódio envolvendo o General de Brigada Emílio Vanderlei Ribeiro e o Deputado Federal Marcel van Hattem, ocorrido nas dependências da Câmara dos Deputados, bem como acerca da posterior designação do referido oficial-general para o Comando da 2ª Região Militar.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642400"
-      },
-      {
-        "id": 2642242,
-        "sigla_tipo": "REQ",
-        "numero": 115,
-        "ano": 2026,
-        "ementa": "Manifesta repúdio à condução da política externa brasileira pelo Ministro de Estado das Relações Exteriores, Mauro Vieira, em razão de sua alegada ineficiência na defesa dos interesses nacionais, do enfraquecimento das relações diplomáticas com parceiros estratégicos e dos prejuízos, na avaliação desta Comissão, à imagem internacional do Brasil.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642242"
       },
       {
         "id": 2598301,

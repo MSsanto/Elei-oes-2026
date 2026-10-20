@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:15:46.582070+00:00",
+      "generated_at_utc": "2026-10-20T00:48:29.953869+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178947/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 332,
+        "quantidade_registros": 334,
         "registros_recentes": [
+          {
+            "id": 2648365,
+            "sigla_tipo": "REQ",
+            "numero": 4309,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor ao Pastor Israel dos Santos Couto em reconhecimento à sua longa trajetória ministerial, à liderança exercida à frente da Igreja Assembleia de Deus em Teresópolis.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648365"
+          },
+          {
+            "id": 2648364,
+            "sigla_tipo": "REQ",
+            "numero": 4308,
+            "ano": 2026,
+            "ementa": "Requer Moção de Louvor ao Pastor José Wellington Júnior, presidente da Convenção Geral das Assembleias de Deus no Brasil (CGADB).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648364"
+          },
           {
             "id": 2648326,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645066"
-          },
-          {
-            "id": 2644734,
-            "sigla_tipo": "REQ",
-            "numero": 4125,
-            "ano": 2026,
-            "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-          },
-          {
-            "id": 2644699,
-            "sigla_tipo": "DOC",
-            "numero": 943,
-            "ano": 2026,
-            "ementa": "",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644699"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178947"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178947",
-  "generated_at_utc": "2026-10-18T18:18:34.258145+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.694121+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1564,7 +1564,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1855,
+    "quantidade_registros": 1857,
     "por_ano": [
       {
         "ano": 2023,
@@ -1580,10 +1580,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 332
+        "quantidade_registros": 334
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648365,
+        "sigla_tipo": "REQ",
+        "numero": 4309,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor ao Pastor Israel dos Santos Couto em reconhecimento à sua longa trajetória ministerial, à liderança exercida à frente da Igreja Assembleia de Deus em Teresópolis.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648365"
+      },
+      {
+        "id": 2648364,
+        "sigla_tipo": "REQ",
+        "numero": 4308,
+        "ano": 2026,
+        "ementa": "Requer Moção de Louvor ao Pastor José Wellington Júnior, presidente da Convenção Geral das Assembleias de Deus no Brasil (CGADB).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648364"
+      },
       {
         "id": 2648326,
         "sigla_tipo": "REQ",
@@ -1663,22 +1679,6 @@
         "ano": 2026,
         "ementa": "",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2645066"
-      },
-      {
-        "id": 2644734,
-        "sigla_tipo": "REQ",
-        "numero": 4125,
-        "ano": 2026,
-        "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-      },
-      {
-        "id": 2644699,
-        "sigla_tipo": "DOC",
-        "numero": 943,
-        "ano": 2026,
-        "ementa": "",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644699"
       },
       {
         "id": 2599057,

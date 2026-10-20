@@ -904,7 +904,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:17:41.111164+00:00",
+      "generated_at_utc": "2026-10-20T00:48:39.537598+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -912,8 +912,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204515/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 7,
+        "quantidade_registros": 8,
         "registros_recentes": [
+          {
+            "id": 2648334,
+            "sigla_tipo": "PL",
+            "numero": 5592,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.213, de 24 de julho de 1991, para assegurar o pagamento em dobro do abono anual a todos os aposentados do Regime Geral de Previdência Social.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648334"
+          },
           {
             "id": 2641547,
             "sigla_tipo": "PL",
@@ -1183,7 +1191,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204515",
-  "generated_at_utc": "2026-10-18T18:18:34.481521+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.713765+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1428,7 +1436,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 115,
+    "quantidade_registros": 116,
     "por_ano": [
       {
         "ano": 2023,
@@ -1444,10 +1452,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 7
+        "quantidade_registros": 8
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648334,
+        "sigla_tipo": "PL",
+        "numero": 5592,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.213, de 24 de julho de 1991, para assegurar o pagamento em dobro do abono anual a todos os aposentados do Regime Geral de Previdência Social.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648334"
+      },
       {
         "id": 2641547,
         "sigla_tipo": "PL",
@@ -1631,14 +1647,6 @@
         "ano": 2024,
         "ementa": "Acrescenta o §2º no Art. 4º da Constituição para acrescentar a integração dos países de língua portuguesa entre os princípios que regem as relações internacionais da República Federativa do Brasil.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2436619"
-      },
-      {
-        "id": 2435133,
-        "sigla_tipo": "PEC",
-        "numero": 20,
-        "ano": 2024,
-        "ementa": "Institui o Regime Extraordinário Fiscal, Financeiro e de Contratações destinado ao enfrentamento de calamidade pública e à reconstrução da infraestrutura física e social no Estado do Rio Grande do Sul, bem como ao suporte direto às famílias afetadas.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2435133"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204515",

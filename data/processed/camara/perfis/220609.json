@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:16:58.059821+00:00",
+      "generated_at_utc": "2026-10-20T00:44:13.179920+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220609/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 11,
+        "quantidade_registros": 12,
         "registros_recentes": [
+          {
+            "id": 2648381,
+            "sigla_tipo": "REQ",
+            "numero": 4314,
+            "ano": 2026,
+            "ementa": "Requer a criação de Comissão Especial para apreciação da Proposta de Emenda à Constituição nº 47, de 2023",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648381"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1263,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220609",
-  "generated_at_utc": "2026-10-18T18:18:34.396650+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.261822+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1407,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 347,
+    "quantidade_registros": 348,
     "por_ano": [
       {
         "ano": 2023,
@@ -1423,10 +1431,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 11
+        "quantidade_registros": 12
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648381,
+        "sigla_tipo": "REQ",
+        "numero": 4314,
+        "ano": 2026,
+        "ementa": "Requer a criação de Comissão Especial para apreciação da Proposta de Emenda à Constituição nº 47, de 2023",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648381"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1610,14 +1626,6 @@
         "ano": 2025,
         "ementa": "Adiciona o inciso XVIII do art. 3º do Substitutivo ao Projeto de Lei nº 2.614, de 2024",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2577394"
-      },
-      {
-        "id": 2480701,
-        "sigla_tipo": "REQ",
-        "numero": 4958,
-        "ano": 2024,
-        "ementa": "Requer a criação da Frente Parlamentar Mista em Defesa da Pessoa com Epilepsia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2480701"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220609",

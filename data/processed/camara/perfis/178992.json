@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-18T18:17:19.540377+00:00",
+      "generated_at_utc": "2026-10-20T00:46:17.213626+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178992/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 33,
+        "quantidade_registros": 34,
         "registros_recentes": [
+          {
+            "id": 2648343,
+            "sigla_tipo": "REQ",
+            "numero": 44,
+            "ano": 2026,
+            "ementa": "Requer a realização de audiência pública, no âmbito da Comissão de Ciência, Tecnologia e Inovação em comemoração aos 35 anos da Lei nº 8.248, de 23 de outubro de 1991 (Lei de TICs).",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648343"
+          },
           {
             "id": 2647426,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
-          },
-          {
-            "id": 2626782,
-            "sigla_tipo": "REQ",
-            "numero": 3049,
-            "ano": 2026,
-            "ementa": "Requer a retirada de assinatura da emenda 2/2026 à PEC 221/2019.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626782"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178992"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178992",
-  "generated_at_utc": "2026-10-18T18:18:34.442684+00:00",
+  "generated_at_utc": "2026-10-20T00:48:45.463711+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1515,7 +1515,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 586,
+    "quantidade_registros": 587,
     "por_ano": [
       {
         "ano": 2023,
@@ -1531,10 +1531,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 33
+        "quantidade_registros": 34
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648343,
+        "sigla_tipo": "REQ",
+        "numero": 44,
+        "ano": 2026,
+        "ementa": "Requer a realização de audiência pública, no âmbito da Comissão de Ciência, Tecnologia e Inovação em comemoração aos 35 anos da Lei nº 8.248, de 23 de outubro de 1991 (Lei de TICs).",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648343"
+      },
       {
         "id": 2647426,
         "sigla_tipo": "REQ",
@@ -1622,14 +1630,6 @@
         "ano": 2026,
         "ementa": "Requer, nos termos do art. 104 do Regimento Interno da Câmara dos Deputados, a retirada de tramitação da Emenda nº 1 apresentada à PEC nº 221/2019",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627583"
-      },
-      {
-        "id": 2626782,
-        "sigla_tipo": "REQ",
-        "numero": 3049,
-        "ano": 2026,
-        "ementa": "Requer a retirada de assinatura da emenda 2/2026 à PEC 221/2019.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626782"
       },
       {
         "id": 2596161,
