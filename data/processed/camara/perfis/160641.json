@@ -356,7 +356,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:46:24.328986+00:00",
+      "generated_at_utc": "2026-10-21T08:59:42.504744+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -364,8 +364,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160641/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 24,
+        "quantidade_registros": 25,
         "registros_recentes": [
+          {
+            "id": 2648406,
+            "sigla_tipo": "PL",
+            "numero": 5610,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997, para instituir procedimento de verificação de informações factuais apresentadas durante debates eleitorais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648406"
+          },
           {
             "id": 2647627,
             "sigla_tipo": "PL",
@@ -453,14 +461,6 @@
             "ano": 2026,
             "ementa": "Requer a aprovação de MOÇÃO DE REPÚDIO da Câmara dos Deputados às declarações misóginas proferidas por Paolo Zampolli acerca das mulheres brasileiras.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2619054"
-          },
-          {
-            "id": 2617166,
-            "sigla_tipo": "RCP",
-            "numero": 2,
-            "ano": 2026,
-            "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160641"
@@ -675,7 +675,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160641",
-  "generated_at_utc": "2026-10-20T00:48:45.480109+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.477238+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1015,7 +1015,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 37,
+    "quantidade_registros": 38,
     "por_ano": [
       {
         "ano": 2023,
@@ -1031,10 +1031,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 24
+        "quantidade_registros": 25
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648406,
+        "sigla_tipo": "PL",
+        "numero": 5610,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.504, de 30 de setembro de 1997, para instituir procedimento de verificação de informações factuais apresentadas durante debates eleitorais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648406"
+      },
       {
         "id": 2647627,
         "sigla_tipo": "PL",
@@ -1122,14 +1130,6 @@
         "ano": 2026,
         "ementa": "Requer a aprovação de MOÇÃO DE REPÚDIO da Câmara dos Deputados às declarações misóginas proferidas por Paolo Zampolli acerca das mulheres brasileiras.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2619054"
-      },
-      {
-        "id": 2617166,
-        "sigla_tipo": "RCP",
-        "numero": 2,
-        "ano": 2026,
-        "ementa": "Requer, nos termos do § 3º do art. 58 da Constituição Federal e dos arts. 35, 36 e 37, do Regimento Interno da Câmara dos Deputados, a criação de Comissão Parlamentar de Inquérito, com a finalidade de investigar a prática de atos de crueldade contra animais e as circunstâncias que envolveram a morte do Cão Orelha, ocorrida em Florianópolis/SC, em 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2617166"
       },
       {
         "id": 2595921,

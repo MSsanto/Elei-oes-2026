@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:46:53.330748+00:00",
+      "generated_at_utc": "2026-10-21T08:56:56.901289+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204419/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 10,
+        "quantidade_registros": 11,
         "registros_recentes": [
+          {
+            "id": 2648407,
+            "sigla_tipo": "REQ",
+            "numero": 4316,
+            "ano": 2026,
+            "ementa": "Requer a retirada de tramitação e o arquivamento do Projeto de Lei n° 5597/2026, que Altera a legislação eleitoral para instituir o sistema federativo misto nas eleições de Deputado Federal, Deputado Estadual, Deputado Distrital e Vereador.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648407"
+          },
           {
             "id": 2648384,
             "sigla_tipo": "PL",
@@ -1255,7 +1263,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204419",
-  "generated_at_utc": "2026-10-20T00:48:45.533097+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.044847+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1511,7 +1519,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 162,
+    "quantidade_registros": 163,
     "por_ano": [
       {
         "ano": 2023,
@@ -1527,10 +1535,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 10
+        "quantidade_registros": 11
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648407,
+        "sigla_tipo": "REQ",
+        "numero": 4316,
+        "ano": 2026,
+        "ementa": "Requer a retirada de tramitação e o arquivamento do Projeto de Lei n° 5597/2026, que Altera a legislação eleitoral para instituir o sistema federativo misto nas eleições de Deputado Federal, Deputado Estadual, Deputado Distrital e Vereador.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648407"
+      },
       {
         "id": 2648384,
         "sigla_tipo": "PL",
@@ -1714,14 +1730,6 @@
         "ano": 2024,
         "ementa": "Requerimento de Criação da “Frente Parlamentar de Combate à Ludopatia e de Proteção de Crianças e Adolescentes contra os Riscos das Apostas e Jogos de Azar”",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2476228"
-      },
-      {
-        "id": 2470750,
-        "sigla_tipo": "REQ",
-        "numero": 4572,
-        "ano": 2024,
-        "ementa": "Requer a retirada de tramitação e o arquivamento da Proposta de Emenda à Constituição de nº 26/2023.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2470750"
       }
     ],
     "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204419",

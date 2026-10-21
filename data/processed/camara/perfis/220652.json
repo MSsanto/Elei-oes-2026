@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:46:31.732122+00:00",
+      "generated_at_utc": "2026-10-21T09:00:07.607206+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220652/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 31,
+        "quantidade_registros": 32,
         "registros_recentes": [
+          {
+            "id": 2648420,
+            "sigla_tipo": "PL",
+            "numero": 5613,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para estabelecer prazo para instalação de equipamento de monitoração eletrônica e incentivar ações de policiamento preventivo no enfrentamento à violência doméstica e familiar contra a mulher.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648420"
+          },
           {
             "id": 2648348,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-          },
-          {
-            "id": 2623291,
-            "sigla_tipo": "REQ",
-            "numero": 2734,
-            "ano": 2026,
-            "ementa": "Requer a coautoria do Projeto de Lei nº 1.060, de 2026, que “Altera a Lei nº 10.826, de 22 de dezembro de 2003, para autorizar a posse e o porte de arma de fogo para mulheres vítimas de violência doméstica e familiar amparadas pela Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha)”.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623291"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220652"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220652",
-  "generated_at_utc": "2026-10-20T00:48:45.495326+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.537108+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1434,7 +1434,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 295,
+    "quantidade_registros": 296,
     "por_ano": [
       {
         "ano": 2023,
@@ -1450,10 +1450,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 31
+        "quantidade_registros": 32
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648420,
+        "sigla_tipo": "PL",
+        "numero": 5613,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha), para estabelecer prazo para instalação de equipamento de monitoração eletrônica e incentivar ações de policiamento preventivo no enfrentamento à violência doméstica e familiar contra a mulher.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648420"
+      },
       {
         "id": 2648348,
         "sigla_tipo": "PL",
@@ -1541,14 +1549,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-      },
-      {
-        "id": 2623291,
-        "sigla_tipo": "REQ",
-        "numero": 2734,
-        "ano": 2026,
-        "ementa": "Requer a coautoria do Projeto de Lei nº 1.060, de 2026, que “Altera a Lei nº 10.826, de 22 de dezembro de 2003, para autorizar a posse e o porte de arma de fogo para mulheres vítimas de violência doméstica e familiar amparadas pela Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha)”.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623291"
       },
       {
         "id": 2598197,

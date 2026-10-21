@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:48:36.083362+00:00",
+      "generated_at_utc": "2026-10-21T08:58:42.080251+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220606/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 82,
+        "quantidade_registros": 83,
         "registros_recentes": [
+          {
+            "id": 2648603,
+            "sigla_tipo": "PL",
+            "numero": 5625,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 14.967, de 9 de setembro de 2024, para permitir a oferta de cursos de formação de vigilantes na modalidade semipresencial.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648603"
+          },
           {
             "id": 2646882,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui diretrizes para a criação e implementação de programas de passe livre destinado a atletas e paratletas pela União, pelos Estados, pelo Distrito Federal e pelos Municípios.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642734"
-          },
-          {
-            "id": 2642525,
-            "sigla_tipo": "REQ",
-            "numero": 82,
-            "ano": 2026,
-            "ementa": "Requerimento de Emenda de Plenário ao PL 896/2023, que altera a Lei nº 7.716, de 5 de janeiro de 1989, e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre crimes praticados em razão de misoginia.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642525"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220606"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220606",
-  "generated_at_utc": "2026-10-20T00:48:45.707070+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.324665+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1399,7 +1399,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 819,
+    "quantidade_registros": 820,
     "por_ano": [
       {
         "ano": 2023,
@@ -1415,10 +1415,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 82
+        "quantidade_registros": 83
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648603,
+        "sigla_tipo": "PL",
+        "numero": 5625,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 14.967, de 9 de setembro de 2024, para permitir a oferta de cursos de formação de vigilantes na modalidade semipresencial.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648603"
+      },
       {
         "id": 2646882,
         "sigla_tipo": "PL",
@@ -1506,14 +1514,6 @@
         "ano": 2026,
         "ementa": "Institui diretrizes para a criação e implementação de programas de passe livre destinado a atletas e paratletas pela União, pelos Estados, pelo Distrito Federal e pelos Municípios.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642734"
-      },
-      {
-        "id": 2642525,
-        "sigla_tipo": "REQ",
-        "numero": 82,
-        "ano": 2026,
-        "ementa": "Requerimento de Emenda de Plenário ao PL 896/2023, que altera a Lei nº 7.716, de 5 de janeiro de 1989, e o Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para dispor sobre crimes praticados em razão de misoginia.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642525"
       },
       {
         "id": 2598945,

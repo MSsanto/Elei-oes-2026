@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:45:43.304450+00:00",
+      "generated_at_utc": "2026-10-21T08:58:17.515634+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141555/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 50,
+        "quantidade_registros": 51,
         "registros_recentes": [
+          {
+            "id": 2648537,
+            "sigla_tipo": "PL",
+            "numero": 5618,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 15.252, de 4 de novembro de 2025, e a Lei nº 8.212, de 24 de julho de 1991, para instituir salvaguardas de segurança digital, requisitos de habilitação aplicáveis às instituições destinatárias de recursos decorrentes da portabilidade de benefícios previdenciários, mecanismos de prevenção a fraudes e critérios prudenciais de gerenciamento de riscos.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648537"
+          },
           {
             "id": 2645987,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Em referência a Frente Parlamentar da Nefrologia (FPN), solicito a inclusão do novo membro (Deputado Covatti Filho), conforme a assinatura em anexo.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643108"
-          },
-          {
-            "id": 2642805,
-            "sigla_tipo": "EMC",
-            "numero": 7,
-            "ano": 2026,
-            "ementa": "COMISSÃO DE DESENVOLVIMENTO ECONÔMICO\n\nPROJETO DE LEI Nº 1.571, DE 2026\n\nDispõe sobre o marco regulatório das relações contratuais de correspondência bancária no País, estabelece diretrizes de proteção econômica, paridade de condições comerciais, transparência e devido processo sancionador, e dá outras providências.\n\nEMENDA MODIFICATIVA",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642805"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141555"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141555",
-  "generated_at_utc": "2026-10-20T00:48:45.404372+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.267153+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1580,7 +1580,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 734,
+    "quantidade_registros": 735,
     "por_ano": [
       {
         "ano": 2023,
@@ -1596,10 +1596,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 50
+        "quantidade_registros": 51
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648537,
+        "sigla_tipo": "PL",
+        "numero": 5618,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 15.252, de 4 de novembro de 2025, e a Lei nº 8.212, de 24 de julho de 1991, para instituir salvaguardas de segurança digital, requisitos de habilitação aplicáveis às instituições destinatárias de recursos decorrentes da portabilidade de benefícios previdenciários, mecanismos de prevenção a fraudes e critérios prudenciais de gerenciamento de riscos.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648537"
+      },
       {
         "id": 2645987,
         "sigla_tipo": "PL",
@@ -1687,14 +1695,6 @@
         "ano": 2026,
         "ementa": "Em referência a Frente Parlamentar da Nefrologia (FPN), solicito a inclusão do novo membro (Deputado Covatti Filho), conforme a assinatura em anexo.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643108"
-      },
-      {
-        "id": 2642805,
-        "sigla_tipo": "EMC",
-        "numero": 7,
-        "ano": 2026,
-        "ementa": "COMISSÃO DE DESENVOLVIMENTO ECONÔMICO\n\nPROJETO DE LEI Nº 1.571, DE 2026\n\nDispõe sobre o marco regulatório das relações contratuais de correspondência bancária no País, estabelece diretrizes de proteção econômica, paridade de condições comerciais, transparência e devido processo sancionador, e dá outras providências.\n\nEMENDA MODIFICATIVA",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642805"
       },
       {
         "id": 2598301,

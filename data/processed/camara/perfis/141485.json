@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:46:05.629571+00:00",
+      "generated_at_utc": "2026-10-21T08:59:08.981145+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141485/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 23,
+        "quantidade_registros": 24,
         "registros_recentes": [
+          {
+            "id": 2648538,
+            "sigla_tipo": "REQ",
+            "numero": 4318,
+            "ano": 2026,
+            "ementa": "Requer a inclusão da Medida Provisória nº 1.375, de 2026, objeto do Projeto de Lei de Conversão nº 12, de 2026, na Ordem do Dia do Plenário da Câmara dos Deputados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648538"
+          },
           {
             "id": 2646145,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1327/2025",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622637"
-          },
-          {
-            "id": 2622636,
-            "sigla_tipo": "EMC",
-            "numero": 109,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1327/2025",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622636"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141485"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141485",
-  "generated_at_utc": "2026-10-20T00:48:45.444613+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.394339+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1692,7 +1692,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 241,
+    "quantidade_registros": 242,
     "por_ano": [
       {
         "ano": 2023,
@@ -1708,10 +1708,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 23
+        "quantidade_registros": 24
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648538,
+        "sigla_tipo": "REQ",
+        "numero": 4318,
+        "ano": 2026,
+        "ementa": "Requer a inclusão da Medida Provisória nº 1.375, de 2026, objeto do Projeto de Lei de Conversão nº 12, de 2026, na Ordem do Dia do Plenário da Câmara dos Deputados.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648538"
+      },
       {
         "id": 2646145,
         "sigla_tipo": "EMC",
@@ -1799,14 +1807,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1327/2025",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622637"
-      },
-      {
-        "id": 2622636,
-        "sigla_tipo": "EMC",
-        "numero": 109,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1327/2025",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2622636"
       },
       {
         "id": 2596314,

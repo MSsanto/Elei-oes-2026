@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:46:48.657784+00:00",
+      "generated_at_utc": "2026-10-21T09:00:13.599635+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204528/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 320,
+        "quantidade_registros": 322,
         "registros_recentes": [
+          {
+            "id": 2648411,
+            "sigla_tipo": "REQ",
+            "numero": 4317,
+            "ano": 2026,
+            "ementa": "equer a realização de Sessão Solene em homenagem ao Dia Internacional do Combate à Corrupção, a ocorrer no dia 9 de dezembro de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648411"
+          },
+          {
+            "id": 2648408,
+            "sigla_tipo": "RIC",
+            "numero": 2774,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Educação sobre os critérios de desempenho utilizados na distribuição de recursos às universidades federais, os indicadores de produção científica e de resultados monitorados pelo Ministério e as providências adotadas diante do desempenho das universidades brasileiras em rankings internacionais.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648408"
+          },
           {
             "id": 2647405,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado da Defesa, Sr. José Múcio Monteiro Filho, sobre os fundamentos técnicos, as estatísticas de risco e o processo decisório que resultaram na nova edição da Instrução do Comando da Aeronáutica (ICA) 100-40, aprovada pela Portaria DECEA nº 2.094/DNOR8, de 18 de março de 2026, em vigor desde 1º de julho de 2026, que passou a exigir autorização prévia de acesso ao espaço aéreo para aeronaves não tripuladas de uso recreativo com peso máximo de decolagem inferior a 250 gramas.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646859"
-          },
-          {
-            "id": 2646858,
-            "sigla_tipo": "RIC",
-            "numero": 2653,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado Chefe do Gabinete de Segurança Institucional da Presidência da República, Sr. Marcos Antonio Amaro dos Santos, sobre o cronograma, o orçamento, o regime de sigilo e a articulação institucional dos planos setoriais de segurança de infraestruturas críticas de que trata a Resolução CNSIC nº 21, de 4 de setembro de 2026.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646858"
-          },
-          {
-            "id": 2646857,
-            "sigla_tipo": "RIC",
-            "numero": 2652,
-            "ano": 2026,
-            "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos, Sr. Tomé Monteiro da Franca, sobre a harmonização entre o Regulamento Brasileiro da Aviação Civil nº 100, aprovado pela Agência Nacional de Aviação Civil, e a Instrução do Comando da Aeronáutica (ICA) 100-40, e sobre os efeitos práticos da adoção de critérios regulatórios distintos para aeronaves não tripuladas de uso recreativo com peso inferior a 250 gramas.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646857"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204528"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204528",
-  "generated_at_utc": "2026-10-20T00:48:45.519225+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.543546+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1977,
+    "quantidade_registros": 1979,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 320
+        "quantidade_registros": 322
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648411,
+        "sigla_tipo": "REQ",
+        "numero": 4317,
+        "ano": 2026,
+        "ementa": "equer a realização de Sessão Solene em homenagem ao Dia Internacional do Combate à Corrupção, a ocorrer no dia 9 de dezembro de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648411"
+      },
+      {
+        "id": 2648408,
+        "sigla_tipo": "RIC",
+        "numero": 2774,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Educação sobre os critérios de desempenho utilizados na distribuição de recursos às universidades federais, os indicadores de produção científica e de resultados monitorados pelo Ministério e as providências adotadas diante do desempenho das universidades brasileiras em rankings internacionais.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648408"
+      },
       {
         "id": 2647405,
         "sigla_tipo": "REQ",
@@ -1567,22 +1583,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado da Defesa, Sr. José Múcio Monteiro Filho, sobre os fundamentos técnicos, as estatísticas de risco e o processo decisório que resultaram na nova edição da Instrução do Comando da Aeronáutica (ICA) 100-40, aprovada pela Portaria DECEA nº 2.094/DNOR8, de 18 de março de 2026, em vigor desde 1º de julho de 2026, que passou a exigir autorização prévia de acesso ao espaço aéreo para aeronaves não tripuladas de uso recreativo com peso máximo de decolagem inferior a 250 gramas.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646859"
-      },
-      {
-        "id": 2646858,
-        "sigla_tipo": "RIC",
-        "numero": 2653,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado Chefe do Gabinete de Segurança Institucional da Presidência da República, Sr. Marcos Antonio Amaro dos Santos, sobre o cronograma, o orçamento, o regime de sigilo e a articulação institucional dos planos setoriais de segurança de infraestruturas críticas de que trata a Resolução CNSIC nº 21, de 4 de setembro de 2026.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646858"
-      },
-      {
-        "id": 2646857,
-        "sigla_tipo": "RIC",
-        "numero": 2652,
-        "ano": 2026,
-        "ementa": "Requer informações ao Ministro de Estado de Portos e Aeroportos, Sr. Tomé Monteiro da Franca, sobre a harmonização entre o Regulamento Brasileiro da Aviação Civil nº 100, aprovado pela Agência Nacional de Aviação Civil, e a Instrução do Comando da Aeronáutica (ICA) 100-40, e sobre os efeitos práticos da adoção de critérios regulatórios distintos para aeronaves não tripuladas de uso recreativo com peso inferior a 250 gramas.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646857"
       },
       {
         "id": 2598717,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:46:41.409908+00:00",
+      "generated_at_utc": "2026-10-21T09:00:20.257373+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220574/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 185,
+        "quantidade_registros": 186,
         "registros_recentes": [
+          {
+            "id": 2648402,
+            "sigla_tipo": "REQ",
+            "numero": 350,
+            "ano": 2026,
+            "ementa": "Requer a convocação do Senhor Ministro de Estado da Justiça e Segurança Pública, Wellington César Lima e Silva, para prestar, pessoalmente, informações sobre as providências de proteção à Sra. Roberta Luchsinger e às suas filhas, diante de ameaças de morte relatadas em rede nacional, e sobre a atuação do Programa Federal de Assistência a Vítimas e a Testemunhas Ameaçadas.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648402"
+          },
           {
             "id": 2648345,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer o envio, por esta Comissão, de Indicação ao Poder Executivo, em específico ao Ministério da Defesa, para a adoção das medidas necessárias à responsabilização da conduta o General de Divisão Emílio Vanderlei Ribeiro em episódio envolvendo o Deputado Federal Marcel van Hattem nas dependências da Câmara dos Deputados, inclusive mediante a instauração de processo administrativo disciplinar ou de outro procedimento disciplinar formal cabível no âmbito do Exército Brasileiro.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642404"
-          },
-          {
-            "id": 2642400,
-            "sigla_tipo": "REQ",
-            "numero": 120,
-            "ano": 2026,
-            "ementa": "Requer, nos termos do art. 50 da Constituição Federal e das disposições regimentais aplicáveis, a convocação do Ministro de Estado da Defesa, Sr. José Múcio Monteiro Filho, para comparecer a esta Comissão de Relações Exteriores e de Defesa Nacional a fim de prestar esclarecimentos acerca das providências adotadas após o episódio envolvendo o General de Brigada Emílio Vanderlei Ribeiro e o Deputado Federal Marcel van Hattem, ocorrido nas dependências da Câmara dos Deputados, bem como acerca da posterior designação do referido oficial-general para o Comando da 2ª Região Militar.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642400"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220574"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220574",
-  "generated_at_utc": "2026-10-20T00:48:45.510859+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.557292+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1369,
+    "quantidade_registros": 1370,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 185
+        "quantidade_registros": 186
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648402,
+        "sigla_tipo": "REQ",
+        "numero": 350,
+        "ano": 2026,
+        "ementa": "Requer a convocação do Senhor Ministro de Estado da Justiça e Segurança Pública, Wellington César Lima e Silva, para prestar, pessoalmente, informações sobre as providências de proteção à Sra. Roberta Luchsinger e às suas filhas, diante de ameaças de morte relatadas em rede nacional, e sobre a atuação do Programa Federal de Assistência a Vítimas e a Testemunhas Ameaçadas.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648402"
+      },
       {
         "id": 2648345,
         "sigla_tipo": "RIC",
@@ -1527,14 +1535,6 @@
         "ano": 2026,
         "ementa": "Requer o envio, por esta Comissão, de Indicação ao Poder Executivo, em específico ao Ministério da Defesa, para a adoção das medidas necessárias à responsabilização da conduta o General de Divisão Emílio Vanderlei Ribeiro em episódio envolvendo o Deputado Federal Marcel van Hattem nas dependências da Câmara dos Deputados, inclusive mediante a instauração de processo administrativo disciplinar ou de outro procedimento disciplinar formal cabível no âmbito do Exército Brasileiro.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642404"
-      },
-      {
-        "id": 2642400,
-        "sigla_tipo": "REQ",
-        "numero": 120,
-        "ano": 2026,
-        "ementa": "Requer, nos termos do art. 50 da Constituição Federal e das disposições regimentais aplicáveis, a convocação do Ministro de Estado da Defesa, Sr. José Múcio Monteiro Filho, para comparecer a esta Comissão de Relações Exteriores e de Defesa Nacional a fim de prestar esclarecimentos acerca das providências adotadas após o episódio envolvendo o General de Brigada Emílio Vanderlei Ribeiro e o Deputado Federal Marcel van Hattem, ocorrido nas dependências da Câmara dos Deputados, bem como acerca da posterior designação do referido oficial-general para o Comando da 2ª Região Militar.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642400"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:48:42.675089+00:00",
+      "generated_at_utc": "2026-10-21T08:59:52.691265+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204524/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 19,
+        "quantidade_registros": 20,
         "registros_recentes": [
+          {
+            "id": 2648442,
+            "sigla_tipo": "INC",
+            "numero": 1631,
+            "ano": 2026,
+            "ementa": "Sugere ao Senhor Ministro da Saúde a adoção de uma estratégia de incorporação gradual da tecnologia de monitoramento contínuo de glicemia no Sistema Único de Saúde – SUS.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648442"
+          },
           {
             "id": 2644963,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dispõe sobre campanhas educativas nas instituições de ensino acerca da prevenção e identificação de situações de violência e abuso sexual contra crianças e adolescentes, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626543"
-          },
-          {
-            "id": 2626486,
-            "sigla_tipo": "REQ",
-            "numero": 3032,
-            "ano": 2026,
-            "ementa": "Requeiro, nos termos regimentais, a RETIRADA do APOIAMENTO à Emenda Nº 1, da PEC Nº 221, de 2019.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626486"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204524"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204524",
-  "generated_at_utc": "2026-10-20T00:48:45.720631+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.501281+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 218,
+    "quantidade_registros": 219,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 19
+        "quantidade_registros": 20
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648442,
+        "sigla_tipo": "INC",
+        "numero": 1631,
+        "ano": 2026,
+        "ementa": "Sugere ao Senhor Ministro da Saúde a adoção de uma estratégia de incorporação gradual da tecnologia de monitoramento contínuo de glicemia no Sistema Único de Saúde – SUS.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648442"
+      },
       {
         "id": 2644963,
         "sigla_tipo": "REQ",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Dispõe sobre campanhas educativas nas instituições de ensino acerca da prevenção e identificação de situações de violência e abuso sexual contra crianças e adolescentes, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626543"
-      },
-      {
-        "id": 2626486,
-        "sigla_tipo": "REQ",
-        "numero": 3032,
-        "ano": 2026,
-        "ementa": "Requeiro, nos termos regimentais, a RETIRADA do APOIAMENTO à Emenda Nº 1, da PEC Nº 221, de 2019.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626486"
       },
       {
         "id": 2596372,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:46:54.244794+00:00",
+      "generated_at_utc": "2026-10-21T08:56:59.815038+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/178910/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 27,
+        "quantidade_registros": 28,
         "registros_recentes": [
+          {
+            "id": 2648411,
+            "sigla_tipo": "REQ",
+            "numero": 4317,
+            "ano": 2026,
+            "ementa": "equer a realização de Sessão Solene em homenagem ao Dia Internacional do Combate à Corrupção, a ocorrer no dia 9 de dezembro de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648411"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requerimento de Urgência - PL nº 957, de 2024.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629926"
-          },
-          {
-            "id": 2627378,
-            "sigla_tipo": "REQ",
-            "numero": 47,
-            "ano": 2026,
-            "ementa": "Requer, nos termos dos incisos I e II do art. 164, do Regimento Interno da Câmara dos Deputados, declaração de prejudicialidade do Projeto de Lei nº 4.881, de 2019, por haver perdido a oportunidade em virtude de prejulgamento da matéria pelo Plenário da Câmara dos Deputados, em outra deliberação, consubstanciada na aprovação do PL nº 399/2025.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627378"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=178910"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "178910",
-  "generated_at_utc": "2026-10-20T00:48:45.534345+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.052486+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1531,7 +1531,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 465,
+    "quantidade_registros": 466,
     "por_ano": [
       {
         "ano": 2023,
@@ -1547,10 +1547,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 27
+        "quantidade_registros": 28
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648411,
+        "sigla_tipo": "REQ",
+        "numero": 4317,
+        "ano": 2026,
+        "ementa": "equer a realização de Sessão Solene em homenagem ao Dia Internacional do Combate à Corrupção, a ocorrer no dia 9 de dezembro de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648411"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1638,14 +1646,6 @@
         "ano": 2026,
         "ementa": "Requerimento de Urgência - PL nº 957, de 2024.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2629926"
-      },
-      {
-        "id": 2627378,
-        "sigla_tipo": "REQ",
-        "numero": 47,
-        "ano": 2026,
-        "ementa": "Requer, nos termos dos incisos I e II do art. 164, do Regimento Interno da Câmara dos Deputados, declaração de prejudicialidade do Projeto de Lei nº 4.881, de 2019, por haver perdido a oportunidade em virtude de prejulgamento da matéria pelo Plenário da Câmara dos Deputados, em outra deliberação, consubstanciada na aprovação do PL nº 399/2025.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2627378"
       },
       {
         "id": 2596464,

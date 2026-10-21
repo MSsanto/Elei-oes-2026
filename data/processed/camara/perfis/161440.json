@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:48:43.697630+00:00",
+      "generated_at_utc": "2026-10-21T08:59:02.025222+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/161440/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 54,
+        "quantidade_registros": 55,
         "registros_recentes": [
+          {
+            "id": 2648409,
+            "sigla_tipo": "RIC",
+            "numero": 2775,
+            "ano": 2026,
+            "ementa": "Solicita informações ao Sr. Ministro do Meio Ambiente e Mudança do Clima (MMA) sobre o passivo indenizatório oriundo da criação de Unidades de Conservação no âmbito do Instituto Chico Mendes da Biodiversidade (ICMBio) e seus respectivos Planos de Manejo.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648409"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1343/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633717"
-          },
-          {
-            "id": 2633554,
-            "sigla_tipo": "EMC",
-            "numero": 54,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633554"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=161440"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "161440",
-  "generated_at_utc": "2026-10-20T00:48:45.721538+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.375853+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1435,7 +1435,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 728,
+    "quantidade_registros": 729,
     "por_ano": [
       {
         "ano": 2023,
@@ -1451,10 +1451,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 54
+        "quantidade_registros": 55
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648409,
+        "sigla_tipo": "RIC",
+        "numero": 2775,
+        "ano": 2026,
+        "ementa": "Solicita informações ao Sr. Ministro do Meio Ambiente e Mudança do Clima (MMA) sobre o passivo indenizatório oriundo da criação de Unidades de Conservação no âmbito do Instituto Chico Mendes da Biodiversidade (ICMBio) e seus respectivos Planos de Manejo.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648409"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1542,14 +1550,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1343/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633717"
-      },
-      {
-        "id": 2633554,
-        "sigla_tipo": "EMC",
-        "numero": 54,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633554"
       },
       {
         "id": 2598301,

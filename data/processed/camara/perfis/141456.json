@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-20T00:48:13.714811+00:00",
+      "generated_at_utc": "2026-10-21T08:58:36.309371+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/141456/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 34,
+        "quantidade_registros": 35,
         "registros_recentes": [
+          {
+            "id": 2648524,
+            "sigla_tipo": "PL",
+            "numero": 5615,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 6.015, de 31 de dezembro de 1973 – Lei de Registros Públicos, para dispor sobre a inclusão do número de inscrição no Cadastro de Pessoas Físicas dos genitores no assento de nascimento.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648524"
+          },
           {
             "id": 2644789,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "“Flexibilização do horário de operação do Aeroporto de Congonhas após as 23h, considerando os impactos urbanísticos, ambientais, sociais e à saúde pública decorrentes da ampliação das operações noturnas em área densamente habitada da cidade de São Paulo”.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625986"
-          },
-          {
-            "id": 2625942,
-            "sigla_tipo": "REQ",
-            "numero": 7,
-            "ano": 2026,
-            "ementa": "Requer a realização de audiência pública para discutir a flexibilização do horário de operação do Aeroporto de Congonhas após as 23h, considerando os impactos urbanísticos, ambientais, sociais e à saúde pública decorrentes da ampliação das operações noturnas em área densamente habitada da cidade de São Paulo.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625942"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=141456"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "141456",
-  "generated_at_utc": "2026-10-20T00:48:45.673108+00:00",
+  "generated_at_utc": "2026-10-21T09:00:40.308312+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1527,7 +1527,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 275,
+    "quantidade_registros": 276,
     "por_ano": [
       {
         "ano": 2023,
@@ -1543,10 +1543,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 34
+        "quantidade_registros": 35
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648524,
+        "sigla_tipo": "PL",
+        "numero": 5615,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 6.015, de 31 de dezembro de 1973 – Lei de Registros Públicos, para dispor sobre a inclusão do número de inscrição no Cadastro de Pessoas Físicas dos genitores no assento de nascimento.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648524"
+      },
       {
         "id": 2644789,
         "sigla_tipo": "REQ",
@@ -1634,14 +1642,6 @@
         "ano": 2026,
         "ementa": "“Flexibilização do horário de operação do Aeroporto de Congonhas após as 23h, considerando os impactos urbanísticos, ambientais, sociais e à saúde pública decorrentes da ampliação das operações noturnas em área densamente habitada da cidade de São Paulo”.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625986"
-      },
-      {
-        "id": 2625942,
-        "sigla_tipo": "REQ",
-        "numero": 7,
-        "ano": 2026,
-        "ementa": "Requer a realização de audiência pública para discutir a flexibilização do horário de operação do Aeroporto de Congonhas após as 23h, considerando os impactos urbanísticos, ambientais, sociais e à saúde pública decorrentes da ampliação das operações noturnas em área densamente habitada da cidade de São Paulo.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625942"
       },
       {
         "id": 2596918,
