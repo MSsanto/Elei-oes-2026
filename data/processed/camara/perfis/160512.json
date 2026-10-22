@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:39.080171+00:00",
+      "generated_at_utc": "2026-10-22T14:52:14.534088+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/160512/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 94,
+        "quantidade_registros": 95,
         "registros_recentes": [
+          {
+            "id": 2648633,
+            "sigla_tipo": "PL",
+            "numero": 5635,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 13.146, de 6 de julho de 2015, Estatuto da Pessoa com Deficiência, para dispor sobre a garantia de meios acessíveis de alerta e acompanhamento de chamadas para atendimento presencial em órgãos públicos e estabelecimentos privados.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648633"
+          },
           {
             "id": 2647790,
             "sigla_tipo": "EMC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública sobre transparência na cobrança de \"taxas de serviço\", \"taxas de conveniência\" e encargos administrativos na venda de ingressos para eventos e shows no Brasil.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643989"
-          },
-          {
-            "id": 2643904,
-            "sigla_tipo": "RIC",
-            "numero": 2446,
-            "ano": 2026,
-            "ementa": "Requer informações ao Exmo. Sr. José Múcio Monteiro Filho, Ministro de Estado da Defesa, acerca do contido no Ofício n° 10038/2026/CH GAB MD-MD, de 16/04/2026, que tratou da resposta à Indicação nº 3.087/2025, de minha autoria, onde sugeri o acesso às graduações superiores de militares oriundos do Quadro Especial de Sargentos da Aeronáutica.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643904"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=160512"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "160512",
-  "generated_at_utc": "2026-10-21T09:00:40.163586+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.419360+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1628,7 +1628,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1078,
+    "quantidade_registros": 1079,
     "por_ano": [
       {
         "ano": 2023,
@@ -1644,10 +1644,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 94
+        "quantidade_registros": 95
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648633,
+        "sigla_tipo": "PL",
+        "numero": 5635,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 13.146, de 6 de julho de 2015, Estatuto da Pessoa com Deficiência, para dispor sobre a garantia de meios acessíveis de alerta e acompanhamento de chamadas para atendimento presencial em órgãos públicos e estabelecimentos privados.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648633"
+      },
       {
         "id": 2647790,
         "sigla_tipo": "EMC",
@@ -1735,14 +1743,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado da Justiça e Segurança Pública sobre transparência na cobrança de \"taxas de serviço\", \"taxas de conveniência\" e encargos administrativos na venda de ingressos para eventos e shows no Brasil.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643989"
-      },
-      {
-        "id": 2643904,
-        "sigla_tipo": "RIC",
-        "numero": 2446,
-        "ano": 2026,
-        "ementa": "Requer informações ao Exmo. Sr. José Múcio Monteiro Filho, Ministro de Estado da Defesa, acerca do contido no Ofício n° 10038/2026/CH GAB MD-MD, de 16/04/2026, que tratou da resposta à Indicação nº 3.087/2025, de minha autoria, onde sugeri o acesso às graduações superiores de militares oriundos do Quadro Especial de Sargentos da Aeronáutica.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643904"
       },
       {
         "id": 2598424,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:58:38.739397+00:00",
+      "generated_at_utc": "2026-10-22T14:52:57.786495+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/73579/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 79,
+        "quantidade_registros": 80,
         "registros_recentes": [
+          {
+            "id": 2648638,
+            "sigla_tipo": "PLP",
+            "numero": 272,
+            "ano": 2026,
+            "ementa": "Altera os Anexos XI e XVII da Lei Complementar nº 214, de 16 de janeiro de 2025, e acrescenta o art. 413 A à mesma lei, para dispor sobre veículos, aeronaves e embarcações destinados a órgãos estatais de defesa, segurança pública e inteligência, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648638"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1348/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636347"
-          },
-          {
-            "id": 2636346,
-            "sigla_tipo": "EMC",
-            "numero": 51,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1348/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636346"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=73579"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "73579",
-  "generated_at_utc": "2026-10-21T09:00:40.316439+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.506171+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1817,7 +1817,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1020,
+    "quantidade_registros": 1021,
     "por_ano": [
       {
         "ano": 2023,
@@ -1833,10 +1833,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 79
+        "quantidade_registros": 80
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648638,
+        "sigla_tipo": "PLP",
+        "numero": 272,
+        "ano": 2026,
+        "ementa": "Altera os Anexos XI e XVII da Lei Complementar nº 214, de 16 de janeiro de 2025, e acrescenta o art. 413 A à mesma lei, para dispor sobre veículos, aeronaves e embarcações destinados a órgãos estatais de defesa, segurança pública e inteligência, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648638"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1924,14 +1932,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1348/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636347"
-      },
-      {
-        "id": 2636346,
-        "sigla_tipo": "EMC",
-        "numero": 51,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1348/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2636346"
       },
       {
         "id": 2598944,

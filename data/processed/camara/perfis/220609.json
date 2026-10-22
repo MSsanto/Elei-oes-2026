@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:36.656448+00:00",
+      "generated_at_utc": "2026-10-22T14:51:11.142421+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220609/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 12,
+        "quantidade_registros": 13,
         "registros_recentes": [
+          {
+            "id": 2648706,
+            "sigla_tipo": "REQ",
+            "numero": 4326,
+            "ano": 2026,
+            "ementa": "Requer a inclusão na Pauta de votações do Plenário da Câmara dos Deputados da Medida Provisória nº 1.375, de 2026, (Objeto do Projeto de Lei de Conversão nº 12, de 2026) que Amplia o rol de Carreiras e Planos Especiais de Cargos cujos ocupantes fazem jus à indenização de que trata a Lei nº 12.855, de 2 de setembro de 2013.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648706"
+          },
           {
             "id": 2648381,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a realização de Sessão Solene, no Plenário desta Casa, em homenagem à Dra. Tatiana Lobo Coelho de Sampaio, por sua pesquisa sobre a polilaminina.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604269"
-          },
-          {
-            "id": 2604173,
-            "sigla_tipo": "PEC",
-            "numero": 3,
-            "ano": 2026,
-            "ementa": "Altera o art. 155 da Constituição Federal para estabelecer alíquota máxima e base de cálculo exclusiva do Imposto sobre a Propriedade de Veículos Automotores – IPVA, e acrescenta dispositivos ao Ato das Disposições Constitucionais Transitórias para limitar despesas com publicidade institucional e com o Poder Legislativo.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604173"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220609"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220609",
-  "generated_at_utc": "2026-10-21T09:00:40.157565+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.282175+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 348,
+    "quantidade_registros": 349,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 12
+        "quantidade_registros": 13
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648706,
+        "sigla_tipo": "REQ",
+        "numero": 4326,
+        "ano": 2026,
+        "ementa": "Requer a inclusão na Pauta de votações do Plenário da Câmara dos Deputados da Medida Provisória nº 1.375, de 2026, (Objeto do Projeto de Lei de Conversão nº 12, de 2026) que Amplia o rol de Carreiras e Planos Especiais de Cargos cujos ocupantes fazem jus à indenização de que trata a Lei nº 12.855, de 2 de setembro de 2013.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648706"
+      },
       {
         "id": 2648381,
         "sigla_tipo": "REQ",
@@ -1522,14 +1530,6 @@
         "ano": 2026,
         "ementa": "Requer a realização de Sessão Solene, no Plenário desta Casa, em homenagem à Dra. Tatiana Lobo Coelho de Sampaio, por sua pesquisa sobre a polilaminina.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604269"
-      },
-      {
-        "id": 2604173,
-        "sigla_tipo": "PEC",
-        "numero": 3,
-        "ano": 2026,
-        "ementa": "Altera o art. 155 da Constituição Federal para estabelecer alíquota máxima e base de cálculo exclusiva do Imposto sobre a Propriedade de Veículos Automotores – IPVA, e acrescenta dispositivos ao Ato das Disposições Constitucionais Transitórias para limitar despesas com publicidade institucional e com o Poder Legislativo.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604173"
       },
       {
         "id": 2598197,

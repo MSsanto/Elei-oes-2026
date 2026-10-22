@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:22.374168+00:00",
+      "generated_at_utc": "2026-10-22T14:51:45.685296+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204494/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 70,
+        "quantidade_registros": 71,
         "registros_recentes": [
+          {
+            "id": 2648645,
+            "sigla_tipo": "PL",
+            "numero": 5637,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 9.250, de 26 de dezembro de 1995, para assegurar prioridade na restituição do Imposto sobre a Renda das Pessoas Físicas aos contribuintes que tenham como dependentes crianças ou adolescentes com transtorno do espectro autista, deficiência ou doença grave.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648645"
+          },
           {
             "id": 2647430,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para ampliar o regime diferenciado aplicável à aquisição de automóveis por pessoas com transtornos do neurodesenvolvimento que apresentem limitações funcionais relevantes.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639539"
-          },
-          {
-            "id": 2639349,
-            "sigla_tipo": "REQ",
-            "numero": 68,
-            "ano": 2026,
-            "ementa": "Requer Moção de Aplauso ao GRAD Brasil – Grupo de Resposta a Animais em Desastres, pela atuação na missão humanitária brasileira destinada ao apoio à República Bolivariana da Venezuela, em razão dos graves terremotos que atingiram o país.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639349"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204494"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204494",
-  "generated_at_utc": "2026-10-21T09:00:40.112589+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.360754+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1547,7 +1547,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 540,
+    "quantidade_registros": 541,
     "por_ano": [
       {
         "ano": 2023,
@@ -1563,10 +1563,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 70
+        "quantidade_registros": 71
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648645,
+        "sigla_tipo": "PL",
+        "numero": 5637,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 9.250, de 26 de dezembro de 1995, para assegurar prioridade na restituição do Imposto sobre a Renda das Pessoas Físicas aos contribuintes que tenham como dependentes crianças ou adolescentes com transtorno do espectro autista, deficiência ou doença grave.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648645"
+      },
       {
         "id": 2647430,
         "sigla_tipo": "REQ",
@@ -1654,14 +1662,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei Complementar nº 214, de 16 de janeiro de 2025, para ampliar o regime diferenciado aplicável à aquisição de automóveis por pessoas com transtornos do neurodesenvolvimento que apresentem limitações funcionais relevantes.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639539"
-      },
-      {
-        "id": 2639349,
-        "sigla_tipo": "REQ",
-        "numero": 68,
-        "ano": 2026,
-        "ementa": "Requer Moção de Aplauso ao GRAD Brasil – Grupo de Resposta a Animais em Desastres, pela atuação na missão humanitária brasileira destinada ao apoio à República Bolivariana da Venezuela, em razão dos graves terremotos que atingiram o país.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2639349"
       },
       {
         "id": 2598197,

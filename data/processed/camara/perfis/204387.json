@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T09:00:25.807914+00:00",
+      "generated_at_utc": "2026-10-22T14:52:59.959667+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204387/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 64,
+        "quantidade_registros": 65,
         "registros_recentes": [
+          {
+            "id": 2648642,
+            "sigla_tipo": "REQ",
+            "numero": 4322,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a aprovação de Moção de Repúdio à postura militante e ideologizada do Ministério das Relações Exteriores na condução da política externa brasileira, marcada pela adoção de retórica agressiva contra agentes nacionais e pela violação da tradição de isenção e profissionalismo da diplomacia, colocando em risco os interesses soberanos do país.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635426"
-          },
-          {
-            "id": 2634923,
-            "sigla_tipo": "REQ",
-            "numero": 90,
-            "ano": 2026,
-            "ementa": "Requer que a Comissão de Relações Exteriores e de Defesa Nacional oficie a Embaixada dos Estados Unidos da América no Brasil, em Brasília/DF, solicitando o fornecimento de estudos, levantamentos e informações detalhadas sobre o avanço do crime organizado transnacional, com ênfase no narcotráfico, no Brasil e na América Latina, incluindo suas estratégias de influência para o controle territorial e institucional, especialmente por meio do financiamento ilícito de campanhas eleitorais.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634923"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204387"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204387",
-  "generated_at_utc": "2026-10-21T09:00:40.571299+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.509190+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1484,7 +1484,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 599,
+    "quantidade_registros": 600,
     "por_ano": [
       {
         "ano": 2023,
@@ -1500,10 +1500,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 64
+        "quantidade_registros": 65
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648642,
+        "sigla_tipo": "REQ",
+        "numero": 4322,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1591,14 +1599,6 @@
         "ano": 2026,
         "ementa": "Requer a aprovação de Moção de Repúdio à postura militante e ideologizada do Ministério das Relações Exteriores na condução da política externa brasileira, marcada pela adoção de retórica agressiva contra agentes nacionais e pela violação da tradição de isenção e profissionalismo da diplomacia, colocando em risco os interesses soberanos do país.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2635426"
-      },
-      {
-        "id": 2634923,
-        "sigla_tipo": "REQ",
-        "numero": 90,
-        "ano": 2026,
-        "ementa": "Requer que a Comissão de Relações Exteriores e de Defesa Nacional oficie a Embaixada dos Estados Unidos da América no Brasil, em Brasília/DF, solicitando o fornecimento de estudos, levantamentos e informações detalhadas sobre o avanço do crime organizado transnacional, com ênfase no narcotráfico, no Brasil e na América Latina, incluindo suas estratégias de influência para o controle territorial e institucional, especialmente por meio do financiamento ilícito de campanhas eleitorais.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2634923"
       },
       {
         "id": 2596370,

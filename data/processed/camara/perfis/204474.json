@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:58:20.803942+00:00",
+      "generated_at_utc": "2026-10-22T14:50:17.467205+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204474/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 15,
+        "quantidade_registros": 16,
         "registros_recentes": [
+          {
+            "id": 2648696,
+            "sigla_tipo": "REQ",
+            "numero": 4325,
+            "ano": 2026,
+            "ementa": "Requer inclusão na Ordem do dia da Medida Provisória n° 1375, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648696"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 13.656, de 30 de abril de 2018, para incluir o voluntário cadastrado no Registro Nacional de Doadores Voluntários de Medula Óssea (REDOME) como beneficiário da isenção do pagamento de taxa de inscrição em concursos públicos.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607536"
-          },
-          {
-            "id": 2607534,
-            "sigla_tipo": "PL",
-            "numero": 1027,
-            "ano": 2026,
-            "ementa": "Altera o artigo 126 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a fim de tipificar a conduta do agente que coage, induz, instiga ou presta auxílio material ou financeiro à gestante para a prática de aborto fora das hipóteses permitidas em lei.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607534"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204474"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204474",
-  "generated_at_utc": "2026-10-21T09:00:40.275543+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.173981+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1548,7 +1548,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 213,
+    "quantidade_registros": 214,
     "por_ano": [
       {
         "ano": 2023,
@@ -1564,10 +1564,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 15
+        "quantidade_registros": 16
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648696,
+        "sigla_tipo": "REQ",
+        "numero": 4325,
+        "ano": 2026,
+        "ementa": "Requer inclusão na Ordem do dia da Medida Provisória n° 1375, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648696"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1655,14 +1663,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 13.656, de 30 de abril de 2018, para incluir o voluntário cadastrado no Registro Nacional de Doadores Voluntários de Medula Óssea (REDOME) como beneficiário da isenção do pagamento de taxa de inscrição em concursos públicos.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607536"
-      },
-      {
-        "id": 2607534,
-        "sigla_tipo": "PL",
-        "numero": 1027,
-        "ano": 2026,
-        "ementa": "Altera o artigo 126 do Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), a fim de tipificar a conduta do agente que coage, induz, instiga ou presta auxílio material ou financeiro à gestante para a prática de aborto fora das hipóteses permitidas em lei.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2607534"
       },
       {
         "id": 2598301,

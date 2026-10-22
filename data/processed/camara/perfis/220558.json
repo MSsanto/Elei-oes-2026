@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:58:38.628042+00:00",
+      "generated_at_utc": "2026-10-22T14:53:13.231559+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220558/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 83,
+        "quantidade_registros": 85,
         "registros_recentes": [
+          {
+            "id": 2648677,
+            "sigla_tipo": "PL",
+            "numero": 5639,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para reduzir o prazo de habilitação ao voto em trânsito, admitir a habilitação por meio eletrônico e dispor sobre o voto em trânsito dos motoristas profissionais de transporte rodoviário de cargas, inclusive em seções eleitorais instaladas em postos da Polícia Rodoviária Federal.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648677"
+          },
+          {
+            "id": 2648642,
+            "sigla_tipo": "REQ",
+            "numero": 4322,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+          },
           {
             "id": 2646302,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Dá nova redação à MPV 1343/2026",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633884"
-          },
-          {
-            "id": 2633881,
-            "sigla_tipo": "EMC",
-            "numero": 366,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633881"
-          },
-          {
-            "id": 2633876,
-            "sigla_tipo": "EMC",
-            "numero": 361,
-            "ano": 2026,
-            "ementa": "Dá nova redação à MPV 1343/2026",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633876"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220558"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220558",
-  "generated_at_utc": "2026-10-21T09:00:40.315085+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.533114+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1415,7 +1415,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 887,
+    "quantidade_registros": 889,
     "por_ano": [
       {
         "ano": 2023,
@@ -1431,10 +1431,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 83
+        "quantidade_registros": 85
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648677,
+        "sigla_tipo": "PL",
+        "numero": 5639,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 4.737, de 15 de julho de 1965 (Código Eleitoral), para reduzir o prazo de habilitação ao voto em trânsito, admitir a habilitação por meio eletrônico e dispor sobre o voto em trânsito dos motoristas profissionais de transporte rodoviário de cargas, inclusive em seções eleitorais instaladas em postos da Polícia Rodoviária Federal.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648677"
+      },
+      {
+        "id": 2648642,
+        "sigla_tipo": "REQ",
+        "numero": 4322,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+      },
       {
         "id": 2646302,
         "sigla_tipo": "REQ",
@@ -1514,22 +1530,6 @@
         "ano": 2026,
         "ementa": "Dá nova redação à MPV 1343/2026",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633884"
-      },
-      {
-        "id": 2633881,
-        "sigla_tipo": "EMC",
-        "numero": 366,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633881"
-      },
-      {
-        "id": 2633876,
-        "sigla_tipo": "EMC",
-        "numero": 361,
-        "ano": 2026,
-        "ementa": "Dá nova redação à MPV 1343/2026",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633876"
       },
       {
         "id": 2598301,

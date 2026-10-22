@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:59:27.263947+00:00",
+      "generated_at_utc": "2026-10-22T14:51:17.079044+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/92699/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 12,
+        "quantidade_registros": 13,
         "registros_recentes": [
+          {
+            "id": 2648703,
+            "sigla_tipo": "PL",
+            "numero": 5645,
+            "ano": 2026,
+            "ementa": "Altera a Lei nº 8.383, de 30 de dezembro de 1991, para assegurar às instituições autorizadas a funcionar pelo Banco Central do Brasil e às demais pessoas jurídicas sujeitas a deveres legais de prevenção à lavagem de dinheiro, ao financiamento do terrorismo e à fraude o acesso isonômico, mediante convênio, às informações cadastrais não protegidas por sigilo fiscal mantidas pela Secretaria Especial da Receita Federal do Brasil.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648703"
+          },
           {
             "id": 2639609,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 1.125, de 2025, que “Confere ao Município de Lagoa Grande, no Estado de Pernambuco, o título de ‘Capital Nordestina da Uva e do Vinho’ e dá outras providências.”",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2609819"
-          },
-          {
-            "id": 2600011,
-            "sigla_tipo": "REQ",
-            "numero": 18,
-            "ano": 2026,
-            "ementa": "Requer a realização de Sessão Solene em homenagem aos 35 (trinta e cinco) anos da TV Asa Branca.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2600011"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=92699"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "92699",
-  "generated_at_utc": "2026-10-21T09:00:40.437840+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.295343+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1735,7 +1735,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 102,
+    "quantidade_registros": 103,
     "por_ano": [
       {
         "ano": 2023,
@@ -1751,10 +1751,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 12
+        "quantidade_registros": 13
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648703,
+        "sigla_tipo": "PL",
+        "numero": 5645,
+        "ano": 2026,
+        "ementa": "Altera a Lei nº 8.383, de 30 de dezembro de 1991, para assegurar às instituições autorizadas a funcionar pelo Banco Central do Brasil e às demais pessoas jurídicas sujeitas a deveres legais de prevenção à lavagem de dinheiro, ao financiamento do terrorismo e à fraude o acesso isonômico, mediante convênio, às informações cadastrais não protegidas por sigilo fiscal mantidas pela Secretaria Especial da Receita Federal do Brasil.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648703"
+      },
       {
         "id": 2639609,
         "sigla_tipo": "REQ",
@@ -1842,14 +1850,6 @@
         "ano": 2026,
         "ementa": "Requer regime de urgência para apreciação do Projeto de Lei nº 1.125, de 2025, que “Confere ao Município de Lagoa Grande, no Estado de Pernambuco, o título de ‘Capital Nordestina da Uva e do Vinho’ e dá outras providências.”",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2609819"
-      },
-      {
-        "id": 2600011,
-        "sigla_tipo": "REQ",
-        "numero": 18,
-        "ano": 2026,
-        "ementa": "Requer a realização de Sessão Solene em homenagem aos 35 (trinta e cinco) anos da TV Asa Branca.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2600011"
       },
       {
         "id": 2598197,

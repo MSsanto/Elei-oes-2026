@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:27.050904+00:00",
+      "generated_at_utc": "2026-10-22T14:51:03.294400+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204570/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 40,
+        "quantidade_registros": 41,
         "registros_recentes": [
+          {
+            "id": 2648642,
+            "sigla_tipo": "REQ",
+            "numero": 4322,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+          },
           {
             "id": 2645067,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Dia Nacional de Proteção das  Pessoas com Deficiência no Ambiente Escolar, a ser celebrado anualmente em todas as escolas públicas e privadas do País, e dá outras providências.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633254"
-          },
-          {
-            "id": 2633143,
-            "sigla_tipo": "PL",
-            "numero": 3167,
-            "ano": 2026,
-            "ementa": "Institui a Semana Nacional de Proteção de Crianças e Adolescentes nas Escolas Públicas e Privadas em todo o território nacional e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633143"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204570"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204570",
-  "generated_at_utc": "2026-10-21T09:00:40.126697+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.262401+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1530,7 +1530,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 305,
+    "quantidade_registros": 306,
     "por_ano": [
       {
         "ano": 2023,
@@ -1546,10 +1546,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 40
+        "quantidade_registros": 41
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648642,
+        "sigla_tipo": "REQ",
+        "numero": 4322,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+      },
       {
         "id": 2645067,
         "sigla_tipo": "PL",
@@ -1637,14 +1645,6 @@
         "ano": 2026,
         "ementa": "Institui o Dia Nacional de Proteção das  Pessoas com Deficiência no Ambiente Escolar, a ser celebrado anualmente em todas as escolas públicas e privadas do País, e dá outras providências.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633254"
-      },
-      {
-        "id": 2633143,
-        "sigla_tipo": "PL",
-        "numero": 3167,
-        "ano": 2026,
-        "ementa": "Institui a Semana Nacional de Proteção de Crianças e Adolescentes nas Escolas Públicas e Privadas em todo o território nacional e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2633143"
       },
       {
         "id": 2598197,

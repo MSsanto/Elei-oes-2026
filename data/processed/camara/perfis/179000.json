@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:54.908130+00:00",
+      "generated_at_utc": "2026-10-22T14:51:05.432255+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/179000/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 17,
+        "quantidade_registros": 18,
         "registros_recentes": [
+          {
+            "id": 2648690,
+            "sigla_tipo": "PL",
+            "numero": 5640,
+            "ano": 2026,
+            "ementa": "Acrescenta o art. 242-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de manipulação fraudulenta da opinião pública mediante ocultação de patrocínio ou financiamento por agentes econômicos ou organizações criminosas, e dá outras providências.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648690"
+          },
           {
             "id": 2648400,
             "sigla_tipo": "PRC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-          },
-          {
-            "id": 2610645,
-            "sigla_tipo": "REC",
-            "numero": 6,
-            "ano": 2026,
-            "ementa": "Recurso contra a apreciação terminativa de comissão à emenda de plenário n. 1, apresentada ao PL 3.880 de 2024.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2610645"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=179000"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "179000",
-  "generated_at_utc": "2026-10-21T09:00:40.209934+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.267322+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1723,7 +1723,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 372,
+    "quantidade_registros": 373,
     "por_ano": [
       {
         "ano": 2023,
@@ -1739,10 +1739,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 17
+        "quantidade_registros": 18
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648690,
+        "sigla_tipo": "PL",
+        "numero": 5640,
+        "ano": 2026,
+        "ementa": "Acrescenta o art. 242-A ao Decreto-Lei nº 2.848, de 7 de dezembro de 1940 (Código Penal), para tipificar o crime de manipulação fraudulenta da opinião pública mediante ocultação de patrocínio ou financiamento por agentes econômicos ou organizações criminosas, e dá outras providências.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648690"
+      },
       {
         "id": 2648400,
         "sigla_tipo": "PRC",
@@ -1830,14 +1838,6 @@
         "ano": 2026,
         "ementa": "Altera o art. 228 da Constituição Federal para admitir, em caráter excepcional, a redução da maioridade penal em casos de crimes hediondos e de crueldade extrema contra pessoas e animais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2623400"
-      },
-      {
-        "id": 2610645,
-        "sigla_tipo": "REC",
-        "numero": 6,
-        "ano": 2026,
-        "ementa": "Recurso contra a apreciação terminativa de comissão à emenda de plenário n. 1, apresentada ao PL 3.880 de 2024.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2610645"
       },
       {
         "id": 2598301,

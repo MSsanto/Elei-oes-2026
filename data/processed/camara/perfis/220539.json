@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:59:52.861182+00:00",
+      "generated_at_utc": "2026-10-22T14:50:41.358660+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220539/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 15,
+        "quantidade_registros": 16,
         "registros_recentes": [
+          {
+            "id": 2648639,
+            "sigla_tipo": "RIC",
+            "numero": 2794,
+            "ano": 2026,
+            "ementa": "Solicita ao Ministro de Estado da Defesa sobre a fiscalização militar do trânsito fronteiriço de mercadorias e as abordagens a consumidores e a atuação nas proximidades de estabelecimentos comerciais de Pacaraima/RR",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648639"
+          },
           {
             "id": 2644734,
             "sigla_tipo": "REQ",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui rito regulatório especial e simplificado para homologação, certificação e introdução de veículos automotores no mercado nacional, com vistas à ampliação da competitividade, redução de custos estruturais e atração de novos investimentos produtivos no setor automotivo.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2600897"
-          },
-          {
-            "id": 2600895,
-            "sigla_tipo": "PL",
-            "numero": 284,
-            "ano": 2026,
-            "ementa": "Institui normas gerais para o reconhecimento e a proteção de cães e gatos comunitários, define diretrizes de identificação, cuidado sanitário, responsabilidade comunitária e cooperação entre entes federativos, e dá outras providências.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2600895"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220539"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220539",
-  "generated_at_utc": "2026-10-21T09:00:40.503248+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.214618+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1431,7 +1431,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 547,
+    "quantidade_registros": 548,
     "por_ano": [
       {
         "ano": 2023,
@@ -1447,10 +1447,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 15
+        "quantidade_registros": 16
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648639,
+        "sigla_tipo": "RIC",
+        "numero": 2794,
+        "ano": 2026,
+        "ementa": "Solicita ao Ministro de Estado da Defesa sobre a fiscalização militar do trânsito fronteiriço de mercadorias e as abordagens a consumidores e a atuação nas proximidades de estabelecimentos comerciais de Pacaraima/RR",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648639"
+      },
       {
         "id": 2644734,
         "sigla_tipo": "REQ",
@@ -1538,14 +1546,6 @@
         "ano": 2026,
         "ementa": "Institui rito regulatório especial e simplificado para homologação, certificação e introdução de veículos automotores no mercado nacional, com vistas à ampliação da competitividade, redução de custos estruturais e atração de novos investimentos produtivos no setor automotivo.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2600897"
-      },
-      {
-        "id": 2600895,
-        "sigla_tipo": "PL",
-        "numero": 284,
-        "ano": 2026,
-        "ementa": "Institui normas gerais para o reconhecimento e a proteção de cães e gatos comunitários, define diretrizes de identificação, cuidado sanitário, responsabilidade comunitária e cooperação entre entes federativos, e dá outras providências.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2600895"
       },
       {
         "id": 2594651,

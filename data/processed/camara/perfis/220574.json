@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T09:00:20.257373+00:00",
+      "generated_at_utc": "2026-10-22T14:53:58.745586+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,24 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220574/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 186,
+        "quantidade_registros": 188,
         "registros_recentes": [
+          {
+            "id": 2648642,
+            "sigla_tipo": "REQ",
+            "numero": 4322,
+            "ano": 2026,
+            "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+          },
+          {
+            "id": 2648637,
+            "sigla_tipo": "RIC",
+            "numero": 2793,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Casa Civil da Presidência da República acerca das despesas realizadas com cartões corporativos no âmbito do Governo Federal, no período de janeiro de 2023 até a data do recebimento deste Requerimento de Informação.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648637"
+          },
           {
             "id": 2648402,
             "sigla_tipo": "REQ",
@@ -1041,22 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-          },
-          {
-            "id": 2643662,
-            "sigla_tipo": "REC",
-            "numero": 18,
-            "ano": 2026,
-            "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
-          },
-          {
-            "id": 2642404,
-            "sigla_tipo": "REQ",
-            "numero": 121,
-            "ano": 2026,
-            "ementa": "Requer o envio, por esta Comissão, de Indicação ao Poder Executivo, em específico ao Ministério da Defesa, para a adoção das medidas necessárias à responsabilização da conduta o General de Divisão Emílio Vanderlei Ribeiro em episódio envolvendo o Deputado Federal Marcel van Hattem nas dependências da Câmara dos Deputados, inclusive mediante a instauração de processo administrativo disciplinar ou de outro procedimento disciplinar formal cabível no âmbito do Exército Brasileiro.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642404"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220574"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220574",
-  "generated_at_utc": "2026-10-21T09:00:40.557292+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.633709+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1420,7 +1420,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 1370,
+    "quantidade_registros": 1372,
     "por_ano": [
       {
         "ano": 2023,
@@ -1436,10 +1436,26 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 186
+        "quantidade_registros": 188
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648642,
+        "sigla_tipo": "REQ",
+        "numero": 4322,
+        "ano": 2026,
+        "ementa": "Requer, nos termos regimentais, a inclusão de coautoria deputados subscritores do presente requerimento ao Projeto de Lei nº 2.976, de 2026.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648642"
+      },
+      {
+        "id": 2648637,
+        "sigla_tipo": "RIC",
+        "numero": 2793,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Casa Civil da Presidência da República acerca das despesas realizadas com cartões corporativos no âmbito do Governo Federal, no período de janeiro de 2023 até a data do recebimento deste Requerimento de Informação.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648637"
+      },
       {
         "id": 2648402,
         "sigla_tipo": "REQ",
@@ -1519,22 +1535,6 @@
         "ano": 2026,
         "ementa": "Requer a criação da Frente Parlamentar Mista pela Integração Continental e Desenvolvimento Sul-Americano",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2644734"
-      },
-      {
-        "id": 2643662,
-        "sigla_tipo": "REC",
-        "numero": 18,
-        "ano": 2026,
-        "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
-      },
-      {
-        "id": 2642404,
-        "sigla_tipo": "REQ",
-        "numero": 121,
-        "ano": 2026,
-        "ementa": "Requer o envio, por esta Comissão, de Indicação ao Poder Executivo, em específico ao Ministério da Defesa, para a adoção das medidas necessárias à responsabilização da conduta o General de Divisão Emílio Vanderlei Ribeiro em episódio envolvendo o Deputado Federal Marcel van Hattem nas dependências da Câmara dos Deputados, inclusive mediante a instauração de processo administrativo disciplinar ou de outro procedimento disciplinar formal cabível no âmbito do Exército Brasileiro.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2642404"
       },
       {
         "id": 2598301,

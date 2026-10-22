@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:36.000064+00:00",
+      "generated_at_utc": "2026-10-22T14:49:46.572888+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/220616/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 136,
+        "quantidade_registros": 137,
         "registros_recentes": [
+          {
+            "id": 2648673,
+            "sigla_tipo": "INC",
+            "numero": 1642,
+            "ano": 2026,
+            "ementa": "Sugere ao Ministro de Estado da Saúde estudo de viabilidade para construção de Hospital de referência para tratamento de câncer na Zona Oeste da cidade do Rio de Janeiro/RJ.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648673"
+          },
           {
             "id": 2628628,
             "sigla_tipo": "PL",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requeiro, nos termos nos termos regimentais, a RETIRADA da minha ASSINATURA  e APOIAMENTO a Emenda Nº 1, na PEC Nº 221 de 2019.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626045"
-          },
-          {
-            "id": 2625988,
-            "sigla_tipo": "PL",
-            "numero": 2488,
-            "ano": 2026,
-            "ementa": "Dispõe sobre a obrigatoriedade de divulgação do Protocolo CALMA., ou de protocolos similares que venham a substituí-lo ou atualiza-lo, contendo orientações de primeiros socorros em caso de crises convulsivas.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625988"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=220616"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "220616",
-  "generated_at_utc": "2026-10-21T09:00:40.154685+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.099013+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1483,7 +1483,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 586,
+    "quantidade_registros": 587,
     "por_ano": [
       {
         "ano": 2023,
@@ -1499,10 +1499,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 136
+        "quantidade_registros": 137
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648673,
+        "sigla_tipo": "INC",
+        "numero": 1642,
+        "ano": 2026,
+        "ementa": "Sugere ao Ministro de Estado da Saúde estudo de viabilidade para construção de Hospital de referência para tratamento de câncer na Zona Oeste da cidade do Rio de Janeiro/RJ.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648673"
+      },
       {
         "id": 2628628,
         "sigla_tipo": "PL",
@@ -1590,14 +1598,6 @@
         "ano": 2026,
         "ementa": "Requeiro, nos termos nos termos regimentais, a RETIRADA da minha ASSINATURA  e APOIAMENTO a Emenda Nº 1, na PEC Nº 221 de 2019.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2626045"
-      },
-      {
-        "id": 2625988,
-        "sigla_tipo": "PL",
-        "numero": 2488,
-        "ano": 2026,
-        "ementa": "Dispõe sobre a obrigatoriedade de divulgação do Protocolo CALMA., ou de protocolos similares que venham a substituí-lo ou atualiza-lo, contendo orientações de primeiros socorros em caso de crises convulsivas.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2625988"
       },
       {
         "id": 2598726,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T09:00:04.158109+00:00",
+      "generated_at_utc": "2026-10-22T14:51:43.467945+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204365/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 87,
+        "quantidade_registros": 88,
         "registros_recentes": [
+          {
+            "id": 2648634,
+            "sigla_tipo": "RIC",
+            "numero": 2792,
+            "ano": 2026,
+            "ementa": "Requer informações ao Ministro de Estado da Fazenda, solicitando dados e esclarecimentos sobre a metodologia de apuração e de revisão da capacidade de pagamento de contribuintes e sobre os prazos e procedimentos adotados pela Procuradoria-Geral da Fazenda Nacional na análise de propostas de transação tributária individual.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648634"
+          },
           {
             "id": 2646668,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Institui o Sistema Nacional de Informações sobre Emendas Parlamentares na Saúde.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643962"
-          },
-          {
-            "id": 2643662,
-            "sigla_tipo": "REC",
-            "numero": 18,
-            "ano": 2026,
-            "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204365"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204365",
-  "generated_at_utc": "2026-10-21T09:00:40.524538+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.356496+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1468,7 +1468,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 696,
+    "quantidade_registros": 697,
     "por_ano": [
       {
         "ano": 2023,
@@ -1484,10 +1484,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 87
+        "quantidade_registros": 88
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648634,
+        "sigla_tipo": "RIC",
+        "numero": 2792,
+        "ano": 2026,
+        "ementa": "Requer informações ao Ministro de Estado da Fazenda, solicitando dados e esclarecimentos sobre a metodologia de apuração e de revisão da capacidade de pagamento de contribuintes e sobre os prazos e procedimentos adotados pela Procuradoria-Geral da Fazenda Nacional na análise de propostas de transação tributária individual.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648634"
+      },
       {
         "id": 2646668,
         "sigla_tipo": "RIC",
@@ -1575,14 +1583,6 @@
         "ano": 2026,
         "ementa": "Institui o Sistema Nacional de Informações sobre Emendas Parlamentares na Saúde.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643962"
-      },
-      {
-        "id": 2643662,
-        "sigla_tipo": "REC",
-        "numero": 18,
-        "ano": 2026,
-        "ementa": "Recurso contra a apreciação conclusiva do Projeto de Lei nº 5.094, de 2019",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2643662"
       },
       {
         "id": 2598387,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:13.577176+00:00",
+      "generated_at_utc": "2026-10-22T14:50:24.800875+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204455/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 143,
+        "quantidade_registros": 144,
         "registros_recentes": [
+          {
+            "id": 2648659,
+            "sigla_tipo": "REQ",
+            "numero": 4323,
+            "ano": 2026,
+            "ementa": "Nos termos do art. 104, §2º, do Regimento Interno da Câmara dos Deputados, requeremos a Vossa Excelência a retirada de tramitação do Requerimento de Informação nº 2639, de 2026, de nossa autoria, dirigido à Ministra de Estado Chefe da Casa Civil da Presidência da República.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648659"
+          },
           {
             "id": 2646908,
             "sigla_tipo": "RIC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Requer informações ao Ministro de Estado Chefe da Casa Civil da Presidência da República, Sr. Rui Costa dos Santos, em caráter complementar ao Requerimento de Informação nº 1275/2026, sobre fundamentos jurídicos, processos internos e manifestações da Advocacia-Geral da União relativos a propostas infralegais de regulação de plataformas digitais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646577"
-          },
-          {
-            "id": 2646569,
-            "sigla_tipo": "RIC",
-            "numero": 2635,
-            "ano": 2026,
-            "ementa": "Requer informações complementares ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, sobre lacunas na resposta ao Requerimento de Informação nº 1093/2026, referente à abordagem da Polícia Federal a cidadão em Presidente Prudente/SP.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646569"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204455"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204455",
-  "generated_at_utc": "2026-10-21T09:00:40.087185+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.186371+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1532,7 +1532,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 873,
+    "quantidade_registros": 874,
     "por_ano": [
       {
         "ano": 2023,
@@ -1548,10 +1548,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 143
+        "quantidade_registros": 144
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648659,
+        "sigla_tipo": "REQ",
+        "numero": 4323,
+        "ano": 2026,
+        "ementa": "Nos termos do art. 104, §2º, do Regimento Interno da Câmara dos Deputados, requeremos a Vossa Excelência a retirada de tramitação do Requerimento de Informação nº 2639, de 2026, de nossa autoria, dirigido à Ministra de Estado Chefe da Casa Civil da Presidência da República.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648659"
+      },
       {
         "id": 2646908,
         "sigla_tipo": "RIC",
@@ -1639,14 +1647,6 @@
         "ano": 2026,
         "ementa": "Requer informações ao Ministro de Estado Chefe da Casa Civil da Presidência da República, Sr. Rui Costa dos Santos, em caráter complementar ao Requerimento de Informação nº 1275/2026, sobre fundamentos jurídicos, processos internos e manifestações da Advocacia-Geral da União relativos a propostas infralegais de regulação de plataformas digitais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646577"
-      },
-      {
-        "id": 2646569,
-        "sigla_tipo": "RIC",
-        "numero": 2635,
-        "ano": 2026,
-        "ementa": "Requer informações complementares ao Ministro de Estado da Justiça e Segurança Pública, Sr. Wellington César Lima e Silva, sobre lacunas na resposta ao Requerimento de Informação nº 1093/2026, referente à abordagem da Polícia Federal a cidadão em Presidente Prudente/SP.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2646569"
       },
       {
         "id": 2598301,

@@ -952,7 +952,7 @@
       }
     },
     "2026": {
-      "generated_at_utc": "2026-10-21T08:57:48.800049+00:00",
+      "generated_at_utc": "2026-10-22T14:52:07.442056+00:00",
       "despesas": {
         "quantidade_registros": 0,
         "valor_liquido_total": 0,
@@ -960,8 +960,16 @@
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/deputados/204358/despesas?ano=2026"
       },
       "proposicoes": {
-        "quantidade_registros": 16,
+        "quantidade_registros": 17,
         "registros_recentes": [
+          {
+            "id": 2648644,
+            "sigla_tipo": "REQ",
+            "numero": 68,
+            "ano": 2026,
+            "ementa": "Requer a realização de Audiência Pública para debater os problemas na prestação de serviços de fornecimento de energia elétrica pela ENERGISA em Mato Grosso do Sul.",
+            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648644"
+          },
           {
             "id": 2644800,
             "sigla_tipo": "PEC",
@@ -1049,14 +1057,6 @@
             "ano": 2026,
             "ementa": "Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para agravar as penas cominadas a crimes ambientais e alterar a redação de alguns tipos penais.",
             "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604634"
-          },
-          {
-            "id": 2604633,
-            "sigla_tipo": "PL",
-            "numero": 743,
-            "ano": 2026,
-            "ementa": "Altera a Lei nº 9.472, de 16 de julho de 1997 (Lei Geral das Telecomunicações), para disciplinar a retirada de equipamentos instalados por prestadora de serviço de telecomunicações no endereço do assinante, em caso de cancelamento dos serviços.",
-            "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604633"
           }
         ],
         "fonte_url": "https://dadosabertos.camara.leg.br/api/v2/proposicoes?idDeputadoAutor=204358"
@@ -1271,7 +1271,7 @@
   },
   "schema_version": 2,
   "camara_id_deputado": "204358",
-  "generated_at_utc": "2026-10-21T09:00:40.191238+00:00",
+  "generated_at_utc": "2026-10-22T14:53:59.406158+00:00",
   "periodo": {
     "inicio": 2023,
     "fim": 2026,
@@ -1479,7 +1479,7 @@
       "inicio": 2023,
       "fim": 2026
     },
-    "quantidade_registros": 206,
+    "quantidade_registros": 207,
     "por_ano": [
       {
         "ano": 2023,
@@ -1495,10 +1495,18 @@
       },
       {
         "ano": 2026,
-        "quantidade_registros": 16
+        "quantidade_registros": 17
       }
     ],
     "registros_recentes": [
+      {
+        "id": 2648644,
+        "sigla_tipo": "REQ",
+        "numero": 68,
+        "ano": 2026,
+        "ementa": "Requer a realização de Audiência Pública para debater os problemas na prestação de serviços de fornecimento de energia elétrica pela ENERGISA em Mato Grosso do Sul.",
+        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2648644"
+      },
       {
         "id": 2644800,
         "sigla_tipo": "PEC",
@@ -1586,14 +1594,6 @@
         "ano": 2026,
         "ementa": "Altera a Lei nº 9.605, de 12 de fevereiro de 1998, para agravar as penas cominadas a crimes ambientais e alterar a redação de alguns tipos penais.",
         "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604634"
-      },
-      {
-        "id": 2604633,
-        "sigla_tipo": "PL",
-        "numero": 743,
-        "ano": 2026,
-        "ementa": "Altera a Lei nº 9.472, de 16 de julho de 1997 (Lei Geral das Telecomunicações), para disciplinar a retirada de equipamentos instalados por prestadora de serviço de telecomunicações no endereço do assinante, em caso de cancelamento dos serviços.",
-        "uri": "https://dadosabertos.camara.leg.br/api/v2/proposicoes/2604633"
       },
       {
         "id": 2596372,
