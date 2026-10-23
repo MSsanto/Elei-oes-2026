@@ -1,13 +1,8 @@
 name: Deploy TSE Browser Probe
 
 on:
+  # Produção congelada: deploy somente manual. PR continua validando o bundle sem publicar.
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'workers/tse-browser-probe/**'
-      - '.github/workflows/deploy-tse-browser-probe.yml'
   pull_request:
     branches:
       - main
