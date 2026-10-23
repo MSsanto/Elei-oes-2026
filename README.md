@@ -1,5 +1,7 @@
 # Eleições 2026 — Transparência de Campanhas e Mandatos
 
+> **Status operacional — encerramento 2026:** as atualizações recorrentes foram congeladas em **22/10/2026**. O segundo turno oficial ocorre em **25/10/2026** e haverá uma única atualização final em **26/10/2026**, quando será consolidada a consulta de **eleitas e eleitos**. Depois disso, o projeto permanecerá como arquivo histórico até reabertura explícita. Veja [docs/ENCERRAMENTO_2026.md](docs/ENCERRAMENTO_2026.md).
+
 Projeto open source para organizar e tornar mais acessíveis dados públicos eleitorais e parlamentares das **Eleições 2026**.
 
 **Site:** https://eleicoes-2026-ebz.pages.dev
