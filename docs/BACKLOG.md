@@ -1,7 +1,7 @@
 # Backlog — Eleições 2026 — Transparência Eleitoral
 
-Última revisão: **09/09/2026**  
-Fase atual: **Fase 2 — Editorial**  
+Última revisão: **22/10/2026**  
+Fase atual: **Encerramento 2026 — congelamento pós-eleição**  
 Fonte canônica do trabalho planejado: **este arquivo**.
 
 O `BACKLOG.md` registra tarefas concretas, prioridades, estado e vínculos com Issues/PRs. O [`ROADMAP.md`](ROADMAP.md) descreve a direção estratégica por fases.
@@ -24,13 +24,36 @@ O `BACKLOG.md` registra tarefas concretas, prioridades, estado e vínculos com I
 
 ---
 
+## 🧊 Encerramento 2026
+
+Decisão canônica: [ENCERRAMENTO_2026.md](ENCERRAMENTO_2026.md).
+
+- [x] Suspender agendas recorrentes de candidaturas, finanças e patrimônio.
+- [x] Suspender watchdog periódico.
+- [x] Desativar deploy automático do Browser Worker por `push`.
+- [x] Manter CI de validação e contingência manual sem atualização automática de produção.
+- [ ] **26/10/2026:** executar o snapshot final pós-segundo turno com dados oficiais do TSE.
+- [ ] **26/10/2026:** criar a aba pública **Eleitos**.
+- [ ] Validar build, rotas e fonte oficial da listagem de eleitas e eleitos.
+- [ ] Registrar commit/release do snapshot final e declarar o projeto congelado.
+
+### Pautas educativas preservadas para eventual reativação
+
+- Você sabe o que é quociente eleitoral?
+- Você sabe a diferença entre votos brancos e votos nulos?
+- Quantos são e como são distribuídos os deputados federais e os senadores?
+
+Estas pautas permanecem registradas, mas não serão publicadas no ciclo de encerramento.
+
+---
+
 ## 🚧 Em andamento
 
 Nenhuma entrega da fundação editorial está em validação operacional neste momento. Novos trabalhos entram nesta seção quando houver Issue/PR/branch ativo.
 
 ---
 
-## 📋 Próximas prioridades
+## 🧊 Backlog congelado para eventual reativação
 
 ### P1 — Expediente e política de correções
 

@@ -1,15 +1,8 @@
 name: Coleta financas eleitorais 2026
 
 on:
+  # Dados congelados em 22/10/2026: coleta somente manual; PR mantém validação sem publicar dados.
   workflow_dispatch:
-  schedule:
-    # 06:40 e 18:40 em Brasilia (UTC-3).
-    - cron: "40 9,21 * * *"
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/finance-trigger.txt'
   pull_request:
     branches:
       - main

@@ -1,15 +1,8 @@
 name: Coleta patrimonio eleitoral 2026
 
 on:
+  # Dados congelados em 22/10/2026: coleta patrimonial somente por acionamento manual.
   workflow_dispatch:
-  schedule:
-    # 07:20 em Brasilia (UTC-3). Patrimonio muda mais lentamente que prestacao de contas.
-    - cron: "20 10 * * *"
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/assets-trigger.txt'
 
 permissions:
   contents: write
