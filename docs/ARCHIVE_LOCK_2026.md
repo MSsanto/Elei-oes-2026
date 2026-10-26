@@ -19,4 +19,6 @@ O `workers/tse-browser-probe/wrangler.jsonc` não declara cron. Gatilhos externo
 
 Nenhuma coleta, atualização, publicação, mudança de resultado ou funcionalidade deve ocorrer por rotina. Uma retomada exige **pedido explícito**, com escopo e justificativa registrados em issue/PR, revisão das fontes oficiais e dos riscos de reprocessamento, alteração consciente do bloqueio dos workflows necessários, execução de testes e documentação de novo snapshot e novo commit. Não remover este marcador apenas para fazer um deploy ou uma coleta incidental.
 
+**Bloqueio de publicação constatado:** o workflow de deploy final falhou na verificação de credenciais Cloudflare (run 40329675282). A checagem pública (run 40330042233) confirmou versão antiga no domínio. Nenhum deploy foi declarado como concluído. O eventual fornecimento de credenciais e publicação deve ocorrer em reabertura explícita, sem reativar coletas.
+
 Este arquivo não altera o caráter independente e apartidário do projeto. Resultados de 26/10/2026 são um retrato histórico, não uma declaração de que decisões judiciais futuras não ocorrerão.
