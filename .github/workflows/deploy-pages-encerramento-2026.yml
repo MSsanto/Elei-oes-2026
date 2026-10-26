@@ -1,13 +1,8 @@
 name: Publicar encerramento 2026 no Cloudflare Pages
-# Reabertura pontual autorizada para a publicação do arquivo histórico com os resultados de 2026.
+# Arquivo histórico congelado: deploy automático suspenso. Publicação excepcional em workflow independente.
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/deploy-pages-encerramento-2026.yml'
 
 permissions:
   contents: read
@@ -18,7 +13,7 @@ concurrency:
 
 jobs:
   publish:
-    # Publicação pontual do arquivo histórico; rotinas de coleta continuam desligadas.
+    if: false # arquivo histórico congelado; usar workflow pontual para publicação excepcional
     name: Build e publicação do arquivo eleitoral
     runs-on: ubuntu-latest
     timeout-minutes: 35
