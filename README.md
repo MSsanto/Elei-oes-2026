@@ -14,7 +14,7 @@ A consulta pode exibir **Eleito**, **Não eleito** e **Não confirmado** ao lado
 
 A fonte do snapshot é `data/processed/resultados-2026/status-por-candidato.json`. A rota **`/eleitos`** oferece consulta neutra às pessoas eleitas, por cargo e UF, e as consultas por candidatura mostram **Eleito / Não eleito / Não confirmado**. O pipeline de importação foi preservado para auditoria, mas está bloqueado pelo encerramento. Consulte [`docs/RESULTADOS_ELEITORAIS_2026.md`](docs/RESULTADOS_ELEITORAIS_2026.md).
 
-**Nota:** código aprovado e dados versionados não confirmam deploy no Cloudflare Pages; a publicação depende da integração/credenciais de produção.
+**Publicação externa pendente:** o build final passou, mas a tentativa de deploy de 26/10 ([run 40329675282](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40329675282)) falhou por ausência de `CLOUDFLARE_API_TOKEN` e/ou `CLOUDFLARE_ACCOUNT_ID`. A verificação pública ([run 40330042233](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40330042233)) mostrou que o domínio ainda serve uma versão anterior, sem o snapshot final. O arquivo no GitHub está concluído; publicar no Pages requer reabertura explícita para deploy.
 
 ## Objetivo
 
