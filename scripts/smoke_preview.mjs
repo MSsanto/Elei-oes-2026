@@ -129,7 +129,11 @@ try {
   await expectAppRoute(`/candidato/${encodeURIComponent(candidateId)}?cargo=deputado-federal&aba=patrimonio`);
 
   const firstSupplier = supplierIndex?.records?.find((item) => /^[a-f0-9]{16}$/i.test(item?.id));
-  if (!firstSupplier) throw new Error('Nenhum fornecedor disponível para testar rota dedicada.');
+  if (!firstSupplier || !supplierIndex.sharded) throw new Error('Nenhum fornecedor indexado disponível para testar rota dedicada.');
+  const prefix = String(firstSupplier.nome || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 2).padEnd(2, '_');
+  const lookupResponse = await expectOk(`/data/editorial/fornecedores/busca/${prefix}-001.json`, 'Busca fragmentada indisponível');
+  const lookupRows = await lookupResponse.json();
+  if (!Array.isArray(lookupRows) || !lookupRows.some((item) => item.id === firstSupplier.id)) throw new Error('Fornecedor não localizado no fragmento de busca.');
   await expectAppRoute(firstSupplier.href || `/fornecedor/${firstSupplier.id}`);
   const supplierShardResponse = await expectOk(`/data/editorial/fornecedores/shards/${firstSupplier.id.slice(0,2)}.json`, 'Shard editorial de fornecedor indisponível');
   const supplierShard = await supplierShardResponse.json();

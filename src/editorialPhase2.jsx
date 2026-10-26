@@ -98,6 +98,8 @@ export function MoneyPage() {
   const [suppliers, setSuppliers] = useState(null);
   const [state, setState] = useState('loading');
   const [query, setQuery] = useState('');
+  const [matchedSuppliers, setMatchedSuppliers] = useState([]);
+  const [searchState, setSearchState] = useState('idle');
   useEffect(() => {
     setMeta('Siga o Dinheiro | Eleições 2026 — Transparência Eleitoral', 'Visão agregada e descritiva das receitas, despesas e fornecedores publicados na prestação de contas eleitoral processada.', '/siga-o-dinheiro');
     Promise.all([
@@ -105,12 +107,45 @@ export function MoneyPage() {
       fetch('/data/editorial/fornecedores/index.json', { cache: 'no-cache' }).then((response) => { if (!response.ok) throw new Error('suppliers'); return response.json(); }),
     ]).then(([finance, supplierIndex]) => { setData(finance); setSuppliers(supplierIndex); setState('ready'); }).catch(() => setState('error'));
   }, []);
+  useEffect(() => {
+    const clean = query.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+    if (!suppliers?.sharded || clean.length < 2) {
+      setMatchedSuppliers([]);
+      setSearchState(clean ? 'short' : 'idle');
+      return undefined;
+    }
+    const prefix = clean.slice(0, 2);
+    const parts = Number(suppliers.groups?.[prefix] || 0);
+    if (!parts) {
+      setMatchedSuppliers([]);
+      setSearchState('ready');
+      return undefined;
+    }
+    const controller = new AbortController();
+    setSearchState('loading');
+    Promise.all(Array.from({ length: parts }, (_, part) => {
+      const file = `${prefix}-${String(part + 1).padStart(3, '0')}.json`;
+      return fetch(`/data/editorial/fornecedores/busca/${file}`,
+        { cache: 'force-cache', signal: controller.signal })
+        .then((response) => { if (!response.ok) throw new Error('supplier search'); return response.json(); });
+    })).then((pages) => {
+      setMatchedSuppliers(pages.flat());
+      setSearchState('ready');
+    }).catch((error) => {
+      if (error.name === 'AbortError') return;
+      setMatchedSuppliers([]);
+      setSearchState('error');
+    });
+    return () => controller.abort();
+  }, [suppliers, query]);
+
   const visibleSuppliers = useMemo(() => {
     const needle = query.trim().toLocaleLowerCase('pt-BR');
-    const rows = suppliers?.records || [];
-    if (!needle) return rows.slice(0, 80);
-    return rows.filter((item) => `${item.nome} ${item.tipo}`.toLocaleLowerCase('pt-BR').includes(needle)).slice(0, 120);
-  }, [suppliers, query]);
+    if (!needle) return (suppliers?.records || []).slice(0, 80);
+    const rows = suppliers?.sharded ? matchedSuppliers : (suppliers?.records || []);
+    return rows.filter((item) => String(item.nome || '').toLocaleLowerCase('pt-BR').includes(needle)).slice(0, 120);
+  }, [suppliers, query, matchedSuppliers]);
+
   return <EditorialShell current="dinheiro" kicker="FASE EDITORIAL · PRESTAÇÃO DE CONTAS" title="Siga o Dinheiro" lead="Uma leitura agregada das receitas e despesas publicadas, sem transformar valor financeiro em nota, ranking de candidatura ou juízo político.">
     {state === 'loading' && <LoadingPage label="Consolidando a prestação de contas processada…"/>}
     {state === 'error' && <DataError/>}
@@ -119,9 +154,12 @@ export function MoneyPage() {
       <section className="money-metrics"><MetricCard label="Receitas registradas" value={data.total_receitas} note="soma da carga processada"/><MetricCard label="Despesas contratadas" value={data.total_despesas_contratadas} note="obrigações registradas"/><MetricCard label="Despesas pagas" value={data.total_despesas_pagas} note="pagamentos registrados"/></section>
       <section className="money-grid"><AggregateBars title="Fonte dos recursos" subtitle="Categorias oficiais de fonte, agregadas na carga." rows={data.receitas_por_fonte}/><AggregateBars title="Origem das receitas" subtitle="Classificações oficiais de origem." rows={data.receitas_por_origem}/></section>
       <AggregateBars title="Onde os recursos foram contratados" subtitle="Categorias oficiais de despesas contratadas, agregadas na carga." rows={data.despesas_por_categoria}/>
-      <section className="supplier-directory" id="fornecedores"><div className="supplier-directory-heading"><div><span className="editorial-kicker">ENTIDADES DA PRESTAÇÃO</span><h2>Fornecedores publicados</h2><p>{suppliers.note}</p></div><label>Buscar fornecedor<input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Nome ou categoria"/></label></div>
+      <section className="supplier-directory" id="fornecedores"><div className="supplier-directory-heading"><div><span className="editorial-kicker">ENTIDADES DA PRESTAÇÃO</span><h2>Fornecedores publicados</h2><p>{suppliers.note} {Number(suppliers.total_records || 0).toLocaleString('pt-BR')} fornecedores indexados.</p></div><label>Buscar fornecedor<input type="search" value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Início do nome (2 letras ou mais)"/></label></div>
         <div className="supplier-directory-list">{visibleSuppliers.map((supplier) => <a key={supplier.id} className="supplier-row" href={supplier.href}><span><strong>{supplier.nome}</strong><small>{supplier.tipo || 'Classificação não informada'}</small></span><span>{Number(supplier.candidaturas || 0).toLocaleString('pt-BR')} candidatura(s)</span><span>{money(supplier.valor_total)}</span><b aria-hidden="true">→</b></a>)}</div>
-        {!visibleSuppliers.length && <div className="editorial-state"><strong>Nenhum fornecedor corresponde à busca.</strong><span>Remova parte do texto para ampliar a consulta.</span></div>}
+        {searchState === 'loading' && <div className="editorial-state" role="status"><strong>Buscando fornecedores no arquivo…</strong><span>Carregando somente a parte correspondente do índice.</span></div>}
+        {searchState === 'error' && <div className="editorial-state" role="alert"><strong>Não foi possível consultar os fornecedores.</strong><span>Tente novamente.</span></div>}
+        {searchState === 'short' && <div className="editorial-state"><strong>Digite pelo menos duas letras do início do nome.</strong><span>A base está organizada em partes para manter a consulta leve.</span></div>}
+        {searchState === 'ready' && !visibleSuppliers.length && <div className="editorial-state"><strong>Nenhum fornecedor corresponde à busca.</strong><span>Experimente o início do nome completo.</span></div>}
       </section>
       <details className="editorial-method"><summary>Escopo e metodologia financeira</summary><p>Os totais reproduzem agregações dos registros processados da Prestação de Contas Eleitorais 2026. Categorias são rótulos da própria fonte e não representam avaliação do projeto.</p><p>{data.fornecedores?.note}</p></details>
     </>}
