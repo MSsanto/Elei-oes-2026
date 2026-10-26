@@ -1,4 +1,5 @@
 name: Publicar encerramento 2026 no Cloudflare Pages
+# Tentativa final em 26/10/2026: publicar /eleitos e snapshot oficial antes do bloqueio definitivo.
 
 on:
   workflow_dispatch:
@@ -49,6 +50,8 @@ jobs:
           test -f dist/_redirects
           grep -Fxq '/* /index.html 200' dist/_redirects
           grep -Rq 'O projeto Eleições 2026 foi concluído.' dist/assets/
+          grep -Rq 'Eleitas e eleitos' dist/assets/
+          test -f dist/data/resultados-2026/status-por-candidato.json
 
       - name: Conferir credenciais do Cloudflare
         run: |
@@ -113,4 +116,7 @@ jobs:
             echo "::error::A versão pública ainda não contém o encerramento 2026."
             exit 1
           fi
-          echo "OK: site e bundle públicos incluem o encerramento de 2026."
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 4 "https://eleicoes-2026-ebz.pages.dev/eleitos" -o "$RUNNER_TEMP/eleitos.html"
+          grep -Fq 'id="root"' "$RUNNER_TEMP/eleitos.html"
+          grep -Fq 'Eleitas e eleitos' "$RUNNER_TEMP/encerramento-bundle.js"
+          echo "OK: site e bundle públicos incluem o encerramento e a consulta de eleitas e eleitos."
