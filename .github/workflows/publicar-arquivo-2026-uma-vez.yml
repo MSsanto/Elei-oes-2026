@@ -1,12 +1,8 @@
 name: Publicação única - arquivo eleitoral 2026
-# Publicação final excepcional após adequar o catálogo ao limite de 25 MiB, autorizada em docs/REABERTURA_2026.md.
+# Execução pontual 40359713307 concluída; workflow arquivado e impedido de publicar novamente.
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/publicar-arquivo-2026-uma-vez.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -17,6 +13,7 @@ concurrency:
 
 jobs:
   publish:
+    if: false # execução excepcional homologada e encerrada em 26/10/2026
     name: Build e publicação do arquivo eleitoral
     runs-on: ubuntu-latest
     timeout-minutes: 35
