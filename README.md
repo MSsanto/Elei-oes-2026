@@ -6,7 +6,7 @@ Projeto open source para organizar e tornar mais acessíveis dados públicos ele
 
 **Site:** https://eleicoes-2026-ebz.pages.dev
 
-**Encerramento público do projeto 2026:** [ver as entregas e o registro de conclusão](https://eleicoes-2026-ebz.pages.dev/encerramento-2026). A interface documenta as entregas do ciclo, e o resultado final de 26/10 está registrado separadamente no GitHub. A publicação da última versão no domínio Cloudflare exige verificação independente.
+**Encerramento público do projeto 2026:** [ver as entregas e o registro de conclusão](https://eleicoes-2026-ebz.pages.dev/encerramento-2026). A interface documenta as entregas do ciclo, e o resultado final de 26/10 está registrado separadamente no GitHub. A versão final foi publicada e verificada em 26/10/2026 na [execução 40359713307](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40359713307).
 
 ## Resultado eleitoral na pesquisa
 
@@ -14,7 +14,7 @@ A consulta pode exibir **Eleito**, **Não eleito** e **Não confirmado** ao lado
 
 A fonte do snapshot é `data/processed/resultados-2026/status-por-candidato.json`. A rota **`/eleitos`** oferece consulta neutra às pessoas eleitas, por cargo e UF, e as consultas por candidatura mostram **Eleito / Não eleito / Não confirmado**. O pipeline de importação foi preservado para auditoria, mas está bloqueado pelo encerramento. Consulte [`docs/RESULTADOS_ELEITORAIS_2026.md`](docs/RESULTADOS_ELEITORAIS_2026.md).
 
-**Publicação externa pendente:** o build final passou, mas a tentativa de deploy de 26/10 ([run 40329675282](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40329675282)) falhou por ausência de `CLOUDFLARE_API_TOKEN` e/ou `CLOUDFLARE_ACCOUNT_ID`. A verificação pública ([run 40330042233](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40330042233)) mostrou que o domínio ainda serve uma versão anterior, sem o snapshot final. O arquivo no GitHub está concluído; publicar no Pages requer reabertura explícita para deploy.
+**Publicação externa homologada — 26/10/2026:** após a configuração das credenciais, a [execução 40359713307](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40359713307) publicou 5.338 arquivos no projeto Pages `eleicoes-2026` e validou por HTTP `/encerramento-2026`, `/eleitos` e o bundle da aplicação. O workflow pontual foi novamente bloqueado depois do deploy. Ver [relatório de publicação](docs/PUBLICACAO_PAGES_2026.md) e [reabertura limitada](docs/REABERTURA_2026.md).
 
 ## Objetivo
 
