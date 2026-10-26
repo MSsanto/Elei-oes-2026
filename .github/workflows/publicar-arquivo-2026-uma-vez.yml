@@ -105,6 +105,7 @@ jobs:
           }
           console.log('Conta acessível; projetos Pages visíveis pela API:', Array.isArray(payload.result) ? payload.result.length : 'resposta inesperada');
           console.log('Nomes de projetos Pages autorizados:', Array.isArray(payload.result) ? payload.result.map(item => item.name).join(', ') || '(nenhum)' : '(desconhecido)');
+          console.log('Domínios Pages autorizados:', Array.isArray(payload.result) ? payload.result.map(item => item.name + ' = ' + item.subdomain + ' (' + (item.domains || []).join(', ') + ')').join('; ') : '(desconhecido)');
           NODE
 
       - name: Instalar Node 22
