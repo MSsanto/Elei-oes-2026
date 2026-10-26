@@ -30,6 +30,48 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Diagnosticar identidade da conta Cloudflare
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const token = (process.env.CLOUDFLARE_API_TOKEN || '').trim();
+          const account = (process.env.CLOUDFLARE_ACCOUNT_ID || '').trim();
+          const formatValid = /^[a-f0-9]{32}$/i.test(account);
+          console.log('Formato do Account ID (32 caracteres hexadecimais):', formatValid ? 'válido' : 'INVÁLIDO');
+          if (!token || !account) {
+            console.error('::error::Um dos secrets Cloudflare está vazio.');
+            process.exit(1);
+          }
+          try {
+            const response = await fetch('https://api.cloudflare.com/client/v4/user/tokens/verify', {
+              headers: { Authorization: 'Bearer ' + token },
+            });
+            const payload = await response.json();
+            console.log('Verificação do API Token:', response.ok && payload.success ? 'válido' : 'rejeitado', 'HTTP', response.status);
+            if (!response.ok || !payload.success) {
+              console.error('::error::API Token inválido, revogado ou sem autorização.');
+              process.exit(1);
+            }
+          } catch (error) {
+            console.error('::error::Falha ao verificar API Token na Cloudflare:', error.message);
+            process.exit(1);
+          }
+          if (!formatValid) {
+            console.error('::error::CLOUDFLARE_ACCOUNT_ID deve conter 32 caracteres hexadecimais. Confira o Account ID em Workers & Pages → Account details, não o nome da conta nem o Token ID.');
+            process.exit(1);
+          }
+          const url = 'https://api.cloudflare.com/client/v4/accounts/' + account + '/pages/projects';
+          const response = await fetch(url, { headers: { Authorization: 'Bearer ' + token } });
+          const payload = await response.json();
+          if (!response.ok || !payload.success) {
+            const codes = (payload.errors || []).map(item => item.code).filter(Boolean).join(',');
+            console.error('::error::Account ID não autorizado ou não encontrado para o token. HTTP ' + response.status + ' / Cloudflare: ' + (codes || 'sem código'));
+            process.exit(1);
+          }
+          console.log('Conta acessível; projeto Pages poderá ser localizado na etapa seguinte.');
+          NODE
+
       - name: Instalar Node 22
         uses: actions/setup-node@v4
         with:
