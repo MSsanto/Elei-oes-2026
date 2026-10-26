@@ -2,7 +2,7 @@ export const ELECTION_2026 = {
   electorateTotal: 158745463,
   electorateInStates: 157826587,
   electorateAbroad: 918876,
-  electorateReferenceDate: '20/07/2026',
+  electorateReferenceDate: '04/10/2026',
   federalDeputySeats: 513,
   senateSeats: 81,
   senateSeatsContested2026: 54,
@@ -11,9 +11,10 @@ export const ELECTION_2026 = {
 };
 
 export const OFFICIAL_SOURCES = {
-  electorate: 'https://www.tse.jus.br/comunicacao/noticias/2026/Julho/mais-de-158-milhoes-de-eleitores-estao-aptos-votar-nas-eleicoes-2026',
+  electorate: 'https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/eleicoes-2026-em-numeros-158-7-milhoes-de-eleitores-estao-aptos-a-votar',
   electorateOpenData: 'https://dadosabertos.tse.jus.br/dataset/eleitorado-2026',
   candidatesOpenData: 'https://dadosabertos.tse.jus.br/dataset/candidatos-2026',
+  vacancies2026: 'https://www.tse.jus.br/eleicoes/cde-2026',
   federalSeats: 'https://www2.camara.leg.br/a-camara/conheca/numero-de-deputados-por-estado',
   federalSeats2026: 'https://www.camara.leg.br/comprove/1302885-e-falso-que-sao-531-vagas-de-deputados-federais-para-a-proxima-legislatura',
   senate2026: 'https://www12.senado.leg.br/noticias/materias/2026/07/14/eleitor-escolhera-dois-senadores-neste-ano-veja-como-votar',
@@ -54,6 +55,14 @@ export const ELECTORATE_BY_UF = [
 
 export function findUfFacts(uf) {
   return ELECTORATE_BY_UF.find((item) => item.uf === String(uf || '').toUpperCase()) || null;
+}
+
+export function stateLegislatureSeats(uf) {
+  const facts = findUfFacts(uf);
+  if (!facts) return null;
+  const federalSeats = Number(facts.federalSeats || 0);
+  if (!federalSeats) return null;
+  return federalSeats <= 12 ? federalSeats * 3 : 36 + (federalSeats - 12);
 }
 
 export function formatInteger(value) {

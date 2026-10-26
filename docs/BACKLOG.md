@@ -38,19 +38,30 @@ Decisão canônica: [ENCERRAMENTO_2026.md](ENCERRAMENTO_2026.md).
 - [ ] Validar build, rotas e fonte oficial da listagem de eleitas e eleitos.
 - [ ] Registrar commit/release do snapshot final e declarar o projeto congelado.
 
-### Pautas educativas preservadas para eventual reativação
+### Educação eleitoral publicada
 
-- Você sabe o que é quociente eleitoral?
-- Você sabe a diferença entre votos brancos e votos nulos?
-- Quantos são e como são distribuídos os deputados federais e os senadores?
+- [x] **Você sabe o que é quociente eleitoral?**
+- [x] **Você sabe a diferença entre votos brancos e votos nulos?**
+- [x] **Quantos são e como são distribuídos os deputados federais e os senadores?**
 
-Estas pautas permanecem registradas, mas não serão publicadas no ciclo de encerramento.
+Os conteúdos estão publicados em `/entenda`, com fontes oficiais e tratamento apartidário.
 
 ---
 
 ## 🚧 Em andamento
 
-Nenhuma entrega da fundação editorial está em validação operacional neste momento. Novos trabalhos entram nesta seção quando houver Issue/PR/branch ativo.
+### Contexto eleitoral — candidaturas, vagas e eleitorado
+
+Branch: `feat/contexto-eleitoral-final-2026` · PR [#45](https://github.com/MSsanto/Elei-oes-2026/pull/45)
+
+- [x] Exibir candidaturas presentes na base por cargo/circunscrição.
+- [x] Exibir vagas oficiais por cargo e UF.
+- [x] Calcular relação aritmética candidaturas/vaga.
+- [x] Exibir eleitorado apto nacional e por UF.
+- [x] Preservar arquitetura leve de Deputado Estadual/Distrital.
+- [x] Documentar fontes, escopo e limitações em [CONTEXTO_ELEITORAL.md](CONTEXTO_ELEITORAL.md).
+- [x] Validar build/CI — `Validar projeto` run #317 concluído com sucesso.
+- [ ] Integrar à `main` após revisão/PR.
 
 ---
 
