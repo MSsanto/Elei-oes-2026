@@ -32,6 +32,7 @@ Decisão canônica: [ENCERRAMENTO_2026.md](ENCERRAMENTO_2026.md).
 - [x] Suspender watchdog periódico.
 - [x] Desativar deploy automático do Browser Worker por `push`.
 - [x] Manter CI de validação e contingência manual sem atualização automática de produção.
+- [x] Publicar a página pública de encerramento `/encerramento-2026`, com inventário verificável das entregas, método e registro histórico.
 - [ ] **26/10/2026:** executar o snapshot final pós-segundo turno com dados oficiais do TSE.
 - [ ] **26/10/2026:** criar a aba pública **Eleitos**.
 - [ ] Validar build, rotas e fonte oficial da listagem de eleitas e eleitos.
