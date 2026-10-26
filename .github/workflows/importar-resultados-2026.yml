@@ -1,17 +1,11 @@
 name: Importar resultados oficiais de 2026
 
 on:
+  # Arquivo histórico: exige reabertura explícita em novo commit.
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - 'scripts/collect_results_2026.py'
-      - 'tests/test_collect_results_2026.py'
-      - '.github/workflows/importar-resultados-2026.yml'
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: consolidacao-unica-resultado-2026
@@ -19,6 +13,7 @@ concurrency:
 
 jobs:
   importar:
+    if: false # bloqueado pelo encerramento 2026
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
