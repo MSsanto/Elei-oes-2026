@@ -43,6 +43,8 @@ const routeMarkers = [
   '/metodologia',
   '/fontes',
   '/sobre',
+  '/encerramento-2026',
+  'O projeto Eleições 2026 foi concluído.',
   '/radar',
   '/siga-o-dinheiro',
   'Radar Eleitoral',
