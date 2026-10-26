@@ -1,18 +1,15 @@
 name: Teste MoneyPrinterTurbo (PoC)
 
 on:
+  # Arquivo histórico: exige reabertura explícita em novo commit.
   workflow_dispatch:
-    inputs:
-      roteiro:
-        description: "Roteiro curto para o teste tecnico"
-        required: false
-        default: "Este e um teste tecnico do pipeline de video da Transparencia Eleitoral. Nenhuma informacao sobre candidatos esta sendo apresentada nesta demonstracao. O objetivo e validar geracao de voz, legendas e renderizacao automatica em nuvem."
 
 permissions:
   contents: read
 
 jobs:
   gerar-video:
+    if: false # bloqueado pelo encerramento 2026
     runs-on: ubuntu-latest
     timeout-minutes: 25
 
