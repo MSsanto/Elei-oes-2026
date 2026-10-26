@@ -37,13 +37,13 @@ async function loadJson(url) {
 }
 
 function CheckRow({ check }) {
-  const label = check.status === 'ok' ? 'Operacional' : check.status === 'stale' ? 'Desatualizado' : 'Indisponível';
+  const label = check.status === 'frozen' ? 'Arquivado' : check.status === 'ok' ? 'Operacional' : check.status === 'stale' ? 'Desatualizado' : 'Indisponível';
   return (
     <li className="status-check-row">
       <span className={`status-dot status-dot--${check.status}`} aria-hidden="true" />
       <span className="status-check-copy">
         <strong>{check.label}</strong>
-        <small>Última carga: {formatDate(check.generatedAt)} · SLA: {check.sla}h</small>
+        <small>Última carga preservada: {formatDate(check.generatedAt)} · atualização recorrente suspensa</small>
       </span>
       <span className={`status-pill status-pill--${check.status}`}>{label}</span>
     </li>
@@ -55,7 +55,7 @@ export default function StatusPage() {
 
   useEffect(() => {
     let active = true;
-    document.title = 'Status e Qualidade | Eleições 2026';
+    document.title = 'Status do Arquivo | Eleições 2026';
 
     async function load() {
       const results = await Promise.allSettled(CHECKS.map((item) => loadJson(item.url)));
@@ -68,7 +68,7 @@ export default function StatusPage() {
         const age = hoursSince(generatedAt);
         return {
           ...item,
-          status: age <= item.sla ? 'ok' : 'stale',
+          status: 'frozen',
           generatedAt,
           age,
           payload: result.value,
@@ -93,10 +93,10 @@ export default function StatusPage() {
 
   const summary = useMemo(() => {
     const total = state.checks.length;
-    const healthy = state.checks.filter((item) => item.status === 'ok').length;
+    const healthy = state.checks.filter((item) => item.status === 'frozen').length;
     const stale = state.checks.filter((item) => item.status === 'stale').length;
     const errors = state.checks.filter((item) => item.status === 'error').length;
-    const collectorIncident = state.collection?.status === 'error' ? 1 : 0;
+    const collectorIncident = 0; // Incidentes da coleta anterior são históricos após o congelamento.
     const percentage = total ? Math.round((healthy / total) * 100) : 0;
     return { total, healthy, stale, errors, incidents: stale + errors + collectorIncident, percentage };
   }, [state]);
@@ -110,25 +110,25 @@ export default function StatusPage() {
       <main className="info-main status-main">
         <div className="info-breadcrumb"><a href="/">Início</a> <span aria-hidden="true">›</span> Status e Qualidade</div>
         <span className="info-kicker">TRANSPARÊNCIA OPERACIONAL</span>
-        <h1>Status e Qualidade</h1>
-        <p className="info-lead">Checks de atualização, incidentes e qualidade das fontes usadas pela plataforma. Falhas da nossa infraestrutura são separadas de alterações ou indisponibilidades das fontes oficiais.</p>
+        <h1>Status do Arquivo 2026</h1>
+        <p className="info-lead">O ciclo 2026 está encerrado para novas coletas recorrentes desde 22/10/2026. As datas antigas das cargas são esperadas neste arquivo e não constituem, por si, um incidente. <a href="/encerramento-2026">Veja o que foi entregue no projeto</a>.</p>
 
         {state.loading ? (
           <section className="info-section"><p>Verificando o estado das cargas…</p></section>
         ) : (
           <>
             <section className="status-summary" aria-label="Resumo de saúde da plataforma">
-              <article><small>Saúde das cargas</small><strong>{summary.percentage}%</strong><span>{summary.healthy}/{summary.total} dentro do SLA</span></article>
-              <article><small>Incidentes detectados</small><strong>{summary.incidents}</strong><span>checks e coletores</span></article>
-              <article><small>Cargas desatualizadas</small><strong>{summary.stale}</strong><span>fora do SLA editorial</span></article>
+              <article><small>Snapshots legíveis</small><strong>{summary.percentage}%</strong><span>{summary.healthy}/{summary.total} preservados e acessíveis</span></article>
+              <article><small>Falhas de leitura</small><strong>{summary.incidents}</strong><span>arquivos consultados</span></article>
+              <article><small>Cargas congeladas</small><strong>{summary.healthy}</strong><span>sem atualizações periódicas</span></article>
               <article><small>Checks indisponíveis</small><strong>{summary.errors}</strong><span>falhas de leitura</span></article>
             </section>
 
             <section className="info-section">
               <div className="status-section-heading">
-                <div><span className="info-kicker">CHECKS AUTOMÁTICOS</span><h2>Atualização das fontes</h2></div>
+                <div><span className="info-kicker">PRESERVAÇÃO DOS DADOS</span><h2>Arquivos publicados</h2></div>
                 <span className={`status-pill ${summary.stale || summary.errors ? 'status-pill--stale' : 'status-pill--ok'}`}>
-                  {summary.stale || summary.errors ? 'Atenção necessária' : 'Operacional'}
+                  {summary.errors ? 'Atenção de leitura' : 'Arquivo congelado'}
                 </span>
               </div>
               {state.loadError ? <p>Não foi possível concluir os checks: {state.loadError}</p> : <ul className="status-check-list">{state.checks.map((item) => <CheckRow key={item.id} check={item} />)}</ul>}
@@ -136,7 +136,7 @@ export default function StatusPage() {
 
             <section className="info-section">
               <span className="info-kicker">INCIDENTES E ERROS</span>
-              <h2>Ocorrências ativas</h2>
+              <h2>Ocorrências registradas antes do congelamento</h2>
               {collectionIncident ? (
                 <article className="status-incident">
                   <div className="status-incident-head">
@@ -154,10 +154,10 @@ export default function StatusPage() {
               ) : financeCheck?.status === 'stale' ? (
                 <article className="status-incident">
                   <div className="status-incident-head"><strong>FIN-001 · Snapshot financeiro fora do SLA</strong><span className="status-pill status-pill--stale">Média</span></div>
-                  <p>A carga financeira está desatualizada. O sistema preserva o último conjunto validado em vez de publicar uma coleta incompleta.</p>
+                  <p>Esta é uma carga histórica. O sistema preserva o último conjunto validado, sem retomar a coleta automática.</p>
                 </article>
               ) : (
-                <p className="status-empty">Nenhum incidente operacional ativo registrado.</p>
+                <p className="status-empty">Nenhuma ocorrência histórica registrada na fonte consultada.</p>
               )}
             </section>
 
@@ -173,8 +173,8 @@ export default function StatusPage() {
 
             <section className="info-section">
               <span className="info-kicker">POLÍTICA DE PUBLICAÇÃO</span>
-              <h2>Dados inválidos não substituem uma carga válida</h2>
-              <p>Os checks de frescor não são afrouxados para esconder atrasos. Se uma nova coleta falhar, a plataforma mantém o último snapshot validado, registra o incidente e sinaliza quando a informação ultrapassa o SLA definido.</p>
+              <h2>Última carga válida preservada</h2>
+              <p>As coletas recorrentes foram suspensas no encerramento do ciclo. As datas de atualização ficam disponíveis como referência histórica; uma carga inválida não substitui os dados anteriormente validados. A consolidação final pós-segundo turno é uma etapa separada, ainda dependente de validação.</p>
               <div className="info-links"><a href="/correcoes">Política de correções</a><a href="/metodologia">Metodologia</a><a href="/fontes">Fontes</a></div>
             </section>
           </>
