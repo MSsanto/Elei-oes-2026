@@ -19,3 +19,11 @@
 - Caso haja falha de identificação de projeto, autenticação ou publicação, interromper e registrar o erro sem alegar sucesso.
 
 **Referência ao pedido:** conversa de 26/10/2026; reabertura restrita ao deploy final solicitado, sem retomada do desenvolvimento.
+
+## Resultado da exceção
+
+**Concluída em 26/10/2026:** publicação de produção executada no projeto Pages existente; upload de 5.338 arquivos; rotas `/encerramento-2026` e `/eleitos` e bundle confirmados por HTTP. Log: https://github.com/MSsanto/Elei-oes-2026/actions/runs/40359713307 .
+
+A adequação técnica ao limite de 25 MiB do Cloudflare Pages está documentada em [`PUBLICACAO_PAGES_2026.md`](PUBLICACAO_PAGES_2026.md). Os dados integrais permanecem preservados em `data/processed`.
+
+A rotina de publicação excepcional foi desativada após o sucesso (`workflow_dispatch` com `if: false`). Nenhuma coleta automática foi reativada.
