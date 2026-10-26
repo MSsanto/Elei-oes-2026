@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import PlatformHeader from './PlatformHeader.jsx';
 import { ELECTORATE_BY_UF, formatInteger } from './election2026Facts.js';
-import { fetchElectionResults, OFFICIAL_RESULTS_URL } from './electionResults.jsx';
+import { fetchElectionResults, OFFICIAL_RESULTS_URL, voteTextForCandidate } from './electionResults.jsx';
 import './electedCandidates.css';
 
 const CARGOS = [
@@ -129,7 +129,7 @@ export default function ElectedCandidatesPage() {
             <p className="elected-found">{formatInteger(elected.length)} registro(s) localizado(s) na base arquivada; ordem alfabética.</p>
             <div className="elected-list">{displayed.map((candidate) => (
               <article key={candidate.id_tse} className="elected-card">
-                <div><span className="elected-tag">{candidate.genero === 'FEMININO' ? 'Eleita' : candidate.genero === 'MASCULINO' ? 'Eleito' : 'Eleito(a)'}</span><h3>{candidate.nome_urna || candidate.nome}</h3><p>{candidate.partido || 'Partido não informado'} · {candidate.uf || 'BR'} · nº {candidate.numero || '—'}</p></div>
+                <div><span className="elected-tag">{candidate.genero === 'FEMININO' ? 'Eleita' : candidate.genero === 'MASCULINO' ? 'Eleito' : 'Eleito(a)'}</span><h3>{candidate.nome_urna || candidate.nome}</h3><p className="elected-vote-total">{voteTextForCandidate(candidate, snapshot) || 'Votação não confirmada no arquivo'}</p><p>{candidate.partido || 'Partido não informado'} · {candidate.uf || 'BR'} · nº {candidate.numero || '—'}</p></div>
                 <a href={profileLink(candidate, cargo)} aria-label={`Abrir perfil de ${candidate.nome_urna || candidate.nome}`}>Ver perfil →</a>
               </article>
             ))}</div>
@@ -138,7 +138,7 @@ export default function ElectedCandidatesPage() {
         </section>
         <aside className="elected-method">
           <h2>Como verificamos os resultados?</h2>
-          <p>A classificação exige correspondência exata pelo identificador SQ_CANDIDATO e situação “Eleito” publicada pelo TSE em arquivo com totalização concluída. A ausência de registro não é interpretada como derrota. Resultados posteriores podem sofrer decisões judiciais; este é o retrato arquivado em {snapshot?.atualizado_em ? new Date(snapshot.atualizado_em).toLocaleDateString('pt-BR') : '2026'}.</p>
+          <p>A classificação exige correspondência exata pelo identificador SQ_CANDIDATO e situação “Eleito” publicada pelo TSE em arquivo com totalização concluída. Os votos indicam a votação nominal do turno correspondente, sem votos de legenda. A ausência de registro não é interpretada como derrota. Resultados posteriores podem sofrer decisões judiciais; este é o retrato arquivado em {snapshot?.atualizado_em ? new Date(snapshot.atualizado_em).toLocaleDateString('pt-BR') : '2026'}.</p>
           <p>O arquivo reúne {snapshot?.cobertura?.arquivos_confirmados ?? '—'} arquivos oficiais validados. As respostas 404 de segundo turno em estados sem nova votação não são tratadas como eleições pendentes.</p>
           <a href="/metodologia">Metodologia e fontes →</a>
         </aside>
