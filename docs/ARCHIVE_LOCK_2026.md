@@ -24,3 +24,9 @@ Nenhuma coleta, atualização, publicação, mudança de resultado ou funcionali
 **Publicação excepcional homologada — 26/10/2026:** a falha original de credenciais (run 40329675282) e de versão pública anterior (run 40330042233) foi resolvida. O projeto Pages existente `eleicoes-2026`, domínio `eleicoes-2026-ebz.pages.dev`, recebeu 5.338 arquivos e teve as rotas `/encerramento-2026` e `/eleitos` verificadas por HTTP na [execução 40359713307](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40359713307). A reabertura foi restrita a esta publicação, documentada em [`REABERTURA_2026.md`](REABERTURA_2026.md) e [`PUBLICACAO_PAGES_2026.md`](PUBLICACAO_PAGES_2026.md). O workflow excepcional está novamente desativado (`workflow_dispatch` e `if: false`), assim como as coletas e demais publicações automáticas.
 
 Este arquivo não altera o caráter independente e apartidário do projeto. Resultados de 26/10/2026 são um retrato histórico, não uma declaração de que decisões judiciais futuras não ocorrerão.
+
+## Adição final de votos nominais — 26/10/2026
+
+Mediante autorização explícita do mantenedor, foi realizado o enriquecimento pontual do snapshot com os votos nominais publicados pelo TSE. A homologação [40370961449](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40370961449) confirmou **18.842/18.842 candidaturas com votos**, sem alterar as situações e mantendo 1.654 eleitas/eleitos. O deploy Pages foi concluído e confirmado por HTTP no domínio original.
+
+O workflow excepcional `publicar-votos-2026-uma-vez.yml` está agora com gatilho exclusivamente manual, `if: false` e permissão `contents: read`, e integra `scripts/check_freeze_2026.mjs`. Nenhuma rotina de atualização dos votos ficou habilitada. Detalhes de escopo e homologação em [`REABERTURA_2026.md`](REABERTURA_2026.md).
