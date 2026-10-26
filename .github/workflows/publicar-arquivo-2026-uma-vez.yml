@@ -103,7 +103,8 @@ jobs:
             console.error('::error::Account ID não autorizado ou não encontrado para o token. HTTP ' + response.status + ' / Cloudflare: ' + (codes || 'sem código'));
             process.exit(1);
           }
-          console.log('Conta acessível; projeto Pages poderá ser localizado na etapa seguinte.');
+          console.log('Conta acessível; projetos Pages visíveis pela API:', Array.isArray(payload.result) ? payload.result.length : 'resposta inesperada');
+          console.log('Nomes de projetos Pages autorizados:', Array.isArray(payload.result) ? payload.result.map(item => item.name).join(', ') || '(nenhum)' : '(desconhecido)');
           NODE
 
       - name: Instalar Node 22
@@ -140,6 +141,7 @@ jobs:
           const projects = Array.isArray(data)
             ? data
             : (Array.isArray(data.result) ? data.result : (Array.isArray(data.projects) ? data.projects : []));
+          console.log('Formato da resposta do Wrangler:', Array.isArray(data) ? 'array' : Object.keys(data || {}).join(', '));
           const domain = 'eleicoes-2026-ebz.pages.dev';
           const wanted = (process.env.PROJECT_OVERRIDE || '').trim();
           const matches = (project) => {
