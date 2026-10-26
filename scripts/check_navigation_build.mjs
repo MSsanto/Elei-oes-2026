@@ -70,11 +70,23 @@ for (const marker of routeMarkers) {
 const editorialManifest = JSON.parse(await readFile(path.join(dist, 'data/editorial/manifest.json'), 'utf8'));
 if (!Number(editorialManifest.finance_records)) throw new Error('Camada editorial sem perfis financeiros.');
 const supplierIndex = JSON.parse(await readFile(path.join(dist, 'data/editorial/fornecedores/index.json'), 'utf8'));
-if (!Array.isArray(supplierIndex.records) || supplierIndex.records.length === 0) throw new Error('Diretório editorial de fornecedores vazio ou inválido.');
-
+if (!supplierIndex.sharded || !Number(supplierIndex.total_records) || !Array.isArray(supplierIndex.records) || supplierIndex.records.length === 0) {
+  throw new Error('Diretório editorial de fornecedores fragmentado vazio ou inválido.');
+}
+if (supplierIndex.total_records !== editorialManifest.supplier_records) throw new Error('Total do índice de fornecedores difere do manifest editorial.');
 const firstSupplier = supplierIndex.records.find((item) => /^[a-f0-9]{16}$/i.test(item?.id));
 if (!firstSupplier) throw new Error('Diretório editorial sem identificador válido de fornecedor.');
+const prefix = String(firstSupplier.nome || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 2).padEnd(2, '_');
+const lookupFile = path.join(dist, `data/editorial/fornecedores/busca/${prefix}-001.json`);
+const lookupRows = JSON.parse(await readFile(lookupFile, 'utf8'));
+if (!lookupRows.some((record) => record.id === firstSupplier.id)) throw new Error('Amostra de fornecedor não encontrada no arquivo de busca.');
 await access(path.join(dist, `data/editorial/fornecedores/shards/${firstSupplier.id.slice(0, 2).toLowerCase()}.json`));
+try {
+  await access(path.join(dist, 'data/financas-2026/fornecedores/index.json'));
+  throw new Error('Índice de origem de 88 MB copiado indevidamente para o deploy.');
+} catch (error) {
+  if (error.code !== 'ENOENT') throw error;
+}
 
 const index = await readFile(path.join(dist, 'index.html'), 'utf8');
 if (!index.includes('<div id="root"></div>')) throw new Error('Root da aplicação ausente no index.html.');
@@ -84,4 +96,4 @@ if (!index.includes('/assets/')) throw new Error('index.html não referencia o b
 const redirects = await readFile(path.join(dist, '_redirects'), 'utf8');
 if (!redirects.includes('/* /index.html 200')) throw new Error('Fallback SPA não foi copiado para o artefato de produção.');
 
-console.log(`Smoke estático concluído: núcleo, Fase Editorial, patrimônio, ${supplierIndex.records.length} fornecedores e fallback SPA presentes.`);
+console.log(`Smoke estático concluído: núcleo, Fase Editorial, patrimônio, ${supplierIndex.total_records} fornecedores em fragmentos e fallback SPA presentes.`);
