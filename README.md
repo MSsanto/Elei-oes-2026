@@ -1,18 +1,18 @@
 # Eleições 2026 — Transparência de Campanhas e Mandatos
 
-> **Status operacional — encerramento 2026:** as atualizações recorrentes foram congeladas em **22/10/2026**. O segundo turno oficial ocorre em **25/10/2026** e haverá uma única atualização final em **26/10/2026**, quando será consolidada a consulta de **eleitas e eleitos**. Depois disso, o projeto permanecerá como arquivo histórico até reabertura explícita. Veja [docs/ENCERRAMENTO_2026.md](docs/ENCERRAMENTO_2026.md).
+> **Arquivo histórico congelado — 26/10/2026:** atualização final de candidaturas, finanças, patrimônio e resultados oficiais concluída com sucesso. O snapshot contém **1.654 eleitas e eleitos** em **116 arquivos oficiais do TSE**, com dados preservados no commit `8098ac3f62c51f49358cf1fbbffc6a1685a9fb2e`. Coletas, watchdogs e deploys por workflow estão bloqueados; mudanças futuras exigem reabertura explícita. Ver [snapshot final](docs/SNAPSHOT_FINAL_2026.md), [trava de arquivo](docs/ARCHIVE_LOCK_2026.md) e [encerramento](docs/ENCERRAMENTO_2026.md).
 
 Projeto open source para organizar e tornar mais acessíveis dados públicos eleitorais e parlamentares das **Eleições 2026**.
 
 **Site:** https://eleicoes-2026-ebz.pages.dev
 
-**Encerramento público do projeto 2026:** [ver as entregas e o registro de conclusão](https://eleicoes-2026-ebz.pages.dev/encerramento-2026). A interface informa o encerramento do ciclo de desenvolvimento, preserva dados e métodos como arquivo histórico e distingue esse encerramento da validação ainda pendente da carga final pós-segundo turno.
+**Encerramento público do projeto 2026:** [ver as entregas e o registro de conclusão](https://eleicoes-2026-ebz.pages.dev/encerramento-2026). A interface documenta as entregas do ciclo, e o resultado final de 26/10 está registrado separadamente no GitHub. A publicação da última versão no domínio Cloudflare exige verificação independente.
 
 ## Resultado eleitoral na pesquisa
 
 A consulta pode exibir **Eleito**, **Não eleito** e **Não confirmado** ao lado do nome de cada candidatura. Esses marcadores são distintos da situação do registro eleitoral (`deferido`, `indeferido` etc.) e dependem da totalização oficial do TSE ligada ao identificador `SQ_CANDIDATO`.
 
-A fonte do snapshot é `data/processed/resultados-2026/status-por-candidato.json`. Sua atualização pontual utiliza `scripts/collect_results_2026.py` e o workflow manual/de consolidação única `importar-resultados-2026.yml`; coletas periódicas permanecem congeladas. Consulte [`docs/RESULTADOS_ELEITORAIS_2026.md`](docs/RESULTADOS_ELEITORAIS_2026.md).
+A fonte do snapshot é `data/processed/resultados-2026/status-por-candidato.json`. A rota **`/eleitos`** oferece consulta neutra às pessoas eleitas, por cargo e UF, e as consultas por candidatura mostram **Eleito / Não eleito / Não confirmado**. O pipeline de importação foi preservado para auditoria, mas está bloqueado pelo encerramento. Consulte [`docs/RESULTADOS_ELEITORAIS_2026.md`](docs/RESULTADOS_ELEITORAIS_2026.md).
 
 **Nota:** código aprovado e dados versionados não confirmam deploy no Cloudflare Pages; a publicação depende da integração/credenciais de produção.
 
@@ -101,7 +101,7 @@ TSE — Candidatos 2022       │
                 aba Patrimônio
 ```
 
-A rotina automática está em `.github/workflows/coleta-patrimonio-2026.yml`.
+O workflow histórico de patrimônio está em `.github/workflows/coleta-patrimonio-2026.yml`, **bloqueado** após o snapshot final de 26/10/2026 (13.918 candidaturas, 77.446 bens e 4.034 vínculos históricos).
 
 ## Arquitetura resumida
 
