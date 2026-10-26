@@ -47,6 +47,7 @@ export default function HomeView() {
             <a href="#consultar">Consultar</a>
             <a href="/radar">Radar</a>
             <a href="/siga-o-dinheiro">Siga o Dinheiro</a>
+            <a href="/encerramento-2026">Encerramento 2026</a>
             <a href="#metodologia">Metodologia</a>
             <a href="#fontes">Fontes</a>
             <a href="#sobre">Sobre</a>
@@ -56,6 +57,10 @@ export default function HomeView() {
           </a>
         </nav>
       </header>
+      <aside className="home-closure-banner" aria-label="Encerramento do projeto 2026">
+        <div><strong>O projeto Eleições 2026 foi concluído.</strong><span>Conheça as entregas e o registro histórico do ciclo. A consolidação final pós-segundo turno será identificada somente após validação.</span></div>
+        <a href="/encerramento-2026">Ver o que fizemos ↗</a>
+      </aside>
 
       <section className="home-hero" aria-labelledby="home-title">
         <div className="home-hero-content">
