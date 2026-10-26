@@ -14,7 +14,7 @@ try {
 catch {}
 
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
-$ArchiveLock = Join-Path $RepoRoot "docs\\ARCHIVE_LOCK_2026.md"
+$ArchiveLock = Join-Path (Join-Path $RepoRoot "docs") "ARCHIVE_LOCK_2026.md"
 if (Test-Path $ArchiveLock) {
     Write-Error "Eleições 2026 está arquivado. Reabertura explícita e documentada é obrigatória para novas coletas ou agendamentos."
     exit 2
