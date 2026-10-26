@@ -41,3 +41,11 @@ A rotina de publicação excepcional foi desativada após o sucesso (`workflow_d
 **Data:** 26/10/2026.
 
 A execução excepcional está definida em `.github/workflows/publicar-votos-2026-uma-vez.yml`. Ela usa exclusivamente os **116 arquivos oficiais já relacionados no snapshot arquivado**, testa as regras, interrompe se houver divergência de situação ou cobertura insuficiente, atualiza somente campos de votos/turno, versiona a mudança, faz o build, verifica o projeto/domínio Cloudflare e homologará a publicação por HTTP. Após a homologação o workflow será bloqueado novamente. Nenhuma coleta periódica será ativada.
+
+### Homologação da última exceção
+
+**Concluída em 26/10/2026.** A execução [40370961449](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40370961449) associou **18.842 votações nominais a 18.842 registros** do snapshot arquivado, mantendo a quantidade de **1.654 eleitas e eleitos** e todos os campos de situação eleitoral. O dado enriquecido foi versionado no commit `22db5dc`.
+
+O workflow publicou no projeto Pages original `eleicoes-2026` e homologou, por requisições HTTP, as rotas `/eleitos`, `/encerramento-2026`, o bundle de interface com votação e o JSON público, que confirmou a cobertura de **18.842/18.842 candidaturas**. Deploy identificado pelo Cloudflare: `https://eb415342.eleicoes-2026-ebz.pages.dev`.
+
+Após a homologação, `publicar-votos-2026-uma-vez.yml` foi bloqueado: somente `workflow_dispatch`, `if: false` e `contents: read`. A trava permanente `scripts/check_freeze_2026.mjs` passou a fiscalizar também esse workflow. **Não resta publicação ou coleta eleitoral programada neste fluxo.**
