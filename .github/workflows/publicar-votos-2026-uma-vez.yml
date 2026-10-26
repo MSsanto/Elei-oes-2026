@@ -1,15 +1,11 @@
 name: Publicar votos nominais do arquivo eleitoral 2026
 
-# Execução única autorizada em docs/REABERTURA_2026.md, sem coletas periódicas.
+# Publicação 40370961449 homologada; fluxo desativado após a entrega final.
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/publicar-votos-2026-uma-vez.yml'
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: ultima-publicacao-eleitoral-2026
@@ -17,6 +13,7 @@ concurrency:
 
 jobs:
   publish:
+    if: false # homologado em 26/10/2026; nenhuma nova publicação autorizada
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
