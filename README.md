@@ -6,6 +6,8 @@ Projeto open source para organizar e tornar mais acessíveis dados públicos ele
 
 **Site:** https://eleicoes-2026-ebz.pages.dev
 
+**Encerramento público do projeto 2026:** [ver as entregas e o registro de conclusão](https://eleicoes-2026-ebz.pages.dev/encerramento-2026). A interface informa o encerramento do ciclo de desenvolvimento, preserva dados e métodos como arquivo histórico e distingue esse encerramento da validação ainda pendente da carga final pós-segundo turno.
+
 ## Objetivo
 
 Unificar dados oficiais do Tribunal Superior Eleitoral (TSE) com dados públicos de exercício parlamentar para oferecer perfis factuais e auditáveis.

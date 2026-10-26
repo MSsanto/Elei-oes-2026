@@ -36,6 +36,10 @@ A atualização final deve:
 
 A aba **Eleitos** deve contemplar os cargos das Eleições Gerais de 2026 e distinguir corretamente a circunscrição nacional e as UFs. A apresentação deve ser descritiva e simétrica, sem nota, selo, recomendação ou interpretação sobre o resultado.
 
+## Página pública de encerramento
+
+A rota [`/encerramento-2026`](https://eleicoes-2026-ebz.pages.dev/encerramento-2026) apresenta a conclusão do **ciclo de desenvolvimento de 2026**, suas entregas verificáveis e links para documentação e código-fonte. Essa página não deve ser usada como evidência de que a consolidação eleitoral final foi validada: o snapshot pós-segundo turno permanece uma etapa independente, documentada neste arquivo e no [`BACKLOG.md`](BACKLOG.md).
+
 ## Política após o snapshot final
 
 Depois da carga final:
