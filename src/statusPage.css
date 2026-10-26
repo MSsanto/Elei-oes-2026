@@ -45,3 +45,7 @@
   .status-check-row .status-pill { grid-column: 2; justify-self: start; }
   .status-section-heading, .status-incident-head { flex-direction: column; }
 }
+
+/* Encerramento 2026: bases arquivadas não são incidentes de frescor. */
+.status-dot--frozen { background: #416b9f; box-shadow: 0 0 0 4px rgba(65,107,159,.13); }
+.status-pill--frozen { background: #e6effa; color: #305a8d; }
