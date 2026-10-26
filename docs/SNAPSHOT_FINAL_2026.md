@@ -44,7 +44,7 @@ A execução única de 26/10 concluiu com sucesso a coleta de candidaturas, situ
 | Deputados estaduais/distritais | 11.728 candidaturas | 10h09 |
 | **Total de candidaturas por cargo (somadas)** | **20.065** | **10h09** |
 | Finanças de campanha | 17.170 candidaturas com registros financeiros | 10h11 |
-| Patrimônio | 13.918 candidaturas e 77.446 bens declarados | 10h12 |
+| Patrimônio | 13.918 candidaturas, 77.446 bens e 4.034 vínculos históricos | 10h12 |
 
 As contagens de candidaturas não são contagens de pessoas únicas. A soma não deve ser confundida com os 18.842 resultados conclusivos: são universos e critérios distintos.
 
