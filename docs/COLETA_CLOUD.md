@@ -126,6 +126,12 @@ coleta agendada → validação → commit automático → main → Cloudflare P
 
 Não é necessário abrir o projeto localmente, executar `.bat` ou deixar um computador ligado.
 
+## Publicação explícita do encerramento
+
+O acionamento automático do Cloudflare Pages pela integração Git depende das configurações e do estado da integração do projeto no painel do Cloudflare; o sucesso do build no GitHub, isoladamente, não significa que o site foi atualizado.
+
+Para o encerramento de 2026 existe também o workflow [`.github/workflows/deploy-pages-encerramento-2026.yml`](../.github/workflows/deploy-pages-encerramento-2026.yml), que faz build, envio explícito por Wrangler e validação HTTP da rota pública. Ele não coleta dados nem altera os pipelines congelados. Requer credenciais Cloudflare com escopo Pages Write nos secrets do repositório. Consulte [`ENCERRAMENTO_2026.md`](ENCERRAMENTO_2026.md).
+
 ## Coleta local / Windows
 
 Os scripts Windows continuam no repositório por três razões:
