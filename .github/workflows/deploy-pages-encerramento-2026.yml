@@ -1,0 +1,114 @@
+name: Publicar encerramento 2026 no Cloudflare Pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_name:
+        description: 'Nome exato do projeto Cloudflare Pages (opcional; descobrir pelo domínio se vazio)'
+        type: string
+        required: false
+        default: ''
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/deploy-pages-encerramento-2026.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publicacao-final-2026
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Build e publicação do arquivo eleitoral
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      PROJECT_OVERRIDE: ${{ inputs.project_name || vars.CLOUDFLARE_PAGES_PROJECT || '' }}
+    steps:
+      - name: Checkout da versão encerrada
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Instalar Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - name: Construir e validar o site
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+          test -f dist/index.html
+          test -f dist/_redirects
+          grep -q '/* /index.html 200' dist/_redirects
+          grep -Rq 'O projeto Eleições 2026 foi concluído.' dist/assets/
+
+      - name: Conferir credenciais do Cloudflare
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::error::Configure os secrets CLOUDFLARE_API_TOKEN (Pages Write) e CLOUDFLARE_ACCOUNT_ID no GitHub. Build validado, mas publicação não realizada."
+            exit 1
+          fi
+
+      - name: Descobrir projeto correto no Cloudflare
+        shell: bash
+        run: |
+          npx --yes wrangler@4 pages project list --json > "$RUNNER_TEMP/cloudflare-pages-projects.json"
+          node --input-type=commonjs - "$RUNNER_TEMP/cloudflare-pages-projects.json" <<'NODE'
+          const fs = require('node:fs');
+          const file = process.argv[2];
+          const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+          const projects = Array.isArray(data)
+            ? data
+            : (Array.isArray(data.result) ? data.result : (Array.isArray(data.projects) ? data.projects : []));
+          const domain = 'eleicoes-2026-ebz.pages.dev';
+          const wanted = (process.env.PROJECT_OVERRIDE || '').trim();
+          const matches = (project) => {
+            const domains = Array.isArray(project.domains) ? project.domains : [];
+            return project.subdomain === domain || domains.includes(domain) ||
+              domains.some((value) => typeof value === 'object' && value?.name === domain);
+          };
+          const project = wanted
+            ? projects.find((entry) => entry.name === wanted)
+            : projects.find(matches) || projects.find((entry) => entry.name === 'eleicoes-2026-ebz');
+          if (!project) {
+            console.error('::error::Projeto de destino não encontrado. Informe o input project_name ou a variável CLOUDFLARE_PAGES_PROJECT.');
+            console.error('Projetos acessíveis ao token:', projects.map((p) => p.name).join(', ') || '(nenhum)');
+            process.exit(1);
+          }
+          console.log('Projeto Pages selecionado:', project.name);
+          fs.appendFileSync(process.env.GITHUB_ENV, `PAGES_PROJECT_NAME=${project.name}\n`);
+          NODE
+
+      - name: Publicar a versão final, sem reativar coletas
+        shell: bash
+        run: |
+          npx --yes wrangler@4 pages deploy dist \
+            --project-name="$PAGES_PROJECT_NAME" \
+            --branch=main \
+            --commit-hash="$GITHUB_SHA" \
+            --commit-message="Publicação pública do encerramento 2026"
+
+      - name: Conferir que a rota pública aponta para a versão de encerramento
+        shell: bash
+        run: |
+          set -euo pipefail
+          URL='https://eleicoes-2026-ebz.pages.dev/encerramento-2026'
+          PAGE="$(curl --fail --silent --show-error --location --retry 3 --retry-delay 4 "$URL")"
+          printf '%s' "$PAGE" | grep -q 'id="root"'
+          ASSET="$(printf '%s' "$PAGE" | grep -oE '/assets/[^"]+\\.js' | head -n 1)"
+          if [ -z "$ASSET" ]; then
+            echo "::error::HTML publicado, mas bundle JS não localizado no index."
+            exit 1
+          fi
+          curl --fail --silent --show-error --location "https://eleicoes-2026-ebz.pages.dev$ASSET" |
+            grep -q 'O projeto Eleições 2026 foi concluído.' ||
+            { echo "::error::A versão pública ainda não contém o encerramento 2026."; exit 1; }
+          echo "OK: site e bundle públicos incluem o encerramento de 2026."
