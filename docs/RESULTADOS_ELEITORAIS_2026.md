@@ -50,3 +50,9 @@ A informação é obtida **exclusivamente** do atributo `cand.vap` dos JSONs de 
 A extensão é produzida por `scripts/enrich_votes_2026.py`, que consulta somente os arquivos oficiais já registrados no inventário do snapshot congelado. Antes de gravar, exige resultado e turno compatíveis com o registro histórico e uma cobertura mínima de 99,5% das candidaturas. Não sobrescreve `situacao`, `detalhe`, `cargo`, `uf`, `eleicao`, `atualizado_em` ou os dados gerais das candidaturas. Registra a proveniência separadamente em `votos_fonte`, `votos_atualizados_em` e `votos_cobertura`.
 
 Trata-se de **enriquecimento pontual do arquivo encerrado**, não de monitoramento contínuo de resultados. O fluxo excepcional de implementação e publicação está documentado em [`REABERTURA_2026.md`](REABERTURA_2026.md).
+
+### Homologação dos votos (26/10/2026)
+
+A adição dos votos nominais passou nos testes da coleta e de integridade. A execução [40370961449](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40370961449) registrou **18.842 candidaturas com votos, em 18.842 registros existentes (100%)**, sem divergências de resultado, mantendo **1.654 eleitas/eleitos**.
+
+A publicação no domínio original foi concluída e o JSON público foi conferido após o deploy. A preservação do snapshot e o bloqueio do workflow foram registrados em [`REABERTURA_2026.md`](REABERTURA_2026.md). Os números refletem a totalização oficial arquivada em 2026, não mudanças judiciais posteriores.
