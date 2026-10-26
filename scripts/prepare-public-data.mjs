@@ -1,4 +1,4 @@
-import { cp, mkdir, stat, writeFile } from 'node:fs/promises';
+import { cp, mkdir, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 
@@ -21,7 +21,10 @@ await mkdir(targetDir, { recursive: true });
 
 if (await exists(sourceDir)) {
   await cp(sourceDir, targetDir, { recursive: true, force: true });
-  console.log('Dados processados copiados para public/data.');
+  // Índice de origem (88 MB) é insumo do build, não recurso consultado no navegador.
+  // Preservado em data/processed; removido apenas da cópia pública.
+  await rm(path.join(targetDir, 'financas-2026', 'fornecedores', 'index.json'), { force: true });
+  console.log('Dados processados copiados para public/data, sem índice financeiro interno superdimensionado.');
 } else {
   console.warn('data/processed ainda não existe. Gerando conjunto vazio para o primeiro deploy.');
   await writeFile(
