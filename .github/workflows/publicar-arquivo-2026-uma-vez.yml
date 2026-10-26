@@ -145,36 +145,11 @@ jobs:
             exit 1
           fi
 
-      - name: Descobrir projeto correto no Cloudflare
+      - name: Usar projeto Pages confirmado pela API oficial
         shell: bash
         run: |
-          npx --yes wrangler@4 pages project list --json > "$RUNNER_TEMP/cloudflare-pages-projects.json"
-          node --input-type=commonjs - "$RUNNER_TEMP/cloudflare-pages-projects.json" <<'NODE'
-          const fs = require('node:fs');
-          const file = process.argv[2];
-          const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-          const projects = Array.isArray(data)
-            ? data
-            : (Array.isArray(data.result) ? data.result : (Array.isArray(data.projects) ? data.projects : []));
-          console.log('Formato da resposta do Wrangler:', Array.isArray(data) ? 'array' : Object.keys(data || {}).join(', '));
-          const domain = 'eleicoes-2026-ebz.pages.dev';
-          const wanted = (process.env.PROJECT_OVERRIDE || '').trim();
-          const matches = (project) => {
-            const domains = Array.isArray(project.domains) ? project.domains : [];
-            return project.subdomain === domain || domains.includes(domain) ||
-              domains.some((value) => typeof value === 'object' && value?.name === domain);
-          };
-          const project = wanted
-            ? projects.find((entry) => entry.name === wanted)
-            : projects.find(matches) || projects.find((entry) => entry.name === 'eleicoes-2026-ebz');
-          if (!project) {
-            console.error('::error::Projeto de destino não encontrado. Informe o input project_name ou a variável CLOUDFLARE_PAGES_PROJECT.');
-            console.error('Projetos acessíveis ao token:', projects.map((p) => p.name).join(', ') || '(nenhum)');
-            process.exit(1);
-          }
-          console.log('Projeto Pages selecionado:', project.name);
-          fs.appendFileSync(process.env.GITHUB_ENV, `PAGES_PROJECT_NAME=${project.name}\n`);
-          NODE
+          test -n "$PAGES_PROJECT_NAME"
+          echo "Projeto de destino confirmado: $PAGES_PROJECT_NAME"
 
       - name: Publicar a versão final, sem reativar coletas
         shell: bash
