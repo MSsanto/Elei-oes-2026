@@ -8,6 +8,14 @@ Projeto open source para organizar e tornar mais acessíveis dados públicos ele
 
 **Encerramento público do projeto 2026:** [ver as entregas e o registro de conclusão](https://eleicoes-2026-ebz.pages.dev/encerramento-2026). A interface informa o encerramento do ciclo de desenvolvimento, preserva dados e métodos como arquivo histórico e distingue esse encerramento da validação ainda pendente da carga final pós-segundo turno.
 
+## Resultado eleitoral na pesquisa
+
+A consulta pode exibir **Eleito**, **Não eleito** e **Não confirmado** ao lado do nome de cada candidatura. Esses marcadores são distintos da situação do registro eleitoral (`deferido`, `indeferido` etc.) e dependem da totalização oficial do TSE ligada ao identificador `SQ_CANDIDATO`.
+
+A fonte do snapshot é `data/processed/resultados-2026/status-por-candidato.json`. Sua atualização pontual utiliza `scripts/collect_results_2026.py` e o workflow manual/de consolidação única `importar-resultados-2026.yml`; coletas periódicas permanecem congeladas. Consulte [`docs/RESULTADOS_ELEITORAIS_2026.md`](docs/RESULTADOS_ELEITORAIS_2026.md).
+
+**Nota:** código aprovado e dados versionados não confirmam deploy no Cloudflare Pages; a publicação depende da integração/credenciais de produção.
+
 ## Objetivo
 
 Unificar dados oficiais do Tribunal Superior Eleitoral (TSE) com dados públicos de exercício parlamentar para oferecer perfis factuais e auditáveis.
