@@ -91,9 +91,9 @@ jobs:
             }
             resolvedAccount = matched[0].accountId;
             console.log('Conta correta identificada de forma segura; prosseguindo com publicação excepcional.');
-            process.stdout.write('::add-mask::' + resolvedAccount + '\\n');
-            fs.appendFileSync(process.env.GITHUB_ENV, 'CLOUDFLARE_ACCOUNT_ID=' + resolvedAccount + '\\n');
-            fs.appendFileSync(process.env.GITHUB_ENV, 'PAGES_PROJECT_NAME=' + matched[0].projectName + '\\n');
+            process.stdout.write('::add-mask::' + resolvedAccount + '\n');
+            fs.appendFileSync(process.env.GITHUB_ENV, 'CLOUDFLARE_ACCOUNT_ID=' + resolvedAccount + '\n');
+            fs.appendFileSync(process.env.GITHUB_ENV, 'PAGES_PROJECT_NAME=' + matched[0].projectName + '\n');
           }
           const url = 'https://api.cloudflare.com/client/v4/accounts/' + resolvedAccount + '/pages/projects';
           const response = await fetch(url, { headers: { Authorization: 'Bearer ' + token } });
