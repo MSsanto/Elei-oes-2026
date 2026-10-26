@@ -47,7 +47,7 @@ jobs:
           npm run build
           test -f dist/index.html
           test -f dist/_redirects
-          grep -q '/* /index.html 200' dist/_redirects
+          grep -Fxq '/* /index.html 200' dist/_redirects
           grep -Rq 'O projeto Eleições 2026 foi concluído.' dist/assets/
 
       - name: Conferir credenciais do Cloudflare
@@ -101,14 +101,16 @@ jobs:
         run: |
           set -euo pipefail
           URL='https://eleicoes-2026-ebz.pages.dev/encerramento-2026'
-          PAGE="$(curl --fail --silent --show-error --location --retry 3 --retry-delay 4 "$URL")"
-          printf '%s' "$PAGE" | grep -q 'id="root"'
-          ASSET="$(printf '%s' "$PAGE" | grep -oE '/assets/[^"]+\\.js' | head -n 1)"
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 4 "$URL" -o "$RUNNER_TEMP/encerramento.html"
+          grep -Fq 'id="root"' "$RUNNER_TEMP/encerramento.html"
+          ASSET="$(grep -oE '/assets/[^"]+\.js' "$RUNNER_TEMP/encerramento.html" | head -n 1)"
           if [ -z "$ASSET" ]; then
             echo "::error::HTML publicado, mas bundle JS não localizado no index."
             exit 1
           fi
-          curl --fail --silent --show-error --location "https://eleicoes-2026-ebz.pages.dev$ASSET" |
-            grep -q 'O projeto Eleições 2026 foi concluído.' ||
-            { echo "::error::A versão pública ainda não contém o encerramento 2026."; exit 1; }
+          curl --fail --silent --show-error --location "https://eleicoes-2026-ebz.pages.dev$ASSET" -o "$RUNNER_TEMP/encerramento-bundle.js"
+          if ! grep -Fq 'O projeto Eleições 2026 foi concluído.' "$RUNNER_TEMP/encerramento-bundle.js"; then
+            echo "::error::A versão pública ainda não contém o encerramento 2026."
+            exit 1
+          fi
           echo "OK: site e bundle públicos incluem o encerramento de 2026."
