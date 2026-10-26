@@ -1,6 +1,6 @@
 {
   "source": "Tribunal Superior Eleitoral (TSE)",
-  "generated_at_utc": "2026-10-23T00:02:19.748972+00:00",
+  "generated_at_utc": "2026-10-26T13:09:29.106281+00:00",
   "cargo": "DEPUTADO FEDERAL",
   "cargo_code": 6,
   "records": 7803,
@@ -70,18 +70,7 @@
   "csv_files_read": 29,
   "transport_url": "https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download",
   "transport": "cloudflare_browser_run_cdp",
-  "downloaded_bytes": 3245728,
-  "sha256": "ff3fa6e834bb44c97256b3a32b6b0eb74a1ce85864aade811abbeb841aa84d9d",
-  "content_type": "application/zip",
-  "regionalizacao_historica": {
-    "tipo": "DDD principal da votação nominal para Deputado Federal em 2022",
-    "ano_referencia": 2022,
-    "fonte_votos": "Tribunal Superior Eleitoral (TSE) — Resultados 2022",
-    "fonte_ddd": "Agência Nacional de Telecomunicações (Anatel) — Códigos Nacionais",
-    "metodologia_vinculo": "nome civil + data de nascimento + gênero; correspondência normalizada, exata e única entre 2026 e 2022",
-    "candidaturas_com_historico_confirmado": 0,
-    "candidaturas_com_ddd_principal": 0,
-    "mapa_gerado_em_utc": "2026-09-04T01:56:48.460843+00:00",
-    "nota": "Referência histórica de votação. Não representa domicílio eleitoral, residência, endereço ou área atual de atuação política."
-  }
+  "downloaded_bytes": 3240701,
+  "sha256": "c017f3200d33c23b43a8e7ba32af5b3f642903e53718bdf9e84bfd939084bc8c",
+  "content_type": "application/zip"
 }
