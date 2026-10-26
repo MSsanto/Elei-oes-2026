@@ -111,7 +111,7 @@ export default function StatusPage() {
         <div className="info-breadcrumb"><a href="/">Início</a> <span aria-hidden="true">›</span> Status e Qualidade</div>
         <span className="info-kicker">ARQUIVO HISTÓRICO · 2026</span>
         <h1>Status do Arquivo 2026</h1>
-        <p className="info-lead">O ciclo 2026 está encerrado para novas coletas recorrentes desde 22/10/2026. As datas antigas das cargas são esperadas neste arquivo e não constituem, por si, um incidente. <a href="/encerramento-2026">Veja o que foi entregue no projeto</a>.</p>
+        <p className="info-lead">O ciclo 2026 foi congelado em 26/10/2026 após a coleta final oficial. As cargas são snapshots históricos; sua idade não constitui, por si só, um incidente. Nenhuma coleta, watchdog ou atualização automática deve ser reativada sem reabertura explícita. <a href="/encerramento-2026">Veja o que foi entregue no projeto</a>.</p>
 
         {state.loading ? (
           <section className="info-section"><p>Verificando o estado das cargas…</p></section>
