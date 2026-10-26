@@ -40,6 +40,23 @@ A aba **Eleitos** deve contemplar os cargos das Eleições Gerais de 2026 e dist
 
 A rota [`/encerramento-2026`](https://eleicoes-2026-ebz.pages.dev/encerramento-2026) apresenta a conclusão do **ciclo de desenvolvimento de 2026**, suas entregas verificáveis e links para documentação e código-fonte. Essa página não deve ser usada como evidência de que a consolidação eleitoral final foi validada: o snapshot pós-segundo turno permanece uma etapa independente, documentada neste arquivo e no [`BACKLOG.md`](BACKLOG.md).
 
+## Publicação da página de encerramento
+
+O registro de encerramento público está implementado em `/encerramento-2026`, mas **merge no GitHub e build de CI não demonstram que o Cloudflare Pages publicou essa versão**.
+
+A publicação final pode ser executada pelo workflow [`Publicar encerramento 2026 no Cloudflare Pages`](../.github/workflows/deploy-pages-encerramento-2026.yml), com acionamento manual (`workflow_dispatch`) e uma execução inicial após a entrada do próprio workflow na `main`. Ele:
+
+1. utiliza Node 22 conforme `.node-version`, instala dependências e executa o build completo;
+2. confirma os artefatos e a presença do texto de encerramento no bundle;
+3. exige os secrets `CLOUDFLARE_API_TOKEN` (escopo Pages Write) e `CLOUDFLARE_ACCOUNT_ID`;
+4. identifica o projeto Pages pelo domínio `eleicoes-2026-ebz.pages.dev` (ou por `project_name` informado na execução);
+5. publica `dist` explicitamente na branch `main` por Wrangler;
+6. consulta a rota pública e verifica que o bundle publicado contém o encerramento.
+
+Caso as credenciais, o nome real do projeto ou a permissão do token estejam ausentes, o workflow **deve falhar claramente, sem alegar sucesso do deploy**. A integração Git nativa do Pages pode continuar funcionando de forma independente. Este procedimento não reativa qualquer coleta periódica.
+
+**Critério de encerramento da publicação:** o workflow deve terminar com sucesso, incluindo a verificação HTTP pós-deploy. A consolidação final dos resultados oficiais continua uma tarefa separada.
+
 ## Política após o snapshot final
 
 Depois da carga final:
