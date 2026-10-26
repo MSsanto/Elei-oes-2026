@@ -40,3 +40,13 @@ A rota `/eleitos` filtra **somente** os registros com `situacao = eleito` no sna
 A interface oferece filtros por cargo, UF e busca textual, com ordenação alfabética. Para Governador, Senador e Deputado Estadual/Distrital, a UF é obrigatória antes do carregamento; o índice estadual permanece sob demanda. A consulta de Deputado Federal pode abranger o país inteiro. O resultado é um arquivo histórico, sujeito a eventual retificação judicial posterior não incorporada automaticamente.
 
 A verificação automatizada `scripts/check_final_results_2026.mjs` exige os 1.654 eleitos oficiais (1 Presidente, 27 Governadores, 54 Senadores, 513 Deputados Federais e 1.059 Deputados Estaduais/Distritais), os sete escopos efetivos de segundo turno e correspondência exata dos 1.654 identificadores com as bases de candidaturas. A verificação de interface e acessibilidade semântica básica está em `scripts/check_accessibility_2026.mjs`.
+
+## Votos nominais por candidatura (extensão final)
+
+A interface também apresenta **o número de votos nominais** junto à classificação *Eleito / Não eleito*, sempre identificado com **1º turno** ou **2º turno**. Para Presidente e Governador(a) que disputaram o segundo turno, o número exibido é o dessa rodada, sem somar votos de turnos diferentes. Nas eleições proporcionais, a votação nominal individual não inclui votos de legenda.
+
+A informação é obtida **exclusivamente** do atributo `cand.vap` dos JSONs de totalização concluída do TSE e vinculada por `SQ_CANDIDATO`, `eleicao`, `cargo` e `UF`. Não se infere votos por percentual, partido ou outro candidato. Sem votação oficialmente confirmada, o marcador eleitoral pode aparecer sem número de votos.
+
+A extensão é produzida por `scripts/enrich_votes_2026.py`, que consulta somente os arquivos oficiais já registrados no inventário do snapshot congelado. Antes de gravar, exige resultado e turno compatíveis com o registro histórico e uma cobertura mínima de 99,5% das candidaturas. Não sobrescreve `situacao`, `detalhe`, `cargo`, `uf`, `eleicao`, `atualizado_em` ou os dados gerais das candidaturas. Registra a proveniência separadamente em `votos_fonte`, `votos_atualizados_em` e `votos_cobertura`.
+
+Trata-se de **enriquecimento pontual do arquivo encerrado**, não de monitoramento contínuo de resultados. O fluxo excepcional de implementação e publicação está documentado em [`REABERTURA_2026.md`](REABERTURA_2026.md).

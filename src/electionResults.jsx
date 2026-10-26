@@ -21,14 +21,24 @@ export function resultLabel(candidate, snapshot) {
   return record.situacao === 'eleito' ? 'Eleito' : 'Não eleito';
 }
 
+export function voteTextForCandidate(candidate, snapshot) {
+  const record = resultForCandidate(candidate, snapshot);
+  if (!record || !Number.isSafeInteger(record.votos) || record.votos < 0 || ![1, 2].includes(record.turno)) return null;
+  return `${record.votos.toLocaleString('pt-BR')} votos · ${record.turno}º turno`;
+}
+
 export function ElectionResultBadge({ candidate, snapshot }) {
   const record = resultForCandidate(candidate, snapshot);
   const label = resultLabel(candidate, snapshot);
+  const voteText = voteTextForCandidate(candidate, snapshot);
   return (
-    <span
-      className={`election-result-badge election-result-badge--${record?.situacao || 'unknown'}`}
-      title={record ? `Resultado eleitoral publicado pelo TSE: ${record.detalhe || label}. ${snapshot?.atualizado_em || ''}` : 'Sem resultado eleitoral confirmado na carga arquivada. Não significa que a candidatura não tenha sido eleita.'}
-    >{label}</span>
+    <span className="election-result-summary">
+      <span
+        className={`election-result-badge election-result-badge--${record?.situacao || 'unknown'}`}
+        title={record ? `Resultado eleitoral publicado pelo TSE: ${record.detalhe || label}. ${snapshot?.atualizado_em || ''}` : 'Sem resultado eleitoral confirmado na carga arquivada. Não significa que a candidatura não tenha sido eleita.'}
+      >{label}</span>
+      {voteText && <span className="election-result-votes" title="Votação nominal divulgada pelo TSE, no turno indicado. Não inclui votos de legenda.">{voteText}</span>}
+    </span>
   );
 }
 

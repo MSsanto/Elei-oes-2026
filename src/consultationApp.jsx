@@ -6,7 +6,7 @@ import ElectionContext from './ElectionContext.jsx';
 import CampaignFinance from './campaignFinance.jsx';
 import CandidateAssets from './candidateAssets.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
-import { ElectionResultBadge, fetchElectionResults, resultLabel, OFFICIAL_RESULTS_URL } from './electionResults.jsx';
+import { ElectionResultBadge, fetchElectionResults, resultLabel, voteTextForCandidate, OFFICIAL_RESULTS_URL } from './electionResults.jsx';
 
 const REPOSITORY_URL = 'https://github.com/MSsanto/Elei-oes-2026';
 const TSE_CANDIDATES_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
@@ -281,7 +281,7 @@ function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef,elect
 
   const status=displayTseValue(candidate.situacao_candidatura);
   const humanRows=[
-    ['Situação da candidatura',status],['Resultado eleitoral',resultLabel(candidate,electionResults)],['Partido',candidate.partido],['Número',candidate.numero],['Ocupação',candidate.ocupacao],['Escolaridade',candidate.grau_instrucao],['Data de nascimento',formatBirthDate(candidate.data_nascimento)],['UF',candidate.uf],['Nome completo',candidate.nome],['Nome de urna',candidate.nome_urna],['Gênero',candidate.genero],['Cor/raça declarada',candidate.cor_raca],
+    ['Situação da candidatura',status],['Resultado eleitoral',resultLabel(candidate,electionResults)],['Votos nominais',voteTextForCandidate(candidate,electionResults)],['Partido',candidate.partido],['Número',candidate.numero],['Ocupação',candidate.ocupacao],['Escolaridade',candidate.grau_instrucao],['Data de nascimento',formatBirthDate(candidate.data_nascimento)],['UF',candidate.uf],['Nome completo',candidate.nome],['Nome de urna',candidate.nome_urna],['Gênero',candidate.genero],['Cor/raça declarada',candidate.cor_raca],
   ].filter(([,value])=>value!==null&&value!==undefined&&value!=='');
 
   return (
@@ -569,7 +569,7 @@ export default function ConsultationApp(){
 
         <aside className="profile-method-card" style={{width:'min(1180px, calc(100% - 40px))',margin:'0 auto 54px'}}>
           <strong>Origem e metodologia</strong>
-          <p>O resultado de cada candidatura (Eleito, Não eleito ou Não confirmado) usa a totalização oficial vinculada ao SQ_CANDIDATO; ausência no arquivo não equivale a derrota. <a href={OFFICIAL_RESULTS_URL} target="_blank" rel="noreferrer">Conferir no TSE ↗</a></p>
+          <p>O resultado e a votação nominal da candidatura usam a totalização oficial vinculada ao SQ_CANDIDATO, identificando o turno. Votos de legenda não entram na contagem individual; ausência no arquivo não equivale a derrota. <a href={OFFICIAL_RESULTS_URL} target="_blank" rel="noreferrer">Conferir no TSE ↗</a></p>
           <p>Dados eleitorais e patrimoniais: TSE. Quando houver associação confirmada de histórico parlamentar, a fonte correspondente é indicada no perfil. A plataforma não cria ranking ou recomendação.</p>
           <div className="profile-method-links"><a href={TSE_CANDIDATES_URL} target="_blank" rel="noreferrer">Fonte eleitoral e bens ↗</a><a href={TSE_ACCOUNTS_URL} target="_blank" rel="noreferrer">Prestação de contas ↗</a>{config.hasChamber&&<a href={CAMARA_URL} target="_blank" rel="noreferrer">Câmara ↗</a>}<a href="/metodologia">Como tratamos esses dados?</a><a href={REPOSITORY_URL} target="_blank" rel="noreferrer">Código ↗</a></div>
         </aside>

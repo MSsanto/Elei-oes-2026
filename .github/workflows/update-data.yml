@@ -46,6 +46,9 @@ jobs:
       - name: Testar classificação de resultados oficiais
         run: python3 -m unittest discover -s tests -p test_collect_results_2026.py
 
+      - name: Testar votação nominal oficial sem alterar situação eleitoral
+        run: python3 -m unittest discover -s tests -p test_vote_counts_2026.py
+
       - name: Validar configuração dos cargos multi-cargo
         run: |
           python3 - <<'PY'

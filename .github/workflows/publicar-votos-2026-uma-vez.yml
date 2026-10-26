@@ -1,0 +1,133 @@
+name: Publicar votos nominais do arquivo eleitoral 2026
+
+# Execução única autorizada em docs/REABERTURA_2026.md, sem coletas periódicas.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/publicar-votos-2026-uma-vez.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ultima-publicacao-eleitoral-2026
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - name: Clonar snapshot arquivado
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Validar interpretação das contagens de votos
+        run: python -m unittest discover -s tests -p 'test_vote_counts_2026.py'
+
+      - name: Enriquecer somente votos nominais, sem mudar eleitos
+        run: python scripts/enrich_votes_2026.py
+
+      - name: Validar integridade do snapshot oficial
+        run: |
+          node scripts/check_final_results_2026.mjs
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path('data/processed/resultados-2026/status-por-candidato.json').read_text())
+          coverage = data['votos_cobertura']
+          assert coverage['candidaturas_com_votos'] >= int(coverage['candidaturas_na_base'] * 0.995)
+          assert sum(c['situacao'] == 'eleito' for c in data['candidaturas'].values()) == 1654
+          assert all(c.get('turno') in (1, 2) and isinstance(c.get('votos'), int)
+                     for c in data['candidaturas'].values() if 'votos' in c)
+          print('Integridade OK:', coverage)
+          PY
+
+      - name: Versionar apenas votos e proveniência no GitHub
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/processed/resultados-2026/status-por-candidato.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'data: adicionar votos nominais oficiais de 2026 ao snapshot histórico'
+            git push origin HEAD:main
+          fi
+
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+
+      - name: Construir arquivo histórico de produção
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+          test -f dist/data/resultados-2026/status-por-candidato.json
+          grep -Rq 'votos ·' dist/assets/
+          node - <<'NODE'
+          const fs = require('fs');
+          const json = JSON.parse(fs.readFileSync('dist/data/resultados-2026/status-por-candidato.json'));
+          if (!(json.votos_cobertura?.candidaturas_com_votos > 18000)) process.exit(1);
+          console.log('Votos no pacote de produção:',json.votos_cobertura.candidaturas_com_votos);
+          NODE
+
+      - name: Confirmar projeto e domínio Cloudflare sem revelar credenciais
+        run: |
+          node --input-type=module <<'NODE'
+          const token = process.env.CLOUDFLARE_API_TOKEN;
+          const account = process.env.CLOUDFLARE_ACCOUNT_ID;
+          if (!token || !/^[a-f0-9]{32}$/i.test(account || '')) {
+            console.error('::error::Credenciais Cloudflare indisponíveis ou Account ID inválido.');
+            process.exit(1);
+          }
+          const r = await fetch('https://api.cloudflare.com/client/v4/accounts/' + account + '/pages/projects/eleicoes-2026', {
+            headers:{Authorization:'Bearer ' + token}
+          });
+          const body = await r.json();
+          if (!r.ok || !body.success || body.result?.name !== 'eleicoes-2026' ||
+              ![body.result.subdomain, ...(body.result.domains || [])].includes('eleicoes-2026-ebz.pages.dev')) {
+            console.error('::error::O projeto de destino não corresponde ao domínio original. Publicação recusada.');
+            process.exit(1);
+          }
+          console.log('Projeto Cloudflare Pages e domínio confirmados.');
+          NODE
+
+      - name: Publicar versão final no Pages
+        run: |
+          npx --yes wrangler@4 pages deploy dist \
+            --project-name=eleicoes-2026 \
+            --branch=main \
+            --commit-hash="$(git rev-parse HEAD)" \
+            --commit-message="Encerramento 2026: votação nominal por candidatura"
+
+      - name: Homologar votos, encerramento e eleitos no domínio de produção
+        run: |
+          set -euo pipefail
+          BASE='https://eleicoes-2026-ebz.pages.dev'
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 "$BASE/encerramento-2026" -o "$RUNNER_TEMP/encerramento.html"
+          curl --fail --silent --show-error --location --retry 3 --retry-delay 5 "$BASE/eleitos" -o "$RUNNER_TEMP/eleitos.html"
+          grep -q 'id="root"' "$RUNNER_TEMP/encerramento.html"
+          grep -q 'id="root"' "$RUNNER_TEMP/eleitos.html"
+          curl --fail --silent --show-error --location "$BASE/data/resultados-2026/status-por-candidato.json" -o "$RUNNER_TEMP/votos.json"
+          node - "$RUNNER_TEMP/votos.json" <<'NODE'
+          const fs = require('fs');
+          const x = JSON.parse(fs.readFileSync(process.argv[2]));
+          if (!(x.votos_cobertura?.candidaturas_com_votos > 18000)) throw Error('Votação nominal não chegou ao domínio');
+          console.log('Homologação HTTP:',x.votos_cobertura.candidaturas_com_votos,'candidaturas com votos');
+          NODE
+          ASSET="$(grep -oE '/assets/[^"]+\.js' "$RUNNER_TEMP/encerramento.html" | head -n 1)"
+          test -n "$ASSET"
+          curl --fail --silent --show-error --location "$BASE$ASSET" -o "$RUNNER_TEMP/bundle.js"
+          grep -Fq 'votos ·' "$RUNNER_TEMP/bundle.js"
+          echo "Versão final com votos publicada e verificada no domínio original."
