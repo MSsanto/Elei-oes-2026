@@ -9,6 +9,7 @@ const blocked = [
   'importar-resultados-2026.yml',
   'deploy-tse-browser-probe.yml',
   'deploy-pages-encerramento-2026.yml',
+  'publicar-votos-2026-uma-vez.yml',
   'final-refresh-2026.yml',
   'test-moneyprinterturbo.yml',
 ];
