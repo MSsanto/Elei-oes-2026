@@ -719,7 +719,7 @@ button, input, select, summary, a { -webkit-tap-highlight-color: transparent; }
 .info-links a { padding: 13px; border: 1px solid var(--ds-line); border-radius: 10px; color: var(--ds-blue); background: #fff; text-decoration: none; font-size: 13px; font-weight: 780; }
 .info-links a:hover { border-color: #b5c9e8; background: #f8fbff; }
 
-@media (max-width: 920px) {
+@media (max-width: 1120px) {
   .platform-nav { display: none; }
   .platform-github { margin-left: auto; }
   .platform-menu-button {
