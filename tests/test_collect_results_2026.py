@@ -17,9 +17,21 @@ class ElectionResultsTests(unittest.TestCase):
         self.assertIsNone(mod.election_outcome({}))
 
     def test_only_final_counts_are_accepted(self):
-        valid={'and':'f','s':{'pst':'100,00'},'carg':[{'agr':[{'par':[{'cand':[
-            {'sqcand':'123','st':'Eleito por média','e':'s','vs':[{'sqcand':'999'}]},
-            {'sqcand':'456','st':'Não eleito','e':'n'}]}]}]}]}]}
+        valid = {
+            'and': 'f',
+            's': {'pst': '100,00'},
+            'carg': [
+                {'agr': [
+                    {'par': [
+                        {'cand': [
+                            {'sqcand': '123', 'st': 'Eleito por média', 'e': 's',
+                             'vs': [{'sqcand': '999'}]},
+                            {'sqcand': '456', 'st': 'Não eleito', 'e': 'n'},
+                        ]}
+                    ]}
+                ]}
+            ],
+        }
         parsed = mod.parse_results(valid, 6259, 6, 'sp', 'deputado-federal')
         self.assertEqual(set(parsed), {'123','456'})
         self.assertEqual(parsed['123']['situacao'], 'eleito')
