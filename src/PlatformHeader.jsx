@@ -18,6 +18,7 @@ const LINKS = [
   { href: '/metodologia', label: 'Metodologia', key: 'metodologia' },
   { href: '/fontes', label: 'Fontes', key: 'fontes' },
   { href: '/status', label: 'Status', key: 'status' },
+  { href: '/encerramento-2026', label: 'Encerramento', key: 'encerramento' },
   { href: '/expediente', label: 'Expediente', key: 'expediente' },
   { href: '/sobre', label: 'Sobre', key: 'sobre' },
 ];
