@@ -97,7 +97,7 @@ export default function Encerramento2026() {
             <article><strong>19.991</strong><span>candidaturas na malha editorial documentada</span></article>
             <article><strong>1.828</strong><span>páginas agregadoras por cargo, UF e partido</span></article>
             <article><strong>77.446</strong><span>bens declarados na carga final de 26/10</span></article>
-            <article><strong>4.019</strong><span>vínculos históricos 2022–2026 confirmados</span></article>
+            <article><strong>4.034</strong><span>vínculos históricos 2022–2026 na carga final</span></article>
             <article><strong>1.654</strong><span>eleitas e eleitos no snapshot oficial do TSE</span></article>
           </div>
           <p className="closure-source">Referências: <a href={`${REPO}/blob/main/docs/BACKLOG.md`} target="_blank" rel="noreferrer">backlog e PRs de entrega ↗</a> · <a href={`${REPO}/blob/main/docs/PATRIMONIO_FONTES.md`} target="_blank" rel="noreferrer">metodologia patrimonial ↗</a>.</p>
