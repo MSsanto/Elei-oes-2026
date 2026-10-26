@@ -230,6 +230,9 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Exigir reabertura documentada para mudanças futuras
+        run: node scripts/check_reopen_policy_2026.mjs
+
       - name: Instalar dependências
         run: npm install
 

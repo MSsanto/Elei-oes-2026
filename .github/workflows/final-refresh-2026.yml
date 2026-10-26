@@ -1,13 +1,11 @@
 name: Atualização final única — arquivo Eleições 2026
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/final-refresh-2026.yml'
+  # Arquivo histórico: exige reabertura explícita em novo commit.
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: final-refresh-2026
@@ -15,6 +13,7 @@ concurrency:
 
 jobs:
   refresh:
+    if: false # bloqueado pelo encerramento 2026
     runs-on: ubuntu-latest
     timeout-minutes: 110
     steps:

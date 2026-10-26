@@ -1,13 +1,8 @@
 name: Watchdog cloud eleitoral
 
 on:
-  # Sem polling recorrente durante o congelamento. Roda manualmente ou após uma coleta explicitamente acionada.
+  # Arquivo histórico: exige reabertura explícita em novo commit.
   workflow_dispatch:
-  workflow_run:
-    workflows:
-      - "Coleta online TSE + Camara"
-    types:
-      - completed
 
 permissions:
   contents: read
@@ -20,6 +15,7 @@ concurrency:
 
 jobs:
   verificar:
+    if: false # bloqueado pelo encerramento 2026
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:

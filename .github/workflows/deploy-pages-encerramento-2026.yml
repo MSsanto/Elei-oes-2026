@@ -2,18 +2,8 @@ name: Publicar encerramento 2026 no Cloudflare Pages
 # Tentativa final em 26/10/2026: publicar /eleitos e snapshot oficial antes do bloqueio definitivo.
 
 on:
+  # Arquivo histórico: exige reabertura explícita em novo commit.
   workflow_dispatch:
-    inputs:
-      project_name:
-        description: 'Nome exato do projeto Cloudflare Pages (opcional; descobrir pelo domínio se vazio)'
-        type: string
-        required: false
-        default: ''
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/deploy-pages-encerramento-2026.yml'
 
 permissions:
   contents: read
@@ -24,6 +14,7 @@ concurrency:
 
 jobs:
   publish:
+    if: false # bloqueado pelo encerramento 2026
     name: Build e publicação do arquivo eleitoral
     runs-on: ubuntu-latest
     timeout-minutes: 35

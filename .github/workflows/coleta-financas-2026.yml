@@ -1,18 +1,11 @@
 name: Coleta financas eleitorais 2026
 
 on:
-  # Dados congelados em 22/10/2026: coleta somente manual; PR mantém validação sem publicar dados.
+  # Arquivo histórico: exige reabertura explícita em novo commit.
   workflow_dispatch:
-  pull_request:
-    branches:
-      - main
-    paths:
-      - 'scripts/fetch_campaign_finance_cloud.py'
-      - 'scripts/build_campaign_finance_2026.py'
-      - '.github/workflows/coleta-financas-2026.yml'
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: coleta-financas-eleicoes-2026-${{ github.ref_name }}
@@ -20,6 +13,7 @@ concurrency:
 
 jobs:
   coletar:
+    if: false # bloqueado pelo encerramento 2026
     runs-on: ubuntu-latest
     timeout-minutes: 25
 

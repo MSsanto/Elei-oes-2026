@@ -1,11 +1,11 @@
 name: Coleta patrimonio eleitoral 2026
 
 on:
-  # Dados congelados em 22/10/2026: coleta patrimonial somente por acionamento manual.
+  # Arquivo histórico: exige reabertura explícita em novo commit.
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: coleta-patrimonio-eleicoes-2026
@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   coletar:
+    if: false # bloqueado pelo encerramento 2026
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
