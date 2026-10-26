@@ -1,0 +1,106 @@
+name: Atualização final única — arquivo Eleições 2026
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/final-refresh-2026.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: final-refresh-2026
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 110
+    steps:
+      - name: Checkout do snapshot arquivado
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Python 3.13
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Atualização final de candidaturas TSE
+        id: candidates
+        continue-on-error: true
+        env:
+          TSE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: |
+          python scripts/fetch_candidates_cloud.py
+          python scripts/build_cargos_2026.py
+
+      - name: Situação de registro da carga final
+        if: steps.candidates.outcome == 'success'
+        continue-on-error: true
+        env:
+          TSE_STATUS_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/candidate-statuses
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: python scripts/enrich_candidate_statuses.py
+
+      - name: Prestação de contas — última tentativa oficial
+        id: finances
+        continue-on-error: true
+        env:
+          TSE_FINANCE_SOURCE_URL: https://cdn.tse.jus.br/estatistica/sead/odsele/prestacao_contas/prestacao_de_contas_eleitorais_candidatos_2026.zip
+          TSE_FINANCE_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download?dataset=prestacaoCandidatos2026
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+          TSE_FINANCE_MAX_ATTEMPTS: '2'
+          TSE_FINANCE_RETRY_SECONDS: '10'
+        run: python scripts/fetch_campaign_finance_cloud.py
+
+      - name: Patrimônio — última tentativa oficial
+        id: assets
+        continue-on-error: true
+        env:
+          TSE_ASSETS_WORKER_URL: https://eleicoes-2026-tse-browser-probe.matheus-sergio.workers.dev/download
+          TSE_WORKER_TOKEN: ${{ secrets.TSE_WORKER_TOKEN }}
+        run: python scripts/fetch_candidate_assets_cloud.py
+
+      - name: Atualizar totalização oficial de ambos os turnos
+        run: python scripts/collect_results_2026.py --min-success 116
+
+      - name: Validar snapshot eleitoral
+        run: |
+          python -m unittest discover -s tests -p test_collect_results_2026.py
+          python - <<'PY'
+          import json
+          from collections import Counter
+          from pathlib import Path
+          d = json.loads(Path('data/processed/resultados-2026/status-por-candidato.json').read_text())
+          elected = Counter(v['cargo'] for v in d['candidaturas'].values() if v['situacao'] == 'eleito')
+          expected = {'presidente': 1, 'governador': 27, 'senador': 54, 'deputado-federal': 513, 'deputado-estadual': 1059}
+          assert dict(elected) == expected, (elected, expected)
+          assert d['cobertura']['arquivos_confirmados'] >= 116
+          print('Snapshot oficial conferido:', dict(elected))
+          PY
+
+      - name: Commit único de dados validados, preservando última base válida
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/processed data/status
+          if git diff --cached --quiet; then
+            echo 'Nenhuma alteração de dados; snapshot anterior preservado.'
+            exit 0
+          fi
+          git commit -m 'data: snapshot final oficial 2026 após segundo turno'
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Resumo das tentativas de coleta
+        if: always()
+        run: |
+          echo "Candidaturas: ${{ steps.candidates.outcome }}"
+          echo "Finanças: ${{ steps.finances.outcome }}"
+          echo "Patrimônio: ${{ steps.assets.outcome }}"
