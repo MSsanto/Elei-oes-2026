@@ -284,15 +284,43 @@ function fallbackSuppliers(store, candidateMap) {
 
 async function writeSuppliers(suppliers) {
   const base = path.join(OUTPUT, 'fornecedores');
-  // Este índice pode conter centenas de milhares de fornecedores. Mantemos o
-  // contrato JSON atual, mas sem indentação, para evitar crescimento artificial
-  // além do limite de 100 MB por arquivo do GitHub.
-  await writeJson(path.join(base, 'index.json'), {
-    schema_version: 1,
-    coverage: suppliers.coverage,
-    note: suppliers.note,
-    records: suppliers.index,
-  }, true);
+  // A origem completa fica versionada em data/processed. O Pages aceita no
+  // máximo 25 MiB por arquivo; expomos amostra + índice de busca fragmentado.
+  if (PERSIST) {
+    await writeJson(path.join(base, 'index.json'), {
+      schema_version: 1,
+      coverage: suppliers.coverage,
+      note: suppliers.note,
+      records: suppliers.index,
+    }, true);
+  } else {
+    const groups = new Map();
+    for (const record of suppliers.index) {
+      const clean = normalize(record.nome).replace(/[^A-Z0-9]/g, '');
+      const prefix = clean.slice(0, 2).padEnd(2, '_');
+      if (!groups.has(prefix)) groups.set(prefix, []);
+      groups.get(prefix).push(record);
+    }
+    const chunkSize = 2000;
+    const lookupPages = {};
+    for (const [prefix, rows] of groups.entries()) {
+      lookupPages[prefix] = Math.ceil(rows.length / chunkSize);
+      for (let page = 0; page < lookupPages[prefix]; page += 1) {
+        const filename = `${prefix}-${String(page + 1).padStart(3, '0')}.json`;
+        await writeJson(path.join(base, 'busca', filename),
+          rows.slice(page * chunkSize, (page + 1) * chunkSize), true);
+      }
+    }
+    await writeJson(path.join(base, 'index.json'), {
+      schema_version: 2,
+      sharded: true,
+      total_records: suppliers.index.length,
+      coverage: suppliers.coverage,
+      note: suppliers.note,
+      groups: lookupPages,
+      records: suppliers.index.slice(0, 80),
+    }, true);
+  }
   const shards = new Map();
   for (const [id, record] of suppliers.records.entries()) {
     const key = id.slice(0, 2);
