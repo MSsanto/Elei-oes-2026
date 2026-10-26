@@ -1,16 +1,11 @@
 name: Construir historico regional por DDD
 
 on:
+  # Arquivo histórico: exige reabertura explícita em novo commit.
   workflow_dispatch:
-    inputs:
-      ufs:
-        description: "ALL ou lista de UFs separadas por virgula, ex.: SP,RJ"
-        required: true
-        default: "ALL"
-        type: string
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: historico-regional-ddd-2022
@@ -18,6 +13,7 @@ concurrency:
 
 jobs:
   construir:
+    if: false # bloqueado pelo encerramento 2026
     runs-on: ubuntu-latest
     timeout-minutes: 120
 
