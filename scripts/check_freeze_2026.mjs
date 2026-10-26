@@ -1,32 +1,32 @@
-import { readFile } from 'node:fs/promises';
+import { access, readFile } from 'node:fs/promises';
 
-const recurringDataWorkflows = [
-  '.github/workflows/coleta-online.yml',
-  '.github/workflows/coleta-financas-2026.yml',
-  '.github/workflows/coleta-patrimonio-2026.yml',
-  '.github/workflows/watchdog-cloud.yml',
+const blocked = [
+  'coleta-online.yml',
+  'coleta-financas-2026.yml',
+  'coleta-patrimonio-2026.yml',
+  'construir-historico-ddd.yml',
+  'watchdog-cloud.yml',
+  'importar-resultados-2026.yml',
+  'deploy-tse-browser-probe.yml',
+  'deploy-pages-encerramento-2026.yml',
+  'final-refresh-2026.yml',
+  'test-moneyprinterturbo.yml',
 ];
-
-const automaticProductionWorkflows = [
-  ...recurringDataWorkflows,
-  '.github/workflows/deploy-tse-browser-probe.yml',
-];
-
-for (const path of recurringDataWorkflows) {
+await access('docs/ARCHIVE_LOCK_2026.md');
+for (const file of blocked) {
+  const path = `.github/workflows/${file}`;
   const content = await readFile(path, 'utf8');
-  if (/^\s*schedule\s*:/m.test(content) || /^\s*-?\s*cron\s*:/m.test(content)) {
-    throw new Error(`Workflow congelado ainda possui agenda recorrente: ${path}`);
+  for (const trigger of ['schedule', 'cron', 'push', 'pull_request', 'workflow_run', 'repository_dispatch']) {
+    if (new RegExp(`^\\s*${trigger}\\s*:`, 'm').test(content)) {
+      throw new Error(`Arquivo congelado possui gatilho ${trigger}: ${path}`);
+    }
   }
-  if (!/^\s*workflow_dispatch\s*:/m.test(content)) {
-    throw new Error(`Workflow congelado perdeu contingencia manual: ${path}`);
-  }
+  if (!/^\s*workflow_dispatch\s*:/m.test(content)) throw new Error(`Workflow histórico sem entrada manual: ${path}`);
+  if (!/^\s{4}if:\s*false\b/m.test(content)) throw new Error(`Workflow histórico sem bloqueio de job: ${path}`);
+  if (/^\s*contents:\s*write\b/m.test(content)) throw new Error(`Workflow histórico ainda tem escrita em contents: ${path}`);
 }
-
-for (const path of automaticProductionWorkflows) {
+for (const path of ['scripts/windows/coletar_e_publicar.ps1', 'scripts/windows/instalar_atualizacao_automatica.ps1']) {
   const content = await readFile(path, 'utf8');
-  if (/^\s*push\s*:/m.test(content)) {
-    throw new Error(`Workflow de producao congelado ainda reage a push: ${path}`);
-  }
+  if (!content.includes('ARCHIVE_LOCK_2026.md')) throw new Error(`Script local sem trava de arquivo: ${path}`);
 }
-
-console.log('OK: congelamento 2026 preservado; sem cron de dados e sem deploy/coleta automatica por push.');
+console.log('OK: arquivo 2026 bloqueado; coletas, deploys e watchdog sem gatilhos automáticos ou permissões de escrita.');
