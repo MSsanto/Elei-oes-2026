@@ -200,3 +200,14 @@ Os dois participam da elaboração das leis federais e da fiscalização do pode
 - `src/civicEducation.css` — estilos da página `Entenda`.
 - `src/appEntry.jsx` — rota `/entenda` e integração do painel.
 - `src/PlatformHeader.jsx` — item de menu `Entenda`.
+
+## 10. Panorama expandido para os cinco cargos — encerramento
+
+O componente `src/ElectionContext.jsx` substitui a inserção dinâmica específica de Deputado Federal e apresenta o mesmo conjunto de quatro indicadores em todas as consultas: candidaturas, vagas, candidaturas/vaga e eleitorado apto.
+
+- **Candidaturas:** total dos manifests oficiais processados por cargo e UF; na consulta federal, contagem da própria base carregada. Não são projeções.
+- **Vagas:** Presidência (1), Governadores (27/1 por UF), Senado (54/2 por UF) e Câmara (513/distribuição oficial por UF). Para assembleias/CLDF, a distribuição é conferida pela quantidade de eleitas e eleitos do resultado oficial final do TSE, com 1.059 vagas no país.
+- **Relação candidaturas/vaga:** divisão aritmética, sem interpretação de probabilidade individual de eleição.
+- **Eleitorado:** referência consolidada TSE de 20/07/2026, 158.745.463 aptos no país, incluindo 918.876 no exterior; por UF, o recorte da tabela anterior. Não confundir com a contagem administrativa de inscrições em outros períodos.
+
+A rota `/eleitos` é uma consulta separada, baseada exclusivamente na totalização oficial de 2026. Os 1.654 eleitos do snapshot foram confrontados com a base de candidaturas por identificador TSE; não há associação por nome. A paginação estadual original permanece intacta.
