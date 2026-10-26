@@ -17,6 +17,8 @@ O `workers/tse-browser-probe/wrangler.jsonc` não declara cron. Gatilhos externo
 
 ## Regra de reabertura
 
+A validação de CI `scripts/check_reopen_policy_2026.mjs` exige `docs/REABERTURA_2026.md` em qualquer PR/push posterior ao commit de congelamento, com os campos `Autorização explícita:`, `Responsável:`, `Escopo:`, `Justificativa:` e `Data:`. Isso é uma trava auditável, não substitui revisão humana ou proteção administrativa da branch.
+
 Nenhuma coleta, atualização, publicação, mudança de resultado ou funcionalidade deve ocorrer por rotina. Uma retomada exige **pedido explícito**, com escopo e justificativa registrados em issue/PR, revisão das fontes oficiais e dos riscos de reprocessamento, alteração consciente do bloqueio dos workflows necessários, execução de testes e documentação de novo snapshot e novo commit. Não remover este marcador apenas para fazer um deploy ou uma coleta incidental.
 
 **Bloqueio de publicação constatado:** o workflow de deploy final falhou na verificação de credenciais Cloudflare (run 40329675282). A checagem pública (run 40330042233) confirmou versão antiga no domínio. Nenhum deploy foi declarado como concluído. O eventual fornecimento de credenciais e publicação deve ocorrer em reabertura explícita, sem reativar coletas.
