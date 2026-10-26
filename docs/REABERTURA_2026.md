@@ -27,3 +27,17 @@
 A adequação técnica ao limite de 25 MiB do Cloudflare Pages está documentada em [`PUBLICACAO_PAGES_2026.md`](PUBLICACAO_PAGES_2026.md). Os dados integrais permanecem preservados em `data/processed`.
 
 A rotina de publicação excepcional foi desativada após o sucesso (`workflow_dispatch` com `if: false`). Nenhuma coleta automática foi reativada.
+
+## Última exceção: apresentar quantidade de votos
+
+**Autorização explícita:** em 26/10/2026, o mantenedor solicitou acrescentar a quantidade de votos nominais às identificações **Eleito / Não eleito**, incluindo as consultas e a página de eleitas e eleitos, como último ajuste do projeto.
+
+**Responsável:** mantenedor do repositório `MSsanto/Elei-oes-2026`.
+
+**Escopo:** acrescentar exclusivamente os votos nominais oficiais (`cand.vap`) e o turno eleitoral a cada `SQ_CANDIDATO` já presente no snapshot de resultados; atualizar a interface e realizar uma publicação pontual no projeto Cloudflare Pages existente `eleicoes-2026`. **Não** alterar situações eleitorais, totais de eleitos, candidaturas, receitas, despesas ou patrimônios.
+
+**Justificativa:** a versão publicada permite consultar o resultado Eleito / Não eleito, mas não mostra quantos votos recebeu cada candidatura. Exibir essa informação torna o arquivo eleitoral mais completo e auditável.
+
+**Data:** 26/10/2026.
+
+A execução excepcional está definida em `.github/workflows/publicar-votos-2026-uma-vez.yml`. Ela usa exclusivamente os **116 arquivos oficiais já relacionados no snapshot arquivado**, testa as regras, interrompe se houver divergência de situação ou cobertura insuficiente, atualiza somente campos de votos/turno, versiona a mudança, faz o build, verifica o projeto/domínio Cloudflare e homologará a publicação por HTTP. Após a homologação o workflow será bloqueado novamente. Nenhuma coleta periódica será ativada.
