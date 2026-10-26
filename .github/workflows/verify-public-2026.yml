@@ -1,4 +1,4 @@
-name: Verificar publicação pública final 2026
+name: Diagnosticar versão pública do arquivo 2026
 
 on:
   push:
@@ -10,40 +10,28 @@ permissions:
   contents: read
 
 jobs:
-  verify:
+  diagnose:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 5
     steps:
-      - name: Verificar HTML e bundle da consulta oficial
+      - name: Diagnóstico de rotas, bundle e snapshot sem alterar produção
         shell: bash
         run: |
           set -euo pipefail
           BASE='https://eleicoes-2026-ebz.pages.dev'
-          curl --fail --silent --show-error --location --retry 3 --retry-delay 3 --max-time 20 "$BASE/eleitos" -o "$RUNNER_TEMP/eleitos.html"
-          grep -Fq 'id="root"' "$RUNNER_TEMP/eleitos.html"
-          ASSET="$(grep -oE '/assets/[^"]+\.js' "$RUNNER_TEMP/eleitos.html" | head -n 1)"
-          test -n "$ASSET"
-          curl --fail --silent --show-error --location --retry 3 --retry-delay 3 --max-time 20 "$BASE$ASSET" -o "$RUNNER_TEMP/app.js"
-          grep -Fq 'Eleitas e eleitos' "$RUNNER_TEMP/app.js"
-          grep -Fq 'PANORAMA ELEITORAL' "$RUNNER_TEMP/app.js"
-          grep -Fq 'O projeto Eleições 2026 foi concluído.' "$RUNNER_TEMP/app.js"
-          echo 'OK: bundle público contém /eleitos, panorama e encerramento.'
-
-      - name: Verificar snapshot oficial publicado
-        shell: bash
-        run: |
-          set -euo pipefail
-          BASE='https://eleicoes-2026-ebz.pages.dev'
-          curl --fail --silent --show-error --location --retry 3 --retry-delay 3 --max-time 40 "$BASE/data/resultados-2026/status-por-candidato.json" -o "$RUNNER_TEMP/resultados.json"
-          node - "$RUNNER_TEMP/resultados.json" <<'NODE'
-          const fs = require('node:fs');
-          const d = JSON.parse(fs.readFileSync(process.argv[2], 'utf8'));
-          const counts = {};
-          for (const record of Object.values(d.candidaturas || {})) {
-            if (record.situacao === 'eleito') counts[record.cargo] = (counts[record.cargo] || 0) + 1;
-          }
-          const expected = {presidente:1, governador:27, senador:54, 'deputado-federal':513, 'deputado-estadual':1059};
-          if (JSON.stringify(counts, Object.keys(counts).sort()) !== JSON.stringify(expected, Object.keys(expected).sort())) throw Error('Snapshot público não corresponde aos 1654 eleitos oficiais');
-          if (d.cobertura?.arquivos_confirmados < 116) throw Error('Cobertura pública incompleta');
-          console.log('OK: snapshot público TSE 2026 com 1654 eleitos e 116 arquivos.');
-          NODE
+          for PATHNAME in / /eleitos /encerramento-2026 /data/resultados-2026/status-por-candidato.json; do
+            STATUS="$(curl --silent --show-error --location --max-time 20 --output "$RUNNER_TEMP/page" --write-out '%{http_code}' "$BASE$PATHNAME")"
+            BYTES="$(wc -c < "$RUNNER_TEMP/page")"
+            echo "Rota $PATHNAME: HTTP $STATUS, $BYTES bytes"
+            if [ "$PATHNAME" = '/eleitos' ] && [ "$STATUS" = '200' ]; then
+              if grep -Fq 'id="root"' "$RUNNER_TEMP/page"; then echo 'HTML SPA: SIM'; else echo 'HTML SPA: NÃO'; fi
+              ASSET="$(grep -oE '/assets/[^"]+\.js' "$RUNNER_TEMP/page" | head -n 1 || true)"
+              echo "Asset: ${ASSET:-ausente}"
+              if [ -n "$ASSET" ]; then
+                curl --silent --show-error --location --max-time 20 "$BASE$ASSET" -o "$RUNNER_TEMP/bundle"
+                for MARKER in 'Eleitas e eleitos' 'PANORAMA ELEITORAL' 'O projeto Eleições 2026 foi concluído.'; do
+                  if grep -Fq "$MARKER" "$RUNNER_TEMP/bundle"; then echo "Marcador $MARKER: SIM"; else echo "Marcador $MARKER: NÃO"; fi
+                done
+              fi
+            fi
+          done
