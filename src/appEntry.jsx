@@ -8,7 +8,7 @@ import PlatformHeader from './PlatformHeader.jsx';
 import { MoneyPage, RadarPage, SupplierPage } from './editorialPhase2.jsx';
 import EditorialDirectory from './editorialDirectory.jsx';
 import CivicEducationPage from './CivicEducationPage.jsx';
-import FederalElectionStats from './FederalElectionStats.jsx';
+import ElectedCandidatesPage from './ElectedCandidatesPage.jsx';
 import StatusPage from './StatusPage.jsx';
 import Encerramento2026 from './encerramento2026.jsx';
 import './editorialTrust.js';
@@ -76,6 +76,7 @@ function routeForLocation() {
   if (pathname === '/situacao-candidatura') return <GovernancePage kind="situacao" />;
   if (pathname === '/status') return <StatusPage />;
   if (pathname === '/encerramento-2026') return <Encerramento2026 />;
+  if (pathname === '/eleitos') return <ElectedCandidatesPage />;
   if (pathname === '/radar') return <RadarPage />;
   if (pathname === '/siga-o-dinheiro') return <MoneyPage />;
   if (pathname === '/entenda') return <CivicEducationPage />;
@@ -85,7 +86,7 @@ function routeForLocation() {
   const params = new URLSearchParams(window.location.search);
   const isProfile = /^\/candidato\/[^/]+$/.test(pathname);
   const consultation = isProfile || CARGOS.some((item) => item.slug === params.get('cargo')) || Boolean(params.get('candidato'));
-  return consultation ? <><ConsultationApp /><FederalElectionStats /></> : <HomeView />;
+  return consultation ? <ConsultationApp /> : <HomeView />;
 }
 
 normalizeUrl();
