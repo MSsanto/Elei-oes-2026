@@ -103,6 +103,20 @@ jobs:
             console.error('::error::Account ID não autorizado ou não encontrado para o token. HTTP ' + response.status + ' / Cloudflare: ' + (codes || 'sem código'));
             process.exit(1);
           }
+          if (!Array.isArray(payload.result)) {
+            console.error('::error::Resposta da API de Pages não contém projetos em formato reconhecido.');
+            process.exit(1);
+          }
+          const domain = 'eleicoes-2026-ebz.pages.dev';
+          const match = payload.result.find(item => item.subdomain === domain ||
+            (Array.isArray(item.domains) && item.domains.includes(domain)));
+          if (!match) {
+            console.error('::error::A conta autenticada não possui projeto Pages vinculado ao domínio solicitado.');
+            console.log('Projetos disponíveis:', payload.result.map(item => item.name).join(', '));
+            process.exit(1);
+          }
+          console.log('Projeto Pages confirmado para o domínio:', match.name);
+          fs.appendFileSync(process.env.GITHUB_ENV, 'PAGES_PROJECT_NAME=' + match.name + '\n');
           console.log('Conta acessível; projetos Pages visíveis pela API:', Array.isArray(payload.result) ? payload.result.length : 'resposta inesperada');
           console.log('Nomes de projetos Pages autorizados:', Array.isArray(payload.result) ? payload.result.map(item => item.name).join(', ') || '(nenhum)' : '(desconhecido)');
           console.log('Domínios Pages autorizados:', Array.isArray(payload.result) ? payload.result.map(item => item.name + ' = ' + item.subdomain + ' (' + (item.domains || []).join(', ') + ')').join('; ') : '(desconhecido)');
