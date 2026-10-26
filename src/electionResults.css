@@ -1,0 +1,23 @@
+.election-result-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 9px;
+  padding: 3px 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 750;
+  line-height: 1.35;
+  letter-spacing: 0;
+  white-space: nowrap;
+  vertical-align: middle;
+  background: #f1f5f9;
+  color: #566579;
+}
+.election-result-badge--eleito { background: #e9f7f1; color: #116149; border-color: #b2e4d1; }
+.election-result-badge--nao_eleito { background: #f1f5f9; color: #45556c; border-color: #cbd5e1; }
+.election-result-badge--unknown { background: #fff8e8; color: #805c14; border-color: #f0ddaa; }
+.candidate-main h3 .election-result-badge,
+.profile-header h2 .election-result-badge { font-size: 11px; letter-spacing: normal; }
+.autocomplete-list strong .election-result-badge { font-weight: 700; font-size: 10px; }
+@media(max-width:480px){.election-result-badge{font-size:10px;margin-left:6px;padding:2px 6px;white-space:normal}}

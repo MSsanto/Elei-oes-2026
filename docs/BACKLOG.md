@@ -35,6 +35,8 @@ Decisão canônica: [ENCERRAMENTO_2026.md](ENCERRAMENTO_2026.md).
 - [x] Publicar a página pública de encerramento `/encerramento-2026`, com inventário verificável das entregas, método e registro histórico.
 - [ ] **26/10/2026:** executar o snapshot final pós-segundo turno com dados oficiais do TSE.
 - [ ] **26/10/2026:** criar a aba pública **Eleitos**.
+- [x] Adicionar identificação Eleito / Não eleito / Não confirmado ao lado do nome na busca, no autocomplete e nos perfis (fonte: TSE, vínculo por SQ_CANDIDATO).
+- [ ] Consolidar em snapshot oficial as situações eleitorais de todos os cargos/UFs pelo workflow único `importar-resultados-2026.yml`; não declarar "Não eleito" por ausência de registro.
 - [ ] Validar build, rotas e fonte oficial da listagem de eleitas e eleitos.
 - [ ] Registrar commit/release do snapshot final e declarar o projeto congelado.
 

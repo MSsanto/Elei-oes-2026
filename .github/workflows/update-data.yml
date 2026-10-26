@@ -43,6 +43,9 @@ jobs:
           python3 -m py_compile scripts/fetch_camara_atividade.py
           python3 -m py_compile scripts/fetch_camara_atividade_cloud.py
 
+      - name: Testar classificação de resultados oficiais
+        run: python3 -m unittest discover -s tests -p test_collect_results_2026.py
+
       - name: Validar configuração dos cargos multi-cargo
         run: |
           python3 - <<'PY'

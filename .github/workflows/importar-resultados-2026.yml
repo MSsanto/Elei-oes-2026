@@ -1,0 +1,53 @@
+name: Importar resultados oficiais de 2026
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/collect_results_2026.py'
+      - 'tests/test_collect_results_2026.py'
+      - '.github/workflows/importar-resultados-2026.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: consolidacao-unica-resultado-2026
+  cancel-in-progress: false
+
+jobs:
+  importar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Testar regras de classificação dos resultados
+        run: python -m unittest discover -s tests -p test_collect_results_2026.py
+
+      - name: Consultar totalizações oficiais do TSE
+        run: python scripts/collect_results_2026.py --min-success 30
+
+      - name: Registrar snapshot e proveniência no GitHub
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/processed/resultados-2026/status-por-candidato.json
+          if git diff --cached --quiet; then
+            echo 'Resultados já estão atualizados.'
+            exit 0
+          fi
+          git commit -m 'data: consolidar resultado eleitoral oficial de 2026'
+          git push origin HEAD:main

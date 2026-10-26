@@ -18,6 +18,7 @@ const required = [
   'data/candidatos/deputado-estadual/SP/manifest.json',
   'data/candidatos/deputado-estadual/SP/cards/001.json',
   'data/editorial/manifest.json',
+  'data/resultados-2026/status-por-candidato.json',
   'data/editorial/radar.json',
   'data/editorial/finance-overview.json',
   'data/editorial/fornecedores/index.json',
@@ -53,6 +54,9 @@ const routeMarkers = [
   'Patrimônio',
   'Bens informados à Justiça Eleitoral',
   'A consulta não conseguiu iniciar.',
+  'Não confirmado',
+  'Não eleito',
+  'Eleito',
   'Finanças da campanha',
   'Filtros ativos',
 ];

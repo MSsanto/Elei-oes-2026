@@ -5,6 +5,7 @@ import StateDeputiesView from './stateDeputies.jsx';
 import CampaignFinance from './campaignFinance.jsx';
 import CandidateAssets from './candidateAssets.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
+import { ElectionResultBadge, fetchElectionResults, resultLabel, OFFICIAL_RESULTS_URL } from './electionResults.jsx';
 
 const REPOSITORY_URL = 'https://github.com/MSsanto/Elei-oes-2026';
 const TSE_CANDIDATES_URL = 'https://dadosabertos.tse.jus.br/pt_BR/dataset/candidatos-2026';
@@ -176,7 +177,7 @@ export function CandidateAvatar({candidate,large=false}){
   );
 }
 
-function CandidateCard({candidate,config,onOpen,onShare}){
+function CandidateCard({candidate,config,onOpen,onShare,electionResults}){
   const situation=displayTseValue(candidate.situacao_candidatura);
   const hasHistory=candidate.identidade_camara?.historico_camara_localizado===true;
   return (
@@ -185,7 +186,7 @@ function CandidateCard({candidate,config,onOpen,onShare}){
         <CandidateAvatar candidate={candidate}/>
         <div className="candidate-main">
           <div className="candidate-topline"><span className="number">{candidate.numero||'—'}</span><span aria-hidden="true">·</span><span className="party">{candidate.partido||'Partido não informado'}</span><span aria-hidden="true">·</span><span className="uf">{candidate.uf||(config.slug==='presidente'?'BR':'—')}</span></div>
-          <h3>{displayName(candidate)}</h3>
+          <h3>{displayName(candidate)} <ElectionResultBadge candidate={candidate} snapshot={electionResults}/></h3>
           <p>{candidate.ocupacao || (candidate.nome&&candidate.nome!==candidate.nome_urna?candidate.nome:(candidate.cargo||config.label))}</p>
           <div className="candidate-card-meta">
             {situation&&<span className="candidate-status">{situation}</span>}
@@ -215,7 +216,7 @@ function DataStrip({count,scope,parties,updated,loading=false}) {
   );
 }
 
-function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef}) {
+function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef,electionResults}) {
   const initialTab = new URLSearchParams(window.location.search).get('aba') || 'resumo';
   const identity=candidate?.identidade_camara;
   const confirmed=config.hasChamber&&identity?.correspondencia_status==='confirmada';
@@ -279,7 +280,7 @@ function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef}) {
 
   const status=displayTseValue(candidate.situacao_candidatura);
   const humanRows=[
-    ['Situação da candidatura',status],['Partido',candidate.partido],['Número',candidate.numero],['Ocupação',candidate.ocupacao],['Escolaridade',candidate.grau_instrucao],['Data de nascimento',formatBirthDate(candidate.data_nascimento)],['UF',candidate.uf],['Nome completo',candidate.nome],['Nome de urna',candidate.nome_urna],['Gênero',candidate.genero],['Cor/raça declarada',candidate.cor_raca],
+    ['Situação da candidatura',status],['Resultado eleitoral',resultLabel(candidate,electionResults)],['Partido',candidate.partido],['Número',candidate.numero],['Ocupação',candidate.ocupacao],['Escolaridade',candidate.grau_instrucao],['Data de nascimento',formatBirthDate(candidate.data_nascimento)],['UF',candidate.uf],['Nome completo',candidate.nome],['Nome de urna',candidate.nome_urna],['Gênero',candidate.genero],['Cor/raça declarada',candidate.cor_raca],
   ].filter(([,value])=>value!==null&&value!==undefined&&value!=='');
 
   return (
@@ -294,7 +295,7 @@ function CandidateProfile({candidate,config,onClose,onShare,returnFocusRef}) {
           <CandidateAvatar candidate={candidate} large/>
           <div>
             <div className="candidate-topline"><span className="number">{candidate.numero||'—'}</span><span aria-hidden="true">·</span><span>{candidate.partido||'—'}</span><span aria-hidden="true">·</span><span>{candidate.uf||(config.slug==='presidente'?'BR':'—')}</span></div>
-            <h2 id="profile-title">{displayName(candidate)}</h2>
+            <h2 id="profile-title">{displayName(candidate)} <ElectionResultBadge candidate={candidate} snapshot={electionResults}/></h2>
             <p>{candidate.cargo||config.label} · candidatura 2026</p>
             <div className="profile-head-status">{status&&<span>{status}</span>}{confirmed&&<span className="confirmed">✓ Vínculo parlamentar confirmado</span>}{candidate.ultima_atualizacao_tse&&<span>Fonte eleitoral: {candidate.ultima_atualizacao_tse}</span>}</div>
           </div>
@@ -331,7 +332,7 @@ function FilterChip({label,onRemove}) {
   return <span className="filter-chip"><span>{label}</span><button type="button" onClick={onRemove} aria-label={`Remover filtro ${label}`}>×</button></span>;
 }
 
-function SearchControl({value,onChange,disabled,candidates}) {
+function SearchControl({value,onChange,disabled,candidates,electionResults}) {
   const [focused,setFocused]=useState(false);
   const suggestions=useMemo(()=>{
     const term=normalize(value.trim());
@@ -345,7 +346,7 @@ function SearchControl({value,onChange,disabled,candidates}) {
         <span className="primary-search-icon" aria-hidden="true">⌕</span>
         <input type="search" value={value} disabled={disabled} placeholder="Nome, número, partido ou ocupação" autoComplete="off" role="combobox" aria-expanded={focused&&suggestions.length>0} aria-controls="candidate-suggestions" onFocus={()=>setFocused(true)} onBlur={()=>setTimeout(()=>setFocused(false),100)} onChange={(event)=>onChange(event.target.value)}/>
         {value&&<button className="primary-search-clear" type="button" onClick={()=>onChange('')} aria-label="Limpar busca">×</button>}
-        {focused&&suggestions.length>0&&<div id="candidate-suggestions" className="autocomplete-list" role="listbox">{suggestions.map((candidate)=><button key={candidate.id_tse} type="button" role="option" onMouseDown={(event)=>event.preventDefault()} onClick={()=>{onChange(displayName(candidate));setFocused(false);}}><strong>{displayName(candidate)}</strong><span>{candidate.numero||'—'} · {candidate.partido||'—'}{candidate.uf?` · ${candidate.uf}`:''}</span></button>)}</div>}
+        {focused&&suggestions.length>0&&<div id="candidate-suggestions" className="autocomplete-list" role="listbox">{suggestions.map((candidate)=><button key={candidate.id_tse} type="button" role="option" onMouseDown={(event)=>event.preventDefault()} onClick={()=>{onChange(displayName(candidate));setFocused(false);}}><strong>{displayName(candidate)} <ElectionResultBadge candidate={candidate} snapshot={electionResults}/></strong><span>{candidate.numero||'—'} · {candidate.partido||'—'}{candidate.uf?` · ${candidate.uf}`:''}</span></button>)}</div>}
       </div>
     </label>
   );
@@ -375,6 +376,7 @@ export default function ConsultationApp(){
   const [profileId,setProfileId]=useState(initial.profileId);
   const [advancedOpen,setAdvancedOpen]=useState(Boolean(initial.occupation||initial.situation||initial.education));
   const [candidates,setCandidates]=useState([]);
+  const [electionResults,setElectionResults]=useState(null);
   const [metadata,setMetadata]=useState(null);
   const [status,setStatus]=useState(CARGO_CONFIG[initial.cargo].paged?'custom':'loading');
   const [error,setError]=useState('');
@@ -383,6 +385,14 @@ export default function ConsultationApp(){
   const [shareNotice,setShareNotice]=useState('');
   const lastTriggerRef=useRef(null);
   const config=CARGO_CONFIG[cargo];
+
+  useEffect(()=>{
+    const controller=new AbortController();
+    fetchElectionResults(controller.signal).then(setElectionResults).catch((error)=>{
+      if(error.name!=='AbortError')console.warn('Resultados eleitorais indisponíveis na carga histórica.',error);
+    });
+    return()=>controller.abort();
+  },[]);
 
   const locationState=useCallback(()=>({cargo,query,uf,party,occupation,situation,education,sortBy}),[cargo,query,uf,party,occupation,situation,education,sortBy]);
 
@@ -511,7 +521,7 @@ export default function ConsultationApp(){
           <StateDeputiesView
             uf={uf} setUf={setUf} query={query} setQuery={setQuery} party={party} setParty={setParty} occupation={occupation} setOccupation={setOccupation}
             situation={situation} setSituation={setSituation} sortBy={sortBy} setSortBy={setSortBy} profileId={profileId}
-            onOpen={openCandidate} onShare={shareCandidate} onProfileLoaded={(candidate)=>{if(profileId)setSelected(candidate);}} onClearAll={clearAll}
+            onOpen={openCandidate} onShare={shareCandidate} electionResults={electionResults} onProfileLoaded={(candidate)=>{if(profileId)setSelected(candidate);}} onClearAll={clearAll}
           />
         ) : (
           <>
@@ -526,7 +536,7 @@ export default function ConsultationApp(){
                 </div>
               ) : (
                 <>
-                  <SearchControl value={query} onChange={setQuery} disabled={status!=='ready'} candidates={candidates}/>
+                  <SearchControl value={query} onChange={setQuery} disabled={status!=='ready'} candidates={candidates} electionResults={electionResults}/>
                   <div className="filter-row">
                     {config.supportsUf&&<label className="filter-field"><span>UF</span><select value={uf} onChange={(event)=>setUf(event.target.value)}><UfOptions includeAll={!config.requiresUf}/></select></label>}
                     <label className="filter-field"><span>Partido</span><select value={party} disabled={status!=='ready'} onChange={(event)=>setParty(event.target.value)}><option value="">Todos</option>{parties.map((item)=><option key={item} value={item}>{item}</option>)}</select></label>
@@ -547,7 +557,7 @@ export default function ConsultationApp(){
                   {filtered.length===0?(
                     <div className="ux-state-card"><strong>Nenhuma candidatura encontrada{activeFilterSummary?` para ${activeFilterSummary}`:''}.</strong><span>Remova um filtro ou limpe a consulta para ampliar os resultados.</span><div className="ux-state-actions">{party&&<button type="button" onClick={()=>setParty('')}>Remover partido</button>}{query&&<button type="button" onClick={()=>setQuery('')}>Remover busca</button>}<button className="primary" type="button" onClick={clearAll}>Limpar todos os filtros</button></div></div>
                   ):(
-                    <><div className="candidate-list">{visible.map((candidate)=><CandidateCard key={candidate.id_tse} candidate={candidate} config={config} onOpen={openCandidate} onShare={shareCandidate}/>)}</div>{hasMore&&<div className="ux-state-actions" style={{marginTop:16}}><button type="button" onClick={()=>setVisibleCount((count)=>count+RESULT_BATCH_SIZE)}>Carregar mais</button></div>}</>
+                    <><div className="candidate-list">{visible.map((candidate)=><CandidateCard key={candidate.id_tse} candidate={candidate} config={config} onOpen={openCandidate} onShare={shareCandidate} electionResults={electionResults}/>)}</div>{hasMore&&<div className="ux-state-actions" style={{marginTop:16}}><button type="button" onClick={()=>setVisibleCount((count)=>count+RESULT_BATCH_SIZE)}>Carregar mais</button></div>}</>
                   )}
                 </section>
               </>
@@ -557,12 +567,13 @@ export default function ConsultationApp(){
 
         <aside className="profile-method-card" style={{width:'min(1180px, calc(100% - 40px))',margin:'0 auto 54px'}}>
           <strong>Origem e metodologia</strong>
+          <p>O resultado de cada candidatura (Eleito, Não eleito ou Não confirmado) usa a totalização oficial vinculada ao SQ_CANDIDATO; ausência no arquivo não equivale a derrota. <a href={OFFICIAL_RESULTS_URL} target="_blank" rel="noreferrer">Conferir no TSE ↗</a></p>
           <p>Dados eleitorais e patrimoniais: TSE. Quando houver associação confirmada de histórico parlamentar, a fonte correspondente é indicada no perfil. A plataforma não cria ranking ou recomendação.</p>
           <div className="profile-method-links"><a href={TSE_CANDIDATES_URL} target="_blank" rel="noreferrer">Fonte eleitoral e bens ↗</a><a href={TSE_ACCOUNTS_URL} target="_blank" rel="noreferrer">Prestação de contas ↗</a>{config.hasChamber&&<a href={CAMARA_URL} target="_blank" rel="noreferrer">Câmara ↗</a>}<a href="/metodologia">Como tratamos esses dados?</a><a href={REPOSITORY_URL} target="_blank" rel="noreferrer">Código ↗</a></div>
         </aside>
       </main>
 
-      {selected&&<CandidateProfile candidate={selected} config={config} onClose={closeCandidate} onShare={shareCandidate} returnFocusRef={lastTriggerRef}/>} 
+      {selected&&<CandidateProfile candidate={selected} config={config} onClose={closeCandidate} onShare={shareCandidate} returnFocusRef={lastTriggerRef} electionResults={electionResults}/>} 
       {profileId&&!config.paged&&status==='ready'&&!selected&&<div className="profile-route"><section className="profile-panel"><div className="profile-top-actions"><button className="profile-back" type="button" onClick={closeCandidate}>‹ Voltar para {config.label}</button></div><div className="ux-state-card"><strong>Perfil não localizado nesta base.</strong><span>O identificador informado não foi encontrado na carga atualmente selecionada.</span><div className="ux-state-actions"><button className="primary" type="button" onClick={closeCandidate}>Voltar à consulta</button></div></div></section></div>}
       {shareNotice&&<div role="status" style={{position:'fixed',right:18,bottom:18,zIndex:200,padding:'11px 14px',borderRadius:10,background:'#0b1f33',color:'#fff',fontSize:12}}>{shareNotice}</div>}
     </div>
