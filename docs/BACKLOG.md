@@ -52,7 +52,7 @@ Os conteúdos estão publicados em `/entenda`, com fontes oficiais e tratamento 
 
 ### Contexto eleitoral — candidaturas, vagas e eleitorado
 
-Branch: `feat/contexto-eleitoral-final-2026`
+Branch: `feat/contexto-eleitoral-final-2026` · PR [#45](https://github.com/MSsanto/Elei-oes-2026/pull/45)
 
 - [x] Exibir candidaturas presentes na base por cargo/circunscrição.
 - [x] Exibir vagas oficiais por cargo e UF.
@@ -60,7 +60,7 @@ Branch: `feat/contexto-eleitoral-final-2026`
 - [x] Exibir eleitorado apto nacional e por UF.
 - [x] Preservar arquitetura leve de Deputado Estadual/Distrital.
 - [x] Documentar fontes, escopo e limitações em [CONTEXTO_ELEITORAL.md](CONTEXTO_ELEITORAL.md).
-- [ ] Validar build/CI.
+- [x] Validar build/CI — `Validar projeto` run #317 concluído com sucesso.
 - [ ] Integrar à `main` após revisão/PR.
 
 ---
