@@ -27,7 +27,7 @@ O script `scripts/collect_results_2026.py` baixa recursos oficiais de resultado,
 
 O workflow `.github/workflows/importar-resultados-2026.yml` pode ser executado manualmente e realiza a primeira consolidação quando incorporado à `main`. Cada alteração fica em commit, sem reativar as coletas contínuas suspensas em 22/10/2026.
 
-O snapshot inicial contém registros vazios; o rótulo "Não confirmado" é exibido até a importação homologada dos resultados oficiais. A consulta não deve criar rótulos "Não eleito" para dados ausentes, falhas de rede, arquivos não totalizados ou fontes não disponibilizadas.
+O snapshot inicial foi criado sem registros e preenchido pela execução do GitHub Actions em **26/10/2026**, com **18.842 candidaturas** extraídas de **116 arquivos oficiais validados**. Candidaturas sem correspondência conclusiva continuam exibindo **Não confirmado**. Execução: https://github.com/MSsanto/Elei-oes-2026/actions/runs/40266074988 . A consulta não deve criar rótulos "Não eleito" para dados ausentes, falhas de rede, arquivos não totalizados ou fontes não disponibilizadas.
 
 **Revisões eleitorais após a consolidação:** resultados podem sofrer retificações judiciais. Qualquer atualização excepcional exige execução e commit explícitos, com registro de proveniência e justificativa. A aplicação é um arquivo histórico, não uma central automática de apuração.
 
