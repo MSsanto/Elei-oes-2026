@@ -10,6 +10,7 @@ import EditorialDirectory from './editorialDirectory.jsx';
 import CivicEducationPage from './CivicEducationPage.jsx';
 import FederalElectionStats from './FederalElectionStats.jsx';
 import StatusPage from './StatusPage.jsx';
+import Encerramento2026 from './encerramento2026.jsx';
 import './editorialTrust.js';
 import './runtime.css';
 import './designSystem.css';
@@ -74,6 +75,7 @@ function routeForLocation() {
   if (pathname === '/correcoes') return <GovernancePage kind="correcoes" />;
   if (pathname === '/situacao-candidatura') return <GovernancePage kind="situacao" />;
   if (pathname === '/status') return <StatusPage />;
+  if (pathname === '/encerramento-2026') return <Encerramento2026 />;
   if (pathname === '/radar') return <RadarPage />;
   if (pathname === '/siga-o-dinheiro') return <MoneyPage />;
   if (pathname === '/entenda') return <CivicEducationPage />;
