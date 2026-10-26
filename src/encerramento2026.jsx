@@ -42,6 +42,13 @@ const ENTREGAS = [
     acao: 'Ver entregas documentadas',
     externo: true,
   },
+  {
+    numero: '06',
+    titulo: 'Eleitas e eleitos — resultado oficial',
+    texto: 'Consulta neutra às 1.654 pessoas eleitas, por cargo e unidade da Federação, vinculadas exclusivamente ao identificador SQ_CANDIDATO e à totalização oficial do TSE.',
+    link: '/eleitos',
+    acao: 'Consultar eleitas e eleitos',
+  },
 ];
 
 const MARCOS = [
