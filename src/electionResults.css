@@ -21,3 +21,19 @@
 .profile-header h2 .election-result-badge { font-size: 11px; letter-spacing: normal; }
 .autocomplete-list strong .election-result-badge { font-weight: 700; font-size: 10px; }
 @media(max-width:480px){.election-result-badge{font-size:10px;margin-left:6px;padding:2px 6px;white-space:normal}}
+
+
+/* Número de votos do próprio candidato; sem comparação/ranking eleitoral. */
+.election-result-summary { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; vertical-align: middle; }
+.election-result-summary .election-result-badge { margin-left: 0; }
+.election-result-votes {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #344c6b;
+  white-space: nowrap;
+}
+@media(max-width:480px){.election-result-summary{gap:4px}.election-result-votes{font-size:10px;white-space:normal}}
