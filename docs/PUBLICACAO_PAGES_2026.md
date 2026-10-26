@@ -24,3 +24,18 @@ Esses índices são úteis para gerar o catálogo, mas arquivos desse porte não
 Trata-se somente de uma adequação técnica para disponibilizar o snapshot já congelado. O conteúdo de apuração eleitoral, o importador de resultados, as coletas programadas e os dados integrais armazenados em `data/processed` permanecem inalterados.
 
 A validação completa do build e a verificação pública das rotas `/encerramento-2026` e `/eleitos` são condições necessárias para declarar a publicação concluída.
+
+## Homologação de produção — 26/10/2026
+
+**Resultado: PUBLICADO E VALIDADO.**
+
+- Projeto Cloudflare Pages existente: `eleicoes-2026`.
+- Domínio de produção confirmado pela API Cloudflare: `eleicoes-2026-ebz.pages.dev`.
+- Workflow excepcional: [execução 40359713307](https://github.com/MSsanto/Elei-oes-2026/actions/runs/40359713307), **success**, incluindo build, checagem de credenciais, seleção do projeto, upload e teste HTTP público.
+- Upload Cloudflare: **5.338 arquivos**, conclusão informada pelo Wrangler.
+- Deploy identificado pelo Cloudflare: `https://68638f5e.eleicoes-2026-ebz.pages.dev`.
+- As rotas `/encerramento-2026` e `/eleitos` retornaram aplicação válida. A conferência HTTP também validou que o bundle principal contém os títulos dessas páginas.
+- Os scripts de coleta periódica, watchdog e outros workflows de publicação congelados não foram reativados.
+- Após a homologação, `.github/workflows/publicar-arquivo-2026-uma-vez.yml` voltou ao estado manual com `if: false`, impedindo nova publicação acidental.
+
+O ciclo eleitoral de 2026 permanece arquivado; esta intervenção tratou apenas a **entrega pública** do snapshot já consolidado e a compatibilidade dos arquivos de fornecedores com o limite do Cloudflare Pages.
