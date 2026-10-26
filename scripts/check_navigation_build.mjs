@@ -1,4 +1,4 @@
-import { access, readFile, readdir } from 'node:fs/promises';
+import { access, readFile, readdir, stat } from 'node:fs/promises';
 import path from 'node:path';
 import process from 'node:process';
 
@@ -25,6 +25,23 @@ const required = [
 ];
 
 for (const relative of required) await access(path.join(dist, relative));
+
+// Limite de 25 MiB por arquivo no Cloudflare Pages, inclusive JSON em public/data.
+const maxAssetBytes = 25 * 1024 * 1024;
+async function inspectAssetSizes(dir) {
+  for (const item of await readdir(dir, { withFileTypes: true })) {
+    const full = path.join(dir, item.name);
+    if (item.isDirectory()) {
+      await inspectAssetSizes(full);
+    } else if (item.isFile()) {
+      const details = await stat(full);
+      if (details.size > maxAssetBytes) {
+        throw new Error(`Arquivo incompatível com Cloudflare Pages: ${path.relative(dist, full)} (${(details.size / 1024 / 1024).toFixed(1)} MiB)`);
+      }
+    }
+  }
+}
+await inspectAssetSizes(dist);
 
 const assetsDir = path.join(dist, 'assets');
 const assets = await readdir(assetsDir);
