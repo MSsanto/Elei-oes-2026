@@ -58,6 +58,9 @@ try {
     '/?cargo=senador&uf=SP',
     '/?cargo=deputado-federal',
     '/?cargo=deputado-estadual&uf=SP',
+    '/eleitos',
+    '/entenda',
+    '/encerramento-2026',
     '/radar',
     '/siga-o-dinheiro',
     '/metodologia',
@@ -92,6 +95,8 @@ try {
     'Como os dados são coletados',
     'Finanças da campanha',
     'Filtros ativos',
+    'Eleitas e eleitos',
+    'PANORAMA ELEITORAL',
   ]) {
     if (!bundle.includes(marker)) throw new Error(`Marcador ausente no bundle servido: ${marker}`);
   }
@@ -103,6 +108,7 @@ try {
     ['/data/deputados_federais.json', 'Deputado Federal', 'array'],
     ['/data/candidatos/deputado-estadual/SP/cards/001.json', 'Deputado Estadual SP', 'array'],
     ['/data/editorial/radar.json', 'Radar editorial', 'object'],
+    ['/data/resultados-2026/status-por-candidato.json', 'Resultado oficial TSE', 'object'],
     ['/data/editorial/finance-overview.json', 'Siga o Dinheiro', 'object'],
     ['/data/editorial/fornecedores/index.json', 'Fornecedores', 'object'],
   ];

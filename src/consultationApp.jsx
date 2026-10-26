@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import './photo.css';
 import { ChamberActivity, chamberBasePhoto, displayTseValue } from './chamberProfile.jsx';
 import StateDeputiesView from './stateDeputies.jsx';
+import ElectionContext from './ElectionContext.jsx';
 import CampaignFinance from './campaignFinance.jsx';
 import CandidateAssets from './candidateAssets.jsx';
 import PlatformHeader from './PlatformHeader.jsx';
@@ -517,6 +518,7 @@ export default function ConsultationApp(){
           </div>
         </section>
 
+        <ElectionContext cargo={cargo} uf={uf} candidates={candidates} candidateStatus={status} results={electionResults} />
         {config.paged ? (
           <StateDeputiesView
             uf={uf} setUf={setUf} query={query} setQuery={setQuery} party={party} setParty={setParty} occupation={occupation} setOccupation={setOccupation}

@@ -32,3 +32,11 @@ O snapshot inicial foi criado sem registros e preenchido pela execução do GitH
 **Revisões eleitorais após a consolidação:** resultados podem sofrer retificações judiciais. Qualquer atualização excepcional exige execução e commit explícitos, com registro de proveniência e justificativa. A aplicação é um arquivo histórico, não uma central automática de apuração.
 
 **Publicação da aplicação:** merge no GitHub e build do React não asseguram atualização do domínio `eleicoes-2026-ebz.pages.dev`. O deploy do Cloudflare Pages depende de integração/credenciais próprias e só deve ser dado como concluído após verificação pública.
+
+## Consulta pública de eleitas e eleitos
+
+A rota `/eleitos` filtra **somente** os registros com `situacao = eleito` no snapshot oficial do TSE. O vínculo com nome, partido, número e UF exige correspondência exata por `SQ_CANDIDATO` e cargo/circunscrição na base de candidaturas arquivada. Nenhuma pessoa é classificada como eleita a partir de projeções, nome ou votação presumida.
+
+A interface oferece filtros por cargo, UF e busca textual, com ordenação alfabética. Para Governador, Senador e Deputado Estadual/Distrital, a UF é obrigatória antes do carregamento; o índice estadual permanece sob demanda. A consulta de Deputado Federal pode abranger o país inteiro. O resultado é um arquivo histórico, sujeito a eventual retificação judicial posterior não incorporada automaticamente.
+
+A verificação automatizada `scripts/check_final_results_2026.mjs` exige os 1.654 eleitos oficiais (1 Presidente, 27 Governadores, 54 Senadores, 513 Deputados Federais e 1.059 Deputados Estaduais/Distritais), os sete escopos efetivos de segundo turno e correspondência exata dos 1.654 identificadores com as bases de candidaturas. A verificação de interface e acessibilidade semântica básica está em `scripts/check_accessibility_2026.mjs`.

@@ -42,13 +42,20 @@ const ENTREGAS = [
     acao: 'Ver entregas documentadas',
     externo: true,
   },
+  {
+    numero: '06',
+    titulo: 'Eleitas e eleitos — resultado oficial',
+    texto: 'Consulta neutra às 1.654 pessoas eleitas, por cargo e unidade da Federação, vinculadas exclusivamente ao identificador SQ_CANDIDATO e à totalização oficial do TSE.',
+    link: '/eleitos',
+    acao: 'Consultar eleitas e eleitos',
+  },
 ];
 
 const MARCOS = [
   { data: '2026', titulo: 'Construção e publicação', detalhe: 'Consulta eleitoral, perfis, finanças, patrimônio, Radar, Siga o Dinheiro e páginas editoriais.' },
   { data: '05/09', titulo: 'Carga patrimonial documentada', detalhe: '13.843 candidaturas com dados patrimoniais, 76.806 bens e 4.019 vínculos históricos conservadores.' },
   { data: '22/10', titulo: 'Coletas recorrentes suspensas', detalhe: 'Pipelines periódicos e watchdog congelados, mantendo rotas manuais e histórico versionado.' },
-  { data: '26/10', titulo: 'Consolidação eleitoral final', detalhe: 'Etapa prevista de validação pós-segundo turno. Não a tratamos como publicada até confirmação do snapshot oficial.' },
+  { data: '26/10', titulo: 'Consolidação eleitoral final', detalhe: 'Totalização oficial de 1.654 eleitas e eleitos consolidada a partir de 116 arquivos TSE. Publicação no domínio depende de verificação independente.' },
 ];
 
 export default function Encerramento2026() {
@@ -81,7 +88,7 @@ export default function Encerramento2026() {
             <a className="closure-primary" href="#entregas">Conheça as entregas <span aria-hidden="true">↓</span></a>
             <a className="closure-secondary" href={REPO} target="_blank" rel="noreferrer">Código e histórico no GitHub ↗</a>
           </div>
-          <p className="closure-caution"><strong>Nota de integridade:</strong> a suspensão das atualizações periódicas foi registrada em 22/10/2026. A carga final de resultados pós-segundo turno, prevista para 26/10, depende de confirmação e validação próprias; o encerramento do desenvolvimento não equivale a afirmar que esse snapshot já foi publicado.</p>
+          <p className="closure-caution"><strong>Nota de integridade:</strong> a suspensão das atualizações periódicas foi registrada em 22/10/2026. O resultado oficial do segundo turno foi confirmado em 26/10 e o snapshot arquivado contém 1.654 eleitas e eleitos. O registro no GitHub não comprova, por si só, que a nova versão foi publicada no Cloudflare Pages.</p>
         </header>
 
         <section className="closure-section" aria-labelledby="numeros-title">
@@ -89,8 +96,9 @@ export default function Encerramento2026() {
           <div className="closure-metrics">
             <article><strong>19.991</strong><span>candidaturas na malha editorial documentada</span></article>
             <article><strong>1.828</strong><span>páginas agregadoras por cargo, UF e partido</span></article>
-            <article><strong>76.806</strong><span>registros de bens na primeira carga patrimonial</span></article>
-            <article><strong>4.019</strong><span>vínculos históricos 2022–2026 confirmados</span></article>
+            <article><strong>77.446</strong><span>bens declarados na carga final de 26/10</span></article>
+            <article><strong>4.034</strong><span>vínculos históricos 2022–2026 na carga final</span></article>
+            <article><strong>1.654</strong><span>eleitas e eleitos no snapshot oficial do TSE</span></article>
           </div>
           <p className="closure-source">Referências: <a href={`${REPO}/blob/main/docs/BACKLOG.md`} target="_blank" rel="noreferrer">backlog e PRs de entrega ↗</a> · <a href={`${REPO}/blob/main/docs/PATRIMONIO_FONTES.md`} target="_blank" rel="noreferrer">metodologia patrimonial ↗</a>.</p>
         </section>
